@@ -1,0 +1,186 @@
+---
+layout: post
+title: "Mantis on SQL Server"
+date: 2012-09-23 11:45:46 UTC
+updated: 2012-09-23 11:45:46 UTC
+comments: false
+categories: [Developer, got ya]
+---
+
+[Technical post]<br />I've been busy last couple of days trying to make <a href="http://www.mantisbt.org/">Mantis</a> work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I'm not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with <a href="http://www.zplace.com/">higly experimental MSSQL support</a>, <a href="http://ifdefined.com/bugtrackernet.html">BugTracker .NET</a>, much settled on the platform but looking a bit amateur, and Mantis, the final election, which promised MSSQL support.
+<br /><br />
+The fact is that it hasn't been a trivial task for me. I'm a Java (former VB.NET) developer, and I've had to fight a lot. Just in case someone else has the same problems, here I write what I've done [edited] to install <span style="font-weight: bold;">Mantis 1.2.0</span>:<br /><ul><li><b>Install PHP</b>. Some tricks here. <span style="font-style: italic;">First</span>. Use PHP 5.2. PHP 5.3 needs other configuration. <span style="font-style: italic;">Second</span>. I installed in IIS as an ISAPI filter. <span style="font-style: italic;">Third</span>. Install MSSQL extension in the PHP installation. <span style="font-style: italic;">Fourth</span>. You need <a href="http://www.dlldll.com/ntwdblib.dll_download.html">ntwdblib.dll</a> in ...\system32 folder.</li><br /><li><b>Unzip Mantis <span style="font-weight: bold;">1.2.0</span> and install as a new virtual project.</b></li><br /><li><b>Link PHP with IIS:</b>No tricks here. I followed <a href="http://www.desarrolloweb.com/articulos/instalando-php-con-iis.html">this post in Spanish</a>.</li><br /><li><b>Create de Mantis SQL schema:</b> The installation procedure of Mantis creates the original database (of an ancient version of Mantis) and in the same script upgrades the tables. I don't know the reason why it doesn't work in MSSQL but the fact is <a href="http://www.mantisbt.org/forums/viewtopic.php?f=3&amp;t=9920">it doesn't work</a>. So you have to create the SQL schema on hand. Here is my script:<br /><blockquote>CREATE TABLE mantis_config_table (<br />config_id                VARCHAR(64) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />access_reqd              INT DEFAULT 0,<br />type                     INT DEFAULT 90,<br />value                    TEXT NOT NULL,<br />PRIMARY KEY (config_id, project_id, user_id)<br />);
+<br /><br />
+CREATE INDEX idx_config ON mantis_config_table (config_id);
+<br /><br />
+CREATE TABLE mantis_bug_file_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />title                    VARCHAR(250) DEFAULT '' NOT NULL,<br />description              VARCHAR(250) DEFAULT '' NOT NULL,<br />diskfile                 VARCHAR(250) DEFAULT '' NOT NULL,<br />filename                 VARCHAR(250) DEFAULT '' NOT NULL,<br />folder                   VARCHAR(250) DEFAULT '' NOT NULL,<br />filesize                 INT DEFAULT 0 NOT NULL,<br />file_type                VARCHAR(250) DEFAULT '' NOT NULL,<br />date_added               INT DEFAULT 1 NOT NULL,<br />content                  IMAGE NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_bug_file_bug_id ON mantis_bug_file_table (bug_id);
+<br /><br />
+ALTER TABLE mantis_bug_file_table  ADD<br />user_id INT DEFAULT 0 NOT NULL;
+<br /><br />
+<br />CREATE TABLE mantis_bug_history_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />date_modified            INT DEFAULT 1 NOT NULL,<br />field_name               VARCHAR(32) DEFAULT '' NOT NULL,<br />old_value                VARCHAR(128) DEFAULT '' NOT NULL,<br />new_value                VARCHAR(128) DEFAULT '' NOT NULL,<br />type                     SMALLINT DEFAULT 0 NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_bug_history_bug_id ON mantis_bug_history_table (bug_id);
+<br /><br />
+CREATE INDEX idx_history_user_id ON mantis_bug_history_table (user_id);
+<br /><br />
+CREATE TABLE mantis_bug_monitor_table (<br />user_id                  INT DEFAULT 0 NOT NULL,<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />PRIMARY KEY (user_id, bug_id)<br />);
+<br /><br />
+CREATE TABLE mantis_bug_relationship_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />source_bug_id            INT DEFAULT 0 NOT NULL,<br />destination_bug_id       INT DEFAULT 0 NOT NULL,<br />relationship_type        SMALLINT DEFAULT 0 NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_relationship_source ON mantis_bug_relationship_table (source_bug_id);
+<br /><br />
+CREATE INDEX idx_relationship_destination ON mantis_bug_relationship_table (destination_bug_id);
+<br /><br />
+CREATE TABLE mantis_bug_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />reporter_id              INT DEFAULT 0 NOT NULL,<br />handler_id               INT DEFAULT 0 NOT NULL,<br />duplicate_id             INT DEFAULT 0 NOT NULL,<br />priority                 SMALLINT DEFAULT 30 NOT NULL,<br />severity                 SMALLINT DEFAULT 50 NOT NULL,<br />reproducibility          SMALLINT DEFAULT 10 NOT NULL,<br />status                   SMALLINT DEFAULT 10 NOT NULL,<br />resolution               SMALLINT DEFAULT 10 NOT NULL,<br />projection               SMALLINT DEFAULT 10 NOT NULL,<br />eta                      SMALLINT DEFAULT 10 NOT NULL,<br />bug_text_id              INT DEFAULT 0 NOT NULL,<br />os                       VARCHAR(32) DEFAULT '' NOT NULL,<br />os_build                 VARCHAR(32) DEFAULT '' NOT NULL,<br />platform                 VARCHAR(32) DEFAULT '' NOT NULL,<br />version                  VARCHAR(64) DEFAULT '' NOT NULL,<br />fixed_in_version         VARCHAR(64) DEFAULT '' NOT NULL,<br />build                    VARCHAR(32) DEFAULT '' NOT NULL,<br />profile_id               INT DEFAULT 0 NOT NULL,<br />view_state               SMALLINT DEFAULT 10 NOT NULL,<br />summary                  VARCHAR(128) DEFAULT '' NOT NULL,<br />sponsorship_total        INT DEFAULT 0 NOT NULL,<br />sticky                   BIT DEFAULT '0' NOT NULL,<br />due_date                 INT DEFAULT 1 NOT NULL,<br />date_submitted           INT DEFAULT 1 NOT NULL,<br />last_updated             INT DEFAULT 1 NOT NULL,<br />category_id              INT DEFAULT 1 NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_bug_sponsorship_total ON mantis_bug_table (sponsorship_total);
+<br /><br />
+CREATE INDEX idx_bug_fixed_in_version ON mantis_bug_table (fixed_in_version);
+<br /><br />
+CREATE INDEX idx_bug_status ON mantis_bug_table (status);
+<br /><br />
+CREATE INDEX idx_project ON mantis_bug_table (project_id);
+<br /><br />
+<br />CREATE TABLE mantis_bug_text_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />description              TEXT NOT NULL,<br />steps_to_reproduce       TEXT NOT NULL,<br />additional_information   TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE TABLE mantis_bugnote_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />reporter_id              INT DEFAULT 0 NOT NULL,<br />bugnote_text_id          INT DEFAULT 0 NOT NULL,<br />view_state               SMALLINT DEFAULT 10 NOT NULL,<br />date_submitted           INT DEFAULT 1 NOT NULL,<br />last_modified            INT DEFAULT 1 NOT NULL,<br />note_type                INT DEFAULT 0,<br />note_attr                VARCHAR(250) DEFAULT '',<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_bug ON mantis_bugnote_table (bug_id);
+<br /><br />
+CREATE INDEX idx_last_mod ON mantis_bugnote_table (last_modified);
+<br /><br />
+CREATE TABLE mantis_bugnote_text_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />note                     TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE TABLE mantis_custom_field_project_table (<br />field_id                 INT DEFAULT 0 NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />sequence                 SMALLINT DEFAULT 0 NOT NULL,<br />PRIMARY KEY (field_id, project_id)<br />);
+<br /><br />
+CREATE TABLE mantis_custom_field_string_table (<br />field_id                 INT DEFAULT 0 NOT NULL,<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />value                    VARCHAR(255) DEFAULT '' NOT NULL,<br />PRIMARY KEY (field_id, bug_id)<br />);
+<br /><br />
+CREATE INDEX idx_custom_field_bug ON mantis_custom_field_string_table (bug_id);
+<br /><br />
+CREATE TABLE mantis_custom_field_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />name                     VARCHAR(64) DEFAULT '' NOT NULL,<br />type                     SMALLINT DEFAULT 0 NOT NULL,<br />possible_values          TEXT DEFAULT '' NOT NULL,<br />default_value            VARCHAR(255) DEFAULT '' NOT NULL,<br />valid_regexp             VARCHAR(255) DEFAULT '' NOT NULL,<br />access_level_r           SMALLINT DEFAULT 0 NOT NULL,<br />access_level_rw          SMALLINT DEFAULT 0 NOT NULL,<br />length_min               INT DEFAULT 0 NOT NULL,<br />length_max               INT DEFAULT 0 NOT NULL,<br />require_report           BIT DEFAULT '0' NOT NULL,<br />require_update           BIT DEFAULT '0' NOT NULL,<br />display_report           BIT DEFAULT '0' NOT NULL,<br />display_update           BIT DEFAULT '1' NOT NULL,<br />require_resolved         BIT DEFAULT '0' NOT NULL,<br />display_resolved         BIT DEFAULT '0' NOT NULL,<br />display_closed           BIT DEFAULT '0' NOT NULL,<br />require_closed           BIT DEFAULT '0' NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_custom_field_name ON mantis_custom_field_table (name);
+<br /><br />
+ALTER TABLE mantis_custom_field_table  ADD<br />filter_by BIT DEFAULT '1' NOT NULL;
+<br /><br />
+
+<br /><br />
+CREATE TABLE mantis_filters_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />is_public                BIT DEFAULT NULL,<br />name                     VARCHAR(64) DEFAULT '' NOT NULL,<br />filter_string            TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE TABLE mantis_news_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />poster_id                INT DEFAULT 0 NOT NULL,<br />date_posted              INT DEFAULT 1 NOT NULL,<br />last_modified            INT DEFAULT 1 NOT NULL,<br />view_state               SMALLINT DEFAULT 10 NOT NULL,<br />announcement             BIT DEFAULT '0' NOT NULL,<br />headline                 VARCHAR(64) DEFAULT '' NOT NULL,<br />body                     TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE TABLE mantis_project_category_table (<br />project_id               INT DEFAULT 0 NOT NULL,<br />category                 VARCHAR(64) DEFAULT '' NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />PRIMARY KEY (project_id, category)<br />);
+<br /><br />
+CREATE TABLE mantis_project_file_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />title                    VARCHAR(250) DEFAULT '' NOT NULL,<br />description              VARCHAR(250) DEFAULT '' NOT NULL,<br />diskfile                 VARCHAR(250) DEFAULT '' NOT NULL,<br />filename                 VARCHAR(250) DEFAULT '' NOT NULL,<br />folder                   VARCHAR(250) DEFAULT '' NOT NULL,<br />filesize                 INT DEFAULT 0 NOT NULL,<br />file_type                VARCHAR(250) DEFAULT '' NOT NULL,<br />date_added               INT DEFAULT 1 NOT NULL,<br />content                  IMAGE NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+ALTER TABLE mantis_project_file_table  ADD<br />user_id INT DEFAULT 0 NOT NULL;
+<br /><br />
+CREATE TABLE mantis_project_hierarchy_table (<br />child_id                 INT NOT NULL,<br />parent_id                INT NOT NULL<br />);
+<br /><br />
+CREATE TABLE mantis_project_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />name                     VARCHAR(128) DEFAULT '' NOT NULL,<br />status                   SMALLINT DEFAULT 10 NOT NULL,<br />enabled                  BIT DEFAULT '1' NOT NULL,<br />view_state               SMALLINT DEFAULT 10 NOT NULL,<br />access_min               SMALLINT DEFAULT 10 NOT NULL,<br />file_path                VARCHAR(250) DEFAULT '' NOT NULL,<br />description              TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_project_id ON mantis_project_table (id);
+<br /><br />
+CREATE UNIQUE INDEX idx_project_name ON mantis_project_table (name);
+<br /><br />
+CREATE INDEX idx_project_view ON mantis_project_table (view_state);
+<br /><br />
+CREATE TABLE mantis_project_user_list_table (<br />project_id               INT DEFAULT 0 NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />access_level             SMALLINT DEFAULT 10 NOT NULL,<br />PRIMARY KEY (project_id, user_id)<br />);
+<br /><br />
+CREATE INDEX idx_project_user ON mantis_project_user_list_table (user_id);
+<br /><br />
+CREATE TABLE mantis_project_version_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />version                  VARCHAR(64) DEFAULT '' NOT NULL,<br />date_order               INT DEFAULT 1 NOT NULL,<br />description              TEXT NOT NULL,<br />released                 BIT DEFAULT '1' NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE UNIQUE INDEX idx_project_version ON mantis_project_version_table (project_id, version);
+<br /><br />
+CREATE TABLE mantis_sponsorship_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />amount                   INT DEFAULT 0 NOT NULL,<br />logo                     VARCHAR(128) DEFAULT '' NOT NULL,<br />url                      VARCHAR(128) DEFAULT '' NOT NULL,<br />paid                     BIT DEFAULT '0' NOT NULL,<br />date_submitted           INT DEFAULT 1 NOT NULL,<br />last_updated             INT DEFAULT 1 NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_sponsorship_bug_id ON mantis_sponsorship_table (bug_id);
+<br /><br />
+CREATE INDEX idx_sponsorship_user_id ON mantis_sponsorship_table (user_id);
+<br /><br />
+CREATE TABLE mantis_tokens_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />owner                    INT NOT NULL,<br />type                     INT NOT NULL,<br />timestamp                INT DEFAULT 1 NOT NULL,<br />expiry                   INT DEFAULT 1 NOT NULL,<br />value                    TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE TABLE mantis_user_pref_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />default_profile          INT DEFAULT 0 NOT NULL,<br />default_project          INT DEFAULT 0 NOT NULL,<br />refresh_delay            INT DEFAULT 0 NOT NULL,<br />redirect_delay           INT DEFAULT 0 NOT NULL,<br />bugnote_order            VARCHAR(4) DEFAULT 'ASC' NOT NULL,<br />email_on_new             BIT DEFAULT '0' NOT NULL,<br />email_on_assigned        BIT DEFAULT '0' NOT NULL,<br />email_on_feedback        BIT DEFAULT '0' NOT NULL,<br />email_on_resolved        BIT DEFAULT '0' NOT NULL,<br />email_on_closed          BIT DEFAULT '0' NOT NULL,<br />email_on_reopened        BIT DEFAULT '0' NOT NULL,<br />email_on_bugnote         BIT DEFAULT '0' NOT NULL,<br />email_on_status          BIT DEFAULT '0' NOT NULL,<br />email_on_priority        BIT DEFAULT '0' NOT NULL,<br />email_on_priority_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_status_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_bugnote_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_reopened_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_closed_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_resolved_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_feedback_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_assigned_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_on_new_min_severity SMALLINT DEFAULT 10 NOT NULL,<br />email_bugnote_limit      SMALLINT DEFAULT 0 NOT NULL,<br />language                 VARCHAR(32) DEFAULT 'english' NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+ALTER TABLE mantis_user_pref_table  ADD<br />timezone VARCHAR(32) DEFAULT '' NOT NULL;
+<br /><br />
+CREATE TABLE mantis_user_print_pref_table (<br />user_id                  INT DEFAULT 0 NOT NULL,<br />print_pref               VARCHAR(27) DEFAULT '' NOT NULL,<br />PRIMARY KEY (user_id)<br />);
+<br /><br />
+CREATE TABLE mantis_user_profile_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />platform                 VARCHAR(32) DEFAULT '' NOT NULL,<br />os                       VARCHAR(32) DEFAULT '' NOT NULL,<br />os_build                 VARCHAR(32) DEFAULT '' NOT NULL,<br />description              TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE TABLE mantis_user_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />username                 VARCHAR(32) DEFAULT '' NOT NULL,<br />realname                 VARCHAR(64) DEFAULT '' NOT NULL,<br />email                    VARCHAR(64) DEFAULT '' NOT NULL,<br />password                 VARCHAR(32) DEFAULT '' NOT NULL,<br />date_created             INT DEFAULT 1 NOT NULL,<br />last_visit               INT DEFAULT 1 NOT NULL,<br />enabled                  BIT DEFAULT '1' NOT NULL,<br />protected                BIT DEFAULT '0' NOT NULL,<br />access_level             SMALLINT DEFAULT 10 NOT NULL,<br />login_count              INT DEFAULT 0 NOT NULL,<br />lost_password_request_count SMALLINT DEFAULT 0 NOT NULL,<br />failed_login_count       SMALLINT DEFAULT 0 NOT NULL,<br />cookie_string            VARCHAR(64) DEFAULT '' NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE UNIQUE INDEX idx_user_cookie_string ON mantis_user_table (cookie_string);
+<br /><br />
+CREATE UNIQUE INDEX idx_user_username ON mantis_user_table (username);
+<br /><br />
+CREATE INDEX idx_enable ON mantis_user_table (enabled);
+<br /><br />
+CREATE INDEX idx_access ON mantis_user_table (access_level);
+<br /><br />
+INSERT INTO mantis_user_table(username, realname, email, password, date_created, last_visit, enabled, protected, access_level, login_count, lost_password_request_count, failed_login_count, cookie_string) VALUES<br />('administrator', '', 'root@localhost', '63a9f0ea7bb98050796b649e85481845', 1, 1, '1', '0', 90, 3, 0, 0, '43c90a58b766eca71a4eaec08120f1b51fec152d8f4d2c0cfec26390ed94f575');
+<br /><br />
+ALTER TABLE mantis_bug_history_table ALTER COLUMN old_value VARCHAR(255)  NOT NULL;
+<br /><br />
+ALTER TABLE mantis_bug_history_table ALTER COLUMN new_value VARCHAR(255)  NOT NULL;
+<br /><br />
+CREATE TABLE mantis_email_table (<br />email_id                 INT IDENTITY(1,1) NOT NULL,<br />email                    VARCHAR(64) DEFAULT '' NOT NULL,<br />subject                  VARCHAR(250) DEFAULT '' NOT NULL,<br />submitted                INT DEFAULT 1 NOT NULL,<br />metadata                 TEXT NOT NULL,<br />body                     TEXT NOT NULL,<br />PRIMARY KEY (email_id)<br />);
+<br /><br />
+CREATE INDEX idx_email_id ON mantis_email_table (email_id);
+<br /><br />
+ALTER TABLE mantis_bug_table  ADD<br />target_version VARCHAR(64) DEFAULT '' NOT NULL;
+<br /><br />
+ALTER TABLE mantis_bugnote_table  ADD<br />time_tracking INT DEFAULT 0 NOT NULL;
+<br /><br />
+CREATE INDEX idx_diskfile ON mantis_bug_file_table (diskfile);
+<br /><br />
+ALTER TABLE mantis_user_print_pref_table ALTER COLUMN print_pref VARCHAR(64)  NOT NULL;
+<br /><br />
+ALTER TABLE mantis_bug_history_table ALTER COLUMN field_name VARCHAR(64)  NOT NULL;
+<br /><br />
+CREATE TABLE mantis_tag_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />name                     VARCHAR(100) DEFAULT '' NOT NULL,<br />description              TEXT NOT NULL,<br />date_created             INT DEFAULT 1 NOT NULL,<br />date_updated             INT DEFAULT 1 NOT NULL,<br />PRIMARY KEY (id, name)<br />);
+<br /><br />
+CREATE TABLE mantis_bug_tag_table (<br />bug_id                   INT DEFAULT 0 NOT NULL,<br />tag_id                   INT DEFAULT 0 NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />date_attached            INT DEFAULT 1 NOT NULL,<br />PRIMARY KEY (bug_id, tag_id)<br />);
+<br /><br />
+CREATE INDEX idx_typeowner ON mantis_tokens_table (type, owner);
+<br /><br />
+CREATE TABLE mantis_plugin_table (<br />basename                 VARCHAR(40) NOT NULL,<br />enabled                  BIT DEFAULT '0' NOT NULL,<br />PRIMARY KEY (basename)<br />);
+<br /><br />
+<br />CREATE TABLE mantis_category_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />name                     VARCHAR(128) DEFAULT '' NOT NULL,<br />status                   INT DEFAULT 0 NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE UNIQUE INDEX idx_category_project_name ON mantis_category_table (project_id, name);
+<br /><br />
+INSERT INTO mantis_category_table<br />( project_id, user_id, name, status ) VALUES<br />( '0', '0', 'General', '0' ) ;
+<br /><br />
+<br />DROP TABLE mantis_project_category_table;
+<br /><br />
+ALTER TABLE mantis_project_table  ADD<br />category_id INT DEFAULT 1 NOT NULL;
+<br /><br />
+INSERT INTO mantis_plugin_table<br />( basename, enabled ) VALUES<br />( 'MantisCoreFormatting', '1' );
+<br /><br />
+ALTER TABLE mantis_project_table  ADD<br />inherit_global INT DEFAULT 0 NOT NULL;
+<br /><br />
+ALTER TABLE mantis_project_hierarchy_table  ADD<br />inherit_parent INT DEFAULT 0 NOT NULL;
+<br /><br />
+ALTER TABLE mantis_plugin_table  ADD<br />protected BIT DEFAULT '0' NOT NULL, <br />priority INT DEFAULT 3 NOT NULL;
+<br /><br />
+ALTER TABLE mantis_project_version_table  ADD<br />obsolete BIT DEFAULT '0' NOT NULL;
+<br /><br />
+CREATE TABLE mantis_bug_revision_table (<br />id                       INT IDENTITY(1,1) NOT NULL,<br />bug_id                   INT NOT NULL,<br />bugnote_id               INT DEFAULT 0 NOT NULL,<br />user_id                  INT NOT NULL,<br />timestamp                INT DEFAULT 1 NOT NULL,<br />type                     INT NOT NULL,<br />value                    TEXT NOT NULL,<br />PRIMARY KEY (id)<br />);
+<br /><br />
+CREATE INDEX idx_bug_rev_id_time ON mantis_bug_revision_table (bug_id, timestamp);
+<br /><br />
+CREATE INDEX idx_bug_rev_type ON mantis_bug_revision_table (type);
+<br /><br />
+CREATE INDEX idx_project_hierarchy_child_id ON mantis_project_hierarchy_table (child_id);
+<br /><br />
+CREATE INDEX idx_project_hierarchy_parent_id ON mantis_project_hierarchy_table (parent_id);
+<br /><br />
+CREATE INDEX idx_tag_name ON mantis_tag_table (name);
+<br /><br />
+CREATE INDEX idx_bug_tag_tag_id ON mantis_bug_tag_table (tag_id);
+<br /><br />
+INSERT INTO mantis_config_table ( value, type, access_reqd, config_id, project_id, user_id ) VALUES ('182', 1, 90, 'database_version', 0, 0 );</blockquote></li><br /><li><b>Create a config_inc.php file:</b> No tricks here. You have to enter database connection data. Mine is more complicated but I guess something like this could do the trick:<br /><blockquote>&lt;?php<br />$g_hostname = '***';<br />$g_db_type = 'mssql';<br />$g_database_name = '***';<br />$g_db_username = '***';<br />$g_db_password = '***';<br />?&gt;</blockquote></li><br /><li><b>The final trick:</b> Don't ask me why (and don't ask me how I discovered), but the fact is that you have to edit the file ...\library\adodb\adodb.inc.php, and change the sentence <blockquote>define('ADODB_FETCH_ASSOC',2);</blockquote>to <blockquote>define('ADODB_FETCH_ASSOC',0);</blockquote></li></ul>

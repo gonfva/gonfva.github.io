@@ -1,0 +1,4 @@
+baseURL = "http://gonzalo.f-v.es/"
+languageCode = "en-us"
+title = "Gonzalo's thoughts"
+theme = "ananke"
