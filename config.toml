@@ -1,4 +1,27 @@
 baseURL = "http://gonzalo.f-v.es/"
 languageCode = "en-us"
-title = "Gonzalo's thoughts"
 theme = "ananke"
+copyright = "Gonzalo Fernandez-Victorio, 2008-2021"
+defaultContentLanguage = "en"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+[params]
+  author = "Gonzalo Fernandez-Victorio"
+  description = "Some thoughts about things"
+  recent_posts_number = 5
+  linkedin = "https://www.linkedin.com/in/gonzalofernandezvictorio/"
+  twitter = "https://twitter.com/gonfva"
+  env = "production"
+
+[languages]
+  [languages.en]
+    title = "Gonzalo's thoughts"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.es]
+    title = "Las cosas de Gonzalo"
+    weight = 2
+    contentDir = "content/es"
