@@ -181,6 +181,26 @@ It’s also a trend that reinforces itself. You need to be in the know if you wa
     </item>
     
     <item>
+      <title>More Mantis problems</title>
+      <link>http://gonzalo.f-v.es/posts/2010-03-29-more-mantis-problems/</link>
+      <pubDate>Mon, 29 Mar 2010 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2010-03-29-more-mantis-problems/</guid>
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
+I wasn&amp;rsquo;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
+    </item>
+    
+    <item>
+      <title>Mantis on SQL Server</title>
+      <link>http://gonzalo.f-v.es/posts/2010-03-09-mantis-on-sql-server/</link>
+      <pubDate>Tue, 09 Mar 2010 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2010-03-09-mantis-on-sql-server/</guid>
+      <description>[Technical post]
+I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
+    </item>
+    
+    <item>
       <title>Agile is about managing risk</title>
       <link>http://gonzalo.f-v.es/posts/2014-10-04-agile-is-about-managing-risk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -320,25 +340,6 @@ and the main requirement was that the robot didn&#39;t fall outside the board.</
       
       <guid>http://gonzalo.f-v.es/posts/2012-08-26-little-robot-iv-ruby-version/</guid>
       <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent. One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself. Anyway it was clear that Java version was considerably more verbose. So one obvious improvement is using symbols instead of string.</description>
-    </item>
-    
-    <item>
-      <title>Mantis on SQL Server</title>
-      <link>http://gonzalo.f-v.es/posts/2012-09-23-mantis-on-sql-server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/posts/2012-09-23-mantis-on-sql-server/</guid>
-      <description>[Technical post]
-I&#39;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&#39;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
-    </item>
-    
-    <item>
-      <title>More Mantis problems</title>
-      <link>http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/</guid>
-      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&#39;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&#39;ve discovered something quite shocking: I wasn&#39;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
     </item>
     
     <item>
