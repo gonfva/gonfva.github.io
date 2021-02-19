@@ -168,7 +168,18 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
+  
+   <li class="list">
+     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
+   </li>
+  
+   <li class="list">
+     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
+   </li>
+  
+</ul>
+<p>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:</p>
 <ul>
 <li>Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.
 RewriteEngine On
@@ -201,7 +212,7 @@ CustomLog [File] “%t %{X-Forwarded-For}i %l \”%r\” %&gt;s %b %D \”%{Refe
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gonzalo.f-v.es/" >
-    &copy;  Gonzalo Fernandez-Victorio, 2008-2021 2021 
+    &copy;  Gonzalo Fernandez-Victorio 2021 
   </a>
     <div>
 

@@ -1,11 +1,12 @@
 ---
-layout:	post
-title:	"Gifts"
-date:	2015-11-22
-categories: Personal
+layout: post
+title: "Gifts"
+date: 2015-11-22
+categories:
+  - Personal
 ---
 
-  Black Friday is next Friday, so that means Christmas is coming. All around will push us to buy things: food, clothing, gifts.
+    Black Friday is next Friday, so that means Christmas is coming. All around will push us to buy things: food, clothing, gifts.
 
 A couple of weeks ago we started receiving some catalogs from several different NGOs. The basic idea is [you buy gifts](http://worldgifts.cafod.org.uk/). For people that need those gifts. For people you don’t know. And you receive a card.
 
@@ -14,4 +15,3 @@ My initial reaction was a bit of sadness. I feel, from a faith perspective, that
 Then, about a week ago, my daughters (12 yo) came around and told me they had looked at the catalog. They wanted fewer gifts for themselves, but had already decided the gifts they wanted for people we don’t know.
 
 We just made our orders, and I can assure you that it has made us focus in important things.
-

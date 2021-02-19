@@ -168,7 +168,18 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
+  
+   <li class="list">
+     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
+   </li>
+  
+   <li class="list">
+     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
+   </li>
+  
+</ul>
+<p>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.</p>
 <p>You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more. The alarm would be insufficient_data if zero in the last 5 minutes, or OK if 1 in the last 5 minutes.</p>
 <p>And the problem is the below “TreatMissingData”.</p>
 <pre><code>&quot;ELBMany500Alarm&quot;: {
@@ -243,7 +254,7 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gonzalo.f-v.es/" >
-    &copy;  Gonzalo Fernandez-Victorio, 2008-2021 2021 
+    &copy;  Gonzalo Fernandez-Victorio 2021 
   </a>
     <div>
 

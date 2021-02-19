@@ -1,7 +1,7 @@
 baseURL = "http://gonzalo.f-v.es/"
 languageCode = "en-us"
 theme = "ananke"
-copyright = "Gonzalo Fernandez-Victorio, 2008-2021"
+copyright = "Gonzalo Fernandez-Victorio"
 defaultContentLanguage = "en"
 publishDir = "docs"
 

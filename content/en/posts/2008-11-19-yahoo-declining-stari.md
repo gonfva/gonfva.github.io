@@ -1,16 +1,13 @@
 ---
-layout: post
 title: "Yahoo: A declining star(I)"
-date: 2012-08-16 22:05:24 UTC
-updated: 2012-08-16 22:05:24 UTC
-comments: false
+date: 2008-11-19T18:00:00
 categories: Technology
 ---
 
 I like products coming from Google, and I’m usually less critic with Google’s errors than with others’. I use Google search, Gmail, Blogger… I even have a ridiculous financial position on Google (8 shares).
-<br /><br />
+
 I’m a Google fan.
-<br /><br />
+
 But I wasn’t conscious of how much I was a Google fan until I was preparing this post. I was getting ready to write about <a ceo-jerry-yang-stepping-down-from-a-stronger-yahoo-seriously.html="ceo-jerry-yang-stepping-down-from-a-stronger-yahoo-seriously.html" href="http://www.blogger.com/%E2%80%9D" http:="http:" www.marketingpilgrim.com="www.marketingpilgrim.com">Yahoo’s CEO (Jerry Yang) resignation</a>, and widening the scope, about Yahoo’s future.
 <br /><br />
 One of the obvious paths for post-Jerry’s Yahoo is being acquired by Microsoft. Microsoft tried it hard before summer, and many Yahoo investors would certainly welcome a bit of money. Especially when they don’t know where will be Yahoo in (say) two years.

@@ -174,7 +174,18 @@ Just in case you decided to change the mappings, and you continue to see the old
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
+  
+   <li class="list">
+     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
+   </li>
+  
+   <li class="list">
+     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
+   </li>
+  
+</ul>
+
 <br /><ol><li>Activate log4j. Without it you're lost</li><li>Look through the log to see if you're getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see <a href="http://www.vaannila.com/spring/spring-annotation-controller-1.html">this post</a>. In particular if you've got Spring Security installed, for Goodness sake, don't forget these lines:</li><pre>&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"&gt;<br/><br />&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"&gt;<br/><br />&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div><br /></div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol>
 <ul class="pa0">
   
@@ -198,7 +209,7 @@ Just in case you decided to change the mappings, and you continue to see the old
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gonzalo.f-v.es/" >
-    &copy;  Gonzalo Fernandez-Victorio, 2008-2021 2021 
+    &copy;  Gonzalo Fernandez-Victorio 2021 
   </a>
     <div>
 

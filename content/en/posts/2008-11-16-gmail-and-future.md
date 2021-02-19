@@ -1,13 +1,11 @@
 ---
-layout: post
 title: "Gmail and the future"
-date: 2012-08-16 22:04:30 UTC
-updated: 2012-08-16 22:04:30 UTC
-comments: false
-categories: Technology
+date: 2008-11-16T18:00:00
+categories:
+  - Technology
 ---
 
-As I said on my last post, I think that <a href="http://gonfva.blogspot.com/2008/11/day-skype-died-revisited.html">integration of Video and voice chat <span style="font-weight: bold;">could</span> be part of a greater strategy</a>. What would be that strategy?
+As I said on my last post, I think that <a href="/posts/2008-11-12-day-skype-died-revisited/">integration of Video and voice chat <span style="font-weight: bold;">could</span> be part of a greater strategy</a>. What would be that strategy?
 <br /><br />
 In my opinion it should have two parts.
 <br /><br />
