@@ -170,18 +170,7 @@ In my previous post I explained how to make Java choose a class for a parser."/>
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
-   <li class="list">
-     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
-   </li>
-  
-   <li class="list">
-     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
-   </li>
-  
-</ul>
-
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 In a previous post I proposed <a href="http://gonfva.blogspot.com/2012/01/xerces-and-xalan-recipes-for-win.html" target="_blank">some tips for trying to manage and control the hell of XML and XPATH parsers</a>. However, as&nbsp;<a href="http://gonfva.blogspot.com/2012/01/xerces-and-xalan-recipes-for-win.html?showComment=1340120517700#c9002637107572975490" target="_blank">one reader pointed</a>, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.<br /><div><br /></div><div>In my previous post I explained how to make Java choose a class for a parser. But, unfortunately that's not enough when different libraries provide that class. And that happens to be the case with some classes that are both in Xalan an Saxon (Simon's case) and some Xerces classes (both in server and WEB-INF/lib in my case).&nbsp;</div><div><br /></div><div>Simon needs Xalan classes for the general case, but he also needs Saxon for some specific (maybe XPATH2) parsing. He is able to set the parser for the general case, and initialize the specific parser for the XPATH 2 case. But having Saxon jar in the classpath makes the classloader load Saxon classes before &nbsp;Xalan classes.&nbsp;</div><div><br /></div><div>What can we do in that case? It's not easy to answer, and sometimes there's not even an answer. Some tips:</div><div><br /></div><div><ol><li>Play with the classpath general mechanism loading order. For example JRE/lib/ext are usually loaded before WEB-INF/lib, so maybe Xalan would be placed in JRE/lib/ext and Saxon in WEB-INF/lib. This tip could have it's drawbacks in the booting of the server and in other applications sharing the same JVM, because JRE/lib/ext gets precedence from server specific mechanisms. Besides, operations people gets very nervous about placing anything in the JRE/lib/ext (not without reason).</li><li><span style="background-color: white;">Use some mechanism specific of the server. In my case (Oracle WebLogic Server), there were several</span><ol><li><span style="background-color: white;">Use $DOMAIN/lib folder instead of JRE/lib/ext (ops people get more comfortable, and it reduces the applications affected</span></li><li>Classloader-structure in <a href="http://weblogic-applicaiton.xml/">weblogic-applicaiton.xml</a>.
 <br /><br />
 <span style="background-color: white;"></span></li></ol></li><li>Play with classloaders. <a href="http://docs.oracle.com/cd/E15051_01/wls/docs103/programming/classloading.html" target="_blank">This page from OWLS</a> is not very server specific and should give some hints.</li><li>In the worst case, I guess one could try to use its one specific packaging.</li></ol><div>Hope this helps. I solved my case but for the general case it will depend on what are we allowed to do.</div></div>

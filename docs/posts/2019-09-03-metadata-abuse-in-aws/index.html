@@ -168,18 +168,7 @@ AWS is putting great effort in avoiding S3 buckets configured for public accessW
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
-   <li class="list">
-     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
-   </li>
-  
-   <li class="list">
-     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
-   </li>
-  
-</ul>
-<p>A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the <a href="https://www.capitalone.com/facts2019/">compromise of personal information</a> on around 100M people.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the <a href="https://www.capitalone.com/facts2019/">compromise of personal information</a> on around 100M people.</p>
 <p><img src="/img/1*TbzHUQSGDSFAZe-olzUgBQ.png" alt="email from AWS warning against S3 buckets with public access">AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “<a href="https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68">S3 bucket with public permissions</a>” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</p>
 <p>It turns out that the attack was more sophisticated (<a href="https://www.linkedin.com/posts/gonzalofernandezvictorio_you-may-have-heard-about-the-capital-one-activity-6562006675115556864-45dJ">but not as much as I’d thought</a>).</p>
 <p>It used a technique called Server Side Request Forgery (make requests from a compromised server) and AWS credentials compromise (use AWS credentials from the compromised server).</p>

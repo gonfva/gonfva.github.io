@@ -136,6 +136,36 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/" class="link black dim">
+        More Mantis problems
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It's great being able to debug a PHP application. I hope what I discovered is useful for more people. But I've discovered something quite shocking: I wasn't able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="http://gonzalo.f-v.es/posts/2014-01-21-multithreading-warning-lights/" class="link black dim">
+        Multithreading: Warning lights
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn't quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn't help it was my first experience working with a Mac. At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensioni/" class="link black dim">
         My first Chrome extension(I)
       </a>
@@ -173,22 +203,6 @@
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I'm learning some technologies. I'm tempted to write new, but they're not new. I'm learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
 Some other day I'll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="http://gonzalo.f-v.es/posts/2012-08-16-netbook-operating-systems/" class="link black dim">
-        Netbook Operating Systems
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      A few months ago I got a new Acer Aspire One A110. It's an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9'' screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I've been testing several Netbook OS and I wanted to share my thoughts about it.
-The original distribution, (as I've said) is a personalized version of Linpus Lite.
     </div>
   </div>
 </div>
@@ -268,22 +282,6 @@ Just in case you decided to change the mappings, and you continue to see the old
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application. After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization: Measure 
 You cannot optimize if you don't know what do you need to optimize.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="http://gonzalo.f-v.es/posts/2012-09-24-optionaldataexception-while-reading-jms/" class="link black dim">
-        OptionalDataException while reading JMS message
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We've been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [...]&nbsp;Caused by: java.io.OptionalDataException&nbsp; &nbsp; &nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&nbsp; &nbsp; &nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&nbsp; &nbsp; &nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
-In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.
     </div>
   </div>
 </div>

@@ -166,18 +166,7 @@ In trying to reproduce people in the team introduced a non-serializable object, 
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
-   <li class="list">
-     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
-   </li>
-  
-   <li class="list">
-     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
-   </li>
-  
-</ul>
-
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 We've been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
 <br /><br />
 <blockquote class="tr_bq"><blockquote class="tr_bq">javax.jms.JMSException: getObject</blockquote><blockquote class="tr_bq">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [...]&nbsp;</blockquote><blockquote class="tr_bq">Caused by: java.io.OptionalDataException</blockquote><blockquote class="tr_bq">&nbsp; &nbsp; &nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)</blockquote><blockquote class="tr_bq">&nbsp; &nbsp; &nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)</blockquote><blockquote class="tr_bq">&nbsp; &nbsp; &nbsp; at java.util.HashMap.readObject(HashMap.java:1066)</blockquote></blockquote><br />In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException. And trying to send some class and then changing the&nbsp;serialVersionUID, he got an error at receiving, but a different error (java.io.InvalidClassException).

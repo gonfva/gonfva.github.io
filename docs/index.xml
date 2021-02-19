@@ -587,6 +587,17 @@ Obviously, the experience was poor and confusing for the user, who doesn’t und
     </item>
     
     <item>
+      <title>Lies, damn lies and statistics</title>
+      <link>http://gonzalo.f-v.es/posts/2009-08-27-lies-damn-lies-and-statistics/</link>
+      <pubDate>Thu, 27 Aug 2009 22:02:34 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2009-08-27-lies-damn-lies-and-statistics/</guid>
+      <description>Disclaimer. I&amp;rsquo;m not an economist or a statician, and I don&amp;rsquo;t have any governmental internal information. I&amp;rsquo;m only a spaniard.
+I&amp;rsquo;ve just read a piece of news about Moody&amp;rsquo;s considering Spanish outlook stable. Although I don&amp;rsquo;t foresee a default&amp;rsquo;s risk, I completely disagree. I think Spanish conditions are deteriorating very fast. I recommend reading this article on Moody&amp;rsquo;s decision.
+Anyway, I remembered reading that in recent months Government&amp;rsquo;s income and expenses figures have been alarming.</description>
+    </item>
+    
+    <item>
       <title>New Year&#39;s resolutions ... in August</title>
       <link>http://gonzalo.f-v.es/posts/2009-08-20-new-years-resolutions-in-august/</link>
       <pubDate>Thu, 20 Aug 2009 22:20:15 +0000</pubDate>
@@ -595,6 +606,26 @@ Obviously, the experience was poor and confusing for the user, who doesn’t und
       <description>I&amp;rsquo;ve been on holidays, and I&amp;rsquo;ve had some spare time to stop and think.
 Last couple of months have been special. Some events have affected profoundly.
 One of those events has been the death of a collegue. Antonio was a young man. At least young for me, since he was in his early 40&amp;rsquo;s, only a few years older than me. Antonio was a nice guy. I remember him laughing a lot of times.</description>
+    </item>
+    
+    <item>
+      <title>Netbook Operating Systems</title>
+      <link>http://gonzalo.f-v.es/posts/2009-08-13-netbook-operating-systems/</link>
+      <pubDate>Thu, 13 Aug 2009 22:01:25 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2009-08-13-netbook-operating-systems/</guid>
+      <description>A few months ago I got a new Acer Aspire One A110. It&amp;rsquo;s an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9&#39;&#39; screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I&amp;rsquo;ve been testing several Netbook OS and I wanted to share my thoughts about it.
+  The original distribution, (as I&amp;rsquo;ve said) is a personalized version of Linpus Lite.</description>
+    </item>
+    
+    <item>
+      <title>What can I do for my country</title>
+      <link>http://gonzalo.f-v.es/posts/2009-05-26-what-can-i-do-for-my-country/</link>
+      <pubDate>Tue, 26 May 2009 22:03:13 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2009-05-26-what-can-i-do-for-my-country/</guid>
+      <description>And so, my fellow Americans: ask not what your country can do for you— ask what you can do for your country.
+ A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy in Spain. The position was being held by David Vegara, but he had expressed his intention to leave the job when his former boss Pedro Solbes was removed from the Ministry position.</description>
     </item>
     
     <item>
@@ -1063,15 +1094,6 @@ More recently there has been some comments in Spain regarding the publication of
     </item>
     
     <item>
-      <title>Lies, damn lies and statistics</title>
-      <link>http://gonzalo.f-v.es/posts/2012-08-16-lies-damn-lies-and-statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/posts/2012-08-16-lies-damn-lies-and-statistics/</guid>
-      <description>Disclaimer. I&#39;m not an economist or a statician, and I don&#39;t have any governmental internal information. I&#39;m only a spaniard. I&#39;ve just read a piece of news about Moody&#39;s considering Spanish outlook stable. Although I don&#39;t foresee a default&#39;s risk, I completely disagree. I think Spanish conditions are deteriorating very fast. I recommend reading this article on Moody&#39;s decision. Anyway, I remembered reading that in recent months Government&#39;s income and expenses figures have been alarming.</description>
-    </item>
-    
-    <item>
       <title>Little robot (I)</title>
       <link>http://gonzalo.f-v.es/posts/2012-08-17-little-robot-i/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1186,16 +1208,6 @@ I&#39;ve been busy last couple of days trying to make Mantis work with a Microso
       <guid>http://gonzalo.f-v.es/posts/2012-05-02-my-first-mobile-application/</guid>
       <description>I&#39;m learning some technologies. I&#39;m tempted to write new, but they&#39;re not new. I&#39;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
 Some other day I&#39;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
-    </item>
-    
-    <item>
-      <title>Netbook Operating Systems</title>
-      <link>http://gonzalo.f-v.es/posts/2012-08-16-netbook-operating-systems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/posts/2012-08-16-netbook-operating-systems/</guid>
-      <description>A few months ago I got a new Acer Aspire One A110. It&#39;s an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9&#39;&#39; screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I&#39;ve been testing several Netbook OS and I wanted to share my thoughts about it.
-The original distribution, (as I&#39;ve said) is a personalized version of Linpus Lite.</description>
     </item>
     
     <item>
@@ -1524,17 +1536,6 @@ I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar 
       
       <guid>http://gonzalo.f-v.es/posts/2012-09-30-weird-ie9-bug/</guid>
       <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
-    </item>
-    
-    <item>
-      <title>What can I do for my country</title>
-      <link>http://gonzalo.f-v.es/posts/2012-08-16-what-can-i-do-for-my-country/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/posts/2012-08-16-what-can-i-do-for-my-country/</guid>
-      <description>And so, my fellow Americans: ask not what your country can do for you—ask what you can do for your country.
-J.F. Kennedy
-A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy in Spain. The position was being held by David Vegara, but he had expressed his intention to leave the job when his former boss Pedro Solbes was removed from the Ministry position.</description>
     </item>
     
     <item>

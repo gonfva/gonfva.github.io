@@ -166,18 +166,7 @@ I&#39;ve been busy last couple of days trying to make Mantis work with a Microso
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
-   <li class="list">
-     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
-   </li>
-  
-   <li class="list">
-     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
-   </li>
-  
-</ul>
-
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 [Technical post]<br />I've been busy last couple of days trying to make <a href="http://www.mantisbt.org/">Mantis</a> work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I'm not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with <a href="http://www.zplace.com/">higly experimental MSSQL support</a>, <a href="http://ifdefined.com/bugtrackernet.html">BugTracker .NET</a>, much settled on the platform but looking a bit amateur, and Mantis, the final election, which promised MSSQL support.
 <br /><br />
 The fact is that it hasn't been a trivial task for me. I'm a Java (former VB.NET) developer, and I've had to fight a lot. Just in case someone else has the same problems, here I write what I've done [edited] to install <span style="font-weight: bold;">Mantis 1.2.0</span>:<br /><ul><li><b>Install PHP</b>. Some tricks here. <span style="font-style: italic;">First</span>. Use PHP 5.2. PHP 5.3 needs other configuration. <span style="font-style: italic;">Second</span>. I installed in IIS as an ISAPI filter. <span style="font-style: italic;">Third</span>. Install MSSQL extension in the PHP installation. <span style="font-style: italic;">Fourth</span>. You need <a href="http://www.dlldll.com/ntwdblib.dll_download.html">ntwdblib.dll</a> in ...\system32 folder.</li><br /><li><b>Unzip Mantis <span style="font-weight: bold;">1.2.0</span> and install as a new virtual project.</b></li><br /><li><b>Link PHP with IIS:</b>No tricks here. I followed <a href="http://www.desarrolloweb.com/articulos/instalando-php-con-iis.html">this post in Spanish</a>.</li><br /><li><b>Create de Mantis SQL schema:</b> The installation procedure of Mantis creates the original database (of an ancient version of Mantis) and in the same script upgrades the tables. I don't know the reason why it doesn't work in MSSQL but the fact is <a href="http://www.mantisbt.org/forums/viewtopic.php?f=3&amp;t=9920">it doesn't work</a>. So you have to create the SQL schema on hand. Here is my script:<br /><blockquote>CREATE TABLE mantis_config_table (<br />config_id                VARCHAR(64) NOT NULL,<br />project_id               INT DEFAULT 0 NOT NULL,<br />user_id                  INT DEFAULT 0 NOT NULL,<br />access_reqd              INT DEFAULT 0,<br />type                     INT DEFAULT 90,<br />value                    TEXT NOT NULL,<br />PRIMARY KEY (config_id, project_id, user_id)<br />);

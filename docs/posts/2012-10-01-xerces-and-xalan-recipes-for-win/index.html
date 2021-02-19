@@ -162,18 +162,7 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
-   <li class="list">
-     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
-   </li>
-  
-   <li class="list">
-     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
-   </li>
-  
-</ul>
-
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 OK. I have explained <a href="http://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html">why Xerces and Xalan are a source of problems</a>, and I have explained why <a href="http://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_29.html">you shouldn't use System.setProperty to resolve</a> them. In this post I wan't to give a few recipes to resolve Xerces and Xalan problems.
 <br /><br />
 <ol><li>Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you'll need some specific parser (OC4J had a strange bug that needed a specific parser, and <a href="http://static.springsource.org/spring-ws/site/faq.html#saaj-weblogic10">Weblogic seems to have special needs</a> too). If you need a specific parser, do it at container level (2nd&nbsp; point), at application level (3rd point) or at the specific code (4th point).</li><li>If you have to define any property do it at the start of the container or the server. For example, in Weblogic 10.3.3 in Windows, we had to edit the file startWeblogic.cmd at the domain path, inserting the following line</li><ol><br /></ol>set JAVA_OPTIONS=-Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl

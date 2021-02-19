@@ -172,18 +172,7 @@ What follows is just one example I found on the Internet (i."/>
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
-   <li class="list">
-     <a href="/categories/developer" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">Developer</a>
-   </li>
-  
-   <li class="list">
-     <a href="/categories/got-ya" class="link f5 grow no-underline ba ph3 pv2 mb2 dib black sans-serif">got ya</a>
-   </li>
-  
-</ul>
-<p>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.</p>
 <p><img src="/img/1*zYkG2Iq7RzTH5CyjYWrPZA.jpeg" alt="It shows two children on a cobbled road that disappears into the sea. It shows how a road can be difficult to follow.">When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.</p>
 <p>What follows is just one example I found on the Internet (i.e. not original research)</p>
 <p>Imagine you get non-privileged access to an instance that has a role with <em>ec2:StopInstances</em>, <em>ec2:StarInstances</em> and <em>ec2:ModifyInstanceAttribute</em> (or much commonly, ec2:*). With that premise, apparently it is not difficult to make your non-privileged user can escalate into a full “own”.</p>

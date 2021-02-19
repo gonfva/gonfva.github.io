@@ -265,6 +265,16 @@ Obviously, the experience was poor and confusing for the user, who doesn’t und
     </item>
     
     <item>
+      <title>Netbook Operating Systems</title>
+      <link>http://gonzalo.f-v.es/posts/2009-08-13-netbook-operating-systems/</link>
+      <pubDate>Thu, 13 Aug 2009 22:01:25 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2009-08-13-netbook-operating-systems/</guid>
+      <description>A few months ago I got a new Acer Aspire One A110. It&amp;rsquo;s an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9&#39;&#39; screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I&amp;rsquo;ve been testing several Netbook OS and I wanted to share my thoughts about it.
+  The original distribution, (as I&amp;rsquo;ve said) is a personalized version of Linpus Lite.</description>
+    </item>
+    
+    <item>
       <title>Yahoo: A declining star (II)</title>
       <link>http://gonzalo.f-v.es/posts/2008-11-19-yahoo-declining-star-ii/</link>
       <pubDate>Wed, 19 Nov 2008 18:00:00 +0000</pubDate>
@@ -383,16 +393,6 @@ I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I
       <guid>http://gonzalo.f-v.es/posts/2012-05-02-my-first-mobile-application/</guid>
       <description>I&#39;m learning some technologies. I&#39;m tempted to write new, but they&#39;re not new. I&#39;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
 Some other day I&#39;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
-    </item>
-    
-    <item>
-      <title>Netbook Operating Systems</title>
-      <link>http://gonzalo.f-v.es/posts/2012-08-16-netbook-operating-systems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/posts/2012-08-16-netbook-operating-systems/</guid>
-      <description>A few months ago I got a new Acer Aspire One A110. It&#39;s an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9&#39;&#39; screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I&#39;ve been testing several Netbook OS and I wanted to share my thoughts about it.
-The original distribution, (as I&#39;ve said) is a personalized version of Linpus Lite.</description>
     </item>
     
     <item>
