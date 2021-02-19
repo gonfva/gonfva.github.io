@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>got ya on Gonzalo&#39;s thoughts</title>
+    <link>http://gonzalo.f-v.es/categories/got-ya/</link>
+    <description>Recent content in got ya on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Gonzalo Fernandez-Victorio, 2008-2021</copyright>
+    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/got-ya/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dock disappeared in MacOS Catalina</title>
+      <link>http://gonzalo.f-v.es/posts/2019-10-16-dock-disappeared-in-macos-catalina/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
+      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
+Well, here I am, to help you before Apple does.
+Open a terminal.
+ How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+    </item>
+    
+    <item>
+      <title>Metadata abuse in AWS</title>
+      <link>http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/</guid>
+      <description>A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
+    </item>
+    
+    <item>
+      <title>Configuration in AWS is difficult</title>
+      <link>http://gonzalo.f-v.es/posts/2019-09-02-configuration-in-aws-is-difficult/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2019-09-02-configuration-in-aws-is-difficult/</guid>
+      <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
+When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.
+What follows is just one example I found on the Internet (i.</description>
+    </item>
+    
+    <item>
+      <title>Trivial error with Bitbucket API</title>
+      <link>http://gonzalo.f-v.es/posts/2018-10-13-trivial-error-with-bitbucket-api/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2018-10-13-trivial-error-with-bitbucket-api/</guid>
+      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
+Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…
+The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
+    </item>
+    
+    <item>
+      <title>AWS CloudWatch alarms</title>
+      <link>http://gonzalo.f-v.es/posts/2018-02-21-aws-cloudwatch-alarms/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2018-02-21-aws-cloudwatch-alarms/</guid>
+      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
+You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more.</description>
+    </item>
+    
+    <item>
+      <title>AWS ELB in Apache logs</title>
+      <link>http://gonzalo.f-v.es/posts/2016-09-14-aws-elb-in-apache-logs/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2016-09-14-aws-elb-in-apache-logs/</guid>
+      <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
+ Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (I)</title>
+      <link>http://gonzalo.f-v.es/posts/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
+      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions).</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (II)</title>
+      <link>http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
+      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt).</description>
+    </item>
+    
+    <item>
+      <title>I was sure it was my fault...</title>
+      <link>http://gonzalo.f-v.es/posts/2014-02-27-i-was-sure-it-was-my-fault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-02-27-i-was-sure-it-was-my-fault/</guid>
+      <description>... but it wasn&#39;t. In the last week or so, I&#39;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time)&amp;nbsp;trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&#39;t found too much information, I&#39;ve decided to put it in writing.</description>
+    </item>
+    
+    <item>
+      <title>Jetty</title>
+      <link>http://gonzalo.f-v.es/posts/2014-07-12-jetty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-07-12-jetty/</guid>
+      <description>Lately I&#39;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &#34;correlation does not equal causation&#34;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &#34;</description>
+    </item>
+    
+    <item>
+      <title>Mantis on SQL Server</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-mantis-on-sql-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-mantis-on-sql-server/</guid>
+      <description>[Technical post]
+I&#39;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&#39;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
+    </item>
+    
+    <item>
+      <title>More Mantis problems</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/</guid>
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&#39;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&#39;ve discovered something quite shocking: I wasn&#39;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
+    </item>
+    
+    <item>
+      <title>Notes to a newbie spring-mvc developer</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
+      <description> Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt;
+&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt;
+&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
+Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
+    </item>
+    
+    <item>
+      <title>OptionalDataException while reading JMS message</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-24-optionaldataexception-while-reading-jms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-24-optionaldataexception-while-reading-jms/</guid>
+      <description>We&#39;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
+In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+    </item>
+    
+    <item>
+      <title>PDOException</title>
+      <link>http://gonzalo.f-v.es/posts/2014-04-24-pdoexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-04-24-pdoexception/</guid>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory
+The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Savon.rb and sequences</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-savonrb-and-sequences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-savonrb-and-sequences/</guid>
+      <description>As I wrote in my last post, I&#39;ve recently learned it is important to be able to show what you&#39;ve been doing. So&amp;nbsp;I&#39;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&#39;t want to fill the information twice.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
+      <description>These days I&#39;m getting very proud of myself. I&#39;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&#39;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
+One of those topics has been Xerces and Xalan.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+    </item>
+    
+    <item>
+      <title>Tipping point</title>
+      <link>http://gonzalo.f-v.es/posts/2014-03-12-tipping-point/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-03-12-tipping-point/</guid>
+      <description>I&#39;m happy.&amp;nbsp;
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+    </item>
+    
+    <item>
+      <title>Weird IE9 bug</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-30-weird-ie9-bug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-30-weird-ie9-bug/</guid>
+      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+    </item>
+    
+    <item>
+      <title>Xerces and Xalan: Recipes for the win</title>
+      <link>http://gonzalo.f-v.es/posts/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&#39;t use System.setProperty to resolve them. In this post I wan&#39;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as&amp;nbsp;one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+
+In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+  </channel>
+</rss>

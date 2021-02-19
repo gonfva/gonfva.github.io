@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer on Gonzalo&#39;s thoughts</title>
+    <link>http://gonzalo.f-v.es/categories/developer/</link>
+    <description>Recent content in Developer on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Gonzalo Fernandez-Victorio, 2008-2021</copyright>
+    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dock disappeared in MacOS Catalina</title>
+      <link>http://gonzalo.f-v.es/posts/2019-10-16-dock-disappeared-in-macos-catalina/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
+      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
+Well, here I am, to help you before Apple does.
+Open a terminal.
+ How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+    </item>
+    
+    <item>
+      <title>Metadata abuse in AWS</title>
+      <link>http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/</guid>
+      <description>A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
+    </item>
+    
+    <item>
+      <title>Configuration in AWS is difficult</title>
+      <link>http://gonzalo.f-v.es/posts/2019-09-02-configuration-in-aws-is-difficult/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2019-09-02-configuration-in-aws-is-difficult/</guid>
+      <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
+When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.
+What follows is just one example I found on the Internet (i.</description>
+    </item>
+    
+    <item>
+      <title>Trivial error with Bitbucket API</title>
+      <link>http://gonzalo.f-v.es/posts/2018-10-13-trivial-error-with-bitbucket-api/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2018-10-13-trivial-error-with-bitbucket-api/</guid>
+      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
+Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…
+The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
+    </item>
+    
+    <item>
+      <title>AWS CloudWatch alarms</title>
+      <link>http://gonzalo.f-v.es/posts/2018-02-21-aws-cloudwatch-alarms/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2018-02-21-aws-cloudwatch-alarms/</guid>
+      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
+You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more.</description>
+    </item>
+    
+    <item>
+      <title>“Serverless” in three minutes</title>
+      <link>http://gonzalo.f-v.es/posts/2017-02-16-serverless-in-three-minutes/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2017-02-16-serverless-in-three-minutes/</guid>
+      <description>Imagine you are interviewing some guy for an IT role and she says that he doesn’t get that of “going to the cloud because everybody knows there are no datacenters in the sky”.
+Everybody knows that cloud in cloud computing is just a name.
+However, it’s surprising how many people have a similar idea. You chat with someone in IT about “serverless” and she says something like “Serverless doesn’t make any sense.</description>
+    </item>
+    
+    <item>
+      <title>Switch off your servers</title>
+      <link>http://gonzalo.f-v.es/posts/2017-01-21-switch-off-your-servers/</link>
+      <pubDate>Sat, 21 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2017-01-21-switch-off-your-servers/</guid>
+      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.
+And in particular, that you can shut down your servers. And you should if they are not used.
+I knew the idea wasn’t strictly mine. What I didn’t know until I was preparing this post is that the idea came from Amazon’s CTO.</description>
+    </item>
+    
+    <item>
+      <title>A flow for containers</title>
+      <link>http://gonzalo.f-v.es/posts/2016-10-16-a-flow-for-containers/</link>
+      <pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2016-10-16-a-flow-for-containers/</guid>
+      <description>Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.
+Initially you can think it’s only two steps: build an deploy.
+But when you pass the cowboy stage, things get more complicated. You need to analyse, test and build the code. You need to build the container with the new executable inside. You need to push the registry. And then you need to deploy the code, with potentially additional tests.</description>
+    </item>
+    
+    <item>
+      <title>AWS ELB in Apache logs</title>
+      <link>http://gonzalo.f-v.es/posts/2016-09-14-aws-elb-in-apache-logs/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2016-09-14-aws-elb-in-apache-logs/</guid>
+      <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
+ Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+    </item>
+    
+    <item>
+      <title>Self-healing software</title>
+      <link>http://gonzalo.f-v.es/posts/2016-02-19-self-healing-software/</link>
+      <pubDate>Fri, 19 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2016-02-19-self-healing-software/</guid>
+      <description>7 am in the morning. Some notifications in the mailbox and on Slack.
+Big demo today and part of the system had gone down.
+And had gone back up too. With no human intervention.
+On closer examination, there were some wrinkles pending (we’ve learnt of them today). But on the whole, the system had responded great to an unplanned problem.
+Yes, I know for sure that it’s nothing extraordinary. That’s what the cloud, availability zones, auto-scaling groups, clusters, or containers are for.</description>
+    </item>
+    
+    <item>
+      <title>Deploying docker</title>
+      <link>http://gonzalo.f-v.es/posts/2016-02-06-deploying-docker/</link>
+      <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2016-02-06-deploying-docker/</guid>
+      <description>“Thou shall not pass” “docker exec, lets install wireshark”This is my account of some experiences deploying docker (or should I say messing/faffing with docker). The path has not yet finished, but I wanted to share our experience in case it can help others.
+Linking Docker containers Yeah, there are many other different technologies for deployment. But containers were “hot” and “the future”. Don’t get me wrong, I do think containers are the new processes.</description>
+    </item>
+    
+    <item>
+      <title>Mobile apps</title>
+      <link>http://gonzalo.f-v.es/posts/2016-01-30-mobile-apps/</link>
+      <pubDate>Sat, 30 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2016-01-30-mobile-apps/</guid>
+      <description>Platform stats for the UKWe’re recruiting a Product Manager for our team, and this week we’ve been doing some interviews. One of the recurrent topics in those interviews has been mobile apps.
+The usual response from the candidate was: Why would you need a mobile app? What do you need from the device that pure web couldn’t provide? The usual candidate response was shared with many (most) of my colleagues in the team.</description>
+    </item>
+    
+    <item>
+      <title>A different Scala is possible</title>
+      <link>http://gonzalo.f-v.es/posts/2015-12-19-a-different-scala-is-possible/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-12-19-a-different-scala-is-possible/</guid>
+      <description>Scala, for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.
+Scala is getting some traction in the enterprise world because of its features, but lately because it’s used in Spark: the tool of choice in many Big Data projects.
+My experience Like many other people in the Scala world, I have some Java knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Love your users</title>
+      <link>http://gonzalo.f-v.es/posts/2015-10-19-love-your-users/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-10-19-love-your-users/</guid>
+      <description>A few years ago, I was leading a small team in charge of developers’ tools and framework. We discovered a bug, and the easiest way to solve it was to make a change in a different piece of functionality that wasn’t technically right, but was being heavily used. The functionality had security issues, specially if improperly used, and it provided a shortcut to the proper way to do things.
+So we had some discussion among team members, but it seemed a no-brainier.</description>
+    </item>
+    
+    <item>
+      <title>Agile is not Standups</title>
+      <link>http://gonzalo.f-v.es/posts/2015-10-03-agile-is-not-standups/</link>
+      <pubDate>Sat, 03 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-10-03-agile-is-not-standups/</guid>
+      <description>Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
+However, as in many of these events, the better part was meeting people. And the good part about being too self-conscious and shy for proper speaking is that you listen a lot.
+And you hear guy A explaining to guy B how he’s working in developing a new feature for a startup and it’s going to take 4 months of a bunch of people, with no feedback involved until the big bang deployment.</description>
+    </item>
+    
+    <item>
+      <title>DevOps is so 2010. NoOps is the future</title>
+      <link>http://gonzalo.f-v.es/posts/2015-09-04-devops-is-so-2010-noops-is-the-future/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-09-04-devops-is-so-2010-noops-is-the-future/</guid>
+      <description>Cup cake or fairy cake. It doesn’t matter as long as we know what we meanTechnology moves so quickly that people who work in it are always at risk of being obsolete. You learn something new, thinking it’s going to be the next big thing and five years later it’s old and no longer used.
+It’s also a trend that reinforces itself. You need to be in the know if you want to stay somehow relevant.</description>
+    </item>
+    
+    <item>
+      <title>Agile is about managing risk</title>
+      <link>http://gonzalo.f-v.es/posts/2014-10-04-agile-is-about-managing-risk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-10-04-agile-is-about-managing-risk/</guid>
+      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the&amp;nbsp;highest priority. Anyway, a few days ago I found this tweet: MVP explained via @smarty pic.twitter.com/hZkCzqytAP
+— About Programming (@abt_programming) September 28, 2014 I showed the picture to my wife, and I tried to explain it to her.</description>
+    </item>
+    
+    <item>
+      <title>Calisthenics</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-03-calisthenics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-03-calisthenics/</guid>
+      <description>I didn&#39;t know about object calisthenics. They are a set of rules to help develop better: 1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
+    </item>
+    
+    <item>
+      <title>Crash course on Spring MVC, transactions and persistence (I)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-10-01-crash-course-on-spring-mvc-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-10-01-crash-course-on-spring-mvc-transactions/</guid>
+      <description>A couple of weeks ago I was asked to do an assignment for a selection process. The task was trivial for expected 2-3 hours, and mentioned that the final project would end as a Web Application based on Spring and Hibernate. So I decided to do it as a full application. I didn&#39;t want to copy code from work as a template, but I wanted to do it as a fresh project.</description>
+    </item>
+    
+    <item>
+      <title>Developers - The neverending story</title>
+      <link>http://gonzalo.f-v.es/posts/2015-01-31-developers-neverending-story/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-01-31-developers-neverending-story/</guid>
+      <description>A year ago I vaguely new something about Scala. Today I&#39;m not an expert, but I&#39;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
+
+I&#39;m far from an expert in any of those technologies. But I work with all of them.&amp;nbsp;
+Not bad for a year.</description>
+    </item>
+    
+    <item>
+      <title>Developers are from Mars, users from Venus</title>
+      <link>http://gonzalo.f-v.es/posts/2015-01-02-developers-are-from-mars-users-from/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-01-02-developers-are-from-mars-users-from/</guid>
+      <description>From 2008 to 2012, I was the project manager of a project with very special users. The kind of project was in the field of digital signature for the Spanish Government. I was in charge not only of acting as a Product Owner (determine features and priorities), but also provided telephone support (second point of contact, that in fact used to be first). The main group of users where well-educated, high-ranked with lots of responsibility in their own field, but non-technical.</description>
+    </item>
+    
+    <item>
+      <title>Faking the console in Ruby </title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-23-faking-console-in-ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-23-faking-console-in-ruby/</guid>
+      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine. But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console. And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec.</description>
+    </item>
+    
+    <item>
+      <title>I was sure it was my fault...</title>
+      <link>http://gonzalo.f-v.es/posts/2014-02-27-i-was-sure-it-was-my-fault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-02-27-i-was-sure-it-was-my-fault/</guid>
+      <description>... but it wasn&#39;t. In the last week or so, I&#39;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time)&amp;nbsp;trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&#39;t found too much information, I&#39;ve decided to put it in writing.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s great when your idea is a good one. But...</title>
+      <link>http://gonzalo.f-v.es/posts/2014-02-26-its-great-when-your-idea-is-good-one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-02-26-its-great-when-your-idea-is-good-one/</guid>
+      <description>Since I came to London, more than a year ago, I&#39;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
+
+I did a quick search and I couldn&#39;t find anything.</description>
+    </item>
+    
+    <item>
+      <title>Javascript all the way</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-16-javascript-all-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-16-javascript-all-way/</guid>
+      <description>These days I&#39;m playing with NodeJS.
+And today I was thinking about the fundamental change in Javascript.
+A few years ago it was a darn language for the web.
+Now someone could query a database using Javascript (CouchDB), create the server portion of a web application using Javascipt(NodeJS), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium).</description>
+    </item>
+    
+    <item>
+      <title>Jetty</title>
+      <link>http://gonzalo.f-v.es/posts/2014-07-12-jetty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-07-12-jetty/</guid>
+      <description>Lately I&#39;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &#34;correlation does not equal causation&#34;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &#34;</description>
+    </item>
+    
+    <item>
+      <title>Little robot (I)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-17-little-robot-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-17-little-robot-i/</guid>
+      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style. IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy&amp;nbsp;programming&amp;nbsp;tasks that show if somebody is able to code (it seems many of us can&#39;t), and what&#39;s his/her style. Another similar tool would be online testing web applications such as codility.&amp;nbsp;My opinion of codility is mixed.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (II): Java version</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-19-little-robot-ii-java-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-19-little-robot-ii-java-version/</guid>
+      <description>As I wrote in a previous post, I was asked to&amp;nbsp;design a software managing a robot inside a board of 5x5 cells. The typical commands were
+
+PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F
+MOVE -&amp;gt;Move the robot 1 cell in the facing direction
+LEFT -&amp;gt;Changes the facing&amp;nbsp;counter-clockwise
+RIGHT -&amp;gt;Changes the facing clockwise
+REPORT -&amp;gt;Shows the current position and facing
+and the main requirement was that the robot didn&#39;t fall outside the board.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (III): Dependency inversion</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-24-little-robot-iii-dependency-inversion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-24-little-robot-iii-dependency-inversion/</guid>
+      <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&#39;t consider dependy inversion. Sometimes a higher level class A has to invoke methods in a lower&amp;nbsp;level class.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (IV): Ruby version</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-26-little-robot-iv-ruby-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-26-little-robot-iv-ruby-version/</guid>
+      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent. One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself. Anyway it was clear that Java version was considerably more verbose. So one obvious improvement is using symbols instead of string.</description>
+    </item>
+    
+    <item>
+      <title>Mantis on SQL Server</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-mantis-on-sql-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-mantis-on-sql-server/</guid>
+      <description>[Technical post]
+I&#39;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&#39;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
+    </item>
+    
+    <item>
+      <title>More Mantis problems</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-more-mantis-problems/</guid>
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&#39;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&#39;ve discovered something quite shocking: I wasn&#39;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
+    </item>
+    
+    <item>
+      <title>Multithreading: Warning lights</title>
+      <link>http://gonzalo.f-v.es/posts/2014-01-21-multithreading-warning-lights/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-01-21-multithreading-warning-lights/</guid>
+      <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&#39;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&#39;t help it was my first experience working with a Mac. At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.</description>
+    </item>
+    
+    <item>
+      <title>My first Chrome extension(I)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensioni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensioni/</guid>
+      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information. However, after surfing a bit, the inevitable, &#34;become a registered member&#34; started to bug me. And I got tired. And I remembered FT similar &#34;become a registered&#34; and WSJ &#34;first-paragraph-only&#34;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
+    </item>
+    
+    <item>
+      <title>My first Chrome extension(II)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensionii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensionii/</guid>
+      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension. First. The Chrome Extensions&amp;nbsp;developer&#39;s documentation is quite good. Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
+    </item>
+    
+    <item>
+      <title>Notes to a newbie spring-mvc developer</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
+      <description> Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt;
+&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt;
+&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
+Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
+    </item>
+    
+    <item>
+      <title>Optimizing</title>
+      <link>http://gonzalo.f-v.es/posts/2014-06-08-optimizing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-06-08-optimizing/</guid>
+      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application. After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization: Measure 
+You cannot optimize if you don&#39;t know what do you need to optimize.</description>
+    </item>
+    
+    <item>
+      <title>OptionalDataException while reading JMS message</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-24-optionaldataexception-while-reading-jms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-24-optionaldataexception-while-reading-jms/</guid>
+      <description>We&#39;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
+In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+    </item>
+    
+    <item>
+      <title>Rails in Ubuntu</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-23-rails-in-ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-23-rails-in-ubuntu/</guid>
+      <description>I&#39;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&#39;re starting with ubuntu, here comes a piece of advice. There is some controversy about editor to use for ruby. Some people prefer Vim+tmux, which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
+    </item>
+    
+    <item>
+      <title>React-native: some context and a few wrinkles</title>
+      <link>http://gonzalo.f-v.es/posts/2015-04-26-react-native-some-context-and-few/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2015-04-26-react-native-some-context-and-few/</guid>
+      <description>React native is a way to build iOS applications using Javascript. The idea is not radically new, since you are probably aware of PhoneGap/Cordova and others like that. I myself played with something similar long time ago. The interesting thing is that React native follows the steps on ReactJS, a Javascript library that provides wonderful performance in updating the DOM. It also moves towards CSS into Javascript. You may think &#34;</description>
+    </item>
+    
+    <item>
+      <title>Savon.rb and sequences</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-savonrb-and-sequences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-savonrb-and-sequences/</guid>
+      <description>As I wrote in my last post, I&#39;ve recently learned it is important to be able to show what you&#39;ve been doing. So&amp;nbsp;I&#39;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&#39;t want to fill the information twice.</description>
+    </item>
+    
+    <item>
+      <title>Scala: First impressions</title>
+      <link>http://gonzalo.f-v.es/posts/2014-06-08-scala-first-impressions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-06-08-scala-first-impressions/</guid>
+      <description>A couple of months ago I started working for a different company. I&#39;m quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala. It&#39;s uncommon to get a programming job when you don&#39;t know the syntax of the programming language used. But if you really think about it, it&#39;s much better to hire somebody passionate about technology and that really loves to learn (and commit) than somebody that knows the language but doesn&#39;t give a d***mn.</description>
+    </item>
+    
+    <item>
+      <title>Spring course</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-30-spring-course/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-30-spring-course/</guid>
+      <description>I&#39;m attending this week to a Spring Framework course. It&#39;s a very small class: the teacher, my boss and me. I don&#39;t consider myself slow, and neither is my boss. No, he doesn&#39;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&#39;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
+    </item>
+    
+    <item>
+      <title>The best eclipse tip ever</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-14-the-best-eclipse-tip-ever/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-14-the-best-eclipse-tip-ever/</guid>
+      <description> How to disable auto close for the XML comments. Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing. </description>
+    </item>
+    
+    <item>
+      <title>The synchronized silver bullet</title>
+      <link>http://gonzalo.f-v.es/posts/2013-08-30-synchronized-silver-bullet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2013-08-30-synchronized-silver-bullet/</guid>
+      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those&amp;nbsp;occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the&amp;nbsp;beginning), was something like &#34;Let&#39;s put synchronized to the method&#34;</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
+      <description>These days I&#39;m getting very proud of myself. I&#39;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&#39;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
+One of those topics has been Xerces and Xalan.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+    </item>
+    
+    <item>
+      <title>Tipping point</title>
+      <link>http://gonzalo.f-v.es/posts/2014-03-12-tipping-point/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2014-03-12-tipping-point/</guid>
+      <description>I&#39;m happy.&amp;nbsp;
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+    </item>
+    
+    <item>
+      <title>Weird IE9 bug</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-30-weird-ie9-bug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-30-weird-ie9-bug/</guid>
+      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+    </item>
+    
+    <item>
+      <title>Why LinkedIn breach is so important?</title>
+      <link>http://gonzalo.f-v.es/posts/2012-08-16-why-linkedin-breach-is-so-important/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-08-16-why-linkedin-breach-is-so-important/</guid>
+      <description>It&#39;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised. We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&#39;t quite protected (they weren&#39;t salted). My own password was on the file and had been &#34;</description>
+    </item>
+    
+    <item>
+      <title>Xerces and Xalan: Recipes for the win</title>
+      <link>http://gonzalo.f-v.es/posts/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&#39;t use System.setProperty to resolve them. In this post I wan&#39;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/posts/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/posts/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as&amp;nbsp;one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+
+In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+  </channel>
+</rss>

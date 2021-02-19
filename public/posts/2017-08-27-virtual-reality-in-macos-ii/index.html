@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Virtual Reality in macOS (II) | Gonzalo&#39;s thoughts</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.
+It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote. Not sure today, but three weeks ago I couldn’t find anywhere in the Internet what to buy, how to make it work, and what to expect.">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Virtual Reality in macOS (II)" />
+<meta property="og:description" content="TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.
+It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote. Not sure today, but three weeks ago I couldn’t find anywhere in the Internet what to buy, how to make it work, and what to expect." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gonzalo.f-v.es/posts/2017-08-27-virtual-reality-in-macos-ii/" />
+<meta property="article:published_time" content="2017-08-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-08-27T00:00:00+00:00" /><meta property="og:site_name" content="Gonzalo&#39;s thoughts" />
+<meta itemprop="name" content="Virtual Reality in macOS (II)">
+<meta itemprop="description" content="TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.
+It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote. Not sure today, but three weeks ago I couldn’t find anywhere in the Internet what to buy, how to make it work, and what to expect.">
+<meta itemprop="datePublished" content="2017-08-27T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2017-08-27T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2058">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Virtual Reality in macOS (II)"/>
+<meta name="twitter:description" content="TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.
+It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote. Not sure today, but three weeks ago I couldn’t find anywhere in the Internet what to buy, how to make it work, and what to expect."/>
+
+      
+    
+	<link rel="stylesheet" href="/css/main.css" />
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Gonzalo&#39;s thoughts
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+<a href="https://twitter.com/gonfva" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/gonzalofernandezvictorio/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://gonzalo.f-v.es/posts/2017-08-27-virtual-reality-in-macos-ii/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://gonzalo.f-v.es/posts/2017-08-27-virtual-reality-in-macos-ii/&amp;text=Virtual%20Reality%20in%20macOS%20%28II%29" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://gonzalo.f-v.es/posts/2017-08-27-virtual-reality-in-macos-ii/&amp;title=Virtual%20Reality%20in%20macOS%20%28II%29" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Virtual Reality in macOS (II)</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2017-08-27T00:00:00Z">August 27, 2017</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><strong>TLDR;</strong> VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn <strong>a lot</strong>. This post explains my experience.</p>
+<p>It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote. Not sure today, but three weeks ago I couldn’t find <strong>anywhere</strong> in the Internet what to buy, how to make it work, and what to expect.</p>
+<p>When I finally managed to set up everything, the result was so anti-climatic that I thought I had done something wrong and asked for official support (and they replied!!!)</p>
+<p>Things are slowly maturing in the software front. But the experience is still of a being pioneer.</p>
+<p>So I thought that I should write a post with the things I would have liked to read a month ago. Including the probably-trivial-but-unknown-to-me stuff. In fact the idea for this article came before the one for <a href="https://medium.com/@gonfva/virtual-reality-in-macos-i-2ee427b06055">part 1</a>.</p>
+<p>I will be speaking from memory (no notes), so please ask if you had questions and I will try to help. And don’t laugh at me too much.</p>
+<h3 id="buying">Buying</h3>
+<p>Let’s start with what to buy.</p>
+<p>There is no Oculus for Mac. <a href="https://developer.oculus.com/downloads/package/oculus-sdk-for-os-x/">There used to be but it’s no longer supported</a>. Your main option is <a href="https://www.vive.com/uk/product/">HTC </a>Vive.</p>
+<p>I went for an already expired <a href="https://blog.vive.com/us/2017/06/22/vive-jumps-on-steam-summer-sale-with-discounts-on-vive-hardware-and-software/">bundle</a> that included the devices, some games, some gift card to buy games in Steam a free month in VivePort. Apparently since then the price <a href="http://www.techradar.com/news/htc-vive-gets-a-massive-25-price-drop">has been reduced</a>.</p>
+<p>To clarify, Steam is kind of a Google Play or Apple store, but for games. You can pay and download games and “experiences”, traditional or VR, for Linux, Windows or Mac. And my understanding is that <a href="https://www.vrheads.com/steamvr-vs-viveport">Viveport is another take on the same idea</a>. For me the important part was that deal had a reduced price. I didn’t consider the bundle. And you shouldn’t either for now, since <strong>none of the games work in macOS</strong>. THERE ISN’T ANY GAME for VR in macOS in Steam. None. Zero. Zip.</p>
+<p>In the checkout process I got offered the option to buy a DisplayPort adapter. I didn’t buy it, because the connection in the iMac is USB-C. I bought instead <a href="https://www.amazon.co.uk/gp/product/B0727QQLV2/">this cable from Amazon</a>. It’s USB-C to HDMI 2.0. And it works perfectly. There are other HDMI 1.1 but I would go for the HDMI2. There are other HDMI2, but I haven’t tested.</p>
+<p>Side note. The experience <a href="https://www.vive.com/uk/product/">buying HTC Vive</a> was a bit crappy imo. After spending a substantial amount of money, if you don’t receive confirmation of the order in the first hour, you get a bit anxious. You know you put the email right because you checked it twice. And you know the order went through because your card was charged. So I contacted the company that hosts the shop (Digital River). Digital River replied some time later that they didn’t deal with HTC EMEA sales and I should contact HTC on a specific email. At that point I was in <strong>panic mode</strong>. Worse than spending an insane amount of money in one device is spend it and not receive it. Fortunately, mere 10 minutes after contacting HTC I received my confirmation email and I could breathe.</p>
+<p>And then I received my order relatively fast.</p>
+<p>Obviously, the experience buying the cable from Amazon, as good as always.</p>
+<p>With Apple, I went for the iMac 5k 27 inches, Core i5 with Radeon Pro 580 with 8GB and 16 GB RAM.</p>
+<p>Why that model? There are other iMac with a dedicated card, so I considered going for something less expensive. But then I read this <a href="https://www.apple.com/uk/imac/#ac-gf-label">footnote-6</a>:</p>
+<p><img src="/img/1*EU04jWnuw0o3XE6HpcM16Q.png" alt="">Requires macOS High Sierra 10.13 27-inch with Radeon Pro 580 recommended for 3D VR content creation and 360 video editing. Final Cut Pro X will add support for 360 video editing later this year.I considered going for the i7, but thought it didn’t worth it, but definitely upgraded RAM from default 8GB.</p>
+<p>Does it work with other models? I don’t know. This guy seems to have used <a href="https://developer.apple.com/development-kit/external-graphics/">Apple’s offer</a> to set an external GPU on a Macbook Pro</p>
+<blockquote>
+<p><a href="https://twitter.com/AnalyticMike/status/884774470262685698"></a>About the delivery from Apple, I’ve got mix-feelings. Delivery took about a week. But it was when I was told it would be at checkout. And everything went fine.</p>
+</blockquote>
+<h3 id="installing-the-devices">Installing the devices</h3>
+<p>There are no unboxing pictures. When preparing these notes I took a picture of the goggles (they are called <a href="https://en.wikipedia.org/wiki/Head-mounted_display">HMD</a>), the controllers and the box that connects everything.</p>
+<p><img src="/img/1*PPuXdQ5bUjOlkNlMQhxktg.jpeg" alt="">Goggles, controllers and boxAnd here is another picture of a base station (the system is called Lighthouse).</p>
+<p><img src="/img/1*tHjKZwHtiX8aGMubWOfD9Q.jpeg" alt="">Base station on a tripod. The tripod is not part of the bundle.There are some instructions to set everything up, you should follow them. It is worth pointing some notes though.</p>
+<ul>
+<li>The system has two parts. On one side you have the base stations that allow to track your movements. On the other, the goggles and the box.</li>
+<li>The goggles have a cable that connect it to the box. HTC is supposedly preparing a new device with <a href="https://www.vive.com/uk/product/standalone/">no cable, no mobile and no PC</a> for later this year.</li>
+<li>The box is connected to the computer and to the power. To the computer, use the cable USB-C to HDMI2 (“video”) and another cable (provided) for the USB.</li>
+<li>It may seem obvious. The box has similar sockets on both sides. Which one is in, which one is out? Tip. The cables in the googles have a little orange thingy and some of the sockets in the box have a little orange thingy.</li>
+<li>The base stations have a power cable, but they don’t need to be connected between them or to the computer.</li>
+<li>The base stations are recommended to be placed at opposite corners of the room (and fixed to the wall or ceiling). But I have them temporary situated on the same side of the room on both sides of my computer. I will fix them to the wall in the future. Another detail is that they need visual line of the floor.</li>
+</ul>
+<h3 id="installing-the-operating-system">Installing the operating system</h3>
+<p>In the mentioned footnote 6 in the presentation of the iMac, you could read that VR requires “macOS High Sierra 10.13”.</p>
+<p>High Sierra is currently in Beta. But it is public Beta, so you can <a href="https://beta.apple.com/sp/betaprogram/">join the program</a>. After you’ve joined, you will receive access to the new version High Sierra.</p>
+<p>A small issue is that you’re told to run macOSPublicBetaAccessUtility. Not sure if still relevant (I reported it in Beta 3 and we are in Beta 7), but if you try to install macOS High Sierra Beta without previously running the program, you will get a not very helpful message “Installation of macOS could not continue. Installation requires downloading important content”</p>
+<p><img src="/img/1*Kb5XpW0opxqTTOazOncnXw.png" alt="">Not very helpfulAlso the new operating system comes with a new Filesystem format. Apparently adapting programs to that format is not a trivial effort and initially there were many crashes (I couldn’t launch Garage Band until beta4 came in)</p>
+<p>In general the OS works, but you have to be very tolerant. The other day a new version auto installed (beta 6) and the boot process afterwards wouldn’t complete (the usual macOS loading thingy was all night). I had to do a hard shut-down.</p>
+<p>But things keep improving.</p>
+<h3 id="installing-the-vr-driver">Installing the VR “driver”</h3>
+<p>There is no such thing as a driver for HTC Vive. But almost everything VR related will require to have <strong>SteamVR</strong> installed. It’s sort of a control panel with multiple options.</p>
+<p>The installation of SteamVR is very well explained in <a href="https://steamcommunity.com/games/250820/announcements/detail/1256915122285021922">this post</a></p>
+<p>Basically you first need need to <a href="http://store.steampowered.com/about/">install Steam</a> including creating an account. And then install SteamVR beta.</p>
+<p>The part on Firefox needs another post. Basically <strong>unusable</strong>.</p>
+<p>Word of caution: SteamVR is a beta. It works, <em>most of the time</em>. But options such us “Update firmware” or “Camera” (to name just a couple) won’t work. Sometimes you change something that needs to restart the headset. It will crash, and you will need to quit the app in macOS and restart it again. Sometimes your desktop won’t shutdown because SteamVR is running (I think it was something in the early betas, because I no longer feel the same). Sometimes SteamVR is not running and you see your goggles start showing strange red squares or just get hot. Unplug your HMD if not using it for now. And be patient my friend.</p>
+<p><img src="/img/1*kOazb1QtOz_31QVL9MRkBw.png" alt="">Rebooting VIVE### Calibrating the room</p>
+<p>Once your base stations are setup and SteamVR installed, you need to configure the <a href="https://uploadvr.com/vive-vs-oculus-rift-touch-roomscale/">layout of the room, available area and position of base station</a>.</p>
+<p>I cannot remember if it launched automatically the first time. If not, once you have SteamVR installed, you can select it from the menu.</p>
+<p><img src="/img/1*2M51qHsJODvoTD31YaJ1Fg.png" alt="">Menu in SteamVR for Room SetupThat launches a wizard, very easy to follow</p>
+<p><img src="/img/1*Z_b4pRv064PvYPyNHSQCvw.png" alt="">Room setup### Anticlimax</p>
+<p>So you’ve connected everything, and you’ve installed everything. You’ve calibrated the room. You launch Steam, you launch SteamVR. You put your goggles on and you get something that it was tricky to describe. It was like an empty white room, or seeing an igloo from inside. Yes, it was fully immersive. You really feel inside.</p>
+<p>But empty.</p>
+<p>At one point I read the word holodeck from Start Trek and that was the best way to describe.</p>
+<p>I googled a lot, but I couldn’t get it described. In fact I stumbled the below picture while preparing this article but not searching for it. But I was about to just describe it (because there is no obvious way to take a picture of it)</p>
+<p><img src="/img/1*AnJbdvuxIYHs_WNVYRstVQ.png" alt="">Picture taken from <a href="http://www.tomshardware.co.uk/steamvr-interface-customization-options,news-52539.html">http://www.tomshardware.co.uk/steamvr-interface-customization-options,news-52539.html</a>In my device the image appears more whiteish than grey, but you get the idea.</p>
+<p>Also, in my experience, there are some additional blue lines. That is what’s called the chaperone, and basically gives you a reference of where you can move in your room (see calibrating room)</p>
+<p>Anyway, I was expecting to see a way to launch games inside the environment. Or a way to launch Steam Workshop (sort of virtual rooms that are available to download and experience)</p>
+<p>To the point that when I saw the white room I thought I had misconfigured something.</p>
+<p>And I wrote Steam support. And they replied!!!</p>
+<p><img src="/img/1*gajVpAGrjFAbzCFl6ZwQFw.png" alt="">At one point I even contacted HTC support…And they said “What you describe is the extent of SteamVR on Mac at the moment. […] the SteamVR Dashboard and SteamVR Home have not yet been added to the Mac version of SteamVR […]”</p>
+<p>By the way, two things to note.</p>
+<ul>
+<li>Yes, you can have your own “real life glasses” inside the goggles. You’re encouraged to.</li>
+<li>Yes, initially You may feel sick after looking too much into the goggles. Especially if you don’t set the interpupillary distance correctly.</li>
+</ul>
+<h3 id="programming">Programming</h3>
+<p>I will dedicate another post in this series to programming (not that I’m an expert, just my experience).</p>
+<p>But I didn’t want any reader that has gotten so fast to leave this post without a proper experience of VR.</p>
+<p>I think the easiest way to have something worth of a VR experience in macOS is to install a <a href="https://unity3d.com/unity/beta">beta version of Unity</a>.</p>
+<p>Once you have Unity beta installed, create a new project. It doesn’t matter the name</p>
+<p><img src="/img/1*5TuNKXTDG3RW9GrAKo0iug.png" alt="">And then go to <a href="https://www.assetstore.unity3d.com/en/#!/content/51519">this page</a>, open with Unity and import the assets into your empty project, selecting everything by default.</p>
+<p>Click on File-&gt; Build Settings and you will get a new window</p>
+<p><img src="/img/1*oO4R22rXIotv5A6WOhmcGw.png" alt="">Build settingsClick on “Player Settings …” and in the right hand side you will get multiple options.</p>
+<p>In the Other Settings select “Metal editor support experimental”</p>
+<p><img src="/img/1*HtTHXlO4xSelmcty_825RA.png" alt="">Metal editor supportAnd in XR, make sure VR is enabled and OpenVR SDK is loaded</p>
+<p><img src="/img/1*QTEB7JtQd1M68ak5-4kC3A.png" alt="">XR SettingsAnd click on Build and Run. Everything by default, and you will get to VR Samples.</p>
+<p>Things to note: Fire button for these games is <a href="https://docs.unity3d.com/Manual/OpenVRControllers.html">button 1 in this graphic</a>. And button back is the ESC key in your keyboard.</p>
+<p>If you want to stop the game, CMD+Q is your friend.</p>
+<p><img src="/img/1*xLWUai8Sou53LyqZo59JGg.png" alt="">Finally something worth of the VR label.### Conclusion</p>
+<p>I hope this post helps people in the same situation I was a month ago. Please, ping me if you land in this page and there is something confusing or unclear. I’ll do my best to help.</p>
+<p>As I mentioned at the beginning. VR on Mac is still beta. This is not an <a href="https://medium.com/@SkarredGhost/we-must-stop-thinking-vr-as-innovators-420e18ee4862">early adopter experience</a>. This early innovator.</p>
+<p>But as I mentioned in the previous post, I perceive this is the moment to jump in.</p>
+<p>Exciting!!!</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gonzalo.f-v.es/" >
+    &copy;  Gonzalo Fernandez-Victorio, 2008-2021 2021 
+  </a>
+    <div>
+
+
+
+
+<a href="https://twitter.com/gonfva" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://www.linkedin.com/in/gonzalofernandezvictorio/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
