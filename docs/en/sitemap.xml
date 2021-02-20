@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://gonzalo.f-v.es/blog/</loc>
+    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://gonzalo.f-v.es/es/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://gonzalo.f-v.es/blog/"
+                />
+  </url>
+  
+  <url>
     <loc>http://gonzalo.f-v.es/categories/</loc>
     <lastmod>2020-03-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -18,7 +33,7 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2020-03-15-coronavirus-in-the-uk/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</loc>
     <lastmod>2020-03-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,21 +83,6 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://gonzalo.f-v.es/es/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://gonzalo.f-v.es/posts/"
-                />
-  </url>
-  
-  <url>
     <loc>http://gonzalo.f-v.es/tags/</loc>
     <lastmod>2020-03-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -103,7 +103,7 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2019-10-16-dock-disappeared-in-macos-catalina/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</loc>
     <lastmod>2019-10-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,17 +113,17 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2019-09-03-metadata-abuse-in-aws/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</loc>
     <lastmod>2019-09-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2019-09-02-configuration-in-aws-is-difficult/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</loc>
     <lastmod>2019-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-11-18-demophilus-wrote-this/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</loc>
     <lastmod>2018-11-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -133,12 +133,12 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-10-13-trivial-error-with-bitbucket-api/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</loc>
     <lastmod>2018-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-07-07-daily-lessons-from-london-trains/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,12 +153,12 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-05-25-king-george-iii-and-the-rebellion/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the-rebellion/</loc>
     <lastmod>2018-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-05-23-launching-a-business-why/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-05-23-launching-a-business-why/</loc>
     <lastmod>2018-05-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-05-18-why-i-m-not-considering-your-role/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</loc>
     <lastmod>2018-05-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -193,227 +193,227 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-05-12-google-duplex-and-robocalls/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-05-12-google-duplex-and-robocalls/</loc>
     <lastmod>2018-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2018-02-21-aws-cloudwatch-alarms/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-10-30-bad-recruitment-example-323234/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</loc>
     <lastmod>2017-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-09-12-jack-ma-and-laughing-at-ourselves/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-09-12-jack-ma-and-laughing-at-ourselves/</loc>
     <lastmod>2017-09-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-08-27-virtual-reality-in-macos-ii/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-08-27-virtual-reality-in-macos-ii/</loc>
     <lastmod>2017-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-08-12-virtual-reality-in-macos-i/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-08-12-virtual-reality-in-macos-i/</loc>
     <lastmod>2017-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-08-05-junior-php-developer/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-08-05-junior-php-developer/</loc>
     <lastmod>2017-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-07-22-bubble/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-07-22-bubble/</loc>
     <lastmod>2017-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-06-28-disruption-in-financial-services/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-06-28-disruption-in-financial-services/</loc>
     <lastmod>2017-06-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-06-14-netflix-against-the-user/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-05-17-when-the-cto-is-not-management/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-05-17-when-the-cto-is-not-management/</loc>
     <lastmod>2017-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-03-30-letsencrypt-paypal-and-selling-fear/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-03-30-letsencrypt-paypal-and-selling-fear/</loc>
     <lastmod>2017-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-03-01-thoughts-on-the-s3-outage/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-02-16-serverless-in-three-minutes/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-02-16-serverless-in-three-minutes/</loc>
     <lastmod>2017-02-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2017-01-21-switch-off-your-servers/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</loc>
     <lastmod>2017-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-10-16-a-flow-for-containers/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</loc>
     <lastmod>2016-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-10-04-fintech-dinosaurs-are-doomed/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-10-04-fintech-dinosaurs-are-doomed/</loc>
     <lastmod>2016-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-09-14-aws-elb-in-apache-logs/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</loc>
     <lastmod>2016-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-07-17-consumers-need-to-understand/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</loc>
     <lastmod>2016-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-07-15-i-hate-my-bank/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-07-15-i-hate-my-bank/</loc>
     <lastmod>2016-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-07-07-aws-summit-london-2016/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-07-07-aws-summit-london-2016/</loc>
     <lastmod>2016-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-06-26-chess-trading-and-bregret/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-06-26-chess-trading-and-bregret/</loc>
     <lastmod>2016-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-03-27-now-i-remember-why-i-left-security/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-03-27-now-i-remember-why-i-left-security/</loc>
     <lastmod>2016-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-03-20-snapchat-i-m-getting-old/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-03-20-snapchat-i-m-getting-old/</loc>
     <lastmod>2016-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-03-13-alphago-ai-and-philosophy/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-03-13-alphago-ai-and-philosophy/</loc>
     <lastmod>2016-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-02-19-self-healing-software/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</loc>
     <lastmod>2016-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-02-07-my-take-on-riptwitter/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-02-07-my-take-on-riptwitter/</loc>
     <lastmod>2016-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-02-06-deploying-docker/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-02-06-deploying-docker/</loc>
     <lastmod>2016-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-02-04-storytelling/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-02-04-storytelling/</loc>
     <lastmod>2016-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2016-01-30-mobile-apps/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2016-01-30-mobile-apps/</loc>
     <lastmod>2016-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-12-19-a-different-scala-is-possible/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-12-19-a-different-scala-is-possible/</loc>
     <lastmod>2015-12-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-12-12-the-netflix-of-books/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-12-12-the-netflix-of-books/</loc>
     <lastmod>2015-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-11-30-evolving-or-dying/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-11-30-evolving-or-dying/</loc>
     <lastmod>2015-11-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-11-28-prepare-for-fireos/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-11-28-prepare-for-fireos/</loc>
     <lastmod>2015-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-11-22-gifts/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-11-22-gifts/</loc>
     <lastmod>2015-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-10-19-love-your-users/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-10-19-love-your-users/</loc>
     <lastmod>2015-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-10-03-agile-is-not-standups/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</loc>
     <lastmod>2015-10-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-09-04-devops-is-so-2010-noops-is-the-future/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010-noops-is-the-future/</loc>
     <lastmod>2015-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-08-15-dear-recruiter/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-08-15-dear-recruiter/</loc>
     <lastmod>2015-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-06-06-banks-and-users/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-06-06-banks-and-users/</loc>
     <lastmod>2015-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-10-13-starting-over/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-10-13-starting-over/</loc>
     <lastmod>2010-10-13T18:14:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-03-29-more-mantis-problems/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</loc>
     <lastmod>2010-03-29T11:45:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-03-09-mantis-on-sql-server/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</loc>
     <lastmod>2010-03-09T11:45:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2009-09-03-god-help-us/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2009-09-03-god-help-us/</loc>
     <lastmod>2009-09-03T18:23:51+00:00</lastmod>
   </url>
   
@@ -423,22 +423,22 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2009-08-27-lies-damn-lies-and-statistics/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2009-08-27-lies-damn-lies-and-statistics/</loc>
     <lastmod>2009-08-27T22:02:34+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2009-08-20-new-years-resolutions-in-august/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2009-08-20-new-years-resolutions-in-august/</loc>
     <lastmod>2009-08-20T22:20:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2009-08-13-netbook-operating-systems/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2009-08-13-netbook-operating-systems/</loc>
     <lastmod>2009-08-13T22:01:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2009-05-26-what-can-i-do-for-my-country/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2009-05-26-what-can-i-do-for-my-country/</loc>
     <lastmod>2009-05-26T22:03:13+00:00</lastmod>
   </url>
   
@@ -448,37 +448,37 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2009-02-14-three-months-later/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2009-02-14-three-months-later/</loc>
     <lastmod>2009-02-14T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-19-yahoo-declining-star-ii/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-19-yahoo-declining-star-ii/</loc>
     <lastmod>2008-11-19T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-19-yahoo-declining-stari/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-19-yahoo-declining-stari/</loc>
     <lastmod>2008-11-19T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-16-gmail-and-future/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-16-gmail-and-future/</loc>
     <lastmod>2008-11-16T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-12-day-skype-died-revisited/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-12-day-skype-died-revisited/</loc>
     <lastmod>2008-11-12T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-11-day-skype-died/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-11-day-skype-died/</loc>
     <lastmod>2008-11-11T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-10-mobuzztv/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-10-mobuzztv/</loc>
     <lastmod>2008-11-10T18:00:00+00:00</lastmod>
   </url>
   
@@ -488,49 +488,49 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-07-jobs/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-07-jobs/</loc>
     <lastmod>2008-11-07T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2008-11-04-what-is-this/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</loc>
     <lastmod>2008-11-04T18:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-a-great-experience-applying-to-position/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-a-great-experience-applying-to-position_14/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-03-15-acquisitions/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-10-04-agile-is-about-managing-risk/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-06-08-android-443-sony-xperia-u/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-bad-experiences/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-05-24-budget-deficit/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-05-24-budget-deficit/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-03-calisthenics/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-03-calisthenics/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-08-30-changes/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-08-30-changes/</loc>
   </url>
   
   <url>
@@ -538,115 +538,115 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-16-civil-service-in-spain-job-security/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-17-civil-service-in-spain-productivity/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-25-civil-service-how-to-improve/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-12-01-civil-service-why-me/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-02-03-community-managers-day-after/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-11-11-companies-developers-and-recruitment/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-copyright-protection/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-25-corruption/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-25-corruption/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-10-01-crash-course-on-spring-mvc-transactions/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-10-01-crash-course-on-spring-mvc-transactions/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-01-31-developers-neverending-story/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-01-02-developers-are-from-mars-users-from/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-01-02-developers-are-from-mars-users-from/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-12-15-driving-in-uk/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-03-25-escrache/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-05-24-estimating-spanish-budget-deficit/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-05-24-estimating-spanish-budget-deficit/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-23-faking-console-in-ruby/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-23-faking-console-in-ruby/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-29-flying-flying-flying/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-12-31-future/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-12-31-future/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-05-09-good-examples/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-05-09-good-examples/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-30-google-where-are-you-going/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-12-25-happy-christmas/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-02-27-i-was-sure-it-was-my-fault/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-12-22-im-geek/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-07-19-ikea-vs-greenwich/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-02-26-its-great-when-your-idea-is-good-one/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-02-26-its-great-when-your-idea-is-good-one/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-javascript-all-way/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-javascript-all-way/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-07-12-jetty/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</loc>
   </url>
   
   <url>
@@ -654,23 +654,23 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-june-deficit-was-854/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-17-little-robot-i/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-19-little-robot-ii-java-version/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-24-little-robot-iii-dependency-inversion/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-26-little-robot-iv-ruby-version/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</loc>
   </url>
   
   <url>
@@ -682,55 +682,55 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-18-lots-of-old-friends/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-05-28-maximizing-macbook-pros-battery/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-01-21-multithreading-warning-lights/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensioni/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-14-my-first-chrome-extensionii/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-05-02-my-first-mobile-application/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-01-11-new-spanish-egovernment-law/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-01-11-new-spanish-egovernment-law/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-03-no-more-applets/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-notes-to-newbie-spring-mvc-developer/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-11-01-one-year/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-11-01-one-year/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-06-08-optimizing/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-24-optionaldataexception-while-reading-jms/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-04-24-pdoexception/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</loc>
   </url>
   
   <url>
@@ -742,131 +742,131 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-23-rails-in-ubuntu/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-04-26-react-native-some-context-and-few/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-04-26-react-native-some-context-and-few/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-12-15-relocating-to-london/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-12-15-relocating-to-london/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-savonrb-and-sequences/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-06-08-scala-first-impressions/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-scrum-for-myself/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-scrum-for-myself/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-30-some-thoughts-about-tecnimap-2010/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-02-06-spanish-budget-deficit-3q2012/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-3q2012/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-02-06-spanish-budget-deficit-what-if/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-what-if/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-30-spring-course/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-state-of-emergency-very-serious/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-state-of-emergency-very-serious/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-01-19-technical-tests/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-20-techzing-wives/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-14-the-best-eclipse-tip-ever/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-12-13-the-future-of-this-blog/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-12-21-the-most-popular-video-in-spain-this/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-12-21-the-most-popular-video-in-spain-this/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2010-11-14-passionate-programmer/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-14-passionate-programmer/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2011-08-01-rain-in-spaini/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2011-08-02-rain-in-spainii-government/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2011-08-02-rain-in-spainii-government/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2013-08-30-synchronized-silver-bullet/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-08-30-synchronized-silver-bullet/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-02-09-think-big/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-02-09-think-big/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2011-10-01-thoughts-about-death/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2014-03-12-tipping-point/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-30-weird-ie9-bug/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2015-01-06-what-recruiters-taught-me-about-looking/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-05-02-when-companies-just-dont-get-it/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-08-16-why-linkedin-breach-is-so-important/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-10-01-xerces-and-xalan-recipes-for-win/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</loc>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/posts/2012-09-23-xerces-xalan-and-saxon-more-recipes/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</loc>
   </url>
   
 </urlset>

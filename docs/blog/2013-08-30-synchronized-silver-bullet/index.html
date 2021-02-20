@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>The synchronized silver bullet | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The synchronized silver bullet" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "The synchronized silver bullet",
+      "headline" : "The synchronized silver bullet",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "0001",
+      "datePublished": "0001-01-01 00:00:00 \u002b0000 UTC",
+      "dateModified" : "0001-01-01 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2013-08-30-synchronized-silver-bullet\/",
+      "wordCount" : "394",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">The synchronized silver bullet</h1>
+            
+          </header>
+          <article class="post__content">
+              
+
+I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those&nbsp;occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the&nbsp;beginning), was something like "Let's put <b><i>synchronized</i></b> to the method". I explained why I thought it was a bad decision. But after some of these episodes, I used to think "how is it that people smart and competent in many aspects of Java, people from whom I learn lots day in day out, just don't get it".
+<br /><br />
+Today I was reading a book. And I've found <a href="http://books.google.es/books?id=Gu8-_b9AN8gC&amp;printsec=frontcover&amp;hl=es#v=onepage&amp;q=syncrhonized&amp;f=false" target="_blank">this</a>&nbsp;:
+<br /><br />
+<br /><span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span><br /><blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;<br />public class SequenceGenerator {<br />private String prefix;<br />private String suffix;<br />private int initial;<br />private int counter;<br />public SequenceGenerator() {}<br />public SequenceGenerator(String prefix, String suffix, int initial) {<br />this.prefix = prefix;<br />this.suffix = suffix;<br />this.initial = initial;<br />}<br />public void setPrefix(String prefix) {<br />this.prefix = prefix;<br />}<br />public void setSuffix(String suffix) {<br />this.suffix = suffix;<br />}<br />public void setInitial(int initial) {<br />this.initial = initial;<br />}<br />public synchronized String getSequence() {<br />StringBuffer buffer = new StringBuffer();<br />buffer.append(prefix);<br />buffer.append(initial + counter++);<br />buffer.append(suffix);<br />return buffer.toString();<br />}<br />}</span></blockquote>
+<br /><br />
+(mine is a newer version, but you get the point).
+<br /><br />
+Let me put it clear:&nbsp;Synchronized&nbsp;IS NOT A SILVER BULLET. Synchronized makes sure that code is executed only by one thread. But it doesn't make sure that fields(member-variables) used in that code are not modified in between.
+<br /><br />
+In particular, in this case, you could get a prefix, then other thread modifies the initial, a different thread modifies the suffix, and you get a real mess in your synchronized method.
+<br /><br />
+Many people could tell me "You're right, but the setters are not supposed to be invoked after the creation of the object". Then I have to tell two things:
+<br /><br />
+<ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol><br />And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
+<br /><br />
+By the way. A great book in the topic: <a href="http://www.jcip.net/" target="_blank">Java Concurrency in Practice</a>.
+<br /><br />
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2011-08-02-rain-in-spainii-government/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >The rain in Spain(II): Government</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

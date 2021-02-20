@@ -1,7 +1,7 @@
 baseURL = "http://gonzalo.f-v.es/"
 languageCode = "en-us"
-theme = "ananke"
-copyright = "Gonzalo Fernandez-Victorio"
+theme = "hugo-theme-codex"
+copyright = "© Gonzalo Fernandez-Victorio {year}"
 defaultContentLanguage = "en"
 publishDir = "docs"
 
@@ -14,7 +14,13 @@ publishDir = "docs"
   recent_posts_number = 5
   linkedin = "https://www.linkedin.com/in/gonzalofernandezvictorio/"
   twitter = "https://twitter.com/gonfva"
+  github = "https://github.com/gonfva"
+  iconOrder = ["Twitter", "GitHub", "LinkedIn"]
   env = "production"
+  showPageTitleInTOC = true
+  twitterSite = "@gonfva"
+  twitterAuthor = "@gonfva"
+  dateFormat = "2006-01-02"
 
 [languages]
   [languages.en]
@@ -26,3 +32,29 @@ publishDir = "docs"
     title = "Las cosas de Gonzalo"
     weight = 2
     contentDir = "content/es"
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+
+  # Set to false to disallow raw HTML in markdown files
+  [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  title = "About"
+  url = "/"
+
+[[menu.main]]
+  identifier = "blog-en"
+  name = "Blog EN"
+  title = "Blog"
+  url = "/blog"
+
+[[menu.main]]
+  identifier = "blog-es"
+  name = "Blog ES"
+  title = "Blog"
+  url = "/es/blog"

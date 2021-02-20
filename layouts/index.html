@@ -1,0 +1,41 @@
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
+
+{{ end }}
+
+{{ define "main" }}
+
+<div class="splash-container">
+  <div class="splash">
+    
+
+    <!-- Replace MEEEEE -->
+    <div class="inside_container">
+      <h1>Gonzalo Fernandez-Victorio<span class="fancy">.</span></h1>
+      <span class="handle">@gonfva</span>
+      <div>
+      <img class="gfv-pic" src="/img/GFV-m.jpg" alt="Gonzalo Fernandez-Victorio"/>
+      <p class="pic-left">I have more than 20 years of experience in Information Technology 
+        wearing many different hats: from purely technical as an engineer, 
+        to more product or people based, including requirements gathering, 
+        team leading and mentoring. I have worked for many different 
+        organisations: from NGO and startups to big international corporations 
+        in regulated environments and Government agencies. 
+        I try to stay abreast both in the technical field and in the business 
+        and innovation arena and I can prove that I'm able to quickly master 
+        very different technologies and make things work.</p>
+
+      <p>In the last few years I’ve been getting a focus in architecture 
+        and cloud and I hold an AWS Solutions Architect Associate certification.</p>
+      
+      <p>My core strength is my ability to innovate 
+        and provide “off-the-beaten-track” solutions. I have a very strong 
+        personal sense of service. As evidence of that, I have twice been asked 
+        by former employers to collaborate with them once more, years after resigning.</p> 
+      </div>
+    </div>
+    {{ partial "social-icons.html" .}}
+  </div>
+</div>
+
+{{ end }}

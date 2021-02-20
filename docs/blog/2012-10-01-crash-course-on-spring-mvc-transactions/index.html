@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Crash course on Spring MVC, transactions and persistence (I) | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Crash course on Spring MVC, transactions and persistence (I)" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Crash course on Spring MVC, transactions and persistence (I)",
+      "headline" : "Crash course on Spring MVC, transactions and persistence (I)",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "0001",
+      "datePublished": "0001-01-01 00:00:00 \u002b0000 UTC",
+      "dateModified" : "0001-01-01 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-10-01-crash-course-on-spring-mvc-transactions\/",
+      "wordCount" : "872",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Crash course on Spring MVC, transactions and persistence (I)</h1>
+            
+          </header>
+          <article class="post__content">
+              
+
+A couple of weeks ago I was asked to do an assignment for a selection process. The task was trivial for expected 2-3 hours, and mentioned that the final project would end as a Web Application based on Spring and Hibernate. So I decided to do it as a full application. I didn't want to copy code from work as a template, but I wanted to do it as a fresh project.
+<br /><br />
+If you are busy, go for the code&nbsp;<a href="https://github.com/gonfva/assignments/tree/master/gfvQuoteJava">here</a>.&nbsp;But for those moving from JEE to Spring and wanting a more in-depth explanation, here comes the long (as in two LOOOOOOOOONG posts) detail.<br /><div><br /></div><div>One of the main difficulties was managing the transactions. In particular I had lots of problems with transactions not being persisted, errors like "No Hibernate Session bound to thread, and configuration does not allow creation of non-transactional one here", and&nbsp;NonUniqueObjectException. I wanted to develop with @Transactional. Despite reading the documentation and lots of posts out there, I wasn't able to find explicit end to end functional code that helped me solve my own problems.
+<br /><br />
+Finally I managed to understand what was going on. And I've decided to&nbsp;write my personal <b>crash course on Spring MVC, transactions and persistence</b>. If you arrived here out of the blue, comments are very much appreciated.
+<br /><br />
+<h2><b><br /></b></h2><h2><b>Project creation</b></h2>OK. So you want a Spring Web application. Then first thing you should do is create a new web project. There are several alternatives for doing this. In Eclipse the two more obvious are 1.-you can create a Dynamic Web Project, or 2.-create a Maven Project. If you choose the former, you'll have to download and add lots of libraries to the Java Build Path, but you'll have a better understanding about the code. I started from a Maven Web Project. I think I chose a Maven Archetype from codehaus for spring and jboss but I don't really remember because later I tuned it.<br />Anyway here comes a list of dependencies I have in my project. Some of them come from the maven archetype I chose, so maybe not all are needed:<br /><ul><li>org.springframework.spring-asm</li><li>org.springframework.spring-aop</li><li>org.springframework.spring-expression</li><li>org.springframework.spring-beans</li><li>org.springframework.spring-context</li><li>org.springframework.spring-context-support</li><li>org.springframework.spring-tx</li><li>org.springframework.spring-core</li><li>org.springframework.spring-jdbc</li><li>org.springframework.spring-web</li><li>org.springframework.spring-orm</li><li>org.springframework.spring-webmvc</li><li>aopalliance.aopalliance</li><li>taglibs.standard</li><li>commons-logging.commons-logging</li><li>log4j.log4j</li><li>org.springframework.spring-asm</li><li>org.springframework.spring-aop</li><li>org.springframework.spring-expression</li><li>org.springframework.spring-beans</li><li>org.springframework.spring-context</li><li>org.springframework.spring-context-support</li><li>org.springframework.spring-tx</li><li>org.springframework.spring-core</li><li>org.springframework.spring-jdbc</li><li>org.springframework.spring-web</li><li>org.springframework.spring-orm</li><li>org.springframework.spring-webmvc</li><li>aopalliance.aopalliance</li><li>taglibs.standard</li><li>commons-logging.commons-logging</li><li>com.h2database.h2</li><li>junit.junit</li><li>org.springframework.spring-hibernate3</li><li>org.hibernate.javax.persistence.hibernate-jpa-2.0-api</li><li>commons-dbcp.commons-dbcp</li><li>commons-pool.commons-pool</li><li>org.hibernate.hibernate-annotations</li><li>jstl.jstl</li><li>org.springframework.spring-test</li><li>javax.transaction.jta</li></ul><h2><b><br /></b></h2><h2><b>The <i>web.xml</i></b></h2>As you well know, the file web.xml is essential for every web application as it maps URL patterns to Servlets, among many other things. This is my web.xml file
+<br /><br />
+<script src="https://gist.github.com/3811852.js?file=web.xml"></script> <br /><div>Things to note. Starting at the end of the file I declare a mapping between one servlet called "Spring MVC Servlet". The servlet, defined in lines 11-17, is of type org.springframework.web.servlet.DispatcherServlet and it takes one parameter named&nbsp;contextConfigLocation. That parameter points to a spring context file named spring-mvc-context.xml (we'll talk about it later).<br />One point interesting to note is that Spring Web application tend to have two spring-context file. One context-file is related to web (e.g. controllers) and is loaded from the servlet. This is spring-mvc-context.xml.<br />The other is loaded from a listener. A (servlet) listener acts on container events. In this case we load a &nbsp;listener called ContextLoaderListener (line 9). This listener is in charge of loading the other Spring context. It takes it route from a parameter called&nbsp;contextConfigLocation (lines 5-6).<br /><b>Warning</b>. You have two context-files <a href="http://stackoverflow.com/questions/9227657/web-application-context-root-application-context-and-transaction-manager-setup#comment11620776_9227900">BUT ONLY ONE CONTEXT</a>. The so called "web context" and "root context" are both part of the same context. You define servlet related things in the "web context" and the rest in the "root context". The web (servlet) context inherits form the "root" context.<br />So two contextConfigLocation. One for the listener, points in this case to&nbsp;spring-business-context.xml. The other for the servlet, points in this case to&nbsp;spring-mvc-context.xml.<br />What else? From lines 19-30 we load a filter. A filter, as you well know, is an artifact that sits in between the web and servlet and does something. In this case it is going to do something about transactions, but we'll talk about it later.<br /><h2><b><br /></b></h2><h2><b>The web-scoped context:&nbsp;spring-mvc-context.xml</b></h2>My web context in this case is quite short:
+<br /><br />
+<script src="https://gist.github.com/3811852.js?file=spring-mvc-context.xml"></script> As you can see there are 3 main groups:
+<br /><br />
+<ol><li>context:component-scan looks at the specified package for annotations to fill.</li><li>mvc:annotation-driven <a href="http://stackoverflow.com/questions/3977973/whats-the-difference-between-mvcannotation-driven-and-contextannotation#comment4256810_3978283">fills some magic</a> relating validation, json and so on.</li><li>InternalResourceViewResolver is a pretty standard way to point to where the JSP reside and the way they are named.</li></ol></div>Nothing very fancy, you see.<br /><h2><br /></h2><h2>The root context: spring-business-context.xml, part I</h2>Ahh. This is quite longer than the web context. Let's see.
+<br /><br />
+<script src="https://gist.github.com/3811852.js?file=spring-business-context.xml"></script> Here you are. In this post the easy part. Next post database, transactions and so on.
+<br /><br />
+First, again, (line 13) a component-scan for annotations in business objects. Beware. If you scan the same package/class in the root context and in the web context, you are screwed and will get some nasty errors.
+<br /><br />
+Second. Line 15. We are going to look for a file called spring.properties (anywhere in the classpath) and we are going to load it. It will help us to separate specific properties from the configuration.
+<br /><br />
+Third. Two bean definitions. Lines 51-56 for one bean, and lines 66-67 for other. The first one needs some properties we just loaded on line 15. The second bean I'm not absolutely sure I need. I think it needs to be here because I have two different beans that could match (one in src and one in test), and here I wanted to load one of them.
+<br /><br />
+That's it. The rest is persistence and transaction related. We'll leave it to the following post.</div><div><br /></div><div><br /></div><div><br /></div>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Developers - The neverending story</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2010-11-25-corruption/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Corruption</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>AWS CloudWatch alarms | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AWS CloudWatch alarms" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "AWS CloudWatch alarms",
+      "headline" : "AWS CloudWatch alarms",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2018",
+      "datePublished": "2018-02-21 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2018-02-21 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2018-02-21-aws-cloudwatch-alarms\/",
+      "wordCount" : "348",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">AWS CloudWatch alarms</h1>
+            <time datetime="2018-02-21 00:00:00 &#43;0000 UTC" class="post__date">2018-02-21</time> 
+          </header>
+          <article class="post__content">
+              
+<p>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.</p>
+<p>You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more. The alarm would be insufficient_data if zero in the last 5 minutes, or OK if 1 in the last 5 minutes.</p>
+<p>And the problem is the below “TreatMissingData”.</p>
+<pre><code>&quot;ELBMany500Alarm&quot;: {
+  &quot;Type&quot;: &quot;AWS::CloudWatch::Alarm&quot;,
+  &quot;Properties&quot;: {
+  &quot;Namespace&quot;: &quot;AWS/ApplicationELB&quot;,
+  &quot;AlarmName&quot;: { &quot;Fn::Join&quot; : [&quot;&quot;, [ { &quot;Ref&quot; : &quot;AWS::StackName&quot;}, &quot;-high5xx&quot;]]},
+  &quot;AlarmDescription&quot;: { &quot;Fn::Join&quot; : [&quot; &quot;, [ &quot;Too many 5xx errors in&quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot;}]]},
+  &quot;ComparisonOperator&quot;: &quot;GreaterThanThreshold&quot;,
+  &quot;Threshold&quot;: &quot;1&quot;,
+  &quot;EvaluationPeriods&quot;: &quot;5&quot;,
+  &quot;Period&quot;: &quot;60&quot;,
+  &quot;MetricName&quot;: &quot;HTTPCode\_Target\_5XX\_Count&quot;,
+  **&quot;TreatMissingData&quot;: &quot;notBreaching&quot;,**
+  &quot;Statistic&quot;: &quot;Sum&quot;,
+  &quot;OKActions&quot;: [],
+  &quot;AlarmActions&quot;: [ { &quot;Ref&quot;: &quot;NotificationARN&quot; } ],
+  &quot;Dimensions&quot;: [ {
+  &quot;Name&quot;: &quot;LoadBalancer&quot;,
+  &quot;Value&quot;: { &quot;Fn::GetAtt&quot; : [ &quot;LoadBalancer&quot; ,&quot;LoadBalancerFullName&quot;] }
+  }]
+}
+</code></pre>
+<p>You need to tell Cloudwatch that no errors is OK. Which is a bit counter-intuitive.</p>
+<p>So you start getting a bit nervous when you see in the web console that there are alarms with state INSUFFICIENT.</p>
+<p><img src="/img/1*iaXpA1Y7m_BsifhsuIc_LA.png" alt="">And you start wondering why your AWS managed ElasticSearch cluster inside your own VPC has the alarms with insufficient data.</p>
+<p>If you face something like that, consider if your dimensions are correctly defined.</p>
+<p>&ldquo;ESAlarmClusterRedHealth&rdquo;: {
+&ldquo;Type&rdquo;: &ldquo;AWS::CloudWatch::Alarm&rdquo;,
+&ldquo;Properties&rdquo;: {
+&ldquo;Namespace&rdquo;: &ldquo;AWS/ES&rdquo;,
+&ldquo;AlarmName&rdquo;: { &ldquo;Fn::Join&rdquo; : [&quot;&quot;, [ { &ldquo;Ref&rdquo; : &ldquo;AWS::StackName&rdquo;}, &ldquo;-hth-r&rdquo;]]},
+&ldquo;AlarmDescription&rdquo;: { &ldquo;Fn::Join&rdquo; : [&quot; &ldquo;, [ &ldquo;Cluster red in&rdquo;, { &ldquo;Ref&rdquo; : &ldquo;AWS::StackName&rdquo;}]]},
+&ldquo;ComparisonOperator&rdquo;: &ldquo;GreaterThanThreshold&rdquo;,
+&ldquo;Threshold&rdquo;: &ldquo;0&rdquo;,
+&ldquo;EvaluationPeriods&rdquo;: &ldquo;3&rdquo;,
+&ldquo;Period&rdquo;: &ldquo;60&rdquo;,
+&ldquo;MetricName&rdquo;: &ldquo;ClusterStatus.red&rdquo;,
+&ldquo;Statistic&rdquo;: &ldquo;Minimum&rdquo;,
+&ldquo;TreatMissingData&rdquo;: &ldquo;notBreaching&rdquo;,
+&ldquo;OKActions&rdquo;: [],
+&ldquo;AlarmActions&rdquo;: [ { &ldquo;Ref&rdquo;: &ldquo;NotificationARN&rdquo; } ],
+&ldquo;Dimensions&rdquo;: [ {
+&ldquo;Name&rdquo;: &ldquo;DomainName&rdquo;,
+&ldquo;Value&rdquo;: {&ldquo;Ref&rdquo;: &ldquo;ElasticsearchDomain&rdquo;}
+},
+<strong>{
+&ldquo;Name&rdquo;: &ldquo;ClientId&rdquo;,
+&ldquo;Value&rdquo;: {&ldquo;Ref&rdquo;: &ldquo;AWS::AccountId&rdquo;}
+}</strong>]
+}
+}It turns out that the DomainName is not enough, and you need to pass the ClientId too.</p>
+<p>You got the memo. Cloudwatch alarms in insufficient state are probably wrong.</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Bad recruitment example 323234</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2018-05-12-google-duplex-and-robocalls/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Google Duplex and robocalls</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

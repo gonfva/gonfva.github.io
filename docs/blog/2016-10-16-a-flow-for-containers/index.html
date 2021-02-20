@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>A flow for containers | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A flow for containers" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "A flow for containers",
+      "headline" : "A flow for containers",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2016",
+      "datePublished": "2016-10-16 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2016-10-16 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2016-10-16-a-flow-for-containers\/",
+      "wordCount" : "2027",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">A flow for containers</h1>
+            <time datetime="2016-10-16 00:00:00 &#43;0000 UTC" class="post__date">2016-10-16</time> 
+          </header>
+          <article class="post__content">
+              
+<h3 id="why">Why<a class="anchor" href="#why">#</a></h3>
+<p>One of the issues in a container-based architecture is how painful it is going from code to deployed containers.</p>
+<p>Initially you can think it’s only two steps: build an deploy.</p>
+<p>But when you pass the cowboy stage, things get more complicated. You need to analyse, test and build the code. You need to build the container with the new executable inside. You need to push the registry. And then you need to deploy the code, with potentially additional tests. And deploy tomany different environments.</p>
+<p>Those who have been playing with containers for some time will have built a workflow gluing different tools in a more or less brittle process. In my case, we have <em>gradle</em> tasks that have some of the logic, but we use a CI server (<a href="https://www.jetbrains.com/teamcity/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Teamcity</a>
+) that has all the build steps for different processes, including building and testing the source code, building and testing the container, pushing the container to a registry, and deploying and testing the container in an environment.</p>
+<p>The end result is we have a lot of logic about the workflow inside the CI, independent of the code. And the whole process is difficult to setup and painful to maintain. New different services end up needing a new build, a new deployment process.</p>
+<p>And your CI process is a mess.</p>
+<p>Whenever there is a pain, you end up having people providing a service that avoids it. In this case there are various different companies offering services to build, publish and deploy containers. The most promising is <a href="http://wercker.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Wercker</a>
+, but there are others such as <a href="https://app.shippable.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Shippable</a>
+ or even (not container focused) <a href="https://circleci.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>CircleCI</a>
+.</p>
+<p>I heard about them and, for unrelated reasons, I decided I was going to give Wercker a spin. It has a free tier, which allows you to experiment.</p>
+<h3 id="what">What<a class="anchor" href="#what">#</a></h3>
+<p>But what to deploy with Wercker? I use Scala at work, so probably it would had been easier to create a Scala project.</p>
+<p>Howeverm I’ve been trying to learn <a href="https://golang.org/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Go</a>
+ for some time, and I had never found time for it (not that I’m super-busy, just too many things to learn). So I thought it would be a good idea to play a bit with Go and create a new app in that language.</p>
+<p>I grabbed one <a href="https://golang.org/doc/articles/wiki/final.go" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>example for a wiki in Go</a>
+, and gave it a twist, modifying just enough to get a glimpse of the language. The <a href="https://github.com/gonfva/golang-wiki" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>code is not pretty</a>
+, and the functionality isn’t either (including all kind of security issues).</p>
+<p>But it was a way to get a sense of things I liked and things I didn’t like. I’ll leave for a future post my experience with Go.</p>
+<h3 id="where">Where<a class="anchor" href="#where">#</a></h3>
+<p>OK. I was going to deploy a new app in Go. But where should I deploy it?</p>
+<p>The power of Wercker is using external registries and deploying using an orchestrating tool such as <a href="http://kubernetes.io/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Kubernetes</a>
+ or <a href="https://aws.amazon.com/ecs/getting-started/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>ECS</a>
+.</p>
+<p><img src="/img/1*D-8W3k06zwRyMBKglKf4YQ.png" alt="">Creating a repo in DockerHubFor an external registry, I went for <a href="https://hub.docker.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>DockerHub</a>
+. DockerHub is free for public repositories. I have no experience with <a href="https://quay.io/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Quay</a>
+, although, from what I’ve heard it’s also widely used as a private registry.</p>
+<p>On the orchestration thing, not too much thinking either. As I’ve mentioned before, my company was in the process of <a href="https://medium.com/@gonfva/deploying-docker-29c459cfa6ab#.p9e8cf3bm" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>moving from CoreOS+fleet to Kubernetes</a>
+ so I have more experience with Kubernetes.</p>
+<p>But in its purest “<a href="http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>let’s shave the yak</a>
+” approach, I decided that it would be very cool to test the <a href="http://kubernetes.io/docs/getting-started-guides/kubeadm/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>new tool</a>
+ to build a new Kubernetes cluster, and do it in AWS. Yeah, it doesn’t matter there are easier ways for deploying <a href="http://kubernetes.io/docs/getting-started-guides/aws/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Kubernetes to AWS</a>
+.</p>
+<p>I wanted to be able to recreate the cluster many times. Therefore, in the end, I created an Ansible script. You can find the source code for that in <a href="https://github.com/gonfva/kubeadm-example" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this Github repo</a>
+, but, like the Go example, it is not something I would be proud of. The code is basically an implementation in Ansible of the things you can read in the <a href="http://kubernetes.io/docs/getting-started-guides/kubeadm/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>kubeadm page</a>
+, for my very specific case.</p>
+<h3 id="how">How<a class="anchor" href="#how">#</a></h3>
+<p>Once I had the Golang app running locally, and a Kubernetes cluster in AWS, it was time to start using Wercker.</p>
+<p><img src="/img/1*KaA4LBBpYZ5tKBUG8k3uvg.png" alt="">Login page in WerckerCreating an account is a doddle. You only need to choose username, email and password. Next you receive an email to activate your new account. You confirm the email by clicking on a link and that’s it.</p>
+<p>Or at least, that’s how it looks.</p>
+<p>After the first login, in the first page I chose “Create your first application”. The name is a bit confusing, because the subsequent page is a wizard to <em>connect to your code</em> repository.</p>
+<p>So you are not creating your first application, you’re setting up things.</p>
+<p>In that wizard there are three steps:</p>
+<ul>
+<li>Choose a repository: You need to tell where your code resides. Currently there are two options: Github and Bitbucket. So you click on connect and you are redirected to the typical OAuth process. After authentication, you get a list of repos where you can choose.</li>
+<li>Choosing your access: This is a bit confusing. But for public repositories, the recommended “Wercker will checkout the code without using SSH key” is the good one. “Public repo, move along” would be a better name.</li>
+<li>And you’re all done. No really third step.
+<img src="/img/1*JLth8fMdbGRCIjE-4-ZoBw.png" alt="">Choose a language to create a new templateAt this point, your app is created in Wercker’s terms.</li>
+</ul>
+<p>But you really are only connected to the code. You will need to really configure the application.</p>
+<p>Wercker is configured by putting a file with a specific name (<em>wercker.yml</em>) at the top folder of your source code.</p>
+<p>To create a first version of the file, you’re suggested some templates depending on the language the code is written in.</p>
+<p>So you create <em>wercker.yml</em>, you add it to your local copy of the repo, and you push to the external repo you’ve configured. Once you’ve pushed, Wercker automatically detects the change and triggers a build (since I hadn’t setup any hooks in github, I found it quite cool).</p>
+<p>But you wouldn’t be using Wercker if you only wanted to build a go project.</p>
+<p>Wercker’s power is in the flow with three main concepts:</p>
+<ul>
+<li>Steps: These are the definitions of the tasks that will be executed. They are written in the wercker.yml file. Steps can be quite complex things like spinning up a new Kubernetes cluster.</li>
+<li>Pipelines: These are some tasks linked together and glued with some environment variables. For example, the same deployment task may be used twice, once to deploy to an environment and another for a different environment. Or the build task to build a debug configuration or a release configuration.</li>
+<li>Workflow: This is a higher level of abstraction that chains and forks pipelines to build a flow for your code.
+So the first template we were suggested is not the default template. It only builds the code. We will need to add more things to see the real power.</li>
+</ul>
+<h4 id="build-my-container">Build my container</h4>
+<p>The first thing will be to build the container out of the executable.</p>
+<p>The template may be a bit confusing because it mentions containers but it doesn’t really build a container yet. It mentions containers because every step in Wercker goes through containers, allowing perfect isolation and reproducibility of your builds.</p>
+<p>But you still need to build the image.</p>
+<p>For many people, containers are like VM. You bundle the tools inside, and speaking from experience, it’s not uncommon to have 2 GB images rolling around. With Wercker you can create a <a href="http://devcenter.wercker.com/quickstarts/advanced/building-minimal-containers-with-go.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>container from scratch</a>
+. And since golang generates self-contained binaries, that’s super-easy: you only need to copy whatever you need to the folder &ldquo;$WERCKER_OUTPUT_DIR&rdquo;, and then use the task <a href="http://devcenter.wercker.com/docs/steps/internal-steps.html#scratch-push" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>internal/docker-scratch-push</a>
+, that <strong>both generates</strong> the image <strong>and pushes</strong> to a docker registry.</p>
+<p>The code added to push to my existing wercker.yml file was</p>
+<p>registry-push:
+box: google/golang
+steps:
+— internal/docker-scratch-push:
+username: $USERNAME
+password: $PASSWORD
+tag: $WERCKER_GIT_COMMIT
+ports: 8080
+repository: gonfva/golang-wiki
+registry: <a href="https://registry.hub.docker.com/v2">https://registry.hub.docker.com/v2</a>
+cmd: ./appDon’t forget to add the cmd parameter, because otherwise your container won’t know what to start (it’s obvious but it took me a while to notice why my containers weren’t starting)</p>
+<p>Once you do any change and push it, your application will be rebuilt. Also if you get an error, you will be notified via email.</p>
+<p>But registry-push is a new pipeline in Wercker’s terminology. And we need to register before using it. And we will need to define the environment variables that we used in the step.</p>
+<p>To do that, you need to go to your app in Wercker, go to the Workflow tab, and click on “Create pipeline”. Over there you will have to fill the same name twice (<em>registry-push</em> in this case). Once you’ve created the pipeline, you need to add the environment variables needed (in this case <em>$USERNAME</em> and <em>$PASSWORD</em>) After that is done, you need to add the newly created pipeline to your existing workflow and relaunch the build.</p>
+<h4 id="deploy-to-a-kubernetes-cluster">Deploy to a Kubernetes cluster.</h4>
+<p>We’ve built our code, we’ve created the container, we’ve pushed the container to Docker Hub. And then, finally, we want to deploy the container to my already launched kubernetes cluster.</p>
+<p>This took me a while because of three important issues.</p>
+<p><strong>Replication controllers and Services.</strong> The service is easy. It’s always the same file. So we create a file wiki-service.yml in the repo. But for the replication-controller we want to deploy a new version every time. In some examples you will see a builder. Another possibility is to have a template inside the code, but replace the variables using a step.</p>
+<ul>
+<li>script:
+name: create wiki-controller
+code: sed -i “s/WERCKER_GIT_COMMIT/$WERCKER_GIT_COMMIT/g” wiki-controller.jsonDon’t copy services or replication controllers from <a href="https://coreos.com/blog/building-minimal-containers-with-quay-kubernetes-wercker/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>existing examples</a>
+, because the apiVersion may not be valid.</li>
+</ul>
+<p><strong>Rolling updates</strong>. You’ve got your service and your replication controller. I tried to do a rolling update, but couldn’t make it work. There is an <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#kubectl-rolling-update" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>incompatibility issue among versions</a>
+. So I had to do a direct <em>kubectl apply.</em> The problem with direct update is that the replication controller gets updated but pods don’t. So you will need to kill the pods.</p>
+<p>The steps in my Wercker file were</p>
+<p>deploy:
+steps:</p>
+<ul>
+<li>kubectl:
+server: $KUBERNETES_MASTER
+token: $KUBERNETES_TOKEN
+insecure-skip-tls-verify: true
+command: apply -f wiki-service.json &ndash;validate=false- kubectl:
+server: $KUBERNETES_MASTER
+token: $KUBERNETES_TOKEN
+insecure-skip-tls-verify: true
+command: apply -f wiki-controller.json &ndash;validate=false<strong>Authentication.</strong> Most of the examples deploying to Kubernetes use username and password to access Kubernetes API server. But kubeadm (the system I used to create my cluster) doesn’t add the basic authentication module, so I was stuck with either token or certificate authentication.</li>
+</ul>
+<p>Wercker’s documentation at this point is frustrating. I couldn’t find any examples with certificate-based authentication. Not sure how, I discovered <a href="https://github.com/wercker/step-kubectl" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>you can pass some other options</a>
+ like <em>token</em>, <em>client-certificate</em> and <em>client-key</em> to the kubelet step. However the certificate parameters are not plain variables, but names of files.</p>
+<p>And I couldn’t make it work.</p>
+<p>But I managed to use the token parameter, passing the value you can find inside the cluster at the file <em>/etc/kubernetes/pki/tokens.csv</em>.</p>
+<p>As I mentioned before, you can find all the code for this post in <a href="https://github.com/gonfva/golang-wiki" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this repo for my golang wiki</a>
+ and also in my <a href="https://github.com/gonfva/kubeadm-example" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>repo for kubeadm cluster creation</a>
+.</p>
+<h3 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h3>
+<p>If you’ve read this far, you may perceive that yes, Wercker is cool, but nothing else.</p>
+<p>However, consider that with a file inside the repo, and some configuration about workflows and pipelines, you can go from code to deployed containers.</p>
+<p>Code to deployment, all the way.</p>
+<p>Wercker is more than <em>docker build</em> on the web. You may discover you no longer need your CI.</p>
+<p>Don’t get me wrong. There are some things that need some refinement. The documentation is a bit patchy. Sometimes you have to direct cluster manipulation to know what is happening. There are things you are required to do that could be automated. And I don’t feel comfortable giving usernames and passwords for services.</p>
+<p>But if you are just starting with containers, or simply you are not happy with your CI/CD pipeline, I <strong>strongly</strong> encourage you to take a deep look at Wercker. Even if you still feel the need to reinvent the wheel, you will learn a lot of very interesting things.</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2016-10-04-fintech-dinosaurs-are-doomed/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Fintech: Dinosaurs are doomed</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Switch off your servers</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

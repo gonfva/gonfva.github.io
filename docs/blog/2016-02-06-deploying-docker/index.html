@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Deploying docker | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Deploying docker" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Deploying docker",
+      "headline" : "Deploying docker",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2016",
+      "datePublished": "2016-02-06 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2016-02-06 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2016-02-06-deploying-docker\/",
+      "wordCount" : "1141",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Deploying docker</h1>
+            <time datetime="2016-02-06 00:00:00 &#43;0000 UTC" class="post__date">2016-02-06</time> 
+          </header>
+          <article class="post__content">
+              
+<p><img src="/img/1*iZmlaEIAEtXIzM75chqMlg.jpeg" alt="">“Thou shall not pass” “docker exec, lets install wireshark”This is my account of some experiences deploying docker (or should I say messing/faffing with docker). The path has not yet finished, but I wanted to share our experience in case it can help others.</p>
+<h4 id="linking-docker-containers">Linking Docker containers</h4>
+<p>Yeah, there are many other different technologies for deployment. But containers were “hot” and “the future”. Don’t get me wrong, I do think <a href="https://medium.com/@HasuraHQ/for-app-developers-an-introduction-to-kubernetes-and-containers-9e104336356d" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>containers are the new processes</a>
+.</p>
+<p>Almost from day one we used docker to deploy our software both in development and “production” (more as in user testing) environments. Initially it was quite ad-hoc: two web applications, a database and a search index. The whole process was deployed using ansible. Containers were linked together.</p>
+<p>It was painful at first. Particularly for those of us using docker in OSX. But <a href="http://12factor.net/dev-prod-parity" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>the pain was for a greater good</a>
+.</p>
+<p>At one point we had several servers, but each with its own copy of the stack. And a load balancer. That worked because our stack was largely immutable. Yes including the data. As part of the deployment process we would recreate the database and search index.</p>
+<h4 id="enter-coreos">Enter CoreOS</h4>
+<p>We then introduced authentication (don’t ask) And then, our infrastructure couldn’t be managed with a cluster of disposable independent stacks of containers. We needed to somehow manage a cluster. We did a quick research, and the consensus at that moment was <a href="https://coreos.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>CoreOS</a>
+.</p>
+<p>So we started introducing CoreOS using <a href="https://coreos.com/fleet/docs/latest/launching-containers-fleet.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>fleet</a>
+. We created feature services, we created presence services, we created discovery services, we used etcd, fleetctl, skydns, haproxy…</p>
+<p>Believe me if I tell you this is painful.</p>
+<p>Very painful.</p>
+<p>The cluster was able to work as a cluster of containers. But the system was hacky: we changed the ports in the web applications to avoid collisions, we removed dependencies because we couldn’t bootstrap the cluster otherwise, we had some front-end stuff that couldn’t live in the same machine even if there were no other constraints because of ports, the scripts were super coupled, upgrading/deploying was not for the faint of heart…</p>
+<h4 id="turning-point">Turning point</h4>
+<p>One day we discovered one of the nodes wasn’t working properly. We end up killing the node, and the autoscaling group (AWS) worked flawlessly creating a new node. The new node got added to the cluster, and fleet started adding containers to the new node. Everything worked fine.</p>
+<p>But upon investigating the old node, we started to get a bit upset with CoreOS. On the logs there were some <a href="https://github.com/coreos/rkt/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>rkt</a>
+ traces despite we were using docker exclusively. There were signs of a booting process without a record of it in the logs. There were also traces of auto-update connections despite <a href="https://coreos.com/os/docs/latest/update-strategies.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>we had disabled auto-update</a>
+. We had disabled auto-update because each update would render our client tools obsolete. We had done what the official docs say should be done to disable updates, but it hadn’t worked (probably a <em>Restart=always</em> in the service unit has something to say)</p>
+<p>It was a turning point, and we stop trusting our system.</p>
+<p>Everything was working. But suddenly everything looked too brittle. It was brittle before. It wasn’t really CoreOS/fleet fault.</p>
+<h4 id="kubernetes">Kubernetes???</h4>
+<p>I had discovered <a href="https://www.oreilly.com/events/velocity/devops-web-performance-2015/sessions/41818/new-ways-to-deploy-and-manage-applications-at-scale" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this presentation</a>
+. If you’ve read this far, you’re interested in this topic. Do watch it. And I really mean it.</p>
+<p>I knew there was some other way. So I started doing some research. And the number of available tools was overwhelming.</p>
+<ul>
+<li><a href="http://kubernetes.io/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Kubernetes</a>
+</li>
+<li>Hashicorp tools (Consul, serf, <a href="https://www.nomadproject.io/intro/vs/index.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>nomad</a>
+,vault, terraform)</li>
+<li><a href="https://mesosphere.github.io/marathon/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Mesos/Marathon</a>
+</li>
+<li><a href="https://docs.docker.com/swarm/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Docker swarm</a>
+</li>
+<li><a href="https://aws.amazon.com/ecs/details/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Amazon ECS</a>
+
+This is the point were past and present start mixing one another.</li>
+</ul>
+<p>We know fleet and etcdctl are very low level. And I was initially sold about Kubernetes. So I started focusing on Kubernetes. And what I’ve discovered is that</p>
+<ul>
+<li>It’s the tool that has all the community praise and all the push. It’s activity is brutal: fixes, contributors, new features. You watch the source code repo and the pipeline is absolutely automatized and frictionless. It gives you confidence that it’s Google backed, but it also has a huge and growing community behind.</li>
+<li>Has some very interesting concepts (pod, replication controller, service, namespace) and a declarative approach (infrastructure is code)</li>
+<li>Lacks some features I thought I was going to need. Like prerrequesites between containers. That was disappointing, but when something obvious is missing, you start thinking you should do things in the tool way not change the tool. In this case, pods are useful for that. But where do I define my environment configuration?</li>
+<li>And last but not least, I find it surprisingly <em>immature</em> (heretic !!!!). The default installation of a cluster has only one master node. Which means that if the master goes down, you’ve got a problem. Yes, I know that master down is not the same as cluster down (the cluster can keep working). And, yes, I know <a href="http://kubernetes.io/v1.1/docs/admin/high-availability.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>you can configure it in high availability</a>
+. But FFS, we’re talking about a tool that is supposed to be production ready. Same about secrets: compared to Vault from Hashicorp, secrets is a joke. Same with number of nodes.
+After the research on Kubernetes, I was tempted to move to Mesos+Marathon, much more mature, quite used, but depending on a specific company. Then I discovered hashicorp tools, again, super mature but depending on a specific company. And I found both of them a bit too cumbersome to set up a quick cluster.</li>
+</ul>
+<p>These decisions are difficult. Should I choose mature but risky or super active but not quite there?</p>
+<h4 id="building-cathedrals">Building cathedrals</h4>
+<p>Sometime ago I used heroku to deploy a Ruby on Rails to deploy a <a href="https://www.whendoigo.co.uk/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>side project</a>
+ of my own. The project was stalled but a few weeks ago I planned to revamp it. So I decided to self-host it. But I didn’t want to configure all the infrastructure for hot deployments and so on.</p>
+<p>So I decided to give a go to <a href="http://dokku.viewdocs.io/dokku/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>dokku</a>
+.</p>
+<p>It was really surprising to have something so painless to setup (3 hours, mostly fighting with my own SSL certificate) and update (git push) And yes, there are things like that <a href="http://deis.io/get-deis/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>for a cluster</a>
+.</p>
+<p>Not that we can use it at the office at this point.</p>
+<p>But we’ve dedicated too much effort to deployment at a point when we had very little to deploy. Sometimes <a href="https://medium.com/@gonfva/devops-is-so-2010-f9425d06261f#.4h672thsh" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>we in the startup world build our own heroku</a>
+.</p>
+<h4 id="final-thoughts">Final thoughts</h4>
+<p>There are many competing technologies. You need to bet. We haven’t decided yet, but we will probably go Kubernetes because it’s more active and there are some amazing features compared to what we have. We won’t use the default script that launches a cluster, but will pack the tools in master/minion images(vagrant/ami). So basically we will design your own cluster.</p>
+<p>But I remember when mongodb was cool and then it stopped being cool.</p>
+<p>Will we discover down the line that it wasn’t a good bet?</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2016-02-04-storytelling/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Storytelling</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2016-02-07-my-take-on-riptwitter/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >My take on #RIPTwitter</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
