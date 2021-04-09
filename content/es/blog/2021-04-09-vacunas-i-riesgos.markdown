@@ -26,7 +26,7 @@ A mediados de Diciembre escribí en [Twitter](https://twitter.com/gonfva/status/
 - Me encantaría recibir la vacuna lo antes posible. I recomendaré a mi madre que se la ponga
 - Todas las vacunas tienen riesgos. Estas vacunas utilizan técnicas nuevas, lo que implica un mayor riesgo.
 - Pero el riesgo generado por COVID es en mi opinión mucho mayor y merece la pena recibir la vacuna.
-- Innundar a la opinión pública con propaganda de que las vacunas no tienen riesgo y que tienen que ser obligatorias, es estúpido y tendrá el efecto contrario.
+- Inundar a la opinión pública con propaganda de que las vacunas no tienen riesgo y que tienen que ser obligatorias, es estúpido y tendrá el efecto contrario.
 
 Tengo que decir que 5 meses después, pienso exactamente igual.
 
@@ -42,21 +42,25 @@ Estas vacunas utilizan técnicas muy novedosas. Tan novedosas que hace unos mese
 
 Pero tienen riesgos.
 
-Porque todos los medicamentos en general tienen riesgos. Y algunos riesgos serán conocidos. Cuando te ponen la vacuna te cuentan los efectos secundarios. Pero otros no. Puedes hacer estudios clínicos de 40mil pacientes, pero probablemente no detectarás efectos adversos de 1 en 100 mil pacientes. Y puedes hacer estudios en tres meses, pero no sabemos los efectos en tres o en treinta años.
+Porque todos los medicamentos en general tienen riesgos. Y algunos riesgos serán conocidos. Cuando te ponen la vacuna te cuentan los efectos secundarios y oyes a los que se la han puesto antes que les duele el brazo o tienen fiebre.
 
-Pero además porque este bicho es muy puñetero. Para la mayor parte de las vacunas estamos codificando el "spike" (la llave/ganzúa) de un virus cuya característica principal es que encaja perfectamente en unos receptores muy específicos llamados ACE2 (la cerradura) en las células. ¿Debería sorpredenderme que algunos sistemas inmunes empiecen a liarse y a confundir llave/ganzúa con llave real y se dediquen a interferir con la llave real? **Ojo**, que eso **no quiere decir** que los efectos secundarios adversos (trombos en el cerebro y otros) tengan este origen. Pero intuitivamente parece razonable.
+Pero otros no. Puedes hacer estudios clínicos de 40 mil pacientes, pero probablemente no detectarás efectos adversos de 1 en 100 mil pacientes. Y puedes hacer estudios de tres meses, pero no sabemos los efectos en tres años o en treinta.
 
-Así que las vacunas tienen riesgos. Pero, pero, pero.
+Pero además este bicho es muy puñetero. Para la mayor parte de las vacunas estamos codificando el "spike" (la llave/ganzúa) de un virus cuya característica principal es que encaja perfectamente en unos receptores muy específicos llamados ACE2 (la cerradura) en las células con son utilizados en el funcionamiento normal del cuerpo (angiotensina). Es decir, vamos a crear llaves parecidas a la del bicho que a su vez es parecida a la llave normal del ser humano. No debería sorprender que algunos sistemas inmunes se alarmen y empiecen a liarse y a confundir nuestra llave (vacuna), con la llave real (angiotensina) y se dediquen a interferir con la angiotensina? **Ojo**, que eso **no quiere decir** que los efectos secundarios adversos (trombos en el cerebro y otros) tengan este origen. Pero intuitivamente no es descabellado.
 
-Los efectos de Covid, están ahí. Miles de muertos, gente en hospitales. Gente joven que muchos meses después de estar en el hospital (ni siquiere UCI) tiene que ir a terapia respiratoria. Gente que pasa el Covid en casa como una gripe y meses después deciden ir al médico porque todavía no se encuentran recuperados. Y efectos a largo plazo del Covid que todavía no conocemos. Si el sistema inmune se vuelve loco con las vacunas, es posible que también se vuelva loco con el bicho de verdad.
+Así que las vacunas tienen riesgos.
 
-Covid no es ninguna tontería.
+Pero, pero, pero.
+
+**Los efectos de Covid, están ahí**. Miles de muertos, gente en hospitales. Gente joven que muchos meses después de estar en el hospital (ni siquiere UCI) tiene que ir a terapia respiratoria. Gente que pasa el Covid en casa como una gripe y meses después deciden ir al médico porque todavía no se encuentran recuperados. Y efectos a largo plazo del Covid que todavía no conocemos. Si el sistema inmune se vuelve loco con las vacunas, es posible que también se vuelva loco con el bicho de verdad.
+
+**Covid no es ninguna tontería**.
 
 ### Comparando riesgos
 
 Hoy por hoy, con lo que sabemos, el riesgo por Covid es mucho mayor y más probable que los riesgos por las vacunas.
 
-Por lo que sabemos a día de hoy, ha habido alrededor de 90 casos graves en 25 millones de vacunados. Si alguna vez has tomado Enantyum, tu riesgo es mucho mayor de tener efecots como esos. Las mujeres que usan anticonceptivos orales tienen un riesgo mucho mayor de tener trombos.
+Por lo que sabemos a día de hoy, ha habido alrededor de 90 casos graves en 25 millones de vacunados. Si alguna vez has tomado Enantyum, tu riesgo es mucho mayor de tener trombos como esos. Las mujeres que usan anticonceptivos orales tienen un riesgo mucho mayor de tener trombos.
 
 Es frecuente responder que cuando tomas Enantyum lo necesitas, mientras que con la vacuna no estás enfermo cuando te la pones.
 
@@ -74,7 +78,7 @@ En riesgo medio, la situación va cambiando, pero todavía merece la pena
 ![](/img/AZ_harms-benefits_medium_exposure_8-4-21.width-800.png)
 _Comparación de vacuna respecto a posible contagio. [Winton Centre for Risk and Evidence Communication](https://wintoncentre.maths.cam.ac.uk/news/communicating-potential-benefits-and-harms-astra-zeneca-covid-19-vaccine/)_
 
-Pero en situación de riesgo bajo, contando con el posible contagio y sus efectos respecto a la vacuna y sus efectos, para los jóvenes la situación cambia. Y como en UK el riesgo está disminuyendo, esa es la razón por la que el gobierno británico ha cambiado la recomendación y va a dar otras vacunas a los jóvenes.
+Pero en situación de riesgo bajo, contando con el posible contagio y sus efectos respecto a la vacuna y sus efectos, para los jóvenes la situación cambia. Y como en UK el riesgo está disminuyendo, esa es la razón por la que el gobierno británico ha cambiado la recomendación y va a dar otras vacunas a los jóvenes (menores de 30 años)
 
 ![](/img/AZ_harms-benefits_low_exposure_8-4-21.width-800.png)
 _Comparación de vacuna respecto a posible contagio. [Winton Centre for Risk and Evidence Communication](https://wintoncentre.maths.cam.ac.uk/news/communicating-potential-benefits-and-harms-astra-zeneca-covid-19-vaccine/)_
