@@ -104,6 +104,8 @@ _Tomado de [Twitter](https://twitter.com/mianrey/status/1377324203297374211) _
 
 13. Mientras tanto la historia de la fábrica en Italia, la fábrica en Bélgica, dosis retenidas que iban a ir a UK pero luego resulta que eran para la UE. Un circo completo, para tapar una nefasta gestión, sobre todo de la UE, pero también de AstraZeneca.
 
+14. Un punto final. En UK, se ha decidido que entre la primera dosis y la segunda se dejen pasar 12 semanas en lugar de tres. Por dos razones. Primero y más importante porque si el cuello de botella es la disponibilidad de vacunas, y en el Reino Unido teníamos la variante inglesa y los hospitales a punto de colapsar, separando las dosis consigues vacunar con una dosis a más gente. Y en segundo lugar, AstraZeneca parece que recomendaba separar las dosis más de los 21 días. Al principio me pareció un error. Pero luego he leído que parece muy razonable. Buscaré enlace.
+
 Sigo teniendo presente el sesgo que explicaba al principio, pero me parece que
 
 1. A la UE le escuece que UK lo haya hecho mejor y ha decidido dar una patada a UK en el culo de sus mayores.

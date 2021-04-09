@@ -28,7 +28,7 @@ A mediados de Diciembre escribí en [Twitter](https://twitter.com/gonfva/status/
 - Pero el riesgo generado por COVID es en mi opinión mucho mayor y merece la pena recibir la vacuna.
 - Inundar a la opinión pública con propaganda de que las vacunas no tienen riesgo y que tienen que ser obligatorias, es estúpido y tendrá el efecto contrario.
 
-Tengo que decir que 5 meses después, pienso exactamente igual.
+Tengo que decir que 5 meses después, pienso exactamente igual (aunque ya he recibido una dosis)
 
 Vayamos por partes.
 
