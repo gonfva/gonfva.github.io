@@ -68,7 +68,7 @@ La mayoría de nosotros no manejamos bien las estadísticas. Creo que la mejor m
 
 Me voy a centrar en los de AstraZeneca.
 
-En situación de riesgo alto, contando con el posible contagio y sus efectos respecto a la vacuna y sus efectos, está claro lo que yo elegiría
+En situación de riesgo alto, contando con el posible contagio y sus efectos respecto a la vacuna y sus efectos, está claro lo que yo elegiría. Ojo que los 6.9 de los jóvenes no es de los que cogen el bicho. Es de la población total. Asumiendo un determinado tipo de riesgo de contagio y unas características de lo que puede pasar, en función de la edad. Pero para toda la población, no para los que se ponen malos.
 
 ![](/img/AZ_harms-benefits_high_exposure_8-4-21.width-800.png)
 _Comparación de vacuna respecto a posible contagio. [Winton Centre for Risk and Evidence Communication](https://wintoncentre.maths.cam.ac.uk/news/communicating-potential-benefits-and-harms-astra-zeneca-covid-19-vaccine/)_
