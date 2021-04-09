@@ -14,10 +14,10 @@ Como otras veces, no voy a difundir esto en redes sociales, así que, los que ll
 
 Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribir, me ha salido un artículo muy largo. Así que lo he partido en 4 partes.
 
-1. [Riesgos](2021-04-09-vacunas-i-riesgos.html)
-2. [Astrazeneca](2021-04-09-vacunas-ii-astrazeneca.html)
-3. [Sputnik](2021-04-09-vacunas-iii-sputnik.html)
-4. [Conclusión.](2021-04-09-vacunas-iv-conclusion.html) (este artículo)
+1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
+2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
+3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}})
+4. [Conclusión.]({{< relref "2021-04-09-vacunas-iv-conclusion" >}}) (este artículo)
 
 ---
 
