@@ -2,7 +2,7 @@
 layout: post
 title: "Vacunas (II): Astrazeneca"
 subtitle: Cuando todos lo hacen mal, pero unos peor que otros.
-date: 2021-04-09
+date: 2021-04-09T18:01:00
 categories:
   - News
 tags:
@@ -15,9 +15,9 @@ Como otras veces, no voy a difundir esto en redes sociales, así que, los que ll
 Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribir, me ha salido un artículo muy largo. Así que lo he partido en 4 partes.
 
 1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
-2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
-3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}}) (este artículo)
-4. [Conclusión.]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
+2. Astrazeneca (este artículo)
+3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}})
+4. [Conclusión]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
 
 ---
 

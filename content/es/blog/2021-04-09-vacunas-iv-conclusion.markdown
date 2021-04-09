@@ -2,7 +2,7 @@
 layout: post
 title: "Vacunas (IV): Riesgos"
 subtitle: Contra el coronavirus, lávate las manos y piensa
-date: 2021-04-09
+date: 2021-04-09T18:03:00
 categories:
   - News
 tags:
@@ -17,7 +17,7 @@ Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribi
 1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
 2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
 3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}})
-4. [Conclusión.]({{< relref "2021-04-09-vacunas-iv-conclusion" >}}) (este artículo)
+4. Conclusión (este artículo)
 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Vacunas (III): Sputnik-V"
 subtitle: De Guatemala a Guatepeor
-date: 2021-04-09
+date: 2021-04-09T18:02:00
 categories:
   - News
 tags:
@@ -16,14 +16,14 @@ Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribi
 
 1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
 2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
-3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}}) (este artículo)
-4. [Conclusión.]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
+3. Sputnik (este artículo)
+4. [Conclusión]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
 
 ---
 
-### Sputnik-V (la rusa)
+### Sputnik-V
 
-Sputnik-V es el nombre comercial de la vacuna rusa.
+Sputnik-V es el nombre comercial de la vacuna rusa más conocida, aunque hay otras vacunas rusas disponibles o en desarrollo.
 
 Como ya dije al hablar de tipos de vacunas, Sputnik-V es parecida a Astrazeneca. Simplificando mucho, un virus del catarro, que no se replica, y que tiene dentro información sobre cómo hacer parte del virus del Covid.
 
