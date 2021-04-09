@@ -15,7 +15,7 @@ Como otras veces, no voy a difundir esto en redes sociales, así que, los que ll
 Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribir, me ha salido un artículo muy largo. Así que lo he partido en 4 partes.
 
 1. Riesgos (este artículo)
-2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
+2. [AstraZeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
 3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}})
 4. [Conclusión.]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
 
@@ -34,7 +34,7 @@ Vayamos por partes.
 
 ### Riesgos
 
-Hoy es evidente percibir que las vacunas tienen riesgos. Algunos piensa que solo es Astrazeneca la que tiene riesgo. No queridos. TODAS las vacunas, como TODOS los medicamentos tienen riesgos.
+Hoy es evidente percibir que las vacunas tienen riesgos. Algunos piensa que solo es AstraZeneca la que tiene riesgo. No queridos. TODAS las vacunas, como TODOS los medicamentos tienen riesgos.
 
 Justo hoy 9 de abril sale la noticia de que [EMA está estudiando la vacuna de Jansen por trombos](https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-6-9-april-2021). Pfizer y Modernas probablemente tendrán investigaciones semejantes.
 
@@ -62,7 +62,7 @@ Es frecuente responder que cuando tomas Enantyum lo necesitas, mientras que con 
 
 La mayoría de nosotros no manejamos bien las estadísticas. Creo que la mejor manera de valorar el riesgo es con gráficos, y el "Winton Centre for Risk and Evidence Communication" tiene unos gráficos muy buenos.
 
-Me voy a centrar en los de Astrazeneca.
+Me voy a centrar en los de AstraZeneca.
 
 En situación de riesgo alto, contando con el posible contagio y sus efectos respecto a la vacuna y sus efectos, está claro lo que yo elegiría
 

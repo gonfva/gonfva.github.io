@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vacunas (II): Astrazeneca"
+title: "Vacunas (II): AstraZeneca"
 subtitle: Cuando todos lo hacen mal, pero unos peor que otros.
 date: 2021-04-09T18:01:00
 categories:
@@ -15,7 +15,7 @@ Como otras veces, no voy a difundir esto en redes sociales, así que, los que ll
 Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribir, me ha salido un artículo muy largo. Así que lo he partido en 4 partes.
 
 1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
-2. Astrazeneca (este artículo)
+2. AstraZeneca (este artículo)
 3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}})
 4. [Conclusión]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
 
@@ -31,13 +31,13 @@ El ARN mensajero es un libro de instruciones que en las células funciona como i
 
 En el caso de las vacunas de mRNA, lo que inyectan es trozos de ARN mensajero en el cuerpo. Normalmente el mRNA que no está dentro de las células, se degrada rápidamente. Pero con estas vacunas han inventado una técnica nueva que hace que no se degraden. Y las células empiezan a fabricar proteinas del virus. Pero no fabrican el virus completo, sino solo un trocito llamdo spike (la llave que el virus utiliza para entrar las células). Luego llega el sistema inmunitario, descubre spikes rondando por ahí y monta una respuesta inmune. Si en el futuro llega el virus de verdad, el sistema inmunitario reconoce la llave y lo ataca.
 
-El segundo tipo de vacunas es el que llaman Adenovirus recombinante. Que tiene un nombre terrorífico. Pero que básicamente te inyectan un virus de catarro que cuando entra en la célula no se replica sino que hace que la célula se ponga a fabricar spikes dl virus de COVID (SARS-Cov-2), que al igual que en el caso anterior, el sistema inmune reconocerá. Estas son las vacunas de Astrazeneca, Janssen y Sputnik.
+El segundo tipo de vacunas es el que llaman Adenovirus recombinante. Que tiene un nombre terrorífico. Pero que básicamente te inyectan un virus de catarro que cuando entra en la célula no se replica sino que hace que la célula se ponga a fabricar spikes dl virus de COVID (SARS-Cov-2), que al igual que en el caso anterior, el sistema inmune reconocerá. Estas son las vacunas de AstraZeneca, Janssen y Sputnik.
 
 Y luego están tambien, la imagen que tenemos todos de una vacuna tradicional es lo que llaman vacunas de [virus atenuado](https://en.wikipedia.org/wiki/COVID-19_vaccine#Inactivated_virus_vaccines). Hay varias de ese tipo, pero sobre todo son las chinas. Hay incluso una rusa. Y otra británica que se llama Valneva, que está en ensayos.
 
-### Astrazeneca
+### AstraZeneca
 
-Antes que nada. Yo he sido vacunado con Astrazeneca.
+Antes que nada. Yo he sido vacunado con AstraZeneca.
 
 ![](/img/IMG_20210305_115823240_HDR.jpg)
 _El dia de la vacuna, con mi pegatina de he sido vacunado_
@@ -46,7 +46,7 @@ Y además, tengo una vinculación especial con lo británico en general (vivo en
 
 Lo cual hace posible que tenga un sesgo a defender la vacuna ([disonancia cognitiva](https://es.wikipedia.org/wiki/Disonancia_cognitiva)). Creo que no, pero por si acaso.
 
-Como he dicho antes, la vacuna AstraZeneca utiliza "catarros especiales". La diferencia es que Astrazeneca utiliza virus de catarro en monos, mientras que Sputnik utiliza virus de catarro humano.
+Como he dicho antes, la vacuna AstraZeneca utiliza "catarros especiales". La diferencia es que AstraZeneca utiliza virus de catarro en monos, mientras que Sputnik utiliza virus de catarro humano.
 
 Me estoy imaginando ya los comentarios. "Yo prefiero virus humanos, no quiero virus de mono". El problema de los virus humanos es que estamos ya una cierta inmunidad, y cuando el cuerpo los detecta, los elimina, por lo que la parte de información sobre Covid no llega a hacer nada.
 
@@ -68,7 +68,7 @@ Y aquí entramos en la parte nefasta de la gestión por parte de muchos. A pesar
 
 4. El trial que hizo AstraZeneca fue nefasto. Parte de las personas recibieron [mitad de dosis](<https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32623-4/fulltext>) en la primera dosis. Sin pacientes en UK, se tuvo que ir a Brasil. Pocos pacientes mayores de 65 años.
 
-5. UE compró poco, tarde y barato. UK compró pronto, de muchos tipos de vacuna cuando todavía no se sabía si iban a funcionar, y caro. Con lo que se aseguró un suministro. Aunque para Astrazeneca iban a coste en teoría, a UK cada dosis le cuesta 3 dolares y a la UE 2.15.
+5. UE compró poco, tarde y barato. UK compró pronto, de muchos tipos de vacuna cuando todavía no se sabía si iban a funcionar, y caro. Con lo que se aseguró un suministro. Aunque para AstraZeneca iban a coste en teoría, a UK cada dosis le cuesta 3 dolares y a la UE 2.15.
 
 6. Además UK aprobó pronto la vacuna. En Diciembre empezó a vacunar con AstraZeneca. La UE aprobó tarde, en Febrero.
 
@@ -76,9 +76,9 @@ Y aquí entramos en la parte nefasta de la gestión por parte de muchos. A pesar
 
 8. Ojo. El problema de suministro de vacunas ha sido de gestión de la Comisión de la Unión Europea. No de España gobierno central ni autonómicos.
 
-9. Los problemas continuaron con la filtración a través de Handesblatt (un periódico alemán serio) de que Alemania no iba a aprobar la vacuna para mayores porque tenía una eficacia del 8%. Era [falso que la vacuna tuviera una eficia del 8%](https://fullfact.org/health/german-astrazeneca-8-percent-handelsblatt/). El problema es que los ensayos tenían pocos pacientes mayores de 65 años. Pero la vacuna era y es eficaz para mayores de 65 años.
+9. Los problemas continuaron con la filtración a través de Handesblatt (un periódico alemán serio) de que Alemania no iba a aprobar la vacuna para mayores porque tenía una eficacia del 8%. Era [falso que la vacuna tuviera una eficia del 8%](https://fullfact.org/health/german-AstraZeneca-8-percent-handelsblatt/). El problema es que los ensayos tenían pocos pacientes mayores de 65 años. Pero la vacuna era y es eficaz para mayores de 65 años.
 
-10. A partir de entonces, los países empezaron a utilizar Astrazeneca solo para menores de 60. La gente empieza a tener miedo. En Alemania el 55% y en Francia el 61% [piensan que la vacuna es insegura](https://www.reuters.com/article/us-health-coronavirus-astrazeneca-confid/european-trust-in-astrazeneca-covid-19-vaccine-plunges-poll-shows-idUSKBN2BE009) y no quieren ponérsela.
+10. A partir de entonces, los países empezaron a utilizar AstraZeneca solo para menores de 60. La gente empieza a tener miedo. En Alemania el 55% y en Francia el 61% [piensan que la vacuna es insegura](https://www.reuters.com/article/us-health-coronavirus-AstraZeneca-confid/european-trust-in-AstraZeneca-covid-19-vaccine-plunges-poll-shows-idUSKBN2BE009) y no quieren ponérsela.
 
 11. Sale lo de los trombos, y entonces paran la vacunación. Luego, después de una semana (como si no hubiera prisa) deciden no vacunar a los menores de 55. Mientras tanto en España, los mayores entre 70 y 79, uno de los tramos que más se beneficiaría son el grupo de edad menos vacunado
 
@@ -90,7 +90,7 @@ Y aquí entramos en la parte nefasta de la gestión por parte de muchos. A pesar
 70-79 —> 3,8%
 80+ —> 70,8%
 
-12. Sale un nuevo ensayo clínico de Astrazeneca en Estados Unidos. Al principio con eficacia 79%. Se publica una nota por parte de una agencia americana, diciendo que en los datos que han dado no han incluido los datos más recientes. Todo el mundo con la sospecha de que AstraZeneca está ocultando datos. Y resulta que cuando dan los datos definitivos, la eficiacia general baja al 76%, mientras que la eficia en personas mayores sube del 80% al 85%. O sea que unos y otros han alarmado a todo el mundo, y resulta que es una buena eficacia, y que es todavía mejor en personas mayores en las que no se quiere utilizar.
+12. Sale un nuevo ensayo clínico de AstraZeneca en Estados Unidos. Al principio con eficacia 79%. Se publica una nota por parte de una agencia americana, diciendo que en los datos que han dado no han incluido los datos más recientes. Todo el mundo con la sospecha de que AstraZeneca está ocultando datos. Y resulta que cuando dan los datos definitivos, la eficiacia general baja al 76%, mientras que la eficia en personas mayores sube del 80% al 85%. O sea que unos y otros han alarmado a todo el mundo, y resulta que es una buena eficacia, y que es todavía mejor en personas mayores en las que no se quiere utilizar.
 
 13. Mientras tanto la historia de la fábrica en Italia, la fábrica en Bélgica, dosis retenidas que iban a ir a UK pero luego resulta que eran para la UE. Un circo completo, para tapar una nefasta gestión, sobre todo de la UE, pero también de AstraZeneca.
 
@@ -98,6 +98,6 @@ Sigo teniendo presente el sesgo que explicaba al principio, pero me parece que
 
 1. A la UE le escuece que UK lo haya hecho mejor y ha decidido dar una patada a UK en el culo de sus mayores.
 
-2. Astrazeneca ha ido de chapuza en chapuza, impropio de una empresa internacional.
+2. AstraZeneca ha ido de chapuza en chapuza, impropio de una empresa internacional.
 
 3. No es descartable que nada de esto hubiera sucedido si no fuera la vacuna más barata.

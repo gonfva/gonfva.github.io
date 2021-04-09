@@ -15,7 +15,7 @@ Como otras veces, no voy a difundir esto en redes sociales, así que, los que ll
 Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribir, me ha salido un artículo muy largo. Así que lo he partido en 4 partes.
 
 1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
-2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
+2. [AstraZeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
 3. [Sputnik]({{< relref "2021-04-09-vacunas-iii-sputnik" >}})
 4. Conclusión (este artículo)
 
@@ -25,7 +25,7 @@ Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribi
 
 El cálculo de riesgos es algo personal. Todo tiene riesgo.
 
-Pero en mi opinión, si puedes ponerte una vacuna aprobada por la EMA (Agencia Europea del Medicamento), yo te recomendaría que te la pusieras. Si te ofrecen AstraZéneca también. Si te han vacunado con la primera dosis de AstraZeneca y te ofrecen la segunda de AstraZeneca, yo te recomendaría que te la pusieras. Si te ofrecen Jansen, yo te recomendaría que te la pusieras. Son vacunas seguras hasta donde sabemos, tener el Covid es mucho peor, y los que no puedan ponérsela dependen de nosotros para protección.
+Pero en mi opinión, si puedes ponerte una vacuna aprobada por la EMA (Agencia Europea del Medicamento), yo te recomendaría que te la pusieras. Si te ofrecen AstraZeneca también. Si te han vacunado con la primera dosis de AstraZeneca y te ofrecen la segunda de AstraZeneca, yo te recomendaría que te la pusieras. Si te ofrecen Jansen, yo te recomendaría que te la pusieras. Son vacunas seguras hasta donde sabemos, tener el Covid es mucho peor, y los que no puedan ponérsela dependen de nosotros para protección.
 
 Ha habido un cuello de botella en la fabricación. Pero previsiblemente habrá más dosis disponibles, que hará que Covid pase a ser una gripe anual de la que las personas mayores se vacunarán todos los años con la cepa más nueva, y el resto pillaremos una cada 5/10 años, una semana en casa y ya está. En mi opinión no va a desaparecer nunca. Pero, al menos en el primer mundo, el fin está cerca.
 

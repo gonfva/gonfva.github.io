@@ -15,7 +15,7 @@ Como otras veces, no voy a difundir esto en redes sociales, así que, los que ll
 Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribir, me ha salido un artículo muy largo. Así que lo he partido en 4 partes.
 
 1. [Riesgos]({{< relref "2021-04-09-vacunas-i-riesgos" >}})
-2. [Astrazeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
+2. [AstraZeneca]({{< relref "2021-04-09-vacunas-ii-astrazeneca" >}})
 3. Sputnik (este artículo)
 4. [Conclusión]({{< relref "2021-04-09-vacunas-iv-conclusion" >}})
 
@@ -25,9 +25,9 @@ Me han preguntado sobre Sputnik-V, la vacuna rusa. Cuando me he puesto a escribi
 
 Sputnik-V es el nombre comercial de la vacuna rusa más conocida, aunque hay otras vacunas rusas disponibles o en desarrollo.
 
-Como ya dije al hablar de tipos de vacunas, Sputnik-V es parecida a Astrazeneca. Simplificando mucho, un virus del catarro, que no se replica, y que tiene dentro información sobre cómo hacer parte del virus del Covid.
+Como ya dije al hablar de tipos de vacunas, Sputnik-V es parecida a AstraZeneca. Simplificando mucho, un virus del catarro, que no se replica, y que tiene dentro información sobre cómo hacer parte del virus del Covid.
 
-Así que digamos que en principio la técnica es parecida a AstraZeneca, pero parece más un apaño (un hack). No es muy prometedora, pero tampoco era descartable que funcionase en los niveles de Astrazeneca.
+Así que digamos que en principio la técnica es parecida a AstraZeneca, pero parece más un apaño (un hack). No es muy prometedora, pero tampoco era descartable que funcionase en los niveles de AstraZeneca.
 
 Sin embargo, ese no es el problema con la vacuna Sputnik-V. El problema es que hay sospechas de que los estudios para probar su eficacia no son "limpios".
 
