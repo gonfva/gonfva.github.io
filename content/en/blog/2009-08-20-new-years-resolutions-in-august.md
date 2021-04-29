@@ -4,6 +4,8 @@ title: "New Year's resolutions ... in August"
 date: 2009-08-20T22:20:15
 categories:
   - Personal
+tags:
+  - Personal
 ---
 
 I've been on holidays, and I've had some spare time to stop and think.

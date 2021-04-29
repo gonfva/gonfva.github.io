@@ -52,5 +52,132 @@ Most people in the software industry know Jira . For better or for worse, it’s
 The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
     </item>
     
+    <item>
+      <title>AWS CloudWatch alarms</title>
+      <link>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</link>
+      <pubDate>Wed, 21 Feb 2018 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</guid>
+      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
+You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more.</description>
+    </item>
+    
+    <item>
+      <title>Switch off your servers</title>
+      <link>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</link>
+      <pubDate>Sat, 21 Jan 2017 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</guid>
+      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692A few months ago, I went to AWS Summit London 2016 . One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.
+And in particular, that you can shut down your servers. And you should if they are not used.
+I knew the idea wasn’t strictly mine. What I didn’t know until I was preparing this post is that the idea came from Amazon’s CTO.</description>
+    </item>
+    
+    <item>
+      <title>A flow for containers</title>
+      <link>http://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</link>
+      <pubDate>Sun, 16 Oct 2016 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</guid>
+      <description>Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.
+Initially you can think it’s only two steps: build an deploy.
+But when you pass the cowboy stage, things get more complicated. You need to analyse, test and build the code. You need to build the container with the new executable inside. You need to push the registry. And then you need to deploy the code, with potentially additional tests.</description>
+    </item>
+    
+    <item>
+      <title>AWS ELB in Apache logs</title>
+      <link>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</link>
+      <pubDate>Wed, 14 Sep 2016 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</guid>
+      <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
+ Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+    </item>
+    
+    <item>
+      <title>Self-healing software</title>
+      <link>http://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</link>
+      <pubDate>Fri, 19 Feb 2016 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</guid>
+      <description>7 am in the morning. Some notifications in the mailbox and on Slack.
+Big demo today and part of the system had gone down.
+And had gone back up too. With no human intervention.
+On closer examination, there were some wrinkles pending (we’ve learnt of them today). But on the whole, the system had responded great to an unplanned problem.
+Yes, I know for sure that it’s nothing extraordinary. That’s what the cloud, availability zones, auto-scaling groups, clusters, or containers are for.</description>
+    </item>
+    
+    <item>
+      <title>Deploying docker</title>
+      <link>http://gonzalo.f-v.es/blog/2016-02-06-deploying-docker/</link>
+      <pubDate>Sat, 06 Feb 2016 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2016-02-06-deploying-docker/</guid>
+      <description>“Thou shall not pass” “docker exec, lets install wireshark”This is my account of some experiences deploying docker (or should I say messing/faffing with docker). The path has not yet finished, but I wanted to share our experience in case it can help others.
+Linking Docker containers Yeah, there are many other different technologies for deployment. But containers were “hot” and “the future”. Don’t get me wrong, I do think containers are the new processes .</description>
+    </item>
+    
+    <item>
+      <title>Mobile apps</title>
+      <link>http://gonzalo.f-v.es/blog/2016-01-30-mobile-apps/</link>
+      <pubDate>Sat, 30 Jan 2016 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2016-01-30-mobile-apps/</guid>
+      <description>Platform stats for the UKWe’re recruiting a Product Manager for our team, and this week we’ve been doing some interviews. One of the recurrent topics in those interviews has been mobile apps.
+The usual response from the candidate was: Why would you need a mobile app? What do you need from the device that pure web couldn’t provide? The usual candidate response was shared with many (most) of my colleagues in the team.</description>
+    </item>
+    
+    <item>
+      <title>A different Scala is possible</title>
+      <link>http://gonzalo.f-v.es/blog/2015-12-19-a-different-scala-is-possible/</link>
+      <pubDate>Sat, 19 Dec 2015 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-12-19-a-different-scala-is-possible/</guid>
+      <description>Scala , for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.
+Scala is getting some traction in the enterprise world because of its features, but lately because it’s used in Spark : the tool of choice in many Big Data projects.
+My experience Like many other people in the Scala world, I have some Java knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Agile is not Standups</title>
+      <link>http://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</link>
+      <pubDate>Sat, 03 Oct 2015 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</guid>
+      <description>Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
+However, as in many of these events, the better part was meeting people. And the good part about being too self-conscious and shy for proper speaking is that you listen a lot.
+And you hear guy A explaining to guy B how he’s working in developing a new feature for a startup and it’s going to take 4 months of a bunch of people, with no feedback involved until the big bang deployment.</description>
+    </item>
+    
+    <item>
+      <title>DevOps is so 2010. NoOps is the future</title>
+      <link>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010-noops-is-the-future/</link>
+      <pubDate>Fri, 04 Sep 2015 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010-noops-is-the-future/</guid>
+      <description>Cup cake or fairy cake. It doesn’t matter as long as we know what we meanTechnology moves so quickly that people who work in it are always at risk of being obsolete. You learn something new, thinking it’s going to be the next big thing and five years later it’s old and no longer used.
+It’s also a trend that reinforces itself. You need to be in the know if you want to stay somehow relevant.</description>
+    </item>
+    
+    <item>
+      <title>More Mantis problems</title>
+      <link>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</link>
+      <pubDate>Mon, 29 Mar 2010 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</guid>
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post . Now I think I have discovered a bug when uploading via Mantis SOAP a binary file . It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
+I wasn&amp;rsquo;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
+    </item>
+    
+    <item>
+      <title>Mantis on SQL Server</title>
+      <link>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</link>
+      <pubDate>Tue, 09 Mar 2010 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
+      <description>[Technical post]
+I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support , BugTracker .</description>
+    </item>
+    
   </channel>
 </rss>

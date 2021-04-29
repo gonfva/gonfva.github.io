@@ -5,6 +5,8 @@ date: 2009-02-14T18:00:00
 categories:
   - This blog
   - Personal
+tags:
+  - Personal
 ---
 
 Yes. It's been three months since I wrote my [previous post](/posts/2008-11-19-yahoo-declining-star-ii). When I started to write this blog I knew it could end like other blogs I have started. But I didn't think I was going to stop writing so fast.

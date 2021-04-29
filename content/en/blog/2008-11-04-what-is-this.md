@@ -4,7 +4,7 @@ date: 2008-11-04T18:00:00
 categories:
   - This blog
 tags:
-  - This blog
+  - Personal
 ---
 
 Starting a blog it’s a difficult task. It’s not nearly as difficult as keeping

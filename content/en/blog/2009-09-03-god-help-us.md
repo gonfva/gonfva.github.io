@@ -3,6 +3,8 @@ title: "God help us"
 date: 2009-09-03T18:23:51
 categories:
   - Spain
+tags:
+  - Politics
 ---
 
 It turns out that I was wrong when I wrote

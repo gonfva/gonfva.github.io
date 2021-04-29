@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Yahoo: A declining star (II)"
-date: 2008-11-19T18:00:00
+date: 2008-11-19T18:02:00
 categories:
+  - Technology
+tags:
   - Technology
 ---
 

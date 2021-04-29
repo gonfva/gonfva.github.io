@@ -3,6 +3,8 @@ title: "Starting over"
 date: 2010-10-13T18:14:45
 categories:
   - Personal
+tags:
+  - Personal
 ---
 
 6 months since last post. These have been amazing ones. Lots of work to do. Lots of challenges. We left Mantis, now working with Redmine. Learning Ruby on Rails. And learning Grails for fun and for the job.

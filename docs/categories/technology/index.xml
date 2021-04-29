@@ -19,22 +19,9 @@ Train service is not a theme park. It affects people’s livesSome of my Spanish
     </item>
     
     <item>
-      <title>Google Duplex y las llamadas automáticas</title>
-      <link>http://gonzalo.f-v.es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</guid>
-      <description>Probablemente ya has visto el vídeo de presentación de Google Duplex, el nuevo asistente creado por Google que puede hacer llamadas por teléfono que suenan como si un humano estuviera al otro lado de la línea.
-Si no lo has visto, por favor, echa un vistazo a la versión de 4 minutos.
-Puedes leer más información en este artículo .
-No tengo claro como funciona en la vida real.
-Pero la demo es impresionante.</description>
-    </item>
-    
-    <item>
       <title>Google Duplex and robocalls</title>
       <link>http://gonzalo.f-v.es/blog/2018-05-12-google-duplex-and-robocalls/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 May 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-05-12-google-duplex-and-robocalls/</guid>
       <description>You’ve probably seen the video presentation about Google Duplex, the new assistant created by Google that can make phone calls that sound totally human interactions to the human on the other side (and to anyone listening).
@@ -46,7 +33,7 @@ But the demo looks amazing.</description>
     <item>
       <title>Virtual Reality in macOS (II)</title>
       <link>http://gonzalo.f-v.es/blog/2017-08-27-virtual-reality-in-macos-ii/</link>
-      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 27 Aug 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-08-27-virtual-reality-in-macos-ii/</guid>
       <description>TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.
@@ -56,7 +43,7 @@ It seems this time I’m one of the few non-professionals that has bought an HTC
     <item>
       <title>Virtual Reality in macOS (I)</title>
       <link>http://gonzalo.f-v.es/blog/2017-08-12-virtual-reality-in-macos-i/</link>
-      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Aug 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-08-12-virtual-reality-in-macos-i/</guid>
       <description>I have a two year old mid-level Android phone (Moto G 2015) not capable of using Google Cardboard . My tablet is an iPad Mini “1” with iOS9 because it can no longer be upgraded. My (old) computer was built from parts and it’s already 4 years old.
@@ -67,7 +54,7 @@ However my latest acquisition suggests I’ve gone bonkers.</description>
     <item>
       <title>Bubble!!</title>
       <link>http://gonzalo.f-v.es/blog/2017-07-22-bubble/</link>
-      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 22 Jul 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-07-22-bubble/</guid>
       <description>In the late 90s there was some craziness in the air. Everybody perceived Internet was going to transform our lives. But we didn’t know how. Companies tried to grow at all costs, setting up what looked like crazy ideas. Money was being poured without any analysis.
@@ -77,7 +64,7 @@ Crypto investments being announced in a bus stop in the middle of London.I remem
     <item>
       <title>Disruption in Financial Services</title>
       <link>http://gonzalo.f-v.es/blog/2017-06-28-disruption-in-financial-services/</link>
-      <pubDate>Wed, 28 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Jun 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-06-28-disruption-in-financial-services/</guid>
       <description>For many people, disruption in Financial Services are new banks that are building the platform from the ground up . Not being tied to legacy systems, make those banks easier to operate.
@@ -87,7 +74,7 @@ Don’t get me wrong. I’m a big fan of Monzo. Super fan of the notifications, 
     <item>
       <title>Netflix against the user</title>
       <link>http://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</link>
-      <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Jun 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</guid>
       <description>I like Netflix. I really do. But there are a few things in their user interface that drive me crazy.
@@ -97,7 +84,7 @@ Don’t get me wrong. I’m a big fan of Monzo. Super fan of the notifications, 
     <item>
       <title>When the CTO is not management</title>
       <link>http://gonzalo.f-v.es/blog/2017-05-17-when-the-cto-is-not-management/</link>
-      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 May 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-05-17-when-the-cto-is-not-management/</guid>
       <description>Tech startup founded by non-tech founders. Founders know little about technology, so they hire a CTO like they would hire an accountant. CTO is not part of management. Technology gets isolated. #### Choose your CTO… and then trust her
@@ -107,7 +94,7 @@ A friend of mine got hired as a CTO three years ago. What started as an exciting
     <item>
       <title>LetsEncrypt, Paypal and selling fear</title>
       <link>http://gonzalo.f-v.es/blog/2017-03-30-letsencrypt-paypal-and-selling-fear/</link>
-      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Mar 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-03-30-letsencrypt-paypal-and-selling-fear/</guid>
       <description>There is a new report that associates Let’s Encrypt with phishing . So lots of people in Twitter started screaming because they read phishing and Paypal in the same sentence.
@@ -119,7 +106,7 @@ Apparently the argument of the report is that Let’s Encrypt doesn’t do a pro
     <item>
       <title>Thoughts on the S3 outage</title>
       <link>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</guid>
       <description>It’s in the news . Amazon S3, the popular object store crashed yesterday in one of their regions and affected multiple other sites, including Slack and GitHub .
@@ -130,7 +117,7 @@ So here are some comments about it:
     <item>
       <title>Fintech: Dinosaurs are doomed</title>
       <link>http://gonzalo.f-v.es/blog/2016-10-04-fintech-dinosaurs-are-doomed/</link>
-      <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Oct 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-10-04-fintech-dinosaurs-are-doomed/</guid>
       <description>I’m sick and tired of reading articles describing how the banks are going to buy the new players in Fintech.
@@ -141,7 +128,7 @@ However acquisitions are not going to change anything. And it is not because peo
     <item>
       <title>Consumers need to understand…</title>
       <link>http://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</link>
-      <pubDate>Sun, 17 Jul 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Jul 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</guid>
       <description>Today I was reading this article about excuses from banks for crap services . Then I got to this sentence:
@@ -152,7 +139,7 @@ However acquisitions are not going to change anything. And it is not because peo
     <item>
       <title>I hate my bank</title>
       <link>http://gonzalo.f-v.es/blog/2016-07-15-i-hate-my-bank/</link>
-      <pubDate>Fri, 15 Jul 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Jul 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-15-i-hate-my-bank/</guid>
       <description>Yesterday I was using my bank account, taking money out using a debit card. No way to see the operation since the feed only has old/settled operations. Since the available balance was below what I considered safe, I moved back the money using the same card.
@@ -163,7 +150,7 @@ My bank allows me to do banking and investment.</description>
     <item>
       <title>AWS Summit London 2016</title>
       <link>http://gonzalo.f-v.es/blog/2016-07-07-aws-summit-london-2016/</link>
-      <pubDate>Thu, 07 Jul 2016 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Jul 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-07-aws-summit-london-2016/</guid>
       <description>Today I went to AWSSummit London . It’s a free event dedicated to Amazon Web Services. The event took place at Excel London , excellent venue except for the occasional noise due to planes taking off from the nearby London City Airport.
@@ -173,7 +160,7 @@ KeynoteThe day started with an intro from Gavin Jackson, expressing that there w
     <item>
       <title>Now I remember why I left “security”</title>
       <link>http://gonzalo.f-v.es/blog/2016-03-27-now-i-remember-why-i-left-security/</link>
-      <pubDate>Sun, 27 Mar 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 27 Mar 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-03-27-now-i-remember-why-i-left-security/</guid>
       <description>Around the year 2000, I was doing some consulting work for the ISP branch of a Spanish bank. I was creating dynamic web pages (not many people in the IT industry will remember the word CGI)
@@ -184,7 +171,7 @@ Some examples I started taking a look to other dynamic web pages.</description>
     <item>
       <title>Snapchat: I’m getting old</title>
       <link>http://gonzalo.f-v.es/blog/2016-03-20-snapchat-i-m-getting-old/</link>
-      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 Mar 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-03-20-snapchat-i-m-getting-old/</guid>
       <description>In the last couple of months I’ve been able to see a growing trend with Snapchat. More and more people I follow in Twitter are testing Snapchat waters.
@@ -199,7 +186,7 @@ I’m going to miss this one.</description>
     <item>
       <title>AlphaGo, AI, and Philosophy</title>
       <link>http://gonzalo.f-v.es/blog/2016-03-13-alphago-ai-and-philosophy/</link>
-      <pubDate>Sun, 13 Mar 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 13 Mar 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-03-13-alphago-ai-and-philosophy/</guid>
       <description>I’m fascinated by AlphaGo. I truly am.
@@ -212,7 +199,7 @@ And, yes. With AI I mean self-aware, general (non-restricted to a domain) intell
     <item>
       <title>My take on #RIPTwitter</title>
       <link>http://gonzalo.f-v.es/blog/2016-02-07-my-take-on-riptwitter/</link>
-      <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Feb 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-02-07-my-take-on-riptwitter/</guid>
       <description>There is some outrage in Twitter because it has started to implement some changes to its product.
@@ -222,7 +209,7 @@ And, yes. With AI I mean self-aware, general (non-restricted to a domain) intell
     <item>
       <title>The Netflix of books</title>
       <link>http://gonzalo.f-v.es/blog/2015-12-12-the-netflix-of-books/</link>
-      <pubDate>Sat, 12 Dec 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Dec 2015 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-12-12-the-netflix-of-books/</guid>
       <description>Broken Kindle anyone?A couple of months ago, we were flying back to London after the summer. My 12 year old twin daughters, usually eager video watchers or passionate console players, were avid readers at that moment. To the point they were sharing one of their two physical Kindle reading devices.
@@ -232,7 +219,7 @@ A woman walking along the aisle, stopped next to my wife, started a conversation
     <item>
       <title>Evolving or dying</title>
       <link>http://gonzalo.f-v.es/blog/2015-11-30-evolving-or-dying/</link>
-      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Nov 2015 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-11-30-evolving-or-dying/</guid>
       <description>A friend of mine sent to me a job offer. It caught both her and my attention because it shows a problem very common in Internet companies.
@@ -242,7 +229,7 @@ The company in question is quite successful in its niche. They have an IT platfo
     <item>
       <title>Prepare for FireOS</title>
       <link>http://gonzalo.f-v.es/blog/2015-11-28-prepare-for-fireos/</link>
-      <pubDate>Sat, 28 Nov 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2015 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-11-28-prepare-for-fireos/</guid>
       <description>I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.
@@ -254,7 +241,7 @@ There are several possibilities here:
     <item>
       <title>Banks and users</title>
       <link>http://gonzalo.f-v.es/blog/2015-06-06-banks-and-users/</link>
-      <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2015 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-06-06-banks-and-users/</guid>
       <description>A couple of weeks ago, I had an interesting discussion in Twitter about how a Spanish Government body (AEAT, the equivalent of HRMC in the UK or IRS in the US) was offering different “services” in two different websites.
@@ -275,7 +262,7 @@ Obviously, the experience was poor and confusing for the user, who doesn’t und
     <item>
       <title>Yahoo: A declining star (II)</title>
       <link>http://gonzalo.f-v.es/blog/2008-11-19-yahoo-declining-star-ii/</link>
-      <pubDate>Wed, 19 Nov 2008 18:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Nov 2008 18:02:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2008-11-19-yahoo-declining-star-ii/</guid>
       <description>I wrote on the previous post that for a particular combination of search terms, Yahoo seemed to offer better results than Google . I read long time ago that in fact search was turning to be a commodity . I didn’t believe then, and I’m not convinced yet, despite the simple test I described on my post.

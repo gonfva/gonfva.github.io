@@ -3,6 +3,8 @@ title: "Yahoo: A declining star(I)"
 date: 2008-11-19T18:00:00
 categories:
   - Technology
+tags:
+  - Technology
 ---
 
 I like products coming from Google, and I’m usually less critic with Google’s errors than with others’. I use Google search, Gmail, Blogger… I even have a ridiculous financial position on Google (8 shares).

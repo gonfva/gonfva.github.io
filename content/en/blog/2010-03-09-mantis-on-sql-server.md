@@ -4,6 +4,9 @@ date: 2010-03-09T11:45:46
 categories:
   - Developer
   - got ya
+toc: true
+tags:
+  - Developer
 ---
 
 [Technical post]

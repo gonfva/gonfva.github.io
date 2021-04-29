@@ -132,4 +132,34 @@
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url>
   
+  <url>
+    <loc>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</loc>
+    <lastmod>2018-05-14T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</loc>
+    <lastmod>2018-05-14T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/es/tags/technologia/</loc>
+    <lastmod>2018-05-14T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/es/categories/technology/</loc>
+    <lastmod>2018-05-14T18:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://gonzalo.f-v.es/categories/technology/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://gonzalo.f-v.es/es/categories/technology/"
+                />
+  </url>
+  
 </urlset>

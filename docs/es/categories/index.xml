@@ -17,5 +17,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>En Español</title>
+      <link>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</link>
+      <pubDate>Mon, 14 May 2018 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>http://gonzalo.f-v.es/es/categories/technology/</link>
+      <pubDate>Mon, 14 May 2018 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/es/categories/technology/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

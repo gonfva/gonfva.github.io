@@ -3,6 +3,8 @@ title: "Netbook Operating Systems"
 date: 2009-08-13T22:01:25
 categories:
   - Technology
+tags:
+  - Technology
 ---
 
 A few months ago I got a new

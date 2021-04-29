@@ -4,6 +4,8 @@ date: 2009-08-27T22:02:34
 categories:
   - Politics
   - Spain
+tags:
+  - Politics
 ---
 
 _**Disclaimer**. I'm not an economist or a

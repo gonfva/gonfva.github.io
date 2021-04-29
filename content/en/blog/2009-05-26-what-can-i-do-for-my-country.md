@@ -4,6 +4,8 @@ date: 2009-05-26T22:03:13
 categories:
   - Politics
   - Spain
+tags:
+  - Politics
 ---
 
 > And so, my fellow Americans: ask not what your country can do for you—

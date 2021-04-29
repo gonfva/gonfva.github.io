@@ -55,7 +55,7 @@ The company behind that product, Atlassian, has other products. One of them is c
     <item>
       <title>AWS CloudWatch alarms</title>
       <link>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</link>
-      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Feb 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</guid>
       <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
@@ -65,7 +65,7 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
     <item>
       <title>AWS ELB in Apache logs</title>
       <link>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</link>
-      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Sep 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</guid>
       <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:

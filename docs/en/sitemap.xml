@@ -175,6 +175,16 @@
   <url>
     <loc>http://gonzalo.f-v.es/categories/technology/</loc>
     <lastmod>2018-07-07T18:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://gonzalo.f-v.es/es/categories/technology/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://gonzalo.f-v.es/categories/technology/"
+                />
   </url>
   
   <url>
@@ -213,213 +223,208 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/categories/en-espa%C3%B1ol/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://gonzalo.f-v.es/blog/2018-05-12-google-duplex-and-robocalls/</loc>
-    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-12T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</loc>
-    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-21T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</loc>
-    <lastmod>2017-10-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-30T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-09-12-jack-ma-and-laughing-at-ourselves/</loc>
-    <lastmod>2017-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-12T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-08-27-virtual-reality-in-macos-ii/</loc>
-    <lastmod>2017-08-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-27T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-08-12-virtual-reality-in-macos-i/</loc>
-    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-12T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-08-05-junior-php-developer/</loc>
-    <lastmod>2017-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-05T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-07-22-bubble/</loc>
-    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-06-28-disruption-in-financial-services/</loc>
-    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-28T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</loc>
-    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2017-06-14T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-05-17-when-the-cto-is-not-management/</loc>
-    <lastmod>2017-05-17T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-17T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-03-30-letsencrypt-paypal-and-selling-fear/</loc>
-    <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-30T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</loc>
-    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-01T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/develoer/</loc>
+    <lastmod>2017-02-16T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-02-16-serverless-in-three-minutes/</loc>
-    <lastmod>2017-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-16T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</loc>
-    <lastmod>2017-01-21T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-21T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</loc>
-    <lastmod>2016-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2016-10-16T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-10-04-fintech-dinosaurs-are-doomed/</loc>
-    <lastmod>2016-10-04T00:00:00+00:00</lastmod>
+    <lastmod>2016-10-04T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</loc>
-    <lastmod>2016-09-14T00:00:00+00:00</lastmod>
+    <lastmod>2016-09-14T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</loc>
-    <lastmod>2016-07-17T00:00:00+00:00</lastmod>
+    <lastmod>2016-07-17T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-07-15-i-hate-my-bank/</loc>
-    <lastmod>2016-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2016-07-15T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-07-07-aws-summit-london-2016/</loc>
-    <lastmod>2016-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2016-07-07T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-06-26-chess-trading-and-bregret/</loc>
-    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2016-06-26T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-03-27-now-i-remember-why-i-left-security/</loc>
-    <lastmod>2016-03-27T00:00:00+00:00</lastmod>
+    <lastmod>2016-03-27T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-03-20-snapchat-i-m-getting-old/</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2016-03-20T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-03-13-alphago-ai-and-philosophy/</loc>
-    <lastmod>2016-03-13T00:00:00+00:00</lastmod>
+    <lastmod>2016-03-13T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</loc>
-    <lastmod>2016-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2016-02-19T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-02-07-my-take-on-riptwitter/</loc>
-    <lastmod>2016-02-07T00:00:00+00:00</lastmod>
+    <lastmod>2016-02-07T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-02-06-deploying-docker/</loc>
-    <lastmod>2016-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2016-02-06T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-02-04-storytelling/</loc>
-    <lastmod>2016-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2016-02-04T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2016-01-30-mobile-apps/</loc>
-    <lastmod>2016-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2016-01-30T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-12-19-a-different-scala-is-possible/</loc>
-    <lastmod>2015-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2015-12-19T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-12-12-the-netflix-of-books/</loc>
-    <lastmod>2015-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2015-12-12T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-11-30-evolving-or-dying/</loc>
-    <lastmod>2015-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2015-11-30T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-11-28-prepare-for-fireos/</loc>
-    <lastmod>2015-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2015-11-28T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-11-22-gifts/</loc>
-    <lastmod>2015-11-22T00:00:00+00:00</lastmod>
+    <lastmod>2015-11-22T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-10-19-love-your-users/</loc>
-    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2015-10-19T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</loc>
-    <lastmod>2015-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2015-10-03T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010-noops-is-the-future/</loc>
-    <lastmod>2015-09-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-09-04T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-08-15-dear-recruiter/</loc>
-    <lastmod>2015-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2015-08-15T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2015-06-06-banks-and-users/</loc>
-    <lastmod>2015-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2015-06-06T18:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -479,7 +484,7 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2008-11-19-yahoo-declining-star-ii/</loc>
-    <lastmod>2008-11-19T18:00:00+00:00</lastmod>
+    <lastmod>2008-11-19T18:02:00+00:00</lastmod>
   </url>
   
   <url>
@@ -508,17 +513,7 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/tags/mobuzztv/</loc>
-    <lastmod>2008-11-10T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://gonzalo.f-v.es/blog/2008-11-07-jobs/</loc>
-    <lastmod>2008-11-07T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/tags/this-blog/</loc>
     <lastmod>2008-11-07T18:00:00+00:00</lastmod>
   </url>
   

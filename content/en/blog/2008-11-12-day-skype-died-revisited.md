@@ -3,6 +3,8 @@ title: "'The day Skype died' revisited"
 date: 2008-11-12T18:00:00
 categories:
   - Technology
+tags:
+  - Technology
 ---
 
 Sometimes you realize you've written a weak post too late. It was my case with

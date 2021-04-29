@@ -4,6 +4,8 @@ date: 2010-03-29T11:45:46
 categories:
   - Developer
   - got ya
+tags:
+  - Developer
 ---
 
 I have been fighting with PHP, Mantis and SOAP since [my last post](2010-03-09-mantis-on-sql-server). Now I think I have discovered a
