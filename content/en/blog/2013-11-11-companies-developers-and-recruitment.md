@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Companies, developers and recruitment"
-date: 2013-11-11 09:56:47 UTC
-updated: 2013-11-11 09:56:47 UTC
+date: 2013-11-11T09:56:47
 comments: false
 categories: Jobs London Personal
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Google, where are you going?"
-date: 2012-09-30 15:18:46 UTC
-updated: 2012-09-30 15:18:46 UTC
+date: 2012-09-30T15:18:46
 comments: false
 categories: [Civil service, Technology]
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Rails in Ubuntu"
-date: 2012-08-23 12:31:19 UTC
-updated: 2012-08-23 12:31:19 UTC
+date: 2012-08-23T12:31:19
 comments: false
 categories: Developer
 ---

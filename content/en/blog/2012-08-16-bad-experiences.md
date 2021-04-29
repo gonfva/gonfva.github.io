@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Bad experiences"
-date: 2012-08-16 21:59:17 UTC
-updated: 2012-08-16 21:59:17 UTC
+date: 2012-08-16T21:59:17
 comments: false
 categories: Jobs
 ---

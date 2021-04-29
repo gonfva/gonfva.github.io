@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Javascript all the way"
-date: 2012-08-16 22:00:04 UTC
-updated: 2012-08-16 22:00:04 UTC
+date: 2012-08-16T22:00:04
 comments: false
 categories: Developer
 ---

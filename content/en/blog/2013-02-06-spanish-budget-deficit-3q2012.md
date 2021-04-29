@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Spanish budget deficit, 3Q2012"
-date: 2013-02-06 18:57:33 UTC
-updated: 2013-02-06 18:57:33 UTC
+date: 2013-02-06T18:57:33
 comments: false
 categories: Politics
 ---

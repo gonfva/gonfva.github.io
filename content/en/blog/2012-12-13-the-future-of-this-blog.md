@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "The future of this blog"
-date: 2012-12-13 19:22:42 UTC
-updated: 2012-12-13 19:22:42 UTC
+date: 2012-12-13T19:22:42
 comments: false
 categories: [This blog]
 ---

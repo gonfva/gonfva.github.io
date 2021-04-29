@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Budget deficit"
-date: 2012-05-24 13:22:37 UTC
-updated: 2012-05-24 13:22:37 UTC
+date: 2012-05-24T13:22:37
 comments: false
 categories: Politics
 ---

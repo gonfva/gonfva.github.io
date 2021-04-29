@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Little robot (II): Java version"
-date: 2012-08-19 17:00:02 UTC
-updated: 2012-08-19 17:00:02 UTC
+date: 2012-08-19T17:00:02
 comments: false
 categories: Developer
 ---

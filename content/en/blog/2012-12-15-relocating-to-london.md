@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Relocating to London"
-date: 2012-12-15 19:45:08 UTC
-updated: 2012-12-15 19:45:08 UTC
+date: 2012-12-15T19:45:08
 comments: false
 categories: [London, Personal]
 ---

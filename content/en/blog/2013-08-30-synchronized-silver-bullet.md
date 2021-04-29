@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "The synchronized silver bullet"
-date: 2013-08-30 18:38:19 UTC
-updated: 2013-08-30 18:38:19 UTC
+date: 2013-08-30T18:38:19
 comments: false
 categories: Developer
 ---
@@ -21,6 +20,7 @@ In particular, in this case, you could get a prefix, then other thread modifies 
 <br /><br />
 Many people could tell me "You're right, but the setters are not supposed to be invoked after the creation of the object". Then I have to tell two things:
 <br /><br />
+
 <ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol><br />And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
 <br /><br />
 By the way. A great book in the topic: <a href="http://www.jcip.net/" target="_blank">Java Concurrency in Practice</a>.

@@ -1,13 +1,12 @@
 ---
 layout: post
 title: "Scala: First impressions"
-date: 2014-06-08 22:05:32 UTC
-updated: 2014-06-08 22:05:32 UTC
+date: 2014-06-08T22:05:32
 comments: false
 categories: Developer
 ---
 
-A couple of months ago I started working for a different company. I'm quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala. It's uncommon to get a programming job when you don't know the syntax of the programming language used. But if you really think about it, it's much better to hire somebody passionate about technology and that really loves to learn (and commit) than somebody that knows the language but doesn't give a d***mn.
+A couple of months ago I started working for a different company. I'm quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala. It's uncommon to get a programming job when you don't know the syntax of the programming language used. But if you really think about it, it's much better to hire somebody passionate about technology and that really loves to learn (and commit) than somebody that knows the language but doesn't give a d\*\*\*mn.
 <br /><br />
 Anyway, after a couple of months, I thought it would be good to write my experience about the language.
 <br /><br />
@@ -17,7 +16,7 @@ But that way of querying with SQL that it's inside of almost every developer's b
 <br /><br />
 One could ask "if it is that complicated, why bother?". <a href="http://gonfva.blogspot.co.uk/2014/01/multithreading-warning-lights.html">Multithreading is tricky</a>, but CPUs have stopped increasing speed and they are increasing number of cores, which implies concurrency. Functional programming promises to help in that process. And in fact, one the emerging libraries in the Java field, the <a href="http://akka.io/">akka library</a>, comes from the Scala world. The famous lambda in Java 8 is functional programming.
 <br /><br />
-Regarding the specific language (not the functional paradigm), I have mixed feelings. I find it brilliant sometimes. And others I see it weird. As an example, I love the tuple concept (the ability for a function to return a couple of values at the same time without defining a class for that). But I almost scream each time I have to refer to the first element of the tuple with an _1 (<a href="http://stackoverflow.com/questions/6241464/why-are-the-indexes-of-scala-tuples-1-based">as opposed to the typical _0</a>).
+Regarding the specific language (not the functional paradigm), I have mixed feelings. I find it brilliant sometimes. And others I see it weird. As an example, I love the tuple concept (the ability for a function to return a couple of values at the same time without defining a class for that). But I almost scream each time I have to refer to the first element of the tuple with an \_1 (<a href="http://stackoverflow.com/questions/6241464/why-are-the-indexes-of-scala-tuples-1-based">as opposed to the typical \_0</a>).
 <br /><br />
 I remember loving Ruby and Rails almost in any line of code. Everything felt natural and although in retrospective there were weird things, my general feeling was that code flows. With Scala I'm just starting to feel productive. With Scala love appears, but it tends to be in "this is freaking awesome" moments from time to time. [OMG, love and code. I'm really a nerd, isn't it?]
 <br /><br />

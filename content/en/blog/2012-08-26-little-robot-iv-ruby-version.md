@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Little robot (IV): Ruby version"
-date: 2012-08-26 20:00:02 UTC
-updated: 2012-08-26 20:00:02 UTC
+date: 2012-08-26T20:00:02
 comments: false
 categories: Developer
 ---

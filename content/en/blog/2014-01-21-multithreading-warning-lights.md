@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Multithreading: Warning lights"
-date: 2014-01-21 12:17:35 UTC
-updated: 2014-01-21 12:17:35 UTC
+date: 2014-01-21T12:17:35
 comments: false
 categories: [Developer, Jobs]
 ---
@@ -13,6 +12,7 @@ At one point we agreed on creating a new constructor so that we could pass a ser
 <br /><br />
 So I had something like (fictitious code)
 <br /><br />
+
 <blockquote class="tr_bq">&nbsp; class GreatObject {<br />&nbsp; &nbsp; public void calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; Service supaService= MegaFactory.getService();<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }</blockquote><br />and we had agreed on doing something like
 <br /><br />
 <blockquote class="tr_bq">&nbsp; class GreatObject {<br />&nbsp; &nbsp; private Service supaService;<br />&nbsp; &nbsp; public GreatObject () {<br />&nbsp; &nbsp; &nbsp; this.supaService= MegaFactory.getService();<br />&nbsp; &nbsp; }<br />&nbsp; &nbsp; public GreatObject (Service supaService) {<br />&nbsp; &nbsp; &nbsp; this.supaService=supaService;<br />&nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; public void calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }</blockquote><br />When I was going to do it, something in the back of my mind started to blink. It was a bit subtle and it took me a while to be able to express it. So as an exercise for the future, I'm going to try and express it in writing.

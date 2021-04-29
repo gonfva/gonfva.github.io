@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Things about Xerces, Xalan and Saxon I didn't know (I)"
-date: 2012-09-23 11:45:46 UTC
-updated: 2012-09-23 11:45:46 UTC
+date: 2012-09-23T11:45:46
 comments: false
 categories: [Developer, got ya]
 ---

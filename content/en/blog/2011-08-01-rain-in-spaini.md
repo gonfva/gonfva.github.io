@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "The rain in Spain(I)"
-date: 2011-08-01 20:16:50 UTC
-updated: 2011-08-01 20:16:50 UTC
+date: 2011-08-01T20:16:50
 comments: false
 categories: [Politics, Spain]
 ---
 
 I love this video:
 <br /><br />
+
 <iframe width="425" height="349" src="http://www.youtube.com/embed/uVmU3iANbgk" frameborder="0" allowfullscreen></iframe>
 <br /><br />
 A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far. But I couldn't help thinking about a different climate. The political and economical climate.

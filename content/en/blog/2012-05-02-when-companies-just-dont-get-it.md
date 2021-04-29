@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "When companies just don't get it"
-date: 2012-05-02 19:31:33 UTC
-updated: 2012-05-02 19:31:33 UTC
+date: 2012-05-02T19:31:33
 comments: false
 categories: Technology
 ---
@@ -21,4 +20,5 @@ Mobile is very powerful, and I feel&nbsp;disappointed when people just don't get
 <br /><br />
 Hey. Just because it's the end of&nbsp;Christmas season, and because I'm a client of them, here goes my free piece of advice for them. First the easy part:
 <br /><br />
+
 <ul><li>Not everyone has iOS 5 installed. Unless you really need that version, stay lower.</li><li>Include a menu with dishes and quotes at each restaurant. Include the weekly menu.</li></ul><div>Now another step:</div><div><ul><li>Give a free wifi key of each restaurant to those with the app. </li><li>Offer special discounts, promotions and draws for those with the app.</li><li>Order from the app. Call the waiter from the app. Tricky part: lock the actual table to the app and user. Possible solutions 1.-Bluetooth proximity 2.-Table selection from the app, and locking confirmation through the waiter.</li></ul><div>And then try to combine the app with your registered customer program (Tarjeta Club Vips):</div></div><div><ul><li>Reserve a table through the app.</li><li>Personalized promotions.&nbsp;</li><li>Some of your restaurants offer the ability to order the food, wait for it to be prepared and take it away. Be able to order the food through the app and get a estimated time for taking it.&nbsp;</li><li>Rating of specific meal experience.</li></ul></div>

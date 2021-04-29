@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Little robot (I)"
-date: 2012-08-17 12:17:00 UTC
-updated: 2012-08-17 12:17:00 UTC
+date: 2012-08-17T12:17:00
 comments: false
 categories: Developer
 ---
@@ -21,4 +20,5 @@ So I did it both in <a href="https://github.com/gonfva/assignments/tree/master/g
 <br /><br />
 
 <br /><br />
+
 <div><br /></div>

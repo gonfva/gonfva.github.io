@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Firmware upgrade for Xperia U in Linux (I)"
-date: 2013-11-26 20:42:53 UTC
-updated: 2013-11-26 20:42:53 UTC
+date: 2013-11-26T20:42:53
 comments: false
 categories: [got ya]
 ---

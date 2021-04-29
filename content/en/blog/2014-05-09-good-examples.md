@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Good examples"
-date: 2014-05-09 19:30:05 UTC
-updated: 2014-05-09 19:30:05 UTC
+date: 2014-05-09T19:30:05
 comments: false
 categories: Personal
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Civil service in Spain: Productivity"
-date: 2010-11-17 21:10:31 UTC
-updated: 2010-11-17 21:10:31 UTC
+date: 2010-11-17T21:10:31
 comments: false
 categories: [Civil service, Spain]
 ---

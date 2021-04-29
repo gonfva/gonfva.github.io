@@ -73,6 +73,151 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
     </item>
     
     <item>
+      <title>Jetty</title>
+      <link>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</link>
+      <pubDate>Sat, 12 Jul 2014 17:39:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
+      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</link>
+      <pubDate>Sun, 08 Jun 2014 21:27:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
+      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
+    </item>
+    
+    <item>
+      <title>PDOException</title>
+      <link>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
+      <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory
+The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Tipping point</title>
+      <link>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
+      <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
+      <description>I&#39;m happy.&amp;nbsp;
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+    </item>
+    
+    <item>
+      <title>I was sure it was my fault...</title>
+      <link>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
+      <pubDate>Thu, 27 Feb 2014 19:27:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t. In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</link>
+      <pubDate>Tue, 26 Nov 2013 20:42:53 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
+      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions). The phone worked quite well.</description>
+    </item>
+    
+    <item>
+      <title>Xerces and Xalan: Recipes for the win</title>
+      <link>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
+      <pubDate>Mon, 01 Oct 2012 14:38:05 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+    </item>
+    
+    <item>
+      <title>Weird IE9 bug</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</link>
+      <pubDate>Sun, 30 Sep 2012 11:09:01 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</guid>
+      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+    </item>
+    
+    <item>
+      <title>OptionalDataException while reading JMS message</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
+      <pubDate>Mon, 24 Sep 2012 19:33:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
+In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+    </item>
+    
+    <item>
+      <title>Notes to a newbie spring-mvc developer</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
+      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
+&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
+&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
+Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
+    </item>
+    
+    <item>
+      <title>Savon.rb and sequences</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
+One of those topics has been Xerces and Xalan.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+
+In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+    <item>
       <title>More Mantis problems</title>
       <link>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</link>
       <pubDate>Mon, 29 Mar 2010 11:45:46 +0000</pubDate>
@@ -90,151 +235,6 @@ I wasn&amp;rsquo;t able to find any good answers to something that must be frequ
       <guid>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
       <description>[Technical post]
 I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support , BugTracker .</description>
-    </item>
-    
-    <item>
-      <title>Firmware upgrade for Xperia U in Linux (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
-      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions). The phone worked quite well.</description>
-    </item>
-    
-    <item>
-      <title>Firmware upgrade for Xperia U in Linux (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
-      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
-    </item>
-    
-    <item>
-      <title>I was sure it was my fault...</title>
-      <link>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>&amp;hellip; but it wasn&amp;rsquo;t. In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
-    </item>
-    
-    <item>
-      <title>Jetty</title>
-      <link>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
-      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Notes to a newbie spring-mvc developer</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
-&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
-&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
-Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
-    </item>
-    
-    <item>
-      <title>OptionalDataException while reading JMS message</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
-In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
-    </item>
-    
-    <item>
-      <title>PDOException</title>
-      <link>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory
-The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
-    </item>
-    
-    <item>
-      <title>Savon.rb and sequences</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
-One of those topics has been Xerces and Xalan.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
-    </item>
-    
-    <item>
-      <title>Tipping point</title>
-      <link>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp;
-I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
-    </item>
-    
-    <item>
-      <title>Weird IE9 bug</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
-    </item>
-    
-    <item>
-      <title>Xerces and Xalan: Recipes for the win</title>
-      <link>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
-    </item>
-    
-    <item>
-      <title>Xerces, Xalan and Saxon, more recipes</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
-
-In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
   </channel>

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Optimizing"
-date: 2014-06-08 20:33:40 UTC
-updated: 2014-06-08 20:33:40 UTC
+date: 2014-06-08T20:33:40
 comments: false
 categories: Developer
 ---
@@ -11,6 +10,7 @@ A few days ago I went to a meeting and we were discussing (among lots of differe
 <br /><br />
 After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
 <br /><br />
+
 <div style="text-align: center;"><b><span style="font-size: large;">Measure </span></b></div><br />You cannot optimize if you don't know what do you need to optimize. Is it a database problem? A web problem?
 <br /><br />
 The guy interviewing had tried to push me further. &nbsp;What to measure? Memory, CPU and request time I vaguely remember replying. What tools to use? At that point I probably screwed up the meeting, but that worth a post on its own.

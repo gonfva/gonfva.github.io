@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "IKEA vs Greenwich"
-date: 2013-07-19 12:16:35 UTC
-updated: 2013-07-19 12:16:35 UTC
+date: 2013-07-19T12:16:35
 comments: false
 categories: London
 ---
@@ -27,6 +26,7 @@ One could think "why bother? No letter, no taxes". Well. Two reasons.
 <br /><br />
 This time I received an automated reply with the following:
 <br /><br />
+
 <blockquote class="tr_bq">"Emails are treated with the same level of importance as other communications, i.e. post, telephone and fax. We will do our very best to respond to your email within 20 days."</blockquote><br />20 days for replying an email?.
 <br /><br />
 Are you kidding me?.

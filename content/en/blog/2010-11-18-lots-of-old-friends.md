@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Lots of old friends"
-date: 2010-11-18 21:30:39 UTC
-updated: 2010-11-18 21:30:39 UTC
+date: 2010-11-18T21:30:39
 comments: false
 categories: Personal
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Developers - The neverending story"
-date: 2015-01-31 20:33:01 UTC
-updated: 2015-01-31 20:33:01 UTC
+date: 2015-01-31T20:33:01
 comments: false
 categories: Developer
 ---

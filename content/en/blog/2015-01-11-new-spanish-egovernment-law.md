@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "New Spanish  eGovernment law"
-date: 2015-01-11 22:36:23 UTC
-updated: 2015-01-11 22:36:23 UTC
+date: 2015-01-11T22:36:23
 comments: false
 categories: [Politics, Civil service]
 ---

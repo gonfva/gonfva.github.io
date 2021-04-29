@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Little robot (III): Dependency inversion"
-date: 2012-08-24 22:11:00 UTC
-updated: 2012-08-24 22:11:00 UTC
+date: 2012-08-24T22:11:00
 comments: false
 categories: Developer
 ---

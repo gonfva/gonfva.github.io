@@ -561,6 +561,818 @@ Obviously, the experience was poor and confusing for the user, who doesn’t und
     </item>
     
     <item>
+      <title>React-native: some context and a few wrinkles</title>
+      <link>http://gonzalo.f-v.es/blog/2015-04-26-react-native-some-context-and-few/</link>
+      <pubDate>Sun, 26 Apr 2015 11:48:49 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-04-26-react-native-some-context-and-few/</guid>
+      <description>React native is a way to build iOS applications using Javascript. The idea is not radically new, since you are probably aware of PhoneGap/Cordova and others like that. I myself played with something similar long time ago. The interesting thing is that React native follows the steps on ReactJS, a Javascript library that provides wonderful performance in updating the DOM. It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap idea moving CSS into JS?</description>
+    </item>
+    
+    <item>
+      <title>Think big</title>
+      <link>http://gonzalo.f-v.es/blog/2015-02-09-think-big/</link>
+      <pubDate>Mon, 09 Feb 2015 20:13:42 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-02-09-think-big/</guid>
+      <description>A few weeks ago, I&amp;rsquo;m not sure why, one of my daughters proposed to create a system to find cars inside garages at the shopping center. The car would locate itself using a GPS and then it would emit via radio. I told her that GPS waves don&amp;rsquo;t go through the walls, and I tried to convince her to look for different approaches (like generating a wifi hotspot and using a mobile app, locate the car).</description>
+    </item>
+    
+    <item>
+      <title>Developers - The neverending story</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</link>
+      <pubDate>Sat, 31 Jan 2015 20:33:01 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
+      <description>A year ago I vaguely new something about Scala. Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
+
+I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them. 
+Not bad for a year.</description>
+    </item>
+    
+    <item>
+      <title>Technical tests</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</link>
+      <pubDate>Mon, 19 Jan 2015 19:39:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</guid>
+      <description>In March 2014 I was made redundant (business unit closing). I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from &amp;ldquo;technical tests&amp;rdquo; in a matter of days Process A. Thanks for taking the time to complete our online testing. Unfortunately, your score did not meet the requirements of this role.</description>
+    </item>
+    
+    <item>
+      <title>New Spanish  eGovernment law</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-11-new-spanish-egovernment-law/</link>
+      <pubDate>Sun, 11 Jan 2015 22:36:23 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-11-new-spanish-egovernment-law/</guid>
+      <description>I was a Spanish Civil Servant from 2006 to 2012 (technically I&amp;rsquo;m still a Spanish Civil Servant on leave). I&amp;rsquo;ve worked for different branches of the Spanish Government from September 2000 to November 2012. Civil Service in Spain is reputed to be lazy among Spaniards. But having worked for all kind of employers (startups, multinationals, NGO and Government Agencies), I can say I&amp;rsquo;ve found lazy people there but I&amp;rsquo;ve also found engaged workers.</description>
+    </item>
+    
+    <item>
+      <title>What recruiters taught me about looking for a job</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
+      <pubDate>Tue, 06 Jan 2015 16:31:37 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
+      <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job. If you are looking for a job, be sure to do just the opposite of what the bad ones do. Almost every other day I receive an email offering me a position. &amp;ldquo;Good for you&amp;rdquo;.  No, bad for me. Most of the emails come from people I haven&amp;rsquo;t spoken to.</description>
+    </item>
+    
+    <item>
+      <title>Developers are from Mars, users from Venus</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-02-developers-are-from-mars-users-from/</link>
+      <pubDate>Fri, 02 Jan 2015 13:39:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-02-developers-are-from-mars-users-from/</guid>
+      <description>From 2008 to 2012, I was the project manager of a project with very special users. The kind of project was in the field of digital signature for the Spanish Government. I was in charge not only of acting as a Product Owner (determine features and priorities), but also provided telephone support (second point of contact, that in fact used to be first). The main group of users where well-educated, high-ranked with lots of responsibility in their own field, but non-technical.</description>
+    </item>
+    
+    <item>
+      <title>Future</title>
+      <link>http://gonzalo.f-v.es/blog/2014-12-31-future/</link>
+      <pubDate>Wed, 31 Dec 2014 08:00:09 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-12-31-future/</guid>
+      <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it. Four years laterI came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice. But it is not. I really think blogging is a good way to improve your written expression, to clarify your thoughts. And sometimes what you tell is worthwhile for others.</description>
+    </item>
+    
+    <item>
+      <title>Happy Christmas</title>
+      <link>http://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</link>
+      <pubDate>Thu, 25 Dec 2014 08:00:15 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</guid>
+      <description>Happy Christmas and a wonderful 2015 to all of my readers.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m a geek</title>
+      <link>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</link>
+      <pubDate>Mon, 22 Dec 2014 13:51:21 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</guid>
+      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it). It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell (or so does my back says) and noisy as a diesel generator. When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it didn&amp;rsquo;t have input/output devices like a keyboard or a monitor.</description>
+    </item>
+    
+    <item>
+      <title>Agile is about managing risk</title>
+      <link>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</link>
+      <pubDate>Sat, 04 Oct 2014 14:12:09 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
+      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority. Anyway, a few days ago I found this tweet: MVP explained via @smarty pic.twitter.com/hZkCzqytAP
+— About Programming (@abt_programming) September 28, 2014 I showed the picture to my wife, and I tried to explain it to her.</description>
+    </item>
+    
+    <item>
+      <title>Jetty</title>
+      <link>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</link>
+      <pubDate>Sat, 12 Jul 2014 17:39:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
+      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Scala: First impressions</title>
+      <link>http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/</link>
+      <pubDate>Sun, 08 Jun 2014 22:05:32 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/</guid>
+      <description>A couple of months ago I started working for a different company. I&amp;rsquo;m quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala. It&amp;rsquo;s uncommon to get a programming job when you don&amp;rsquo;t know the syntax of the programming language used. But if you really think about it, it&amp;rsquo;s much better to hire somebody passionate about technology and that really loves to learn (and commit) than somebody that knows the language but doesn&amp;rsquo;t give a d***mn.</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</link>
+      <pubDate>Sun, 08 Jun 2014 21:27:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
+      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
+    </item>
+    
+    <item>
+      <title>Android 4.4.3: Sony Xperia U</title>
+      <link>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</link>
+      <pubDate>Sun, 08 Jun 2014 21:23:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
+      <description>A few months ago,I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
+I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&amp;rsquo;t know is that today&amp;rsquo;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&amp;rsquo;s update yet.</description>
+    </item>
+    
+    <item>
+      <title>Optimizing</title>
+      <link>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</link>
+      <pubDate>Sun, 08 Jun 2014 20:33:40 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</guid>
+      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application. After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization: Measure 
+You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
+    </item>
+    
+    <item>
+      <title>Maximizing Macbook Pro&#39;s battery</title>
+      <link>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</link>
+      <pubDate>Wed, 28 May 2014 23:13:29 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</guid>
+      <description>I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery. So when I got my shiny brand new Mac, I decided I had to look after the battery. And I read everything I could find about how to take care Macbook&amp;rsquo;s battery. Apparently, old models used to need a periodic full discharge followed by a full recharge. Apparently, that is no longer the case.</description>
+    </item>
+    
+    <item>
+      <title>Good examples</title>
+      <link>http://gonzalo.f-v.es/blog/2014-05-09-good-examples/</link>
+      <pubDate>Fri, 09 May 2014 19:30:05 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-05-09-good-examples/</guid>
+      <description>I was made redundant at the end of March. It was a very stressful process but it ended up very well, as I&amp;rsquo;ve been in my new job for almost a month and I&amp;rsquo;m very happy. During process, I had to work with lots of recruiters. Both from inside and outside my former company. One thing many people in the recruiting industry fail to understand is that every interaction counts. For better or for worse.</description>
+    </item>
+    
+    <item>
+      <title>PDOException</title>
+      <link>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
+      <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory
+The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+    </item>
+    
+    <item>
+      <title>Acquisitions</title>
+      <link>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</link>
+      <pubDate>Sat, 15 Mar 2014 19:31:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</guid>
+      <description>Today I wanted to talk about two acquisitions. On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. Craziness. Logic. IMO the money paid is crazy, but the deal has a lot of logic for Facebook. Because for many people around me (including teens), Whatsapp is THE social network. They(we?) share things like images and videos, status. We use it almost everyday. Food for thought: when was the last time you got to know anything reading it on Facebook?</description>
+    </item>
+    
+    <item>
+      <title>Tipping point</title>
+      <link>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
+      <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
+      <description>I&#39;m happy.&amp;nbsp;
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+    </item>
+    
+    <item>
+      <title>I was sure it was my fault...</title>
+      <link>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
+      <pubDate>Thu, 27 Feb 2014 19:27:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t. In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s great when your idea is a good one. But...</title>
+      <link>http://gonzalo.f-v.es/blog/2014-02-26-its-great-when-your-idea-is-good-one/</link>
+      <pubDate>Wed, 26 Feb 2014 14:11:36 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-02-26-its-great-when-your-idea-is-good-one/</guid>
+      <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
+
+I did a quick search and I couldn&amp;rsquo;t find anything.</description>
+    </item>
+    
+    <item>
+      <title>Community managers: The day after</title>
+      <link>http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</link>
+      <pubDate>Mon, 03 Feb 2014 19:28:39 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</guid>
+      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation. He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful). IMO, the customer was not insulting and she was not threatening. Just complaining. Initially I thought about yet another tactic to be viral.</description>
+    </item>
+    
+    <item>
+      <title>Multithreading: Warning lights</title>
+      <link>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</link>
+      <pubDate>Tue, 21 Jan 2014 12:17:35 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</guid>
+      <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&amp;rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&amp;rsquo;t help it was my first experience working with a Mac. At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</link>
+      <pubDate>Tue, 26 Nov 2013 20:42:53 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
+      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions). The phone worked quite well.</description>
+    </item>
+    
+    <item>
+      <title>Companies, developers and recruitment</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</link>
+      <pubDate>Mon, 11 Nov 2013 09:56:47 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</guid>
+      <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less) Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case. I remember in particular one interview. It didn&amp;rsquo;t start well when I replied &amp;ldquo;Sí, I mean, yes&amp;rdquo; after listening my name with a perfect Spanish z sound (as it turned out, one of the interviewers was Spanish too).</description>
+    </item>
+    
+    <item>
+      <title>One year</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-01-one-year/</link>
+      <pubDate>Fri, 01 Nov 2013 16:30:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-11-01-one-year/</guid>
+      <description>A year ago I was in a plane flying into London. I was in whirl, nearly panicking. My life about to change. I&amp;rsquo;m somebody who loves being in his comfort zone. And then leaving your wife and daughters for 6 months. Leaving your country for who knows how much time. It has been hard. There have been difficult times. In lots of different levels. Renting in London (well worth a million pages book).</description>
+    </item>
+    
+    <item>
+      <title>The synchronized silver bullet</title>
+      <link>http://gonzalo.f-v.es/blog/2013-08-30-synchronized-silver-bullet/</link>
+      <pubDate>Fri, 30 Aug 2013 18:38:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-08-30-synchronized-silver-bullet/</guid>
+      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &amp;ldquo;Let&amp;rsquo;s put synchronized to the method&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Changes</title>
+      <link>http://gonzalo.f-v.es/blog/2013-08-30-changes/</link>
+      <pubDate>Fri, 30 Aug 2013 18:23:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-08-30-changes/</guid>
+      <description>A few days ago my company sent out this press release. It seems to be rather unimportant, but for me it means changes. I work for that specific business unit. I cannot write too much. Because I don&amp;rsquo;t know too much, but also because I don&amp;rsquo;t want to tell too much. But there are some topics I would like to raise.
+In Spain, if your work is good and the company is doing great, whatever happens in between, has little importance.</description>
+    </item>
+    
+    <item>
+      <title>IKEA vs Greenwich</title>
+      <link>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</link>
+      <pubDate>Fri, 19 Jul 2013 12:16:35 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</guid>
+      <description>This post started as a way of comparing different ways of managing customer relationships. It ended up as rant, but I&amp;rsquo;m not going to delete it. But I will write another post in the future with some suggestions. A good experience: IKEA.
+I recently bought some furniture from IKEA, using their online services in the UK. The furniture was delivered on Friday morning, and in the evening I discovered that there was package less than expected.</description>
+    </item>
+    
+    <item>
+      <title>Escrache</title>
+      <link>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</link>
+      <pubDate>Mon, 25 Mar 2013 22:22:45 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</guid>
+      <description>Imagine you´re a Member of Parliament. And you have decided you are not going to give your support to something. And then you get a group of people protesting against you.
+
+You would say. &amp;ldquo;Well, nothing new&amp;rdquo; &amp;hellip; calling you cockroach and threatening to kill you. 
+You would say something like &amp;ldquo;Well, you know. People sometimes say things they don&amp;rsquo;t really think.&amp;quot;
+&amp;hellip; at the street in front of your home.</description>
+    </item>
+    
+    <item>
+      <title>Spanish budget deficit, 3Q2012</title>
+      <link>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-3q2012/</link>
+      <pubDate>Wed, 06 Feb 2013 18:57:33 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-3q2012/</guid>
+      <description>From time to time I visit the page where the internal comptroller in Spain posts its budget deficit figures. Last week there was a link to the calendar of future publications. The calendar was last updated past September, and didn´t show anything for 2013. Usually at the end of January appears 3rd quarter budget deficit. So when January ended with no new data, I knew the figures would be bad.</description>
+    </item>
+    
+    <item>
+      <title>Spanish Budget Deficit. What if ...?</title>
+      <link>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-what-if/</link>
+      <pubDate>Wed, 06 Feb 2013 18:26:27 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-what-if/</guid>
+      <description>EDIT: I&amp;rsquo;ve done again the calculations and are more unbelievable even. I won&amp;rsquo;t update this post but IMO it is quite reasonable to hit the target. From time I tend to write about the Spanish budget deficit. Almost nobody expects that Spain will meet its commitment around budget deficit for 2012. Well. I want to say, that, regarding central government, I do think they are going to hit the target. There are others components of the budget deficit (regional and local government, and social security agency).</description>
+    </item>
+    
+    <item>
+      <title>The most popular video in Spain this Christmas</title>
+      <link>http://gonzalo.f-v.es/blog/2012-12-21-the-most-popular-video-in-spain-this/</link>
+      <pubDate>Fri, 21 Dec 2012 20:28:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-12-21-the-most-popular-video-in-spain-this/</guid>
+      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this ChristmasIt depicts Fofito (a clown very well known in Spain) with other well known&amp;nbsp;comedians,&amp;nbsp;actors and even journalists, sending parcels to &#34;important people&#34;: from Angela Merkel and IMF to Moody&#39;s and Standard&amp;amp;Poor&#39;s. In those parcels, Fofito sends, bundled with&amp;nbsp;&#34;cold meat&#34; (that&#39;s what makes the company that prepared the ad),&amp;nbsp;some sort of Curriculum Vitae of Spain, telling those &#34;</description>
+    </item>
+    
+    <item>
+      <title>Driving in the UK</title>
+      <link>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</link>
+      <pubDate>Sat, 15 Dec 2012 19:47:50 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</guid>
+      <description>Today I rented a car for a few hours. I used to drive in Spain, but I hadn&#39;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture.
+There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).&amp;nbsp;
+First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.</description>
+    </item>
+    
+    <item>
+      <title>Relocating to London</title>
+      <link>http://gonzalo.f-v.es/blog/2012-12-15-relocating-to-london/</link>
+      <pubDate>Sat, 15 Dec 2012 19:45:08 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-12-15-relocating-to-london/</guid>
+      <description>In two weeks I will be working in London. I know I was expecting to continue my last post about Spring persistence. I have lots of things to write about the incredible experience of finding a job abroad and relocating. But as you&amp;rsquo;ll imagine, I&amp;rsquo;m quite busy. I&amp;rsquo;ll try to post before starting in my new job, but I don&amp;rsquo;t promise anything. Thank you. Each and every one of you.</description>
+    </item>
+    
+    <item>
+      <title>The future of this blog</title>
+      <link>http://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</link>
+      <pubDate>Thu, 13 Dec 2012 19:22:42 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</guid>
+      <description>When I started this blog, I had a goal. I needed to practice my English, because I wanted to go abroad. Months (or even years) later, more reasons appeared. First, I discovered that writing about solutions to job related problems could give people a way to solve their own problems more easily. Later on, I realized it could also be a way to show that I wasn&amp;rsquo;t a newcomer while looking for a position abroad.</description>
+    </item>
+    
+    <item>
+      <title>Crash course on Spring MVC, transactions and persistence (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-10-01-crash-course-on-spring-mvc-transactions/</link>
+      <pubDate>Mon, 01 Oct 2012 19:28:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-10-01-crash-course-on-spring-mvc-transactions/</guid>
+      <description>A couple of weeks ago I was asked to do an assignment for a selection process. The task was trivial for expected 2-3 hours, and mentioned that the final project would end as a Web Application based on Spring and Hibernate. So I decided to do it as a full application. I didn&amp;rsquo;t want to copy code from work as a template, but I wanted to do it as a fresh project.</description>
+    </item>
+    
+    <item>
+      <title>Xerces and Xalan: Recipes for the win</title>
+      <link>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
+      <pubDate>Mon, 01 Oct 2012 14:38:05 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+    </item>
+    
+    <item>
+      <title>Google, where are you going?</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</link>
+      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</guid>
+      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking. I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;. Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts about Tecnimap 2010</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</link>
+      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</guid>
+      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb.
+Overall it has been a nice experience, but I wanted to share some thoughts about it.
+On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
+    </item>
+    
+    <item>
+      <title>Spring course</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</link>
+      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</guid>
+      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me. I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
+    </item>
+    
+    <item>
+      <title>Weird IE9 bug</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</link>
+      <pubDate>Sun, 30 Sep 2012 11:09:01 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</guid>
+      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+    </item>
+    
+    <item>
+      <title>OptionalDataException while reading JMS message</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
+      <pubDate>Mon, 24 Sep 2012 19:33:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
+In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+    </item>
+    
+    <item>
+      <title>June deficit was 8.54%</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</link>
+      <pubDate>Sun, 23 Sep 2012 18:40:13 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</guid>
+      <description>From time to time I write about politics in Spain in general and in particular Spanish deficit. Sometimes I try to do some simple estimations and comments.
+More recently there has been some comments in Spain regarding the publication of regions&#39; budget deficit up to second quarter. But I don&amp;rsquo;t really understand why people insist to pay attention to quarterly data without reference to a twelve month period. Let&amp;rsquo;s do the math.</description>
+    </item>
+    
+    <item>
+      <title>Notes to a newbie spring-mvc developer</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
+      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
+&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
+&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
+Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
+    </item>
+    
+    <item>
+      <title>Savon.rb and sequences</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
+One of those topics has been Xerces and Xalan.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+
+In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+    <item>
+      <title>Techzing wives</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</link>
+      <pubDate>Thu, 20 Sep 2012 20:36:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</guid>
+      <description>I tend to listen Techzing podcast. It&amp;rsquo;s a podcast about very different topics, recorded by two geeks, (or developers, and entrepeneurs). I don&amp;rsquo;t remember when I started listening them. I do remember I started because I wanted to practice English and it was great (Justin is an Englishman and Jason is American). Soon I forgot why: they were great by themselves. The topics are very diverse from Technology, Entrepenurship, Politics (Loom and Gloom Report), Education, Genetics&amp;hellip; I listen them while commuting, and I was a couple of months behind.</description>
+    </item>
+    
+    <item>
+      <title>My first Chrome extension(I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</link>
+      <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</guid>
+      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information. However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me. And I got tired. And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &amp;ldquo;first-paragraph-only&amp;rdquo;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
+    </item>
+    
+    <item>
+      <title>My first Chrome extension(II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
+      <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
+      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension. First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good. Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
+    </item>
+    
+    <item>
+      <title>The best eclipse tip ever</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/</link>
+      <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/</guid>
+      <description>How to disable auto close for the XML comments. Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
+    </item>
+    
+    <item>
+      <title>Calisthenics</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-03-calisthenics/</link>
+      <pubDate>Mon, 03 Sep 2012 22:19:58 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-03-calisthenics/</guid>
+      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better: 1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
+    </item>
+    
+    <item>
+      <title>No more applets</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</link>
+      <pubDate>Mon, 03 Sep 2012 22:06:06 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</guid>
+      <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications. One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (IV): Ruby version</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</link>
+      <pubDate>Sun, 26 Aug 2012 20:00:02 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</guid>
+      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent. One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself. Anyway it was clear that Java version was considerably more verbose. So one obvious improvement is using symbols instead of string.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (III): Dependency inversion</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/</link>
+      <pubDate>Fri, 24 Aug 2012 22:11:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/</guid>
+      <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion. Sometimes a higher level class A has to invoke methods in a lower level class.</description>
+    </item>
+    
+    <item>
+      <title>Faking the console in Ruby </title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-23-faking-console-in-ruby/</link>
+      <pubDate>Thu, 23 Aug 2012 12:31:38 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-23-faking-console-in-ruby/</guid>
+      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine. But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console. And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec. But I wanted to do it without any additional requirement.</description>
+    </item>
+    
+    <item>
+      <title>Rails in Ubuntu</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</link>
+      <pubDate>Thu, 23 Aug 2012 12:31:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</guid>
+      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice. There is some controversy about editor to use for ruby. Some people prefer Vim+tmux, which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (II): Java version</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</link>
+      <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
+      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+
+PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F
+MOVE -&amp;gt;Move the robot 1 cell in the facing direction
+LEFT -&amp;gt;Changes the facing counter-clockwise
+RIGHT -&amp;gt;Changes the facing clockwise
+REPORT -&amp;gt;Shows the current position and facing
+and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
+    </item>
+    
+    <item>
+      <title>Little robot (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</link>
+      <pubDate>Fri, 17 Aug 2012 12:17:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
+      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style. IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style. Another similar tool would be online testing web applications such as codility.</description>
+    </item>
+    
+    <item>
+      <title>Copyright protection</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</link>
+      <pubDate>Thu, 16 Aug 2012 22:09:51 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</guid>
+      <description>You know something is broken with copyright when: You buy a &#34;Barbie and three Musqueteers&#34; DVD and you can&#39;t play in your DVD player because it&#39;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.
+You can&#39;t install the Windows Vista that came with your computer, on a VirtualBox over a Linux box, because it refuses to activate.</description>
+    </item>
+    
+    <item>
+      <title>State of Emergency: very serious</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-state-of-emergency-very-serious/</link>
+      <pubDate>Thu, 16 Aug 2012 22:09:13 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-state-of-emergency-very-serious/</guid>
+      <description>It&amp;rsquo;s in the news. Spanish Government has declared &amp;ldquo;State of Emergency&amp;rdquo;. This declaration gives special powers to the government like the ability to limit the circulation of people, commandeer things or even enter in private properties (but not homes).
+It&amp;rsquo;s somewhat similar to State of Siege, but lower in intensity. Being Spain a democracy one could think that this kind of declaration should be reserved to extreme cases. That&amp;rsquo;s true in the law.</description>
+    </item>
+    
+    <item>
+      <title>Scrum for myself</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-scrum-for-myself/</link>
+      <pubDate>Thu, 16 Aug 2012 22:08:50 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-scrum-for-myself/</guid>
+      <description>Yesterday I explained I have attended recently a couple of courses. One of them was about Scrum. The course was very interesting, although, as I explained in the evaluation, there were times when I wished there were only one teacher instead of three. At the end of the course, I took a test, and now I&amp;rsquo;m Scrum Manager certified. I must say that the exam was quite difficult, but I don&amp;rsquo;t consider myself a Scrum manager.</description>
+    </item>
+    
+    <item>
+      <title>Javascript all the way</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-javascript-all-way/</link>
+      <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-javascript-all-way/</guid>
+      <description>These days I&amp;rsquo;m playing with NodeJS.
+And today I was thinking about the fundamental change in Javascript.
+A few years ago it was a darn language for the web.
+Now someone could query a database using Javascript (CouchDB), create the server portion of a web application using Javascipt(NodeJS), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium).</description>
+    </item>
+    
+    <item>
+      <title>Why LinkedIn breach is so important?</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</link>
+      <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
+      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised. We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>A great experience applying to a position (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</link>
+      <pubDate>Thu, 16 Aug 2012 21:59:17 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</guid>
+      <description>I wrote in my last post about lessons I&amp;rsquo;ve got from bad experiences looking for a job. In this post I&amp;rsquo;m going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it. Make no mistakes: I didn&amp;rsquo;t get offered the position in the end. For me, the outcome is not the most important thing in such a process, but the feeling you&amp;rsquo;re not losing your time, and the lessons learned.</description>
+    </item>
+    
+    <item>
+      <title>A great experience applying to a position (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</link>
+      <pubDate>Thu, 16 Aug 2012 21:59:17 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</guid>
+      <description>In my previous post I explained a great experience applying for a position. In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience. Selection: Be very selective about what you apply for. For me this means no recruiters, making a pre-research of the company, and reading carefully the description to get a sense of what the company is asking. It&#39;s pretty obvious, but essential for the following lesson.</description>
+    </item>
+    
+    <item>
+      <title>Bad experiences</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</link>
+      <pubDate>Thu, 16 Aug 2012 21:59:17 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</guid>
+      <description>For some time I&amp;rsquo;ve been applying to different positions. I have two daughters and I want for them (and for me) to live in a different culture and language. After a few experiences, I&amp;rsquo;m tempted to say something about bad experiences:Forget about recruiters. They have different alignments than yours. In my experience (it could be biased), 90% of them are just form fillers. They ask you things (CV, tests, questions), in order to fill a form in a random web site.</description>
+    </item>
+    
+    <item>
+      <title>Budget deficit</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-24-budget-deficit/</link>
+      <pubDate>Thu, 24 May 2012 13:22:37 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-05-24-budget-deficit/</guid>
+      <description>Disclaimer: I&amp;rsquo;m talking about public data. I don&amp;rsquo;t have any unpublished data.
+
+In Spain there is some buzz recently about tax increases approved on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP. The commitment was to finalize 2011 with a 6% GDP, from 9.2 previous year. 
+OK. Here is my take. We will end 2011 with more than 9% GDP.</description>
+    </item>
+    
+    <item>
+      <title>Estimating Spanish budget deficit</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-24-estimating-spanish-budget-deficit/</link>
+      <pubDate>Thu, 24 May 2012 13:22:37 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-05-24-estimating-spanish-budget-deficit/</guid>
+      <description>This is one of my political/economical post (nothing related with computers) I write from time to time. Past February, Spain published its estimation of whole year budget deficit. Many well respected analysts suggested or explicitly wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller. One for all, Xavier Xala i Martin: Los números presentados hoy los ha construido el gobierno del Partido Popular y evalúan el año 2011, último año de gobierno del Partido Socialista.</description>
+    </item>
+    
+    <item>
+      <title>My first mobile application</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</link>
+      <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</guid>
+      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
+Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
+    </item>
+    
+    <item>
+      <title>When companies just don&#39;t get it</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</link>
+      <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</guid>
+      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce.
+More recently I&amp;rsquo;ve started with mobile development. I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
+    </item>
+    
+    <item>
+      <title>Thoughts about a death</title>
+      <link>http://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</link>
+      <pubDate>Sat, 01 Oct 2011 20:58:36 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</guid>
+      <description>Sometimes you start to write because you need to write but you don&amp;rsquo;t know what you want to express. This is one of those times.
+A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed suicide. Doctors performed a caesarean to the woman assassinated and the baby is alive. The man had a letter saying Satan was chasing him, and seems to be a homeless with police records.</description>
+    </item>
+    
+    <item>
+      <title>The rain in Spain(II): Government</title>
+      <link>http://gonzalo.f-v.es/blog/2011-08-02-rain-in-spainii-government/</link>
+      <pubDate>Tue, 02 Aug 2011 21:01:47 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2011-08-02-rain-in-spainii-government/</guid>
+      <description>Let&amp;rsquo;s start with politics. I guess it&amp;rsquo;s less known abroad, but it&amp;rsquo;s probably more important than the economic situation. First the government. Forget about the past. Let&amp;rsquo;s start by the end. Today August 2nd 2011, one of the more complex days from an economic point of view for the hole world. Every stock market falling through like a knife in the butter. Spanish bonds at what lots of people understand as intervention level (400 basis points over German debt).</description>
+    </item>
+    
+    <item>
+      <title>The rain in Spain(I)</title>
+      <link>http://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</link>
+      <pubDate>Mon, 01 Aug 2011 20:16:50 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</guid>
+      <description>I love this video:  A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far. But I couldn&#39;t help thinking about a different climate. The political and economical climate. I know people outside Spain are worried about the situation in Spain. What can I tell about it?</description>
+    </item>
+    
+    <item>
+      <title>Civil service: Why me?</title>
+      <link>http://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</link>
+      <pubDate>Wed, 01 Dec 2010 17:33:45 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</guid>
+      <description>A few days ago I promised to explain why I chose to become a civil servant, and why I keep being one. I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough. But then I came to &amp;ldquo;Reasons to work&amp;rdquo;. Seth Godin. No more words needed.</description>
+    </item>
+    
+    <item>
+      <title>Flying, flying, flying</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</link>
+      <pubDate>Mon, 29 Nov 2010 21:02:51 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</guid>
+      <description>I&amp;rsquo;ve been to Rome this weekend. I used to fly a little more before my children&amp;rsquo;s bbirth, but since then I haven&amp;rsquo;t flyed for quite a few years. Train and car a lot. But no planes. I knew what I was going to face. But the experience has been worse. To pass through the security line is something stressful and disgusting. Wait a long queue. Put all your belongings through the X-ray.</description>
+    </item>
+    
+    <item>
+      <title>Civil service: How to improve</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</link>
+      <pubDate>Thu, 25 Nov 2010 20:38:03 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</guid>
+      <description>A few days ago I promised to explain some of my ideas to improve the civil service in Spain. Of course there is no silver bullet. Instead, as you can see the links, all the bricks are in place: Try to introduce economic incentives. People who work should be rewarded. Of course that could be misused to give more money to friends instead of giving it to the people who work.</description>
+    </item>
+    
+    <item>
+      <title>Corruption</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-25-corruption/</link>
+      <pubDate>Thu, 25 Nov 2010 06:45:11 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-25-corruption/</guid>
+      <description>Wow. It seems Wikileaks is going to publish some documents showing implication of some world leaders in corruption practices. I don&amp;rsquo;t have any other information but the Reuters piece of news. I wouldn&amp;rsquo;t have brought it to this blog if it weren&amp;rsquo;t for the last paragraph of the first page: Two of the sources said Assange has also made the documents available to at least two other European publications -- the newspapers El Pais of Spain and Le Monde of France.</description>
+    </item>
+    
+    <item>
+      <title>Lots of old friends</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</link>
+      <pubDate>Thu, 18 Nov 2010 21:30:39 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</guid>
+      <description>Yes. I know I was supposed to write about Civil service in Spain. But I&amp;rsquo;ve promised myself to write a blog post Monday through Thursday. Nobody reads this, my head is full of memories, and I&amp;rsquo;m not able to write about the planned topic. I could struggle with the it, but I prefer to write about my memories. In the last couple of days there&amp;rsquo;s a lot of activity in my mailbox.</description>
+    </item>
+    
+    <item>
+      <title>Civil service in Spain: Productivity</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</link>
+      <pubDate>Wed, 17 Nov 2010 21:10:31 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</guid>
+      <description>I wrote yesterday about why job security is a good mechanism to protect civil service from corruption. But I also explained that it&amp;rsquo;s a mechanism that makes difficult to punish slackers. That wouldn&amp;rsquo;t be a serious problem if there were mechanism to reward people who do right. And the truth is that there aren&amp;rsquo;t. The salary has a variable part but could be more or less explained as &amp;ldquo;if you come to work twice a week in the afternoon, you get it&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>Civil service in Spain: Job security</title>
       <link>http://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</link>
       <pubDate>Tue, 16 Nov 2010 21:48:41 +0000</pubDate>
@@ -762,818 +1574,6 @@ Both are abandoned.
 Not a good track.
 Will this blog be different? I don’t know if I’ll continue updating this. But I know for sure this blog is different now.
 The first difference is that I’m writing it in English. The reason I’m doing it, is because writing in English it’s an exercise for me.</description>
-    </item>
-    
-    <item>
-      <title>A great experience applying to a position (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</guid>
-      <description>I wrote in my last post about lessons I&amp;rsquo;ve got from bad experiences looking for a job. In this post I&amp;rsquo;m going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it. Make no mistakes: I didn&amp;rsquo;t get offered the position in the end. For me, the outcome is not the most important thing in such a process, but the feeling you&amp;rsquo;re not losing your time, and the lessons learned.</description>
-    </item>
-    
-    <item>
-      <title>A great experience applying to a position (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</guid>
-      <description>In my previous post I explained a great experience applying for a position. In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience. Selection: Be very selective about what you apply for. For me this means no recruiters, making a pre-research of the company, and reading carefully the description to get a sense of what the company is asking. It&#39;s pretty obvious, but essential for the following lesson.</description>
-    </item>
-    
-    <item>
-      <title>Acquisitions</title>
-      <link>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</guid>
-      <description>Today I wanted to talk about two acquisitions. On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. Craziness. Logic. IMO the money paid is crazy, but the deal has a lot of logic for Facebook. Because for many people around me (including teens), Whatsapp is THE social network. They(we?) share things like images and videos, status. We use it almost everyday. Food for thought: when was the last time you got to know anything reading it on Facebook?</description>
-    </item>
-    
-    <item>
-      <title>Agile is about managing risk</title>
-      <link>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
-      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority. Anyway, a few days ago I found this tweet: MVP explained via @smarty pic.twitter.com/hZkCzqytAP
-— About Programming (@abt_programming) September 28, 2014 I showed the picture to my wife, and I tried to explain it to her.</description>
-    </item>
-    
-    <item>
-      <title>Android 4.4.3: Sony Xperia U</title>
-      <link>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
-      <description>A few months ago,I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
-I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&amp;rsquo;t know is that today&amp;rsquo;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&amp;rsquo;s update yet.</description>
-    </item>
-    
-    <item>
-      <title>Bad experiences</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</guid>
-      <description>For some time I&amp;rsquo;ve been applying to different positions. I have two daughters and I want for them (and for me) to live in a different culture and language. After a few experiences, I&amp;rsquo;m tempted to say something about bad experiences:Forget about recruiters. They have different alignments than yours. In my experience (it could be biased), 90% of them are just form fillers. They ask you things (CV, tests, questions), in order to fill a form in a random web site.</description>
-    </item>
-    
-    <item>
-      <title>Budget deficit</title>
-      <link>http://gonzalo.f-v.es/blog/2012-05-24-budget-deficit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-05-24-budget-deficit/</guid>
-      <description>Disclaimer: I&amp;rsquo;m talking about public data. I don&amp;rsquo;t have any unpublished data.
-
-In Spain there is some buzz recently about tax increases approved on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP. The commitment was to finalize 2011 with a 6% GDP, from 9.2 previous year. 
-OK. Here is my take. We will end 2011 with more than 9% GDP.</description>
-    </item>
-    
-    <item>
-      <title>Calisthenics</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-03-calisthenics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-03-calisthenics/</guid>
-      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better: 1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
-    </item>
-    
-    <item>
-      <title>Changes</title>
-      <link>http://gonzalo.f-v.es/blog/2013-08-30-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-08-30-changes/</guid>
-      <description>A few days ago my company sent out this press release. It seems to be rather unimportant, but for me it means changes. I work for that specific business unit. I cannot write too much. Because I don&amp;rsquo;t know too much, but also because I don&amp;rsquo;t want to tell too much. But there are some topics I would like to raise.
-In Spain, if your work is good and the company is doing great, whatever happens in between, has little importance.</description>
-    </item>
-    
-    <item>
-      <title>Civil service in Spain: Productivity</title>
-      <link>http://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</guid>
-      <description>I wrote yesterday about why job security is a good mechanism to protect civil service from corruption. But I also explained that it&amp;rsquo;s a mechanism that makes difficult to punish slackers. That wouldn&amp;rsquo;t be a serious problem if there were mechanism to reward people who do right. And the truth is that there aren&amp;rsquo;t. The salary has a variable part but could be more or less explained as &amp;ldquo;if you come to work twice a week in the afternoon, you get it&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Civil service: How to improve</title>
-      <link>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</guid>
-      <description>A few days ago I promised to explain some of my ideas to improve the civil service in Spain. Of course there is no silver bullet. Instead, as you can see the links, all the bricks are in place: Try to introduce economic incentives. People who work should be rewarded. Of course that could be misused to give more money to friends instead of giving it to the people who work.</description>
-    </item>
-    
-    <item>
-      <title>Civil service: Why me?</title>
-      <link>http://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</guid>
-      <description>A few days ago I promised to explain why I chose to become a civil servant, and why I keep being one. I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough. But then I came to &amp;ldquo;Reasons to work&amp;rdquo;. Seth Godin. No more words needed.</description>
-    </item>
-    
-    <item>
-      <title>Community managers: The day after</title>
-      <link>http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</guid>
-      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation. He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful). IMO, the customer was not insulting and she was not threatening. Just complaining. Initially I thought about yet another tactic to be viral.</description>
-    </item>
-    
-    <item>
-      <title>Companies, developers and recruitment</title>
-      <link>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</guid>
-      <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less) Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case. I remember in particular one interview. It didn&amp;rsquo;t start well when I replied &amp;ldquo;Sí, I mean, yes&amp;rdquo; after listening my name with a perfect Spanish z sound (as it turned out, one of the interviewers was Spanish too).</description>
-    </item>
-    
-    <item>
-      <title>Copyright protection</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</guid>
-      <description>You know something is broken with copyright when: You buy a &#34;Barbie and three Musqueteers&#34; DVD and you can&#39;t play in your DVD player because it&#39;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.
-You can&#39;t install the Windows Vista that came with your computer, on a VirtualBox over a Linux box, because it refuses to activate.</description>
-    </item>
-    
-    <item>
-      <title>Corruption</title>
-      <link>http://gonzalo.f-v.es/blog/2010-11-25-corruption/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2010-11-25-corruption/</guid>
-      <description>Wow. It seems Wikileaks is going to publish some documents showing implication of some world leaders in corruption practices. I don&amp;rsquo;t have any other information but the Reuters piece of news. I wouldn&amp;rsquo;t have brought it to this blog if it weren&amp;rsquo;t for the last paragraph of the first page: Two of the sources said Assange has also made the documents available to at least two other European publications -- the newspapers El Pais of Spain and Le Monde of France.</description>
-    </item>
-    
-    <item>
-      <title>Crash course on Spring MVC, transactions and persistence (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-10-01-crash-course-on-spring-mvc-transactions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-10-01-crash-course-on-spring-mvc-transactions/</guid>
-      <description>A couple of weeks ago I was asked to do an assignment for a selection process. The task was trivial for expected 2-3 hours, and mentioned that the final project would end as a Web Application based on Spring and Hibernate. So I decided to do it as a full application. I didn&amp;rsquo;t want to copy code from work as a template, but I wanted to do it as a fresh project.</description>
-    </item>
-    
-    <item>
-      <title>Developers - The neverending story</title>
-      <link>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
-      <description>A year ago I vaguely new something about Scala. Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
-
-I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them. 
-Not bad for a year.</description>
-    </item>
-    
-    <item>
-      <title>Developers are from Mars, users from Venus</title>
-      <link>http://gonzalo.f-v.es/blog/2015-01-02-developers-are-from-mars-users-from/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-01-02-developers-are-from-mars-users-from/</guid>
-      <description>From 2008 to 2012, I was the project manager of a project with very special users. The kind of project was in the field of digital signature for the Spanish Government. I was in charge not only of acting as a Product Owner (determine features and priorities), but also provided telephone support (second point of contact, that in fact used to be first). The main group of users where well-educated, high-ranked with lots of responsibility in their own field, but non-technical.</description>
-    </item>
-    
-    <item>
-      <title>Driving in the UK</title>
-      <link>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</guid>
-      <description>Today I rented a car for a few hours. I used to drive in Spain, but I hadn&#39;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture.
-There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).&amp;nbsp;
-First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.</description>
-    </item>
-    
-    <item>
-      <title>Escrache</title>
-      <link>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</guid>
-      <description>Imagine you´re a Member of Parliament. And you have decided you are not going to give your support to something. And then you get a group of people protesting against you.
-
-You would say. &amp;ldquo;Well, nothing new&amp;rdquo; &amp;hellip; calling you cockroach and threatening to kill you. 
-You would say something like &amp;ldquo;Well, you know. People sometimes say things they don&amp;rsquo;t really think.&amp;quot;
-&amp;hellip; at the street in front of your home.</description>
-    </item>
-    
-    <item>
-      <title>Estimating Spanish budget deficit</title>
-      <link>http://gonzalo.f-v.es/blog/2012-05-24-estimating-spanish-budget-deficit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-05-24-estimating-spanish-budget-deficit/</guid>
-      <description>This is one of my political/economical post (nothing related with computers) I write from time to time. Past February, Spain published its estimation of whole year budget deficit. Many well respected analysts suggested or explicitly wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller. One for all, Xavier Xala i Martin: Los números presentados hoy los ha construido el gobierno del Partido Popular y evalúan el año 2011, último año de gobierno del Partido Socialista.</description>
-    </item>
-    
-    <item>
-      <title>Faking the console in Ruby </title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-23-faking-console-in-ruby/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-23-faking-console-in-ruby/</guid>
-      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine. But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console. And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec. But I wanted to do it without any additional requirement.</description>
-    </item>
-    
-    <item>
-      <title>Firmware upgrade for Xperia U in Linux (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
-      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions). The phone worked quite well.</description>
-    </item>
-    
-    <item>
-      <title>Firmware upgrade for Xperia U in Linux (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
-      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
-    </item>
-    
-    <item>
-      <title>Flying, flying, flying</title>
-      <link>http://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</guid>
-      <description>I&amp;rsquo;ve been to Rome this weekend. I used to fly a little more before my children&amp;rsquo;s bbirth, but since then I haven&amp;rsquo;t flyed for quite a few years. Train and car a lot. But no planes. I knew what I was going to face. But the experience has been worse. To pass through the security line is something stressful and disgusting. Wait a long queue. Put all your belongings through the X-ray.</description>
-    </item>
-    
-    <item>
-      <title>Future</title>
-      <link>http://gonzalo.f-v.es/blog/2014-12-31-future/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-12-31-future/</guid>
-      <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it. Four years laterI came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice. But it is not. I really think blogging is a good way to improve your written expression, to clarify your thoughts. And sometimes what you tell is worthwhile for others.</description>
-    </item>
-    
-    <item>
-      <title>Good examples</title>
-      <link>http://gonzalo.f-v.es/blog/2014-05-09-good-examples/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-05-09-good-examples/</guid>
-      <description>I was made redundant at the end of March. It was a very stressful process but it ended up very well, as I&amp;rsquo;ve been in my new job for almost a month and I&amp;rsquo;m very happy. During process, I had to work with lots of recruiters. Both from inside and outside my former company. One thing many people in the recruiting industry fail to understand is that every interaction counts. For better or for worse.</description>
-    </item>
-    
-    <item>
-      <title>Google, where are you going?</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</guid>
-      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking. I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;. Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
-    </item>
-    
-    <item>
-      <title>Happy Christmas</title>
-      <link>http://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</guid>
-      <description>Happy Christmas and a wonderful 2015 to all of my readers.</description>
-    </item>
-    
-    <item>
-      <title>I was sure it was my fault...</title>
-      <link>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>&amp;hellip; but it wasn&amp;rsquo;t. In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
-    </item>
-    
-    <item>
-      <title>I&#39;m a geek</title>
-      <link>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</guid>
-      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it). It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell (or so does my back says) and noisy as a diesel generator. When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it didn&amp;rsquo;t have input/output devices like a keyboard or a monitor.</description>
-    </item>
-    
-    <item>
-      <title>IKEA vs Greenwich</title>
-      <link>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</guid>
-      <description>This post started as a way of comparing different ways of managing customer relationships. It ended up as rant, but I&amp;rsquo;m not going to delete it. But I will write another post in the future with some suggestions. A good experience: IKEA.
-I recently bought some furniture from IKEA, using their online services in the UK. The furniture was delivered on Friday morning, and in the evening I discovered that there was package less than expected.</description>
-    </item>
-    
-    <item>
-      <title>It&#39;s great when your idea is a good one. But...</title>
-      <link>http://gonzalo.f-v.es/blog/2014-02-26-its-great-when-your-idea-is-good-one/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-02-26-its-great-when-your-idea-is-good-one/</guid>
-      <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
-
-I did a quick search and I couldn&amp;rsquo;t find anything.</description>
-    </item>
-    
-    <item>
-      <title>Javascript all the way</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-javascript-all-way/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-javascript-all-way/</guid>
-      <description>These days I&amp;rsquo;m playing with NodeJS.
-And today I was thinking about the fundamental change in Javascript.
-A few years ago it was a darn language for the web.
-Now someone could query a database using Javascript (CouchDB), create the server portion of a web application using Javascipt(NodeJS), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium).</description>
-    </item>
-    
-    <item>
-      <title>Jetty</title>
-      <link>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
-      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>June deficit was 8.54%</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</guid>
-      <description>From time to time I write about politics in Spain in general and in particular Spanish deficit. Sometimes I try to do some simple estimations and comments.
-More recently there has been some comments in Spain regarding the publication of regions&#39; budget deficit up to second quarter. But I don&amp;rsquo;t really understand why people insist to pay attention to quarterly data without reference to a twelve month period. Let&amp;rsquo;s do the math.</description>
-    </item>
-    
-    <item>
-      <title>Little robot (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
-      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style. IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style. Another similar tool would be online testing web applications such as codility.</description>
-    </item>
-    
-    <item>
-      <title>Little robot (II): Java version</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
-
-PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F
-MOVE -&amp;gt;Move the robot 1 cell in the facing direction
-LEFT -&amp;gt;Changes the facing counter-clockwise
-RIGHT -&amp;gt;Changes the facing clockwise
-REPORT -&amp;gt;Shows the current position and facing
-and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
-    </item>
-    
-    <item>
-      <title>Little robot (III): Dependency inversion</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/</guid>
-      <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion. Sometimes a higher level class A has to invoke methods in a lower level class.</description>
-    </item>
-    
-    <item>
-      <title>Little robot (IV): Ruby version</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</guid>
-      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent. One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself. Anyway it was clear that Java version was considerably more verbose. So one obvious improvement is using symbols instead of string.</description>
-    </item>
-    
-    <item>
-      <title>Lots of old friends</title>
-      <link>http://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</guid>
-      <description>Yes. I know I was supposed to write about Civil service in Spain. But I&amp;rsquo;ve promised myself to write a blog post Monday through Thursday. Nobody reads this, my head is full of memories, and I&amp;rsquo;m not able to write about the planned topic. I could struggle with the it, but I prefer to write about my memories. In the last couple of days there&amp;rsquo;s a lot of activity in my mailbox.</description>
-    </item>
-    
-    <item>
-      <title>Maximizing Macbook Pro&#39;s battery</title>
-      <link>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</guid>
-      <description>I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery. So when I got my shiny brand new Mac, I decided I had to look after the battery. And I read everything I could find about how to take care Macbook&amp;rsquo;s battery. Apparently, old models used to need a periodic full discharge followed by a full recharge. Apparently, that is no longer the case.</description>
-    </item>
-    
-    <item>
-      <title>Multithreading: Warning lights</title>
-      <link>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</guid>
-      <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&amp;rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&amp;rsquo;t help it was my first experience working with a Mac. At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.</description>
-    </item>
-    
-    <item>
-      <title>My first Chrome extension(I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</guid>
-      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information. However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me. And I got tired. And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &amp;ldquo;first-paragraph-only&amp;rdquo;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
-    </item>
-    
-    <item>
-      <title>My first Chrome extension(II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
-      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension. First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good. Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
-    </item>
-    
-    <item>
-      <title>My first mobile application</title>
-      <link>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</guid>
-      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
-Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
-    </item>
-    
-    <item>
-      <title>New Spanish  eGovernment law</title>
-      <link>http://gonzalo.f-v.es/blog/2015-01-11-new-spanish-egovernment-law/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-01-11-new-spanish-egovernment-law/</guid>
-      <description>I was a Spanish Civil Servant from 2006 to 2012 (technically I&amp;rsquo;m still a Spanish Civil Servant on leave). I&amp;rsquo;ve worked for different branches of the Spanish Government from September 2000 to November 2012. Civil Service in Spain is reputed to be lazy among Spaniards. But having worked for all kind of employers (startups, multinationals, NGO and Government Agencies), I can say I&amp;rsquo;ve found lazy people there but I&amp;rsquo;ve also found engaged workers.</description>
-    </item>
-    
-    <item>
-      <title>No more applets</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</guid>
-      <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications. One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
-    </item>
-    
-    <item>
-      <title>Notes to a newbie spring-mvc developer</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
-&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
-&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
-Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
-    </item>
-    
-    <item>
-      <title>One year</title>
-      <link>http://gonzalo.f-v.es/blog/2013-11-01-one-year/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-11-01-one-year/</guid>
-      <description>A year ago I was in a plane flying into London. I was in whirl, nearly panicking. My life about to change. I&amp;rsquo;m somebody who loves being in his comfort zone. And then leaving your wife and daughters for 6 months. Leaving your country for who knows how much time. It has been hard. There have been difficult times. In lots of different levels. Renting in London (well worth a million pages book).</description>
-    </item>
-    
-    <item>
-      <title>Optimizing</title>
-      <link>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</guid>
-      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application. After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization: Measure 
-You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
-    </item>
-    
-    <item>
-      <title>OptionalDataException while reading JMS message</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
-In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
-    </item>
-    
-    <item>
-      <title>PDOException</title>
-      <link>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory
-The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
-    </item>
-    
-    <item>
-      <title>Rails in Ubuntu</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</guid>
-      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice. There is some controversy about editor to use for ruby. Some people prefer Vim+tmux, which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
-    </item>
-    
-    <item>
-      <title>React-native: some context and a few wrinkles</title>
-      <link>http://gonzalo.f-v.es/blog/2015-04-26-react-native-some-context-and-few/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-04-26-react-native-some-context-and-few/</guid>
-      <description>React native is a way to build iOS applications using Javascript. The idea is not radically new, since you are probably aware of PhoneGap/Cordova and others like that. I myself played with something similar long time ago. The interesting thing is that React native follows the steps on ReactJS, a Javascript library that provides wonderful performance in updating the DOM. It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap idea moving CSS into JS?</description>
-    </item>
-    
-    <item>
-      <title>Relocating to London</title>
-      <link>http://gonzalo.f-v.es/blog/2012-12-15-relocating-to-london/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-12-15-relocating-to-london/</guid>
-      <description>In two weeks I will be working in London. I know I was expecting to continue my last post about Spring persistence. I have lots of things to write about the incredible experience of finding a job abroad and relocating. But as you&amp;rsquo;ll imagine, I&amp;rsquo;m quite busy. I&amp;rsquo;ll try to post before starting in my new job, but I don&amp;rsquo;t promise anything. Thank you. Each and every one of you.</description>
-    </item>
-    
-    <item>
-      <title>Savon.rb and sequences</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
-    </item>
-    
-    <item>
-      <title>Scala: First impressions</title>
-      <link>http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/</guid>
-      <description>A couple of months ago I started working for a different company. I&amp;rsquo;m quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala. It&amp;rsquo;s uncommon to get a programming job when you don&amp;rsquo;t know the syntax of the programming language used. But if you really think about it, it&amp;rsquo;s much better to hire somebody passionate about technology and that really loves to learn (and commit) than somebody that knows the language but doesn&amp;rsquo;t give a d***mn.</description>
-    </item>
-    
-    <item>
-      <title>Scrum for myself</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-scrum-for-myself/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-scrum-for-myself/</guid>
-      <description>Yesterday I explained I have attended recently a couple of courses. One of them was about Scrum. The course was very interesting, although, as I explained in the evaluation, there were times when I wished there were only one teacher instead of three. At the end of the course, I took a test, and now I&amp;rsquo;m Scrum Manager certified. I must say that the exam was quite difficult, but I don&amp;rsquo;t consider myself a Scrum manager.</description>
-    </item>
-    
-    <item>
-      <title>Some thoughts about Tecnimap 2010</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</guid>
-      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb.
-Overall it has been a nice experience, but I wanted to share some thoughts about it.
-On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
-    </item>
-    
-    <item>
-      <title>Spanish budget deficit, 3Q2012</title>
-      <link>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-3q2012/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-3q2012/</guid>
-      <description>From time to time I visit the page where the internal comptroller in Spain posts its budget deficit figures. Last week there was a link to the calendar of future publications. The calendar was last updated past September, and didn´t show anything for 2013. Usually at the end of January appears 3rd quarter budget deficit. So when January ended with no new data, I knew the figures would be bad.</description>
-    </item>
-    
-    <item>
-      <title>Spanish Budget Deficit. What if ...?</title>
-      <link>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-what-if/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-02-06-spanish-budget-deficit-what-if/</guid>
-      <description>EDIT: I&amp;rsquo;ve done again the calculations and are more unbelievable even. I won&amp;rsquo;t update this post but IMO it is quite reasonable to hit the target. From time I tend to write about the Spanish budget deficit. Almost nobody expects that Spain will meet its commitment around budget deficit for 2012. Well. I want to say, that, regarding central government, I do think they are going to hit the target. There are others components of the budget deficit (regional and local government, and social security agency).</description>
-    </item>
-    
-    <item>
-      <title>Spring course</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</guid>
-      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me. I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
-    </item>
-    
-    <item>
-      <title>State of Emergency: very serious</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-state-of-emergency-very-serious/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-state-of-emergency-very-serious/</guid>
-      <description>It&amp;rsquo;s in the news. Spanish Government has declared &amp;ldquo;State of Emergency&amp;rdquo;. This declaration gives special powers to the government like the ability to limit the circulation of people, commandeer things or even enter in private properties (but not homes).
-It&amp;rsquo;s somewhat similar to State of Siege, but lower in intensity. Being Spain a democracy one could think that this kind of declaration should be reserved to extreme cases. That&amp;rsquo;s true in the law.</description>
-    </item>
-    
-    <item>
-      <title>Technical tests</title>
-      <link>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</guid>
-      <description>In March 2014 I was made redundant (business unit closing). I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from &amp;ldquo;technical tests&amp;rdquo; in a matter of days Process A. Thanks for taking the time to complete our online testing. Unfortunately, your score did not meet the requirements of this role.</description>
-    </item>
-    
-    <item>
-      <title>Techzing wives</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</guid>
-      <description>I tend to listen Techzing podcast. It&amp;rsquo;s a podcast about very different topics, recorded by two geeks, (or developers, and entrepeneurs). I don&amp;rsquo;t remember when I started listening them. I do remember I started because I wanted to practice English and it was great (Justin is an Englishman and Jason is American). Soon I forgot why: they were great by themselves. The topics are very diverse from Technology, Entrepenurship, Politics (Loom and Gloom Report), Education, Genetics&amp;hellip; I listen them while commuting, and I was a couple of months behind.</description>
-    </item>
-    
-    <item>
-      <title>The best eclipse tip ever</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/</guid>
-      <description>How to disable auto close for the XML comments. Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
-    </item>
-    
-    <item>
-      <title>The future of this blog</title>
-      <link>http://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</guid>
-      <description>When I started this blog, I had a goal. I needed to practice my English, because I wanted to go abroad. Months (or even years) later, more reasons appeared. First, I discovered that writing about solutions to job related problems could give people a way to solve their own problems more easily. Later on, I realized it could also be a way to show that I wasn&amp;rsquo;t a newcomer while looking for a position abroad.</description>
-    </item>
-    
-    <item>
-      <title>The most popular video in Spain this Christmas</title>
-      <link>http://gonzalo.f-v.es/blog/2012-12-21-the-most-popular-video-in-spain-this/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-12-21-the-most-popular-video-in-spain-this/</guid>
-      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this ChristmasIt depicts Fofito (a clown very well known in Spain) with other well known&amp;nbsp;comedians,&amp;nbsp;actors and even journalists, sending parcels to &#34;important people&#34;: from Angela Merkel and IMF to Moody&#39;s and Standard&amp;amp;Poor&#39;s. In those parcels, Fofito sends, bundled with&amp;nbsp;&#34;cold meat&#34; (that&#39;s what makes the company that prepared the ad),&amp;nbsp;some sort of Curriculum Vitae of Spain, telling those &#34;</description>
-    </item>
-    
-    <item>
-      <title>The rain in Spain(I)</title>
-      <link>http://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</guid>
-      <description>I love this video:  A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far. But I couldn&#39;t help thinking about a different climate. The political and economical climate. I know people outside Spain are worried about the situation in Spain. What can I tell about it?</description>
-    </item>
-    
-    <item>
-      <title>The rain in Spain(II): Government</title>
-      <link>http://gonzalo.f-v.es/blog/2011-08-02-rain-in-spainii-government/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2011-08-02-rain-in-spainii-government/</guid>
-      <description>Let&amp;rsquo;s start with politics. I guess it&amp;rsquo;s less known abroad, but it&amp;rsquo;s probably more important than the economic situation. First the government. Forget about the past. Let&amp;rsquo;s start by the end. Today August 2nd 2011, one of the more complex days from an economic point of view for the hole world. Every stock market falling through like a knife in the butter. Spanish bonds at what lots of people understand as intervention level (400 basis points over German debt).</description>
-    </item>
-    
-    <item>
-      <title>The synchronized silver bullet</title>
-      <link>http://gonzalo.f-v.es/blog/2013-08-30-synchronized-silver-bullet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2013-08-30-synchronized-silver-bullet/</guid>
-      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &amp;ldquo;Let&amp;rsquo;s put synchronized to the method&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
-One of those topics has been Xerces and Xalan.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
-    </item>
-    
-    <item>
-      <title>Think big</title>
-      <link>http://gonzalo.f-v.es/blog/2015-02-09-think-big/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-02-09-think-big/</guid>
-      <description>A few weeks ago, I&amp;rsquo;m not sure why, one of my daughters proposed to create a system to find cars inside garages at the shopping center. The car would locate itself using a GPS and then it would emit via radio. I told her that GPS waves don&amp;rsquo;t go through the walls, and I tried to convince her to look for different approaches (like generating a wifi hotspot and using a mobile app, locate the car).</description>
-    </item>
-    
-    <item>
-      <title>Thoughts about a death</title>
-      <link>http://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</guid>
-      <description>Sometimes you start to write because you need to write but you don&amp;rsquo;t know what you want to express. This is one of those times.
-A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed suicide. Doctors performed a caesarean to the woman assassinated and the baby is alive. The man had a letter saying Satan was chasing him, and seems to be a homeless with police records.</description>
-    </item>
-    
-    <item>
-      <title>Tipping point</title>
-      <link>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp;
-I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
-    </item>
-    
-    <item>
-      <title>Weird IE9 bug</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
-    </item>
-    
-    <item>
-      <title>What recruiters taught me about looking for a job</title>
-      <link>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
-      <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job. If you are looking for a job, be sure to do just the opposite of what the bad ones do. Almost every other day I receive an email offering me a position. &amp;ldquo;Good for you&amp;rdquo;.  No, bad for me. Most of the emails come from people I haven&amp;rsquo;t spoken to.</description>
-    </item>
-    
-    <item>
-      <title>When companies just don&#39;t get it</title>
-      <link>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</guid>
-      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce.
-More recently I&amp;rsquo;ve started with mobile development. I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
-    </item>
-    
-    <item>
-      <title>Why LinkedIn breach is so important?</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
-      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised. We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Xerces and Xalan: Recipes for the win</title>
-      <link>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
-    </item>
-    
-    <item>
-      <title>Xerces, Xalan and Saxon, more recipes</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
-
-In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
   </channel>

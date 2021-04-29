@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "State of Emergency: very serious"
-date: 2012-08-16 22:09:13 UTC
-updated: 2012-08-16 22:09:13 UTC
+date: 2012-08-16T22:09:13
 comments: false
 categories: [Politics, Spain]
 ---

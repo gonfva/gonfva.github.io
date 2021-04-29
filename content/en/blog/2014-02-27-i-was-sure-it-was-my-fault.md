@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "I was sure it was my fault..."
-date: 2014-02-27 19:27:04 UTC
-updated: 2014-02-27 19:27:04 UTC
+date: 2014-02-27T19:27:04
 comments: false
 categories: [Developer, got ya]
 ---

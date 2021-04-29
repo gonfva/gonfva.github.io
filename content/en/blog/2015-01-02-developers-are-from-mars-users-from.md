@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Developers are from Mars, users from Venus"
-date: 2015-01-02 13:39:00 UTC
-updated: 2015-01-02 13:39:00 UTC
+date: 2015-01-02T13:39:00
 comments: false
 categories: Developer
 ---

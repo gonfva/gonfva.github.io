@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Firmware upgrade for Xperia U in Linux (II)"
-date: 2014-06-08 21:27:19 UTC
-updated: 2014-06-08 21:27:19 UTC
+date: 2014-06-08T21:27:19
 comments: false
 categories: [got ya]
 ---
@@ -15,6 +14,7 @@ In my <a href="http://gonfva.blogspot.com/2013/11/firmware-upgrade-for-xperia-u-
 <br /><br />
 The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I'm an expert: take it with a grain of salt). You can get a <a href="http://www.android-app-market.com/android-architecture.html">more accurate picture of the Android architecture in other pages</a>. And you can <a href="http://forum.xda-developers.com/showthread.php?t=2107775">get the process in detail from XDA</a>.
 <br /><br />
+
 <h4>First, components</h4>As far as I understand there are three components in an Android system
 <br /><br />
 <br /><ol><li>The bootloader. This is a piece of software that usually loads the system, enables Android recovery image and image upgrades. Sometimes it is called the kernel, so I understand it is the underlying component of the Android</li><li>The second one is called the system. It would include shared libraries and components. When people says Android is Java, I understand that it is probably related to this set.</li><li>And the third one is called Gapps. Gapps it is not a component in its own. It's a package with Google applications. For licence reasons, you cannot distribute them attached to other components, so you almost always will find a package with Gapps.</li></ol>
@@ -43,12 +43,15 @@ When going for Linux, you're going to follow the same steps. BUT. Instead of the
 <br /><br />
 Back to the UDEV rules, these are the ones I got for Xperia U ST25i.
 <br /><br />
+
 <script src="https://gist.github.com/gonfva/7633925.js"></script>
+
 <br /><br />
 But you should get yours using the tool lsusb.
 <br /><br />
 After you have the correct rules (and you have restarted the UDEV with "sudo service udev restart") connected in fastboot mode, you will be able to follow steps in the Sony Page and unlock the bootloader. And then to the next step
 <br /><br />
+
 <h4>Flashing the kernel</h4>This part should be easy but it gets a bit tricky. You are going to use a tool called Flashtool. But the tricky part is that Flashtool needs libusb-dev. From what I've been able to understand, that library suffered some fork, so you'll end up asking how the h*ll should you install that library. And if you've got a 64 bits linux version, things are not going to be easier. You may end up screwing the whole system because ia32-libs (don't follow that route).
 <br /><br />
 Good thing about the Internet is that you are not alone. So in <a href="http://askubuntu.com/questions/366336/how-do-i-install-lsusbx-library">this page</a>, you'll get to ease the problematic steps. Basically, compile libusb-dev from source and modify Flashtool.

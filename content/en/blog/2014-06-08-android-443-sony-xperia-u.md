@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Android 4.4.3: Sony Xperia U"
-date: 2014-06-08 21:23:54 UTC
-updated: 2014-06-08 21:23:54 UTC
+date: 2014-06-08T21:23:54
 comments: false
 categories: Technology
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "The rain in Spain(II): Government"
-date: 2011-08-02 21:01:47 UTC
-updated: 2011-08-02 21:01:47 UTC
+date: 2011-08-02T21:01:47
 comments: false
 categories: [Politics, Spain]
 ---

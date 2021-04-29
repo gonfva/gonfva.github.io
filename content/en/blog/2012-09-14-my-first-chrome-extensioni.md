@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "My first Chrome extension(I)"
-date: 2012-09-14 21:01:31 UTC
-updated: 2012-09-14 21:01:31 UTC
+date: 2012-09-14T21:01:31
 comments: false
 categories: Developer
 ---

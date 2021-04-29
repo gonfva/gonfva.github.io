@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Estimating Spanish budget deficit"
-date: 2012-05-24 13:22:37 UTC
-updated: 2012-05-24 13:22:37 UTC
+date: 2012-05-24T13:22:37
 comments: false
 categories: Politics
 ---
@@ -13,6 +12,7 @@ Past February, Spain published its estimation of whole year budget deficit.
 <br /><br />
 Many well respected analysts suggested or&nbsp;explicitly&nbsp;wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller. One for all, <a href="http://salaimartin.com/random-thoughts/item/227-d%C3%A9ficit-p%C3%BAblico-en-espa%C3%B1a.html" target="_blank">Xavier Xala i Martin</a>:
 <br /><br />
+
 <blockquote class="tr_bq"><span style="background-color: white; font-family: Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px;">Los números presentados hoy los ha construido el gobierno del Partido Popular y evalúan el año 2011, último año de gobierno del Partido Socialista. Bajo este punto de vista, hay que resaltar que al PP le interesa magnificar el déficit de 2011 (es decir, le interesa poder decir “hemos encontrado un déficit muy superior al esperado”) por varias razones: Primero, para “demostrar” la incompetencia del PSOE. Para los políticos de todos los colores, nunca está de más echar por tierra la reputación de tu enemigo político. Segundo, porque en la medida que puedan mover contablemente ingresos del 2011 al 2012 y puedan mover gastos en dirección contraria, el mayor déficit asignado al PSOE en 2011 se traduce en menor déficit para el PP de 2012.&nbsp;</span></blockquote>Even <a href="http://www.reuters.com/article/2012/03/09/us-eu-spain-deficit-idUSBRE8280V120120309" target="_blank">EU Commission was expected to open an investigation to clear if Spain had overestimated deficit for political purposes</a>.
 <br /><br />
 I couldn't&nbsp;believe&nbsp;it. If there had been any kind of manipulation in Budget deficit Spanish figures it has been downwards, not upwards.

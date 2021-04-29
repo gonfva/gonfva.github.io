@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "PDOException"
-date: 2014-04-24 15:49:30 UTC
-updated: 2014-04-24 15:49:30 UTC
+date: 2014-04-24T15:49:30
 comments: false
 categories: [got ya]
 ---

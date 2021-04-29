@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "The most popular video in Spain this Christmas"
-date: 2012-12-21 20:28:04 UTC
-updated: 2012-12-21 20:28:04 UTC
+date: 2012-12-21T20:28:04
 comments: false
 categories: Politics
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Driving in the UK"
-date: 2012-12-15 19:47:50 UTC
-updated: 2012-12-15 19:47:50 UTC
+date: 2012-12-15T19:47:50
 comments: false
 categories: [London, Personal]
 ---

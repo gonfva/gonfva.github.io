@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Community managers: The day after"
-date: 2014-02-03 19:28:39 UTC
-updated: 2014-02-03 19:28:39 UTC
+date: 2014-02-03T19:28:39
 comments: false
 categories: Personal
 ---
@@ -17,6 +16,7 @@ So you're a CEO of a big company and you discover that the technology everybody 
 <br /><br />
 Some possibilities comes to mind:
 <br /><br />
+
 <ul><li>Ignore as if nothing had happened. It has worked in the past. And&nbsp;it's tempting. But it's flawed, because social networks are about communicating. And because this time is different. Next tweet on that account is going to be replied by hundreds of people.</li><li>Hide it (deleting the tweets). No worth even considering. Everybody has now a capture of the tweets.</li><li>Rebuild trust.</li></ul><br />In my opinion, the only real option in a social networked environment is to rebuild trust.
 <br /><br />
 <ul><li>You need to act quickly. Rebuilding trust takes time. But you must start as soon as possible. I imagine the management did know yesterday about the major screw up. But today there is no answer. Which means they don't know how to act. And they're obviously considering the options. But if you don't act quickly, you'll be forced to act later on, but losing the benefits.</li><li>Apologize. Clearly. Not only for the specific series of comments but also for not understanding the whole social-network issue. Explain you have learnt -where "you" means the CEO- that social networks are a different thing you didn't understand. And that you personally are going to learn.</li><li>Start listening. There is a customer that has not get a good experience. Change it. Solve her problem. I remember having a <a href="http://gonfva.blogspot.co.uk/2013/07/ikea-vs-greenwich.html">bad experience with IKEA that was completely reversed</a>&nbsp;to a great experience thanks to their Customer Relationship department.</li></ul><br />Social networks are about interacting with your customers and getting feedback. It's about listening.

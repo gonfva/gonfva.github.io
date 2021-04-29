@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "June deficit was 8.54%"
-date: 2012-09-23 18:40:13 UTC
-updated: 2012-09-23 18:40:13 UTC
+date: 2012-09-23T18:40:13
 comments: false
 categories: Politics
 ---

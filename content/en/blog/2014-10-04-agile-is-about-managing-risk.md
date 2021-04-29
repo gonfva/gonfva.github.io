@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Agile is about managing risk"
-date: 2014-10-04 14:12:09 UTC
-updated: 2014-10-04 14:12:09 UTC
+date: 2014-10-04T14:12:09
 comments: false
 categories: Developer
 ---
@@ -11,6 +10,7 @@ It is not easy to explain what is agile or the need of agile practices in softwa
 <br /><br />
 Anyway, a few days ago I found this tweet:
 <br /><br />
+
 <blockquote class="twitter-tweet" lang="en">MVP explained via <a href="https://twitter.com/smarty">@smarty</a> <a href="http://t.co/hZkCzqytAP">pic.twitter.com/hZkCzqytAP</a><br />— About Programming (@abt_programming) <a href="https://twitter.com/abt_programming/status/516018172072587264">September 28, 2014</a></blockquote><script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script> I showed the picture to my wife, and I tried to explain it to her. It was funny because she couldn't understand what's wrong with the first part of the picture and why the second one is the proper way to build software. She insisted that if you want to build a car, you should do the a wheel the proper way, then the other wheel, then the body and finally you deliver the car.
 <br /><br />
 So why many people in the software development world are trying to deliver a skateboard, and then a bike, and then a scooter, and finally a car?

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "It's great when your idea is a good one. But..."
-date: 2014-02-26 14:11:36 UTC
-updated: 2014-02-26 14:11:36 UTC
+date: 2014-02-26T14:11:36
 comments: false
 categories: Developer
 ---

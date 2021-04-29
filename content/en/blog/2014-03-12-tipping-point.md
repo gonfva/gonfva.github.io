@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Tipping point"
-date: 2014-03-12 18:54:24 UTC
-updated: 2014-03-12 18:54:24 UTC
+date: 2014-03-12T18:54:24
 comments: false
 categories: [Developer, got ya, Personal]
 ---

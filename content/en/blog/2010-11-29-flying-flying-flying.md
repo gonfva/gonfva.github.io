@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Flying, flying, flying"
-date: 2010-11-29 21:02:51 UTC
-updated: 2010-11-29 21:02:51 UTC
+date: 2010-11-29T21:02:51
 comments: false
 categories:
 ---

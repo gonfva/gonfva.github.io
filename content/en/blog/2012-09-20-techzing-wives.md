@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Techzing wives"
-date: 2012-09-20 20:36:19 UTC
-updated: 2012-09-20 20:36:19 UTC
+date: 2012-09-20T20:36:19
 comments: false
 categories: Personal Technology
 ---

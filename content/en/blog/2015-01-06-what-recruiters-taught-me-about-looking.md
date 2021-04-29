@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "What recruiters taught me about looking for a job"
-date: 2015-01-06 16:31:37 UTC
-updated: 2015-01-06 16:31:37 UTC
+date: 2015-01-06T16:31:37
 comments: false
 categories: [Jobs, Personal]
 ---

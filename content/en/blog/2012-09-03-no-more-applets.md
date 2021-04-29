@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "No more applets"
-date: 2012-09-03 22:06:06 UTC
-updated: 2012-09-03 22:06:06 UTC
+date: 2012-09-03T22:06:06
 comments: false
 categories: Technology
 ---

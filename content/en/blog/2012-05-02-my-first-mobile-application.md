@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "My first mobile application"
-date: 2012-05-02 19:31:33 UTC
-updated: 2012-05-02 19:31:33 UTC
+date: 2012-05-02T19:31:33
 comments: false
 categories: Technology
 ---

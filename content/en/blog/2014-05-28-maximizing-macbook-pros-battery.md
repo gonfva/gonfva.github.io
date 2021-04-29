@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Maximizing Macbook Pro's battery"
-date: 2014-05-28 23:13:29 UTC
-updated: 2014-05-28 23:13:29 UTC
+date: 2014-05-28T23:13:29
 comments: false
 categories: Technology
 ---
