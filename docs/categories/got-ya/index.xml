@@ -98,7 +98,7 @@ I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
-      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions).</description>
+      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U. Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions). The phone worked quite well.</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@ I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
-      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt).</description>
+      <description>[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@ I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>... but it wasn&#39;t. In the last week or so, I&#39;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time)&amp;nbsp;trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&#39;t found too much information, I&#39;ve decided to put it in writing.</description>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t. In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@ I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
-      <description>Lately I&#39;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &#34;correlation does not equal causation&#34;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &#34;</description>
+      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -134,10 +134,10 @@ I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description> Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt;
-&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt;
+      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
+&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
 &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
-Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
+Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
     </item>
     
     <item>
@@ -146,7 +146,7 @@ Just in case you decided to change the mappings, and you continue to see the old
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&#39;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
 In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
     </item>
     
@@ -166,7 +166,7 @@ The issue was not related to Sphinx, but to a related connection between PHP/Sym
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&#39;ve recently learned it is important to be able to show what you&#39;ve been doing. So&amp;nbsp;I&#39;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&#39;t want to fill the information twice.</description>
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
     <item>
@@ -175,7 +175,7 @@ The issue was not related to Sphinx, but to a related connection between PHP/Sym
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&#39;m getting very proud of myself. I&#39;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&#39;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
 One of those topics has been Xerces and Xalan.</description>
     </item>
     
@@ -223,7 +223,7 @@ I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&#39;t use System.setProperty to resolve them. In this post I wan&#39;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
     </item>
     
     <item>
@@ -232,7 +232,7 @@ I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as&amp;nbsp;one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
 
 In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>

@@ -3,7 +3,7 @@ layout: post
 title: "“Serverless” in three minutes"
 date: 2017-02-16T18:00:00
 tags:
-  - Develoer
+  - Developer
 categories: [Developer]
 ---
 

@@ -198,11 +198,6 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/tags/my-startup/</loc>
-    <lastmod>2018-05-23T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://gonzalo.f-v.es/categories/my-startup/</loc>
     <lastmod>2018-05-23T18:00:00+00:00</lastmod>
   </url>
@@ -285,11 +280,6 @@
   <url>
     <loc>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</loc>
     <lastmod>2017-03-01T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/tags/develoer/</loc>
-    <lastmod>2017-02-16T18:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -428,6 +418,26 @@
   </url>
   
   <url>
+    <loc>http://gonzalo.f-v.es/categories/civil-service/</loc>
+    <lastmod>2010-11-16T21:48:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</loc>
+    <lastmod>2010-11-16T21:48:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/categories/spain/</loc>
+    <lastmod>2010-11-16T21:48:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/blog/2010-11-14-passionate-programmer/</loc>
+    <lastmod>2010-11-14T17:01:56+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gonzalo.f-v.es/blog/2010-10-13-starting-over/</loc>
     <lastmod>2010-10-13T18:14:45+00:00</lastmod>
   </url>
@@ -444,11 +454,6 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2009-09-03-god-help-us/</loc>
-    <lastmod>2009-09-03T18:23:51+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/categories/spain/</loc>
     <lastmod>2009-09-03T18:23:51+00:00</lastmod>
   </url>
   
@@ -556,14 +561,6 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2013-08-30-changes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/categories/civil-service/</loc>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</loc>
   </url>
   
   <url>
@@ -828,10 +825,6 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2012-12-21-the-most-popular-video-in-spain-this/</loc>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/blog/2010-11-14-passionate-programmer/</loc>
   </url>
   
   <url>

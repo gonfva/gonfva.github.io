@@ -118,15 +118,14 @@
           </header>
           <article class="post__content">
               
-
-[Long post]
+<p>[Long post]
 <br /><br />
 Edited (08th-Jun-2014): Updated the firmware download site.
 <br /><br />
-In my <a href="http://gonfva.blogspot.com/2013/11/firmware-upgrade-for-xperia-u-in-linux-i.html">previous post</a> I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don't manage to understand the underlying logic.
+In my <a href="http://gonfva.blogspot.com/2013/11/firmware-upgrade-for-xperia-u-in-linux-i.html">previous post</a> I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&rsquo;t manage to understand the underlying logic.
 <br /><br />
-The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I'm an expert: take it with a grain of salt). You can get a <a href="http://www.android-app-market.com/android-architecture.html">more accurate picture of the Android architecture in other pages</a>. And you can <a href="http://forum.xda-developers.com/showthread.php?t=2107775">get the process in detail from XDA</a>.
-<br /><br />
+The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&rsquo;m an expert: take it with a grain of salt). You can get a <a href="http://www.android-app-market.com/android-architecture.html">more accurate picture of the Android architecture in other pages</a>. And you can <a href="http://forum.xda-developers.com/showthread.php?t=2107775">get the process in detail from XDA</a>.
+<br /><br /></p>
 <h4>First, components</h4>As far as I understand there are three components in an Android system
 <br /><br />
 <br /><ol><li>The bootloader. This is a piece of software that usually loads the system, enables Android recovery image and image upgrades. Sometimes it is called the kernel, so I understand it is the underlying component of the Android</li><li>The second one is called the system. It would include shared libraries and components. When people says Android is Java, I understand that it is probably related to this set.</li><li>And the third one is called Gapps. Gapps it is not a component in its own. It's a package with Google applications. For licence reasons, you cannot distribute them attached to other components, so you almost always will find a package with Gapps.</li></ol>
@@ -151,16 +150,15 @@ So before you update the kernel, you need to unlock (or root, as it sometimes ca
 <br /><br />
 When going for Linux, you're going to follow the same steps. BUT. Instead of the steps related to the USB drivers (i.e step 9), you need UDEV rules. UDEV is the way Linux uses to recognize new components, in particular USB devices. You will need the USB ID for your phone version, both in usual mode, in Fastboot mode and in Flash mode.
 <br /><br />
-
-<br /><br />
+<p><br /><br />
 Back to the UDEV rules, these are the ones I got for Xperia U ST25i.
-<br /><br />
+<br /><br /></p>
 <script src="https://gist.github.com/gonfva/7633925.js"></script>
-<br /><br />
+<p><br /><br />
 But you should get yours using the tool lsusb.
 <br /><br />
-After you have the correct rules (and you have restarted the UDEV with "sudo service udev restart") connected in fastboot mode, you will be able to follow steps in the Sony Page and unlock the bootloader. And then to the next step
-<br /><br />
+After you have the correct rules (and you have restarted the UDEV with &ldquo;sudo service udev restart&rdquo;) connected in fastboot mode, you will be able to follow steps in the Sony Page and unlock the bootloader. And then to the next step
+<br /><br /></p>
 <h4>Flashing the kernel</h4>This part should be easy but it gets a bit tricky. You are going to use a tool called Flashtool. But the tricky part is that Flashtool needs libusb-dev. From what I've been able to understand, that library suffered some fork, so you'll end up asking how the h*ll should you install that library. And if you've got a 64 bits linux version, things are not going to be easier. You may end up screwing the whole system because ia32-libs (don't follow that route).
 <br /><br />
 Good thing about the Internet is that you are not alone. So in <a href="http://askubuntu.com/questions/366336/how-do-i-install-lsusbx-library">this page</a>, you'll get to ease the problematic steps. Basically, compile libusb-dev from source and modify Flashtool.
@@ -179,9 +177,8 @@ And then "reboot system now"
 <br /><br />
 I understand it is a sort of internal storage. Anyway, there is no socket to put a SDCARD inside, so forget about it.
 <br /><br />
-
-<br /><br />
-<br />
+<p><br /><br />
+<br /></p>
 
 
               

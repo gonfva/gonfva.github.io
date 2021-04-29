@@ -63,6 +63,17 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
     </item>
     
     <item>
+      <title>“Serverless” in three minutes</title>
+      <link>http://gonzalo.f-v.es/blog/2017-02-16-serverless-in-three-minutes/</link>
+      <pubDate>Thu, 16 Feb 2017 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2017-02-16-serverless-in-three-minutes/</guid>
+      <description>Imagine you are interviewing some guy for an IT role and she says that he doesn’t get that of “going to the cloud because everybody knows there are no datacenters in the sky”.
+Everybody knows that cloud in cloud computing is just a name.
+However, it’s surprising how many people have a similar idea. You chat with someone in IT about “serverless” and she says something like “Serverless doesn’t make any sense.</description>
+    </item>
+    
+    <item>
       <title>Switch off your servers</title>
       <link>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</link>
       <pubDate>Sat, 21 Jan 2017 18:00:00 +0000</pubDate>
