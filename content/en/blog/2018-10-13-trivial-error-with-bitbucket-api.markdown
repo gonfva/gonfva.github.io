@@ -2,7 +2,9 @@
 layout: post
 title: "Trivial error with Bitbucket API"
 subtitle: Migrating to cloud Bitbucket
-date: 2018-10-13
+date: 2018-10-13T18:00:00
+tags:
+  - Developer
 categories: [Developer, got ya]
 ---
 

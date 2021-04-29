@@ -1,14 +1,16 @@
 ---
-layout:	post
-title:	"Demophilus wrote this…"
+layout: post
+title: "Demophilus wrote this…"
 subtitle: us vs them
-date:	2018-11-18
+date: 2018-11-18T18:00:00
+tags:
+  - Politics
 categories: Politics
 ---
+
 These days I’m reading a fascinating book on Roman History called [SPQR](https://www.goodreads.com/book/show/28789711-spqr). And I’ve discovered Roman History is full of lessons for today’s world.
 
 As a small token, a line from [Plautus](https://en.wikipedia.org/wiki/Plautus), a Roman writer, that appeared in some of his books.
-
 
 > Demophilus wrote this, Plautus barbarised it.As Mary Beard, the author of SPQR, explains, the sentence was a clever challenge.
 
@@ -23,4 +25,3 @@ They are the enemy. They are the barbarians.
 [They are not human. They are cockroaches](https://www.economist.com/middle-east-and-africa/2004/08/19/the-jews-of-africa).
 
 In a world of increasing division-on-its-way-to-chasm, we are barbarians to those we consider barbarians
-

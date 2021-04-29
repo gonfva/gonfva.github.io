@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Oct 2019 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/developer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dock disappeared in MacOS Catalina</title>
       <link>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>
-      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
       <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
@@ -23,7 +23,7 @@ Open a terminal.
     <item>
       <title>Metadata abuse in AWS</title>
       <link>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Sep 2019 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
       <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
@@ -33,7 +33,7 @@ AWS is putting great effort in avoiding S3 buckets configured for public accessW
     <item>
       <title>Configuration in AWS is difficult</title>
       <link>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Sep 2019 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</guid>
       <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
@@ -44,7 +44,7 @@ What follows is just one example I found on the Internet (i.</description>
     <item>
       <title>Trivial error with Bitbucket API</title>
       <link>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Oct 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
       <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.

@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Mar 2020 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>news</title>
       <link>http://gonzalo.f-v.es/categories/news/</link>
-      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Mar 2020 18:03:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/news/</guid>
       <description></description>
@@ -20,7 +20,7 @@
     <item>
       <title>Developer</title>
       <link>http://gonzalo.f-v.es/categories/developer/</link>
-      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/developer/</guid>
       <description></description>
@@ -29,7 +29,7 @@
     <item>
       <title>got ya</title>
       <link>http://gonzalo.f-v.es/categories/got-ya/</link>
-      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/got-ya/</guid>
       <description></description>
@@ -38,7 +38,7 @@
     <item>
       <title>Politics</title>
       <link>http://gonzalo.f-v.es/categories/politics/</link>
-      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Nov 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/politics/</guid>
       <description></description>
@@ -47,7 +47,7 @@
     <item>
       <title>Personal</title>
       <link>http://gonzalo.f-v.es/categories/personal/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jul 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/personal/</guid>
       <description></description>
@@ -56,7 +56,7 @@
     <item>
       <title>Technology</title>
       <link>http://gonzalo.f-v.es/categories/technology/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jul 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/technology/</guid>
       <description></description>
@@ -65,7 +65,7 @@
     <item>
       <title>My startup</title>
       <link>http://gonzalo.f-v.es/categories/my-startup/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/my-startup/</guid>
       <description></description>
@@ -74,7 +74,7 @@
     <item>
       <title>Jobs</title>
       <link>http://gonzalo.f-v.es/categories/jobs/</link>
-      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 May 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/categories/jobs/</guid>
       <description></description>

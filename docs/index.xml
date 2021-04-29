@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Mar 2020 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coronavirus in the UK</title>
       <link>http://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</link>
-      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Mar 2020 18:03:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</guid>
       <description>[This is mostly a translation of this other article in Spanish that I wrote for people in Spain. I&amp;rsquo;m not a politician, nor epidemiologist. If you live in the UK you may find better info elsewhere.]
@@ -22,7 +22,7 @@ There is a problem with that.</description>
     <item>
       <title>Dock disappeared in MacOS Catalina</title>
       <link>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>
-      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
       <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
@@ -34,7 +34,7 @@ Open a terminal.
     <item>
       <title>Metadata abuse in AWS</title>
       <link>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Sep 2019 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
       <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
@@ -44,7 +44,7 @@ AWS is putting great effort in avoiding S3 buckets configured for public accessW
     <item>
       <title>Configuration in AWS is difficult</title>
       <link>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Sep 2019 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</guid>
       <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
@@ -55,7 +55,7 @@ What follows is just one example I found on the Internet (i.</description>
     <item>
       <title>Demophilus wrote this…</title>
       <link>http://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</link>
-      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 18 Nov 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</guid>
       <description>These days I’m reading a fascinating book on Roman History called SPQR . And I’ve discovered Roman History is full of lessons for today’s world.
@@ -67,7 +67,7 @@ As a small token, a line from Plautus , a Roman writer, that appeared in some of
     <item>
       <title>Trivial error with Bitbucket API</title>
       <link>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Oct 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
       <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
@@ -78,7 +78,7 @@ The company behind that product, Atlassian, has other products. One of them is c
     <item>
       <title>Daily lessons from London trains</title>
       <link>http://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Jul 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</guid>
       <description>For many people not living in the UK, it will come as a surprise that the railway system in London is quite expensive and provides a really bad service.
@@ -88,7 +88,7 @@ Train service is not a theme park. It affects people’s livesSome of my Spanish
     <item>
       <title>King George III and the “rebellion”</title>
       <link>http://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the-rebellion/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 May 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the-rebellion/</guid>
       <description>I enjoy buying books.
@@ -100,7 +100,7 @@ I was very excited when I bought ‘1776&#39; by David McCullough. The title is 
     <item>
       <title>Launching a business: why?</title>
       <link>http://gonzalo.f-v.es/blog/2018-05-23-launching-a-business-why/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-05-23-launching-a-business-why/</guid>
       <description>I’ll start sharing a secret.
@@ -111,7 +111,7 @@ I was very excited when I bought ‘1776&#39; by David McCullough. The title is 
     <item>
       <title>Why I’m not considering your role</title>
       <link>http://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</link>
-      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 May 2018 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</guid>
       <description>Dear recruiter,

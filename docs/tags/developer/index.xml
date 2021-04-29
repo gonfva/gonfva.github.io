@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer on Gonzalo&#39;s thoughts</title>
+    <link>http://gonzalo.f-v.es/tags/developer/</link>
+    <description>Recent content in Developer on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
+    <lastBuildDate>Wed, 16 Oct 2019 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/tags/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dock disappeared in MacOS Catalina</title>
+      <link>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>
+      <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
+      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
+Well, here I am, to help you before Apple does.
+Open a terminal.
+ How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+    </item>
+    
+    <item>
+      <title>Metadata abuse in AWS</title>
+      <link>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</link>
+      <pubDate>Tue, 03 Sep 2019 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
+      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions ” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
+    </item>
+    
+    <item>
+      <title>Configuration in AWS is difficult</title>
+      <link>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</link>
+      <pubDate>Mon, 02 Sep 2019 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</guid>
+      <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
+When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.
+What follows is just one example I found on the Internet (i.</description>
+    </item>
+    
+    <item>
+      <title>Trivial error with Bitbucket API</title>
+      <link>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</link>
+      <pubDate>Sat, 13 Oct 2018 18:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
+      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
+Most people in the software industry know Jira . For better or for worse, it’s the most used product for managing tickets, requests, bugs…
+The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
+    </item>
+    
+  </channel>
+</rss>

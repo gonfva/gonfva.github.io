@@ -2,7 +2,9 @@
 layout: post
 title: "Metadata abuse in AWS"
 subtitle: Avoiding detection of the use of compromised credentials
-date: 2019-09-03
+date: 2019-09-03T18:00:00
+tags:
+  - Developer
 categories: [Developer, got ya]
 toc: true
 ---

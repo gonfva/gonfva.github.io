@@ -2,7 +2,9 @@
 layout: post
 title: "King George III and the “rebellion”"
 subtitle: Disappointment with the book 1776
-date: 2018-05-25
+date: 2018-05-25T18:00:00
+tags:
+  - Personal
 categories: [Personal]
 ---
 

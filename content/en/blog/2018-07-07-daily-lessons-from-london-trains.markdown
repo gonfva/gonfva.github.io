@@ -2,7 +2,10 @@
 layout: post
 title: "Daily lessons from London trains"
 subtitle: A bunch of ideas while commuting
-date: 2018-07-07
+date: 2018-07-07T18:00:00
+tags:
+  - Personal
+  - Technology
 categories: [Personal, Technology]
 ---
 

@@ -4,7 +4,7 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -34,12 +34,12 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/tags/covid19/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -54,7 +54,7 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -68,8 +68,13 @@
   </url>
   
   <url>
+    <loc>http://gonzalo.f-v.es/tags/news/</loc>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gonzalo.f-v.es/categories/news/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -84,7 +89,7 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/tags/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -98,98 +103,118 @@
   </url>
   
   <url>
+    <loc>http://gonzalo.f-v.es/tags/developer/</loc>
+    <lastmod>2019-10-16T18:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gonzalo.f-v.es/categories/developer/</loc>
-    <lastmod>2019-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-16T18:03:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</loc>
-    <lastmod>2019-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-16T18:03:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/got-ya/</loc>
-    <lastmod>2019-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-16T18:03:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</loc>
-    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-03T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-02T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</loc>
-    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-18T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/politics/</loc>
+    <lastmod>2018-11-18T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/politics/</loc>
-    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-18T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-13T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</loc>
-    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-07T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/personal/</loc>
+    <lastmod>2018-07-07T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/personal/</loc>
-    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-07T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/technology/</loc>
+    <lastmod>2018-07-07T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/technology/</loc>
-    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-07T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the-rebellion/</loc>
-    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-25T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-05-23-launching-a-business-why/</loc>
-    <lastmod>2018-05-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-23T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/my-startup/</loc>
+    <lastmod>2018-05-23T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/my-startup/</loc>
-    <lastmod>2018-05-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-23T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/jobs/</loc>
+    <lastmod>2018-05-18T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/jobs/</loc>
-    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-18T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</loc>
-    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-18T18:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/categories/en-espa%C3%B1ol/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://gonzalo.f-v.es/categories/en-espa%C3%B1ol/"
-                />
   </url>
   
   <url>
@@ -489,6 +514,11 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2008-11-07-jobs/</loc>
+    <lastmod>2008-11-07T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/tags/this-blog/</loc>
     <lastmod>2008-11-07T18:00:00+00:00</lastmod>
   </url>
   

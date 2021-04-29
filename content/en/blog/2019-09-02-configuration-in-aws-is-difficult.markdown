@@ -2,7 +2,9 @@
 layout: post
 title: "Configuration in AWS is difficult"
 subtitle: Least privilege vs complexity explosion
-date: 2019-09-02
+date: 2019-09-02T18:00:00
+tags:
+  - Developer
 categories: [Developer, got ya]
 ---
 

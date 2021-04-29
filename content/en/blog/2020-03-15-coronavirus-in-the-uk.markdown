@@ -6,7 +6,8 @@ categories:
   - news
 tags:
   - Covid19
-date: 2020-03-15
+  - News
+date: 2020-03-15T18:03:00
 ---
 
 _[This is mostly a translation of [this other article in Spanish](https://medium.com/@gonfva/coronavirus-en-uk-e6dca809dc76) that I wrote for people in Spain. I'm not a politician, nor epidemiologist. If you live in the UK you may find better info elsewhere.]_

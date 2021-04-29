@@ -2,7 +2,10 @@
 layout: post
 title: "Coronavirus en UK"
 subtitle: No es darwinismo, sino política basada en ciencia
-categories: [Covid19, En Español]
+tags:
+  - Covid19
+  - Español
+  - Noticias
 date: 2020-03-14
 ---
 

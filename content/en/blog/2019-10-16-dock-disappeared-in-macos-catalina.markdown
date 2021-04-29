@@ -2,8 +2,10 @@
 layout: post
 title: "Dock disappeared in MacOS Catalina"
 subtitle: The Windows Vista of Apple
-date: 2019-10-16
+date: 2019-10-16T18:03:00
 categories: [Developer, got ya]
+tags:
+  - Developer
 ---
 
 Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.

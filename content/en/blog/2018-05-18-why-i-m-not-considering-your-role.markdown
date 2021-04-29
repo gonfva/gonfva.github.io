@@ -1,10 +1,13 @@
 ---
-layout:	post
-title:	"Why I’m not considering your role"
+layout: post
+title: "Why I’m not considering your role"
 subtitle: A longer explanation than the usual email.
-date:	2018-05-18
+date: 2018-05-18T18:00:00
+tags:
+  - Jobs
 categories: [Jobs]
 ---
+
 Dear recruiter,
 
 Thank you for contacting. At the moment I’m not looking for a job.
@@ -55,7 +58,7 @@ But then, in your opinion, I’m not a good candidate, so better to skip this ro
 
 Parting thoughts:
 
-* Feedback for a rejection a year ago: “you are an intelligent guy and you could fit in perfectly in our culture and with the team. Unfortunately, we just felt your level of experience on system design and algorithms was not as strong as we had hoped for. […] There’s a great book called “Cracking the coding interview” by Gayle Laakmann which they guys felt might be of interest to you.” Yes, I was directly told not to study architecture or algorithms but to cram.
-* This Tweet from Patrick McKenzie:
+- Feedback for a rejection a year ago: “you are an intelligent guy and you could fit in perfectly in our culture and with the team. Unfortunately, we just felt your level of experience on system design and algorithms was not as strong as we had hoped for. […] There’s a great book called “Cracking the coding interview” by Gayle Laakmann which they guys felt might be of interest to you.” Yes, I was directly told not to study architecture or algorithms but to cram.
+- This Tweet from Patrick McKenzie:
 
 > [](https://twitter.com/patio11/status/968959448080302080)

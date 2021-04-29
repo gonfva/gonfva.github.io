@@ -26,5 +26,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Noticias</title>
+      <link>http://gonzalo.f-v.es/es/tags/noticias/</link>
+      <pubDate>Fri, 09 Apr 2021 18:03:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/es/tags/noticias/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

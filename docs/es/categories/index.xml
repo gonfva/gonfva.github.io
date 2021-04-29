@@ -17,23 +17,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>Covid19</title>
-      <link>http://gonzalo.f-v.es/es/categories/covid19/</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/es/categories/covid19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>En Español</title>
-      <link>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

@@ -8,6 +8,7 @@ categories:
 tags:
   - Covid19
   - Español
+  - Noticias
 ---
 
 Llevo unos días pensando si escribir esto.

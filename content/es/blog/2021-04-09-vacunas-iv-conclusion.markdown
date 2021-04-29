@@ -8,6 +8,7 @@ categories:
 tags:
   - Covid19
   - Español
+  - Noticias
 ---
 
 Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud. Lo que cuento, lo he leído de fuentes fiables (intento poner las fuentes la mayoría en inglés).
