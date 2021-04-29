@@ -1,215 +1,238 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <title>Jetty | Gonzalo&#39;s thoughts</title>
 
-<head>
-  <title>Jetty | Gonzalo&#39;s thoughts</title>
+    <meta charset="UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta charset="UTF-8">
-  <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jetty" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="@gonfva" />
+    <meta name="twitter:creator" content="https://twitter.com/gonfva" />
 
-  
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Jetty" />
-  <meta name="twitter:description" content=""/>
-  <meta name="twitter:site" content="@gonfva" />
-  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
-  
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css"
+      integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="
+    />
 
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css"
+      integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="
+    />
 
-  
-  
-    
- 
-  
-  
-  
-  
-  
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
-  
-  
-   
-   
-    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http:\/\/gonzalo.f-v.es\/"
+        },
+        "articleSection": "blog",
+        "name": "Jetty",
+        "headline": "Jetty",
+        "description": "",
+        "inLanguage": "en-US",
+        "author": "",
+        "creator": "",
+        "publisher": "",
+        "accountablePerson": "",
+        "copyrightHolder": "",
+        "copyrightYear": "2014",
+        "datePublished": "2014-07-12 17:39:00 \u002b0000 UTC",
+        "dateModified": "2014-07-12 17:39:00 \u002b0000 UTC",
+        "url": "http:\/\/gonzalo.f-v.es\/blog\/2014-07-12-jetty\/",
+        "wordCount": "270",
+        "keywords": ["Blog"]
+      }
+    </script>
+  </head>
 
-<script type="application/ld+json">
-  
-    {
-      "@context" : "http://schema.org",
-      "@type" : "BlogPosting",
-      "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http:\/\/gonzalo.f-v.es\/"
-      },
-      "articleSection" : "blog",
-      "name" : "Jetty",
-      "headline" : "Jetty",
-      "description" : "",
-      "inLanguage" : "en-US",
-      "author" : "",
-      "creator" : "",
-      "publisher": "",
-      "accountablePerson" : "",
-      "copyrightHolder" : "",
-      "copyrightYear" : "2014",
-      "datePublished": "2014-07-12 17:39:00 \u002b0000 UTC",
-      "dateModified" : "2014-07-12 17:39:00 \u002b0000 UTC",
-      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2014-07-12-jetty\/",
-      "wordCount" : "270",
-      "keywords" : ["Blog"]
-    }
-  
-  </script>
-</head>
-
-<body>
-  <div class="burger__container">
-  <div class="burger" aria-controls="navigation" aria-label="Menu">
-    <div class="burger__meat burger__meat--1"></div>
-    <div class="burger__meat burger__meat--2"></div>
-    <div class="burger__meat burger__meat--3"></div>
-  </div>
-</div>
- 
-
-  <nav class="nav" id="navigation">
-  <ul class="nav__list">
-    
-    
-      <li>
-        <a  href="/">About</a>
-      </li>
-    
-      <li>
-        <a  href="/blog">Blog EN</a>
-      </li>
-    
-      <li>
-        <a  href="/es/blog">Blog ES</a>
-      </li>
-    
-  </ul>
-</nav>
-
-
-  <main>
-    
-    
-
-    <div class="flex-wrapper">
-      <div class="post__container">
-        <div class="post">
-          <header class="post__header">
-            <h1 id="post__title">Jetty</h1>
-            <time datetime="2014-07-12 17:39:00 &#43;0000 UTC" class="post__date">2014-07-12</time> 
-          </header>
-          <article class="post__content">
-              
-<p>Lately I&rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky.
-<br /><br />
-The first one was the typical example of &ldquo;correlation does not equal causation&rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &ldquo;Could not create symlink /tmp&rdquo;. I thought it could be related to some kind of permissions issue. In the end the problem was more basic: I&rsquo;d exhausted all the free space and nothing could be written to disk (and jetty couldn&rsquo;t create a symlink).
-<br /><br />
-The second one was one of those Doh! moments. My web application didn&rsquo;t respond to any request. But it didn&rsquo;t show any error in the logs. I&rsquo;m quite ashamed of putting this in writing but the issue was that the web application was paused in a breakpoint while debugging.
-<br /><br />
-The third one was a bit strange. The web application obviously has static files. Some of the Javascript files were served correctly, other Javascript files weren&rsquo;t. The files not served were always the same. I didn&rsquo;t detect any specific pattern. But the fact was that Chrome would receive net::ERR_EMPTY_RESPONSE, and the Jetty was logging an exception <span style="font-family: 'Courier New', Courier, monospace;">NoSuchMethodError in </span><span style="font-family: 'Courier New', Courier, monospace;">javax.servlet.http.HttpServletRequest.isAsyncStarted  </span>
-<br /><br />
-The <a href="http://stackoverflow.com/questions/21510177/embedded-jetty-9">typical answer</a> relates the problem to having several versions of the servlet api. But I somehow didn&rsquo;t pay too much attention because [sarcasm on] <sarcasm on="">everybody knows servlet-api.2.5 and javax.servlet-api-3.1.0 are not different versions of the same API [sarcasm off] (indeed they ARE different versions of the servlet API)<sarcasm off=""></sarcasm></sarcasm></p>
-
-
-              
-          </article>
-          
-
- <div class="pagination">
-  
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/">
-        <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Scala: First impressions</span>
-    </a>
-  
-
-  
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Agile is about managing risk</span>
-    </a>
-  
-</div>
-
-          
-          <footer class="post__footer">
-            
-
-
-<div class="social-icons">
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/gonfva"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
-      </a>
-    
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/gonfva"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
-      </a>
-    
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="LinkedIn"
-         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
-      </a>
-    
-     
-</div>
-
-            <p>© Gonzalo Fernandez-Victorio 2021</p>
-          </footer>
-          </div>
+  <body>
+    <div class="burger__container">
+      <div class="burger" aria-controls="navigation" aria-label="Menu">
+        <div class="burger__meat burger__meat--1"></div>
+        <div class="burger__meat burger__meat--2"></div>
+        <div class="burger__meat burger__meat--3"></div>
       </div>
-      
     </div>
-    
 
-  </main>
+    <nav class="nav" id="navigation">
+      <ul class="nav__list">
+        <li>
+          <a href="/">About</a>
+        </li>
 
-   
+        <li>
+          <a href="/blog">Blog EN</a>
+        </li>
 
-  
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
-  
-  
-  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+        <li>
+          <a href="/es/blog">Blog ES</a>
+        </li>
+      </ul>
+    </nav>
 
-  
-  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
-    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+    <main>
+      <div class="flex-wrapper">
+        <div class="post__container">
+          <div class="post">
+            <header class="post__header">
+              <h1 id="post__title">Jetty</h1>
+              <time
+                datetime="2014-07-12 17:39:00 &#43;0000 UTC"
+                class="post__date"
+                >2014-07-12</time
+              >
+            </header>
+            <article class="post__content">
+              <p>
+                Lately I&rsquo;ve had three different issues with Jetty. Two of
+                them were those kind of issues that are not directly related to
+                the problem. The third proved to be a bit more tricky. The first
+                one was the typical example of &ldquo;correlation does not equal
+                causation&rdquo;. I started getting a weird error trying to run
+                a Scala based web application in Jetty. And I kept received the
+                following error &ldquo;Could not create symlink /tmp&rdquo;. I
+                thought it could be related to some kind of permissions issue.
+                In the end the problem was more basic: I&rsquo;d exhausted all
+                the free space and nothing could be written to disk (and jetty
+                couldn&rsquo;t create a symlink). The second one was one of
+                those Doh! moments. My web application didn&rsquo;t respond to
+                any request. But it didn&rsquo;t show any error in the logs.
+                I&rsquo;m quite ashamed of putting this in writing but the issue
+                was that the web application was paused in a breakpoint while
+                debugging. The third one was a bit strange. The web application
+                obviously has static files. Some of the Javascript files were
+                served correctly, other Javascript files weren&rsquo;t. The
+                files not served were always the same. I didn&rsquo;t detect any
+                specific pattern. But the fact was that Chrome would receive
+                net::ERR_EMPTY_RESPONSE, and the Jetty was logging an
+                exception <span
+                  style="font-family: 'Courier New', Courier, monospace"
+                  >NoSuchMethodError in </span
+                ><span style="font-family: 'Courier New', Courier, monospace"
+                  >javax.servlet.http.HttpServletRequest.isAsyncStarted  </span
+                >
 
-  
+                The
+                <a
+                  href="http://stackoverflow.com/questions/21510177/embedded-jetty-9"
+                  >typical answer</a
+                >
+                relates the problem to having several versions of the servlet
+                api. But I somehow didn&rsquo;t pay too much attention because
+                [sarcasm on] <sarcasm on=""
+                  >everybody knows servlet-api.2.5 and javax.servlet-api-3.1.0
+                  are not different versions of the same API [sarcasm off]
+                  (indeed they ARE different versions of the servlet
+                  API)<sarcasm off=""></sarcasm
+                ></sarcasm>
+              </p>
+            </article>
 
+            <div class="pagination">
+              <a
+                class="pagination__item"
+                href="http://gonzalo.f-v.es/blog/2014-06-08-scala-first-impressions/"
+              >
+                <span class="pagination__label">Previous Post</span>
+                <span class="pagination__title">Scala: First impressions</span>
+              </a>
 
-</body>
+              <a
+                class="pagination__item"
+                href="http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/"
+              >
+                <span class="pagination__label">Next Post</span>
+                <span class="pagination__title"
+                  >Agile is about managing risk</span
+                >
+              </a>
+            </div>
 
+            <footer class="post__footer">
+              <div class="social-icons">
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="Twitter"
+                  href="https://twitter.com/gonfva"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/twitter.svg');
+                    "
+                  ></div>
+                </a>
+
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="GitHub"
+                  href="https://github.com/gonfva"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/github.svg');
+                    "
+                  ></div>
+                </a>
+
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="LinkedIn"
+                  href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg');
+                    "
+                  ></div>
+                </a>
+              </div>
+
+              <p>© Gonzalo Fernandez-Victorio 2021</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js"
+      integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+    <script
+      src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+      data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"
+    ></script>
+  </body>
 </html>

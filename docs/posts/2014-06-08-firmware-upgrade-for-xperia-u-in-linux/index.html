@@ -1,291 +1,525 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Firmware upgrade for Xperia U in Linux (II) | Gonzalo&#39;s thoughts</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt).">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>
+      Firmware upgrade for Xperia U in Linux (II) | Gonzalo&#39;s thoughts
+    </title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <meta
+      name="description"
+      content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt)."
+    />
     <meta name="generator" content="Hugo 0.80.0" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    
 
-    
+    <meta name="ROBOTS" content="INDEX, FOLLOW" />
 
-  
-  
-    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
-  
+    <link
+      rel="stylesheet"
+      href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css"
+    />
 
+    <meta
+      property="og:title"
+      content="Firmware upgrade for Xperia U in Linux (II)"
+    />
+    <meta
+      property="og:description"
+      content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt)."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/"
+    />
+    <meta property="og:site_name" content="Gonzalo&#39;s thoughts" />
+    <meta
+      itemprop="name"
+      content="Firmware upgrade for Xperia U in Linux (II)"
+    />
+    <meta
+      itemprop="description"
+      content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt)."
+    />
 
+    <meta itemprop="wordCount" content="1211" />
 
+    <meta itemprop="keywords" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Firmware upgrade for Xperia U in Linux (II)"
+    />
+    <meta
+      name="twitter:description"
+      content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt)."
+    />
 
-    
-      
-
-    
-
-    
-    
-    <meta property="og:title" content="Firmware upgrade for Xperia U in Linux (II)" />
-<meta property="og:description" content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt)." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/" />
-<meta property="og:site_name" content="Gonzalo&#39;s thoughts" />
-<meta itemprop="name" content="Firmware upgrade for Xperia U in Linux (II)">
-<meta itemprop="description" content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt).">
-
-<meta itemprop="wordCount" content="1211">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Firmware upgrade for Xperia U in Linux (II)"/>
-<meta name="twitter:description" content="[Long post] Edited (08th-Jun-2014): Updated the firmware download site. In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&#39;t manage to understand the underlying logic. The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&#39;m an expert: take it with a grain of salt)."/>
-
-      
-    
-	<link rel="stylesheet" href="/css/main.css" />
-
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body class="ma0 avenir bg-near-white">
+    <header>
+      <div class="bg-black">
+        <nav class="pv3 ph3 ph4-ns" role="navigation">
+          <div class="flex-l justify-between items-center center">
+            <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+              Gonzalo&#39;s thoughts
+            </a>
+            <div class="flex-l items-center">
+              <a
+                href="https://twitter.com/gonfva"
+                target="_blank"
+                class="link-transition twitter link dib z-999 pt3 pt0-l mr1"
+                title="Twitter link"
+                rel="noopener"
+                aria-label="follow on Twitter——Opens in a new window"
+              >
+                <svg
+                  height="32px"
+                  style="enable-background: new 0 0 67 67"
+                  version="1.1"
+                  viewBox="0 0 67 67"
+                  width="32px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z"
+                    style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                  />
+                </svg>
 
-    
-   
-  
+                <span class="new-window"
+                  ><svg
+                    height="8px"
+                    style="enable-background: new 0 0 1000 1000"
+                    version="1.1"
+                    viewBox="0 0 1000 1000"
+                    width="8px"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z"
+                      style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                    />
+                  </svg> </span
+              ></a>
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        Gonzalo&#39;s thoughts
-      
-    </a>
-    <div class="flex-l items-center">
-      
+              <a
+                href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+                target="_blank"
+                class="link-transition linkedin link dib z-999 pt3 pt0-l mr1"
+                title="LinkedIn link"
+                rel="noopener"
+                aria-label="follow on LinkedIn——Opens in a new window"
+              >
+                <svg
+                  height="32px"
+                  style="enable-background: new 0 0 65 65"
+                  version="1.1"
+                  viewBox="0 0 65 65"
+                  width="32px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                    style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                  />
+                </svg>
 
-      
-      
-
-
-
-
-<a href="https://twitter.com/gonfva" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
-
-
-
-<a href="https://www.linkedin.com/in/gonzalofernandezvictorio/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-</nav>
-
-    </div>
-  </header>
-
-
+                <span class="new-window"
+                  ><svg
+                    height="8px"
+                    style="enable-background: new 0 0 1000 1000"
+                    version="1.1"
+                    viewBox="0 0 1000 1000"
+                    width="8px"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z"
+                      style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                    />
+                  </svg> </span
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked">
-          
-        POSTS
-      </aside>
-      
+      <article class="flex-l flex-wrap justify-between mw8 center ph3">
+        <header class="mt4 w-100">
+          <aside class="instapaper_ignoref b helvetica tracked">POSTS</aside>
 
+          <div id="sharing" class="mt3">
+            <a
+              href="https://www.facebook.com/sharer.php?u=http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/"
+              class="facebook no-underline"
+              aria-label="share on Facebook"
+            >
+              <svg
+                height="32px"
+                style="enable-background: new 0 0 67 67"
+                version="1.1"
+                viewBox="0 0 67 67"
+                width="32px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z"
+                  style="fill-rule: evenodd; clip-rule: evenodd"
+                />
+              </svg>
+            </a>
 
+            <a
+              href="https://twitter.com/share?url=http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/&amp;text=Firmware%20upgrade%20for%20Xperia%20U%20in%20Linux%20%28II%29"
+              class="twitter no-underline"
+              aria-label="share on Twitter"
+            >
+              <svg
+                height="32px"
+                style="enable-background: new 0 0 67 67"
+                version="1.1"
+                viewBox="0 0 67 67"
+                width="32px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z"
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                />
+              </svg>
+            </a>
 
+            <a
+              href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/&amp;title=Firmware%20upgrade%20for%20Xperia%20U%20in%20Linux%20%28II%29"
+              class="linkedin no-underline"
+              aria-label="share on LinkedIn"
+            >
+              <svg
+                height="32px"
+                style="enable-background: new 0 0 65 65"
+                version="1.1"
+                viewBox="0 0 65 65"
+                width="32px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                />
+              </svg>
+            </a>
+          </div>
 
-  <div id="sharing" class="mt3">
+          <h1 class="f1 athelas mt3 mb1">
+            Firmware upgrade for Xperia U in Linux (II)
+          </h1>
 
-    
-    <a href="https://www.facebook.com/sharer.php?u=http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/" class="facebook no-underline" aria-label="share on Facebook">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+          <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z"
+            >January 1, 0001</time
+          >
+        </header>
+        <div
+          class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"
+        >
+          [Long post] Edited (08th-Jun-2014): Updated the firmware download
+          site. In my
+          <a
+            href="http://gonfva.blogspot.com/2013/11/firmware-upgrade-for-xperia-u-in-linux-i.html"
+            >previous post</a
+          >
+          I explained that one of the things that made the installing process
+          more difficult was the lack of a general picture of the process. There
+          are lots of pages explaining recipes to install, but I find it
+          difficult to follow recipes if I don't manage to understand the
+          underlying logic. The following is my visualization of the whole
+          process (this is less than a week of knowledge, so I cannot say I'm an
+          expert: take it with a grain of salt). You can get a
+          <a href="http://www.android-app-market.com/android-architecture.html"
+            >more accurate picture of the Android architecture in other pages</a
+          >. And you can
+          <a href="http://forum.xda-developers.com/showthread.php?t=2107775"
+            >get the process in detail from XDA</a
+          >.
 
-    </a>
+          <h4>First, components</h4>
+          As far as I understand there are three components in an Android system
 
-    
-    
-    <a href="https://twitter.com/share?url=http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/&amp;text=Firmware%20upgrade%20for%20Xperia%20U%20in%20Linux%20%28II%29" class="twitter no-underline" aria-label="share on Twitter">
-      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+          <br />
+          <ol>
+            <li>
+              The bootloader. This is a piece of software that usually loads the
+              system, enables Android recovery image and image upgrades.
+              Sometimes it is called the kernel, so I understand it is the
+              underlying component of the Android
+            </li>
+            <li>
+              The second one is called the system. It would include shared
+              libraries and components. When people says Android is Java, I
+              understand that it is probably related to this set.
+            </li>
+            <li>
+              And the third one is called Gapps. Gapps it is not a component in
+              its own. It's a package with Google applications. For licence
+              reasons, you cannot distribute them attached to other components,
+              so you almost always will find a package with Gapps.
+            </li>
+          </ol>
 
-    </a>
+          OK. Now to the process. Again. You'll probably void the warranty and
+          you could brick your phone. If you're not comfortable installing your
+          own operating system at your computer, DON'T EVEN BOTHER reading
+          further. If you are reading this, you have Linux at home and that's
+          means that you are more than average Joe, but do it at tour own risk.
 
-    
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://gonzalo.f-v.es/posts/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/&amp;title=Firmware%20upgrade%20for%20Xperia%20U%20in%20Linux%20%28II%29" class="linkedin no-underline" aria-label="share on LinkedIn">
-      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
+          <h4>Second, the modes. Fastboot and the like</h4>
+          <br />"Fastboot??? What the h***ll is that. Gonzalo, you told me this
+          was going to be easy". I nearly bricked a BQ Maxwell tablet upgrading
+          to the official firmware, so, please, don't think this is easy.<br />
+          <div><br /></div>
+          <b>Fastboot</b> is a mode in the phone that allows to unlock and flash
+          the bootloader. In the Xperia U you get that mode turning the phone
+          off, then pressing the Volume up button and while pressing, connecting
+          the USB cable to the computer. But you should already know if
+          you&nbsp;<b>had read</b>&nbsp;the Sony document as I told you. The
+          light in the phone should be blue. There is also another mode called
+          <b>Flash mode</b>. "Fastboot mode and Flash mode are different? Is
+          there no other F-word?". To enter Flash mode, shutdown the mobile,
+          disconnect the cable from the computer, press the Volume down, connect
+          to the computer and release the volume down. The light in the phone
+          should be green. &nbsp;<b>Recovery mode</b>. It is a mode that allows
+          to do some powerful things from the phone. To enter that mode, power
+          off the phone, then power on and after you see the SONY logo, press
+          repeatedly volume down button (-) until you see recovery. While in the
+          previous two modes the screen is powered off, in this mode, you can
+          navigate the menus.&nbsp;To navigate in the recovery mode, you use
+          volume up and volume down, and select with the Power button. You will
+          sometimes read about <b>Normal mode</b>. Normal mode is the phone on
+          as usual, sometimes with the the debug options activated.<br />
+          <div><br /></div>
+          <h4>Updating. One twist.</h4>
+          After reading about components and modes, the first thing to do it
+          would seem to update the bootloader. But... ...you cannot update the
+          kernel directly because to avoid people messing around, kernels tend
+          to be locked down by the manufacturer. Besides, sometimes you buy
+          phones locked by the telco company (so that you get it cheaper, but
+          you cannot change the company). So before you update the kernel, you
+          need to unlock (or root, as it sometimes called) the bootloader.
 
-    </a>
-  </div>
+          <h4>Unlocking the bootloader</h4>
+          I must confess I'm&nbsp;pleasantly surprised with Sony about the
+          unlocking process. It has a very informative page with a
+          <a href="http://unlockbootloader.sonymobile.com/unlocking-boot-loader"
+            >step-to-step guide</a
+          >. Unfortunately, it doesn't work with Linux, but you should read it
+          in detail because it is almost there. You'll need to install Android
+          SDK. You'll need to follow most of the steps.. Also, you will need a
+          code, you're going to get by email from that page. So go read, click
+          next and fill the details with your email and IMEI, because you do
+          really need the code. When going for Linux, you're going to follow the
+          same steps. BUT. Instead of the steps related to the USB drivers (i.e
+          step 9), you need UDEV rules. UDEV is the way Linux uses to recognize
+          new components, in particular USB devices. You will need the USB ID
+          for your phone version, both in usual mode, in Fastboot mode and in
+          Flash mode. Back to the UDEV rules, these are the ones I got for
+          Xperia U ST25i.
 
+          <script src="https://gist.github.com/gonfva/7633925.js"></script>
 
-      <h1 class="f1 athelas mt3 mb1">Firmware upgrade for Xperia U in Linux (II)</h1>
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+          But you should get yours using the tool lsusb. After you have the
+          correct rules (and you have restarted the UDEV with "sudo service udev
+          restart") connected in fastboot mode, you will be able to follow steps
+          in the Sony Page and unlock the bootloader. And then to the next step
 
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-[Long post]
-<br /><br />
-Edited (08th-Jun-2014): Updated the firmware download site.
-<br /><br />
-In my <a href="http://gonfva.blogspot.com/2013/11/firmware-upgrade-for-xperia-u-in-linux-i.html">previous post</a> I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don't manage to understand the underlying logic.
-<br /><br />
-The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I'm an expert: take it with a grain of salt). You can get a <a href="http://www.android-app-market.com/android-architecture.html">more accurate picture of the Android architecture in other pages</a>. And you can <a href="http://forum.xda-developers.com/showthread.php?t=2107775">get the process in detail from XDA</a>.
-<br /><br />
-<h4>First, components</h4>As far as I understand there are three components in an Android system
-<br /><br />
-<br /><ol><li>The bootloader. This is a piece of software that usually loads the system, enables Android recovery image and image upgrades. Sometimes it is called the kernel, so I understand it is the underlying component of the Android</li><li>The second one is called the system. It would include shared libraries and components. When people says Android is Java, I understand that it is probably related to this set.</li><li>And the third one is called Gapps. Gapps it is not a component in its own. It's a package with Google applications. For licence reasons, you cannot distribute them attached to other components, so you almost always will find a package with Gapps.</li></ol>
-<br /><br />
-OK. Now to the process. Again. You'll probably void the warranty and you could brick your phone. If you're not comfortable installing your own operating system at your computer, DON'T EVEN BOTHER reading further. If you are reading this, you have Linux at home and that's means that you are more than average Joe, but do it at tour own risk.
-<br /><br />
-<h4>Second, the modes. Fastboot and the like</h4><br />"Fastboot??? What the h***ll is that. Gonzalo, you told me this was going to be easy".
-<br /><br />
-I nearly bricked a BQ Maxwell tablet upgrading to the official firmware, so, please, don't think this is easy.<br /><div><br /></div><b>Fastboot</b> is a mode in the phone that allows to unlock and flash the bootloader. In the Xperia U you get that mode turning the phone off, then pressing the Volume up button and while pressing, connecting the USB cable to the computer. But you should already know if you&nbsp;<b>had read</b>&nbsp;the Sony document as I told you. The light in the phone should be blue.
-<br /><br />
-There is also another mode called <b>Flash mode</b>. "Fastboot mode and Flash mode are different? Is there no other F-word?". To enter Flash mode, shutdown the mobile, disconnect the cable from the computer, press the Volume down, connect to the computer and release the volume down. The light in the phone should be green.
-<br /><br />
-&nbsp;<b>Recovery mode</b>. It is a mode that allows to do some powerful things from the phone. To enter that mode, power off the phone, then power on and after you see the SONY logo, press repeatedly volume down button (-) until you see recovery. While in the previous two modes the screen is powered off, in this mode, you can navigate the menus.&nbsp;To navigate in the recovery mode, you use volume up and volume down, and select with the Power button.
-<br /><br />
-You will sometimes read about <b>Normal mode</b>. Normal mode is the phone on as usual, sometimes with the the debug options activated.<br /><div><br /></div><h4>Updating. One twist.</h4>After reading about components and modes, the first thing to do it would seem to update the bootloader. But...
-<br /><br />
-...you cannot update the kernel directly because to avoid people messing around, kernels tend to be locked down by the manufacturer. Besides, sometimes you buy phones locked by the telco company (so that you get it cheaper, but you cannot change the company).
-<br /><br />
-So before you update the kernel, you need to unlock (or root, as it sometimes called) the bootloader.
-<br /><br />
-<h4>Unlocking the bootloader</h4>I must confess I'm&nbsp;pleasantly surprised with Sony about the unlocking process. It has a very informative page with a <a href="http://unlockbootloader.sonymobile.com/unlocking-boot-loader">step-to-step guide</a>. Unfortunately, it doesn't work with Linux, but you should read it in detail because it is almost there. You'll need to install Android SDK. You'll need to follow most of the steps.. Also, you will need a code, you're going to get by email from that page. So go read, click next and fill the details with your email and IMEI, because you do really need the code.
-<br /><br />
-When going for Linux, you're going to follow the same steps. BUT. Instead of the steps related to the USB drivers (i.e step 9), you need UDEV rules. UDEV is the way Linux uses to recognize new components, in particular USB devices. You will need the USB ID for your phone version, both in usual mode, in Fastboot mode and in Flash mode.
-<br /><br />
+          <h4>Flashing the kernel</h4>
+          This part should be easy but it gets a bit tricky. You are going to
+          use a tool called Flashtool. But the tricky part is that Flashtool
+          needs libusb-dev. From what I've been able to understand, that library
+          suffered some fork, so you'll end up asking how the h*ll should you
+          install that library. And if you've got a 64 bits linux version,
+          things are not going to be easier. You may end up screwing the whole
+          system because ia32-libs (don't follow that route). Good thing about
+          the Internet is that you are not alone. So in
+          <a
+            href="http://askubuntu.com/questions/366336/how-do-i-install-lsusbx-library"
+            >this page</a
+          >, you'll get to ease the problematic steps. Basically, compile
+          libusb-dev from source and modify Flashtool. And then flahsing the
+          kernel should be easy. Flashtool allows lots of things, but I only
+          <a href="http://forum.xda-developers.com/showthread.php?t=928343"
+            >flashed the kernel</a
+          >&nbsp; with the firmware Flashtool came with. Once connected, I think
+          you can flash either in Fast boot and in flash mode.
 
-<br /><br />
-Back to the UDEV rules, these are the ones I got for Xperia U ST25i.
-<br /><br />
-<script src="https://gist.github.com/gonfva/7633925.js"></script>
-<br /><br />
-But you should get yours using the tool lsusb.
-<br /><br />
-After you have the correct rules (and you have restarted the UDEV with "sudo service udev restart") connected in fastboot mode, you will be able to follow steps in the Sony Page and unlock the bootloader. And then to the next step
-<br /><br />
-<h4>Flashing the kernel</h4>This part should be easy but it gets a bit tricky. You are going to use a tool called Flashtool. But the tricky part is that Flashtool needs libusb-dev. From what I've been able to understand, that library suffered some fork, so you'll end up asking how the h*ll should you install that library. And if you've got a 64 bits linux version, things are not going to be easier. You may end up screwing the whole system because ia32-libs (don't follow that route).
-<br /><br />
-Good thing about the Internet is that you are not alone. So in <a href="http://askubuntu.com/questions/366336/how-do-i-install-lsusbx-library">this page</a>, you'll get to ease the problematic steps. Basically, compile libusb-dev from source and modify Flashtool.
-<br /><br />
-And then flahsing the kernel should be easy. Flashtool allows lots of things, but I only <a href="http://forum.xda-developers.com/showthread.php?t=928343">flashed the kernel</a>&nbsp; with the firmware Flashtool came with. Once connected, I think you can flash either in Fast boot and in flash mode.
-<br /><br />
-<h4>Flashing the system and Gapps</h4>The last part is very easy. First download the system and Gapps. <strike>If you're going to pick the latest versions, do it from Maclaw.&nbsp;The download is a bit unintuitive (click Sony Xperia U, click CianogenMod in the right, and then download both files).&nbsp;</strike>Edited: If you want Android 4.4.3, see <a href="http://gonfva.blogspot.co.uk/2014/06/android-443-sony-xperia-u.html">this post</a>. <a href="http://wiki.cyanogenmod.org/w/Unofficial_Ports#Sony_Xperia_U">The better place is from XDA</a>. Once downloaded, copy them to the phone in normal mode.
-<br /><br />
-And reboot in Recovery mode. In Recovery mode you should do a backup. Just in case.<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s1600/26112013201.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s200/26112013201.jpg" height="200" width="150" /></a></div><br />Then follow the process "Install zip-&gt;Choose zip from /storage/sdcard0 and select the folder where you copied the file" to load first the system file. And then do the same process with the Gapps file.
-<br /><br />
-And then wipe data/factory reset, followed by wipe cache partition and followed by "advanced-&gt;Wipe dalvik cache"
-<br /><br />
-And then "reboot system now"
-<br /><br />
-<h4>One last note</h4><br />One of the things I struggled with was reading about a sdcard "Where is the SDCARD in an Xperia U?".
-<br /><br />
-I understand it is a sort of internal storage. Anyway, there is no socket to put a SDCARD inside, so forget about it.
-<br /><br />
+          <h4>Flashing the system and Gapps</h4>
+          The last part is very easy. First download the system and Gapps.
+          <strike
+            >If you're going to pick the latest versions, do it from
+            Maclaw.&nbsp;The download is a bit unintuitive (click Sony Xperia U,
+            click CianogenMod in the right, and then download both
+            files).&nbsp;</strike
+          >Edited: If you want Android 4.4.3, see
+          <a
+            href="http://gonfva.blogspot.co.uk/2014/06/android-443-sony-xperia-u.html"
+            >this post</a
+          >.
+          <a href="http://wiki.cyanogenmod.org/w/Unofficial_Ports#Sony_Xperia_U"
+            >The better place is from XDA</a
+          >. Once downloaded, copy them to the phone in normal mode. And reboot
+          in Recovery mode. In Recovery mode you should do a backup. Just in
+          case.<br />
+          <div class="separator" style="clear: both; text-align: center">
+            <a
+              href="http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s1600/26112013201.jpg"
+              imageanchor="1"
+              style="
+                clear: left;
+                float: left;
+                margin-bottom: 1em;
+                margin-right: 1em;
+              "
+              ><img
+                border="0"
+                src="http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s200/26112013201.jpg"
+                height="200"
+                width="150"
+            /></a>
+          </div>
+          <br />Then follow the process "Install zip-&gt;Choose zip from
+          /storage/sdcard0 and select the folder where you copied the file" to
+          load first the system file. And then do the same process with the
+          Gapps file. And then wipe data/factory reset, followed by wipe cache
+          partition and followed by "advanced-&gt;Wipe dalvik cache" And then
+          "reboot system now"
 
-<br /><br />
-<br />
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
+          <h4>One last note</h4>
+          <br />One of the things I struggled with was reading about a sdcard
+          "Where is the SDCARD in an Xperia U?". I understand it is a sort of
+          internal storage. Anyway, there is no socket to put a SDCARD inside,
+          so forget about it.
 
-    <aside class="w-30-l mt6-l">
+          <br />
+          <ul class="pa0"></ul>
+          <div class="mt6 instapaper_ignoref"></div>
+        </div>
 
-
-
-
-</aside>
-
-  </article>
-
+        <aside class="w-30-l mt6-l"></aside>
+      </article>
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gonzalo.f-v.es/" >
-    &copy;  Gonzalo Fernandez-Victorio 2021 
-  </a>
-    <div>
+      <div class="flex justify-between">
+        <a
+          class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+          href="http://gonzalo.f-v.es/"
+        >
+          &copy; Gonzalo Fernandez-Victorio 2021
+        </a>
+        <div>
+          <a
+            href="https://twitter.com/gonfva"
+            target="_blank"
+            class="link-transition twitter link dib z-999 pt3 pt0-l mr1"
+            title="Twitter link"
+            rel="noopener"
+            aria-label="follow on Twitter——Opens in a new window"
+          >
+            <svg
+              height="32px"
+              style="enable-background: new 0 0 67 67"
+              version="1.1"
+              viewBox="0 0 67 67"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z"
+                style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+              />
+            </svg>
 
+            <span class="new-window"
+              ><svg
+                height="8px"
+                style="enable-background: new 0 0 1000 1000"
+                version="1.1"
+                viewBox="0 0 1000 1000"
+                width="8px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z"
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                />
+              </svg> </span
+          ></a>
 
+          <a
+            href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+            target="_blank"
+            class="link-transition linkedin link dib z-999 pt3 pt0-l mr1"
+            title="LinkedIn link"
+            rel="noopener"
+            aria-label="follow on LinkedIn——Opens in a new window"
+          >
+            <svg
+              height="32px"
+              style="enable-background: new 0 0 65 65"
+              version="1.1"
+              viewBox="0 0 65 65"
+              width="32px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+              />
+            </svg>
 
-
-<a href="https://twitter.com/gonfva" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
-
-
-
-<a href="https://www.linkedin.com/in/gonzalofernandezvictorio/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
-
-
-
-
-
-
-
-</div>
-  </div>
-</footer>
-
+            <span class="new-window"
+              ><svg
+                height="8px"
+                style="enable-background: new 0 0 1000 1000"
+                version="1.1"
+                viewBox="0 0 1000 1000"
+                width="8px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z"
+                  style="fill-rule: evenodd; clip-rule: evenodd; fill: "
+                />
+              </svg> </span
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

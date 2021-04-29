@@ -1,219 +1,258 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <title>Multithreading: Warning lights | Gonzalo&#39;s thoughts</title>
 
-<head>
-  <title>Multithreading: Warning lights | Gonzalo&#39;s thoughts</title>
+    <meta charset="UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta charset="UTF-8">
-  <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Multithreading: Warning lights" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="@gonfva" />
+    <meta name="twitter:creator" content="https://twitter.com/gonfva" />
 
-  
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Multithreading: Warning lights" />
-  <meta name="twitter:description" content=""/>
-  <meta name="twitter:site" content="@gonfva" />
-  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
-  
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css"
+      integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="
+    />
 
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css"
+      integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="
+    />
 
-  
-  
-    
- 
-  
-  
-  
-  
-  
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
-  
-  
-   
-   
-    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http:\/\/gonzalo.f-v.es\/"
+        },
+        "articleSection": "blog",
+        "name": "Multithreading: Warning lights",
+        "headline": "Multithreading: Warning lights",
+        "description": "",
+        "inLanguage": "en-US",
+        "author": "",
+        "creator": "",
+        "publisher": "",
+        "accountablePerson": "",
+        "copyrightHolder": "",
+        "copyrightYear": "2014",
+        "datePublished": "2014-01-21 12:17:35 \u002b0000 UTC",
+        "dateModified": "2014-01-21 12:17:35 \u002b0000 UTC",
+        "url": "http:\/\/gonzalo.f-v.es\/blog\/2014-01-21-multithreading-warning-lights\/",
+        "wordCount": "423",
+        "keywords": ["Blog"]
+      }
+    </script>
+  </head>
 
-<script type="application/ld+json">
-  
-    {
-      "@context" : "http://schema.org",
-      "@type" : "BlogPosting",
-      "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http:\/\/gonzalo.f-v.es\/"
-      },
-      "articleSection" : "blog",
-      "name" : "Multithreading: Warning lights",
-      "headline" : "Multithreading: Warning lights",
-      "description" : "",
-      "inLanguage" : "en-US",
-      "author" : "",
-      "creator" : "",
-      "publisher": "",
-      "accountablePerson" : "",
-      "copyrightHolder" : "",
-      "copyrightYear" : "2014",
-      "datePublished": "2014-01-21 12:17:35 \u002b0000 UTC",
-      "dateModified" : "2014-01-21 12:17:35 \u002b0000 UTC",
-      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2014-01-21-multithreading-warning-lights\/",
-      "wordCount" : "423",
-      "keywords" : ["Blog"]
-    }
-  
-  </script>
-</head>
-
-<body>
-  <div class="burger__container">
-  <div class="burger" aria-controls="navigation" aria-label="Menu">
-    <div class="burger__meat burger__meat--1"></div>
-    <div class="burger__meat burger__meat--2"></div>
-    <div class="burger__meat burger__meat--3"></div>
-  </div>
-</div>
- 
-
-  <nav class="nav" id="navigation">
-  <ul class="nav__list">
-    
-    
-      <li>
-        <a  href="/">About</a>
-      </li>
-    
-      <li>
-        <a  href="/blog">Blog EN</a>
-      </li>
-    
-      <li>
-        <a  href="/es/blog">Blog ES</a>
-      </li>
-    
-  </ul>
-</nav>
-
-
-  <main>
-    
-    
-
-    <div class="flex-wrapper">
-      <div class="post__container">
-        <div class="post">
-          <header class="post__header">
-            <h1 id="post__title">Multithreading: Warning lights</h1>
-            <time datetime="2014-01-21 12:17:35 &#43;0000 UTC" class="post__date">2014-01-21</time> 
-          </header>
-          <article class="post__content">
-              
-<p>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&rsquo;t help it was my first experience working with a Mac.
-<br /><br />
-At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.
-<br /><br />
-So I had something like (fictitious code)
-<br /><br /></p>
-<blockquote class="tr_bq">&nbsp; class GreatObject {<br />&nbsp; &nbsp; public void calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; Service supaService= MegaFactory.getService();<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }</blockquote><br />and we had agreed on doing something like
-<br /><br />
-<blockquote class="tr_bq">&nbsp; class GreatObject {<br />&nbsp; &nbsp; private Service supaService;<br />&nbsp; &nbsp; public GreatObject () {<br />&nbsp; &nbsp; &nbsp; this.supaService= MegaFactory.getService();<br />&nbsp; &nbsp; }<br />&nbsp; &nbsp; public GreatObject (Service supaService) {<br />&nbsp; &nbsp; &nbsp; this.supaService=supaService;<br />&nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; public void calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }</blockquote><br />When I was going to do it, something in the back of my mind started to blink. It was a bit subtle and it took me a while to be able to express it. So as an exercise for the future, I'm going to try and express it in writing.
-<br /><br />
-The problem with the change is that we have transformed a local variable into an instance variable. Local variables are local to the thread. Instance variables are shared between threads. So until now we had a thread safe class, but now the class is not thread safe. As an example: What if each instance of the service can only be invoked once and we have <a href="https://twitter.com/nedbat/status/194452404794691584">two threads</a> running?
-<br /><br />
-I was asked to tell what to do to be protected. I replied I didn't know. The typical answer involves the reserved word <b>synchronized</b>. But as <a href="http://gonfva.blogspot.co.uk/2012/03/synchronized-silver-bullet.html">I've told in the past</a>, that is not usually a good answer and almost never the best answer.
-
-
-              
-          </article>
-          
-
- <div class="pagination">
-  
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/">
-        <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Firmware upgrade for Xperia U in Linux (I)</span>
-    </a>
-  
-
-  
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Community managers: The day after</span>
-    </a>
-  
-</div>
-
-          
-          <footer class="post__footer">
-            
-
-
-<div class="social-icons">
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/gonfva"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
-      </a>
-    
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/gonfva"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
-      </a>
-    
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="LinkedIn"
-         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
-      </a>
-    
-     
-</div>
-
-            <p>© Gonzalo Fernandez-Victorio 2021</p>
-          </footer>
-          </div>
+  <body>
+    <div class="burger__container">
+      <div class="burger" aria-controls="navigation" aria-label="Menu">
+        <div class="burger__meat burger__meat--1"></div>
+        <div class="burger__meat burger__meat--2"></div>
+        <div class="burger__meat burger__meat--3"></div>
       </div>
-      
     </div>
-    
 
-  </main>
+    <nav class="nav" id="navigation">
+      <ul class="nav__list">
+        <li>
+          <a href="/">About</a>
+        </li>
 
-   
+        <li>
+          <a href="/blog">Blog EN</a>
+        </li>
 
-  
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
-  
-  
-  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+        <li>
+          <a href="/es/blog">Blog ES</a>
+        </li>
+      </ul>
+    </nav>
 
-  
-  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
-    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+    <main>
+      <div class="flex-wrapper">
+        <div class="post__container">
+          <div class="post">
+            <header class="post__header">
+              <h1 id="post__title">Multithreading: Warning lights</h1>
+              <time
+                datetime="2014-01-21 12:17:35 &#43;0000 UTC"
+                class="post__date"
+                >2014-01-21</time
+              >
+            </header>
+            <article class="post__content">
+              <p>
+                A few days ago I went to an interview which included a pair
+                programming session. The session was a great experience, but the
+                result wasn&rsquo;t quite as good as it should have been,
+                because of some difficulties understanding on what was being
+                asked. It didn&rsquo;t help it was my first experience working
+                with a Mac. At one point we agreed on creating a new constructor
+                so that we could pass a service in the constructor instead of
+                getting directly in the method under test. So I had something
+                like (fictitious code)
+              </p>
+              <blockquote class="tr_bq">
+                &nbsp; class GreatObject {<br />&nbsp; &nbsp; public void
+                calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp;
+                int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp;
+                &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; }
+                else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp;
+                &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp;
+                Service supaService= MegaFactory.getService();<br />&nbsp;
+                &nbsp; <br />&nbsp; &nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp;
+                &nbsp; }<br />&nbsp; }
+              </blockquote>
+              <br />and we had agreed on doing something like
 
-  
+              <blockquote class="tr_bq">
+                &nbsp; class GreatObject {<br />&nbsp; &nbsp; private Service
+                supaService;<br />&nbsp; &nbsp; public GreatObject () {<br />&nbsp;
+                &nbsp; &nbsp; this.supaService= MegaFactory.getService();<br />&nbsp;
+                &nbsp; }<br />&nbsp; &nbsp; public GreatObject (Service
+                supaService) {<br />&nbsp; &nbsp; &nbsp;
+                this.supaService=supaService;<br />&nbsp; &nbsp; }<br />&nbsp;
+                &nbsp; <br />&nbsp; &nbsp; public void calculateAndAddAmount(int
+                length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean
+                cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp;
+                &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp;
+                &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp;
+                &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp;
+                }<br />&nbsp; &nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp;
+                supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }
+              </blockquote>
+              <br />When I was going to do it, something in the back of my mind
+              started to blink. It was a bit subtle and it took me a while to be
+              able to express it. So as an exercise for the future, I'm going to
+              try and express it in writing. The problem with the change is that
+              we have transformed a local variable into an instance variable.
+              Local variables are local to the thread. Instance variables are
+              shared between threads. So until now we had a thread safe class,
+              but now the class is not thread safe. As an example: What if each
+              instance of the service can only be invoked once and we have
+              <a href="https://twitter.com/nedbat/status/194452404794691584"
+                >two threads</a
+              >
+              running? I was asked to tell what to do to be protected. I replied
+              I didn't know. The typical answer involves the reserved word
+              <b>synchronized</b>. But as
+              <a
+                href="http://gonfva.blogspot.co.uk/2012/03/synchronized-silver-bullet.html"
+                >I've told in the past</a
+              >, that is not usually a good answer and almost never the best
+              answer.
+            </article>
 
+            <div class="pagination">
+              <a
+                class="pagination__item"
+                href="http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/"
+              >
+                <span class="pagination__label">Previous Post</span>
+                <span class="pagination__title"
+                  >Firmware upgrade for Xperia U in Linux (I)</span
+                >
+              </a>
 
-</body>
+              <a
+                class="pagination__item"
+                href="http://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/"
+              >
+                <span class="pagination__label">Next Post</span>
+                <span class="pagination__title"
+                  >Community managers: The day after</span
+                >
+              </a>
+            </div>
 
+            <footer class="post__footer">
+              <div class="social-icons">
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="Twitter"
+                  href="https://twitter.com/gonfva"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/twitter.svg');
+                    "
+                  ></div>
+                </a>
+
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="GitHub"
+                  href="https://github.com/gonfva"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/github.svg');
+                    "
+                  ></div>
+                </a>
+
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="LinkedIn"
+                  href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg');
+                    "
+                  ></div>
+                </a>
+              </div>
+
+              <p>© Gonzalo Fernandez-Victorio 2021</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js"
+      integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+    <script
+      src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+      data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"
+    ></script>
+  </body>
 </html>

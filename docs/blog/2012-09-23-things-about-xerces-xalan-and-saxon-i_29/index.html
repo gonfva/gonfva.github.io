@@ -1,217 +1,268 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <title>
+      Things about Xerces, Xalan and Saxon I didn&#39;t know (III) |
+      Gonzalo&#39;s thoughts
+    </title>
 
-<head>
-  <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III) | Gonzalo&#39;s thoughts</title>
+    <meta charset="UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta charset="UTF-8">
-  <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Things about Xerces, Xalan and Saxon I didn&#39;t know (III)"
+    />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:site" content="@gonfva" />
+    <meta name="twitter:creator" content="https://twitter.com/gonfva" />
 
-  
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Things about Xerces, Xalan and Saxon I didn&#39;t know (III)" />
-  <meta name="twitter:description" content=""/>
-  <meta name="twitter:site" content="@gonfva" />
-  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
-  
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css"
+      integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="
+    />
 
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css"
+      integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="
+    />
 
-  
-  
-    
- 
-  
-  
-  
-  
-  
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
-  
-    
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
-  
-  
-   
-   
-    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http:\/\/gonzalo.f-v.es\/"
+        },
+        "articleSection": "blog",
+        "name": "Things about Xerces, Xalan and Saxon I didn\u0027t know (III)",
+        "headline": "Things about Xerces, Xalan and Saxon I didn\u0027t know (III)",
+        "description": "",
+        "inLanguage": "en-US",
+        "author": "",
+        "creator": "",
+        "publisher": "",
+        "accountablePerson": "",
+        "copyrightHolder": "",
+        "copyrightYear": "2012",
+        "datePublished": "2012-09-23 11:45:46 \u002b0000 UTC",
+        "dateModified": "2012-09-23 11:45:46 \u002b0000 UTC",
+        "url": "http:\/\/gonzalo.f-v.es\/blog\/2012-09-23-things-about-xerces-xalan-and-saxon-i_29\/",
+        "wordCount": "286",
+        "keywords": ["Blog"]
+      }
+    </script>
+  </head>
 
-<script type="application/ld+json">
-  
-    {
-      "@context" : "http://schema.org",
-      "@type" : "BlogPosting",
-      "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http:\/\/gonzalo.f-v.es\/"
-      },
-      "articleSection" : "blog",
-      "name" : "Things about Xerces, Xalan and Saxon I didn\u0027t know (III)",
-      "headline" : "Things about Xerces, Xalan and Saxon I didn\u0027t know (III)",
-      "description" : "",
-      "inLanguage" : "en-US",
-      "author" : "",
-      "creator" : "",
-      "publisher": "",
-      "accountablePerson" : "",
-      "copyrightHolder" : "",
-      "copyrightYear" : "2012",
-      "datePublished": "2012-09-23 11:45:46 \u002b0000 UTC",
-      "dateModified" : "2012-09-23 11:45:46 \u002b0000 UTC",
-      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-09-23-things-about-xerces-xalan-and-saxon-i_29\/",
-      "wordCount" : "286",
-      "keywords" : ["Blog"]
-    }
-  
-  </script>
-</head>
-
-<body>
-  <div class="burger__container">
-  <div class="burger" aria-controls="navigation" aria-label="Menu">
-    <div class="burger__meat burger__meat--1"></div>
-    <div class="burger__meat burger__meat--2"></div>
-    <div class="burger__meat burger__meat--3"></div>
-  </div>
-</div>
- 
-
-  <nav class="nav" id="navigation">
-  <ul class="nav__list">
-    
-    
-      <li>
-        <a  href="/">About</a>
-      </li>
-    
-      <li>
-        <a  href="/blog">Blog EN</a>
-      </li>
-    
-      <li>
-        <a  href="/es/blog">Blog ES</a>
-      </li>
-    
-  </ul>
-</nav>
-
-
-  <main>
-    
-    
-
-    <div class="flex-wrapper">
-      <div class="post__container">
-        <div class="post">
-          <header class="post__header">
-            <h1 id="post__title">Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</h1>
-            <time datetime="2012-09-23 11:45:46 &#43;0000 UTC" class="post__date">2012-09-23</time> 
-          </header>
-          <article class="post__content">
-              
-<p>In my previous entry, I tried to explain <a href="http://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html">why Xerces and Xalan are so complicated</a>. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
-<br /><br />
-And that solution is wrong. Very wrong.
-<br /><br />
-Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server. It doesn&rsquo;t matter that you change it, then instantiate, and then change to the original value. Because, when you&rsquo;re running in an application server, there are some chances of additional threads needing to instantiate and getting a different provider of the one they are trying to get. In fact, that same problem was reported to my group a couple of weeks ago. We tend to give support to applications that use our framework. And, as I say, we received a strange error. Sometimes one report was generated OK, and sometimes it failed with some exception (don&rsquo;t remember off hand). Same query, same data. Fortunately, the stacktrace came with some reference to xerces. Quick search and discovered the report failed when a different report changed the Property for DocumentBuilderFactory to an old sun implementation. What was even better: the old implementation seemed to be not particularly needed. Looked like a copy&amp;paste.
-<br /><br />
-I guess you&rsquo;ll be asking yourself what to do if you can&rsquo;t use System.setProperty. Too late for this blog post. Wait for the next.
-<br /><br />
-<b>EDIT</b>: Stack trace
-<br /><br /></p>
-<pre style="background-color: #ffffdd; border-bottom-color: rgb(218, 218, 218); border-bottom-style: solid; border-bottom-width: 1px; border-image: initial; border-left-color: rgb(218, 218, 218); border-left-style: solid; border-left-width: 1px; border-right-color: rgb(218, 218, 218); border-right-style: solid; border-right-width: 1px; border-top-color: rgb(218, 218, 218); border-top-style: solid; border-top-width: 1px; color: #484848; margin-bottom: 1em; margin-left: 1.6em; margin-right: 1em; margin-top: 1em; overflow-x: auto; overflow-y: hidden; padding-bottom: 2px; padding-left: 0px; padding-right: 2px; padding-top: 2px; width: auto;"><span style="font-size: x-small;">java.lang.ClassCastException: com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.impl.xs.XMLSchemaLoader.reset(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.impl.xs.XMLSchemaValidator.reset(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XML11Configuration.configurePipeline(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.commons.digester.Digester.parse(Digester.java:1647)</span></pre>
-
-
-              
-          </article>
-          
-
- <div class="pagination">
-  
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/">
-        <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Xerces, Xalan and Saxon, more recipes</span>
-    </a>
-  
-
-  
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</span>
-    </a>
-  
-</div>
-
-          
-          <footer class="post__footer">
-            
-
-
-<div class="social-icons">
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/gonfva"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
-      </a>
-    
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/gonfva"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
-      </a>
-    
-  
-     
-    
-      <a class="social-icons__link" rel="me" title="LinkedIn"
-         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-         target="_blank" rel="noopener">
-        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
-      </a>
-    
-     
-</div>
-
-            <p>© Gonzalo Fernandez-Victorio 2021</p>
-          </footer>
-          </div>
+  <body>
+    <div class="burger__container">
+      <div class="burger" aria-controls="navigation" aria-label="Menu">
+        <div class="burger__meat burger__meat--1"></div>
+        <div class="burger__meat burger__meat--2"></div>
+        <div class="burger__meat burger__meat--3"></div>
       </div>
-      
     </div>
-    
 
-  </main>
+    <nav class="nav" id="navigation">
+      <ul class="nav__list">
+        <li>
+          <a href="/">About</a>
+        </li>
 
-   
+        <li>
+          <a href="/blog">Blog EN</a>
+        </li>
 
-  
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
-  
-  
-  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+        <li>
+          <a href="/es/blog">Blog ES</a>
+        </li>
+      </ul>
+    </nav>
 
-  
-  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
-    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+    <main>
+      <div class="flex-wrapper">
+        <div class="post__container">
+          <div class="post">
+            <header class="post__header">
+              <h1 id="post__title">
+                Things about Xerces, Xalan and Saxon I didn&#39;t know (III)
+              </h1>
+              <time
+                datetime="2012-09-23 11:45:46 &#43;0000 UTC"
+                class="post__date"
+                >2012-09-23</time
+              >
+            </header>
+            <article class="post__content">
+              <p>
+                In my previous entry, I tried to explain
+                <a
+                  href="http://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html"
+                  >why Xerces and Xalan are so complicated</a
+                >. In this entry I want to focus in System.setProperty. Because,
+                as I said that is the usual solution you are going to find when
+                you need a specific parser for whatever reason. And that
+                solution is wrong. Very wrong. Because, if you choose to change
+                the provider using System.setProperty, you are changing the
+                provider for all the applications in the container/server. It
+                doesn&rsquo;t matter that you change it, then instantiate, and
+                then change to the original value. Because, when you&rsquo;re
+                running in an application server, there are some chances
+                of additional threads needing to instantiate and getting a
+                different provider of the one they are trying to get. In fact,
+                that same problem was reported to my group a couple of weeks
+                ago. We tend to give support to applications that use our
+                framework. And, as I say, we received a strange error. Sometimes
+                one report was generated OK, and sometimes it failed with some
+                exception (don&rsquo;t remember off hand). Same query, same
+                data. Fortunately, the stacktrace came with some reference to
+                xerces. Quick search and discovered the report failed when a
+                different report changed the Property for DocumentBuilderFactory
+                to an old sun implementation. What was even better: the old
+                implementation seemed to be not particularly needed. Looked like
+                a copy&amp;paste. I guess you&rsquo;ll be asking yourself what
+                to do if you can&rsquo;t use System.setProperty. Too late for
+                this blog post. Wait for the next.
 
-  
+                <b>EDIT</b>: Stack trace
+              </p>
+              <pre
+                style="
+                  background-color: #ffffdd;
+                  border-bottom-color: rgb(218, 218, 218);
+                  border-bottom-style: solid;
+                  border-bottom-width: 1px;
+                  border-image: initial;
+                  border-left-color: rgb(218, 218, 218);
+                  border-left-style: solid;
+                  border-left-width: 1px;
+                  border-right-color: rgb(218, 218, 218);
+                  border-right-style: solid;
+                  border-right-width: 1px;
+                  border-top-color: rgb(218, 218, 218);
+                  border-top-style: solid;
+                  border-top-width: 1px;
+                  color: #484848;
+                  margin-bottom: 1em;
+                  margin-left: 1.6em;
+                  margin-right: 1em;
+                  margin-top: 1em;
+                  overflow-x: auto;
+                  overflow-y: hidden;
+                  padding-bottom: 2px;
+                  padding-left: 0px;
+                  padding-right: 2px;
+                  padding-top: 2px;
+                  width: auto;
+                "
+              ><span style="font-size: x-small;">java.lang.ClassCastException: com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.impl.xs.XMLSchemaLoader.reset(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.impl.xs.XMLSchemaValidator.reset(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XML11Configuration.configurePipeline(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at org.apache.commons.digester.Digester.parse(Digester.java:1647)</span></pre>
+            </article>
 
+            <div class="pagination">
+              <a
+                class="pagination__item"
+                href="http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/"
+              >
+                <span class="pagination__label">Previous Post</span>
+                <span class="pagination__title"
+                  >Xerces, Xalan and Saxon, more recipes</span
+                >
+              </a>
 
-</body>
+              <a
+                class="pagination__item"
+                href="http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/"
+              >
+                <span class="pagination__label">Next Post</span>
+                <span class="pagination__title"
+                  >Things about Xerces, Xalan and Saxon I didn&#39;t know
+                  (II)</span
+                >
+              </a>
+            </div>
 
+            <footer class="post__footer">
+              <div class="social-icons">
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="Twitter"
+                  href="https://twitter.com/gonfva"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/twitter.svg');
+                    "
+                  ></div>
+                </a>
+
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="GitHub"
+                  href="https://github.com/gonfva"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/github.svg');
+                    "
+                  ></div>
+                </a>
+
+                <a
+                  class="social-icons__link"
+                  rel="me"
+                  title="LinkedIn"
+                  href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div
+                    class="social-icons__icon"
+                    style="
+                      background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg');
+                    "
+                  ></div>
+                </a>
+              </div>
+
+              <p>© Gonzalo Fernandez-Victorio 2021</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js"
+      integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+    <script
+      src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+      data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"
+    ></script>
+  </body>
 </html>
