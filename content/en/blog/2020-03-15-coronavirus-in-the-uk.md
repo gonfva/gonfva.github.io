@@ -3,9 +3,8 @@ layout: post
 title: "Coronavirus in the UK"
 subtitle: It's not darwinism but politics based on science
 categories:
-  - news
+  - News
 tags:
-  - Covid19
   - News
 date: 2020-03-15T18:03:00
 ---

@@ -8,7 +8,7 @@ categories:
   - Technology
 tags:
   - Personal
-  - Tecnology
+  - Technology
 ---
 
 I tend to listen [Techzing podcast](http://techzinglive.com/). It's a podcast about very different topics, recorded by two geeks, (or developers, and entrepeneurs). I don't remember when I started listening them. I do remember I started because I wanted to practice English and it was great (Justin is an Englishman and Jason is American). Soon I forgot why: they were great by themselves. The topics are very diverse from Technology, Entrepenurship, Politics (Loom and Gloom Report), Education, Genetics...

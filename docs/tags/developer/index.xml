@@ -431,6 +431,15 @@ I was developing a small interface between two applications via a SOAP web servi
     </item>
     
     <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
+      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics. One of those topics has been Xerces and Xalan.</description>
+    </item>
+    
+    <item>
       <title>My first Chrome extension(II)</title>
       <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
       <pubDate>Fri, 14 Sep 2012 21:02:31 +0000</pubDate>

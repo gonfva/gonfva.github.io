@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>news on Gonzalo&#39;s thoughts</title>
+    <title>News on Gonzalo&#39;s thoughts</title>
     <link>http://gonzalo.f-v.es/categories/news/</link>
-    <description>Recent content in news on Gonzalo&#39;s thoughts</description>
+    <description>Recent content in News on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>

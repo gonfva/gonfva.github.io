@@ -4,6 +4,8 @@ title: "The rain in Spain(I)"
 date: 2011-08-01T20:16:50
 comments: false
 categories: [Politics, Spain]
+tags:
+  - Politics
 ---
 
 I love this video:

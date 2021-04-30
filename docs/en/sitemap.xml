@@ -38,21 +38,6 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/tags/covid19/</loc>
-    <lastmod>2020-03-15T18:03:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://gonzalo.f-v.es/es/tags/covid19/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://gonzalo.f-v.es/tags/covid19/"
-                />
-  </url>
-  
-  <url>
     <loc>http://gonzalo.f-v.es/</loc>
     <lastmod>2020-03-15T18:03:00+00:00</lastmod>
     <xhtml:link
@@ -714,11 +699,6 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</loc>
-    <lastmod>2012-09-20T20:36:19+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/tags/tecnology/</loc>
     <lastmod>2012-09-20T20:36:19+00:00</lastmod>
   </url>
   
