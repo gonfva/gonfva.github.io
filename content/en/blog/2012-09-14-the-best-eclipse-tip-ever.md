@@ -6,7 +6,7 @@ comments: false
 categories: Developer
 ---
 
-How to <a href="http://www.eclipse.org/forums/index.php/t/159796/">disable auto close for the XML comments</a>.
+How to [disable auto close for the XML comments](http://www.eclipse.org/forums/index.php/t/159796/).
 
 
 <span style="background-color: #f4f4f4; font-family: Verdana, Geneva, Lucida, 'Lucida Grande', Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px;">Preferences-&gt;XML Files-&gt;Editor-&gt;Typing.</span>

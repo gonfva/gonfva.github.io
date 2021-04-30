@@ -6,16 +6,16 @@ comments: false
 categories: Developer
 ---
 
-In <a href="http://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html">last post</a> I wrote why. In this post I want to explain how I wrote my first chrome extension.
+In [last post](http://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html) I wrote why. In this post I want to explain how I wrote my first chrome extension.
 
 
-First. The Chrome Extensions&nbsp;<a href="http://developer.chrome.com/extensions/getstarted.html">developer's documentation</a> is quite good.
+First. The Chrome Extensions&nbsp;[developer's documentation](http://developer.chrome.com/extensions/getstarted.html) is quite good.
 
 
-Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called <a href="https://github.com/gonfva/fromGoogle/blob/master/manifest.json">manifest.json</a>. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.
+Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called [manifest.json](https://github.com/gonfva/fromGoogle/blob/master/manifest.json). It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.
 
 
-The main file, in my case was called <a href="https://github.com/gonfva/fromGoogle/blob/master/background.js">background.js</a>. You should read the documentation to know more about background pages and so on.
+The main file, in my case was called [background.js](https://github.com/gonfva/fromGoogle/blob/master/background.js). You should read the documentation to know more about background pages and so on.
 
 
 In my case, I attach an event listener to the click of the extension button (browserAction.onclick). The listener gets the url of the current tab, process that url, encode it, get a Google url redirection from it, and ask for it.

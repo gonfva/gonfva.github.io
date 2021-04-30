@@ -6,7 +6,7 @@ comments: false
 categories: [Politics, Spain]
 ---
 
-Wow. It seems Wikileaks is going to <a href="http://www.reuters.com/article/idUSTRE6AN5HL20101124">publish some documents showing implication of some world leaders in corruption practices</a>. I don't have any other information but the Reuters piece of news.
+Wow. It seems Wikileaks is going to [publish some documents showing implication of some world leaders in corruption practices](http://www.reuters.com/article/idUSTRE6AN5HL20101124). I don't have any other information but the Reuters piece of news.
 
 
 I wouldn't have brought it to this blog if it weren't for the last paragraph of the first page:

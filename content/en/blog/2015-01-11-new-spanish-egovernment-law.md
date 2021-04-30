@@ -12,13 +12,13 @@ I was a Spanish Civil Servant from 2006 to 2012 (technically I'm still a Spanish
 That's a pretty long disclaimer.
 
 
-When I came to London, I knew I had to register at the Spanish Embassy. But apparently the only way to do it is physically or <a href="http://www.exteriores.gob.es/Consulados/LONDRES/es/Consulado/Paginas/AltaConsular.aspx">sending your official ID/passport using special delivery mail</a>.
+When I came to London, I knew I had to register at the Spanish Embassy. But apparently the only way to do it is physically or [sending your official ID/passport using special delivery mail](http://www.exteriores.gob.es/Consulados/LONDRES/es/Consulado/Paginas/AltaConsular.aspx).
 
 
-There was a similar issue with changing vehicles documentation (my car).&nbsp;<a href="https://sede.dgt.gob.es/es/tramites-y-multas/permiso-de-conduccion/cambio-domicilio/">No way to do it online</a>.<br /><div><br /></div>Fortunately (I thought), there is a <a href="https://www.boe.es/boe/dias/2007/06/23/pdfs/A27150-27166.pdf">Spanish law</a> that says (s6.1) you have the right to be able to apply for anything using electronic procedures (as in web, digital signature...). There is a grace period (3rd ending disposition, ss2), that ended in 2009. I know the law because I worked on those issues (in particular digital signature, but in general electronic government) from 2008 to 2012.
+There was a similar issue with changing vehicles documentation (my car).&nbsp;[No way to do it online](https://sede.dgt.gob.es/es/tramites-y-multas/permiso-de-conduccion/cambio-domicilio/).<br /><div><br /></div>Fortunately (I thought), there is a [Spanish law](https://www.boe.es/boe/dias/2007/06/23/pdfs/A27150-27166.pdf) that says (s6.1) you have the right to be able to apply for anything using electronic procedures (as in web, digital signature...). There is a grace period (3rd ending disposition, ss2), that ended in 2009. I know the law because I worked on those issues (in particular digital signature, but in general electronic government) from 2008 to 2012.
 
 
-So I decided to formulate a complaint through <a href="http://www.defensordelpueblo.es/en/index.html">Spanish Ombudsman</a>. Initial response was highly satisfactory. They were going to ask for information to the relevant authorities.
+So I decided to formulate a complaint through [Spanish Ombudsman](http://www.defensordelpueblo.es/en/index.html). Initial response was highly satisfactory. They were going to ask for information to the relevant authorities.
 
 
 Public Administration Department confirmed that all central government procedures (not naming any in particular) should be fully adapted to initiate online and that maybe it was a temporary issue.
@@ -36,7 +36,7 @@ But what I found more disappointing (yes, even more than not enforcing the law) 
 I'm pretty sure all the authorities implicated know what the law says. I'm pretty sure people on the Public Administration Department have tried to change their car address. They all know there should have been the required processes in place for 2010, but now they're ashamed of it and they don't have money to a full adaptation. What I don't really understand is Spanish Ombudsman position, but it doesn't really matter.
 
 
-These days there is some buzz in Spain around a <a href="http://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2015/refc20150109.aspx#Admones">new law for eGovernment</a>.
+These days there is some buzz in Spain around a [new law for eGovernment](http://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2015/refc20150109.aspx#Admones).
 
 
 We already have a law from 2007 that is violated by the own Public Service.

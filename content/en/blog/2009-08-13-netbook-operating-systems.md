@@ -51,7 +51,7 @@ about it.
   seem based in Prism, and I don't feel comfortable clicking links there
   because it has to start a new browser.
 
-- Last I tested <a href="http://www.xubuntu.org/">Xubuntu</a>. Xubuntu works
+- Last I tested [Xubuntu](http://www.xubuntu.org/). Xubuntu works
   better than Ubuntu Netbook Remix, but boots slow. Also I installed the
   governor dock applet. If selected powersave, sometimes it went jerky. If
   selected ondemand battery disappeared. For the record Chrome with plugins is

@@ -6,7 +6,7 @@ comments: false
 categories: [Developer, got ya]
 ---
 
-In my previous entry, I tried to explain <a href="http://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html">why Xerces and Xalan are so complicated</a>. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
+In my previous entry, I tried to explain [why Xerces and Xalan are so complicated](http://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html). In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
 
 
 And that solution is wrong. Very wrong.

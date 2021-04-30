@@ -6,7 +6,7 @@ comments: false
 categories: [Jobs, Personal]
 ---
 
-There are <a href="http://gonfva.blogspot.co.uk/2014/05/good-examples.html">good recruiters</a>. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
+There are [good recruiters](http://gonfva.blogspot.co.uk/2014/05/good-examples.html). And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
 
 
 If you are looking for a job, be sure to do just the opposite of what the bad ones do.
@@ -30,7 +30,7 @@ I try to reply to them, sometimes with a canned response.
 But 95% of those contacts are not relevant. It's time reading and time replying (even a canned response). They are OK when in search mode (last March I was going to be made redundant and I wanted maximum exposure). But when not in active search, my skills are in demand, and I won't usually consider those contacts even with pretty high salaries.
 
 
-So for me what are the really tempting contacts? The ones that try to establish a relationship, that try to understand who am I, what can I provide, why I'm interesting. Sometimes they invite for coffee to understand what I'm looking for. Sometimes you see accesses to the <a href="http://uk.linkedin.com/in/gonzalofernandezvictorio">LinkedIn profile</a> and then a carefully crafted email. Sometimes they connect through my <a href="http://careers.stackoverflow.com/gonfva">Stackoverflow profile</a> and then a contact explaining what they like. And the better response rate is when it's a friend the one who try to convince you to go to her company.
+So for me what are the really tempting contacts? The ones that try to establish a relationship, that try to understand who am I, what can I provide, why I'm interesting. Sometimes they invite for coffee to understand what I'm looking for. Sometimes you see accesses to the [LinkedIn profile](http://uk.linkedin.com/in/gonzalofernandezvictorio) and then a carefully crafted email. Sometimes they connect through my [Stackoverflow profile](http://careers.stackoverflow.com/gonfva) and then a contact explaining what they like. And the better response rate is when it's a friend the one who try to convince you to go to her company.
 
 
 So what does teach me about looking for a job/applying?

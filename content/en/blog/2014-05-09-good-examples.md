@@ -18,4 +18,4 @@ There were also people who just do their jobs. And that's OK.
 There were also bad apples. I think it would be useless to point them.
 
 
-But there were some very few absolutely brilliant. I remember one specific case. When each and every interaction is memorable, you know who you are going to <a href="http://www.team-prime.com/">recommend</a> if asked.
+But there were some very few absolutely brilliant. I remember one specific case. When each and every interaction is memorable, you know who you are going to [recommend](http://www.team-prime.com/) if asked.

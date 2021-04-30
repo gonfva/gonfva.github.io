@@ -9,7 +9,7 @@ categories: [got ya]
 About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.
 
 
-<a href="http://www.sonymobile.com/gb/products/phones/xperia-u/">Sony Xperia U</a> (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions).
+[Sony Xperia U](http://www.sonymobile.com/gb/products/phones/xperia-u/) (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions).
 
 
 The phone worked quite well. But new Android versions came, and it was obvious Xperia U wouldn't get an updated.
@@ -33,4 +33,4 @@ The real process is very easy, but I had some issues getting to there. Because o
 So in my next post I'll try to explain the process in a sort of newbie post. HOWEVER. Word of caution. You'll probably void the warranty and you could brick your phone. So this is not something for the faint of heart.
 
 
-UPDATED: Link to the <a href="http://gonfva.blogspot.co.uk/2013/11/firmware-upgrade-for-xperia-u-in-linux.html">detailed post</a>.
+UPDATED: Link to the [detailed post](http://gonfva.blogspot.co.uk/2013/11/firmware-upgrade-for-xperia-u-in-linux.html).

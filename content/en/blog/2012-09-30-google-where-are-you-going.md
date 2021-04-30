@@ -15,7 +15,7 @@ I remember Google video chat. Being able to talk from the mail. "No installation
 Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.
 
 
-Android was great, and Chrome too. ChromeOS??. It's lame that the <a href="http://chromeos.hexxeh.net/" target="_blank">only precompiled images are through a (great) guy</a>.
+Android was great, and Chrome too. ChromeOS??. It's lame that the [only precompiled images are through a (great) guy](http://chromeos.hexxeh.net/).
 
 
 And then&nbsp;Google plus. I think they had to be social at any price, and they did. Good ideas but nothing revolutionary.

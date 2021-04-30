@@ -6,10 +6,10 @@ comments: false
 categories: Developer
 ---
 
-<br />It's widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even <a href="http://blog.linkedin.com/2012/06/06/linkedin-member-passwords-compromised/" target="_blank">LinkedIn acknowledges it and suggests it will try to alert users</a> whose passwords have been compromised.
+<br />It's widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even [LinkedIn acknowledges it and suggests it will try to alert users](http://blog.linkedin.com/2012/06/06/linkedin-member-passwords-compromised/) whose passwords have been compromised.
 
 
-We know that, and we know passwords were not in the clear (they were stored hashed), but they weren't quite protected (they weren't salted). My own password was on the file and had been "unhashed". No it was not "secret" or "alibaba". Mixed letters and numbers. <a href="http://leakedin.org/" target="_blank">You can check yours</a>&nbsp;and is a relatively safe process. But even if your password was not in the leaked file, it doesn't mean your password is safe.
+We know that, and we know passwords were not in the clear (they were stored hashed), but they weren't quite protected (they weren't salted). My own password was on the file and had been "unhashed". No it was not "secret" or "alibaba". Mixed letters and numbers. [You can check yours](http://leakedin.org/)&nbsp;and is a relatively safe process. But even if your password was not in the leaked file, it doesn't mean your password is safe.
 
 
 So we must assume our Linkedin password and user are compromised. We must assume that every other web we were using that same password in, has the same password compromised.

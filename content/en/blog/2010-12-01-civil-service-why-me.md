@@ -6,10 +6,10 @@ comments: false
 categories: Personal
 ---
 
-A few days ago <a href="http://gonfva.blogspot.com/2010/11/civil-service-how-to-improve.html">I promised to explain</a> why I chose to become a civil servant, and why I keep being one.
+A few days ago [I promised to explain](http://gonfva.blogspot.com/2010/11/civil-service-how-to-improve.html) why I chose to become a civil servant, and why I keep being one.
 
 
 I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough.
 
 
-But then I came to <a href="http://sethgodin.typepad.com/seths_blog/2010/11/reasons-to-work.html">"Reasons to work"</a>. Seth Godin. No more words needed.
+But then I came to ["Reasons to work"](http://sethgodin.typepad.com/seths_blog/2010/11/reasons-to-work.html). Seth Godin. No more words needed.

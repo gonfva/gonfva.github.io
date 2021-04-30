@@ -6,7 +6,7 @@ comments: false
 categories: Developer
 ---
 
-I didn't know about <a href="http://www.bennadel.com/resources/uploads/2012/ObjectCalisthenics.pdf">object calisthenics</a>. They are a set of rules to help develop better:
+I didn't know about [object calisthenics](http://www.bennadel.com/resources/uploads/2012/ObjectCalisthenics.pdf). They are a set of rules to help develop better:
 
 
 

@@ -6,7 +6,7 @@ comments: false
 categories: Developer
 ---
 
-Besides the <a href="http://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html" target="_blank">console faking</a> and the <a href="http://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html" target="_blank">dependency inversion issue</a>, my code in Ruby was pretty rough. You can see here <a href="https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb" target="_blank">the version I sent</a>.
+Besides the [console faking](http://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html) and the [dependency inversion issue](http://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html), my code in Ruby was pretty rough. You can see here [the version I sent](https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb).
 
 
 One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.
@@ -15,7 +15,7 @@ One obvious problem is the use of string instead of symbols. It was a bad bad mi
 Anyway it was clear that Java version was considerably more verbose.
 
 
-So one obvious improvement is using symbols instead of string.&nbsp;But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of <a href="http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate">Array.rotate</a>. I don't like that improvement, because it makes the code less understandable. But I didn't like the verbosity of the case, and I tested a different approach. This is the code I left in the end:
+So one obvious improvement is using symbols instead of string.&nbsp;But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of [Array.rotate](http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate). I don't like that improvement, because it makes the code less understandable. But I didn't like the verbosity of the case, and I tested a different approach. This is the code I left in the end:
 
 
 <code>class Robot<br />&nbsp;&nbsp;VALID_X = 0..4<br />&nbsp;&nbsp;VALID_Y = 0..4<br />&nbsp;&nbsp;VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]<br />&nbsp;&nbsp;TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}<br />&nbsp;&nbsp;TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}<br />&nbsp;&nbsp;MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}

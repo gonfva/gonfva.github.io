@@ -9,7 +9,7 @@ categories: Politics
 EDIT: I've done again the calculations and are more unbelievable even. I won't update this post but IMO it is quite reasonable to hit the target.
 
 
-From time I tend to write about the <a href="http://gonfva.blogspot.co.uk/2012/09/june-deficit-was-854.html">Spanish budget deficit</a>.
+From time I tend to write about the [Spanish budget deficit](http://gonfva.blogspot.co.uk/2012/09/june-deficit-was-854.html).
 
 
 Almost nobody expects that Spain will meet its commitment around budget deficit for 2012.

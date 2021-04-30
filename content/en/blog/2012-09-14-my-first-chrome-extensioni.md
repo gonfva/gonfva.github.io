@@ -6,7 +6,7 @@ comments: false
 categories: Developer
 ---
 
-This afternoon I was preparing an interview I expect to have next week, and came to an interesting <a href="http://www.glassdoor.com/Overview/Working-at-S-and-P-EI_IE30287.11,18.htm">page with information about job selection process and companies inside information</a>. However, after surfing a bit, the inevitable, "become a registered member" started to bug me.
+This afternoon I was preparing an interview I expect to have next week, and came to an interesting [page with information about job selection process and companies inside information](http://www.glassdoor.com/Overview/Working-at-S-and-P-EI_IE30287.11,18.htm). However, after surfing a bit, the inevitable, "become a registered member" started to bug me.
 
 
 And I got tired.

@@ -18,7 +18,7 @@ And I read everything I could find about how to take care Macbook's battery.
 Apparently, old models used to need a periodic full discharge followed by a full recharge.
 
 
-Apparently, <a href="http://www.apple.com/batteries/notebooks.html">that is no longer the case</a>.
+Apparently, [that is no longer the case](http://www.apple.com/batteries/notebooks.html).
 
 
 I've tried to follow the advice in Apple's page, and I tend to leave it unplugged every day once or more times while working with it.
