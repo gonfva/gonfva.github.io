@@ -68,7 +68,7 @@
       "datePublished": "2012-09-23 11:45:46 \u002b0000 UTC",
       "dateModified" : "2012-09-23 11:45:46 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-09-23-notes-to-newbie-spring-mvc-developer\/",
-      "wordCount" : "69",
+      "wordCount" : "70",
       "keywords" : ["Blog"]
     }
   
@@ -118,7 +118,11 @@
           </header>
           <article class="post__content">
               
-<p><br /><ol><li>Activate log4j. Without it you&rsquo;re lost</li><li>Look through the log to see if you&rsquo;re getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see <a href="http://www.vaannila.com/spring/spring-annotation-controller-1.html">this post</a>. In particular if you&rsquo;ve got Spring Security installed, for Goodness sake, don&rsquo;t forget these lines:</li><pre>&lt;beans:bean class=&ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&rdquo;&gt;<br/><br />&lt;beans:bean class=&ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&rdquo;&gt;<br/><br />&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div><br /></div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol></p>
+<p><br /><ol><li>Activate log4j. Without it you&rsquo;re lost</li><li>Look through the log to see if you&rsquo;re getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see <a href="http://www.vaannila.com/spring/spring-annotation-controller-1.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this post</a>
+. In particular if you&rsquo;ve got Spring Security installed, for Goodness sake, don&rsquo;t forget these lines:</li><pre>&lt;beans:bean class=&ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&rdquo;&gt;<br/><br />&lt;beans:bean class=&ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&rdquo;&gt;<br/><br />&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div><br /></div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol></p>
 
 
               

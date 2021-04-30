@@ -1,249 +1,234 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Little robot (IV): Ruby version | Gonzalo&#39;s thoughts</title>
 
-    <meta charset="UTF-8" />
-    <meta name="language" content="en" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <title>Little robot (IV): Ruby version | Gonzalo&#39;s thoughts</title>
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Little robot (IV): Ruby version" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:site" content="@gonfva" />
-    <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Little robot (IV): Ruby version" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
 
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css"
-      integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="
-    />
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css"
-      integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="
-    />
 
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "http:\/\/gonzalo.f-v.es\/"
-        },
-        "articleSection": "blog",
-        "name": "Little robot (IV): Ruby version",
-        "headline": "Little robot (IV): Ruby version",
-        "description": "",
-        "inLanguage": "en-US",
-        "author": "",
-        "creator": "",
-        "publisher": "",
-        "accountablePerson": "",
-        "copyrightHolder": "",
-        "copyrightYear": "2012",
-        "datePublished": "2012-08-26 20:00:02 \u002b0000 UTC",
-        "dateModified": "2012-08-26 20:00:02 \u002b0000 UTC",
-        "url": "http:\/\/gonzalo.f-v.es\/blog\/2012-08-26-little-robot-iv-ruby-version\/",
-        "wordCount": "230",
-        "keywords": ["Blog"]
-      }
-    </script>
-  </head>
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.b9d61079591e35514609aa1d298a301372d164e46f282354e867e78611a417ce.css" integrity="sha256-udYQeVkeNVFGCaodKYowE3LRZORvKCNU6GfnhhGkF84="/>
+  
+  
+   
+   
+    
 
-  <body>
-    <div class="burger__container">
-      <div class="burger" aria-controls="navigation" aria-label="Menu">
-        <div class="burger__meat burger__meat--1"></div>
-        <div class="burger__meat burger__meat--2"></div>
-        <div class="burger__meat burger__meat--3"></div>
-      </div>
-    </div>
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Little robot (IV): Ruby version",
+      "headline" : "Little robot (IV): Ruby version",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2012",
+      "datePublished": "2012-08-26 20:00:02 \u002b0000 UTC",
+      "dateModified" : "2012-08-26 20:00:02 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-08-26-little-robot-iv-ruby-version\/",
+      "wordCount" : "233",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
 
-    <nav class="nav" id="navigation">
-      <ul class="nav__list">
-        <li>
-          <a href="/">About</a>
-        </li>
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
 
-        <li>
-          <a href="/blog">Blog EN</a>
-        </li>
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
 
-        <li>
-          <a href="/es/blog">Blog ES</a>
-        </li>
-      </ul>
-    </nav>
 
-    <main>
-      <div class="flex-wrapper">
-        <div class="post__container">
-          <div class="post">
-            <header class="post__header">
-              <h1 id="post__title">Little robot (IV): Ruby version</h1>
-              <time
-                datetime="2012-08-26 20:00:02 &#43;0000 UTC"
-                class="post__date"
-                >2012-08-26</time
-              >
-            </header>
-            <article class="post__content">
-              <p>
-                Besides the
-                <a
-                  href="http://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html"
-                  target="_blank"
-                  >console faking</a
-                >
-                and the
-                <a
-                  href="http://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html"
-                  target="_blank"
-                  >dependency inversion issue</a
-                >, my code in Ruby was pretty rough. You can see here
-                <a
-                  href="https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb"
-                  target="_blank"
-                  >the version I sent</a
-                >. One obvious problem is the use of string instead of symbols.
-                It was a bad bad mistake. So big if I had been the person
-                testing, I would have thought very bad of myself. Anyway it was
-                clear that Java version was considerably more verbose. So one
-                obvious improvement is using symbols instead of string. But
-                during the interview, I asked what other improvements people
-                have done on the assignment. One tip I received is the use of
-                <a
-                  href="http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate"
-                  >Array.rotate</a
-                >. I don&rsquo;t like that improvement, because it makes the
-                code less understandable. But I didn&rsquo;t like the verbosity
-                of the case, and I tested a different approach. This is the code
-                I left in the end:
+  <main>
+    
+    
 
-                <code
-                  >class Robot<br />  VALID_X = 0..4<br />  VALID_Y = 0..4<br />  VALID_F
-                  = [:NORTH,:SOUTH,:EAST,:WEST]<br />  TURN_RIGHT =
-                  {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}<br />  TURN_LEFT
-                  =
-                  {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}<br />  MOVE
-                  =
-                  {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}
-                    def initialize<br />    @accepting=false<br />  end   def
-                  place(cols,rows,facing)<br />    x=cols.to_i<br />    y=rows.to_i<br />    f=facing.to_sym<br />    if
-                  is_valid?(x,y,f)<br />      @x=x<br />      @y=y<br />      @f=f<br />      @accepting=true<br />    end<br />  end
-                    def left<br />      return unless @accepting<br />      @f=TURN_LEFT[@f]<br />  end
-                    def right<br />      return unless @accepting<br />      @f=TURN_RIGHT[@f]
-                  <br />  end   def move<br />      return unless @accepting<br />      delta=MOVE[@f]<br />      x
-                  = @x + delta[0]<br />      y = @y + delta[1]<br />      if
-                  is_valid?(x,y)<br />        @x=x<br />        @y=y<br />      end<br />  end
-                    def report<br />    return nil unless @accepting<br />    &quot;#{@x.to_s},#{@y.to_s},#{@f}&quot;<br />  end
-                  protected<br />  def is_valid?(x,y,f=@f)<br />      VALID_X.include?(x)
-                  &amp;&amp; VALID_Y.include?(y) &amp;&amp;
-                  VALID_F.include?(f)<br />  end <br />end<br />
-                </code>
-              </p>
-            </article>
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Little robot (IV): Ruby version</h1>
+            <time datetime="2012-08-26 20:00:02 &#43;0000 UTC" class="post__date">2012-08-26</time> 
+          </header>
+          <article class="post__content">
+              
+<p>Besides the <a href="http://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>console faking</a>
+ and the <a href="http://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>dependency inversion issue</a>
+, my code in Ruby was pretty rough. You can see here <a href="https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>the version I sent</a>
+.</p>
+<p>One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.</p>
+<p>Anyway it was clear that Java version was considerably more verbose.</p>
+<p>So one obvious improvement is using symbols instead of string. But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of <a href="http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Array.rotate</a>
+. I don&rsquo;t like that improvement, because it makes the code less understandable. But I didn&rsquo;t like the verbosity of the case, and I tested a different approach. This is the code I left in the end:</p>
+<p><code>class Robot<br />  VALID_X = 0..4<br />  VALID_Y = 0..4<br />  VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]<br />  TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}<br />  TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}<br />  MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}</p>
+<p>  def initialize<br />    @accepting=false<br />  end</p>
+<p>  def place(cols,rows,facing)<br />    x=cols.to_i<br />    y=rows.to_i<br />    f=facing.to_sym<br />    if is_valid?(x,y,f)<br />      @x=x<br />      @y=y<br />      @f=f<br />      @accepting=true<br />    end<br />  end</p>
+<p>  def left<br />      return unless @accepting<br />      @f=TURN_LEFT[@f]<br />  end</p>
+<p>  def right<br />      return unless @accepting<br />      @f=TURN_RIGHT[@f] <br />  end</p>
+<p>  def move<br />      return unless @accepting<br />      delta=MOVE[@f]<br />      x = @x + delta[0]<br />      y = @y + delta[1]<br />      if is_valid?(x,y)<br />        @x=x<br />        @y=y<br />      end<br />  end</p>
+<p>  def report<br />    return nil unless @accepting<br />    &quot;#{@x.to_s},#{@y.to_s},#{@f}&quot;<br />  end</p>
+<p>protected<br />  def is_valid?(x,y,f=@f)<br />      VALID_X.include?(x) &amp;&amp; VALID_Y.include?(y) &amp;&amp; VALID_F.include?(f)<br />  end <br />end<br /> </code></p>
 
-            <div class="pagination">
-              <a
-                class="pagination__item"
-                href="http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/"
-              >
-                <span class="pagination__label">Previous Post</span>
-                <span class="pagination__title"
-                  >Little robot (III): Dependency inversion</span
-                >
-              </a>
 
-              <a
-                class="pagination__item"
-                href="http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/"
-              >
-                <span class="pagination__label">Next Post</span>
-                <span class="pagination__title">No more applets</span>
-              </a>
-            </div>
+              
+          </article>
+          
 
-            <footer class="post__footer">
-              <div class="social-icons">
-                <a
-                  class="social-icons__link"
-                  rel="me"
-                  title="Twitter"
-                  href="https://twitter.com/gonfva"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div
-                    class="social-icons__icon"
-                    style="
-                      background-image: url('http://gonzalo.f-v.es/svg/twitter.svg');
-                    "
-                  ></div>
-                </a>
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Little robot (III): Dependency inversion</span>
+    </a>
+  
 
-                <a
-                  class="social-icons__link"
-                  rel="me"
-                  title="GitHub"
-                  href="https://github.com/gonfva"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div
-                    class="social-icons__icon"
-                    style="
-                      background-image: url('http://gonzalo.f-v.es/svg/github.svg');
-                    "
-                  ></div>
-                </a>
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >No more applets</span>
+    </a>
+  
+</div>
 
-                <a
-                  class="social-icons__link"
-                  rel="me"
-                  title="LinkedIn"
-                  href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div
-                    class="social-icons__icon"
-                    style="
-                      background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg');
-                    "
-                  ></div>
-                </a>
-              </div>
+          
+          <footer class="post__footer">
+            
 
-              <p>© Gonzalo Fernandez-Victorio 2021</p>
-            </footer>
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
           </div>
-        </div>
       </div>
-    </main>
+      
+    </div>
+    
 
-    <script
-      src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js"
-      integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ="
-      crossorigin="anonymous"
-    ></script>
+  </main>
 
-    <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+   
 
-    <script
-      src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
-      data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"
-    ></script>
-  </body>
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
 </html>

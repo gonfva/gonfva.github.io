@@ -186,7 +186,9 @@ It’s also a trend that reinforces itself. You need to be in the know if you wa
       <pubDate>Sun, 26 Apr 2015 11:48:49 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-04-26-react-native-some-context-and-few/</guid>
-      <description>React native is a way to build iOS applications using Javascript. The idea is not radically new, since you are probably aware of PhoneGap/Cordova and others like that. I myself played with something similar long time ago. The interesting thing is that React native follows the steps on ReactJS, a Javascript library that provides wonderful performance in updating the DOM. It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap idea moving CSS into JS?</description>
+      <description>React native is a way to build iOS applications using Javascript. The idea is not radically new, since you are probably aware of PhoneGap/Cordova and others like that. I myself played with something similar long time ago.
+The interesting thing is that React native follows the steps on ReactJS, a Javascript library that provides wonderful performance in updating the DOM.
+It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap idea moving CSS into JS?</description>
     </item>
     
     <item>
@@ -195,10 +197,9 @@ It’s also a trend that reinforces itself. You need to be in the know if you wa
       <pubDate>Sat, 31 Jan 2015 20:33:01 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
-      <description>A year ago I vaguely new something about Scala. Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
+      <description>A year ago I vaguely new something about Scala . Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift , Slick , and some incursions in akka . I knew almost nothing about devops, and now I use almost everyday AWS , ansible and docker .
 
-I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them. 
-Not bad for a year.</description>
+I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them.</description>
     </item>
     
     <item>
@@ -216,8 +217,10 @@ Not bad for a year.</description>
       <pubDate>Sat, 04 Oct 2014 14:12:09 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
-      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority. Anyway, a few days ago I found this tweet: MVP explained via @smarty pic.twitter.com/hZkCzqytAP
-— About Programming (@abt_programming) September 28, 2014 I showed the picture to my wife, and I tried to explain it to her.</description>
+      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority .
+Anyway, a few days ago I found this tweet:
+MVP explained via [@smarty](https://twitter.com/smarty) [pic.twitter.com/hZkCzqytAP](http://t.co/hZkCzqytAP)
+— About Programming (@abt_programming) [September 28, 2014](https://twitter.com/abt_programming/status/516018172072587264) I showed the picture to my wife, and I tried to explain it to her.</description>
     </item>
     
     <item>
@@ -226,7 +229,8 @@ Not bad for a year.</description>
       <pubDate>Sat, 12 Jul 2014 17:39:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
-      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky. The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
+      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky.
+The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -244,7 +248,9 @@ Not bad for a year.</description>
       <pubDate>Sun, 08 Jun 2014 20:33:40 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</guid>
-      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application. After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization: Measure 
+      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
+After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
+Measure 
 You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
     </item>
     
@@ -255,7 +261,7 @@ You cannot optimize if you don&#39;t know what do you need to optimize. Is it a 
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
       <description>I&#39;m happy.&amp;nbsp;
-I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&amp;nbsp;
+I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp;
 I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
     </item>
     
@@ -265,7 +271,8 @@ I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar 
       <pubDate>Thu, 27 Feb 2014 19:27:04 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>&amp;hellip; but it wasn&amp;rsquo;t. In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t.
+In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
     </item>
     
     <item>
@@ -285,7 +292,8 @@ I did a quick search and I couldn&amp;rsquo;t find anything.</description>
       <pubDate>Tue, 21 Jan 2014 12:17:35 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</guid>
-      <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&amp;rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&amp;rsquo;t help it was my first experience working with a Mac. At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.</description>
+      <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&amp;rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&amp;rsquo;t help it was my first experience working with a Mac.
+At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.</description>
     </item>
     
     <item>
@@ -312,7 +320,8 @@ I did a quick search and I couldn&amp;rsquo;t find anything.</description>
       <pubDate>Mon, 01 Oct 2012 14:38:05 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems , and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
+Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
     </item>
     
     <item>
@@ -321,7 +330,8 @@ I did a quick search and I couldn&amp;rsquo;t find anything.</description>
       <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</guid>
-      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me. I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
+      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
+I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
     </item>
     
     <item>
@@ -330,7 +340,8 @@ I did a quick search and I couldn&amp;rsquo;t find anything.</description>
       <pubDate>Sun, 30 Sep 2012 11:09:01 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9. The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+      <description>This last two weeks I have dealt with a weird bug in IE9.
+The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
     </item>
     
     <item>
@@ -339,7 +350,8 @@ I did a quick search and I couldn&amp;rsquo;t find anything.</description>
       <pubDate>Mon, 24 Sep 2012 19:33:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception: javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
+javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
 In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
     </item>
     
@@ -349,7 +361,7 @@ In trying to reproduce people in the team introduced a non-serializable object, 
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
+      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post . In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
 &amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
 &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
 Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
@@ -361,7 +373,8 @@ Just in case you decided to change the mappings, and you continue to see the old
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job. I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing . So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
     <item>
@@ -380,7 +393,8 @@ One of those topics has been Xerces and Xalan.</description>
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?. Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
+Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
@@ -389,7 +403,9 @@ One of those topics has been Xerces and Xalan.</description>
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason. And that solution is wrong. Very wrong. Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
+And that solution is wrong. Very wrong.
+Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
     </item>
     
     <item>
@@ -398,7 +414,7 @@ One of those topics has been Xerces and Xalan.</description>
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
 
 In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
@@ -409,7 +425,9 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</guid>
-      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information. However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me. And I got tired. And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &amp;ldquo;first-paragraph-only&amp;rdquo;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
+      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information . However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me.
+And I got tired.
+And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &amp;ldquo;first-paragraph-only&amp;rdquo;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
     </item>
     
     <item>
@@ -418,7 +436,9 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
-      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension. First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good. Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
+      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
+First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
+Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json . It tells the extension name and the permissions asked. It also points to the main file.</description>
     </item>
     
     <item>
@@ -427,7 +447,8 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/</guid>
-      <description>How to disable auto close for the XML comments. Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
+      <description>How to disable auto close for the XML comments .
+Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
     </item>
     
     <item>
@@ -436,7 +457,8 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Mon, 03 Sep 2012 22:19:58 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-03-calisthenics/</guid>
-      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better: 1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
+      <description>I didn&amp;rsquo;t know about object calisthenics . They are a set of rules to help develop better:
+1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
     </item>
     
     <item>
@@ -445,7 +467,9 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Sun, 26 Aug 2012 20:00:02 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</guid>
-      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent. One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself. Anyway it was clear that Java version was considerably more verbose. So one obvious improvement is using symbols instead of string.</description>
+      <description>Besides the console faking and the dependency inversion issue , my code in Ruby was pretty rough. You can see here the version I sent .
+One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.
+Anyway it was clear that Java version was considerably more verbose.</description>
     </item>
     
     <item>
@@ -454,7 +478,8 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Fri, 24 Aug 2012 22:11:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-24-little-robot-iii-dependency-inversion/</guid>
-      <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion. Sometimes a higher level class A has to invoke methods in a lower level class.</description>
+      <description>As I wrote some posts ago, I received an assignment , and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion.
+Sometimes a higher level class A has to invoke methods in a lower level class.</description>
     </item>
     
     <item>
@@ -463,7 +488,8 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Thu, 23 Aug 2012 12:31:38 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-23-faking-console-in-ruby/</guid>
-      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine. But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console. And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec. But I wanted to do it without any additional requirement.</description>
+      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine . But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console.
+And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec .</description>
     </item>
     
     <item>
@@ -472,7 +498,8 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Thu, 23 Aug 2012 12:31:19 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</guid>
-      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice. There is some controversy about editor to use for ruby. Some people prefer Vim+tmux, which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
+      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice.
+There is some controversy about editor to use for ruby. Some people prefer Vim+tmux , which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
     </item>
     
     <item>
@@ -481,7 +508,7 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+      <description>As I wrote in a previous post , I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
 
 PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F
 MOVE -&amp;gt;Move the robot 1 cell in the facing direction
@@ -497,7 +524,9 @@ and the main requirement was that the robot didn&amp;rsquo;t fall outside the bo
       <pubDate>Fri, 17 Aug 2012 12:17:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
-      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style. IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style. Another similar tool would be online testing web applications such as codility.</description>
+      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.
+IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t ), and what&amp;rsquo;s his/her style.
+Another similar tool would be online testing web applications such as codility .</description>
     </item>
     
     <item>
@@ -509,7 +538,7 @@ and the main requirement was that the robot didn&amp;rsquo;t fall outside the bo
       <description>These days I&amp;rsquo;m playing with NodeJS.
 And today I was thinking about the fundamental change in Javascript.
 A few years ago it was a darn language for the web.
-Now someone could query a database using Javascript (CouchDB), create the server portion of a web application using Javascipt(NodeJS), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium).</description>
+Now someone could query a database using Javascript (CouchDB ), create the server portion of a web application using Javascipt(NodeJS ), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium ).</description>
     </item>
     
     <item>
@@ -518,7 +547,8 @@ Now someone could query a database using Javascript (CouchDB), create the server
       <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
-      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised. We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
+      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised.
+We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
     </item>
     
     <item>
