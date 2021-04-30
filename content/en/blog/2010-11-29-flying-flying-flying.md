@@ -2,8 +2,8 @@
 layout: post
 title: "Flying, flying, flying"
 date: 2010-11-29T21:02:51
-comments: false
-categories:
+tags:
+  - Personal
 ---
 
 I've been to Rome this weekend. I used to fly a little more before my children's bbirth, but since then I haven't flyed for quite a few years. Train and car a lot. But no planes. I knew what I was going to face.

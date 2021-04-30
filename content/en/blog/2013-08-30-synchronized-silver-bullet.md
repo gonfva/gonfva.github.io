@@ -4,6 +4,8 @@ title: "The synchronized silver bullet"
 date: 2013-08-30T18:38:19
 comments: false
 categories: Developer
+tags:
+  - Developer
 ---
 
 I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those&nbsp;occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the&nbsp;beginning), was something like "Let's put <b><i>synchronized</i></b> to the method". I explained why I thought it was a bad decision. But after some of these episodes, I used to think "how is it that people smart and competent in many aspects of Java, people from whom I learn lots day in day out, just don't get it".
@@ -12,7 +14,37 @@ I lead a team that is transitioning a 9-year-old internal framework from a somew
 Today I was reading a book. And I've found [this](http://books.google.es/books?id=Gu8-_b9AN8gC&amp;printsec=frontcover&amp;hl=es#v=onepage&amp;q=syncrhonized&amp;f=false)&nbsp;:
 
 
-<br /><span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span><br /><blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;<br />public class SequenceGenerator {<br />private String prefix;<br />private String suffix;<br />private int initial;<br />private int counter;<br />public SequenceGenerator() {}<br />public SequenceGenerator(String prefix, String suffix, int initial) {<br />this.prefix = prefix;<br />this.suffix = suffix;<br />this.initial = initial;<br />}<br />public void setPrefix(String prefix) {<br />this.prefix = prefix;<br />}<br />public void setSuffix(String suffix) {<br />this.suffix = suffix;<br />}<br />public void setInitial(int initial) {<br />this.initial = initial;<br />}<br />public synchronized String getSequence() {<br />StringBuffer buffer = new StringBuffer();<br />buffer.append(prefix);<br />buffer.append(initial + counter++);<br />buffer.append(suffix);<br />return buffer.toString();<br />}<br />}</span></blockquote>
+
+<span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span>
+<blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;
+public class SequenceGenerator {
+private String prefix;
+private String suffix;
+private int initial;
+private int counter;
+public SequenceGenerator() {}
+public SequenceGenerator(String prefix, String suffix, int initial) {
+this.prefix = prefix;
+this.suffix = suffix;
+this.initial = initial;
+}
+public void setPrefix(String prefix) {
+this.prefix = prefix;
+}
+public void setSuffix(String suffix) {
+this.suffix = suffix;
+}
+public void setInitial(int initial) {
+this.initial = initial;
+}
+public synchronized String getSequence() {
+StringBuffer buffer = new StringBuffer();
+buffer.append(prefix);
+buffer.append(initial + counter++);
+buffer.append(suffix);
+return buffer.toString();
+}
+}</span></blockquote>
 
 
 (mine is a newer version, but you get the point).
@@ -28,7 +60,8 @@ Many people could tell me "You're right, but the setters are not supposed to be 
 
 
 
-<ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol><br />And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
+<ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol>
+And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
 
 
 By the way. A great book in the topic: [Java Concurrency in Practice](http://www.jcip.net/).

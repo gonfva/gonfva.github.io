@@ -4,6 +4,8 @@ title: "Maximizing Macbook Pro's battery"
 date: 2014-05-28T23:13:29
 comments: false
 categories: Technology
+tags:
+  - Technology
 ---
 
 I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery.
@@ -24,7 +26,9 @@ Apparently, [that is no longer the case](http://www.apple.com/batteries/notebook
 I've tried to follow the advice in Apple's page, and I tend to leave it unplugged every day once or more times while working with it.
 
 
-And I've noticed that from a Full Charge Capacity of around 8500 mAh, it has been improving to around 9000 mAh<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-bCXcqcodwCo/U3yitXyxE5I/AAAAAAAAAmE/mVM7lOhNvEg/s1600/Screenshot+2014-05-21+13.43.36.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-bCXcqcodwCo/U3yitXyxE5I/AAAAAAAAAmE/mVM7lOhNvEg/s1600/Screenshot+2014-05-21+13.43.36.png" height="100" width="320" /></a></div><br />It is too soon to know how it will last in the future, but it is a good sympton.
+And I've noticed that from a Full Charge Capacity of around 8500 mAh, it has been improving to around 9000 mAh
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-bCXcqcodwCo/U3yitXyxE5I/AAAAAAAAAmE/mVM7lOhNvEg/s1600/Screenshot+2014-05-21+13.43.36.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-bCXcqcodwCo/U3yitXyxE5I/AAAAAAAAAmE/mVM7lOhNvEg/s1600/Screenshot+2014-05-21+13.43.36.png" height="100" width="320" /></a></div>
+It is too soon to know how it will last in the future, but it is a good sympton.
 
 
 You can check full charge capacity at "System Information". Go to "About this Mac", then click on "More info...", &nbsp;then on "System Report" and finally select "Power".
@@ -33,4 +37,5 @@ You can check full charge capacity at "System Information". Go to "About this Ma
 
 
 
-<br />
+
+

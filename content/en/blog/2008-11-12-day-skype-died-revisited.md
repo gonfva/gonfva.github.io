@@ -72,7 +72,8 @@ way that it can be seen a falling trend on the revenue per registered user)
       <td>276,3</td>
       <td>309,3</td>
       <td>338,2</td>
-      <td>370,2<br /></td>
+      <td>370,2
+</td>
     </tr>
     <tr>
       <td>Revenue (thousands)</td>
@@ -80,7 +81,8 @@ way that it can be seen a falling trend on the revenue per registered user)
       <td>110364</td>
       <td>119791</td>
       <td>130151</td>
-      <td>137201<br /></td>
+      <td>137201
+</td>
     </tr>
     <tr>
       <td>Revenue per user (calculated)</td>

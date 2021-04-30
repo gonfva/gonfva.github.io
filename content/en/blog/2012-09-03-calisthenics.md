@@ -4,6 +4,8 @@ title: "Calisthenics"
 date: 2012-09-03T22:19:58
 comments: false
 categories: Developer
+tags:
+    - Developer
 ---
 
 I didn't know about [object calisthenics](http://www.bennadel.com/resources/uploads/2012/ObjectCalisthenics.pdf). They are a set of rules to help develop better:

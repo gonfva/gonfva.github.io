@@ -3,7 +3,11 @@ layout: post
 title: "Companies, developers and recruitment"
 date: 2013-11-11T09:56:47
 comments: false
-categories: Jobs London Personal
+categories: [Jobs,London,Personal]
+tags:
+  - Personal
+  - London
+  - Jobs
 ---
 
 A few months ago I reported [my business unit was offered for sale](http://gonfva.blogspot.co.uk/2013/08/changes.html). Not much to report about it (I know very little and I can write even less)

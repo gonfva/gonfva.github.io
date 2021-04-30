@@ -4,6 +4,8 @@ title: "Scala: First impressions"
 date: 2014-06-08T22:05:32
 comments: false
 categories: Developer
+tags:
+  - Developer
 ---
 
 A couple of months ago I started working for a different company. I'm quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala. It's uncommon to get a programming job when you don't know the syntax of the programming language used. But if you really think about it, it's much better to hire somebody passionate about technology and that really loves to learn (and commit) than somebody that knows the language but doesn't give a d\*\*\*mn.

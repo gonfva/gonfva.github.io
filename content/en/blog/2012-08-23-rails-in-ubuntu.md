@@ -4,6 +4,8 @@ title: "Rails in Ubuntu"
 date: 2012-08-23T12:31:19
 comments: false
 categories: Developer
+tags:
+    - Developer
 ---
 
 I'm planning to make a newbie post about rvm, bundler and the rest. But just in case you're starting with ubuntu, here comes a piece of advice.
@@ -18,7 +20,9 @@ Side question: "Why the h*ll are you leaving Linux Mint?"
 Anyway, back to more interesting topics. If you are a Rails developer, you should be using RVM. How do you use RVM in Ubuntu. Two tips:
 
 
-First. Forget about apt-get install rvm, and if you are reading this too late, [go here](http://stackoverflow.com/questions/9056008/installed-ruby-1-9-3-with-rvm-but-command-line-doesnt-show-ruby-v/9056395#9056395).<br />Second. If you are using gnome terminal, [read this](https://rvm.io/integration/gnome-terminal/).
+First. Forget about apt-get install rvm, and if you are reading this too late, [go here](http://stackoverflow.com/questions/9056008/installed-ruby-1-9-3-with-rvm-but-command-line-doesnt-show-ruby-v/9056395#9056395).
+Second. If you are using gnome terminal, [read this](https://rvm.io/integration/gnome-terminal/).
 
 
-<br />
+
+

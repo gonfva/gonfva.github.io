@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "My first Chrome extension(II)"
-date: 2012-09-14T21:01:31
+date: 2012-09-14T21:02:31
 comments: false
 categories: Developer
+tags:
+    - Developer
 ---
 
 In [last post](http://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html) I wrote why. In this post I want to explain how I wrote my first chrome extension.
@@ -21,7 +23,12 @@ The main file, in my case was called [background.js](https://github.com/gonfva/f
 In my case, I attach an event listener to the click of the extension button (browserAction.onclick). The listener gets the url of the current tab, process that url, encode it, get a Google url redirection from it, and ask for it.
 
 
-<code>chrome.browserAction.onClicked.addListener(function(tab) {<br />&nbsp;&nbsp;var currentTab=tab.url;<br />&nbsp;&nbsp;var processedURL=processURL(currentTab);<br />&nbsp;&nbsp;var encodedURL=encodeURIComponent(processedURL);<br />&nbsp;&nbsp;var newUrl="http://www.google.es/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;sqi=2&amp;url="+encodedURL;<br />&nbsp;&nbsp;chrome.tabs.update(tab.id, {url:newUrl});
+<code>chrome.browserAction.onClicked.addListener(function(tab) {
+&nbsp;&nbsp;var currentTab=tab.url;
+&nbsp;&nbsp;var processedURL=processURL(currentTab);
+&nbsp;&nbsp;var encodedURL=encodeURIComponent(processedURL);
+&nbsp;&nbsp;var newUrl="http://www.google.es/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;sqi=2&amp;url="+encodedURL;
+&nbsp;&nbsp;chrome.tabs.update(tab.id, {url:newUrl});
 
 
 }); </code>

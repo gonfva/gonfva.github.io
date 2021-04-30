@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "A great experience applying to a position (II)"
-date: 2012-08-16T21:59:17
+date: 2012-08-16T22:59:17
 comments: false
 categories: Jobs
+tags:
+  - Jobs
 ---
 
 <span style="font-family: inherit;">In my previous post I explained [a great experience applying for a position](http://gonfva.blogspot.com/2012/08/a-great-experience-applying-to-position.html). In this post I wanted to share what lessons I've learnt from that experience.</span>

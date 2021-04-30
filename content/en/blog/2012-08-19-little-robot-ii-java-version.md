@@ -4,9 +4,18 @@ title: "Little robot (II): Java version"
 date: 2012-08-19T17:00:02
 comments: false
 categories: Developer
+tags:
+    - Developer
 ---
 
-As I wrote in a [previous post](http://gonfva.blogspot.com/2012/08/little-robot-i.html), I was asked to&nbsp;design a software managing a robot inside a board of 5x5 cells. The typical commands were<br /><div><br /><div style="text-align: left;"><blockquote class="tr_bq">PLACE X,Y,F -&gt;Places the robot in the x,y position facing F<br />MOVE -&gt;Move the robot 1 cell in the facing direction<br />LEFT -&gt;Changes the facing&nbsp;counter-clockwise<br />RIGHT -&gt;Changes the facing clockwise<br />REPORT -&gt;Shows the current position and facing</blockquote></div><br />and the main requirement was that the robot didn't fall outside the board. The assignment allowed to read commands from the console (standard input/output) or from a file. You can read the assignment [here](https://github.com/alexwibowo/Robot/blob/master/README), but that's not my code.
+As I wrote in a [previous post](http://gonfva.blogspot.com/2012/08/little-robot-i.html), I was asked to&nbsp;design a software managing a robot inside a board of 5x5 cells. The typical commands were
+<div>
+<div style="text-align: left;"><blockquote class="tr_bq">PLACE X,Y,F -&gt;Places the robot in the x,y position facing F
+MOVE -&gt;Move the robot 1 cell in the facing direction
+LEFT -&gt;Changes the facing&nbsp;counter-clockwise
+RIGHT -&gt;Changes the facing clockwise
+REPORT -&gt;Shows the current position and facing</blockquote></div>
+and the main requirement was that the robot didn't fall outside the board. The assignment allowed to read commands from the console (standard input/output) or from a file. You can read the assignment [here](https://github.com/alexwibowo/Robot/blob/master/README), but that's not my code.
 
 
 Initially I didn't want to focus on the input/output, so I decided to test only the engine. Without writing a line of functional code, I developed a [JUnit test class](https://github.com/gonfva/assignments/blob/master/gfvRobotJava/test/gfv/robot/RobotTest.java) just from translating the requirements into code. It wasn't pure TDD, because there weren't tests for individual methods. But it gave me the security net I needed to play a bit with the design.
@@ -21,4 +30,5 @@ Following that, I focused on the [engine class](https://github.com/gonfva/assign
 The bad thing about an assignment like this is that you have too many options. The code in Java wasn't perfect, but I guess it was good enough.
 
 
-<br /></div>
+
+</div>

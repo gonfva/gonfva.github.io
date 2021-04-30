@@ -4,6 +4,8 @@ title: "The future of this blog"
 date: 2012-12-13T19:22:42
 comments: false
 categories: [This blog]
+tags:
+  - Personal
 ---
 
 When I [started this blog](http://gonfva.blogspot.co.uk/2008/11/what-is-this.html), I had a goal. I needed to practice my English, because I wanted to go abroad. Months (or even years) later, more reasons appeared. First, I discovered that writing about solutions to job related problems could give people a way to solve their own problems more easily. Later on, I realized it could also be a way to show that I wasn't a newcomer while looking for a position abroad. But practicing my English kept being the main reason.
@@ -30,4 +32,5 @@ A short example. People here tend to ask me about my opinion of London. I used t
 Apparently [my impression is not so strange](http://www.belfasttelegraph.co.uk/breaking-news/offbeat/londons-not-smiles-better-survey-16249848.html), although it probably shouldn't be carved on stone. But you get the idea.
 
 
-<br />
+
+

@@ -4,12 +4,16 @@ title: "IKEA vs Greenwich"
 date: 2013-07-19T12:16:35
 comments: false
 categories: London
+tags:
+  - London
+  - Personal
 ---
 
 This post started as a way of comparing different ways of managing customer relationships. It ended up as rant, but I'm not going to delete it. But I will write another post in the future with some suggestions.
 
 
-<b>A good experience: IKEA.</b><br />I recently bought some furniture from IKEA, using their online services in the UK. The furniture was delivered on Friday morning, and in the evening I discovered that there was package less than expected.
+<b>A good experience: IKEA.</b>
+I recently bought some furniture from IKEA, using their online services in the UK. The furniture was delivered on Friday morning, and in the evening I discovered that there was package less than expected.
 
 
 I contacted their [online customer service](http://www.ikea.com/ms/en_GB/customer_service/contact_us/contact.html) that evening, and received an automated reply that my comment had been received and that they aimed to reply it in three days. I could have contacted them on the phone, but I didn't use do it while I was in Spain and in English it's more difficult for me.
@@ -21,7 +25,8 @@ On Sunday evening (on Sunday!!!!) I received a reply apologizing for the problem
 I will recommend their services. Yes they fail, but on the customer relationship, they set reasonable expectations (3 days for an email is good), and they manage to fulfill them.
 
 
-<b>A bad experience: Royal Borough of Greenwich</b><br />I recently moved into the Royal Borough of Greenwich. I filled in their online form for that. I received an automated reply informing that I should receive a letter in ten working days with the tax amount (in the UK the people living in a property pay the property tax).
+<b>A bad experience: Royal Borough of Greenwich</b>
+I recently moved into the Royal Borough of Greenwich. I filled in their online form for that. I received an automated reply informing that I should receive a letter in ten working days with the tax amount (in the UK the people living in a property pay the property tax).
 
 
 Nearly 20 working days later, I hadn't receive the promised letter. So I contacted them again.
@@ -30,14 +35,16 @@ Nearly 20 working days later, I hadn't receive the promised letter. So I contact
 One could think "why bother? No letter, no taxes". Well. Two reasons.
 
 
-<br /><ol><li>I have two daughters and I need to apply to get a school for them. But I cannot apply without a "Correct proof of address" and "Correct proof is a current council tax bill/statement or council tax reference number".&nbsp;</li><li>If I'm going to have to pay amount x, I prefer to do it in as much months as possible. It is not the same to pay x/6 in 6 months than to pay the whole x in one month, and I prefer to do it in 6 months.</li></ol>
+
+<ol><li>I have two daughters and I need to apply to get a school for them. But I cannot apply without a "Correct proof of address" and "Correct proof is a current council tax bill/statement or council tax reference number".&nbsp;</li><li>If I'm going to have to pay amount x, I prefer to do it in as much months as possible. It is not the same to pay x/6 in 6 months than to pay the whole x in one month, and I prefer to do it in 6 months.</li></ol>
 
 
 This time I received an automated reply with the following:
 
 
 
-<blockquote class="tr_bq">"Emails are treated with the same level of importance as other communications, i.e. post, telephone and fax. We will do our very best to respond to your email within 20 days."</blockquote><br />20 days for replying an email?.
+<blockquote class="tr_bq">"Emails are treated with the same level of importance as other communications, i.e. post, telephone and fax. We will do our very best to respond to your email within 20 days."</blockquote>
+20 days for replying an email?.
 
 
 Are you kidding me?.

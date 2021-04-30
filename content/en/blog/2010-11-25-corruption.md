@@ -2,7 +2,8 @@
 layout: post
 title: "Corruption"
 date: 2010-11-25T06:45:11
-comments: false
+tags:
+  - Politics
 categories: [Politics, Spain]
 ---
 

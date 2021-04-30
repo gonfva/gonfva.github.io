@@ -4,6 +4,8 @@ title: "The rain in Spain(II): Government"
 date: 2011-08-02T21:01:47
 comments: false
 categories: [Politics, Spain]
+tags:
+  - Politics
 ---
 
 Let's start with politics. I guess it's less known abroad, but it's probably more important than the economic situation. First the government. Forget about the past. Let's start by the end. Today August 2nd 2011, one of the more complex days from an economic point of view for the hole world. Every stock market falling through like a knife in the butter. Spanish bonds at what lots of people understand as intervention level (400 basis points over German debt). This guy was planning to take a few days off. He announces he's considering postponing those days...

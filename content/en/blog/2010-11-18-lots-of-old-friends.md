@@ -2,7 +2,8 @@
 layout: post
 title: "Lots of old friends"
 date: 2010-11-18T21:30:39
-comments: false
+tags:
+  - Personal
 categories: Personal
 ---
 

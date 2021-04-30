@@ -4,6 +4,9 @@ title: "What recruiters taught me about looking for a job"
 date: 2015-01-06T16:31:37
 comments: false
 categories: [Jobs, Personal]
+tags:
+  - Personal
+  - Jobs
 ---
 
 There are [good recruiters](http://gonfva.blogspot.co.uk/2014/05/good-examples.html). And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
@@ -42,7 +45,10 @@ Now, when I really want a job, <b>I put myself on the recipient's role</b>. What
 Some obvious tips:
 
 
-<br /><ol><li>You can contact a company with a <i>cold email </i>(as in without role/offer), but with nothing else you won't get any reply. Even if you send to thousands recipients, you probably won't get any response. The typical "I've sent dozens of CVs" is bogus.</li><li>Either when cold email OR when replying to a specific role, research the company and try to understand what you can provide to that company, what is the company's culture, and carefully craft either the letter or the CV (or both)</li><li>Try to understand profiles, not if you match some/all of the requirements. Once you've understood the profile, apply with a cover letter matching your profile to the requirements.</li><li>If in search mode, the previous apply when contacting final companies. When contacting recruiters, put in your CV as much keywords/technologies as you've used (even if obvious to your profile or if the contact with that technology was minimal).</li><li>The better jobs are the ones your friends look for you. LinkedIn connections are not friends.</li></ol><br />Yeah, it's lots of work. But I think it really pays off.
+
+<ol><li>You can contact a company with a <i>cold email </i>(as in without role/offer), but with nothing else you won't get any reply. Even if you send to thousands recipients, you probably won't get any response. The typical "I've sent dozens of CVs" is bogus.</li><li>Either when cold email OR when replying to a specific role, research the company and try to understand what you can provide to that company, what is the company's culture, and carefully craft either the letter or the CV (or both)</li><li>Try to understand profiles, not if you match some/all of the requirements. Once you've understood the profile, apply with a cover letter matching your profile to the requirements.</li><li>If in search mode, the previous apply when contacting final companies. When contacting recruiters, put in your CV as much keywords/technologies as you've used (even if obvious to your profile or if the contact with that technology was minimal).</li><li>The better jobs are the ones your friends look for you. LinkedIn connections are not friends.</li></ol>
+Yeah, it's lots of work. But I think it really pays off.
 
 
-<br />
+
+

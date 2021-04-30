@@ -4,6 +4,9 @@ title: "Multithreading: Warning lights"
 date: 2014-01-21T12:17:35
 comments: false
 categories: [Developer, Jobs]
+tags:
+  - Developer
+  - Jobs
 ---
 
 A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn't quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn't help it was my first experience working with a Mac.
@@ -16,10 +19,46 @@ So I had something like (fictitious code)
 
 
 
-<blockquote class="tr_bq">&nbsp; class GreatObject {<br />&nbsp; &nbsp; public void calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; Service supaService= MegaFactory.getService();<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }</blockquote><br />and we had agreed on doing something like
+<blockquote class="tr_bq">&nbsp; class GreatObject {
+&nbsp; &nbsp; public void calculateAndAddAmount(int length,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {
+&nbsp; &nbsp; &nbsp; int cost;
+&nbsp; &nbsp; &nbsp; if (cheapService) {
+&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;
+&nbsp; &nbsp; &nbsp; } else {
+&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; Service supaService= MegaFactory.getService();
+&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; supaService.addCost(cost);
+&nbsp; &nbsp; }
+&nbsp; }</blockquote>
+and we had agreed on doing something like
 
 
-<blockquote class="tr_bq">&nbsp; class GreatObject {<br />&nbsp; &nbsp; private Service supaService;<br />&nbsp; &nbsp; public GreatObject () {<br />&nbsp; &nbsp; &nbsp; this.supaService= MegaFactory.getService();<br />&nbsp; &nbsp; }<br />&nbsp; &nbsp; public GreatObject (Service supaService) {<br />&nbsp; &nbsp; &nbsp; this.supaService=supaService;<br />&nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; public void calculateAndAddAmount(int length,<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {<br />&nbsp; &nbsp; &nbsp; int cost;<br />&nbsp; &nbsp; &nbsp; if (cheapService) {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;<br />&nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; <br />&nbsp;&nbsp;&nbsp; &nbsp; supaService.addCost(cost);<br />&nbsp; &nbsp; }<br />&nbsp; }</blockquote><br />When I was going to do it, something in the back of my mind started to blink. It was a bit subtle and it took me a while to be able to express it. So as an exercise for the future, I'm going to try and express it in writing.
+<blockquote class="tr_bq">&nbsp; class GreatObject {
+&nbsp; &nbsp; private Service supaService;
+&nbsp; &nbsp; public GreatObject () {
+&nbsp; &nbsp; &nbsp; this.supaService= MegaFactory.getService();
+&nbsp; &nbsp; }
+&nbsp; &nbsp; public GreatObject (Service supaService) {
+&nbsp; &nbsp; &nbsp; this.supaService=supaService;
+&nbsp; &nbsp; }
+&nbsp; &nbsp;
+&nbsp; &nbsp; public void calculateAndAddAmount(int length,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {
+&nbsp; &nbsp; &nbsp; int cost;
+&nbsp; &nbsp; &nbsp; if (cheapService) {
+&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;
+&nbsp; &nbsp; &nbsp; } else {
+&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; supaService.addCost(cost);
+&nbsp; &nbsp; }
+&nbsp; }</blockquote>
+When I was going to do it, something in the back of my mind started to blink. It was a bit subtle and it took me a while to be able to express it. So as an exercise for the future, I'm going to try and express it in writing.
 
 
 The problem with the change is that we have transformed a local variable into an instance variable. Local variables are local to the thread. Instance variables are shared between threads. So until now we had a thread safe class, but now the class is not thread safe. As an example: What if each instance of the service can only be invoked once and we have [two threads](https://twitter.com/nedbat/status/194452404794691584) running?

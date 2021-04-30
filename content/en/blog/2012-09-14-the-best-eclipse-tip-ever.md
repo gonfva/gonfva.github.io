@@ -4,6 +4,8 @@ title: "The best eclipse tip ever"
 date: 2012-09-14T21:01:31
 comments: false
 categories: Developer
+tags:
+  - Developer
 ---
 
 How to [disable auto close for the XML comments](http://www.eclipse.org/forums/index.php/t/159796/).

@@ -4,9 +4,12 @@ title: "Spanish budget deficit, 3Q2012"
 date: 2013-02-06T18:57:33
 comments: false
 categories: Politics
+tags:
+  - Politics
 ---
 
-<br />From time to time I visit [the page where the internal comptroller in Spain posts its budget deficit figures](http://www.igae.pap.minhap.gob.es/sitios/igae/en-GB/InformesCuentas/Informes/Paginas/publicaciones.aspx). Last week there was a link to the calendar of future publications. The calendar was last updated past September, and didn´t show anything for 2013. Usually at the end of January appears 3rd quarter budget deficit. So when January ended with no new data, I knew the figures would be bad.
+
+From time to time I visit [the page where the internal comptroller in Spain posts its budget deficit figures](http://www.igae.pap.minhap.gob.es/sitios/igae/en-GB/InformesCuentas/Informes/Paginas/publicaciones.aspx). Last week there was a link to the calendar of future publications. The calendar was last updated past September, and didn´t show anything for 2013. Usually at the end of January appears 3rd quarter budget deficit. So when January ended with no new data, I knew the figures would be bad.
 
 
 And they are terrible.

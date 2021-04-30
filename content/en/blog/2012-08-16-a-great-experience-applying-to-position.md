@@ -4,6 +4,8 @@ title: "A great experience applying to a position (I)"
 date: 2012-08-16T21:59:17
 comments: false
 categories: Jobs
+tags:
+  - Jobs
 ---
 
 I wrote in my last post about [lessons I've got from bad experiences looking for a job](http://gonfva.blogspot.com.es/2012/08/bad-experiences.html). In this post I'm going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it. Make no mistakes: I didn't get offered the position in the end.

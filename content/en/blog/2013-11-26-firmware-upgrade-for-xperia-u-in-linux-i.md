@@ -4,6 +4,8 @@ title: "Firmware upgrade for Xperia U in Linux (I)"
 date: 2013-11-26T20:42:53
 comments: false
 categories: [got ya]
+tags:
+  - Developer
 ---
 
 About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.
@@ -27,7 +29,8 @@ It still has some issues pending (at this moment, Bluetooth does not work yet), 
 The real process is very easy, but I had some issues getting to there. Because of two things:
 
 
-<br /><ol><li>I didn't even know the most basic terminology about the process (not that I am an expert know, you know) and I couldn't manage to get a mental picture of it.</li><li>Most of the pages are Microsoft Windows based. I have Linux at home. Linux Mint 64bits, to get things more complicated (as we'll see).&nbsp;</li></ol>
+
+<ol><li>I didn't even know the most basic terminology about the process (not that I am an expert know, you know) and I couldn't manage to get a mental picture of it.</li><li>Most of the pages are Microsoft Windows based. I have Linux at home. Linux Mint 64bits, to get things more complicated (as we'll see).&nbsp;</li></ol>
 
 
 So in my next post I'll try to explain the process in a sort of newbie post. HOWEVER. Word of caution. You'll probably void the warranty and you could brick your phone. So this is not something for the faint of heart.

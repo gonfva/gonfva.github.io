@@ -4,6 +4,8 @@ title: "No more applets"
 date: 2012-09-03T22:06:06
 comments: false
 categories: Technology
+tags:
+    - Developer
 ---
 
 For more than three years I've been managing certificate-based digital signature applications.

@@ -4,6 +4,8 @@ title: "Google, where are you going?"
 date: 2012-09-30T15:18:46
 comments: false
 categories: [Civil service, Technology]
+tags:
+  - Technology
 ---
 
 I've been Google fanboy for a long time.&nbsp;I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn't the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.

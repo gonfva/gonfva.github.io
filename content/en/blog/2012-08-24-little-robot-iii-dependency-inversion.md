@@ -4,6 +4,8 @@ title: "Little robot (III): Dependency inversion"
 date: 2012-08-24T22:11:00
 comments: false
 categories: Developer
+tags:
+    - Developer
 ---
 
 As I wrote some posts ago, [I received an assignment](http://gonfva.blogspot.com/2012/08/little-robot-i.html), and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to [fake the console interaction](http://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html) (both stdin and stdout). I didn't consider dependy inversion.

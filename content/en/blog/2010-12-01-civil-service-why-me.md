@@ -2,7 +2,8 @@
 layout: post
 title: "Civil service: Why me?"
 date: 2010-12-01T17:33:45
-comments: false
+tags:
+  - Personal
 categories: Personal
 ---
 

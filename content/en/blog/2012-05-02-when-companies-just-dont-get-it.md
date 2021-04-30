@@ -4,15 +4,25 @@ title: "When companies just don't get it"
 date: 2012-05-02T19:31:33
 comments: false
 categories: Technology
+tags:
+  - Technology
 ---
 
-I have a two years old&nbsp;Symbian&nbsp;cell phone and a second generation iTouch. I guess that's enough to explain that until very recently I didn't pay any attention at all to mobiles apps ads. Companies regularly announced new &nbsp;apps for the Apple Store (or the Android one), and I didn't even read the announce.<br />More recently I've [started with mobile development](http://gonfva.blogspot.com/2011/12/my-first-mobile-application.html). I have paid the Android and Apple fee, I have developed my own apps with [PhoneGap](http://phonegap.com/) and [Appcelerator Titanium](http://www.appcelerator.com/products/titanium-mobile-application-development/) (games for my daughters, but nothing too serious). And at work we're starting to thing about possible Apps.<br />And I'm starting to pay attention to the Apps&nbsp;announced.<br />Today I received an ad of a new [App from Club Vips](http://itunes.apple.com/es/app/club-vips/id473552544?mt=8). Club Vips is a popular chain of restaurants here in Spain. I read the description:
+I have a two years old&nbsp;Symbian&nbsp;cell phone and a second generation iTouch. I guess that's enough to explain that until very recently I didn't pay any attention at all to mobiles apps ads. Companies regularly announced new &nbsp;apps for the Apple Store (or the Android one), and I didn't even read the announce.
+More recently I've [started with mobile development](http://gonfva.blogspot.com/2011/12/my-first-mobile-application.html). I have paid the Android and Apple fee, I have developed my own apps with [PhoneGap](http://phonegap.com/) and [Appcelerator Titanium](http://www.appcelerator.com/products/titanium-mobile-application-development/) (games for my daughters, but nothing too serious). And at work we're starting to thing about possible Apps.
+And I'm starting to pay attention to the Apps&nbsp;announced.
+Today I received an ad of a new [App from Club Vips](http://itunes.apple.com/es/app/club-vips/id473552544?mt=8). Club Vips is a popular chain of restaurants here in Spain. I read the description:
 
 
-<span style="background-color: white; color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; font-size: 12px; line-height: 18px; text-align: left;">Encuentra tu establecimiento más cercano del Grupo Vips, calcula tu ruta más rápida hasta nuestros locales, infórmate de nuestros horarios, reserva mesa por teléfono o envíanos un e-mail.</span><br /><div style="text-align: left;"><span style="color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;"><span style="font-size: 12px; line-height: 18px;"><br /></span></span></div>My own translation:
+<span style="background-color: white; color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; font-size: 12px; line-height: 18px; text-align: left;">Encuentra tu establecimiento más cercano del Grupo Vips, calcula tu ruta más rápida hasta nuestros locales, infórmate de nuestros horarios, reserva mesa por teléfono o envíanos un e-mail.</span>
+<div style="text-align: left;"><span style="color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;"><span style="font-size: 12px; line-height: 18px;">
+</span></span></div>My own translation:
 
 
-<span style="background-color: white; color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; font-size: 12px; line-height: 18px; text-align: left;">Find the nearest restaurant from Club Vips, find the shortest route, look up the timetable, reserve a table on the phone o send us an email.</span><br /><span style="background-color: white; color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; font-size: 12px; line-height: 18px; text-align: left;"><br /></span><br />Not too exciting. Anyway, let's give it a look. Oh. I cannot install it because I don't have iOS 5. "Are you kidding me?" No. I'm not kidding you.
+<span style="background-color: white; color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; font-size: 12px; line-height: 18px; text-align: left;">Find the nearest restaurant from Club Vips, find the shortest route, look up the timetable, reserve a table on the phone o send us an email.</span>
+<span style="background-color: white; color: #898989; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif; font-size: 12px; line-height: 18px; text-align: left;">
+</span>
+Not too exciting. Anyway, let's give it a look. Oh. I cannot install it because I don't have iOS 5. "Are you kidding me?" No. I'm not kidding you.
 
 
 I still remember when the web was THE THING. Every company had to have a web page or else risk to be not cool enough. And companies made horrible pages with no information, or a wonderful Flash animation (again with no information). They didn't get it.

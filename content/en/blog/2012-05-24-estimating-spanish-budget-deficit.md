@@ -4,6 +4,8 @@ title: "Estimating Spanish budget deficit"
 date: 2012-05-24T13:22:37
 comments: false
 categories: Politics
+tags:
+  - Politics
 ---
 
 This is one of my political/economical post (nothing related with computers) I write from time to time.
@@ -40,7 +42,8 @@ Both two methods (single period, natural accumulated) do not help estimating dat
 I use a simple method.
 
 
-<blockquote class="tr_bq">If you want to know some value at the end of the present year, but you don't have data of &nbsp;the whole year, you should take data equivalent to a twelve month period.</blockquote><br />For example: if you have accumulated data up to third quarter, and you want to estimate the data you'll have at the end of the fourth quarter, you should take the amount accumulated up to third quarter of this year, and add the amount of the the fourth quarter of last year.
+<blockquote class="tr_bq">If you want to know some value at the end of the present year, but you don't have data of &nbsp;the whole year, you should take data equivalent to a twelve month period.</blockquote>
+For example: if you have accumulated data up to third quarter, and you want to estimate the data you'll have at the end of the fourth quarter, you should take the amount accumulated up to third quarter of this year, and add the amount of the the fourth quarter of last year.
 
 
 Yes I know. It's not a great estimate, but for budget data shows a trend and it is very easy.&nbsp;On January 31st, 2012 we had available [third quarter Spanish deficit figures](http://www.igae.pap.minhap.gob.es/sitios/igae/es-ES/InformesCuentas/Informes/Documents/Cap-Trim/3T%20AAPP.pdf). It was, in European terms (PDE,) 56719 million euros. So if we wanted to estimate fourth quarter 2011, we should form a twelve month period. We take fourth quarter 2010: 37042 million euros. Let's add up:56719+37042=93761 million euro.

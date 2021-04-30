@@ -3,7 +3,12 @@ layout: post
 title: "Techzing wives"
 date: 2012-09-20T20:36:19
 comments: false
-categories: Personal Technology
+categories:
+  - Personal
+  - Technology
+tags:
+  - Personal
+  - Tecnology
 ---
 
 I tend to listen [Techzing podcast](http://techzinglive.com/). It's a podcast about very different topics, recorded by two geeks, (or developers, and entrepeneurs). I don't remember when I started listening them. I do remember I started because I wanted to practice English and it was great (Justin is an Englishman and Jason is American). Soon I forgot why: they were great by themselves. The topics are very diverse from Technology, Entrepenurship, Politics (Loom and Gloom Report), Education, Genetics...

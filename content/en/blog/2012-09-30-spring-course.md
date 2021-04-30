@@ -4,6 +4,8 @@ title: "Spring course"
 date: 2012-09-30T15:18:46
 comments: false
 categories: [Civil service, Technology, Personal, Developer]
+tags:
+  - Developer
 ---
 
 I'm attending this week to a Spring Framework course. It's a very small class: the teacher, my boss and me.

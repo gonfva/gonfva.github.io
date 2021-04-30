@@ -4,6 +4,8 @@ title: "Good examples"
 date: 2014-05-09T19:30:05
 comments: false
 categories: Personal
+tags:
+  - Personal
 ---
 
 I was made redundant at the end of March. It was a very stressful process but it ended up very well, as I've been in my new job for almost a month and I'm very happy.

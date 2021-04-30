@@ -4,6 +4,8 @@ title: "Little robot (I)"
 date: 2012-08-17T12:17:00
 comments: false
 categories: Developer
+tags:
+    - Developer
 ---
 
 While [applying to a position](http://gonfva.blogspot.com.es/2012/08/a-great-experience-applying-to-position.html) a few days ago, I received an assignment trying to test my coding style.
@@ -28,4 +30,5 @@ So I did it both in [Java](https://github.com/gonfva/assignments/tree/master/gfv
 
 
 
-<div><br /></div>
+<div>
+</div>
