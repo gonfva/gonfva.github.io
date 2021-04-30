@@ -68,7 +68,7 @@
       "datePublished": "2012-09-23 11:45:46 \u002b0000 UTC",
       "dateModified" : "2012-09-23 11:45:46 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-09-23-notes-to-newbie-spring-mvc-developer\/",
-      "wordCount" : "70",
+      "wordCount" : "69",
       "keywords" : ["Blog"]
     }
   
@@ -118,16 +118,21 @@
           </header>
           <article class="post__content">
               
-<p><br /><ol><li>Activate log4j. Without it you&rsquo;re lost</li><li>Look through the log to see if you&rsquo;re getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see <a href="http://www.vaannila.com/spring/spring-annotation-controller-1.html" 
-  
-   target="_blank" rel="noreferrer noopener" 
->this post</a>
-. In particular if you&rsquo;ve got Spring Security installed, for Goodness sake, don&rsquo;t forget these lines:</li><pre>&lt;beans:bean class=&ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&rdquo;&gt;<br/><br />&lt;beans:bean class=&ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&rdquo;&gt;<br/><br />&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div><br /></div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol></p>
+<ol><li>Activate log4j. Without it you're lost</li><li>Look through the log to see if you're getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you've got Spring Security installed, for Goodness sake, don't forget these lines:</li><pre>&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"&gt;<br/>
+&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"&gt;<br/>
+&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div>
+</div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol>
 
 
               
           </article>
           
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
 
  <div class="pagination">
   
@@ -138,9 +143,9 @@
   
 
   
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/">
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >June deficit was 8.54%</span>
+      <span class="pagination__title" >Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</span>
     </a>
   
 </div>

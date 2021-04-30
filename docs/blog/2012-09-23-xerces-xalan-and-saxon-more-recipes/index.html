@@ -65,10 +65,10 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2012",
-      "datePublished": "2012-09-23 11:45:46 \u002b0000 UTC",
-      "dateModified" : "2012-09-23 11:45:46 \u002b0000 UTC",
+      "datePublished": "2012-09-23 11:47:46 \u002b0000 UTC",
+      "dateModified" : "2012-09-23 11:47:46 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-09-23-xerces-xalan-and-saxon-more-recipes\/",
-      "wordCount" : "350",
+      "wordCount" : "349",
       "keywords" : ["Blog"]
     }
   
@@ -114,7 +114,7 @@
         <div class="post">
           <header class="post__header">
             <h1 id="post__title">Xerces, Xalan and Saxon, more recipes</h1>
-            <time datetime="2012-09-23 11:45:46 &#43;0000 UTC" class="post__date">2012-09-23</time> 
+            <time datetime="2012-09-23 11:47:46 &#43;0000 UTC" class="post__date">2012-09-23</time> 
           </header>
           <article class="post__content">
               
@@ -126,11 +126,12 @@
   
    target="_blank" rel="noreferrer noopener" 
 >one reader pointed</a>
-, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.<br /><div><br /></div><div>In my previous post I explained how to make Java choose a class for a parser. But, unfortunately that&rsquo;s not enough when different libraries provide that class. And that happens to be the case with some classes that are both in Xalan an Saxon (Simon&rsquo;s case) and some Xerces classes (both in server and WEB-INF/lib in my case). </div><div><br /></div><div>Simon needs Xalan classes for the general case, but he also needs Saxon for some specific (maybe XPATH2) parsing. He is able to set the parser for the general case, and initialize the specific parser for the XPATH 2 case. But having Saxon jar in the classpath makes the classloader load Saxon classes before  Xalan classes. </div><div><br /></div><div>What can we do in that case? It&rsquo;s not easy to answer, and sometimes there&rsquo;s not even an answer. Some tips:</div><div><br /></div><div><ol><li>Play with the classpath general mechanism loading order. For example JRE/lib/ext are usually loaded before WEB-INF/lib, so maybe Xalan would be placed in JRE/lib/ext and Saxon in WEB-INF/lib. This tip could have it&rsquo;s drawbacks in the booting of the server and in other applications sharing the same JVM, because JRE/lib/ext gets precedence from server specific mechanisms. Besides, operations people gets very nervous about placing anything in the JRE/lib/ext (not without reason).</li><li><span style="background-color: white;">Use some mechanism specific of the server. In my case (Oracle WebLogic Server), there were several</span><ol><li><span style="background-color: white;">Use $DOMAIN/lib folder instead of JRE/lib/ext (ops people get more comfortable, and it reduces the applications affected</span></li><li>Classloader-structure in <a href="http://weblogic-applicaiton.xml/" 
-  
-   target="_blank" rel="noreferrer noopener" 
->weblogic-applicaiton.xml</a>
-.</p>
+, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.</p>
+<div>
+</div><div>In my previous post I explained how to make Java choose a class for a parser. But, unfortunately that's not enough when different libraries provide that class. And that happens to be the case with some classes that are both in Xalan an Saxon (Simon's case) and some Xerces classes (both in server and WEB-INF/lib in my case).&nbsp;</div><div>
+</div><div>Simon needs Xalan classes for the general case, but he also needs Saxon for some specific (maybe XPATH2) parsing. He is able to set the parser for the general case, and initialize the specific parser for the XPATH 2 case. But having Saxon jar in the classpath makes the classloader load Saxon classes before &nbsp;Xalan classes.&nbsp;</div><div>
+</div><div>What can we do in that case? It's not easy to answer, and sometimes there's not even an answer. Some tips:</div><div>
+</div><div><ol><li>Play with the classpath general mechanism loading order. For example JRE/lib/ext are usually loaded before WEB-INF/lib, so maybe Xalan would be placed in JRE/lib/ext and Saxon in WEB-INF/lib. This tip could have it's drawbacks in the booting of the server and in other applications sharing the same JVM, because JRE/lib/ext gets precedence from server specific mechanisms. Besides, operations people gets very nervous about placing anything in the JRE/lib/ext (not without reason).</li><li><span style="background-color: white;">Use some mechanism specific of the server. In my case (Oracle WebLogic Server), there were several</span><ol><li><span style="background-color: white;">Use $DOMAIN/lib folder instead of JRE/lib/ext (ops people get more comfortable, and it reduces the applications affected</span></li><li>Classloader-structure in [weblogic-applicaiton.xml](http://weblogic-applicaiton.xml/).
 <p><span style="background-color: white;"></span></li></ol></li><li>Play with classloaders. <a href="http://docs.oracle.com/cd/E15051_01/wls/docs103/programming/classloading.html" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -142,11 +143,17 @@
           </article>
           
 
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
  <div class="pagination">
   
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/">
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Techzing wives</span>
+        <span class="pagination__title">Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</span>
     </a>
   
 

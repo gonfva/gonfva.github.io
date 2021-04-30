@@ -68,7 +68,7 @@
       "datePublished": "2012-08-19 17:00:02 \u002b0000 UTC",
       "dateModified" : "2012-08-19 17:00:02 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-08-19-little-robot-ii-java-version\/",
-      "wordCount" : "436",
+      "wordCount" : "434",
       "keywords" : ["Blog"]
     }
   
@@ -122,11 +122,14 @@
   
    target="_blank" rel="noreferrer noopener" 
 >previous post</a>
-, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were<br /><div><br /><div style="text-align: left;"><blockquote class="tr_bq">PLACE X,Y,F -&gt;Places the robot in the x,y position facing F<br />MOVE -&gt;Move the robot 1 cell in the facing direction<br />LEFT -&gt;Changes the facing counter-clockwise<br />RIGHT -&gt;Changes the facing clockwise<br />REPORT -&gt;Shows the current position and facing</blockquote></div><br />and the main requirement was that the robot didn&rsquo;t fall outside the board. The assignment allowed to read commands from the console (standard input/output) or from a file. You can read the assignment <a href="https://github.com/alexwibowo/Robot/blob/master/README" 
-  
-   target="_blank" rel="noreferrer noopener" 
->here</a>
-, but that&rsquo;s not my code.</p>
+, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were</p>
+<div>
+<div style="text-align: left;"><blockquote class="tr_bq">PLACE X,Y,F -&gt;Places the robot in the x,y position facing F
+MOVE -&gt;Move the robot 1 cell in the facing direction
+LEFT -&gt;Changes the facing&nbsp;counter-clockwise
+RIGHT -&gt;Changes the facing clockwise
+REPORT -&gt;Shows the current position and facing</blockquote></div>
+and the main requirement was that the robot didn't fall outside the board. The assignment allowed to read commands from the console (standard input/output) or from a file. You can read the assignment [here](https://github.com/alexwibowo/Robot/blob/master/README), but that's not my code.
 <p>Initially I didn&rsquo;t want to focus on the input/output, so I decided to test only the engine. Without writing a line of functional code, I developed a <a href="https://github.com/gonfva/assignments/blob/master/gfvRobotJava/test/gfv/robot/RobotTest.java" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -147,12 +150,18 @@
 >Position</a>
 . I also played a lot with the facing. Should I use constants in Position class, or an enum? I thought about creating a service implementing the commands, doing it in the Robot engine, in the position, or in the enum?</p>
 <p>The bad thing about an assignment like this is that you have too many options. The code in Java wasn&rsquo;t perfect, but I guess it was good enough.</p>
-<p><br /></div></p>
+</div>
 
 
               
           </article>
           
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
 
  <div class="pagination">
   

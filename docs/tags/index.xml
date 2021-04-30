@@ -71,5 +71,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>London</title>
+      <link>http://gonzalo.f-v.es/tags/london/</link>
+      <pubDate>Mon, 11 Nov 2013 09:56:47 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/tags/london/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecnology</title>
+      <link>http://gonzalo.f-v.es/tags/tecnology/</link>
+      <pubDate>Thu, 20 Sep 2012 20:36:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/tags/tecnology/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

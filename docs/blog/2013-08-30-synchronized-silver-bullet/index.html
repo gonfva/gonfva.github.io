@@ -124,12 +124,42 @@
    target="_blank" rel="noreferrer noopener" 
 >this</a>
  :</p>
-<p><br /><span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span><br /><blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;<br />public class SequenceGenerator {<br />private String prefix;<br />private String suffix;<br />private int initial;<br />private int counter;<br />public SequenceGenerator() {}<br />public SequenceGenerator(String prefix, String suffix, int initial) {<br />this.prefix = prefix;<br />this.suffix = suffix;<br />this.initial = initial;<br />}<br />public void setPrefix(String prefix) {<br />this.prefix = prefix;<br />}<br />public void setSuffix(String suffix) {<br />this.suffix = suffix;<br />}<br />public void setInitial(int initial) {<br />this.initial = initial;<br />}<br />public synchronized String getSequence() {<br />StringBuffer buffer = new StringBuffer();<br />buffer.append(prefix);<br />buffer.append(initial + counter++);<br />buffer.append(suffix);<br />return buffer.toString();<br />}<br />}</span></blockquote></p>
+<p><span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span></p>
+<blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;
+public class SequenceGenerator {
+private String prefix;
+private String suffix;
+private int initial;
+private int counter;
+public SequenceGenerator() {}
+public SequenceGenerator(String prefix, String suffix, int initial) {
+this.prefix = prefix;
+this.suffix = suffix;
+this.initial = initial;
+}
+public void setPrefix(String prefix) {
+this.prefix = prefix;
+}
+public void setSuffix(String suffix) {
+this.suffix = suffix;
+}
+public void setInitial(int initial) {
+this.initial = initial;
+}
+public synchronized String getSequence() {
+StringBuffer buffer = new StringBuffer();
+buffer.append(prefix);
+buffer.append(initial + counter++);
+buffer.append(suffix);
+return buffer.toString();
+}
+}</span></blockquote>
 <p>(mine is a newer version, but you get the point).</p>
 <p>Let me put it clear: Synchronized IS NOT A SILVER BULLET. Synchronized makes sure that code is executed only by one thread. But it doesn&rsquo;t make sure that fields(member-variables) used in that code are not modified in between.</p>
 <p>In particular, in this case, you could get a prefix, then other thread modifies the initial, a different thread modifies the suffix, and you get a real mess in your synchronized method.</p>
 <p>Many people could tell me &ldquo;You&rsquo;re right, but the setters are not supposed to be invoked after the creation of the object&rdquo;. Then I have to tell two things:</p>
-<ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol><br />And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
+<ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol>
+And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
 <p>By the way. A great book in the topic: <a href="http://www.jcip.net/" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -140,6 +170,12 @@
               
           </article>
           
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
 
  <div class="pagination">
   

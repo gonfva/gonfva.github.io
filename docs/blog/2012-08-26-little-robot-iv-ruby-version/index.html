@@ -138,19 +138,66 @@
    target="_blank" rel="noreferrer noopener" 
 >Array.rotate</a>
 . I don&rsquo;t like that improvement, because it makes the code less understandable. But I didn&rsquo;t like the verbosity of the case, and I tested a different approach. This is the code I left in the end:</p>
-<p><code>class Robot<br />  VALID_X = 0..4<br />  VALID_Y = 0..4<br />  VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]<br />  TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}<br />  TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}<br />  MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}</p>
-<p>  def initialize<br />    @accepting=false<br />  end</p>
-<p>  def place(cols,rows,facing)<br />    x=cols.to_i<br />    y=rows.to_i<br />    f=facing.to_sym<br />    if is_valid?(x,y,f)<br />      @x=x<br />      @y=y<br />      @f=f<br />      @accepting=true<br />    end<br />  end</p>
-<p>  def left<br />      return unless @accepting<br />      @f=TURN_LEFT[@f]<br />  end</p>
-<p>  def right<br />      return unless @accepting<br />      @f=TURN_RIGHT[@f] <br />  end</p>
-<p>  def move<br />      return unless @accepting<br />      delta=MOVE[@f]<br />      x = @x + delta[0]<br />      y = @y + delta[1]<br />      if is_valid?(x,y)<br />        @x=x<br />        @y=y<br />      end<br />  end</p>
-<p>  def report<br />    return nil unless @accepting<br />    &quot;#{@x.to_s},#{@y.to_s},#{@f}&quot;<br />  end</p>
-<p>protected<br />  def is_valid?(x,y,f=@f)<br />      VALID_X.include?(x) &amp;&amp; VALID_Y.include?(y) &amp;&amp; VALID_F.include?(f)<br />  end <br />end<br /> </code></p>
+<p><code>class Robot
+  VALID_X = 0..4
+  VALID_Y = 0..4
+  VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]
+  TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}
+  TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}
+  MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}</p>
+<p>  def initialize
+    @accepting=false
+  end</p>
+<p>  def place(cols,rows,facing)
+    x=cols.to_i
+    y=rows.to_i
+    f=facing.to_sym
+    if is_valid?(x,y,f)
+      @x=x
+      @y=y
+      @f=f
+      @accepting=true
+    end
+  end</p>
+<p>  def left
+      return unless @accepting
+      @f=TURN_LEFT[@f]
+  end</p>
+<p>  def right
+      return unless @accepting
+      @f=TURN_RIGHT[@f]
+  end</p>
+<p>  def move
+      return unless @accepting
+      delta=MOVE[@f]
+      x = @x + delta[0]
+      y = @y + delta[1]
+      if is_valid?(x,y)
+        @x=x
+        @y=y
+      end
+  end</p>
+<p>  def report
+    return nil unless @accepting
+    &quot;#{@x.to_s},#{@y.to_s},#{@f}&quot;
+  end</p>
+<p>protected
+  def is_valid?(x,y,f=@f)
+      VALID_X.include?(x) &amp;&amp; VALID_Y.include?(y) &amp;&amp; VALID_F.include?(f)
+  end
+end
+</code></p>
 
 
               
           </article>
           
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
 
  <div class="pagination">
   

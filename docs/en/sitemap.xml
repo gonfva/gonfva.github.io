@@ -563,7 +563,12 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/categories/jobs-london-personal/</loc>
+    <loc>http://gonzalo.f-v.es/tags/london/</loc>
+    <lastmod>2013-11-11T09:56:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/categories/london/</loc>
     <lastmod>2013-11-11T09:56:47+00:00</lastmod>
   </url>
   
@@ -588,12 +593,12 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</loc>
-    <lastmod>2013-07-19T12:16:35+00:00</lastmod>
+    <loc>http://gonzalo.f-v.es/categories/jobs-london-personal/</loc>
+    <lastmod>2013-08-30T18:23:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/categories/london/</loc>
+    <loc>http://gonzalo.f-v.es/blog/2013-07-19-ikea-vs-greenwich/</loc>
     <lastmod>2013-07-19T12:16:35+00:00</lastmod>
   </url>
   
@@ -603,7 +608,7 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/categories/politics-spain/</loc>
+    <loc>http://gonzalo.f-v.es/categories/spain/</loc>
     <lastmod>2013-03-25T22:22:45+00:00</lastmod>
   </url>
   
@@ -678,6 +683,21 @@
   </url>
   
   <url>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</loc>
+    <lastmod>2012-09-23T11:47:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</loc>
+    <lastmod>2012-09-23T11:47:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</loc>
+    <lastmod>2012-09-23T11:46:46+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</loc>
     <lastmod>2012-09-23T11:45:46+00:00</lastmod>
   </url>
@@ -693,37 +713,22 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</loc>
-    <lastmod>2012-09-23T11:45:46+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</loc>
-    <lastmod>2012-09-23T11:45:46+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</loc>
-    <lastmod>2012-09-23T11:45:46+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/categories/personal-technology/</loc>
-    <lastmod>2012-09-20T20:36:19+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</loc>
     <lastmod>2012-09-20T20:36:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</loc>
-    <lastmod>2012-09-14T21:01:31+00:00</lastmod>
+    <loc>http://gonzalo.f-v.es/tags/tecnology/</loc>
+    <lastmod>2012-09-20T20:36:19+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</loc>
+    <lastmod>2012-09-14T21:02:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</loc>
     <lastmod>2012-09-14T21:01:31+00:00</lastmod>
   </url>
   
@@ -773,13 +778,13 @@
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</loc>
-    <lastmod>2012-08-16T22:09:51+00:00</lastmod>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</loc>
+    <lastmod>2012-08-16T22:59:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://gonzalo.f-v.es/categories/spain/</loc>
-    <lastmod>2012-08-16T22:09:13+00:00</lastmod>
+    <loc>http://gonzalo.f-v.es/blog/2012-08-16-copyright-protection/</loc>
+    <lastmod>2012-08-16T22:09:51+00:00</lastmod>
   </url>
   
   <url>
@@ -804,11 +809,6 @@
   
   <url>
     <loc>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</loc>
-    <lastmod>2012-08-16T21:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</loc>
     <lastmod>2012-08-16T21:59:17+00:00</lastmod>
   </url>
   

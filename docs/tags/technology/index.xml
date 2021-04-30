@@ -260,6 +260,87 @@ Obviously, the experience was poor and confusing for the user, who doesn’t und
     </item>
     
     <item>
+      <title>Android 4.4.3: Sony Xperia U</title>
+      <link>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</link>
+      <pubDate>Sun, 08 Jun 2014 21:23:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
+      <description>A few months ago,I upgraded the firmware for my Sony Xperia U . It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates .
+I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&#39;t know is that today&#39;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&#39;s update yet.</description>
+    </item>
+    
+    <item>
+      <title>Maximizing Macbook Pro&#39;s battery</title>
+      <link>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</link>
+      <pubDate>Wed, 28 May 2014 23:13:29 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</guid>
+      <description>I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery.
+So when I got my shiny brand new Mac, I decided I had to look after the battery.
+And I read everything I could find about how to take care Macbook&amp;rsquo;s battery.
+Apparently, old models used to need a periodic full discharge followed by a full recharge.
+Apparently, that is no longer the case .</description>
+    </item>
+    
+    <item>
+      <title>Acquisitions</title>
+      <link>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</link>
+      <pubDate>Sat, 15 Mar 2014 19:31:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</guid>
+      <description>Today I wanted to talk about two acquisitions.
+On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. [Craziness](https://medium.com/enrique-dans/d5938c078376). [Logic](http://om.co/2014/03/03/whatsapp-vs-facebook/). IMO the money paid is crazy, but the deal has a lot of logic for Facebook. Because for many people around me (including teens), Whatsapp is THE social network. They(we?) share things like images and videos, status. We use it almost everyday. Food for thought: when was the last time you got to know anything reading it on Facebook?</description>
+    </item>
+    
+    <item>
+      <title>Google, where are you going?</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</link>
+      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</guid>
+      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
+I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;.
+Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts about Tecnimap 2010</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</link>
+      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</guid>
+      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb . Overall it has been a nice experience, but I wanted to share some thoughts about it. On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
+    </item>
+    
+    <item>
+      <title>Why LinkedIn breach is so important?</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</link>
+      <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
+      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised.
+We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>My first mobile application</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</link>
+      <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</guid>
+      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons. Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
+    </item>
+    
+    <item>
+      <title>When companies just don&#39;t get it</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</link>
+      <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</guid>
+      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce. More recently I&amp;rsquo;ve started with mobile development . I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
+    </item>
+    
+    <item>
       <title>Netbook Operating Systems</title>
       <link>http://gonzalo.f-v.es/blog/2009-08-13-netbook-operating-systems/</link>
       <pubDate>Thu, 13 Aug 2009 22:01:25 +0000</pubDate>

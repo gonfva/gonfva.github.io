@@ -65,8 +65,8 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2012",
-      "datePublished": "2012-09-14 21:01:31 \u002b0000 UTC",
-      "dateModified" : "2012-09-14 21:01:31 \u002b0000 UTC",
+      "datePublished": "2012-09-14 21:02:31 \u002b0000 UTC",
+      "dateModified" : "2012-09-14 21:02:31 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-09-14-my-first-chrome-extensionii\/",
       "wordCount" : "170",
       "keywords" : ["Blog"]
@@ -114,7 +114,7 @@
         <div class="post">
           <header class="post__header">
             <h1 id="post__title">My first Chrome extension(II)</h1>
-            <time datetime="2012-09-14 21:01:31 &#43;0000 UTC" class="post__date">2012-09-14</time> 
+            <time datetime="2012-09-14 21:02:31 &#43;0000 UTC" class="post__date">2012-09-14</time> 
           </header>
           <article class="post__content">
               
@@ -139,7 +139,12 @@
 >background.js</a>
 . You should read the documentation to know more about background pages and so on.</p>
 <p>In my case, I attach an event listener to the click of the extension button (browserAction.onclick). The listener gets the url of the current tab, process that url, encode it, get a Google url redirection from it, and ask for it.</p>
-<p><code>chrome.browserAction.onClicked.addListener(function(tab) {<br />  var currentTab=tab.url;<br />  var processedURL=processURL(currentTab);<br />  var encodedURL=encodeURIComponent(processedURL);<br />  var newUrl=&ldquo;<a href="http://www.google.es/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;sqi=2&amp;amp;url=%22+encodedURL;">http://www.google.es/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;sqi=2&amp;amp;url=&quot;+encodedURL;</a><br />  chrome.tabs.update(tab.id, {url:newUrl});</p>
+<p><code>chrome.browserAction.onClicked.addListener(function(tab) {
+  var currentTab=tab.url;
+  var processedURL=processURL(currentTab);
+  var encodedURL=encodeURIComponent(processedURL);
+  var newUrl=&ldquo;<a href="http://www.google.es/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;sqi=2&amp;amp;url=%22+encodedURL;">http://www.google.es/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;sqi=2&amp;amp;url=&quot;+encodedURL;</a>
+  chrome.tabs.update(tab.id, {url:newUrl});</p>
 <p>}); </code></p>
 <p>The processing of the URL do a bit of tweaking for some specific servers. Pretty uninteresting.</p>
 
@@ -148,18 +153,24 @@
           </article>
           
 
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
  <div class="pagination">
   
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-14-the-best-eclipse-tip-ever/">
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">The best eclipse tip ever</span>
+        <span class="pagination__title">My first Chrome extension(I)</span>
     </a>
   
 
   
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/">
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >My first Chrome extension(I)</span>
+      <span class="pagination__title" >Techzing wives</span>
     </a>
   
 </div>

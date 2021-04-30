@@ -60,6 +60,91 @@ I tend to reply something like:
     </item>
     
     <item>
+      <title>Technical tests</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</link>
+      <pubDate>Mon, 19 Jan 2015 19:39:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</guid>
+      <description>In March 2014 I was made redundant (business unit closing).
+I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from &amp;ldquo;technical tests&amp;rdquo; in a matter of days
+Process A. Thanks for taking the time to complete our online testing. Unfortunately, your score did not meet the requirements of this role.</description>
+    </item>
+    
+    <item>
+      <title>What recruiters taught me about looking for a job</title>
+      <link>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
+      <pubDate>Tue, 06 Jan 2015 16:31:37 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
+      <description>There are good recruiters . And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
+If you are looking for a job, be sure to do just the opposite of what the bad ones do.
+Almost every other day I receive an email offering me a position.
+&amp;ldquo;Good for you&amp;rdquo;. 
+No, bad for me.</description>
+    </item>
+    
+    <item>
+      <title>Multithreading: Warning lights</title>
+      <link>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</link>
+      <pubDate>Tue, 21 Jan 2014 12:17:35 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</guid>
+      <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&amp;rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked. It didn&amp;rsquo;t help it was my first experience working with a Mac.
+At one point we agreed on creating a new constructor so that we could pass a service in the constructor instead of getting directly in the method under test.</description>
+    </item>
+    
+    <item>
+      <title>Companies, developers and recruitment</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</link>
+      <pubDate>Mon, 11 Nov 2013 09:56:47 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-11-11-companies-developers-and-recruitment/</guid>
+      <description>A few months ago I reported my business unit was offered for sale . Not much to report about it (I know very little and I can write even less)
+Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.
+I remember in particular one interview. It didn&amp;rsquo;t start well when I replied &amp;ldquo;Sí, I mean, yes&amp;rdquo; after listening my name with a perfect Spanish z sound (as it turned out, one of the interviewers was Spanish too).</description>
+    </item>
+    
+    <item>
+      <title>Changes</title>
+      <link>http://gonzalo.f-v.es/blog/2013-08-30-changes/</link>
+      <pubDate>Fri, 30 Aug 2013 18:23:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-08-30-changes/</guid>
+      <description>A few days ago my company sent out this press release . It seems to be rather unimportant, but for me it means changes.
+I work for that specific business unit. I cannot write too much. Because I don&amp;rsquo;t know too much, but also because I don&amp;rsquo;t want to tell too much. But there are some topics I would like to raise.
+In Spain, if your work is good and the company is doing great, whatever happens in between, has little importance.</description>
+    </item>
+    
+    <item>
+      <title>A great experience applying to a position (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</link>
+      <pubDate>Thu, 16 Aug 2012 22:59:17 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position_14/</guid>
+      <description>In my previous post I explained a great experience applying for a position . In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience.
+Selection: Be very selective about what you apply for. For me this means no recruiters, making a pre-research of the company, and reading carefully the description to get a sense of what the company is asking. It&#39;s pretty obvious, but essential for the following lesson.</description>
+    </item>
+    
+    <item>
+      <title>A great experience applying to a position (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</link>
+      <pubDate>Thu, 16 Aug 2012 21:59:17 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-a-great-experience-applying-to-position/</guid>
+      <description>I wrote in my last post about lessons I&amp;rsquo;ve got from bad experiences looking for a job . In this post I&amp;rsquo;m going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it. Make no mistakes: I didn&amp;rsquo;t get offered the position in the end.
+For me, the outcome is not the most important thing in such a process, but the feeling you&amp;rsquo;re not losing your time, and the lessons learned.</description>
+    </item>
+    
+    <item>
+      <title>Bad experiences</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</link>
+      <pubDate>Thu, 16 Aug 2012 21:59:17 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-bad-experiences/</guid>
+      <description>For some time I&amp;rsquo;ve been applying to different positions. I have two daughters and I want for them (and for me) to live in a different culture and language. After a few experiences, I&amp;rsquo;m tempted to say something about bad experiences:Forget about recruiters. They have different alignments than yours. In my experience (it could be biased), 90% of them are just form fillers. They ask you things (CV, tests, questions), in order to fill a form in a random web site.</description>
+    </item>
+    
+    <item>
       <title>Jobs</title>
       <link>http://gonzalo.f-v.es/blog/2008-11-07-jobs/</link>
       <pubDate>Fri, 07 Nov 2008 18:00:00 +0000</pubDate>

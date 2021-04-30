@@ -198,8 +198,7 @@ It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap 
       
       <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
       <description>A year ago I vaguely new something about Scala . Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift , Slick , and some incursions in akka . I knew almost nothing about devops, and now I use almost everyday AWS , ansible and docker .
-
-I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them.</description>
+ I&#39;m far from an expert in any of those technologies. But I work with all of them.</description>
     </item>
     
     <item>
@@ -219,8 +218,7 @@ I&amp;rsquo;m far from an expert in any of those technologies. But I work with a
       <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
       <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority .
 Anyway, a few days ago I found this tweet:
-MVP explained via [@smarty](https://twitter.com/smarty) [pic.twitter.com/hZkCzqytAP](http://t.co/hZkCzqytAP)
-— About Programming (@abt_programming) [September 28, 2014](https://twitter.com/abt_programming/status/516018172072587264) I showed the picture to my wife, and I tried to explain it to her.</description>
+MVP explained via [@smarty](https://twitter.com/smarty) [pic.twitter.com/hZkCzqytAP](http://t.co/hZkCzqytAP) — About Programming (@abt_programming) [September 28, 2014](https://twitter.com/abt_programming/status/516018172072587264) I showed the picture to my wife, and I tried to explain it to her.</description>
     </item>
     
     <item>
@@ -250,8 +248,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-optimizing/</guid>
       <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
 After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
-Measure 
-You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
+Measure  You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
     </item>
     
     <item>
@@ -260,9 +257,7 @@ You cannot optimize if you don&#39;t know what do you need to optimize. Is it a 
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp;
-I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp;
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+      <description>I&#39;m happy.&amp;nbsp; I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp; I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
     </item>
     
     <item>
@@ -282,8 +277,7 @@ In the last week or so, I&amp;rsquo;ve been hitting against a wall because of tw
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-26-its-great-when-your-idea-is-good-one/</guid>
       <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
-
-I did a quick search and I couldn&amp;rsquo;t find anything.</description>
+ I did a quick search and I couldn&#39;t find anything.  Then my wife and daughters finally came here.</description>
     </item>
     
     <item>
@@ -351,8 +345,38 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
       <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
-In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Sun, 23 Sep 2012 11:47:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
+And that solution is wrong. Very wrong.
+Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Sun, 23 Sep 2012 11:47:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+ In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Sun, 23 Sep 2012 11:46:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
+Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
@@ -361,10 +385,7 @@ In trying to reproduce people in the team introduced a non-serializable object, 
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post . In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
-&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
-&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
-Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
+      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
     </item>
     
     <item>
@@ -383,40 +404,18 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
-One of those topics has been Xerces and Xalan.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics. One of those topics has been Xerces and Xalan.</description>
     </item>
     
     <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      <title>My first Chrome extension(II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
+      <pubDate>Fri, 14 Sep 2012 21:02:31 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
-And that solution is wrong. Very wrong.
-Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
-    </item>
-    
-    <item>
-      <title>Xerces, Xalan and Saxon, more recipes</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
-
-In my previous post I explained how to make Java choose a class for a parser.</description>
+      <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
+      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
+First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
+Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json . It tells the extension name and the permissions asked. It also points to the main file.</description>
     </item>
     
     <item>
@@ -428,17 +427,6 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information . However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me.
 And I got tired.
 And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &amp;ldquo;first-paragraph-only&amp;rdquo;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
-    </item>
-    
-    <item>
-      <title>My first Chrome extension(II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
-      <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
-      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
-First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
-Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json . It tells the extension name and the permissions asked. It also points to the main file.</description>
     </item>
     
     <item>
@@ -509,13 +497,7 @@ There is some controversy about editor to use for ruby. Some people prefer Vim+t
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
       <description>As I wrote in a previous post , I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
-
-PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F
-MOVE -&amp;gt;Move the robot 1 cell in the facing direction
-LEFT -&amp;gt;Changes the facing counter-clockwise
-RIGHT -&amp;gt;Changes the facing clockwise
-REPORT -&amp;gt;Shows the current position and facing
-and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
+ PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F MOVE -&amp;gt;Move the robot 1 cell in the facing direction LEFT -&amp;gt;Changes the facing&amp;nbsp;counter-clockwise RIGHT -&amp;gt;Changes the facing clockwise REPORT -&amp;gt;Shows the current position and facing and the main requirement was that the robot didn&#39;t fall outside the board.</description>
     </item>
     
     <item>
@@ -535,20 +517,7 @@ Another similar tool would be online testing web applications such as codility .
       <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-16-javascript-all-way/</guid>
-      <description>These days I&amp;rsquo;m playing with NodeJS.
-And today I was thinking about the fundamental change in Javascript.
-A few years ago it was a darn language for the web.
-Now someone could query a database using Javascript (CouchDB ), create the server portion of a web application using Javascipt(NodeJS ), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium ).</description>
-    </item>
-    
-    <item>
-      <title>Why LinkedIn breach is so important?</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</link>
-      <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
-      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised.
-We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
+      <description>These days I&amp;rsquo;m playing with NodeJS. And today I was thinking about the fundamental change in Javascript. A few years ago it was a darn language for the web. Now someone could query a database using Javascript (CouchDB ), create the server portion of a web application using Javascipt(NodeJS ), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium ).</description>
     </item>
     
     <item>

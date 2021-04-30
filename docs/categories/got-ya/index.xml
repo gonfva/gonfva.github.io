@@ -100,8 +100,7 @@ The following is my visualization of the whole process (this is less than a week
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory
-The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
     </item>
     
     <item>
@@ -110,9 +109,7 @@ The issue was not related to Sphinx, but to a related connection between PHP/Sym
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp;
-I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp;
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+      <description>I&#39;m happy.&amp;nbsp; I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp; I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
     </item>
     
     <item>
@@ -162,8 +159,38 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
       <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066)
-In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Sun, 23 Sep 2012 11:47:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
+And that solution is wrong. Very wrong.
+Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Sun, 23 Sep 2012 11:47:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+ In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Sun, 23 Sep 2012 11:46:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
+Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
@@ -172,10 +199,7 @@ In trying to reproduce people in the team introduced a non-serializable object, 
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lostLook through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.If you are not despite correct annotations, see this post . In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;rdquo;&amp;gt;
-&amp;lt;beans:bean class=&amp;ldquo;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;rdquo;&amp;gt;
-&amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt;
-Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
+      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
     </item>
     
     <item>
@@ -194,40 +218,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics.
-One of those topics has been Xerces and Xalan.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
-    </item>
-    
-    <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
-And that solution is wrong. Very wrong.
-Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
-    </item>
-    
-    <item>
-      <title>Xerces, Xalan and Saxon, more recipes</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
-
-In my previous post I explained how to make Java choose a class for a parser.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics. One of those topics has been Xerces and Xalan.</description>
     </item>
     
     <item>

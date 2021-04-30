@@ -267,7 +267,7 @@ When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it 
       
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
       <description>A few months ago,I upgraded the firmware for my Sony Xperia U . It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates .
-I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&amp;rsquo;t know is that today&amp;rsquo;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&amp;rsquo;s update yet.</description>
+I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&#39;t know is that today&#39;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&#39;s update yet.</description>
     </item>
     
     <item>
@@ -310,9 +310,7 @@ Even Google Wave was revolutionary although the launch was a big failure, and th
       <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</guid>
-      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb .
-Overall it has been a nice experience, but I wanted to share some thoughts about it.
-On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
+      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb . Overall it has been a nice experience, but I wanted to share some thoughts about it. On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
     </item>
     
     <item>
@@ -326,6 +324,15 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
     </item>
     
     <item>
+      <title>Techzing wives</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</link>
+      <pubDate>Thu, 20 Sep 2012 20:36:19 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</guid>
+      <description>I tend to listen Techzing podcast . It&amp;rsquo;s a podcast about very different topics, recorded by two geeks, (or developers, and entrepeneurs). I don&amp;rsquo;t remember when I started listening them. I do remember I started because I wanted to practice English and it was great (Justin is an Englishman and Jason is American). Soon I forgot why: they were great by themselves. The topics are very diverse from Technology, Entrepenurship, Politics (Loom and Gloom Report), Education, Genetics&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>No more applets</title>
       <link>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</link>
       <pubDate>Mon, 03 Sep 2012 22:06:06 +0000</pubDate>
@@ -336,13 +343,22 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
     </item>
     
     <item>
+      <title>Why LinkedIn breach is so important?</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</link>
+      <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
+      <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised.
+We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>My first mobile application</title>
       <link>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</link>
       <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</guid>
-      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
-Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
+      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons. Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
     </item>
     
     <item>
@@ -351,8 +367,7 @@ Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But to
       <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</guid>
-      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce.
-More recently I&amp;rsquo;ve started with mobile development . I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
+      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce. More recently I&amp;rsquo;ve started with mobile development . I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
     </item>
     
     <item>
