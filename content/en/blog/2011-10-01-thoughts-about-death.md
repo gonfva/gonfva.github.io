@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2011/10/thoughts-about-death.html
 title: "Thoughts about a death"
 date: 2011-10-01T20:58:36
 comments: false

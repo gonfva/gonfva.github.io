@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tipping point"
+previous: https://gonfva.blogspot.com/2014/03/tipping-point.html
 date: 2014-03-12T18:54:24
 comments: false
 categories: [Developer, got ya, Personal]

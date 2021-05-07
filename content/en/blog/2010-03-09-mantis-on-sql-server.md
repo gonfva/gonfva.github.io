@@ -1,5 +1,6 @@
 ---
 title: "Mantis on SQL Server"
+previous: https://gonfva.blogspot.com/2010/03/mantis-on-sql-server.html
 date: 2010-03-09T11:45:46
 categories:
   - Developer

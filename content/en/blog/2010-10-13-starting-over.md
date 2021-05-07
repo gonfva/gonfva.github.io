@@ -1,4 +1,5 @@
 ---
+previous: https://gonfva.blogspot.com/2010/10/starting-over.html
 title: "Starting over"
 date: 2010-10-13T18:14:45
 categories:

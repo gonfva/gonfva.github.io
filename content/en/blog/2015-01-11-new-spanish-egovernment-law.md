@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Spanish  eGovernment law"
+previous: https://gonfva.blogspot.com/2015/01/new-spanish-egovernment-law.html
 date: 2015-01-11T22:36:23
 comments: false
 categories: [Politics, Civil service]

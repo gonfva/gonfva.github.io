@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Multithreading: Warning lights"
+previous: https://gonfva.blogspot.com/2014/01/multithreading-warning-lights.html
 date: 2014-01-21T12:17:35
 comments: false
 categories: [Developer, Jobs]

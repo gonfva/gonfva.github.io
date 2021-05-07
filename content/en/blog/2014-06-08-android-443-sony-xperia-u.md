@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Android 4.4.3: Sony Xperia U"
+previous: https://gonfva.blogspot.com/2014/06/android-443-sony-xperia-u.html
 date: 2014-06-08T21:23:54
 comments: false
 categories: Technology

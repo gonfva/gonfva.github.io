@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Scala: First impressions"
+previous: https://gonfva.blogspot.com/2014/06/scala-first-impressions.html
 date: 2014-06-08T22:05:32
 comments: false
 categories: Developer

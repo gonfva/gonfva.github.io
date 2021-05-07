@@ -1,5 +1,6 @@
 ---
 title: "What can I do for my country"
+previous: https://gonfva.blogspot.com/2009/05/
 date: 2009-05-26T22:03:13
 categories:
   - Politics

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2014/04/pdoexception.html
 title: "PDOException"
 date: 2014-04-24T15:49:30
 comments: false

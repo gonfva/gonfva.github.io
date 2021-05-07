@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Agile is about managing risk"
+previous: https://gonfva.blogspot.com/2014/10/agile-is-about-managing-risk.html
 date: 2014-10-04T14:12:09
 comments: false
 categories: Developer

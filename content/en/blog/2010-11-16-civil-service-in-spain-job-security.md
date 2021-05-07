@@ -1,5 +1,6 @@
 ---
 date: 2010-11-16T21:48:41
+previous: https://gonfva.blogspot.com/2010/11/civil-service-in-spain-job-security.html
 categories: [Civil service, Spain]
 tags:
   - Personal

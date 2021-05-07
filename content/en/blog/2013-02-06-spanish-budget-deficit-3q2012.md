@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Spanish budget deficit, 3Q2012"
+previous: https://gonfva.blogspot.com/2013/02/spanish-budget-deficit-3q2012.html
 date: 2013-02-06T18:57:33
 comments: false
 categories: Politics

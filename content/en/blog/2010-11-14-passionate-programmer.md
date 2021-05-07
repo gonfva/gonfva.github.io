@@ -1,5 +1,6 @@
 ---
 date: 2010-11-14T17:01:56
+previous: https://gonfva.blogspot.com/2010/11/passionate-programmer.html
 categories:
   - Personal
 tags:

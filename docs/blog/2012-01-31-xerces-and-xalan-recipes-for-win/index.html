@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Xerces and Xalan: Recipes for the win | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Xerces and Xalan: Recipes for the win" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Xerces and Xalan: Recipes for the win",
+      "headline" : "Xerces and Xalan: Recipes for the win",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2012",
+      "datePublished": "2012-01-31 14:38:05 \u002b0000 UTC",
+      "dateModified" : "2012-01-31 14:38:05 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-01-31-xerces-and-xalan-recipes-for-win\/",
+      "wordCount" : "322",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Xerces and Xalan: Recipes for the win</h1>
+            
+            <time datetime="2012-01-31 14:38:05 &#43;0000 UTC" class="post__date">2012-01-31</time> 
+          </header>
+          <article class="post__content">
+              
+<p>OK. I have explained <a href="https://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>why Xerces and Xalan are a source of problems</a>
+, and I have explained why <a href="https://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_29.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>you shouldn&rsquo;t use System.setProperty to resolve</a>
+ them. In this post I wan&rsquo;t to give a few recipes to resolve Xerces and Xalan problems.</p>
+<ol><li>Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you'll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.springsource.org/spring-ws/site/faq.html#saaj-weblogic10) too). If you need a specific parser, do it at container level (2nd&nbsp; point), at application level (3rd point) or at the specific code (4th point).</li><li>If you have to define any property do it at the start of the container or the server. For example, in Weblogic 10.3.3 in Windows, we had to edit the file startWeblogic.cmd at the domain path, inserting the following line</li><ol>
+</ol>set JAVA_OPTIONS=-Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+<p>Sometimes you don&rsquo;t need to do it at the container/server level. In Weblogic you can use something called <a href="http://docs.oracle.com/cd/E11035_01/wls100/xml/admin.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>XML registry that enable a different parser for a particular Document Type</a>
+. <li>Sometimes you can define the parser at the application level. For example, in Weblogic you can define a specific weblogic-application.xml with the following text:</p>
+<blockquote style="color: #1f497d; font-family: 'Courier New'; font-size: 8pt;">&lt;?xml version = '1.0' encoding = 'UTF-8'?&gt;
+&lt;weblogic-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/javaee_5.xsd
+http://xmlns.oracle.com/weblogic/weblogic-application
+http://xmlns.oracle.com/weblogic/weblogic-application/1.1/weblogic-application.xsd"
+xmlns="http://xmlns.oracle.com/weblogic/weblogic-application"&gt;
+&lt;xml&gt;
+&lt;parser-factory&gt;
+&lt;saxparser-factory&gt;org.apache.xerces.jaxp.SAXParserFactoryImpl&lt;/saxparser-factory&gt;
+&lt;document-builder-factory&gt;org.apache.xerces.jaxp.DocumentBuilderFactoryImpl&lt;/document-builder-factory&gt;
+&lt;transformer-factory&gt;net.sf.saxon.TransformerFactoryImpl&lt;/transformer-factory&gt;
+&lt;/parser-factory&gt;
+&lt;/xml&gt;
+&lt;/weblogic-application&gt; </blockquote></li><li>When somebody needs a specific property for a factory and is not possible to modify the container or the application, the solution is not to do a System.setProperty (see 1st bullet), but to instantiantiate the specific factory. For exmaple, instead of doing
+<p><span lang="EN-US" style="color: #1f497d; font-family: 'Courier New'; font-size: 8pt;">import net.sf.saxon.TransformerFactoryImpl;
+System.setProperty(&ldquo;javax.xml.transform.TransformerFactory&rdquo;,
+      &ldquo;net.sf.saxon.TransformerFactoryImpl&rdquo;)
+TransformerFactory tf= TransformerFactory.newInstance();</span></p>
+<p>you should do</p>
+<p><span lang="EN-US" style="color: #1f497d; font-family: 'Courier New'; font-size: 8pt;">import net.sf.saxon.TransformerFactoryImpl;
+TransformerFactory tf=new TransformerFactoryImp();</span></li></p>
+<li>In the long run, it should be great to use&nbsp;mechanisms&nbsp;to prevent using System.setProperty like this link&nbsp;[http://stackoverflow.com/a/4208150/54256](http://stackoverflow.com/a/4208150/54256)</li></ol><div><b>Update (2012-10-01)</b>: I see lots of visits to this page. Maybe you should visit&nbsp;</div><div>
+</div><div>[https://gonfva.blogspot.com.es/2012/07/xerces-xalan-and-saxon-more-recipes.html](https://gonfva.blogspot.com.es/2012/07/xerces-xalan-and-saxon-more-recipes.html)</div><div>
+</div><div>too</div>
+
+
+              
+          </article>
+          <br><br>
+          <div class="three-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="three-dots">I first published this post <a href="https://gonfva.blogspot.com/2012/01/xerces-and-xalan-recipes-for-win.html">in my old blog</a></p>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2012-03-23-synchronized-silver-bullet/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >The synchronized silver bullet</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/gonfva"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

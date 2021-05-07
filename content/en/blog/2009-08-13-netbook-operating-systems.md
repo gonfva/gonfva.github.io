@@ -1,5 +1,6 @@
 ---
 title: "Netbook Operating Systems"
+previous: https://gonfva.blogspot.com/2009/08/netbook-operating-systems.html
 date: 2009-08-13T22:01:25
 categories:
   - Technology

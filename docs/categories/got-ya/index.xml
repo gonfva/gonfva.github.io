@@ -83,18 +83,6 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
     </item>
     
     <item>
-      <title>Firmware upgrade for Xperia U in Linux (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</link>
-      <pubDate>Sun, 08 Jun 2014 21:27:19 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2014-06-08-firmware-upgrade-for-xperia-u-in-linux/</guid>
-      <description>[Long post]
-Edited (08th-Jun-2014): Updated the firmware download site.
-In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic.
-The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
-    </item>
-    
-    <item>
       <title>PDOException</title>
       <link>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
@@ -123,33 +111,25 @@ In the last week or so, I&amp;rsquo;ve been hitting against a wall because of tw
     </item>
     
     <item>
-      <title>Firmware upgrade for Xperia U in Linux (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</link>
-      <pubDate>Tue, 26 Nov 2013 20:42:53 +0000</pubDate>
+      <title>Firmware upgrade for Xperia U in Linux (II)</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</link>
+      <pubDate>Tue, 26 Nov 2013 21:27:19 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</guid>
+      <description>[Long post]
+Edited (08th-Jun-2014): Updated the firmware download site.
+In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic.
+The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
+    </item>
+    
+    <item>
+      <title>Firmware upgrade for Xperia U in Linux (I)</title>
+      <link>http://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</link>
+      <pubDate>Sun, 24 Nov 2013 20:42:53 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
       <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.
 Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions).</description>
-    </item>
-    
-    <item>
-      <title>Xerces and Xalan: Recipes for the win</title>
-      <link>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</link>
-      <pubDate>Mon, 01 Oct 2012 14:38:05 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-10-01-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems , and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
-Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
-    </item>
-    
-    <item>
-      <title>Weird IE9 bug</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</link>
-      <pubDate>Sun, 30 Sep 2012 11:09:01 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
     </item>
     
     <item>
@@ -163,62 +143,82 @@ javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &am
     </item>
     
     <item>
-      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</link>
-      <pubDate>Sun, 23 Sep 2012 11:47:46 +0000</pubDate>
+      <title>Weird IE9 bug</title>
+      <link>http://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</link>
+      <pubDate>Sat, 22 Sep 2012 11:09:01 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_29/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
+      <description>This last two weeks I have dealt with a weird bug in IE9.
+The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+    </item>
+    
+    <item>
+      <title>Savon.rb and sequences</title>
+      <link>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</link>
+      <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing . So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
+    </item>
+    
+    <item>
+      <title>Xerces, Xalan and Saxon, more recipes</title>
+      <link>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</link>
+      <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+ In my previous post I explained how to make Java choose a class for a parser.</description>
+    </item>
+    
+    <item>
+      <title>Xerces and Xalan: Recipes for the win</title>
+      <link>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</link>
+      <pubDate>Tue, 31 Jan 2012 14:38:05 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems , and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
+Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
+    </item>
+    
+    <item>
+      <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</title>
+      <link>http://gonzalo.f-v.es/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/</link>
+      <pubDate>Sun, 29 Jan 2012 11:47:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/</guid>
       <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
 And that solution is wrong. Very wrong.
 Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
     </item>
     
     <item>
-      <title>Xerces, Xalan and Saxon, more recipes</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</link>
-      <pubDate>Sun, 23 Sep 2012 11:47:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
- In my previous post I explained how to make Java choose a class for a parser.</description>
-    </item>
-    
-    <item>
       <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</link>
-      <pubDate>Sun, 23 Sep 2012 11:46:46 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</link>
+      <pubDate>Wed, 18 Jan 2012 11:46:46 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i_18/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
       <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
 Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
-      <title>Notes to a newbie spring-mvc developer</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
-    </item>
-    
-    <item>
-      <title>Savon.rb and sequences</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing . So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
-I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
-    </item>
-    
-    <item>
       <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</link>
-      <pubDate>Sun, 23 Sep 2012 11:45:46 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</link>
+      <pubDate>Wed, 18 Jan 2012 11:45:46 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-09-23-things-about-xerces-xalan-and-saxon-i/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</guid>
       <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics. One of those topics has been Xerces and Xalan.</description>
+    </item>
+    
+    <item>
+      <title>Notes to a newbie spring-mvc developer</title>
+      <link>http://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</link>
+      <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
+      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
     </item>
     
     <item>

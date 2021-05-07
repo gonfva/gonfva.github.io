@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "OptionalDataException while reading JMS message"
+previous: https://gonfva.blogspot.com/2012/09/optionaldataexception-while-reading-jms.html
 date: 2012-09-24T19:33:00
 comments: false
 categories: [Developer, got ya]

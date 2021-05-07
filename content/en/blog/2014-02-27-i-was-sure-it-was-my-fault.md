@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2014/02/i-was-sure-it-was-my-fault.html
 title: "I was sure it was my fault..."
 date: 2014-02-27T19:27:04
 comments: false

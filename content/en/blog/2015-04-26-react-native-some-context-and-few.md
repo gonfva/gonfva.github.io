@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "React-native: some context and a few wrinkles"
+previous: https://gonfva.blogspot.com/2015/04/react-native-some-context-and-few.html
 date: 2015-04-26T11:48:49
 comments: false
 categories: Developer

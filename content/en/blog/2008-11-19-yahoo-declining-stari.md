@@ -1,5 +1,6 @@
 ---
 title: "Yahoo: A declining star(I)"
+previous: https://gonfva.blogspot.com/2008/11/yahoo-declining-stari.html
 date: 2008-11-19T18:00:00
 categories:
   - Technology

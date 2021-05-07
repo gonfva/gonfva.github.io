@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Little robot (II): Java version"
+previous: https://gonfva.blogspot.com/2012/08/little-robot-ii-java-version.html
 date: 2012-08-19T17:00:02
 comments: false
 categories: Developer
@@ -8,7 +9,7 @@ tags:
     - Developer
 ---
 
-As I wrote in a [previous post](http://gonfva.blogspot.com/2012/08/little-robot-i.html), I was asked to&nbsp;design a software managing a robot inside a board of 5x5 cells. The typical commands were
+As I wrote in a [previous post](https://gonfva.blogspot.com/2012/08/little-robot-i.html), I was asked to&nbsp;design a software managing a robot inside a board of 5x5 cells. The typical commands were
 <div>
 <div style="text-align: left;"><blockquote class="tr_bq">PLACE X,Y,F -&gt;Places the robot in the x,y position facing F
 MOVE -&gt;Move the robot 1 cell in the facing direction

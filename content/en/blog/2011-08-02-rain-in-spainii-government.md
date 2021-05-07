@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2011/08/rain-in-spainii-government.html
 title: "The rain in Spain(II): Government"
 date: 2011-08-02T21:01:47
 comments: false

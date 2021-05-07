@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2011/08/rain-in-spaini.html
 title: "The rain in Spain(I)"
 date: 2011-08-01T20:16:50
 comments: false

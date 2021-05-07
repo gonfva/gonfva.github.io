@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What recruiters taught me about looking for a job"
+previous: https://gonfva.blogspot.com/2015/01/what-recruiters-taught-me-about-looking.html
 date: 2015-01-06T16:31:37
 comments: false
 categories: [Jobs, Personal]

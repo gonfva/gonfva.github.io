@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2014/05/good-examples.html
 title: "Good examples"
 date: 2014-05-09T19:30:05
 comments: false

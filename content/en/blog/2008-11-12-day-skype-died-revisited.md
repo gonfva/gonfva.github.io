@@ -1,5 +1,6 @@
 ---
 title: "'The day Skype died' revisited"
+previous: https://gonfva.blogspot.com/2008/11/day-skype-died-revisited.html
 date: 2008-11-12T18:00:00
 categories:
   - Technology

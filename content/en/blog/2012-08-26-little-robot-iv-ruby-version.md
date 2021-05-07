@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Little robot (IV): Ruby version"
+previous: https://gonfva.blogspot.com/2012/08/little-robot-iv-ruby-version.html
 date: 2012-08-26T20:00:02
 comments: false
 categories: Developer
@@ -8,7 +9,7 @@ tags:
     - Developer
 ---
 
-Besides the [console faking](http://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html) and the [dependency inversion issue](http://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html), my code in Ruby was pretty rough. You can see here [the version I sent](https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb).
+Besides the [console faking](https://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html) and the [dependency inversion issue](https://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html), my code in Ruby was pretty rough. You can see here [the version I sent](https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb).
 
 
 One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.

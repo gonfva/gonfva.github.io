@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2012/10/crash-course-on-spring-mvc-transactions.html
 title: "Crash course on Spring MVC, transactions and persistence (I)"
 date: 2012-10-01T19:28:00
 comments: false

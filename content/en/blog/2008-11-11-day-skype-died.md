@@ -1,5 +1,6 @@
 ---
 title: "The day Skype died"
+previous: https://gonfva.blogspot.com/2008/11/day-skype-died.html
 date: 2008-11-11T18:00:00
 categories:
   - Technology

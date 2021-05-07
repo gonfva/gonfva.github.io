@@ -1,6 +1,7 @@
 ---
 title: "What is this?"
 date: 2008-11-04T18:00:00
+previous: https://gonfva.blogspot.com/2008/11/what-is-this.html
 categories:
   - This blog
 tags:

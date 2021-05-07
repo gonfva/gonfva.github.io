@@ -1,5 +1,6 @@
 ---
 title: "God help us"
+previous: https://gonfva.blogspot.com/2009/09/god-help-us.html
 date: 2009-09-03T18:23:51
 categories:
   - Spain
@@ -8,7 +9,7 @@ tags:
 ---
 
 It turns out that I was wrong when I wrote
-[last week's post](http://gonfva.blogspot.com/2009/08/lies-damn-lies-and-statistics.html). Well, maybe I came to a rather good end result but for the wrong reasons:
+[last week's post](https://gonfva.blogspot.com/2009/08/lies-damn-lies-and-statistics.html). Well, maybe I came to a rather good end result but for the wrong reasons:
 
 1. Income data from May 2009 (and probably June) was tricky because taxes returns were accelerated so that [people could vote](http://www.elecciones.mir.es/europeas2009/) with their money back in the pocket.
 

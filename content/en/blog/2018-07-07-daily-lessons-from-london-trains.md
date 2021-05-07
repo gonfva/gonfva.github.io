@@ -43,7 +43,7 @@ People tends to blame the private franchises. I myself has fantasied with launch
 
 But in truth, if we want to discuss that question, blame should be much more spread. At least [half of the delays are caused by “Engineering problem”](https://www.economist.com/britain/2016/07/28/going-south) (buy your own “Engineering problem” T-shirt [with a discount for London commuters](#I%27m%20joking%20but%20I%20could%20probably%20get%20rich)). Engineering problems are dealt by a government-owned company. And probably that’s part of the problem. In fact, the [new Joint Teams that are being introduced](https://www.gov.uk/government/news/better-journeys-for-south-eastern-rail-passengers) go in that direction.
 
-**Parallels**: I remember a bug [I discovered in IE9](http://gonfva.blogspot.com/2012/09/weird-ie9-bug.html). App not mine, but VIP user (and a bit obnoxious). It turns out the user was wrong at blaming the developers, the developers were wrong at blaming the user.
+**Parallels**: I remember a bug [I discovered in IE9](https://gonfva.blogspot.com/2012/09/weird-ie9-bug.html). App not mine, but VIP user (and a bit obnoxious). It turns out the user was wrong at blaming the developers, the developers were wrong at blaming the user.
 
 **Lesson 1:** Sometimes in the corporate world, (and to a lesser extent in the startup world), when there’s a problem “It’s not my fault” is not an answer. Let’s first try to solve the problem and then let’s see why it happened and how to avoid happening in the future.
 

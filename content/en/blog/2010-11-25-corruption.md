@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Corruption"
+previous: https://gonfva.blogspot.com/2010/11/corruption.html
 date: 2010-11-25T06:45:11
 tags:
   - Politics

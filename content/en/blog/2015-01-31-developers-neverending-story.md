@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Developers - The neverending story"
+previous: https://gonfva.blogspot.com/2015/01/developers-neverending-story.html
 date: 2015-01-31T20:33:01
 comments: false
 categories: Developer

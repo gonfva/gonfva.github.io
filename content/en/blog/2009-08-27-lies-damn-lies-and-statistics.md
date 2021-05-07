@@ -1,5 +1,6 @@
 ---
 title: "Lies, damn lies and statistics"
+previous: https://gonfva.blogspot.com/2009/08/lies-damn-lies-and-statistics.html
 date: 2009-08-27T22:02:34
 categories:
   - Politics

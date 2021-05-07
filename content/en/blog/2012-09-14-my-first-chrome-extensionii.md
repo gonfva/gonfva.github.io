@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My first Chrome extension(II)"
+previous: https://gonfva.blogspot.com/2012/09/my-first-chrome-extensionii.html
 date: 2012-09-14T21:02:31
 comments: false
 categories: Developer
@@ -8,7 +9,7 @@ tags:
     - Developer
 ---
 
-In [last post](http://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html) I wrote why. In this post I want to explain how I wrote my first chrome extension.
+In [last post](https://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html) I wrote why. In this post I want to explain how I wrote my first chrome extension.
 
 
 First. The Chrome Extensions&nbsp;[developer's documentation](http://developer.chrome.com/extensions/getstarted.html) is quite good.

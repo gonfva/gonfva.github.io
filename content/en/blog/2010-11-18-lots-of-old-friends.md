@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lots of old friends"
+previous: https://gonfva.blogspot.com/2010/11/lots-of-old-friends.html
 date: 2010-11-18T21:30:39
 tags:
   - Personal

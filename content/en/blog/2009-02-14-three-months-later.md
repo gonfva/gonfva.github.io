@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Three months later"
+previous: https://gonfva.blogspot.com/2009/02/three-months-later.html
 date: 2009-02-14T18:00:00
 categories:
   - This blog

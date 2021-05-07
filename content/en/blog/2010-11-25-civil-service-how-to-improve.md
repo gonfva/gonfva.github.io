@@ -2,11 +2,11 @@
 layout: post
 title: "Civil service: How to improve"
 date: 2010-11-25T20:38:03
-comments: false
+previous: https://gonfva.blogspot.com/2010/11/civil-service-how-to-improve.html
 categories: [Civil service, Spain]
 ---
 
-A few days ago [I promised to explain some of my ideas](http://gonfva.blogspot.com/2010/11/civil-service-in-spain-productivity.html) to improve the civil service in Spain. Of course there is no silver bullet. Instead, as you can see the links, all the bricks are in place:
+A few days ago [I promised to explain some of my ideas](https://gonfva.blogspot.com/2010/11/civil-service-in-spain-productivity.html) to improve the civil service in Spain. Of course there is no silver bullet. Instead, as you can see the links, all the bricks are in place:
 
 
 

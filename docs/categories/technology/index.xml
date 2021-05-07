@@ -272,10 +272,10 @@ I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I
     
     <item>
       <title>Maximizing Macbook Pro&#39;s battery</title>
-      <link>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</link>
-      <pubDate>Wed, 28 May 2014 23:13:29 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2014-05-29-maximizing-macbook-pros-battery/</link>
+      <pubDate>Thu, 29 May 2014 23:13:29 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2014-05-28-maximizing-macbook-pros-battery/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2014-05-29-maximizing-macbook-pros-battery/</guid>
       <description>I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery.
 So when I got my shiny brand new Mac, I decided I had to look after the battery.
 And I read everything I could find about how to take care Macbook&amp;rsquo;s battery.
@@ -294,36 +294,6 @@ On one side, Facebook and Whatsapp. $19 billion. There are many different opinio
     </item>
     
     <item>
-      <title>Google, where are you going?</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</link>
-      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</guid>
-      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
-I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;.
-Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
-    </item>
-    
-    <item>
-      <title>Some thoughts about Tecnimap 2010</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</link>
-      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</guid>
-      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb . Overall it has been a nice experience, but I wanted to share some thoughts about it. On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
-    </item>
-    
-    <item>
-      <title>Spring course</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</link>
-      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</guid>
-      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
-I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
-    </item>
-    
-    <item>
       <title>Techzing wives</title>
       <link>http://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</link>
       <pubDate>Thu, 20 Sep 2012 20:36:19 +0000</pubDate>
@@ -334,40 +304,70 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
     
     <item>
       <title>No more applets</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</link>
-      <pubDate>Mon, 03 Sep 2012 22:06:06 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</link>
+      <pubDate>Sun, 02 Sep 2012 22:06:06 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-09-03-no-more-applets/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</guid>
       <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications.
  One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
     </item>
     
     <item>
       <title>Why LinkedIn breach is so important?</title>
-      <link>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</link>
-      <pubDate>Thu, 16 Aug 2012 22:00:04 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2012-06-07-why-linkedin-breach-is-so-important/</link>
+      <pubDate>Thu, 07 Jun 2012 22:00:04 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-08-16-why-linkedin-breach-is-so-important/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-06-07-why-linkedin-breach-is-so-important/</guid>
       <description>It&amp;rsquo;s widely spread that there has been a security breach in LinkedIn. At least there is a file with passwords in that social network. Even LinkedIn acknowledges it and suggests it will try to alert users whose passwords have been compromised.
 We know that, and we know passwords were not in the clear (they were stored hashed), but they weren&amp;rsquo;t quite protected (they weren&amp;rsquo;t salted). My own password was on the file and had been &amp;ldquo;unhashed&amp;rdquo;.</description>
     </item>
     
     <item>
-      <title>My first mobile application</title>
-      <link>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</link>
-      <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
+      <title>Google, where are you going?</title>
+      <link>http://gonzalo.f-v.es/blog/2012-05-14-google-where-are-you-going/</link>
+      <pubDate>Mon, 14 May 2012 15:18:46 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-05-02-my-first-mobile-application/</guid>
-      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons. Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
+      <guid>http://gonzalo.f-v.es/blog/2012-05-14-google-where-are-you-going/</guid>
+      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
+I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;.
+Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
     </item>
     
     <item>
       <title>When companies just don&#39;t get it</title>
-      <link>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</link>
-      <pubDate>Wed, 02 May 2012 19:31:33 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2012-01-08-when-companies-just-dont-get-it/</link>
+      <pubDate>Sun, 08 Jan 2012 19:31:33 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-05-02-when-companies-just-dont-get-it/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-01-08-when-companies-just-dont-get-it/</guid>
       <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce. More recently I&amp;rsquo;ve started with mobile development . I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
+    </item>
+    
+    <item>
+      <title>My first mobile application</title>
+      <link>http://gonzalo.f-v.es/blog/2011-12-04-my-first-mobile-application/</link>
+      <pubDate>Sun, 04 Dec 2011 19:31:33 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2011-12-04-my-first-mobile-application/</guid>
+      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons. Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
+    </item>
+    
+    <item>
+      <title>Spring course</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-23-spring-course/</link>
+      <pubDate>Tue, 23 Nov 2010 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-23-spring-course/</guid>
+      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
+I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts about Tecnimap 2010</title>
+      <link>http://gonzalo.f-v.es/blog/2010-04-11-some-thoughts-about-tecnimap-2010/</link>
+      <pubDate>Sun, 11 Apr 2010 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-04-11-some-thoughts-about-tecnimap-2010/</guid>
+      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb . Overall it has been a nice experience, but I wanted to share some thoughts about it. On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
     </item>
     
     <item>

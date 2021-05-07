@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Year's resolutions ... in August"
+previous: https://gonfva.blogspot.com/2009/08/new-years-resolutions-in-august.html
 date: 2009-08-20T22:20:15
 categories:
   - Personal

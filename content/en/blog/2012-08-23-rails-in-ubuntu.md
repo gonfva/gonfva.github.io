@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rails in Ubuntu"
+previous: https://gonfva.blogspot.com/2012/08/rails-in-ubuntu.html
 date: 2012-08-23T12:31:19
 comments: false
 categories: Developer

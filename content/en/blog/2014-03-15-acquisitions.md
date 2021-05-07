@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Acquisitions"
+previous: https://gonfva.blogspot.com/2014/03/acquisitions.html
 date: 2014-03-15T19:31:00
 comments: false
 categories: Technology

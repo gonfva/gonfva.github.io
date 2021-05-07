@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.blogspot.com/2012/12/driving-in-uk.html
 title: "Driving in the UK"
 date: 2012-12-15T19:47:50
 comments: false
@@ -10,7 +11,7 @@ tags:
 ---
 
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-uSdAKZZk4q8/UMzFl2iSPZI/AAAAAAAAAYo/biTxEmCNF4Q/s1600/DSC_0066.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="180" src="http://2.bp.blogspot.com/-uSdAKZZk4q8/UMzFl2iSPZI/AAAAAAAAAYo/biTxEmCNF4Q/s320/DSC_0066.jpg" width="320" /></a></div>
-<div>Today I r[ented a car for a few hours](http://www.zipcar.com/). I used to drive in Spain, but I hadn't driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture.</div><div>
+<div>Today I [rented a car for a few hours](http://www.zipcar.com/). I used to drive in Spain, but I hadn't driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture.</div><div>
 </div><div>There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).&nbsp;</div><div>
 </div><div>First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.&nbsp;</div><div>
 </div><div>Second, people drive on the left of the road while in many other countries is on the right.</div><div>

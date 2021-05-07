@@ -19,32 +19,13 @@
     
     <item>
       <title>Google, where are you going?</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</link>
-      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
+      <link>http://gonzalo.f-v.es/blog/2012-05-14-google-where-are-you-going/</link>
+      <pubDate>Mon, 14 May 2012 15:18:46 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-google-where-are-you-going/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2012-05-14-google-where-are-you-going/</guid>
       <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
 I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;.
 Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
-    </item>
-    
-    <item>
-      <title>Some thoughts about Tecnimap 2010</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</link>
-      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-some-thoughts-about-tecnimap-2010/</guid>
-      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb . Overall it has been a nice experience, but I wanted to share some thoughts about it. On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
-    </item>
-    
-    <item>
-      <title>Spring course</title>
-      <link>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</link>
-      <pubDate>Sun, 30 Sep 2012 15:18:46 +0000</pubDate>
-      
-      <guid>http://gonzalo.f-v.es/blog/2012-09-30-spring-course/</guid>
-      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
-I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
     </item>
     
     <item>
@@ -55,6 +36,16 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
       <guid>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</guid>
       <description>A few days ago I promised to explain some of my ideas to improve the civil service in Spain. Of course there is no silver bullet. Instead, as you can see the links, all the bricks are in place:
 Try to introduce economic incentives. [People who work should be rewarded](http://noticias.juridicas.com/base_datos/Admin/l7-2007.t3.html#a24). Of course that could be misused to give more money to friends instead of giving it to the people who work.</description>
+    </item>
+    
+    <item>
+      <title>Spring course</title>
+      <link>http://gonzalo.f-v.es/blog/2010-11-23-spring-course/</link>
+      <pubDate>Tue, 23 Nov 2010 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-11-23-spring-course/</guid>
+      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
+I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog. But we two were trying to keep up the frenetic pace the teacher is imposing. I had already used Spring, but up to now I didn&amp;rsquo;t suppose who little did I know about Spring, about TDD, or even about Eclipse.</description>
     </item>
     
     <item>
@@ -74,6 +65,15 @@ Try to introduce economic incentives. [People who work should be rewarded](http:
       <guid>http://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</guid>
       <description>I&amp;rsquo;m a civil servant. Civil servants in Spain can&amp;rsquo;t be fired. Well, in fact they can be fired , but only because of extremely serious infringements , and after a complicated procedure.
 This protection is intended to give security so that one civil servant can oppose employee&amp;rsquo;s chief orders if the employee thinks that what is being ordered is illegal. Let&amp;rsquo;s imagine I&amp;rsquo;m asked to delete certain documents in some repository.</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts about Tecnimap 2010</title>
+      <link>http://gonzalo.f-v.es/blog/2010-04-11-some-thoughts-about-tecnimap-2010/</link>
+      <pubDate>Sun, 11 Apr 2010 15:18:46 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2010-04-11-some-thoughts-about-tecnimap-2010/</guid>
+      <description>I’ve been a couple of days in Zaragoza (Spain), participating in Tecnimap 2010 last week. Tecnimap is a conference on IT for the Public Administration in Spain. I had presented a paper about one of the applications I manage: DocelWeb . Overall it has been a nice experience, but I wanted to share some thoughts about it. On a personal level, I think I was wrong in my planning. I planned to assist to few conferences and talks that I really wanted to assist, and scheduled the rest of the time for relationships and stands.</description>
     </item>
     
   </channel>

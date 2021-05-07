@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Developers are from Mars, users from Venus"
+previous: https://gonfva.blogspot.com/2015/01/developers-are-from-mars-users-from.html
 date: 2015-01-02T13:39:00
 comments: false
 categories: Developer

@@ -1,5 +1,6 @@
 ---
 title: "More Mantis problems"
+previous: https://gonfva.blogspot.com/2010/03/more-mantis-problems.html
 date: 2010-03-29T11:45:46
 categories:
   - Developer

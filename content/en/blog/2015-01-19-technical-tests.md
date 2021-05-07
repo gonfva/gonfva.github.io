@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Technical tests"
+previous: https://gonfva.blogspot.com/2015/01/technical-tests.html
 date: 2015-01-19T19:39:19
 comments: false
 categories: Jobs

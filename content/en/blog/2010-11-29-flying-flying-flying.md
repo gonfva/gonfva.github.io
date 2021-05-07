@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Flying, flying, flying"
+previous: https://gonfva.blogspot.com/2010/11/flying-flying-flying.html
 date: 2010-11-29T21:02:51
 tags:
   - Personal

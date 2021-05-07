@@ -20,3 +20,27 @@ img + em {
 .pic-left {
   float: none;
 }
+.three-dots {
+  text-align: center;
+}
+
+.three-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: black;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+span.first {
+  background-color: green;
+  width: 10px;
+  height: 10px;
+}
+
+span.third {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+}

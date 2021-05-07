@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Little robot (I)"
+previous: https://gonfva.blogspot.com/2012/08/little-robot-i.html
 date: 2012-08-17T12:17:00
 comments: false
 categories: Developer
@@ -8,7 +9,7 @@ tags:
     - Developer
 ---
 
-While [applying to a position](http://gonfva.blogspot.com.es/2012/08/a-great-experience-applying-to-position.html) a few days ago, I received an assignment trying to test my coding style.
+While [applying to a position](https://gonfva.blogspot.com.es/2012/08/a-great-experience-applying-to-position.html) a few days ago, I received an assignment trying to test my coding style.
 
 
 IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy&nbsp;programming&nbsp;tasks that show if somebody is able to code ([it seems many of us can't](http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html)), and what's his/her style.
