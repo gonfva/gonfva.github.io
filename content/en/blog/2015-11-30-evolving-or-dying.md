@@ -5,6 +5,7 @@ date: 2015-11-30T18:00:00
 tags:
   - Technology
 categories: Technology
+previous: https://gonfva.medium.com/evolving-or-dying-adbbcfbfef61
 ---
 
 A friend of mine sent to me a job offer. It caught both her and my attention because it shows a problem very common in Internet companies.

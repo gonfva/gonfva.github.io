@@ -1,4 +1,5 @@
 ---
+previous: https://gonfva.medium.com/mobile-apps-fa811f87a6b9
 layout: post
 title: "Mobile apps"
 date: 2016-01-30T18:00:00

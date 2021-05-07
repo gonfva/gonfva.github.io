@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Fintech: Dinosaurs are doomed"
+previous: https://gonfva.medium.com/fintech-dinosaurs-are-doomed-9820438fb16f
 date: 2016-10-04T18:00:00
 tags:
   - Technology

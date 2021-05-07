@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Configuration in AWS is difficult"
+previous: https://gonfva.medium.com/configuration-in-aws-is-difficult-6e9474ce560b
 subtitle: Least privilege vs complexity explosion
 date: 2019-09-02T18:00:00
 tags:

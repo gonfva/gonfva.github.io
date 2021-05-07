@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Snapchat: I’m getting old"
+previous: https://gonfva.medium.com/snapchat-i-m-getting-old-eaab87ec51b
 date: 2016-03-20T18:00:00
 tags:
   - Technology

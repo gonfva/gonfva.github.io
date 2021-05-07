@@ -1,5 +1,7 @@
 ---
 layout: post
+toc: true
+previous: https://gonfva.medium.com/daily-lessons-from-london-trains-edba54f690ab
 title: "Daily lessons from London trains"
 subtitle: A bunch of ideas while commuting
 date: 2018-07-07T18:00:00

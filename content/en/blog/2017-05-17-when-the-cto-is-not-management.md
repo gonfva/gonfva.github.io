@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://medium.com/hackernoon/when-ctos-are-not-management-474e85210fc8
 title: "When the CTO is not management"
 date: 2017-05-17T18:00:00
 tags:

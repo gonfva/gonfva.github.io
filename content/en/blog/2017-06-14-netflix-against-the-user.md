@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://medium.com/hackernoon/netflix-against-the-user-19609525fcd7
 title: "Netflix against the user"
 subtitle: And not only Netflix
 date: 2017-06-14T18:00:00

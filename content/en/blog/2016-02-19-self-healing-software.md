@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Self-healing software"
+previous: https://gonfva.medium.com/self-healing-software-ba9b39606ebc
 date: 2016-02-19T18:00:00
 tags:
   - Developer

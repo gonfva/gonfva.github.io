@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/king-george-iii-and-the-rebellion-6d50028b6e50
 title: "King George III and the “rebellion”"
 subtitle: Disappointment with the book 1776
 date: 2018-05-25T18:00:00

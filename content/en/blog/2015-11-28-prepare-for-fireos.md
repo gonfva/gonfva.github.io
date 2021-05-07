@@ -5,6 +5,7 @@ date: 2015-11-28T18:00:00
 tags:
   - Technology
 categories: Technology
+previous: https://gonfva.medium.com/amazon-fire-prepare-for-fireos-edc2c94c961c
 ---
 
 ![](/img/1*7A0P9xUMD3AYrVupbkvJHw.png)I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.

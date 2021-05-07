@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/agile-is-not-standups-3ab65868c611
 title: "Agile is not Standups"
 date: 2015-10-03T18:00:00
 tags:

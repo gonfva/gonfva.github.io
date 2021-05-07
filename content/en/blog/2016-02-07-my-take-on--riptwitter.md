@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My take on #RIPTwitter"
+previous: https://gonfva.medium.com/my-take-on-riptwitter-921b327f96d3
 date: 2016-02-07T18:00:00
 tags:
   - Technology

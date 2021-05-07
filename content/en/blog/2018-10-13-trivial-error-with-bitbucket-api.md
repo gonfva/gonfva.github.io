@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/trivial-error-with-bitbucket-api-db64fe71e379
 title: "Trivial error with Bitbucket API"
 subtitle: Migrating to cloud Bitbucket
 date: 2018-10-13T18:00:00

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dock disappeared in MacOS Catalina"
+previous: https://gonfva.medium.com/dock-disappeared-in-macos-catalina-65cd3c053fd2
 subtitle: The Windows Vista of Apple
 date: 2019-10-16T18:03:00
 categories: [Developer, got ya]

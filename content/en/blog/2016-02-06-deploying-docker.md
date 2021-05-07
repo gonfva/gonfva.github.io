@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Deploying docker"
+previous: https://gonfva.medium.com/deploying-docker-29c459cfa6ab
 date: 2016-02-06T18:00:00
 tags:
   - Developer

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://medium.com/hackernoon/google-duplex-and-robocalls-1ed9cfca3e8a
 title: "Google Duplex and robocalls"
 subtitle: The latest controversy
 date: 2018-05-12T18:00:00

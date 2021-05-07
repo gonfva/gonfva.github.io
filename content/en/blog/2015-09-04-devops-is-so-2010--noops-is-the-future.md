@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/devops-is-so-2010-f9425d06261f
 title: "DevOps is so 2010. NoOps is the future"
 date: 2015-09-04T18:00:00
 tags:

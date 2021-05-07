@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AWS Summit London 2016"
+previous: https://gonfva.medium.com/aws-summit-london-2016-a494dd7b0540
 date: 2016-07-07T18:00:00
 tags:
   - Technology

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/chess-trading-and-bregret-f1ecf91e552d
 title: "Chess, trading and Bregret"
 date: 2016-06-26T18:00:00
 tags:

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/junior-php-developer-353ad4443fac
 title: "Junior PHP developer"
 date: 2017-08-05T18:00:00
 tags:

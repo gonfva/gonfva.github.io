@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/recruitment-1df9fd78812b
 title: "Bad recruitment example 323234"
 date: 2017-10-30T18:00:00
 tags:

@@ -2,6 +2,7 @@
 layout: post
 title: "AWS ELB in Apache logs"
 date: 2016-09-14T18:00:00
+previous: https://gonfva.medium.com/aws-elb-in-apache-logs-83883b5a90c5
 tags:
   - Developer
 categories: [Developer, got ya]

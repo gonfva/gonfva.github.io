@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Consumers need to understand…"
+previous: https://gonfva.medium.com/consumers-need-to-understand-687501a934f6
 date: 2016-07-17T18:00:00
 tags:
   - Technology

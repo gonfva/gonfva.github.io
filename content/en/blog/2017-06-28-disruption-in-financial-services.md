@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/disruption-in-financial-services-c41252e18cc
 title: "Disruption in Financial Services"
 date: 2017-06-28T18:00:00
 tags:

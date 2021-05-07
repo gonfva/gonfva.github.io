@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Virtual Reality in macOS (I)"
+previous: https://medium.com/hackernoon/virtual-reality-in-macos-i-2ee427b06055
 subtitle: Why HTC Vive in macOS?
 date: 2017-08-12T18:00:00
 tags:

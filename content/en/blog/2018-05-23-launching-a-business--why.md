@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/launching-a-business-why-976fd70b1545
 title: "Launching a business: why?"
 date: 2018-05-23T18:00:00
 tags:

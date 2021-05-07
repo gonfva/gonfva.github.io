@@ -1,4 +1,5 @@
 ---
+previous: https://gonfva.medium.com/the-netflix-of-ebooks-937d6cb5c0a9
 layout: post
 title: "The Netflix of books"
 date: 2015-12-12T18:00:00

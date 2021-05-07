@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Metadata abuse in AWS"
+previous: https://gonfva.medium.com/metadata-abuse-in-aws-d264274f5764
 subtitle: Avoiding detection of the use of compromised credentials
 date: 2019-09-03T18:00:00
 tags:

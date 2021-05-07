@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/love-your-users-c709a7005372
 title: "Love your users"
 date: 2015-10-19T18:00:00
 tags:

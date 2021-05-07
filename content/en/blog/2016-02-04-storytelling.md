@@ -1,4 +1,5 @@
 ---
+previous: https://gonfva.medium.com/storytelling-c114a890bf45
 layout: post
 title: "Storytelling"
 date: 2016-02-04T18:00:00

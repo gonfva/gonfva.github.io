@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/why-im-not-considering-your-role-1214e8f1f807
 title: "Why I’m not considering your role"
 subtitle: A longer explanation than the usual email.
 date: 2018-05-18T18:00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/banks-and-users-a62b495a533f
 title: "Banks and users"
 subtitle: Bureaucracy in an online world
 date: 2015-06-06T18:00:00

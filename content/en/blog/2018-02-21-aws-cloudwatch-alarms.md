@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/aws-cloudwatch-alarms-bf71d5bcb5a8
 title: "AWS CloudWatch alarms"
 subtitle: Insufficient is wrong
 date: 2018-02-21T18:00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/dear-recruiter-289fbf13128d
 title: "Dear recruiter"
 date: 2015-08-15T18:00:00
 tags:

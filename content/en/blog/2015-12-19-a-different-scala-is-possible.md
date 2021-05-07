@@ -1,4 +1,5 @@
 ---
+previous: https://gonfva.medium.com/another-scala-is-possible-99bcc6006c7c
 layout: post
 title: "A different Scala is possible"
 date: 2015-12-19T18:00:00

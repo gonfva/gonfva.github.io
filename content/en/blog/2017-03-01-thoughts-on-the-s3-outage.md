@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/thoughts-about-s3-outage-b374ed091daa
 title: "Thoughts on the S3 outage"
 date: 2017-03-01T18:00:00
 tags:

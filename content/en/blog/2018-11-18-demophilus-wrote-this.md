@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/demophilus-wrote-this-e893a0bf9582
 title: "Demophilus wrote this…"
 subtitle: us vs them
 date: 2018-11-18T18:00:00

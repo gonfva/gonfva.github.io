@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "A flow for containers"
+previous: https://gonfva.medium.com/a-flow-for-containers-ce1437c1cc7a
+toc: true
 subtitle: Testing Wercker
 date: 2016-10-16T18:00:00
 tags:

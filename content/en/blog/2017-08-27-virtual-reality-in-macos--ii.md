@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Virtual Reality in macOS (II)"
+previous: https://gonfva.medium.com/virtual-reality-in-macos-ii-39f54e0a9542
 date: 2017-08-27T18:00:00
 tags:
   - Technology

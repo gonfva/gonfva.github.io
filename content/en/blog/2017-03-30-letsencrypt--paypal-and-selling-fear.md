@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://medium.com/hackernoon/letsencrypt-paypal-and-selling-fear-21940474d387
 title: "LetsEncrypt, Paypal and selling fear"
 subtitle: People don’t understand SSL/TLS
 date: 2017-03-30T18:00:00

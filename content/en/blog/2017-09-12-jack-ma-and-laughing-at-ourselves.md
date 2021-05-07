@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jack Ma and laughing at ourselves"
+previous: https://gonfva.medium.com/jack-ma-and-laughing-of-ourselves-fde650d418be
 date: 2017-09-12T18:00:00
 tags:
   - Personal

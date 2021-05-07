@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://planetachatbot.com/google-duplex-y-las-llamadas-autom%C3%A1ticas-59c2ba38069a
 title: "Google Duplex y las llamadas automáticas"
 subtitle: La polémica más reciente
 date: 2018-05-14T18:00:00

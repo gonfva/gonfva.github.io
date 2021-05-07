@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/shut-down-your-servers-15a7b3f6fe20
 title: "Switch off your servers"
 subtitle: Cloud is embracing scale and failure
 date: 2017-01-21T18:00:00

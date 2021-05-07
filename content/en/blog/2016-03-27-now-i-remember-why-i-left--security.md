@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/now-i-remember-why-i-left-security-1949dfc6ffc6
 title: "Now I remember why I left “security”"
 date: 2016-03-27T18:00:00
 tags:

@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://gonfva.medium.com/alphago-ai-and-philosophy-51bb3596336a
 title: "AlphaGo, AI, and Philosophy"
 date: 2016-03-13T18:00:00
 tags:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I hate my bank"
+previous: https://gonfva.medium.com/i-hate-my-bank-10bd9f12486e
 date: 2016-07-15T18:00:00
 tags:
   - Technology

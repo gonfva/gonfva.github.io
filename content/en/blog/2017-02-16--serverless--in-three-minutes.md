@@ -1,5 +1,6 @@
 ---
 layout: post
+previous: https://medium.com/hackernoon/serverless-in-three-minutes-9831d5db7a77
 title: "“Serverless” in three minutes"
 date: 2017-02-16T18:00:00
 tags:
