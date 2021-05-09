@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Vacunas (IV): Riesgos"
-subtitle: Contra el coronavirus, lávate las manos y piensa
 date: 2021-04-09T18:03:00
 categories:
   - News
