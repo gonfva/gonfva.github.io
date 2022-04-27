@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://gonzalo.f-v.es/es/blog/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="es"
                 href="http://gonzalo.f-v.es/es/blog/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/categories/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
     <xhtml:link
@@ -30,19 +27,13 @@
                 hreflang="es"
                 href="http://gonzalo.f-v.es/es/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/tags/covid19/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/tags/espa%C3%B1ol/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
     <xhtml:link
@@ -55,9 +46,7 @@
                 hreflang="es"
                 href="http://gonzalo.f-v.es/es/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/categories/news/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
     <xhtml:link
@@ -70,14 +59,10 @@
                 hreflang="es"
                 href="http://gonzalo.f-v.es/es/categories/news/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/tags/noticias/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/tags/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
     <xhtml:link
@@ -90,54 +75,34 @@
                 hreflang="es"
                 href="http://gonzalo.f-v.es/es/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</loc>
     <lastmod>2021-04-09T18:03:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</loc>
     <lastmod>2021-04-09T18:02:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</loc>
     <lastmod>2021-04-09T18:01:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</loc>
     <lastmod>2021-04-09T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2020-03-14-coronavirus-en-uk/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</loc>
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</loc>
     <lastmod>2018-05-14T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</loc>
     <lastmod>2018-05-14T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/tags/technologia/</loc>
     <lastmod>2018-05-14T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://gonzalo.f-v.es/es/categories/technology/</loc>
     <lastmod>2018-05-14T18:00:00+00:00</lastmod>
     <xhtml:link
@@ -151,5 +116,4 @@
                 href="http://gonzalo.f-v.es/es/categories/technology/"
                 />
   </url>
-  
 </urlset>

@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
@@ -68,7 +68,7 @@
       "datePublished": "2015-12-19 18:00:00 \u002b0000 UTC",
       "dateModified" : "2015-12-19 18:00:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2015-12-19-a-different-scala-is-possible\/",
-      "wordCount" : "993",
+      "wordCount" : "987",
       "keywords" : ["Blog"]
     }
   
@@ -122,21 +122,18 @@
 <p><img src="/img/1*bLn7IqRLWwwASuEymzeOQg.jpeg" alt=""><a href="http://www.scala-lang.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Scala</a>
-, for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.</p>
+>Scala</a>, for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.</p>
 <p>Scala is getting some traction in the enterprise world because of its features, but lately because it’s used in <a href="http://spark.apache.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Spark</a>
-: the tool of choice in many Big Data projects.</p>
+>Spark</a>: the tool of choice in many Big Data projects.</p>
 <h4 id="my-experience">My experience</h4>
 <p>Like many other people in the Scala world, I have some Java knowledge. Almost a couple of years ago, I started working with Scala. From that perspective, there were many things that felt natural: using functions, immutable variables, maps and options. After learning those things, I knew the way I would develop in the future, had changed forever.</p>
 <p>However, like many other people, there were other things that were challenging at best. And there was a challenge in the concepts, yes. But also in the way to express those concepts.</p>
 <p>For example there is a method called <a href="http://www.scala-lang.org/api/2.11.4/index.html#scala.collection.immutable.List@foldLeft[B]%28z:B%29%28f:%28B,A%29=%3EB%29:B" 
   
    target="_blank" rel="noreferrer noopener" 
-><em>foldLeft</em></a>
-. Once you get the concept, you discover it is not very different from a loop with an accumulator using functional programming. But before getting to the concept, you must deal with many issues. You must understand working with functions (fine), you must understand something called curried functions (hmm… fine). And you need to understand that Scala allows to use method names that contain symbols like <strong>/:</strong> (yes, slash colon in this case), and that you won’t be able to look up those method names in Google.</p>
+><em>foldLeft</em></a>. Once you get the concept, you discover it is not very different from a loop with an accumulator using functional programming. But before getting to the concept, you must deal with many issues. You must understand working with functions (fine), you must understand something called curried functions (hmm… fine). And you need to understand that Scala allows to use method names that contain symbols like <strong>/:</strong> (yes, slash colon in this case), and that you won’t be able to look up those method names in Google.</p>
 <p>If you keep working with Scala, you will hear non-stop talking about things like monads. What’s a monad? Sort of a special applicative. What’s an applicative? Sort of a special functor. What is functor? Sort of a special typeclass.</p>
 <p>You will find out that you’re able to develop software that gets the job done. That you can do it in Scala. But these concepts are still elusive. Even if you’re using monads day in-day out.</p>
 <p>I don’t have a software development university degree. So my first feeling was that I was not good enough or that I lacked the background. Later on, I realised that I had been solving (and continued to solve in Scala) problems for my clients/users. So I got away learning enough to be able to understand the documentation.</p>
@@ -153,48 +150,38 @@
 <p>One relevant example. Last week I was at Scala Exchange 2015 in London. The initial keynote was from <a href="https://skillsmatter.com/skillscasts/6483-keynote-scaling-intelligence-moving-ideas-forward" 
   
    target="_blank" rel="noreferrer noopener" 
->Jessica Kerr</a>
-. I don’t like a speaker that reads slides, but I <em>panic</em> when there is talk and it starts with no visual aids (slides) Starting without slides, she managed to capture the attention of us all, with the same ideas as this post but better expressed: go watch the talk.</p>
+>Jessica Kerr</a>. I don’t like a speaker that reads slides, but I <em>panic</em> when there is talk and it starts with no visual aids (slides) Starting without slides, she managed to capture the attention of us all, with the same ideas as this post but better expressed: go watch the talk.</p>
 <p>Jessica is a prolific and very experienced developer. She also comes from Enterprise Java background. But she also has experience in the Ruby community, a friendly community for newbies. In her talk, she perceives there should be a staircase from the green grass of a Scala newbie, to the blue sky of a Scala commercial developer to the outer space of the Scala demigods. And she advocates for a Scala community that generates <a href="https://twitter.com/search?q=blueskyscala" 
   
    target="_blank" rel="noreferrer noopener" 
->good blue sky practices</a>
- for those who can use a map and an option but don’t want to relearn Advanced Algebra to make a web application.</p>
+>good blue sky practices</a> for those who can use a map and an option but don’t want to relearn Advanced Algebra to make a web application.</p>
 <p>Another relevant example is <a href="https://twitter.com/li_haoyi" 
   
    target="_blank" rel="noreferrer noopener" 
->Li Haoyi</a>
-. He’s a core contributor to at least two very interesting Scala projects: <a href="http://www.scala-js.org/" 
+>Li Haoyi</a>. He’s a core contributor to at least two very interesting Scala projects: <a href="http://www.scala-js.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Scala.js</a>
- (a port of Scala that generates Javascript) and <a href="https://github.com/lihaoyi/Ammonite" 
+>Scala.js</a> (a port of Scala that generates Javascript) and <a href="https://github.com/lihaoyi/Ammonite" 
   
    target="_blank" rel="noreferrer noopener" 
->Ammonite</a>
- (a shell script with a Scala syntax) He also develops in Python which gives him a unique perspective. And he’s getting increasingly vocal about <em>smartness</em> in the Scala world. See some of his latest tweets.</p>
+>Ammonite</a> (a shell script with a Scala syntax) He also develops in Python which gives him a unique perspective. And he’s getting increasingly vocal about <em>smartness</em> in the Scala world. See some of his latest tweets.</p>
 <blockquote>
 <p><a href="https://twitter.com/li_haoyi/status/677192563455954944" 
   
    target="_blank" rel="noreferrer noopener" 
-></a>
- &gt; <a href="https://twitter.com/li_haoyi/status/677193847928020992" 
+></a> &gt; <a href="https://twitter.com/li_haoyi/status/677193847928020992" 
   
    target="_blank" rel="noreferrer noopener" 
-></a>
- &gt; <a href="https://twitter.com/li_haoyi/status/677966448224919554" 
+></a> &gt; <a href="https://twitter.com/li_haoyi/status/677966448224919554" 
   
    target="_blank" rel="noreferrer noopener" 
-></a>
- &gt; <a href="https://twitter.com/li_haoyi/status/677967362658734080" 
+></a> &gt; <a href="https://twitter.com/li_haoyi/status/677967362658734080" 
   
    target="_blank" rel="noreferrer noopener" 
-></a>
-I perceive there are many more people. People that don’t care if their Scala code is pure functional or not. People that make <a href="https://skillsmatter.com/skillscasts/6503-keynote-spark-hadoop-and-how-it-relates-to-scala" 
+></a>I perceive there are many more people. People that don’t care if their Scala code is pure functional or not. People that make <a href="https://skillsmatter.com/skillscasts/6503-keynote-spark-hadoop-and-how-it-relates-to-scala" 
   
    target="_blank" rel="noreferrer noopener" 
->useful tools</a>
-.</p>
+>useful tools</a>.</p>
 </blockquote>
 <h4 id="final-thoughts">Final thoughts</h4>
 <p>I think it’s not only a problem of better documentation, best practices or frameworks.</p>
@@ -203,8 +190,7 @@ I perceive there are many more people. People that don’t care if their Scala c
 <p>And also stepping up and saying it’s OK to work with Scala and feel <a href="http://www.scala-lang.org/api/2.11.4/index.html#scala.collection.immutable.List@/:[B]%28z:B%29%28op:%28B,A%29=%3EB%29:B" 
   
    target="_blank" rel="noreferrer noopener" 
-><strong>/:</strong></a>
- is a bad name. Or posting tweets saying you use a Java library because the Scala one is not usable.</p>
+><strong>/:</strong></a> is a bad name. Or posting tweets saying you use a Java library because the Scala one is not usable.</p>
 <p>Or writing a blog post that makes you look stupid.</p>
 
 
@@ -252,34 +238,46 @@ I perceive there are many more people. People that don’t care if their Scala c
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/gonfva"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/gonfva"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="LinkedIn"
-         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
       </a>
     
      
 </div>
 
-            <p>© Gonzalo Fernandez-Victorio 2021</p>
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
           </footer>
           </div>
       </div>
@@ -292,7 +290,7 @@ I perceive there are many more people. People that don’t care if their Scala c
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

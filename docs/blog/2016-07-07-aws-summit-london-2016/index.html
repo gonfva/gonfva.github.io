@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
@@ -68,7 +68,7 @@
       "datePublished": "2016-07-07 18:00:00 \u002b0000 UTC",
       "dateModified" : "2016-07-07 18:00:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2016-07-07-aws-summit-london-2016\/",
-      "wordCount" : "1403",
+      "wordCount" : "1387",
       "keywords" : ["Blog"]
     }
   
@@ -122,23 +122,19 @@
 <p>Today I went to <a href="https://awssummit.london/" 
   
    target="_blank" rel="noreferrer noopener" 
->AWSSummit London</a>
-. It’s a free event dedicated to Amazon Web Services. The event took place at <a href="http://excel.london/" 
+>AWSSummit London</a>. It’s a free event dedicated to Amazon Web Services. The event took place at <a href="http://excel.london/" 
   
    target="_blank" rel="noreferrer noopener" 
->Excel London</a>
-, excellent venue except for the occasional noise due to planes taking off from the nearby London City Airport.</p>
+>Excel London</a>, excellent venue except for the occasional noise due to planes taking off from the nearby London City Airport.</p>
 <p><img src="/img/1*rpqnIPjIYSOEGlY_9oIMQg.jpeg" alt="">KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also the<a href="http://www.theregister.co.uk/2016/07/07/amazon_on_brexit/" 
   
    target="_blank" rel="noreferrer noopener" 
-> general commitment from AWS with UK startup ecosystem</a>
-.</p>
+> general commitment from AWS with UK startup ecosystem</a>.</p>
 <h4 id="keynote">Keynote</h4>
 <p>After the brief introduction, a keynote from <a href="https://twitter.com/Werner" 
   
    target="_blank" rel="noreferrer noopener" 
->Werner Vogels</a>
-, CTO at Amazon.com. The keynote was a bit long for my taste (10:00 to 12:00), but not because of Werner but because some of the “success stories” from some AWS customers.</p>
+>Werner Vogels</a>, CTO at Amazon.com. The keynote was a bit long for my taste (10:00 to 12:00), but not because of Werner but because some of the “success stories” from some AWS customers.</p>
 <p>Werner’s talk didn’t have anything newsworthy but it was full of little gems. You perceive he is a guy with the concepts well established, so I ended up making some mental notes or even taking pictures, like the below:</p>
 <p><img src="/img/1*9tK2MnQK0NL_eI4aA8gLaA.jpeg" alt="">Some signs you are not at Microservice level yetOne interesting idea: don’t treat VMs as servers. It’s a the very well known paradigm: pets vs cattle. With pets you have a name and you take care of them. Cattle are not pets.</p>
 <p>Servers used to be like pets. You used to put names from Star Wars or animals and you would take care, patch, clean and so on. If a server had a disk space full, you would clean temps. But in the cloud, VMsis about embracing failure. A VM fails, you kill it, you don’t try to fix it.</p>
@@ -147,31 +143,25 @@
 <p>One (for me) controversial topic was about containers orchestration. There are many competing technologies: <a href="http://kubernetes.io/" 
   
    target="_blank" rel="noreferrer noopener" 
->Kubernetes</a>
-, <a href="https://docs.docker.com/swarm/" 
+>Kubernetes</a>, <a href="https://docs.docker.com/swarm/" 
   
    target="_blank" rel="noreferrer noopener" 
->Docker Swarm</a>
-, <a href="https://mesosphere.github.io/marathon/" 
+>Docker Swarm</a>, <a href="https://mesosphere.github.io/marathon/" 
   
    target="_blank" rel="noreferrer noopener" 
->Mesos+Marathon</a>
- and <a href="https://www.nomadproject.io/intro/vs/index.html" 
+>Mesos+Marathon</a> and <a href="https://www.nomadproject.io/intro/vs/index.html" 
   
    target="_blank" rel="noreferrer noopener" 
->Hasicorp stack</a>
-. AWS has its own system, called <a href="https://aws.amazon.com/ecs/getting-started/" 
+>Hasicorp stack</a>. AWS has its own system, called <a href="https://aws.amazon.com/ecs/getting-started/" 
   
    target="_blank" rel="noreferrer noopener" 
->ECS</a>
-, and it also includes its own private registry for containers (with my experience, I can promise that’s a big bonus)</p>
+>ECS</a>, and it also includes its own private registry for containers (with my experience, I can promise that’s a big bonus)</p>
 <p>I don’t remember Werner’s own words but he said something like (my memory, no writing) “You see a product that has just released a new version, you think in terms of high availability, and you need ZooKeeper or ETCD to get it. With ECS you have high availability in the system […] I cannot understand anybody using anything different from ECS to deploy containers in AWS in production”. Again. No quotes, just my memories. But, for me, he was pointing to Kubernetes 1.3 new release and the fact that it hasn’t HA backed in the system (I may have misunderstood him)</p>
 <p>But in connection to that, it’s been a surprise: no mention in ANY talk about Kubernetes. NO MENTION at all. And lots of mentions to ECS. So it has been controversial for me, but there hasn’t been any controversy.</p>
 <p>AWS would win lots of money from people deploying Kubernetes into AWS. AWS doesn’t get any money from ECS. It gets from the machines were the containers run, so comparing apples to apples, it is as if you were getting Kubernetes master free. And Kubernetes seems to be the cool framework (or it used to be, until Docker decided to put a <a href="https://docs.docker.com/engine/swarm/" 
   
    target="_blank" rel="noreferrer noopener" 
->Trojan house into Docker engine</a>
-) Granted, Kubernetes is pushed by Google, and it helps give Google some leverage to its cloud offering. But I’m still a bit surprised. To the point I may have drunk the kool-aid about ECS: I’m planning to do a quick test even on my own time.</p>
+>Trojan house into Docker engine</a>) Granted, Kubernetes is pushed by Google, and it helps give Google some leverage to its cloud offering. But I’m still a bit surprised. To the point I may have drunk the kool-aid about ECS: I’m planning to do a quick test even on my own time.</p>
 <p>Is it that Kubernetes is such a bad offer compared to ECS as they implicitly say? Or is it that AWS don’t want Kubernetes to succeed to stop Google from gaining momentum?</p>
 <p>I know people anchored on the hybrid cloud would find difficult to deal with ECS. But for cloud people that deploy to AWS, ECS may be a very good option.</p>
 <p>The keynote finished late. That meant for me that I had just the time to move to a different room, with no time to pick the lunch (I had lunch later).</p>
@@ -180,47 +170,38 @@
 <p>The second talk I attended was about <a href="https://awssummit.london/session/2016/c6864ede-390d-4477-bc65-ef57bd7c9f24" 
   
    target="_blank" rel="noreferrer noopener" 
->Big Data architectural patterns</a>
-. Not too much to write. As I’ve mentioned, I arrived late, so I didn’t get into the talk. My main takeaway was about distinguishing between cold, warm and hot data, taking into account how fast you need the data, how much it costs, and how much data are you storing. And leverage the different offerings from AWS. I also noted down several mentions about <a href="https://zeppelin.apache.org/" 
+>Big Data architectural patterns</a>. Not too much to write. As I’ve mentioned, I arrived late, so I didn’t get into the talk. My main takeaway was about distinguishing between cold, warm and hot data, taking into account how fast you need the data, how much it costs, and how much data are you storing. And leverage the different offerings from AWS. I also noted down several mentions about <a href="https://zeppelin.apache.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Apache Zeppelin</a>
-.</p>
+>Apache Zeppelin</a>.</p>
 <p><a href="https://awssummit.london/session/2016/abb14293-271b-4b45-b52c-ca9b997556ed" 
   
    target="_blank" rel="noreferrer noopener" 
->The third talk</a>
- I attended was about AWS lambda and “serverless” architecture. I’m a huge fan of the serverless architecture (with no success around me so far), even if I perceive the governance is (<a href="http://serverless.com/" 
+>The third talk</a> I attended was about AWS lambda and “serverless” architecture. I’m a huge fan of the serverless architecture (with no success around me so far), even if I perceive the governance is (<a href="http://serverless.com/" 
   
    target="_blank" rel="noreferrer noopener" 
->used to be</a>
-?) difficult.</p>
+>used to be</a>?) difficult.</p>
 <p>First, some obvious message: the serverless part doesn’t mean there is no servers. There are servers, but you don’t care about them. You don’t install, you don’t configure, you don’t scale servers.</p>
 <p>Basically AWS lambda is a way to execute code, without having to manage the servers where the code runs. You pay only for seconds of executions. And included free there are 1 million executions and up to 3.2 million seconds a month.</p>
 <p>It was an introductory talk to <a href="https://aws.amazon.com/lambda/details/" 
   
    target="_blank" rel="noreferrer noopener" 
->AWS lambda</a>
- and <a href="https://aws.amazon.com/api-gateway/" 
+>AWS lambda</a> and <a href="https://aws.amazon.com/api-gateway/" 
   
    target="_blank" rel="noreferrer noopener" 
->AWS API Gateway</a>
-, but even included a demo with a web form served from S3 writing to a DynamoDB database using API Gateway, AWS lambda and created with cloudformation (infrastructure as code). It also revealed something that I didn’t (formally) know: it is based in Linux containers (cgroups and that stuff). Not docker, but similar concept. I should have taken a picture of that slide :(</p>
+>AWS API Gateway</a>, but even included a demo with a web form served from S3 writing to a DynamoDB database using API Gateway, AWS lambda and created with cloudformation (infrastructure as code). It also revealed something that I didn’t (formally) know: it is based in Linux containers (cgroups and that stuff). Not docker, but similar concept. I should have taken a picture of that slide :(</p>
 <p>There was also a very cool case from Paralax a company that uses serverless architecture to deploy super-scalable 3 weeks idea to live projects. Cool</p>
 <p>The next two talks were about containers and ECS. The <a href="https://awssummit.london/session/2016/716886b4-1bad-4ec4-9a32-0063e25e88f1" 
   
    target="_blank" rel="noreferrer noopener" 
->first one</a>
- was more introduction. The <a href="https://awssummit.london/session/2016/76f8a463-f30a-455e-b817-d142afaddbd4" 
+>first one</a> was more introduction. The <a href="https://awssummit.london/session/2016/76f8a463-f30a-455e-b817-d142afaddbd4" 
   
    target="_blank" rel="noreferrer noopener" 
->second one</a>
- a deep dive. The first one enough to encourage me taking a look at ECS. The second one, a bit repetitive since the slides were in many cases the same. Both joint, enough to make me think about taking a look to ECS.</p>
+>second one</a> a deep dive. The first one enough to encourage me taking a look at ECS. The second one, a bit repetitive since the slides were in many cases the same. Both joint, enough to make me think about taking a look to ECS.</p>
 <p>The last talk of the day for me was about <a href="https://awssummit.london/session/2016/c0d57c29-1990-4be8-9a87-2086d596d14a" 
   
    target="_blank" rel="noreferrer noopener" 
->securing serverless architecture</a>
-. I would have titled it as hardening serverless architecture, because I was expecting more a mid level talk about execution roles, but ended being a talk about advanced techniques for securing AWS Lambda. There were some interesting takeaways for me, including how to deploy secrets to instances using “serverless”:</p>
+>securing serverless architecture</a>. I would have titled it as hardening serverless architecture, because I was expecting more a mid level talk about execution roles, but ended being a talk about advanced techniques for securing AWS Lambda. There were some interesting takeaways for me, including how to deploy secrets to instances using “serverless”:</p>
 <p><img src="/img/1*qtral1Pk0R0tgBeStwa03Q.jpeg" alt="">Serverless to provision secrets#### Stands and sponsors</p>
 <p>There were plenty of stands with different sponsors and even some AWS architects to help you for free.</p>
 <p><img src="/img/1*AAS6KqsF8xXpum3Ba2_usQ.jpeg" alt="">Overview of the networking areaThere was also the usual kind of branded t-shirts and stickers, although more in the morning (before and after the keynote) I got a Google cardboard, but discovered that my phone has no gyroscope so it won’t work.</p>
@@ -228,13 +209,11 @@
 <p>First <a href="http://www.seldon.io/" 
   
    target="_blank" rel="noreferrer noopener" 
->Seldon</a>
-, a company I hadn’t heard about. They have an open source product that helps dealing with Machine Learning . It also “encapsulates” (not quote but meaning) machine learning libraries. As a company they provide enterprise support and also modeling.</p>
+>Seldon</a>, a company I hadn’t heard about. They have an open source product that helps dealing with Machine Learning . It also “encapsulates” (not quote but meaning) machine learning libraries. As a company they provide enterprise support and also modeling.</p>
 <p>The other <a href="http://www.claranet.co.uk/" 
   
    target="_blank" rel="noreferrer noopener" 
->Claranet</a>
-. Basically a consultancy company for helping you going cloud.</p>
+>Claranet</a>. Basically a consultancy company for helping you going cloud.</p>
 <h4 id="conclusion">Conclusion</h4>
 <p>A very interesting event to get an idea of what AWS and other partners are offering. And free (apart from my time). If you use AWS in your company, AWS Summit is a no-brainer.</p>
 
@@ -260,7 +239,7 @@
 
  <div class="pagination">
   
-    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2016-06-26-chess-trading-and-bregret/">
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2016-06-26-chess--trading-and-bregret/">
         <span class="pagination__label">Previous Post</span>
         <span class="pagination__title">Chess, trading and Bregret</span>
     </a>
@@ -283,34 +262,46 @@
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/gonfva"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/gonfva"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="LinkedIn"
-         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
       </a>
     
      
 </div>
 
-            <p>© Gonzalo Fernandez-Victorio 2021</p>
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
           </footer>
           </div>
       </div>
@@ -323,7 +314,7 @@
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

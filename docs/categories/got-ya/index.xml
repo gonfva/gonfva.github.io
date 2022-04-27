@@ -27,7 +27,7 @@ Open a terminal.
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
       <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
-AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions ” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ What follows is just one example I found on the Internet (i.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
       <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
-Most people in the software industry know Jira . For better or for worse, it’s the most used product for managing tickets, requests, bugs…
+Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…
 The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
     </item>
     
@@ -158,7 +158,7 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing . So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
 I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
@@ -168,7 +168,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
  In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
@@ -178,7 +178,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Tue, 31 Jan 2012 14:38:05 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems , and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
 Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
     </item>
     
@@ -188,7 +188,7 @@ Under no circumstances use System.setProperty anywhere in your application. I kn
       <pubDate>Sun, 29 Jan 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
 And that solution is wrong. Very wrong.
 Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
     </item>
@@ -199,7 +199,7 @@ Because, if you choose to change the provider using System.setProperty, you are 
       <pubDate>Wed, 18 Jan 2012 11:46:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
 Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
@@ -227,7 +227,7 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Mon, 29 Mar 2010 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</guid>
-      <description>I have been fighting with PHP, Mantis and SOAP since my last post . Now I think I have discovered a bug when uploading via Mantis SOAP a binary file . It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
 I wasn&amp;rsquo;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
     </item>
     
@@ -238,7 +238,7 @@ I wasn&amp;rsquo;t able to find any good answers to something that must be frequ
       
       <guid>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
       <description>[Technical post]
-I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support , BugTracker .</description>
+I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
     </item>
     
   </channel>

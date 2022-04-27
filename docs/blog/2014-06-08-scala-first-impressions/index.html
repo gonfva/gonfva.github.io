@@ -35,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
@@ -68,7 +68,7 @@
       "datePublished": "2014-06-08 22:05:32 \u002b0000 UTC",
       "dateModified" : "2014-06-08 22:05:32 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2014-06-08-scala-first-impressions\/",
-      "wordCount" : "855",
+      "wordCount" : "849",
       "keywords" : ["Blog"]
     }
   
@@ -124,55 +124,45 @@
 <p>First. What is Scala? <a href="http://www.scala-lang.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Scala</a>
- is a programming language that allows to develop both Object Oriented Programming and Functional programming. Functional programming is a new paradigm of developing that is opposed to Imperative programming. In a nutshell, imagine SQL, the language for querying databases. When writing a query you don&rsquo;t write code like &ldquo;Take the first row, check if satisfies the WHERE clause, if it does, append to the list of results, take the following row&hellip;&rdquo;. You simply specify the criteria for the results and that&rsquo;s it.</p>
+>Scala</a> is a programming language that allows to develop both Object Oriented Programming and Functional programming. Functional programming is a new paradigm of developing that is opposed to Imperative programming. In a nutshell, imagine SQL, the language for querying databases. When writing a query you don&rsquo;t write code like &ldquo;Take the first row, check if satisfies the WHERE clause, if it does, append to the list of results, take the following row&hellip;&rdquo;. You simply specify the criteria for the results and that&rsquo;s it.</p>
 <p>But that way of querying with SQL that it&rsquo;s inside of almost every developer&rsquo;s brain, involves a new way of thinking about problems for things that are not database queries. And, believe me, it takes time to learn. To the point that today, a couple of months later, and <a href="https://class.coursera.org/progfun-004" 
   
    target="_blank" rel="noreferrer noopener" 
->halfway a course</a>
- devoted to it, I keep writing imperative instead of Functional code.</p>
+>halfway a course</a> devoted to it, I keep writing imperative instead of Functional code.</p>
 <p>One could ask &ldquo;if it is that complicated, why bother?&rdquo;. <a href="http://gonfva.blogspot.co.uk/2014/01/multithreading-warning-lights.html" 
   
    target="_blank" rel="noreferrer noopener" 
->Multithreading is tricky</a>
-, but CPUs have stopped increasing speed and they are increasing number of cores, which implies concurrency. Functional programming promises to help in that process. And in fact, one the emerging libraries in the Java field, the <a href="http://akka.io/" 
+>Multithreading is tricky</a>, but CPUs have stopped increasing speed and they are increasing number of cores, which implies concurrency. Functional programming promises to help in that process. And in fact, one the emerging libraries in the Java field, the <a href="http://akka.io/" 
   
    target="_blank" rel="noreferrer noopener" 
->akka library</a>
-, comes from the Scala world. The famous lambda in Java 8 is functional programming.</p>
+>akka library</a>, comes from the Scala world. The famous lambda in Java 8 is functional programming.</p>
 <p>Regarding the specific language (not the functional paradigm), I have mixed feelings. I find it brilliant sometimes. And others I see it weird. As an example, I love the tuple concept (the ability for a function to return a couple of values at the same time without defining a class for that). But I almost scream each time I have to refer to the first element of the tuple with an _1 (<a href="http://stackoverflow.com/questions/6241464/why-are-the-indexes-of-scala-tuples-1-based" 
   
    target="_blank" rel="noreferrer noopener" 
->as opposed to the typical _0</a>
-).</p>
+>as opposed to the typical _0</a>).</p>
 <p>I remember loving Ruby and Rails almost in any line of code. Everything felt natural and although in retrospective there were weird things, my general feeling was that code flows. With Scala I&rsquo;m just starting to feel productive. With Scala love appears, but it tends to be in &ldquo;this is freaking awesome&rdquo; moments from time to time. [OMG, love and code. I&rsquo;m really a nerd, isn&rsquo;t it?]</p>
 <p>Don&rsquo;t get me wrong. Once you get the hang of Scala, it is much much much better than Java. It has a strong typing system like java, but with type inference that allows to skip types in some declarations. It tends to be concise (sometimes to the extreme). In its origin, Scala allowed to generate code both for the JVM and .NET runtime environments. I suspect that&rsquo;s no longer the case and nobody develops in Scala using the .NET.</p>
 <p>One thing I find mind blowing (for bad and for good) is implicits. Implicits allow a type to be considered as a different one, upgrading the type to a different one. That is very powerful because the implicit mechanism relies in transforming functions (instead of inheritance or casting). Believe me when I say it is brilliant. But sometimes it leaves you scratching your head thinking why your code does not work until you remember to import the proper implicit conversion function.</p>
 <p>The editor would need a post on its own. There is an <a href="http://scala-ide.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Eclipse version for Scala</a>
-. But until last Monday, I wasn&rsquo;t able to do automatic indentation without risking to mangle my code. Refactoring is for brave. And I&rsquo;m living in nightly updates for Scala-IDE. I&rsquo;ve been told that IntelliJ is much better, but I&rsquo;m trying to avoid it.</p>
+>Eclipse version for Scala</a>. But until last Monday, I wasn&rsquo;t able to do automatic indentation without risking to mangle my code. Refactoring is for brave. And I&rsquo;m living in nightly updates for Scala-IDE. I&rsquo;ve been told that IntelliJ is much better, but I&rsquo;m trying to avoid it.</p>
 <p>Finally, learning a new language is not only the language itself, but a whole array of technologies around. OK. You learn Scala, and then you need to learn a web framework. Play would be the equivalent to the latest versions of Spring MVC or even Rails. But I&rsquo;m in a love-hate relationship with <a href="http://liftweb.net/" 
   
    target="_blank" rel="noreferrer noopener" 
->lift</a>
- (which I find absolutely different to anything else except for <a href="https://www.meteor.com/" 
+>lift</a> (which I find absolutely different to anything else except for <a href="https://www.meteor.com/" 
   
    target="_blank" rel="noreferrer noopener" 
->Meteor</a>
-).  And you also need an ORM. The typical one would be hibernate in the Java world or ActiveRecord for ruby. <a href="http://slick.typesafe.com/" 
+>Meteor</a>).  And you also need an ORM. The typical one would be hibernate in the Java world or ActiveRecord for ruby. <a href="http://slick.typesafe.com/" 
   
    target="_blank" rel="noreferrer noopener" 
->Slick</a>
- is not the more used, but it is really promising.</p>
+>Slick</a> is not the more used, but it is really promising.</p>
 <p>And that&rsquo;s it.</p>
 <p>I&rsquo;m REALLY happy of being able to learn Scala. And I think it has transformed my programming habits for years to come (and it will do more if I leave behind the beginner level).</p>
 <p>To the point that <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html#//apple_ref/doc/uid/TP40014097-CH2-XID_1" 
   
    target="_blank" rel="noreferrer noopener" 
->I read val instead of let</a>
-.</p>
+>I read val instead of let</a>.</p>
 <p>I&rsquo;m not entirely sure I would use Scala for all kind of projects. But certainly I would do for backend mission-critical code.</p>
 
 
@@ -220,34 +210,46 @@
   
      
     
-      <a class="social-icons__link" rel="me" title="Twitter"
-         href="https://twitter.com/gonfva"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="GitHub"
-         href="https://github.com/gonfva"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
       </a>
     
   
      
     
-      <a class="social-icons__link" rel="me" title="LinkedIn"
-         href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
-         target="_blank" rel="noopener">
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
         <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
       </a>
     
      
 </div>
 
-            <p>© Gonzalo Fernandez-Victorio 2021</p>
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
           </footer>
           </div>
       </div>
@@ -260,7 +262,7 @@
    
 
   
-  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
   
   
   <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>

@@ -27,7 +27,7 @@ Open a terminal.
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
       <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
-AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions ” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
+AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ What follows is just one example I found on the Internet (i.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
       <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
-Most people in the software industry know Jira . For better or for worse, it’s the most used product for managing tickets, requests, bugs…
+Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…
 The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
     </item>
     
@@ -64,10 +64,10 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
     
     <item>
       <title>“Serverless” in three minutes</title>
-      <link>http://gonzalo.f-v.es/blog/2017-02-16-serverless-in-three-minutes/</link>
+      <link>http://gonzalo.f-v.es/blog/2017-02-16--serverless--in-three-minutes/</link>
       <pubDate>Thu, 16 Feb 2017 18:00:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2017-02-16-serverless-in-three-minutes/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2017-02-16--serverless--in-three-minutes/</guid>
       <description>Imagine you are interviewing some guy for an IT role and she says that he doesn’t get that of “going to the cloud because everybody knows there are no datacenters in the sky”.
 Everybody knows that cloud in cloud computing is just a name.
 However, it’s surprising how many people have a similar idea. You chat with someone in IT about “serverless” and she says something like “Serverless doesn’t make any sense.</description>
@@ -79,7 +79,7 @@ However, it’s surprising how many people have a similar idea. You chat with so
       <pubDate>Sat, 21 Jan 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</guid>
-      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692A few months ago, I went to AWS Summit London 2016 . One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.
+      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.
 And in particular, that you can shut down your servers. And you should if they are not used.
 I knew the idea wasn’t strictly mine. What I didn’t know until I was preparing this post is that the idea came from Amazon’s CTO.</description>
     </item>
@@ -125,7 +125,7 @@ Yes, I know for sure that it’s nothing extraordinary. That’s what the cloud,
       
       <guid>http://gonzalo.f-v.es/blog/2016-02-06-deploying-docker/</guid>
       <description>“Thou shall not pass” “docker exec, lets install wireshark”This is my account of some experiences deploying docker (or should I say messing/faffing with docker). The path has not yet finished, but I wanted to share our experience in case it can help others.
-Linking Docker containers Yeah, there are many other different technologies for deployment. But containers were “hot” and “the future”. Don’t get me wrong, I do think containers are the new processes .</description>
+Linking Docker containers Yeah, there are many other different technologies for deployment. But containers were “hot” and “the future”. Don’t get me wrong, I do think containers are the new processes.</description>
     </item>
     
     <item>
@@ -144,8 +144,8 @@ The usual response from the candidate was: Why would you need a mobile app? What
       <pubDate>Sat, 19 Dec 2015 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-12-19-a-different-scala-is-possible/</guid>
-      <description>Scala , for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.
-Scala is getting some traction in the enterprise world because of its features, but lately because it’s used in Spark : the tool of choice in many Big Data projects.
+      <description>Scala, for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.
+Scala is getting some traction in the enterprise world because of its features, but lately because it’s used in Spark: the tool of choice in many Big Data projects.
 My experience Like many other people in the Scala world, I have some Java knowledge.</description>
     </item>
     
@@ -162,10 +162,10 @@ And you hear guy A explaining to guy B how he’s working in developing a new fe
     
     <item>
       <title>DevOps is so 2010. NoOps is the future</title>
-      <link>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010-noops-is-the-future/</link>
+      <link>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010--noops-is-the-future/</link>
       <pubDate>Fri, 04 Sep 2015 18:00:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010-noops-is-the-future/</guid>
+      <guid>http://gonzalo.f-v.es/blog/2015-09-04-devops-is-so-2010--noops-is-the-future/</guid>
       <description>Cup cake or fairy cake. It doesn’t matter as long as we know what we meanTechnology moves so quickly that people who work in it are always at risk of being obsolete. You learn something new, thinking it’s going to be the next big thing and five years later it’s old and no longer used.
 It’s also a trend that reinforces itself. You need to be in the know if you want to stay somehow relevant.</description>
     </item>
@@ -187,8 +187,8 @@ It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap 
       <pubDate>Sat, 31 Jan 2015 20:33:01 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
-      <description>A year ago I vaguely new something about Scala . Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift , Slick , and some incursions in akka . I knew almost nothing about devops, and now I use almost everyday AWS , ansible and docker .
- I&#39;m far from an expert in any of those technologies. But I work with all of them.</description>
+      <description>A year ago I vaguely new something about Scala. Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
+ I&#39;m far from an expert in any of those technologies. But I work with all of them.&amp;nbsp; Not bad for a year.&amp;nbsp; However, as a developer the amount of effort you need to keep reasonably up-to-date is huge.</description>
     </item>
     
     <item>
@@ -206,7 +206,7 @@ It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap 
       <pubDate>Mon, 22 Dec 2014 13:51:21 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</guid>
-      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it).
+      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it).
 It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell (or so does my back says) and noisy as a diesel generator.
 When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it didn&amp;rsquo;t have input/output devices like a keyboard or a monitor.</description>
     </item>
@@ -217,7 +217,7 @@ When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it 
       <pubDate>Sat, 04 Oct 2014 14:12:09 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
-      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority .
+      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority.
 Anyway, a few days ago I found this tweet:
 MVP explained via [@smarty](https://twitter.com/smarty) [pic.twitter.com/hZkCzqytAP](http://t.co/hZkCzqytAP) — About Programming (@abt_programming) [September 28, 2014](https://twitter.com/abt_programming/status/516018172072587264) I showed the picture to my wife, and I tried to explain it to her.</description>
     </item>
@@ -359,7 +359,7 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
       <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
 First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
-Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json . It tells the extension name and the permissions asked. It also points to the main file.</description>
+Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
     </item>
     
     <item>
@@ -368,7 +368,7 @@ Second. A chrome extension is a zip of a folder with an crx extension instead. T
       <pubDate>Fri, 14 Sep 2012 21:01:31 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensioni/</guid>
-      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information . However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me.
+      <description>This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information. However, after surfing a bit, the inevitable, &amp;ldquo;become a registered member&amp;rdquo; started to bug me.
 And I got tired.
 And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &amp;ldquo;first-paragraph-only&amp;rdquo;. Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).</description>
     </item>
@@ -379,7 +379,7 @@ And I remembered FT similar &amp;ldquo;become a registered&amp;rdquo; and WSJ &a
       <pubDate>Mon, 10 Sep 2012 21:01:31 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-10-the-best-eclipse-tip-ever/</guid>
-      <description>How to disable auto close for the XML comments .
+      <description>How to disable auto close for the XML comments.
 Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
     </item>
     
@@ -389,7 +389,7 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       <pubDate>Tue, 04 Sep 2012 22:19:58 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</guid>
-      <description>I didn&amp;rsquo;t know about object calisthenics . They are a set of rules to help develop better:
+      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:
 1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
     </item>
     
@@ -409,9 +409,10 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       <pubDate>Sun, 26 Aug 2012 20:00:02 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</guid>
-      <description>Besides the console faking and the dependency inversion issue , my code in Ruby was pretty rough. You can see here the version I sent .
+      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent.
 One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.
-Anyway it was clear that Java version was considerably more verbose.</description>
+Anyway it was clear that Java version was considerably more verbose.
+So one obvious improvement is using symbols instead of string.</description>
     </item>
     
     <item>
@@ -420,7 +421,7 @@ Anyway it was clear that Java version was considerably more verbose.</descriptio
       <pubDate>Sat, 25 Aug 2012 22:11:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-25-little-robot-iii-dependency-inversion/</guid>
-      <description>As I wrote some posts ago, I received an assignment , and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion.
+      <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion.
 Sometimes a higher level class A has to invoke methods in a lower level class.</description>
     </item>
     
@@ -431,7 +432,7 @@ Sometimes a higher level class A has to invoke methods in a lower level class.<
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</guid>
       <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice.
-There is some controversy about editor to use for ruby. Some people prefer Vim+tmux , which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
+There is some controversy about editor to use for ruby. Some people prefer Vim+tmux, which seems the more standard. Other people prefer TextMate on MacOSX and Redcar on Ubuntu. I must say that I prefer vi to emacs, but for the time being I prefer Redcar to vim.</description>
     </item>
     
     <item>
@@ -440,8 +441,8 @@ There is some controversy about editor to use for ruby. Some people prefer Vim+t
       <pubDate>Mon, 20 Aug 2012 12:31:38 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-20-faking-console-in-ruby/</guid>
-      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine . But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console.
-And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec .</description>
+      <description>A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine. But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console.
+And how do you mock standard input/output in Ruby?. Well. It turns out it is quite easy to do it with Rspec. But I wanted to do it without any additional requirement.</description>
     </item>
     
     <item>
@@ -450,7 +451,7 @@ And how do you mock standard input/output in Ruby?. Well. It turns out it is qui
       <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post , I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
  PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F MOVE -&amp;gt;Move the robot 1 cell in the facing direction LEFT -&amp;gt;Changes the facing&amp;nbsp;counter-clockwise RIGHT -&amp;gt;Changes the facing clockwise REPORT -&amp;gt;Shows the current position and facing and the main requirement was that the robot didn&#39;t fall outside the board.</description>
     </item>
     
@@ -461,8 +462,8 @@ And how do you mock standard input/output in Ruby?. Well. It turns out it is qui
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
       <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.
-IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t ), and what&amp;rsquo;s his/her style.
-Another similar tool would be online testing web applications such as codility .</description>
+IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style.
+Another similar tool would be online testing web applications such as codility.</description>
     </item>
     
     <item>
@@ -471,7 +472,7 @@ Another similar tool would be online testing web applications such as codility .
       <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing . So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
 I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
@@ -481,7 +482,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers . However, as one reader pointed , those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
  In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
@@ -491,7 +492,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Tue, 03 Apr 2012 22:00:04 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-04-03-javascript-all-way/</guid>
-      <description>These days I&amp;rsquo;m playing with NodeJS. And today I was thinking about the fundamental change in Javascript. A few years ago it was a darn language for the web. Now someone could query a database using Javascript (CouchDB ), create the server portion of a web application using Javascipt(NodeJS ), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium ).</description>
+      <description>These days I&amp;rsquo;m playing with NodeJS. And today I was thinking about the fundamental change in Javascript. A few years ago it was a darn language for the web. Now someone could query a database using Javascript (CouchDB), create the server portion of a web application using Javascipt(NodeJS), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium).</description>
     </item>
     
     <item>
@@ -509,7 +510,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Tue, 31 Jan 2012 14:38:05 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems , and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
 Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
     </item>
     
@@ -519,7 +520,7 @@ Under no circumstances use System.setProperty anywhere in your application. I kn
       <pubDate>Sun, 29 Jan 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated . In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
 And that solution is wrong. Very wrong.
 Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
     </item>
@@ -530,7 +531,7 @@ Because, if you choose to change the provider using System.setProperty, you are 
       <pubDate>Wed, 18 Jan 2012 11:46:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic . So what are they and why are so complicated?.
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
 Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
@@ -568,7 +569,7 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
       <pubDate>Mon, 29 Mar 2010 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</guid>
-      <description>I have been fighting with PHP, Mantis and SOAP since my last post . Now I think I have discovered a bug when uploading via Mantis SOAP a binary file . It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
 I wasn&amp;rsquo;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
     </item>
     
@@ -579,7 +580,7 @@ I wasn&amp;rsquo;t able to find any good answers to something that must be frequ
       
       <guid>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
       <description>[Technical post]
-I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support , BugTracker .</description>
+I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
     </item>
     
   </channel>
