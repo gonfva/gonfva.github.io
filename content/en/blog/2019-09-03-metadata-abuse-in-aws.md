@@ -50,7 +50,9 @@ aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having
 
 The metadata endpoint also may contain the credentials associated with the instance.
 
-aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/){
+```bash
+aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/)
+{
 "Code" : "Success",
 "LastUpdated" : "2019-08-15T18:20:44Z",
 "Type" : "AWS-HMAC",
@@ -59,6 +61,7 @@ aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$
 "Token" : "[redacted]",
 "Expiration" : "2019-08-16T00:21:38Z"
 }
+```
 
 > Why have the credentials on the metadata endpoint?Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But **we don’t want** to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)
 

@@ -68,7 +68,7 @@
       "datePublished": "2019-09-03 18:00:00 \u002b0000 UTC",
       "dateModified" : "2019-09-03 18:00:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2019-09-03-metadata-abuse-in-aws\/",
-      "wordCount" : "1904",
+      "wordCount" : "1905",
       "keywords" : ["Blog"]
     }
   
@@ -168,15 +168,17 @@ Those issues <strong>are not trivial</strong> to deal with, but they are not unc
 <p>aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.</p>
 <h3 id="metadata-endpoints-and-credentials">Metadata endpoints and credentials<a class="anchor" href="#metadata-endpoints-and-credentials">#</a></h3>
 <p>The metadata endpoint also may contain the credentials associated with the instance.</p>
-<p>aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/){
-&ldquo;Code&rdquo; : &ldquo;Success&rdquo;,
-&ldquo;LastUpdated&rdquo; : &ldquo;2019-08-15T18:20:44Z&rdquo;,
-&ldquo;Type&rdquo; : &ldquo;AWS-HMAC&rdquo;,
-&ldquo;AccessKeyId&rdquo; : &ldquo;[redacted]&rdquo;,
-&ldquo;SecretAccessKey&rdquo; : &ldquo;[redacted]&rdquo;,
-&ldquo;Token&rdquo; : &ldquo;[redacted]&rdquo;,
-&ldquo;Expiration&rdquo; : &ldquo;2019-08-16T00:21:38Z&rdquo;
-}</p>
+<pre><code class="language-bash">aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/)
+{
+&quot;Code&quot; : &quot;Success&quot;,
+&quot;LastUpdated&quot; : &quot;2019-08-15T18:20:44Z&quot;,
+&quot;Type&quot; : &quot;AWS-HMAC&quot;,
+&quot;AccessKeyId&quot; : &quot;[redacted]&quot;,
+&quot;SecretAccessKey&quot; : &quot;[redacted]&quot;,
+&quot;Token&quot; : &quot;[redacted]&quot;,
+&quot;Expiration&quot; : &quot;2019-08-16T00:21:38Z&quot;
+}
+</code></pre>
 <blockquote>
 <p>Why have the credentials on the metadata endpoint?Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But <strong>we don’t want</strong> to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)</p>
 </blockquote>
