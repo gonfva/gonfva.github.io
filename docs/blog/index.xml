@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Wed, 27 Apr 2022 22:48:54 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Apr 2022 20:48:54 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create an AWS account from the command line</title>
+      <link>http://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</link>
+      <pubDate>Fri, 29 Apr 2022 20:48:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</guid>
+      <description>This post is a basic copy of this AWS page on how to create an AWS account. But it took me a while to understand all the steps (because I cannot read), so I&amp;rsquo;m just writing so that the next time I can remember.
+First things first. You need to have an organisation (sorry, living in UK, so I&amp;rsquo;ll use the s) already created, and you need to have admin in the &amp;ldquo;management account&amp;rdquo; of the organisation.</description>
+    </item>
+    
     <item>
       <title>EDITOR variable as a script</title>
       <link>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</link>
       <pubDate>Wed, 27 Apr 2022 22:48:54 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</guid>
-      <description>I&amp;rsquo;ve decieded I&amp;rsquo;m going to start writing again, even small things.
+      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.
 This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)
 But while I was working with it, I was making use of kops edit and that opened a new editor (vim in my case) so that I can tweak the configuration (there were no arguments for what I was trying to do).</description>
     </item>

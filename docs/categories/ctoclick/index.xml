@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ctoclick on Gonzalo&#39;s thoughts</title>
+    <link>http://gonzalo.f-v.es/categories/ctoclick/</link>
+    <description>Recent content in ctoclick on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
+    <lastBuildDate>Fri, 29 Apr 2022 20:48:54 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/ctoclick/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create an AWS account from the command line</title>
+      <link>http://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</link>
+      <pubDate>Fri, 29 Apr 2022 20:48:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</guid>
+      <description>This post is a basic copy of this AWS page on how to create an AWS account. But it took me a while to understand all the steps (because I cannot read), so I&amp;rsquo;m just writing so that the next time I can remember.
+First things first. You need to have an organisation (sorry, living in UK, so I&amp;rsquo;ll use the s) already created, and you need to have admin in the &amp;ldquo;management account&amp;rdquo; of the organisation.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,7 @@ tags:
 categories: [Developer, got ya]
 ---
 
-I've decieded I'm going to start writing again, even small things.
+I've decided I'm going to start writing again, even small things.
 
 This week I was trying to create a Kubernetes cluster using [Kops](https://kops.sigs.k8s.io/). In the end it didn't work (mainly because it uses a Classic LoadBalancer and we don't have public IPs in that VPC)
 
@@ -20,7 +20,7 @@ So yes, I created a script, and low and behold, the script was triggered.
 Two small caveats, though:
 
 * The script needs to have execution permissions (chmod 755)
-* The script needs to have the usual sheebang (i.e. it needs to start with `#!/bin/bash` or whatever)
+* The script needs to have the usual shebang (i.e. it needs to start with `#!/bin/bash` or whatever)
 
 And that's it.
 

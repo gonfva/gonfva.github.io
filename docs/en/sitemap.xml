@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://gonzalo.f-v.es/categories/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -28,17 +28,20 @@
                 href="http://gonzalo.f-v.es/categories/"
                 />
   </url><url>
+    <loc>http://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</loc>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
+  </url><url>
+    <loc>http://gonzalo.f-v.es/categories/ctoclick/</loc>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
+  </url><url>
     <loc>http://gonzalo.f-v.es/tags/developer/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/categories/developer/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
-  </url><url>
-    <loc>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -50,11 +53,8 @@
                 href="http://gonzalo.f-v.es/"
                 />
   </url><url>
-    <loc>http://gonzalo.f-v.es/categories/got-ya/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
-  </url><url>
     <loc>http://gonzalo.f-v.es/tags/</loc>
-    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+    <lastmod>2022-04-29T20:48:54+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -65,6 +65,12 @@
                 hreflang="en"
                 href="http://gonzalo.f-v.es/tags/"
                 />
+  </url><url>
+    <loc>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</loc>
+    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
+  </url><url>
+    <loc>http://gonzalo.f-v.es/categories/got-ya/</loc>
+    <lastmod>2022-04-27T22:48:54+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</loc>
     <lastmod>2020-03-15T18:03:00+00:00</lastmod>

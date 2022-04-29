@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Create an AWS account from the command line | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Create an AWS account from the command line" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Create an AWS account from the command line",
+      "headline" : "Create an AWS account from the command line",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-04-29 20:48:54 \u002b0000 UTC",
+      "dateModified" : "2022-04-29 20:48:54 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-04-29-create-aws-account-cli\/",
+      "wordCount" : "514",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Create an AWS account from the command line</h1>
+            
+            <h2>Automate all things</h2>
+            
+            <time datetime="2022-04-29 20:48:54 &#43;0000 UTC" class="post__date">2022-04-29</time> 
+          </header>
+          <article class="post__content">
+              
+<p>This post is a basic copy of this <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>AWS page on how to create an AWS account</a>. But it took me a while to understand all the steps (because I cannot read), so I&rsquo;m just writing so that the next time I can remember.</p>
+<p>First things first. You need to have an organisation (sorry, living in UK, so I&rsquo;ll use the s) already created, and you need to have admin in the &ldquo;management account&rdquo; of the organisation. Technically, the requirements are a bit more relaxed: probably it is good enough to have organisation creation permissions, and it might be possible to do it on an account that is lower in the tree.</p>
+<p>OK. Then, the next step is trivial:</p>
+<pre><code>aws organizations create-account --email &lt;email&gt; --account-name &lt;name of account&gt;
+</code></pre>
+<p>for example</p>
+<pre><code>aws organizations create-account --email XXXX@XXXX.XXX --account-name xowit-prod
+</code></pre>
+<p>You need a new email address. If you use gmail, one possibility is to use the (plus sign trick)[https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html], and basically reuse your account.</p>
+<p>This will return a json object that contains an id in the format <code>car-&lt;snip with loads of numbers and letters&gt;</code></p>
+<p>You think that the account is created BUT IT IS NOT. My naive approach was to use that car thingy to describe the account. None of the following commands worked</p>
+<p>aws organizations describe-account &ndash;account-id car-<snip with loads of numbers and letters>
+aws organizations describe-account &ndash;create-account-request-id car-<snip with loads of numbers and letters></p>
+<p>You need to use a different command.</p>
+<pre><code>aws organizations describe-create-account-status --create-account-request-id car-&lt;snip with loads of numbers and letters&gt;
+
+{
+    &quot;CreateAccountStatus&quot;: {
+        &quot;Id&quot;: &quot;car-&lt;snip with loads of numbers and letters&gt;&quot;,
+        &quot;AccountName&quot;: &quot;xowit-prod&quot;,
+        &quot;State&quot;: &quot;SUCCEEDED&quot;,
+        &quot;RequestedTimestamp&quot;: 1650913730.571,
+        &quot;CompletedTimestamp&quot;: 1650913733.661,
+        &quot;AccountId&quot;: &quot;1234567890&quot;
+    }
+}
+</code></pre>
+<p>Yes. YES. You have created an account.</p>
+<p>Now what. (How do you access the account?)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html]</p>
+<pre><code>  When you create a new account, AWS Organizations initially assigns a password to the root user &lt;...&gt; randomly generated &lt;...&gt;. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
+</code></pre>
+<p>So you have a root account, but you shouldn&rsquo;t use it.</p>
+<p>And that, my friend is the more interesting part of this post.</p>
+<p>In that same page, you will see that if you create your account with the CLI, your new account has a role called OrganizationAccountAccessRole. And that role can be assumed by you.</p>
+<p>So in the &ldquo;old account&rdquo; (management account), you must give permissions to assume the role in the new account. The new account already allows your account to assume permissions.</p>
+<p>Let me say it again. You have a user in the management account. If you give permissions to that user has permissions to assume the role <code>OrganizationAccountAccessRole</code> in the new account, the new account already allows that and you will have access to the new account.</p>
+<p>Even better, instead of doing the usual <code>aws sts assume-role</code>, you can have something like this in ~/.aws/config</p>
+<pre><code>[profile new_account]
+role_arn = arn:aws:iam::&lt;newaccountid&gt;:role/OrganizationAccountAccessRole
+source_profile = &lt;profileoldaccount&gt;
+</code></pre>
+<p>and with that, this after creating some buckets</p>
+<pre><code>$ aws s3 mb test-xowit-org
+$ aws s3 ls
+2022-04-25 23:44:20 test-xowit-org
+$ aws s3 mb s3://test-xowit-prod --profile xowit_prod
+$ aws s3 ls --profile xowit_prod
+2022-04-25 23:44:57 test-xowit-prod
+</code></pre>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">EDITOR variable as a script</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
