@@ -14,13 +14,15 @@ First things first. You need to have an organisation (sorry, living in UK, so I'
 OK. Then, the next step is trivial:
 
 ```
-aws organizations create-account --email <email> --account-name <name of account>
+$ aws organizations create-account --email <email> \
+  --account-name <name of account>
 ```
 
 for example
 
 ```
-aws organizations create-account --email XXXX@XXXX.XXX --account-name xowit-prod
+$ aws organizations create-account --email XXXX@XXXX.XXX \
+  --account-name xowit-prod
 ```
 
 You need a new email address. If you use gmail, one possibility is to use the (plus sign trick)[https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html], and basically reuse your account.
@@ -35,7 +37,7 @@ aws organizations describe-account --create-account-request-id car-<snip with lo
 You need to use a different command.
 
 ```
-aws organizations describe-create-account-status --create-account-request-id car-<snip with loads of numbers and letters>
+$ aws organizations describe-create-account-status --create-account-request-id car-<snip with loads of numbers and letters>
 
 {
     "CreateAccountStatus": {
@@ -50,7 +52,8 @@ aws organizations describe-create-account-status --create-account-request-id car
 ```
 Yes. YES. You have created an account. 
 
-Now what. (How do you access the account?)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html] 
+Now what. (How do you access the account)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html]?
+
 ```
   When you create a new account, AWS Organizations initially assigns a password to the root user <...> randomly generated <...>. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
 ```

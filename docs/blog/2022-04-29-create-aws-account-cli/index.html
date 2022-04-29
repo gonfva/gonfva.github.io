@@ -68,7 +68,7 @@
       "datePublished": "2022-04-29 20:48:54 \u002b0000 UTC",
       "dateModified" : "2022-04-29 20:48:54 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-04-29-create-aws-account-cli\/",
-      "wordCount" : "514",
+      "wordCount" : "519",
       "keywords" : ["Blog"]
     }
   
@@ -127,10 +127,12 @@
 >AWS page on how to create an AWS account</a>. But it took me a while to understand all the steps (because I cannot read), so I&rsquo;m just writing so that the next time I can remember.</p>
 <p>First things first. You need to have an organisation (sorry, living in UK, so I&rsquo;ll use the s) already created, and you need to have admin in the &ldquo;management account&rdquo; of the organisation. Technically, the requirements are a bit more relaxed: probably it is good enough to have organisation creation permissions, and it might be possible to do it on an account that is lower in the tree.</p>
 <p>OK. Then, the next step is trivial:</p>
-<pre><code>aws organizations create-account --email &lt;email&gt; --account-name &lt;name of account&gt;
+<pre><code>$ aws organizations create-account --email &lt;email&gt; \
+  --account-name &lt;name of account&gt;
 </code></pre>
 <p>for example</p>
-<pre><code>aws organizations create-account --email XXXX@XXXX.XXX --account-name xowit-prod
+<pre><code>$ aws organizations create-account --email XXXX@XXXX.XXX \
+  --account-name xowit-prod
 </code></pre>
 <p>You need a new email address. If you use gmail, one possibility is to use the (plus sign trick)[https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html], and basically reuse your account.</p>
 <p>This will return a json object that contains an id in the format <code>car-&lt;snip with loads of numbers and letters&gt;</code></p>
@@ -138,7 +140,7 @@
 <p>aws organizations describe-account &ndash;account-id car-<snip with loads of numbers and letters>
 aws organizations describe-account &ndash;create-account-request-id car-<snip with loads of numbers and letters></p>
 <p>You need to use a different command.</p>
-<pre><code>aws organizations describe-create-account-status --create-account-request-id car-&lt;snip with loads of numbers and letters&gt;
+<pre><code>$ aws organizations describe-create-account-status --create-account-request-id car-&lt;snip with loads of numbers and letters&gt;
 
 {
     &quot;CreateAccountStatus&quot;: {
@@ -152,7 +154,7 @@ aws organizations describe-account &ndash;create-account-request-id car-<snip wi
 }
 </code></pre>
 <p>Yes. YES. You have created an account.</p>
-<p>Now what. (How do you access the account?)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html]</p>
+<p>Now what. (How do you access the account)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html]?</p>
 <pre><code>  When you create a new account, AWS Organizations initially assigns a password to the root user &lt;...&gt; randomly generated &lt;...&gt;. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
 </code></pre>
 <p>So you have a root account, but you shouldn&rsquo;t use it.</p>
