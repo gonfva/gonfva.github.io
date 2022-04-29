@@ -170,13 +170,13 @@ Those issues <strong>are not trivial</strong> to deal with, but they are not unc
 <p>The metadata endpoint also may contain the credentials associated with the instance.</p>
 <pre><code class="language-bash">aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/)
 {
-&quot;Code&quot; : &quot;Success&quot;,
-&quot;LastUpdated&quot; : &quot;2019-08-15T18:20:44Z&quot;,
-&quot;Type&quot; : &quot;AWS-HMAC&quot;,
-&quot;AccessKeyId&quot; : &quot;[redacted]&quot;,
-&quot;SecretAccessKey&quot; : &quot;[redacted]&quot;,
-&quot;Token&quot; : &quot;[redacted]&quot;,
-&quot;Expiration&quot; : &quot;2019-08-16T00:21:38Z&quot;
+  &quot;Code&quot; : &quot;Success&quot;,
+  &quot;LastUpdated&quot; : &quot;2019-08-15T18:20:44Z&quot;,
+  &quot;Type&quot; : &quot;AWS-HMAC&quot;,
+  &quot;AccessKeyId&quot; : &quot;[redacted]&quot;,
+  &quot;SecretAccessKey&quot; : &quot;[redacted]&quot;,
+  &quot;Token&quot; : &quot;[redacted]&quot;,
+  &quot;Expiration&quot; : &quot;2019-08-16T00:21:38Z&quot;
 }
 </code></pre>
 <blockquote>

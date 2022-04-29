@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Wed, 16 Oct 2019 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/got-ya/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2022 22:48:54 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/categories/got-ya/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EDITOR variable as a script</title>
+      <link>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</link>
+      <pubDate>Wed, 27 Apr 2022 22:48:54 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</guid>
+      <description>I&amp;rsquo;ve decieded I&amp;rsquo;m going to start writing again, even small things.
+This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)
+But while I was working with it, I was making use of kops edit and that opened a new editor (vim in my case) so that I can tweak the configuration (there were no arguments for what I was trying to do).</description>
+    </item>
+    
     <item>
       <title>Dock disappeared in MacOS Catalina</title>
       <link>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>

@@ -53,13 +53,13 @@ The metadata endpoint also may contain the credentials associated with the insta
 ```bash
 aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/)
 {
-"Code" : "Success",
-"LastUpdated" : "2019-08-15T18:20:44Z",
-"Type" : "AWS-HMAC",
-"AccessKeyId" : "[redacted]",
-"SecretAccessKey" : "[redacted]",
-"Token" : "[redacted]",
-"Expiration" : "2019-08-16T00:21:38Z"
+  "Code" : "Success",
+  "LastUpdated" : "2019-08-15T18:20:44Z",
+  "Type" : "AWS-HMAC",
+  "AccessKeyId" : "[redacted]",
+  "SecretAccessKey" : "[redacted]",
+  "Token" : "[redacted]",
+  "Expiration" : "2019-08-16T00:21:38Z"
 }
 ```
 
