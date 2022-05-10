@@ -78,7 +78,8 @@ The fourth game between AlphaGo and Lee Sedol finished with AlphaGo resigning.
 
 Shortly after the game, there were some jokes about maybe AlphaGo losing on purpose
 
-> [](https://twitter.com/karpathy/status/708943940485914625) > [](https://twitter.com/StatsmanBruno/status/708941065877737472)[Lee Sedol did win](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/). He played better.
+> [](https://twitter.com/karpathy/status/708943940485914625) 
+> [](https://twitter.com/StatsmanBruno/status/708941065877737472) [Lee Sedol did win](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/). He played better.
 
 But when a truly general AI appears, chances are it will try to stay hidden for some time.
 

@@ -25,20 +25,21 @@ $ aws organizations create-account --email XXXX@XXXX.XXX \
   --account-name xowit-prod
 ```
 
-You need a new email address. If you use gmail, one possibility is to use the (plus sign trick)[https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html], and basically reuse your account.
+You need a new email address. If you use gmail, one possibility is to use the [plus sign trick](https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html), and basically reuse your account.
 
 This will return a json object that contains an id in the format `car-<snip with loads of numbers and letters>`
 
 You think that the account is created BUT IT IS NOT. My naive approach was to use that car thingy to describe the account. None of the following commands worked
 
+```
 aws organizations describe-account --account-id car-<snip with loads of numbers and letters>
 aws organizations describe-account --create-account-request-id car-<snip with loads of numbers and letters>
+```
 
 You need to use a different command.
 
 ```
 $ aws organizations describe-create-account-status --create-account-request-id car-<snip with loads of numbers and letters>
-
 {
     "CreateAccountStatus": {
         "Id": "car-<snip with loads of numbers and letters>",
@@ -50,19 +51,20 @@ $ aws organizations describe-create-account-status --create-account-request-id c
     }
 }
 ```
+
 Yes. YES. You have created an account. 
 
-Now what. (How do you access the account)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html]?
+Now what. [How do you access the account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html)?
 
 ```
   When you create a new account, AWS Organizations initially assigns a password to the root user <...> randomly generated <...>. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
 ```
 
-So you have a root account, but you shouldn't use it. 
+So you have a root user, but you shouldn't use it. 
 
 And that, my friend is the more interesting part of this post. 
 
-In that same page, you will see that if you create your account with the CLI, your new account has a role called OrganizationAccountAccessRole. And that role can be assumed by you.
+In that same page, you will see that if you create your account with the CLI, your new account has a role called `OrganizationAccountAccessRole`. And that role can be assumed by you.
 
 So in the "old account" (management account), you must give permissions to assume the role in the new account. The new account already allows your account to assume permissions.
 
@@ -76,7 +78,7 @@ role_arn = arn:aws:iam::<newaccountid>:role/OrganizationAccountAccessRole
 source_profile = <profileoldaccount>
 ```
 
-and with that, this after creating some buckets
+and with that, you can do this after creating some buckets
 
 ```
 $ aws s3 mb test-xowit-org

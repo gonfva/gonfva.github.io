@@ -8,7 +8,7 @@ tags:
 categories: [Developer]
 ---
 
-![](/img/1*bLn7IqRLWwwASuEymzeOQg.jpeg)[Scala](http://www.scala-lang.org/), for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.
+![](/img/1*bLn7IqRLWwwASuEymzeOQg.jpeg) [Scala](http://www.scala-lang.org/), for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.
 
 Scala is getting some traction in the enterprise world because of its features, but lately because it’s used in [Spark](http://spark.apache.org/): the tool of choice in many Big Data projects.
 

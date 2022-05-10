@@ -24,7 +24,9 @@ Al final de todo daré mi opinión. Pero antes, trato de explicar mi percepción
 > [](https://twitter.com/10DowningStreet/status/1238146728164909059)Vídeo con la rueda de prensa de Boris JohnsonEn la misma línea, una entrevista al Chief Scientific Advisor, el equivalente a Pedro Simón.
 
 [**Coronavirus: Chief Scientific Adviser's response to claims government are not doing enough**
-*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/ "https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/")[](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/)### Qué tienen de malo otras políticas
+*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/) 
+
+### Qué tienen de malo otras políticas
 
 Hasta ahora teníamos un modelo, que era el modelo de China, Corea del Sur o Japón. Ese modelo se basa en parar el bicho. Agresivamente. Testear un montón, medidas de distancia social, parar la sociedad, pero **que no haya contagios**.
 

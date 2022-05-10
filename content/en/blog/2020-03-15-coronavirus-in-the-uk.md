@@ -26,7 +26,9 @@ At the end of the article I will give my opinion (again, I'm not an specialist n
 > [](https://twitter.com/10DowningStreet/status/1238146728164909059)Boris Johnson's press conferenceAlong the same line, this interview with the Chief Scientific Advisor
 
 [**Coronavirus: Chief Scientific Adviser's response to claims government are not doing enough**
-*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/ "https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/")[](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/)### What's wrong with other policies
+*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/ ) 
+
+### What's wrong with other policies
 
 Up until now, we had one model. The model applied in China, South Korea or Japan. This model is based in trying to stop the virus. Aggressively. Testing a lot, with social distance, stopping the society, but **no contagion**.
 
@@ -55,7 +57,7 @@ You may have heard that a group of scientist has signed a letter against the pol
 > [](https://twitter.com/paulwaugh/status/1238971152002883587)However, there are people relevant in the field that are also concerned. See this letter from the British Society for Immunology that sounds informedly worried:
 
 [**BSI open letter to Government on SARS-CoV-2 outbreak response**
-*14 March 2020 British Society for Immunology members are acutely aware of the implications that the emergence of the…*www.immunology.org](https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response "https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response")[](https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response)#### End of contention
+*14 March 2020 British Society for Immunology members are acutely aware of the implications that the emergence of the…*www.immunology.org](https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response "https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response") [](https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response)#### End of contention
 
 Anyway, a few days ago the government decided that the contention phase had ended. From now onwards they are only going to test those that enter the hospitals. Because the plan changes.
 

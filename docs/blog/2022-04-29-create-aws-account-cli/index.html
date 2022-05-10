@@ -68,7 +68,7 @@
       "datePublished": "2022-04-29 20:48:54 \u002b0000 UTC",
       "dateModified" : "2022-04-29 20:48:54 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-04-29-create-aws-account-cli\/",
-      "wordCount" : "519",
+      "wordCount" : "536",
       "keywords" : ["Blog"]
     }
   
@@ -134,14 +134,17 @@
 <pre><code>$ aws organizations create-account --email XXXX@XXXX.XXX \
   --account-name xowit-prod
 </code></pre>
-<p>You need a new email address. If you use gmail, one possibility is to use the (plus sign trick)[https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html], and basically reuse your account.</p>
+<p>You need a new email address. If you use gmail, one possibility is to use the <a href="https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>plus sign trick</a>, and basically reuse your account.</p>
 <p>This will return a json object that contains an id in the format <code>car-&lt;snip with loads of numbers and letters&gt;</code></p>
 <p>You think that the account is created BUT IT IS NOT. My naive approach was to use that car thingy to describe the account. None of the following commands worked</p>
-<p>aws organizations describe-account &ndash;account-id car-<snip with loads of numbers and letters>
-aws organizations describe-account &ndash;create-account-request-id car-<snip with loads of numbers and letters></p>
+<pre><code>aws organizations describe-account --account-id car-&lt;snip with loads of numbers and letters&gt;
+aws organizations describe-account --create-account-request-id car-&lt;snip with loads of numbers and letters&gt;
+</code></pre>
 <p>You need to use a different command.</p>
 <pre><code>$ aws organizations describe-create-account-status --create-account-request-id car-&lt;snip with loads of numbers and letters&gt;
-
 {
     &quot;CreateAccountStatus&quot;: {
         &quot;Id&quot;: &quot;car-&lt;snip with loads of numbers and letters&gt;&quot;,
@@ -154,12 +157,15 @@ aws organizations describe-account &ndash;create-account-request-id car-<snip wi
 }
 </code></pre>
 <p>Yes. YES. You have created an account.</p>
-<p>Now what. (How do you access the account)[https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html]?</p>
+<p>Now what. <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>How do you access the account</a>?</p>
 <pre><code>  When you create a new account, AWS Organizations initially assigns a password to the root user &lt;...&gt; randomly generated &lt;...&gt;. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
 </code></pre>
-<p>So you have a root account, but you shouldn&rsquo;t use it.</p>
+<p>So you have a root user, but you shouldn&rsquo;t use it.</p>
 <p>And that, my friend is the more interesting part of this post.</p>
-<p>In that same page, you will see that if you create your account with the CLI, your new account has a role called OrganizationAccountAccessRole. And that role can be assumed by you.</p>
+<p>In that same page, you will see that if you create your account with the CLI, your new account has a role called <code>OrganizationAccountAccessRole</code>. And that role can be assumed by you.</p>
 <p>So in the &ldquo;old account&rdquo; (management account), you must give permissions to assume the role in the new account. The new account already allows your account to assume permissions.</p>
 <p>Let me say it again. You have a user in the management account. If you give permissions to that user has permissions to assume the role <code>OrganizationAccountAccessRole</code> in the new account, the new account already allows that and you will have access to the new account.</p>
 <p>Even better, instead of doing the usual <code>aws sts assume-role</code>, you can have something like this in ~/.aws/config</p>
@@ -167,7 +173,7 @@ aws organizations describe-account &ndash;create-account-request-id car-<snip wi
 role_arn = arn:aws:iam::&lt;newaccountid&gt;:role/OrganizationAccountAccessRole
 source_profile = &lt;profileoldaccount&gt;
 </code></pre>
-<p>and with that, this after creating some buckets</p>
+<p>and with that, you can do this after creating some buckets</p>
 <pre><code>$ aws s3 mb test-xowit-org
 $ aws s3 ls
 2022-04-25 23:44:20 test-xowit-org

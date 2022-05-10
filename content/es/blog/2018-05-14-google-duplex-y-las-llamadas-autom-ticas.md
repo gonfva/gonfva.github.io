@@ -91,6 +91,5 @@ Marc dejó de twitear después del odio (como opuesto a la discusión) sufrido t
 
 Ahora parece que no puede ni siquiera hacer Fav.
 
-> Deberíamos ser capaces de intercambiar opiniones.Este artículo es una tradución del o[riginal que escribí en inglés](https://medium.com/@gonfva/google-duplex-and-robocalls-1ed9cfca3e8a).
+> Deberíamos ser capaces de intercambiar opiniones.Este artículo es una tradución del [original que escribí en inglés](https://medium.com/@gonfva/google-duplex-and-robocalls-1ed9cfca3e8a).
 
-![](/img/1*u6pz8xzjblHCXLMQUQGF3Q.gif)[![](/img/1*m2cnnbikTve7QdG-mXx57Q.png)](https://www.facebook.com/PlanetaChatbot/)

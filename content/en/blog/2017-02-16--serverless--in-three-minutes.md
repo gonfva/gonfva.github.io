@@ -76,9 +76,5 @@ It is going to be huge. You may want to do some side project. [Play](https://ser
 
 _If you liked this entry, you may also like _[_Switch off your servers_](https://medium.com/@gonfva/shut-down-your-servers-15a7b3f6fe20#.xkftkpisf)_._
 
-[![](/img/1*0hqOaABQ7XGPT-OYNgiUBg.png)](http://bit.ly/HackernoonFB)[![](/img/1*Vgw1jkA6hgnvwzTsfMlnpg.png)](https://goo.gl/k7XYbx)[![](/img/1*gKBpq1ruUi0FVK2UM_I4tQ.png)](https://goo.gl/4ofytp)
-
-> [Hacker Noon](http://bit.ly/Hackernoon) is how hackers start their afternoons. We’re a part of the [@AMI](http://bit.ly/atAMIatAMI) family. We are now [accepting submissions](http://bit.ly/hackernoonsubmission) and happy to [discuss advertising & sponsorship](mailto:partners@amipublications.com) opportunities.
-> If you enjoyed this story, we recommend reading our [latest tech stories](http://bit.ly/hackernoonlatestt) and [trending tech stories](https://hackernoon.com/trending). Until next time, don’t take the realities of the world for granted!![](/img/1*35tCjoPcvq6LbB3I6Wegqw.jpeg)
 
 [^1]: In this post, Function as a Service (FaaS) and Serverless are synonyms. I know there is some disccussion. Not in this post
