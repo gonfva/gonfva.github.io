@@ -161,8 +161,9 @@ aws organizations describe-account --create-account-request-id car-&lt;snip with
   
    target="_blank" rel="noreferrer noopener" 
 >How do you access the account</a>?</p>
-<pre><code>  When you create a new account, AWS Organizations initially assigns a password to the root user &lt;...&gt; randomly generated &lt;...&gt;. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
-</code></pre>
+<blockquote>
+<p>When you create a new account, AWS Organizations initially assigns a password to the root user &lt;&hellip;&gt; randomly generated &lt;&hellip;&gt;. You can&rsquo;t retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.</p>
+</blockquote>
 <p>So you have a root user, but you shouldn&rsquo;t use it.</p>
 <p>And that, my friend is the more interesting part of this post.</p>
 <p>In that same page, you will see that if you create your account with the CLI, your new account has a role called <code>OrganizationAccountAccessRole</code>. And that role can be assumed by you.</p>

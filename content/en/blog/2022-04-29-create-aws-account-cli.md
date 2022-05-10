@@ -56,9 +56,9 @@ Yes. YES. You have created an account.
 
 Now what. [How do you access the account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html)?
 
-```
-  When you create a new account, AWS Organizations initially assigns a password to the root user <...> randomly generated <...>. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
-```
+
+> When you create a new account, AWS Organizations initially assigns a password to the root user <...> randomly generated <...>. You can't retrieve this initial password. To access the account as the root user for the first time, you must go through the process for password recovery.
+
 
 So you have a root user, but you shouldn't use it. 
 
