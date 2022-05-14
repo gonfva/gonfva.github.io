@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>NAT Gateway is expensive | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="NAT Gateway is expensive" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "NAT Gateway is expensive",
+      "headline" : "NAT Gateway is expensive",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-05-14 14:00:00 \u002b0000 UTC",
+      "dateModified" : "2022-05-14 14:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-05-14-nat-gateway-alternatives\/",
+      "wordCount" : "1429",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">NAT Gateway is expensive</h1>
+            
+            <h2>Heresy and a VPC without NAT GW</h2>
+            
+            <time datetime="2022-05-14 14:00:00 &#43;0000 UTC" class="post__date">2022-05-14</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="nat-gateway">NAT Gateway<a class="anchor" href="#nat-gateway">#</a></h2>
+<h3 id="a-quick-intro-in-aws-networking">A quick intro in AWS networking<a class="anchor" href="#a-quick-intro-in-aws-networking">#</a></h3>
+<p>In AWS, it is very common to create your own isolated network, in what is called a VPC (from <a href="https://aws.amazon.com/vpc/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>virtual private cloud</a>). The <em>official</em> (more like general perception) way of doing it, involves having multiple public and private subnets.</p>
+<ul>
+<li>Public subnets are subnets that have a route to and from the Internet (using what is called <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Internet Gateway</a>).</li>
+<li>Private subnets don&rsquo;t have access <em>from</em> the Internet, but they can have access <em>to</em> the Internet.</li>
+</ul>
+<p>Continuing with that general perception, in the public subnets you may have a Load Balancer or even public web or proxy servers.</p>
+<p>And in the private subnets you may have your backend servers and databases. By placing your backend servers in the private subnets, you are trying to limit the access to those servers and databases for security reasons. And leave the interaction with the Internet only to services running in the public subnets</p>
+<p>However, your backend services may still need to access <em>to</em> the Internet. For example to download security updates, or docker images. Or to connect to AWS services. This access would be <strong>outbound</strong> or <strong>egress-only</strong>. Initiated from your servers in the private subnet.</p>
+<p>And there would be a traditional piece in that model: the <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>NAT gateway</a>.</p>
+<p>NAT gateway is a service, managed by AWS that allows egress-only connectivity to private subnets, doing NAT or Network Address Translation for instances in the private subnets and being a gateway for them.</p>
+<p>If you have a server on the Internet and receive a request coming through the NAT gateway, you will see the IP of the NAT gateway, not the IP of the machine that connected through the NAT gateway.</p>
+<p>It sits within the public subnets (or at least that&rsquo;s my mental model)</p>
+<p>NAT gateway is a relatively simple concept. A Linux machine doing ip forwarding, launched in the public subnet and a default route in the private subnet to that machine, would be all you need. Things start being tricky, when you think you need to do hardening, updates, you need to start considering replication and their IP changing.</p>
+<p>Hmm. Yeah. Maybe it is not such a simple service.</p>
+<h3 id="the-problems-with-nat-gateway">The problems with NAT gateway<a class="anchor" href="#the-problems-with-nat-gateway">#</a></h3>
+<p>Not being a simple service, if it were free, I wouldn&rsquo;t be writing about it. I would just use it.</p>
+<p>Heck, I didn&rsquo;t even think about NAT gateway at all. It is something you just have in AWS. Like a VPC, three public subnets and three private subnets. You need to download updates. You need to connect to S3 or DynamoDB. And doing so from your private subnets equals NAT gateway in your public subnets. And the sun rises in the East. It&rsquo;s the model that is taught in many courses, and the model that helped me get my <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>SAA certification</a>.</p>
+<p>However, when you dig deeper, you find a very significant issue.</p>
+<p>The <a href="https://aws.amazon.com/vpc/pricing/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>cost</a>. If you go with the model, you have three private subnets, and three NAT gateways. Just by that simple, no brain, traditional approach, you will be paying more than 108$/month per VPC. For a service you don&rsquo;t even think you are using. Because it is a must.</p>
+<p>But wait. It gets worse. Traffic is billed in addition. All traffic. Are you downloading/uploading stuff to S3 from your backend instances? Most likely you are using this service and paying for that traffic. At 5 cents per GB (by comparison, that GB stored in S3 for a month will cost you 2.5 cents)</p>
+<p>This was the problem I came to realize just a month ago. My current <strong>side project</strong> will be hosting users&rsquo; applications in AWS (the details are more exciting and I cannot wait to tell them, but they don&rsquo;t matter for now).</p>
+<p>If I was going to provide a hosting service on top of AWS, I needed to at least cover costs. And having a &ldquo;by the book&rdquo; setup, was 125$/month only in this item.</p>
+<p>You may think. &ldquo;Heck, let&rsquo;s have only one NAT and give service to the three subnets with a single NAT GW&rdquo;. OK. Two points there. If that Availability Zone (AZ) goes down, you have also taken down your instances in the other AZs. Because they can no longer connect to the internet, nor to S3 or DynamoDB. And also, because then your inter-AZ traffic costs are going to grow (traffic inside AWS costs if you are not in the same AZ)</p>
+<p>So yes, mainly on cost, that is something I couldn&rsquo;t afford. I knew I couldn&rsquo;t use NAT gateway.</p>
+<p>At that point I must confess I felt a bit dirty. NAT gateway and the whole private/public subnet was so ingrained in my mind, that parting with it was really difficult.</p>
+<p>It wasn&rsquo;t until I started thinking about alternatives, that I discovered, that, yes NAT gateway costs are little secret for people much more capable than me. And that parting with the private/public subnet model, is not crazy. For a sample, and an inspiration to this post, <a href="https://www.lastweekinaws.com/blog/the-aws-managed-nat-gateway-is-unpleasant-and-not-recommended/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Corey Quinn&rsquo;s post on NAT GW</a> is illuminating.</p>
+<blockquote>
+<p>“We’re putting a petabyte of data through that a month, but you don’t understand: We’ve gotta get that data to and from S3.” I get it; I’m not suggesting you change your data flow! But if you add a (completely free) S3 gateway endpoint to your private subnet, suddenly that petabyte of traffic to and from S3 stops costing you $45,000 a month and becomes absolutely free. The fact that this isn’t set up by default is a rant for another time.</p>
+</blockquote>
+<p>Surprisingly cost is not the only issue. Security is another one. In some companies it is common the &ldquo;only private subnets&rdquo; and VPN/Direct Connect to on-premise. Installing a NAT gateway seems obvious when you want to download updates, until you start thinking about how you would limit egress traffic, proxy whitelisted domains and limit the possibilities for exfiltration.</p>
+<p>From a security perspective, yes NAT Gateway provides a decent solution, but it won&rsquo;t cover those with stringent requirements.</p>
+<p>Please still consider using NAT gateway. But be well aware of the these two issues.</p>
+<h3 id="the-alternatives">The alternatives<a class="anchor" href="#the-alternatives">#</a></h3>
+<p>Now I&rsquo;m going to give some alternatives to NAT gateway.</p>
+<p>First things first. If your backend is sending/receiving data to/from AWS managed services like S3 and DynamoDB <strong>create an endpoint for them</strong>. <a href="https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-ddb.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>S3 and DynamoDB gateway endpoints have no cost at all!</a>. They are more secure (since they can have policies applied to them and you don&rsquo;t need to go to the Internet to reach them). This should be a must in every default configuration. Courses should be teaching them instead of putting a NAT gateway everywhere.</p>
+<p>If you use other AWS managed services you may consider an interface endpoint as well. Are you pulling or pushing images to ECR. Use an <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/vpc-endpoints.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>ECR endpoint</a>. Are you using SSM? Use and endpoint. The traffic to those endpoint is billed. But it is billed 5 times cheaper!!!</p>
+<p>Second. If you still need egress traffic to the Internet, and you already have IPv6 on your VPC, you may want to consider <a href="https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>egress-only-internet-gateway</a>. Traffic costs applied</p>
+<p>Third. You still need updates. But you may consider that having golden images with updates already applied and still no internet access can be a very nice alternative to NAT Gateway.</p>
+<p>Fourth. You might consider moving your backend services to a public subnet, were they have Internet access, and clamp down that access with security groups and NACLs. This is <em>heresy</em>, and I wouldn&rsquo;t even have thought about suggesting it, have it not Corey Quinn suggested it first</p>
+<blockquote>
+<p>“We need to move a petabyte a month to and from the internet, and <em>we can’t move the EC2 instances doing that into a public subnet</em> due to Compliance.”</p>
+</blockquote>
+<p>In the end, there is nothing magic about private subnet. There is not a flag or something. Just being able to route things to the Internet.</p>
+<p>Fifth. If you only need some gateway to get some updates, but you don&rsquo;t need full redundancy, you may consider creating your own instance. AWS <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>dedicates a page to it and it will tell you how to do it</a>, so it is not like you are doing anything crazy. You might as well, instead of a plain NAT instance, create a proxy with squid so that you limit the exfiltration options.</p>
+<h3 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h3>
+<p>NAT gateway is a reasonable service. But the cost is prohibitive. And a cost that affects both very small companies (with a few instances and a database, and where the <strong>EC2-other</strong> item masks this) but also big ones that rely on AWS services (S3 and DynamoDB)</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Product, technology and magic</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

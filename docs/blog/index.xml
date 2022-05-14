@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Fri, 29 Apr 2022 20:48:54 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 May 2022 14:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NAT Gateway is expensive</title>
+      <link>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</link>
+      <pubDate>Sat, 14 May 2022 14:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</guid>
+      <description>NAT Gateway A quick intro in AWS networking In AWS, it is very common to create your own isolated network, in what is called a VPC (from virtual private cloud). The official (more like general perception) way of doing it, involves having multiple public and private subnets.
+ Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
+    </item>
+    
+    <item>
+      <title>Product, technology and magic</title>
+      <link>http://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/</link>
+      <pubDate>Sun, 08 May 2022 22:00:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/</guid>
+      <description>New trend My daughters call me a senior and boomer. I&amp;rsquo;m more a GenX&amp;rsquo;er, but I pick my battles.
+They are finishing their first year at uni, so they are in the perfect spot to all the new trends. Yesterday, they invited me to the more recent app, called BeReal.
+For those who haven&amp;rsquo;t heard about it, it&amp;rsquo;s similar to other social photo apps, like Instagram or Snapchat. You take a picture, and share it with friends or simply with the rest of the world.</description>
+    </item>
+    
     <item>
       <title>Create an AWS account from the command line</title>
       <link>http://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</link>
