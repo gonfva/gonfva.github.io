@@ -27,6 +27,8 @@ NAT gateway is a service, managed by AWS that allows egress-only connectivity to
 
 If you have a server on the Internet and receive a request coming through the NAT gateway, you will see the IP of the NAT gateway, not the IP of the machine that connected through the NAT gateway.
 
+![An example of the usual architecture](/img/Screenshot_20220508-183557.png "Only two availability zones!!!")
+
 It sits within the public subnets (or at least that's my mental model)
 
 NAT gateway is a relatively simple concept. A Linux machine doing ip forwarding, launched in the public subnet and a default route in the private subnet to that machine, would be all you need. Things start being tricky, when you think you need to do hardening, updates, you need to start considering replication and their IP changing.
