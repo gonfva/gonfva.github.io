@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Single instance with persistent EBS | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Single instance with persistent EBS" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Single instance with persistent EBS",
+      "headline" : "Single instance with persistent EBS",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-05-24 07:30:00 \u002b0000 UTC",
+      "dateModified" : "2022-05-24 07:30:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-05-24-single-instance-persistent-ebs\/",
+      "wordCount" : "275",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Single instance with persistent EBS</h1>
+            
+            <h2>Poor man autoscaling</h2>
+            
+            <time datetime="2022-05-24 07:30:00 &#43;0000 UTC" class="post__date">2022-05-24</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="single-instance-with-persistent-ebs">Single instance with persistent EBS<a class="anchor" href="#single-instance-with-persistent-ebs">#</a></h2>
+<p>Sometimes you only want a single instance in AWS. But you know that everything fails, and you assume that your machine will fail too. You have your backups in place, but you have some data on disk that you would rather keep. In theory, that&rsquo;s what EBS are for. You detach your EBS volume, you destroy your instance, you create a new one, and you attach the volume.</p>
+<p>But that is a faff.</p>
+<p>If you want to automate all things, one possible solution is to have an autoscaling group, with minimum, maximum and desired of one instance, and in the cloud init process, you attach the EBS volume that you would have created elsewhere.</p>
+<p>How do you attach an EBS volume? Easy. First when you created the EBS, you assign it a specific tag. Then, in the cloud init process, you get your instance ID, and the volume ID of an EBS with the tag you&rsquo;ve assigned. And finally you attach it.</p>
+<p>In code</p>
+<pre><code>INSTANCE_ID=$(TOKEN=`curl -s -X PUT &quot;http://169.254.169.254/latest/api/token&quot; \
+    -H &quot;X-aws-ec2-metadata-token-ttl-seconds: 21600&quot;` &amp;&amp; curl -H &quot;X-aws-ec2-metadata-token: $TOKEN&quot; \
+     -s http://169.254.169.254/latest/meta-data/instance-id)
+VOLUME_ID=$(aws ec2 describe-volumes \
+    --region eu-west-2 \
+    --filters Name=tag:Name,Values=&lt;name of volume&gt; \
+    --query Volumes[0].VolumeId --output text)
+aws ec2 attach-volume --region eu-west-2 --device /dev/sdh --volume-id $VOLUME_ID --instance-id $INSTANCE_ID
+
+</code></pre>
+<p>Remember, that the instance profile will need to have a role able to do these two actions <code>ec2:DescribeVolumes</code> and       <code>ec2:AttachVolume</code>.</p>
+<p>Finally, unrelated, you may want to have something like the following that both mounts, but format if needed</p>
+<pre><code>FORMATED=$(sudo lsblk -f|grep nvme1n1| xargs)
+if [ &quot;$FORMATED&quot; == &quot;nvme1n1&quot; ];
+then
+    echo &quot;Formatting&quot;
+    sudo mkfs -t ext4 /dev/nvme1n1
+fi
+sudo mount /dev/nvme1n1 /home/ubuntu/
+</code></pre>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">NAT Gateway is expensive</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://gonzalo.f-v.es/categories/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -28,17 +28,14 @@
                 href="http://gonzalo.f-v.es/categories/"
                 />
   </url><url>
-    <loc>http://gonzalo.f-v.es/categories/ctoclick/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://gonzalo.f-v.es/tags/developer/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/categories/developer/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -50,11 +47,11 @@
                 href="http://gonzalo.f-v.es/"
                 />
   </url><url>
-    <loc>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <loc>http://gonzalo.f-v.es/blog/2022-05-24-single-instance-persistent-ebs/</loc>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/tags/</loc>
-    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+    <lastmod>2022-05-24T07:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -65,6 +62,12 @@
                 hreflang="en"
                 href="http://gonzalo.f-v.es/tags/"
                 />
+  </url><url>
+    <loc>http://gonzalo.f-v.es/categories/ctoclick/</loc>
+    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</loc>
+    <lastmod>2022-05-14T14:00:00+00:00</lastmod>
   </url><url>
     <loc>http://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/</loc>
     <lastmod>2022-05-08T22:00:00+00:00</lastmod>

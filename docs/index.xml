@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sat, 14 May 2022 14:00:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 07:30:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single instance with persistent EBS</title>
+      <link>http://gonzalo.f-v.es/blog/2022-05-24-single-instance-persistent-ebs/</link>
+      <pubDate>Tue, 24 May 2022 07:30:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-05-24-single-instance-persistent-ebs/</guid>
+      <description>Single instance with persistent EBS Sometimes you only want a single instance in AWS. But you know that everything fails, and you assume that your machine will fail too. You have your backups in place, but you have some data on disk that you would rather keep. In theory, that&amp;rsquo;s what EBS are for. You detach your EBS volume, you destroy your instance, you create a new one, and you attach the volume.</description>
+    </item>
+    
     <item>
       <title>NAT Gateway is expensive</title>
       <link>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</link>
