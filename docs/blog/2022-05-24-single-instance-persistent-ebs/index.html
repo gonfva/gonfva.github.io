@@ -68,7 +68,7 @@
       "datePublished": "2022-05-24 07:30:00 \u002b0000 UTC",
       "dateModified" : "2022-05-24 07:30:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-05-24-single-instance-persistent-ebs\/",
-      "wordCount" : "275",
+      "wordCount" : "306",
       "keywords" : ["Blog"]
     }
   
@@ -136,16 +136,24 @@ VOLUME_ID=$(aws ec2 describe-volumes \
     --query Volumes[0].VolumeId --output text)
 aws ec2 attach-volume --region eu-west-2 --device /dev/sdh --volume-id $VOLUME_ID --instance-id $INSTANCE_ID
 
+until [[ $VOL_STATUS == '&quot;in-use&quot;' ]]; do
+    VOL_STATUS=$(aws ec2 describe-volumes --region eu-west-2 --volume-ids $VOLUME_ID --query 'Volumes[0].State')
+    sleep 5
+done
+
 </code></pre>
 <p>Remember, that the instance profile will need to have a role able to do these two actions <code>ec2:DescribeVolumes</code> and       <code>ec2:AttachVolume</code>.</p>
 <p>Finally, unrelated, you may want to have something like the following that both mounts, but format if needed</p>
-<pre><code>FORMATED=$(sudo lsblk -f|grep nvme1n1| xargs)
+<pre><code>lsblk -f
+FORMATED=$(sudo lsblk -f|grep nvme1n1| xargs)
 if [ &quot;$FORMATED&quot; == &quot;nvme1n1&quot; ];
 then
     echo &quot;Formatting&quot;
-    sudo mkfs -t ext4 /dev/nvme1n1
+    mkfs -t ext4 /dev/nvme1n1
 fi
-sudo mount /dev/nvme1n1 /home/ubuntu/
+
+mount /dev/nvme1n1 &lt;mount path&gt;
+echo '/dev/nvme1n1  &lt;mount path&gt; ext4    defaults    0   1'|sudo tee -a /etc/fstab
 </code></pre>
 
 

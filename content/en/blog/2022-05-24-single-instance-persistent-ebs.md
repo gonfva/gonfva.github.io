@@ -28,6 +28,11 @@ VOLUME_ID=$(aws ec2 describe-volumes \
     --query Volumes[0].VolumeId --output text)
 aws ec2 attach-volume --region eu-west-2 --device /dev/sdh --volume-id $VOLUME_ID --instance-id $INSTANCE_ID
 
+until [[ $VOL_STATUS == '"in-use"' ]]; do
+    VOL_STATUS=$(aws ec2 describe-volumes --region eu-west-2 --volume-ids $VOLUME_ID --query 'Volumes[0].State')
+    sleep 5
+done
+
 ```
 
 Remember, that the instance profile will need to have a role able to do these two actions `ec2:DescribeVolumes` and       `ec2:AttachVolume`.
@@ -35,11 +40,14 @@ Remember, that the instance profile will need to have a role able to do these tw
 Finally, unrelated, you may want to have something like the following that both mounts, but format if needed
 
 ```
+lsblk -f
 FORMATED=$(sudo lsblk -f|grep nvme1n1| xargs)
 if [ "$FORMATED" == "nvme1n1" ];
 then
     echo "Formatting"
-    sudo mkfs -t ext4 /dev/nvme1n1
+    mkfs -t ext4 /dev/nvme1n1
 fi
-sudo mount /dev/nvme1n1 /home/ubuntu/
+
+mount /dev/nvme1n1 <mount path>
+echo '/dev/nvme1n1  <mount path> ext4    defaults    0   1'|sudo tee -a /etc/fstab
 ```
