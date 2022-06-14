@@ -4,6 +4,7 @@ theme = "hugo-theme-codex"
 copyright = "© Gonzalo Fernandez-Victorio {year}"
 defaultContentLanguage = "en"
 publishDir = "docs"
+summaryLength = 30
 
 [taxonomies]
   category = "categories"

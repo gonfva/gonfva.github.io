@@ -14,7 +14,7 @@ toc: true
 
 A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the [compromise of personal information](https://www.capitalone.com/facts2019/) on around 100M people.
 
-![email from AWS warning against S3 buckets with public access](/img/1*TbzHUQSGDSFAZe-olzUgBQ.png)AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “[S3 bucket with public permissions](https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68)” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.
+![email from AWS warning against S3 buckets with public access](/img/1*TbzHUQSGDSFAZe-olzUgBQ.png)AWS is putting great effort in avoiding S3 buckets configured for public access. When I read the initial reports, I thought the root cause was the usual “[S3 bucket with public permissions](https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68)” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.
 
 It turns out that the attack was more sophisticated ([but not as much as I’d thought](https://www.linkedin.com/posts/gonzalofernandezvictorio_you-may-have-heard-about-the-capital-one-activity-6562006675115556864-45dJ)).
 
