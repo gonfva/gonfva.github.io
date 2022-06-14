@@ -38,7 +38,7 @@
     <link type="text/css" rel="stylesheet" href="/css/posts.min.6f094aad28695152161dc4239215c000816bd099408da6cc65a37f9fb7194925.css" integrity="sha256-bwlKrShpUVIWHcQjkhXAAIFr0JlAjabMZaN/n7cZSSU="/>
   
     
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.13f3d286ba048c28b237e8d7deab0cfd65a32d909d9ddb7038054a6007eafaf2.css" integrity="sha256-E/PShroEjCiyN&#43;jX3qsM/WWjLZCdndtwOAVKYAfq&#43;vI="/>
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.86997521e8d6e55ebc583793f82d15acca4d334351454add7f5e5e811b609cd0.css" integrity="sha256-hpl1IejW5V68WDeT&#43;C0VrMpNM0NRRUrdf15egRtgnNA="/>
   
   
    
@@ -96,8 +96,8 @@
 
   <main>
     
-    
-    
+
+
 
 <div class="post-list__container">
   <ul class="post-list">
@@ -109,6 +109,8 @@
         <h2 class="post__title">
           <a href="/blog/2022-05-24-single-instance-persistent-ebs/">Single instance with persistent EBS</a>
         </h2>
+        <div class="summary">Single instance with persistent EBS Sometimes you only want a single instance in AWS. But you know that everything fails, and you assume that your machine will fail too. You have your backups in place, but you have some data on disk that you would rather keep.</div>
+
         
 
 <ul class="tags__list">
@@ -128,6 +130,8 @@
         <h2 class="post__title">
           <a href="/blog/2022-05-14-nat-gateway-alternatives/">NAT Gateway is expensive</a>
         </h2>
+        <div class="summary">NAT Gateway A quick intro in AWS networking In AWS, it is very common to create your own isolated network, in what is called a VPC (from virtual private cloud). The official (more like general perception) way of doing it, involves having multiple public and private subnets.</div>
+
         
 
 <ul class="tags__list">
@@ -147,6 +151,8 @@
         <h2 class="post__title">
           <a href="/blog/2022-04-29-create-aws-account-cli/">Create an AWS account from the command line</a>
         </h2>
+        <div class="summary">This post is a basic copy of this AWS page on how to create an AWS account. But it took me a while to understand all the steps (because I cannot read), so I&rsquo;m just writing so that the next time I can remember.</div>
+
         
 
 <ul class="tags__list">
@@ -166,6 +172,9 @@
         <h2 class="post__title">
           <a href="/blog/2022-04-28-editor-variable-script/">EDITOR variable as a script</a>
         </h2>
+        <div class="summary">I&rsquo;ve decided I&rsquo;m going to start writing again, even small things.
+This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&rsquo;t have public IPs in that VPC)</div>
+
         
 
 <ul class="tags__list">
@@ -185,6 +194,9 @@
         <h2 class="post__title">
           <a href="/blog/2019-10-16-dock-disappeared-in-macos-catalina/">Dock disappeared in MacOS Catalina</a>
         </h2>
+        <div class="summary">Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
+Well, here I am, to help you before Apple does.</div>
+
         
 
 <ul class="tags__list">
@@ -204,6 +216,9 @@
         <h2 class="post__title">
           <a href="/blog/2019-09-03-metadata-abuse-in-aws/">Metadata abuse in AWS</a>
         </h2>
+        <div class="summary">Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public access.</div>
+
         
 
 <ul class="tags__list">
@@ -223,6 +238,8 @@
         <h2 class="post__title">
           <a href="/blog/2019-09-02-configuration-in-aws-is-difficult/">Configuration in AWS is difficult</a>
         </h2>
+        <div class="summary">I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.</div>
+
         
 
 <ul class="tags__list">
@@ -242,6 +259,9 @@
         <h2 class="post__title">
           <a href="/blog/2018-10-13-trivial-error-with-bitbucket-api/">Trivial error with Bitbucket API</a>
         </h2>
+        <div class="summary">UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
+Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</div>
+
         
 
 <ul class="tags__list">
@@ -261,6 +281,9 @@
         <h2 class="post__title">
           <a href="/blog/2018-02-21-aws-cloudwatch-alarms/">AWS CloudWatch alarms</a>
         </h2>
+        <div class="summary">One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
+You create an alarm, to detect too many 5xx errors in your ELB.</div>
+
         
 
 <ul class="tags__list">
@@ -280,6 +303,8 @@
         <h2 class="post__title">
           <a href="/blog/2017-02-16--serverless--in-three-minutes/">“Serverless” in three minutes</a>
         </h2>
+        <div class="summary">Imagine you are interviewing some guy for an IT role and she says that he doesn’t get that of “going to the cloud because everybody knows there are no datacenters in the sky”.</div>
+
         
 
 <ul class="tags__list">
@@ -299,6 +324,8 @@
         <h2 class="post__title">
           <a href="/blog/2017-01-21-switch-off-your-servers/">Switch off your servers</a>
         </h2>
+        <div class="summary">Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</div>
+
         
 
 <ul class="tags__list">
@@ -318,6 +345,9 @@
         <h2 class="post__title">
           <a href="/blog/2016-10-16-a-flow-for-containers/">A flow for containers</a>
         </h2>
+        <div class="summary">Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.
+Initially you can think it’s only two steps: build an deploy.</div>
+
         
 
 <ul class="tags__list">
@@ -337,6 +367,8 @@
         <h2 class="post__title">
           <a href="/blog/2016-09-14-aws-elb-in-apache-logs/">AWS ELB in Apache logs</a>
         </h2>
+        <div class="summary">So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:</div>
+
         
 
 <ul class="tags__list">
@@ -356,6 +388,10 @@
         <h2 class="post__title">
           <a href="/blog/2016-02-19-self-healing-software/">Self-healing software</a>
         </h2>
+        <div class="summary">7 am in the morning. Some notifications in the mailbox and on Slack.
+Big demo today and part of the system had gone down.
+And had gone back up too. With no human intervention.</div>
+
         
 
 <ul class="tags__list">
@@ -375,6 +411,8 @@
         <h2 class="post__title">
           <a href="/blog/2016-02-06-deploying-docker/">Deploying docker</a>
         </h2>
+        <div class="summary">“Thou shall not pass” “docker exec, lets install wireshark”This is my account of some experiences deploying docker (or should I say messing/faffing with docker). The path has not yet finished, but I wanted to share our experience in case it can help others.</div>
+
         
 
 <ul class="tags__list">
@@ -394,6 +432,8 @@
         <h2 class="post__title">
           <a href="/blog/2016-01-30-mobile-apps/">Mobile apps</a>
         </h2>
+        <div class="summary">Platform stats for the UKWe’re recruiting a Product Manager for our team, and this week we’ve been doing some interviews. One of the recurrent topics in those interviews has been mobile apps.</div>
+
         
 
 <ul class="tags__list">
@@ -413,6 +453,8 @@
         <h2 class="post__title">
           <a href="/blog/2015-12-19-a-different-scala-is-possible/">A different Scala is possible</a>
         </h2>
+        <div class="summary">Scala, for those who haven’t heard about it, is a programming language. It allows different ways of programming (functional programming but also object oriented programming) It can generate code that runs like, and interoperate seamlessly with, Java.</div>
+
         
 
 <ul class="tags__list">
@@ -432,6 +474,8 @@
         <h2 class="post__title">
           <a href="/blog/2015-10-19-love-your-users/">Love your users</a>
         </h2>
+        <div class="summary">A few years ago, I was leading a small team in charge of developers’ tools and framework. We discovered a bug, and the easiest way to solve it was to make a change in a different piece of functionality that wasn’t technically right, but was being heavily used.</div>
+
         
 
 <ul class="tags__list">
@@ -451,6 +495,9 @@
         <h2 class="post__title">
           <a href="/blog/2015-10-03-agile-is-not-standups/">Agile is not Standups</a>
         </h2>
+        <div class="summary">Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
+However, as in many of these events, the better part was meeting people.</div>
+
         
 
 <ul class="tags__list">
@@ -470,6 +517,8 @@
         <h2 class="post__title">
           <a href="/blog/2015-09-04-devops-is-so-2010--noops-is-the-future/">DevOps is so 2010. NoOps is the future</a>
         </h2>
+        <div class="summary">Cup cake or fairy cake. It doesn’t matter as long as we know what we meanTechnology moves so quickly that people who work in it are always at risk of being obsolete.</div>
+
         
 
 <ul class="tags__list">
@@ -489,6 +538,8 @@
         <h2 class="post__title">
           <a href="/blog/2015-04-26-react-native-some-context-and-few/">React-native: some context and a few wrinkles</a>
         </h2>
+        <div class="summary">React native is a way to build iOS applications using Javascript. The idea is not radically new, since you are probably aware of PhoneGap/Cordova and others like that. I myself played with something similar long time ago.</div>
+
         
 
 <ul class="tags__list">
@@ -508,6 +559,8 @@
         <h2 class="post__title">
           <a href="/blog/2015-01-31-developers-neverending-story/">Developers - The neverending story</a>
         </h2>
+        <div class="summary">A year ago I vaguely new something about Scala. Today I&rsquo;m not an expert, but I&rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka.</div>
+
         
 
 <ul class="tags__list">
@@ -527,6 +580,8 @@
         <h2 class="post__title">
           <a href="/blog/2015-01-02-developers-are-from-mars-users-from/">Developers are from Mars, users from Venus</a>
         </h2>
+        <div class="summary">From 2008 to 2012, I was the project manager of a project with very special users. The kind of project was in the field of digital signature for the Spanish Government.</div>
+
         
 
 <ul class="tags__list">
@@ -546,6 +601,8 @@
         <h2 class="post__title">
           <a href="/blog/2014-10-04-agile-is-about-managing-risk/">Agile is about managing risk</a>
         </h2>
+        <div class="summary">It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority.</div>
+
         
 
 <ul class="tags__list">
@@ -565,6 +622,8 @@
         <h2 class="post__title">
           <a href="/blog/2014-07-12-jetty/">Jetty</a>
         </h2>
+        <div class="summary">Lately I&rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky.</div>
+
         
 
 <ul class="tags__list">
@@ -584,6 +643,8 @@
         <h2 class="post__title">
           <a href="/blog/2014-06-08-scala-first-impressions/">Scala: First impressions</a>
         </h2>
+        <div class="summary">A couple of months ago I started working for a different company. I&rsquo;m quite happy there for many reasons. But one of them is having the opportunity to learn a new language: Scala.</div>
+
         
 
 <ul class="tags__list">
@@ -603,6 +664,9 @@
         <h2 class="post__title">
           <a href="/blog/2014-03-13-optimizing/">Optimizing</a>
         </h2>
+        <div class="summary">A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
+After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:</div>
+
         
 
 <ul class="tags__list">
@@ -622,6 +686,10 @@
         <h2 class="post__title">
           <a href="/blog/2014-03-12-tipping-point/">Tipping point</a>
         </h2>
+        <div class="summary">I&rsquo;m happy.
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</div>
+
         
 
 <ul class="tags__list">
@@ -641,6 +709,9 @@
         <h2 class="post__title">
           <a href="/blog/2014-02-27-i-was-sure-it-was-my-fault/">I was sure it was my fault...</a>
         </h2>
+        <div class="summary">&hellip; but it wasn&rsquo;t.
+In the last week or so, I&rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</div>
+
         
 
 <ul class="tags__list">
@@ -660,6 +731,8 @@
         <h2 class="post__title">
           <a href="/blog/2014-01-21-multithreading-warning-lights/">Multithreading: Warning lights</a>
         </h2>
+        <div class="summary">A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked.</div>
+
         
 
 <ul class="tags__list">
@@ -682,6 +755,8 @@
         <h2 class="post__title">
           <a href="/blog/2014-01-12-its-great-when-your-idea-is-good-one/">It&#39;s great when your idea is a good one. But...</a>
         </h2>
+        <div class="summary">Since I came to London, more than a year ago, I&rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them).</div>
+
         
 
 <ul class="tags__list">
@@ -701,6 +776,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-10-01-crash-course-on-spring-mvc-transactions/">Crash course on Spring MVC, transactions and persistence (I)</a>
         </h2>
+        <div class="summary">A couple of weeks ago I was asked to do an assignment for a selection process. The task was trivial for expected 2-3 hours, and mentioned that the final project would end as a Web Application based on Spring and Hibernate.</div>
+
         
 
 <ul class="tags__list">
@@ -720,6 +797,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-09-24-optionaldataexception-while-reading-jms/">OptionalDataException while reading JMS message</a>
         </h2>
+        <div class="summary">We&rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
+javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.</div>
+
         
 
 <ul class="tags__list">
@@ -739,6 +819,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-09-22-weird-ie9-bug/">Weird IE9 bug</a>
         </h2>
+        <div class="summary">This last two weeks I have dealt with a weird bug in IE9.
+The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&rsquo;t drop down.</div>
+
         
 
 <ul class="tags__list">
@@ -758,6 +841,10 @@
         <h2 class="post__title">
           <a href="/blog/2012-09-14-my-first-chrome-extensionii/">My first Chrome extension(II)</a>
         </h2>
+        <div class="summary">In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
+First. The Chrome Extensions developer&rsquo;s documentation is quite good.
+Second. A chrome extension is a zip of a folder with an crx extension instead.</div>
+
         
 
 <ul class="tags__list">
@@ -777,6 +864,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-09-14-my-first-chrome-extensioni/">My first Chrome extension(I)</a>
         </h2>
+        <div class="summary">This afternoon I was preparing an interview I expect to have next week, and came to an interesting page with information about job selection process and companies inside information. However, after surfing a bit, the inevitable, &ldquo;become a registered member&rdquo; started to bug me.</div>
+
         
 
 <ul class="tags__list">
@@ -796,6 +885,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-09-10-the-best-eclipse-tip-ever/">The best eclipse tip ever</a>
         </h2>
+        <div class="summary">How to disable auto close for the XML comments.
+Preferences-&gt;XML Files-&gt;Editor-&gt;Typing.</div>
+
         
 
 <ul class="tags__list">
@@ -815,6 +907,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-09-04-calisthenics/">Calisthenics</a>
         </h2>
+        <div class="summary">I didn&rsquo;t know about object calisthenics. They are a set of rules to help develop better:
+1. One level of indentation per method2. Don’t use the ELSE keyword 3. Wrap all primitives and Strings4.</div>
+
         
 
 <ul class="tags__list">
@@ -834,6 +929,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-26-little-robot-iv-ruby-version/">Little robot (IV): Ruby version</a>
         </h2>
+        <div class="summary">Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent.
+One obvious problem is the use of string instead of symbols.</div>
+
         
 
 <ul class="tags__list">
@@ -853,6 +951,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-25-little-robot-iii-dependency-inversion/">Little robot (III): Dependency inversion</a>
         </h2>
+        <div class="summary">As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine.</div>
+
         
 
 <ul class="tags__list">
@@ -872,6 +972,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-23-rails-in-ubuntu/">Rails in Ubuntu</a>
         </h2>
+        <div class="summary">I&rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&rsquo;re starting with ubuntu, here comes a piece of advice.
+There is some controversy about editor to use for ruby.</div>
+
         
 
 <ul class="tags__list">
@@ -891,6 +994,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-20-faking-console-in-ruby/">Faking the console in Ruby </a>
         </h2>
+        <div class="summary">A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. While doing in Java, I decided to test the engine. But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console.</div>
+
         
 
 <ul class="tags__list">
@@ -910,6 +1015,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-19-little-robot-ii-java-version/">Little robot (II): Java version</a>
         </h2>
+        <div class="summary">As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+PLACE X,Y,F -&gt; Places the robot in the x,y position facing F MOVE -&gt; Move the robot 1 cell in the facing direction LEFT -&gt; Changes the facing counter-clockwise RIGHT -&gt; Changes the facing clockwise REPORT -&gt; Shows the current position and facing and the main requirement was that the robot didn&rsquo;t fall outside the board.</div>
+
         
 
 <ul class="tags__list">
@@ -929,6 +1037,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-17-little-robot-i/">Little robot (I)</a>
         </h2>
+        <div class="summary">While applying to a position a few days ago, I received an assignment trying to test my coding style.
+IMO, assignments are quite a good way to get a peek on the coding style of someone.</div>
+
         
 
 <ul class="tags__list">
@@ -948,6 +1059,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-08-15-savonrb-and-sequences/">Savon.rb and sequences</a>
         </h2>
+        <div class="summary">As I wrote in my last post, I&rsquo;ve recently learned it is important to be able to show what you&rsquo;ve been doing. So I&rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects.</div>
+
         
 
 <ul class="tags__list">
@@ -967,6 +1080,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/">Xerces, Xalan and Saxon, more recipes</a>
         </h2>
+        <div class="summary">In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough.</div>
+
         
 
 <ul class="tags__list">
@@ -986,6 +1101,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-04-03-javascript-all-way/">Javascript all the way</a>
         </h2>
+        <div class="summary">These days I&rsquo;m playing with NodeJS. And today I was thinking about the fundamental change in Javascript. A few years ago it was a darn language for the web. Now someone could query a database using Javascript (CouchDB), create the server portion of a web application using Javascipt(NodeJS), create the browser portion of a web application using pure and fast Javascript, and even create a pure mobile interface using Javascipt (Appcelerator Titanium).</div>
+
         
 
 <ul class="tags__list">
@@ -1005,6 +1122,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-03-23-synchronized-silver-bullet/">The synchronized silver bullet</a>
         </h2>
+        <div class="summary">I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code.</div>
+
         
 
 <ul class="tags__list">
@@ -1024,6 +1143,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-01-31-xerces-and-xalan-recipes-for-win/">Xerces and Xalan: Recipes for the win</a>
         </h2>
+        <div class="summary">OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&rsquo;t use System.setProperty to resolve them. In this post I wan&rsquo;t to give a few recipes to resolve Xerces and Xalan problems.</div>
+
         
 
 <ul class="tags__list">
@@ -1043,6 +1164,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/">Things about Xerces, Xalan and Saxon I didn&#39;t know (III)</a>
         </h2>
+        <div class="summary">In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.</div>
+
         
 
 <ul class="tags__list">
@@ -1062,6 +1185,9 @@
         <h2 class="post__title">
           <a href="/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/">Things about Xerces, Xalan and Saxon I didn&#39;t know (II)</a>
         </h2>
+        <div class="summary">I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
+Xerces is a Java library that helps parsing, validating and managing XML documents.</div>
+
         
 
 <ul class="tags__list">
@@ -1081,6 +1207,8 @@
         <h2 class="post__title">
           <a href="/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/">Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</a>
         </h2>
+        <div class="summary">These days I&rsquo;m getting very proud of myself. I&rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</div>
+
         
 
 <ul class="tags__list">
@@ -1100,6 +1228,10 @@
         <h2 class="post__title">
           <a href="/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/">Notes to a newbie spring-mvc developer</a>
         </h2>
+        <div class="summary">Activate log4j. Without it you&rsquo;re lost
+Look through the log to see if you&rsquo;re getting the RequestMapping through Spring.
+If you are not despite correct annotations, see this post. In particular if you&rsquo;ve got Spring Security installed, for Goodness sake, don&rsquo;t forget these lines:</div>
+
         
 
 <ul class="tags__list">
@@ -1119,6 +1251,9 @@
         <h2 class="post__title">
           <a href="/blog/2010-11-23-spring-course/">Spring course</a>
         </h2>
+        <div class="summary">I&rsquo;m attending this week to a Spring Framework course. It&rsquo;s a very small class: the teacher, my boss and me.
+I don&rsquo;t consider myself slow, and neither is my boss. No, he doesn&rsquo;t read this blog.</div>
+
         
 
 <ul class="tags__list">
@@ -1138,6 +1273,8 @@
         <h2 class="post__title">
           <a href="/blog/2010-03-29-more-mantis-problems/">More Mantis problems</a>
         </h2>
+        <div class="summary">I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&rsquo;s great being able to debug a PHP application.</div>
+
         
 
 <ul class="tags__list">
@@ -1157,6 +1294,9 @@
         <h2 class="post__title">
           <a href="/blog/2010-03-09-mantis-on-sql-server/">Mantis on SQL Server</a>
         </h2>
+        <div class="summary">[Technical post]
+I&rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</div>
+
         
 
 <ul class="tags__list">

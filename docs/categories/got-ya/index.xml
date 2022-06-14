@@ -15,8 +15,7 @@
       
       <guid>http://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</guid>
       <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.
-This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)
-But while I was working with it, I was making use of kops edit and that opened a new editor (vim in my case) so that I can tweak the configuration (there were no arguments for what I was trying to do).</description>
+This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
     </item>
     
     <item>
@@ -26,9 +25,7 @@ But while I was working with it, I was making use of kops edit and that opened a
       
       <guid>http://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
       <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
-Well, here I am, to help you before Apple does.
-Open a terminal.
-How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+Well, here I am, to help you before Apple does.</description>
     </item>
     
     <item>
@@ -38,7 +35,7 @@ How? — you may ask — my dock doesn’t exist. I don’t know how to open any
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
       <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
-AWS is putting great effort in avoiding S3 buckets configured for public accessWhen I read the initial reports, I thought the root cause was the usual “S3 bucket with public permissions” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</description>
+AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
     </item>
     
     <item>
@@ -47,9 +44,7 @@ AWS is putting great effort in avoiding S3 buckets configured for public accessW
       <pubDate>Mon, 02 Sep 2019 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2019-09-02-configuration-in-aws-is-difficult/</guid>
-      <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
-When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.
-What follows is just one example I found on the Internet (i.</description>
+      <description>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.</description>
     </item>
     
     <item>
@@ -59,8 +54,7 @@ What follows is just one example I found on the Internet (i.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
       <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
-Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…
-The company behind that product, Atlassian, has other products. One of them is called Bitbucket, and, similar to Github, it is a Source Code management system. My personal opinion is that Bitbucket is cheaper, but also that Github is better.</description>
+Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
     </item>
     
     <item>
@@ -70,7 +64,7 @@ The company behind that product, Atlassian, has other products. One of them is c
       
       <guid>http://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</guid>
       <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
-You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more.</description>
+You create an alarm, to detect too many 5xx errors in your ELB.</description>
     </item>
     
     <item>
@@ -79,8 +73,7 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
       <pubDate>Wed, 14 Sep 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</guid>
-      <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
-Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+      <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:</description>
     </item>
     
     <item>
@@ -89,8 +82,7 @@ Put a specific endpoint for the health check and don’t log it. ELB needs to ch
       <pubDate>Sat, 12 Jul 2014 17:39:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-07-12-jetty/</guid>
-      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky.
-The first one was the typical example of &amp;ldquo;correlation does not equal causation&amp;rdquo;. I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error &amp;ldquo;Could not create symlink /tmp&amp;rdquo;.</description>
+      <description>Lately I&amp;rsquo;ve had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky.</description>
     </item>
     
     <item>
@@ -99,7 +91,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL. Unfortunately the PHP web application and MySQL were working together and that made the issue more difficult to track.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
     </item>
     
     <item>
@@ -110,7 +102,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
       <description>I&amp;rsquo;m happy.
 I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&amp;rsquo;t took me too long to start debugging the actual gem&amp;rsquo;s code.</description>
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
     </item>
     
     <item>
@@ -120,7 +112,7 @@ I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar 
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
       <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
     </item>
     
     <item>
@@ -131,8 +123,7 @@ In the last week or so, I&amp;rsquo;ve been hitting against a wall because of tw
       <guid>http://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</guid>
       <description>[Long post]
 Edited (08th-Jun-2014): Updated the firmware download site.
-In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don&amp;rsquo;t manage to understand the underlying logic.
-The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I&amp;rsquo;m an expert: take it with a grain of salt).</description>
+In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process.</description>
     </item>
     
     <item>
@@ -142,7 +133,7 @@ The following is my visualization of the whole process (this is less than a week
       
       <guid>http://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
       <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.
-Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bit old. Fortunately, Sony had already published Android 4.04 for the Xperia U, and the same day I received, I installed ICS (Android is famous for putting sweet names to its versions).</description>
+Sony Xperia U (ST25i) has a stock Android 2.</description>
     </item>
     
     <item>
@@ -152,7 +143,7 @@ Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bi
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
       <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException. And trying to send some class and then changing the serialVersionUID, he got an error at receiving, but a different error (java.</description>
+javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.</description>
     </item>
     
     <item>
@@ -162,7 +153,7 @@ javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
       <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down. The problem appeared in different pages, but only for some combination of values. The issue appeared after installing IE9 from IE7 in a Windows Vista. The user could reproduce the issue (for a certain combination of values).</description>
+The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
     </item>
     
     <item>
@@ -171,8 +162,7 @@ The problem appeared in a legacy web application. The issue reported by the user
       <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
-I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects.</description>
     </item>
     
     <item>
@@ -181,8 +171,7 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
-In my previous post I explained how to make Java choose a class for a parser.</description>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough.</description>
     </item>
     
     <item>
@@ -191,8 +180,7 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Tue, 31 Jan 2012 14:38:05 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
-      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
-Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&amp;rsquo;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
+      <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.</description>
     </item>
     
     <item>
@@ -201,9 +189,7 @@ Under no circumstances use System.setProperty anywhere in your application. I kn
       <pubDate>Sun, 29 Jan 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-29-things-about-xerces-xalan-and-saxon-i_29/</guid>
-      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.
-And that solution is wrong. Very wrong.
-Because, if you choose to change the provider using System.setProperty, you are changing the provider for all the applications in the container/server.</description>
+      <description>In my previous entry, I tried to explain why Xerces and Xalan are so complicated. In this entry I want to focus in System.setProperty. Because, as I said that is the usual solution you are going to find when you need a specific parser for whatever reason.</description>
     </item>
     
     <item>
@@ -213,7 +199,7 @@ Because, if you choose to change the provider using System.setProperty, you are 
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
       <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&amp;rsquo;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
     </item>
     
     <item>
@@ -222,7 +208,7 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Wed, 18 Jan 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team. That&amp;rsquo;s great because in order to remove the glitches of my team I have to learn a lot on very different topics. One of those topics has been Xerces and Xalan.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
     </item>
     
     <item>
@@ -233,8 +219,7 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <guid>http://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
       <description>Activate log4j. Without it you&amp;rsquo;re lost
 Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
-If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:
-&amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;quot;&amp;gt; &amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;quot;&amp;gt; &amp;lt;/beans:bean&amp;gt; &amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
+If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
     </item>
     
     <item>
@@ -243,8 +228,7 @@ If you are not despite correct annotations, see this post. In particular if you&
       <pubDate>Mon, 29 Mar 2010 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/</guid>
-      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&amp;rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&amp;rsquo;ve discovered something quite shocking:
-I wasn&amp;rsquo;t able to find any good answers to something that must be frequent. I was uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in hex 41 41 41 41).</description>
+      <description>I have been fighting with PHP, Mantis and SOAP since my last post. Now I think I have discovered a bug when uploading via Mantis SOAP a binary file. It&amp;rsquo;s great being able to debug a PHP application.</description>
     </item>
     
     <item>
@@ -254,7 +238,7 @@ I wasn&amp;rsquo;t able to find any good answers to something that must be frequ
       
       <guid>http://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
       <description>[Technical post]
-I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election. I&amp;rsquo;m not planning to enter in a flame war. I wanted a free bug tracking system that worked with MSSQL. Candidates were Bugzilla, with higly experimental MSSQL support, BugTracker .</description>
+I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
     </item>
     
   </channel>
