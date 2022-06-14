@@ -131,59 +131,73 @@
 >the version I sent</a>.</p>
 <p>One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.</p>
 <p>Anyway it was clear that Java version was considerably more verbose.</p>
-<p>So one obvious improvement is using symbols instead of string. But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of <a href="http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate" 
+<p>So one obvious improvement is using symbols instead of string. But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of <a href="http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate" 
   
    target="_blank" rel="noreferrer noopener" 
 >Array.rotate</a>. I don&rsquo;t like that improvement, because it makes the code less understandable. But I didn&rsquo;t like the verbosity of the case, and I tested a different approach. This is the code I left in the end:</p>
-<p><code>class Robot
-  VALID_X = 0..4
-  VALID_Y = 0..4
-  VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]
-  TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}
-  TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}
-  MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}</p>
-<p>  def initialize
-    @accepting=false
-  end</p>
-<p>  def place(cols,rows,facing)
-    x=cols.to_i
-    y=rows.to_i
-    f=facing.to_sym
-    if is_valid?(x,y,f)
-      @x=x
-      @y=y
-      @f=f
-      @accepting=true
-    end
-  end</p>
-<p>  def left
-      return unless @accepting
-      @f=TURN_LEFT[@f]
-  end</p>
-<p>  def right
-      return unless @accepting
-      @f=TURN_RIGHT[@f]
-  end</p>
-<p>  def move
-      return unless @accepting
-      delta=MOVE[@f]
-      x = @x + delta[0]
-      y = @y + delta[1]
-      if is_valid?(x,y)
-        @x=x
-        @y=y
-      end
-  end</p>
-<p>  def report
-    return nil unless @accepting
-    &quot;#{@x.to_s},#{@y.to_s},#{@f}&quot;
-  end</p>
-<p>protected
-  def is_valid?(x,y,f=@f)
-      VALID_X.include?(x) &amp;&amp; VALID_Y.include?(y) &amp;&amp; VALID_F.include?(f)
-  end
+<pre><code>class Robot
+  VALID_X = 0..4
+  VALID_Y = 0..4
+  VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]
+  TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}
+  TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}
+  MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}
+
+
+  def initialize
+    @accepting=false
+  end
+
+
+  def place(cols,rows,facing)
+    x=cols.to_i
+    y=rows.to_i
+    f=facing.to_sym
+    if is_valid?(x,y,f)
+      @x=x
+      @y=y
+      @f=f
+      @accepting=true
+    end
+  end
+
+
+  def left
+      return unless @accepting
+      @f=TURN_LEFT[@f]
+  end
+
+
+  def right
+      return unless @accepting
+      @f=TURN_RIGHT[@f]
+  end
+
+
+  def move
+      return unless @accepting
+      delta=MOVE[@f]
+      x = @x + delta[0]
+      y = @y + delta[1]
+      if is_valid?(x,y)
+        @x=x
+        @y=y
+      end
+  end
+
+
+  def report
+    return nil unless @accepting
+    &quot;#{@x.to_s},#{@y.to_s},#{@f}&quot;
+  end
+
+
+protected
+  def is_valid?(x,y,f=@f)
+      VALID_X.include?(x) &amp;&amp; VALID_Y.include?(y) &amp;&amp; VALID_F.include?(f)
+  end
 end
-</code></p>
+</code></pre>
 
 
               

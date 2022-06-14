@@ -90,7 +90,7 @@ Don’t get me wrong. I’m a big fan of Monzo. Super fan of the notifications, 
       
       <guid>http://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</guid>
       <description>I like Netflix. I really do. But there are a few things in their user interface that drive me crazy.
- You cannot remove a movie from continue watching. You’ve already watched a movie, don’t want to see the credits, butNetflix thinks you haven’t reached the end. Or you get bored of a movie half way. I even have a thumbs down on “Iron Fist” and it keeps appearing!!! How do you remove those movies you don’t want to keep watching?</description>
+You cannot remove a movie from continue watching. You’ve already watched a movie, don’t want to see the credits, but Netflix thinks you haven’t reached the end. Or you get bored of a movie half way. I even have a thumbs down on “Iron Fist” and it keeps appearing!!! How do you remove those movies you don’t want to keep watching?</description>
     </item>
     
     <item>
@@ -123,7 +123,7 @@ Apparently the argument of the report is that Let’s Encrypt doesn’t do a pro
       <guid>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</guid>
       <description>It’s in the news. Amazon S3, the popular object store crashed yesterday in one of their regions and affected multiple other sites, including Slack and GitHub.
 So here are some comments about it:
- AFAICT the s3 outage was in us-east-1 region. Other regions didn’t have S3 affected. S3 in Europe* This is not the first s3 outage. You may have read about what this affects the 11 nines promise. Most likely, it doesn’t .</description>
+AFAICT the s3 outage was in us-east-1 region. Other regions didn’t have S3 affected. S3 in Europe* This is not the first s3 outage. You may have read about what this affects the 11 nines promise. Most likely, it doesn’t .</description>
     </item>
     
     <item>
@@ -144,8 +144,8 @@ However acquisitions are not going to change anything. And it is not because peo
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</guid>
       <description>Today I was reading this article about excuses from banks for crap services. Then I got to this sentence:
- Consumers need to understand that the balance you see is not necessarily your actual available balance because there are so many moving partsNo. Consumers don’t need to understand anything like that. It is your job to simplify things. And you even fail to recognise it.
- I’ve mentioned it before. I have worked for highly formalised organisations and I know from inside that sometimes it’s very difficult to disrupt our own organisation.</description>
+Consumers need to understand that the balance you see is not necessarily your actual available balance because there are so many moving partsNo. Consumers don’t need to understand anything like that. It is your job to simplify things. And you even fail to recognise it.
+I’ve mentioned it before. I have worked for highly formalised organisations and I know from inside that sometimes it’s very difficult to disrupt our own organisation.</description>
     </item>
     
     <item>
@@ -166,7 +166,7 @@ My bank allows me to do banking and investment.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-07-aws-summit-london-2016/</guid>
       <description>Today I went to AWSSummit London. It’s a free event dedicated to Amazon Web Services. The event took place at Excel London, excellent venue except for the occasional noise due to planes taking off from the nearby London City Airport.
-KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also thegeneral commitment from AWS with UK startup ecosystem.</description>
+KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also the general commitment from AWS with UK startup ecosystem.</description>
     </item>
     
     <item>
@@ -190,8 +190,8 @@ Some examples I started taking a look to other dynamic web pages.</description>
 Around a month ago, I installed the app, started registering, think twice…
 … and uninstalled.
 Now, I’ve discovered that Snapchat is really a thing outside teenagers.
- And you know what?
- I don’t care.
+And you know what?
+I don’t care.
 I’m going to miss this one.
 I’ve been an early adopter in many trends.</description>
     </item>
@@ -216,7 +216,7 @@ And, yes. With AI I mean self-aware, general (non-restricted to a domain) intell
       
       <guid>http://gonzalo.f-v.es/blog/2016-02-07-my-take-on--riptwitter/</guid>
       <description>There is some outrage in Twitter because it has started to implement some changes to its product.
- There was a change from stars to likes. I think I prefer stars because it conveys a different meaning: when I read something sad, I cannot click in Like, but I would click in star. Moments is something that appeared in the header of Twitter, but I haven’t clicked more than 3 times (the last one while preparing this post) Now it seems they’re going to put a “While you were away” on steroids.</description>
+There was a change from stars to likes. I think I prefer stars because it conveys a different meaning: when I read something sad, I cannot click in Like, but I would click in star. Moments is something that appeared in the header of Twitter, but I haven’t clicked more than 3 times (the last one while preparing this post) Now it seems they’re going to put a “While you were away” on steroids.</description>
     </item>
     
     <item>
@@ -248,7 +248,7 @@ The company in question is quite successful in its niche. They have an IT platfo
       <description>I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.
 Granted, the price is amazingly good. 50 quid was already good, so 35 is almost incredible. But, what the heck, this is the beginning of the season. And they’ve already run out of units?
 There are several possibilities here:
- This is an strategy to create scarcity. “Buy now or you won’t have it” This is a massive screw-up.</description>
+This is an strategy to create scarcity. “Buy now or you won’t have it” This is a massive screw-up.</description>
     </item>
     
     <item>
@@ -279,7 +279,7 @@ When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it 
       <pubDate>Sun, 08 Jun 2014 21:23:54 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
-      <description>A few months ago,I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
+      <description>A few months ago, I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
 I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&#39;t know is that today&#39;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&#39;s update yet.</description>
     </item>
     
@@ -322,7 +322,7 @@ On one side, Facebook and Whatsapp. $19 billion. There are many different opinio
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</guid>
       <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications.
- One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
+One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
     </item>
     
     <item>
@@ -341,7 +341,7 @@ We know that, and we know passwords were not in the clear (they were stored hash
       <pubDate>Mon, 14 May 2012 15:18:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-05-14-google-where-are-you-going/</guid>
-      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
+      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
 I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;.
 Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
     </item>
@@ -352,7 +352,8 @@ Even Google Wave was revolutionary although the launch was a big failure, and th
       <pubDate>Sun, 08 Jan 2012 19:31:33 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-08-when-companies-just-dont-get-it/</guid>
-      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce. More recently I&amp;rsquo;ve started with mobile development. I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
+      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce.
+More recently I&amp;rsquo;ve started with mobile development. I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
     </item>
     
     <item>
@@ -390,7 +391,7 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
       
       <guid>http://gonzalo.f-v.es/blog/2009-08-13-netbook-operating-systems/</guid>
       <description>A few months ago I got a new Acer Aspire One A110. It&amp;rsquo;s an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9&amp;rsquo;&amp;rsquo; screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I&amp;rsquo;ve been testing several Netbook OS and I wanted to share my thoughts about it.
-  The original distribution, (as I&amp;rsquo;ve said) is a personalized version of Linpus Lite.</description>
+The original distribution, (as I&amp;rsquo;ve said) is a personalized version of Linpus Lite.</description>
     </item>
     
     <item>

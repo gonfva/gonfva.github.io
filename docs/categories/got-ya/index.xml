@@ -28,7 +28,7 @@ But while I was working with it, I was making use of kops edit and that opened a
       <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
 Well, here I am, to help you before Apple does.
 Open a terminal.
- How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
       
       <guid>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</guid>
       <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
- Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
     </item>
     
     <item>
@@ -99,7 +99,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
     </item>
     
     <item>
@@ -150,7 +150,7 @@ Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bi
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
       <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException. And trying to send some class and then changing the serialVersionUID, he got an error at receiving, but a different error (java.</description>
     </item>
     
     <item>
@@ -179,8 +179,8 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
- In my previous post I explained how to make Java choose a class for a parser.</description>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
     <item>

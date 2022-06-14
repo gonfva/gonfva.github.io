@@ -19,13 +19,13 @@ If you are looking for a job, be sure to do just the opposite of what the bad on
 Almost every other day I receive an email offering me a position.
 
 
-<i>"Good for you".&nbsp;</i>
+_"Good for you"._
 
 
 No, bad for me.
 
 
-Most of the emails come from people I haven't spoken to. They don't know if I'm looking for a new job. They got my email and an old version of my CV&nbsp;somewhere. They match keywords on the profile with my CV and if there is something in common they send the email. They send the same message to dozens, (or hundreds) of recipients. They mix profiles in London with other roles in Manchester (or even Australia). They mix graduates/junior roles with senior. The profile include the typical keywords "competitive salary" "agile" "cutting edge"
+Most of the emails come from people I haven't spoken to. They don't know if I'm looking for a new job. They got my email and an old version of my CV somewhere. They match keywords on the profile with my CV and if there is something in common they send the email. They send the same message to dozens, (or hundreds) of recipients. They mix profiles in London with other roles in Manchester (or even Australia). They mix graduates/junior roles with senior. The profile include the typical keywords "competitive salary" "agile" "cutting edge"
 
 
 I try to reply to them, sometimes with a canned response.
@@ -40,16 +40,20 @@ So for me what are the really tempting contacts? The ones that try to establish 
 So what does teach me about looking for a job/applying?
 
 
-Now, when I really want a job, <b>I put myself on the recipient's role</b>. What if it receives dozens of emails? How is she going to know that I'm the perfect fit?
+Now, when I really want a job, **I put myself on the recipient's role**</b>**. What if it receives dozens of emails? How is she going to know that I'm the perfect fit?
 
 
 Some obvious tips:
 
++ You can contact a company with a _cold email_(as in without role/offer), but with nothing else you won't get any reply. Even if you send to thousands recipients, you probably won't get any response. The typical "I've sent dozens of CVs" is bogus.
+
++ Either when cold email OR when replying to a specific role, research the company and try to understand what you can provide to that company, what is the company's culture, and carefully craft either the letter or the CV (or both)
+
++ Try to understand profiles, not if you match some/all of the requirements. Once you've understood the profile, apply with a cover letter matching your profile to the requirements.
+
++ If in search mode, the previous apply when contacting final companies. When contacting recruiters, put in your CV as much keywords/technologies as you've used (even if obvious to your profile or if the contact with that technology was minimal).
+
++ The better jobs are the ones your friends look for you. LinkedIn connections are not friends.
 
 
-<ol><li>You can contact a company with a <i>cold email </i>(as in without role/offer), but with nothing else you won't get any reply. Even if you send to thousands recipients, you probably won't get any response. The typical "I've sent dozens of CVs" is bogus.</li><li>Either when cold email OR when replying to a specific role, research the company and try to understand what you can provide to that company, what is the company's culture, and carefully craft either the letter or the CV (or both)</li><li>Try to understand profiles, not if you match some/all of the requirements. Once you've understood the profile, apply with a cover letter matching your profile to the requirements.</li><li>If in search mode, the previous apply when contacting final companies. When contacting recruiters, put in your CV as much keywords/technologies as you've used (even if obvious to your profile or if the contact with that technology was minimal).</li><li>The better jobs are the ones your friends look for you. LinkedIn connections are not friends.</li></ol>
 Yeah, it's lots of work. But I think it really pays off.
-
-
-
-

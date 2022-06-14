@@ -24,7 +24,7 @@
       
       <guid>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</guid>
       <description>NAT Gateway A quick intro in AWS networking In AWS, it is very common to create your own isolated network, in what is called a VPC (from virtual private cloud). The official (more like general perception) way of doing it, involves having multiple public and private subnets.
- Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
+Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
     </item>
     
     <item>
@@ -79,7 +79,7 @@ There is a problem with that.</description>
       <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
 Well, here I am, to help you before Apple does.
 Open a terminal.
- How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
     </item>
     
     <item>
@@ -111,8 +111,9 @@ What follows is just one example I found on the Internet (i.</description>
       <guid>http://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</guid>
       <description>These days I’m reading a fascinating book on Roman History called SPQR. And I’ve discovered Roman History is full of lessons for today’s world.
 As a small token, a line from Plautus, a Roman writer, that appeared in some of his books.
- Demophilus wrote this, Plautus barbarised it.As Mary Beard, the author of SPQR, explains, the sentence was a clever challenge.
- For people of Greek origin, it was a way to mock Romans, that didn’t bring anything new.</description>
+Demophilus wrote this, Plautus barbarised it.
+As Mary Beard, the author of SPQR, explains, the sentence was a clever challenge.
+For people of Greek origin, it was a way to mock Romans, that didn’t bring anything new.</description>
     </item>
     
     <item>
@@ -155,8 +156,8 @@ I was very excited when I bought ‘1776&amp;rsquo; by David McCullough. The tit
       
       <guid>http://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</guid>
       <description>I’ll start sharing a secret.
- I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil. A side-project going on for ages.
- I do have a number of brilliant ideas, at different stages (none of them complete). But most of the time a simply daydream while reading Twitter, or Hacker News.</description>
+I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil. A side-project going on for ages.
+I do have a number of brilliant ideas, at different stages (none of them complete). But most of the time a simply daydream while reading Twitter, or Hacker News.</description>
     </item>
     
     <item>
@@ -207,8 +208,8 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
       
       <guid>http://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</guid>
       <description>This is a story for my friend C. He didn’t know what was behind this old tweet
- So I did a quick summary but I didn’t do the honours.
- Here goes the detail. I won’t name the company (it’s bigco, a big company here in the UK).
+So I did a quick summary but I didn’t do the honours.
+Here goes the detail. I won’t name the company (it’s bigco, a big company here in the UK).
 The process started through a friend of mine that had joined BigCo. We had worked together and he wanted to work with me again.</description>
     </item>
     
@@ -279,7 +280,7 @@ Don’t get me wrong. I’m a big fan of Monzo. Super fan of the notifications, 
       
       <guid>http://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</guid>
       <description>I like Netflix. I really do. But there are a few things in their user interface that drive me crazy.
- You cannot remove a movie from continue watching. You’ve already watched a movie, don’t want to see the credits, butNetflix thinks you haven’t reached the end. Or you get bored of a movie half way. I even have a thumbs down on “Iron Fist” and it keeps appearing!!! How do you remove those movies you don’t want to keep watching?</description>
+You cannot remove a movie from continue watching. You’ve already watched a movie, don’t want to see the credits, but Netflix thinks you haven’t reached the end. Or you get bored of a movie half way. I even have a thumbs down on “Iron Fist” and it keeps appearing!!! How do you remove those movies you don’t want to keep watching?</description>
     </item>
     
     <item>
@@ -312,7 +313,7 @@ Apparently the argument of the report is that Let’s Encrypt doesn’t do a pro
       <guid>http://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</guid>
       <description>It’s in the news. Amazon S3, the popular object store crashed yesterday in one of their regions and affected multiple other sites, including Slack and GitHub.
 So here are some comments about it:
- AFAICT the s3 outage was in us-east-1 region. Other regions didn’t have S3 affected. S3 in Europe* This is not the first s3 outage. You may have read about what this affects the 11 nines promise. Most likely, it doesn’t .</description>
+AFAICT the s3 outage was in us-east-1 region. Other regions didn’t have S3 affected. S3 in Europe* This is not the first s3 outage. You may have read about what this affects the 11 nines promise. Most likely, it doesn’t .</description>
     </item>
     
     <item>
@@ -366,7 +367,7 @@ However acquisitions are not going to change anything. And it is not because peo
       
       <guid>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</guid>
       <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
- Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
     </item>
     
     <item>
@@ -376,8 +377,8 @@ However acquisitions are not going to change anything. And it is not because peo
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</guid>
       <description>Today I was reading this article about excuses from banks for crap services. Then I got to this sentence:
- Consumers need to understand that the balance you see is not necessarily your actual available balance because there are so many moving partsNo. Consumers don’t need to understand anything like that. It is your job to simplify things. And you even fail to recognise it.
- I’ve mentioned it before. I have worked for highly formalised organisations and I know from inside that sometimes it’s very difficult to disrupt our own organisation.</description>
+Consumers need to understand that the balance you see is not necessarily your actual available balance because there are so many moving partsNo. Consumers don’t need to understand anything like that. It is your job to simplify things. And you even fail to recognise it.
+I’ve mentioned it before. I have worked for highly formalised organisations and I know from inside that sometimes it’s very difficult to disrupt our own organisation.</description>
     </item>
     
     <item>
@@ -398,7 +399,7 @@ My bank allows me to do banking and investment.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2016-07-07-aws-summit-london-2016/</guid>
       <description>Today I went to AWSSummit London. It’s a free event dedicated to Amazon Web Services. The event took place at Excel London, excellent venue except for the occasional noise due to planes taking off from the nearby London City Airport.
-KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also thegeneral commitment from AWS with UK startup ecosystem.</description>
+KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also the general commitment from AWS with UK startup ecosystem.</description>
     </item>
     
     <item>
@@ -433,8 +434,8 @@ Some examples I started taking a look to other dynamic web pages.</description>
 Around a month ago, I installed the app, started registering, think twice…
 … and uninstalled.
 Now, I’ve discovered that Snapchat is really a thing outside teenagers.
- And you know what?
- I don’t care.
+And you know what?
+I don’t care.
 I’m going to miss this one.
 I’ve been an early adopter in many trends.</description>
     </item>
@@ -472,7 +473,7 @@ Yes, I know for sure that it’s nothing extraordinary. That’s what the cloud,
       
       <guid>http://gonzalo.f-v.es/blog/2016-02-07-my-take-on--riptwitter/</guid>
       <description>There is some outrage in Twitter because it has started to implement some changes to its product.
- There was a change from stars to likes. I think I prefer stars because it conveys a different meaning: when I read something sad, I cannot click in Like, but I would click in star. Moments is something that appeared in the header of Twitter, but I haven’t clicked more than 3 times (the last one while preparing this post) Now it seems they’re going to put a “While you were away” on steroids.</description>
+There was a change from stars to likes. I think I prefer stars because it conveys a different meaning: when I read something sad, I cannot click in Like, but I would click in star. Moments is something that appeared in the header of Twitter, but I haven’t clicked more than 3 times (the last one while preparing this post) Now it seems they’re going to put a “While you were away” on steroids.</description>
     </item>
     
     <item>
@@ -491,7 +492,7 @@ Linking Docker containers Yeah, there are many other different technologies for 
       <pubDate>Thu, 04 Feb 2016 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2016-02-04-storytelling/</guid>
-      <description>A few days ago I was listening a podcast aboutthe importance of being able to tell a story, not a lists of jobs when asked about you.
+      <description>A few days ago I was listening a podcast about the importance of being able to tell a story, not a lists of jobs when asked about you.
 In a spirit of practising, I’m going to share two stories of my early life that affects who I am.
 First, my family says I started to speak a bit late. But when I started to speak I did it almost like an adult.</description>
     </item>
@@ -546,7 +547,7 @@ The company in question is quite successful in its niche. They have an IT platfo
       <description>I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.
 Granted, the price is amazingly good. 50 quid was already good, so 35 is almost incredible. But, what the heck, this is the beginning of the season. And they’ve already run out of units?
 There are several possibilities here:
- This is an strategy to create scarcity. “Buy now or you won’t have it” This is a massive screw-up.</description>
+This is an strategy to create scarcity. “Buy now or you won’t have it” This is a massive screw-up.</description>
     </item>
     
     <item>
@@ -555,7 +556,7 @@ There are several possibilities here:
       <pubDate>Sun, 22 Nov 2015 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2015-11-22-gifts/</guid>
-      <description>Black Friday is next Friday, so that means Christmas is coming. All around will push us to buy things: food, clothing, gifts.  A couple of weeks ago we started receiving some catalogs from several different NGOs. The basic idea is you buy gifts. For people that need those gifts. For people you don’t know. And you receive a card.
+      <description>Black Friday is next Friday, so that means Christmas is coming. All around will push us to buy things: food, clothing, gifts. A couple of weeks ago we started receiving some catalogs from several different NGOs. The basic idea is you buy gifts. For people that need those gifts. For people you don’t know. And you receive a card.
 My initial reaction was a bit of sadness. I feel, from a faith perspective, that there is kind of a buying craziness at this time of the year.</description>
     </item>
     
@@ -599,7 +600,7 @@ It’s also a trend that reinforces itself. You need to be in the know if you wa
       <description>Dear recruiter. Don’t take it personal, but I’m not interested in the role you’re trying to recruit.
 I receive lots of messages from recruiters. I get offered to participate in events so that companies can offer me new jobs.
 I tend to reply something like:
- Hi , Thank you for your message. However, at the moment I’m not interested in new opportunities. Kind regards, GonzaloI feel this kind of message does not explain the ultimate reason behind my reply.</description>
+Hi , Thank you for your message. However, at the moment I’m not interested in new opportunities. Kind regards, GonzaloI feel this kind of message does not explain the ultimate reason behind my reply.</description>
     </item>
     
     <item>
@@ -640,7 +641,9 @@ It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap 
       
       <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
       <description>A year ago I vaguely new something about Scala. Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
- I&#39;m far from an expert in any of those technologies. But I work with all of them.&amp;nbsp; Not bad for a year.&amp;nbsp; However, as a developer the amount of effort you need to keep reasonably up-to-date is huge.</description>
+I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them.
+Not bad for a year.
+However, as a developer the amount of effort you need to keep reasonably up-to-date is huge.</description>
     </item>
     
     <item>
@@ -672,7 +675,7 @@ Process A. Thanks for taking the time to complete our online testing. Unfortunat
       <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
 If you are looking for a job, be sure to do just the opposite of what the bad ones do.
 Almost every other day I receive an email offering me a position.
-&amp;ldquo;Good for you&amp;rdquo;. 
+&amp;ldquo;Good for you&amp;rdquo;.
 No, bad for me.
 Most of the emails come from people I haven&amp;rsquo;t spoken to.</description>
     </item>
@@ -693,7 +696,7 @@ Most of the emails come from people I haven&amp;rsquo;t spoken to.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2014-12-31-future/</guid>
       <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it.
-Four years laterI came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.
+Four years later I came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.
 But it is not. I really think blogging is a good way to improve your written expression, to clarify your thoughts. And sometimes what you tell is worthwhile for others.</description>
     </item>
     
@@ -753,7 +756,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <pubDate>Sun, 08 Jun 2014 21:23:54 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
-      <description>A few months ago,I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
+      <description>A few months ago, I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
 I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&#39;t know is that today&#39;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&#39;s update yet.</description>
     </item>
     
@@ -786,7 +789,7 @@ During process, I had to work with lots of recruiters. Both from inside and outs
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
     </item>
     
     <item>
@@ -807,7 +810,7 @@ On one side, Facebook and Whatsapp. $19 billion. There are many different opinio
       <guid>http://gonzalo.f-v.es/blog/2014-03-13-optimizing/</guid>
       <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
 After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
-Measure  You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
+Measure You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
     </item>
     
     <item>
@@ -857,7 +860,7 @@ At one point we agreed on creating a new constructor so that we could pass a ser
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-12-its-great-when-your-idea-is-good-one/</guid>
       <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
- I did a quick search and I couldn&#39;t find anything.  Then my wife and daughters finally came here.</description>
+I did a quick search and I couldn&#39;t find anything. Then my wife and daughters finally came here.</description>
     </item>
     
     <item>
@@ -932,8 +935,7 @@ A good experience: IKEA. I recently bought some furniture from IKEA, using their
       
       <guid>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</guid>
       <description>Imagine you´re a Member of Parliament. And you have decided you are not going to give your support to something. And then you get a group of people protesting against you.
- You would say. &#34;Well, nothing new&#34; &amp;hellip; calling you cockroach and threatening to kill you. 
-You would say something like &#34;Well, you know. People sometimes say things they don&#39;t really think.&#34; ... at the street in front of your home.</description>
+You would say. &#34;Well, nothing new&#34; &amp;hellip; calling you cockroach and threatening to kill you. You would say something like &#34;Well, you know. People sometimes say things they don&#39;t really think.&#34; ... at the street in front of your home.</description>
     </item>
     
     <item>
@@ -963,7 +965,7 @@ Well. I want to say, that, regarding central government, I do think they are goi
       <pubDate>Mon, 17 Dec 2012 20:28:04 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-12-17-the-most-popular-video-in-spain-this/</guid>
-      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this ChristmasIt depicts Fofito (a clown very well known in Spain) with other well known&amp;nbsp;comedians,&amp;nbsp;actors and even journalists, sending parcels to &#34;important people&#34;: from Angela Merkel and IMF to Moody&#39;s and Standard&amp;amp;Poor&#39;s. In those parcels, Fofito sends, bundled with&amp;nbsp;&#34;cold meat&#34; (that&#39;s what makes the company that prepared the ad),&amp;nbsp;some sort of Curriculum Vitae of Spain, telling those &#34;</description>
+      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this Christmas It depicts Fofito (a clown very well known in Spain) with other well known&amp;nbsp;comedians,&amp;nbsp;actors and even journalists, sending parcels to &#34;important people&#34;: from Angela Merkel and IMF to Moody&#39;s and Standard&amp;amp;Poor&#39;s. In those parcels, Fofito sends, bundled with&amp;nbsp;&#34;cold meat&#34; (that&#39;s what makes the company that prepared the ad),&amp;nbsp;some sort of Curriculum Vitae of Spain, telling those &#34;</description>
     </item>
     
     <item>
@@ -1010,7 +1012,7 @@ But as you&amp;rsquo;ll imagine, I&amp;rsquo;m quite busy. I&amp;rsquo;ll try to
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
       <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException. And trying to send some class and then changing the serialVersionUID, he got an error at receiving, but a different error (java.</description>
     </item>
     
     <item>
@@ -1091,7 +1093,7 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</guid>
       <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications.
- One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
+One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
     </item>
     
     <item>
@@ -1142,8 +1144,8 @@ And how do you mock standard input/output in Ruby?. Well. It turns out it is qui
       <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
- PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F MOVE -&amp;gt;Move the robot 1 cell in the facing direction LEFT -&amp;gt;Changes the facing&amp;nbsp;counter-clockwise RIGHT -&amp;gt;Changes the facing clockwise REPORT -&amp;gt;Shows the current position and facing and the main requirement was that the robot didn&#39;t fall outside the board.</description>
+      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+PLACE X,Y,F -&amp;gt; Places the robot in the x,y position facing F MOVE -&amp;gt; Move the robot 1 cell in the facing direction LEFT -&amp;gt; Changes the facing counter-clockwise RIGHT -&amp;gt; Changes the facing clockwise REPORT -&amp;gt; Shows the current position and facing and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
     </item>
     
     <item>
@@ -1153,7 +1155,7 @@ And how do you mock standard input/output in Ruby?. Well. It turns out it is qui
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
       <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.
-IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style.
+IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style.
 Another similar tool would be online testing web applications such as codility.</description>
     </item>
     
@@ -1174,7 +1176,7 @@ I was developing a small interface between two applications via a SOAP web servi
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-14-a-great-experience-applying-to-position_14/</guid>
       <description>In my previous post I explained a great experience applying for a position. In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience.
-Selection: Be very selective about what you apply for. For me this means no recruiters, making a pre-research of the company, and reading carefully the description to get a sense of what the company is asking. It&#39;s pretty obvious, but essential for the following lesson.</description>
+Selection: Be very selective about what you apply for. For me this means no recruiters, making a pre-research of the company, and reading carefully the description to get a sense of what the company is asking. It&amp;rsquo;s pretty obvious, but essential for the following lesson.</description>
     </item>
     
     <item>
@@ -1202,8 +1204,8 @@ For me, the outcome is not the most important thing in such a process, but the f
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
- In my previous post I explained how to make Java choose a class for a parser.</description>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
     <item>
@@ -1222,7 +1224,7 @@ We know that, and we know passwords were not in the clear (they were stored hash
       <pubDate>Mon, 14 May 2012 15:18:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-05-14-google-where-are-you-going/</guid>
-      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
+      <description>I&amp;rsquo;ve been Google fanboy for a long time. I remember the invitation for Gmail I received around mid-2004. Gmail was a revolution. From 50MB mail space at the time, they offered 1000MB (1GB). But the size wasn&amp;rsquo;t the only thing revolutionary. A great UI interface, faster than anything seen before was shocking.
 I remember Google video chat. Being able to talk from the mail. &amp;ldquo;No installations&amp;rdquo;.
 Even Google Wave was revolutionary although the launch was a big failure, and the project was more in Alpha than in Beta.</description>
     </item>
@@ -1244,7 +1246,7 @@ Even Google Wave was revolutionary although the launch was a big failure, and th
       <guid>http://gonzalo.f-v.es/blog/2012-03-29-estimating-spanish-budget-deficit/</guid>
       <description>This is one of my political/economical post (nothing related with computers) I write from time to time.
 Past February, Spain published its estimation of whole year budget deficit.
-Many well respected analysts suggested or explicitly wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller. One for all, Xavier Xala i Martin:</description>
+Many well respected analysts suggested or explicitly wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller. One for all, Xavier Xala i Martin:</description>
     </item>
     
     <item>
@@ -1312,7 +1314,7 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-10-budget-deficit/</guid>
       <description>Disclaimer: I&amp;rsquo;m talking about public data. I don&amp;rsquo;t have any unpublished data.
- In Spain there is some buzz recently about tax increases&amp;nbsp;approved&amp;nbsp;on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP. The commitment was to finalize 2011 with a 6% GDP, from 9.2 previous year.&amp;nbsp; OK. Here is my take. We will end 2011 with more than 9% GDP.</description>
+In Spain there is some buzz recently about tax increases&amp;nbsp;approved&amp;nbsp;on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP. The commitment was to finalize 2011 with a 6% GDP, from 9.2 previous year.&amp;nbsp; OK. Here is my take. We will end 2011 with more than 9% GDP.</description>
     </item>
     
     <item>
@@ -1321,7 +1323,8 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Sun, 08 Jan 2012 19:31:33 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-08-when-companies-just-dont-get-it/</guid>
-      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce. More recently I&amp;rsquo;ve started with mobile development. I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
+      <description>I have a two years old Symbian cell phone and a second generation iTouch. I guess that&amp;rsquo;s enough to explain that until very recently I didn&amp;rsquo;t pay any attention at all to mobiles apps ads. Companies regularly announced new apps for the Apple Store (or the Android one), and I didn&amp;rsquo;t even read the announce.
+More recently I&amp;rsquo;ve started with mobile development. I have paid the Android and Apple fee, I have developed my own apps with PhoneGap and Appcelerator Titanium (games for my daughters, but nothing too serious).</description>
     </item>
     
     <item>
@@ -1340,7 +1343,7 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       
       <guid>http://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</guid>
       <description>Sometimes you start to write because you need to write but you don&amp;rsquo;t know what you want to express. This is one of those times.
-A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed&amp;nbsp;suicide. Doctors performed a caesarean to the woman&amp;nbsp;assassinated&amp;nbsp;and the baby is alive. The man had a letter saying Satan was chasing him, and seems to be a homeless with police records.</description>
+A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed suicide. Doctors performed a caesarean to the woman assassinated and the baby is alive. The man had a letter saying Satan was chasing him, and seems to be a homeless with police records.</description>
     </item>
     
     <item>
@@ -1359,8 +1362,8 @@ A couple of days ago, a pregnant woman was killed, and another woman was wounded
       
       <guid>http://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</guid>
       <description>I love this video:
- A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far. But I couldn&amp;rsquo;t help thinking about a different climate. The political and economical climate.
-I know people outside Spain are worried about the situation in Spain. What can I tell about it?</description>
+A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far. But I couldn&amp;rsquo;t help thinking about a different climate. The political and economical climate.
+I know people outside Spain are worried about the situation in Spain. What can I tell about it?.</description>
     </item>
     
     <item>
@@ -1519,8 +1522,8 @@ I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a M
       
       <guid>http://gonzalo.f-v.es/blog/2009-09-03-god-help-us/</guid>
       <description>It turns out that I was wrong when I wrote last week&amp;rsquo;s post. Well, maybe I came to a rather good end result but for the wrong reasons:
-  Income data from May 2009 (and probably June) was tricky because taxes returns were accelerated so that people could vote with their money back in the pocket.
-  Data for income and expenses was only for the national services. But in Spain we have nearly federal organization, so local and regional services must be taken into account.</description>
+Income data from May 2009 (and probably June) was tricky because taxes returns were accelerated so that people could vote with their money back in the pocket.
+Data for income and expenses was only for the national services. But in Spain we have nearly federal organization, so local and regional services must be taken into account.</description>
     </item>
     
     <item>
@@ -1552,7 +1555,7 @@ One of those events has been the death of a collegue. Antonio was a young man. A
       
       <guid>http://gonzalo.f-v.es/blog/2009-08-13-netbook-operating-systems/</guid>
       <description>A few months ago I got a new Acer Aspire One A110. It&amp;rsquo;s an Atom N270 with 512 MB RAM and 8GB SSD hard disk and 8.9&amp;rsquo;&amp;rsquo; screen. It came with a personalized version of a Linux distribution called Linpus Lite based in Fedora 8. Since the first day I&amp;rsquo;ve been testing several Netbook OS and I wanted to share my thoughts about it.
-  The original distribution, (as I&amp;rsquo;ve said) is a personalized version of Linpus Lite.</description>
+The original distribution, (as I&amp;rsquo;ve said) is a personalized version of Linpus Lite.</description>
     </item>
     
     <item>
@@ -1562,7 +1565,8 @@ One of those events has been the death of a collegue. Antonio was a young man. A
       
       <guid>http://gonzalo.f-v.es/blog/2009-05-26-what-can-i-do-for-my-country/</guid>
       <description>And so, my fellow Americans: ask not what your country can do for you— ask what you can do for your country.
- A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy in Spain. The position was being held by David Vegara, but he had expressed his intention to leave the job when his former boss Pedro Solbes was removed from the Ministry position.</description>
+A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy in Spain. The position was being held by David Vegara, but he had expressed his intention to leave the job when his former boss Pedro Solbes was removed from the Ministry position.
+That seems something uninteresting even for Spaniards.</description>
     </item>
     
     <item>

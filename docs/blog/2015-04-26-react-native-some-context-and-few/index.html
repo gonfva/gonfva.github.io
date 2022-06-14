@@ -68,7 +68,7 @@
       "datePublished": "2015-04-26 11:48:49 \u002b0000 UTC",
       "dateModified" : "2015-04-26 11:48:49 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2015-04-26-react-native-some-context-and-few\/",
-      "wordCount" : "308",
+      "wordCount" : "309",
       "keywords" : ["Blog"]
     }
   
@@ -132,11 +132,13 @@
 <p>Besides, one of my colleagues have recently developed a wonderful <a href="http://en.wikipedia.org/wiki/Single-page_application" 
   
    target="_blank" rel="noreferrer noopener" 
->SPA</a> using React, so  I wanted to give a test to get the idea.</p>
+>SPA</a> using React, so  I wanted to give a test to get the idea.</p>
 <p>So OK, I followed the instructions, installed the dependencies, created the project and launched it.</p>
 <p>It fails with a red screen showing a lot of errors related to flow. It turns out the version you get by default when following the instructions is flow 0.10.0. And there is some kind of incompatibility. So you need to install flow 0.9.2</p>
-<blockquote class="tr_bq">$ brew unlink flow&nbsp;</blockquote><blockquote class="tr_bq">$ brew install https://raw.githubusercontent.com/Homebrew/homebrew/6ea5842b3b0101d269a3d66bc44456222da82cc6/Library/Formula/flow.rb</blockquote>
-So now you relaunch and you get a wonderful iOS emulator. Hurray!!! Let's tweak. The screen tells you that you should tweak the file index.ios.js.
+<pre><code>$ brew unlink flow
+$ brew install https://raw.githubusercontent.com/Homebrew/homebrew/6ea5842b3b0101d269a3d66bc44456222da82cc6/Library/Formula/flow.rb
+</code></pre>
+<p>So now you relaunch and you get a wonderful iOS emulator. Hurray!!! Let&rsquo;s tweak. The screen tells you that you should tweak the file index.ios.js.</p>
 <p>You go to your XCode project and you can&rsquo;t find the file anywhere. Where the heck is it?</p>
 <p>It turns out you have to edit the file OUTSIDE of XCode. Which for me is madness.</p>
 <p>Apart from that, the experience is being quite interesting. On thing I like AND dislike is that the components that React Native tells you to use are direct mapping of the iOS ones. Which means there is a full translation from JS to native code.</p>

@@ -20,7 +20,7 @@ It also moves towards CSS into Javascript. You may think "What a crap idea movin
 
 
 <script async="" class="speakerdeck-embed" data-id="2e15908049bb013230960224c1b4b8bd" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-Besides, one of my colleagues have recently developed a wonderful [SPA](http://en.wikipedia.org/wiki/Single-page_application) using React, so &nbsp;I wanted to give a test to get the idea.
+Besides, one of my colleagues have recently developed a wonderful [SPA](http://en.wikipedia.org/wiki/Single-page_application) using React, so  I wanted to give a test to get the idea.
 
 
 
@@ -31,7 +31,11 @@ It fails with a red screen showing a lot of errors related to flow. It turns out
 
 
 
-<blockquote class="tr_bq">$ brew unlink flow&nbsp;</blockquote><blockquote class="tr_bq">$ brew install https://raw.githubusercontent.com/Homebrew/homebrew/6ea5842b3b0101d269a3d66bc44456222da82cc6/Library/Formula/flow.rb</blockquote>
+```
+$ brew unlink flow
+$ brew install https://raw.githubusercontent.com/Homebrew/homebrew/6ea5842b3b0101d269a3d66bc44456222da82cc6/Library/Formula/flow.rb
+```
+
 So now you relaunch and you get a wonderful iOS emulator. Hurray!!! Let's tweak. The screen tells you that you should tweak the file index.ios.js.
 
 

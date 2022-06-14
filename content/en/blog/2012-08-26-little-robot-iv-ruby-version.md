@@ -18,69 +18,69 @@ One obvious problem is the use of string instead of symbols. It was a bad bad mi
 Anyway it was clear that Java version was considerably more verbose.
 
 
-So one obvious improvement is using symbols instead of string.&nbsp;But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of [Array.rotate](http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate). I don't like that improvement, because it makes the code less understandable. But I didn't like the verbosity of the case, and I tested a different approach. This is the code I left in the end:
+So one obvious improvement is using symbols instead of string. But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of [Array.rotate](http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate). I don't like that improvement, because it makes the code less understandable. But I didn't like the verbosity of the case, and I tested a different approach. This is the code I left in the end:
+
+```
+class Robot
+  VALID_X = 0..4
+  VALID_Y = 0..4
+  VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]
+  TURN_RIGHT = {:SOUTH=>:WEST,:NORTH=>:EAST,:EAST=>:SOUTH,:WEST=>:NORTH}
+  TURN_LEFT = {:SOUTH=>:EAST,:NORTH=>:WEST,:EAST=>:NORTH,:WEST=>:SOUTH}
+  MOVE = {:SOUTH=>[0,-1],:NORTH=>[0,1],:EAST=>[1,0],:WEST=>[-1,0]}
 
 
-<code>class Robot
-&nbsp;&nbsp;VALID_X = 0..4
-&nbsp;&nbsp;VALID_Y = 0..4
-&nbsp;&nbsp;VALID_F = [:NORTH,:SOUTH,:EAST,:WEST]
-&nbsp;&nbsp;TURN_RIGHT = {:SOUTH=&gt;:WEST,:NORTH=&gt;:EAST,:EAST=&gt;:SOUTH,:WEST=&gt;:NORTH}
-&nbsp;&nbsp;TURN_LEFT = {:SOUTH=&gt;:EAST,:NORTH=&gt;:WEST,:EAST=&gt;:NORTH,:WEST=&gt;:SOUTH}
-&nbsp;&nbsp;MOVE = {:SOUTH=&gt;[0,-1],:NORTH=&gt;[0,1],:EAST=&gt;[1,0],:WEST=&gt;[-1,0]}
+  def initialize
+    @accepting=false
+  end
 
 
-&nbsp;&nbsp;def initialize
-&nbsp;&nbsp;&nbsp;&nbsp;@accepting=false
-&nbsp;&nbsp;end
+  def place(cols,rows,facing)
+    x=cols.to_i
+    y=rows.to_i
+    f=facing.to_sym
+    if is_valid?(x,y,f)
+      @x=x
+      @y=y
+      @f=f
+      @accepting=true
+    end
+  end
 
 
-&nbsp;&nbsp;def place(cols,rows,facing)
-&nbsp;&nbsp;&nbsp;&nbsp;x=cols.to_i
-&nbsp;&nbsp;&nbsp;&nbsp;y=rows.to_i
-&nbsp;&nbsp;&nbsp;&nbsp;f=facing.to_sym
-&nbsp;&nbsp;&nbsp;&nbsp;if is_valid?(x,y,f)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@x=x
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@y=y
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@f=f
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@accepting=true
-&nbsp;&nbsp;&nbsp;&nbsp;end
-&nbsp;&nbsp;end
+  def left
+      return unless @accepting
+      @f=TURN_LEFT[@f]
+  end
 
 
-&nbsp;&nbsp;def left
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return unless @accepting
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@f=TURN_LEFT[@f]
-&nbsp;&nbsp;end
+  def right
+      return unless @accepting
+      @f=TURN_RIGHT[@f]
+  end
 
 
-&nbsp;&nbsp;def right
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return unless @accepting
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@f=TURN_RIGHT[@f]
-&nbsp;&nbsp;end
+  def move
+      return unless @accepting
+      delta=MOVE[@f]
+      x = @x + delta[0]
+      y = @y + delta[1]
+      if is_valid?(x,y)
+        @x=x
+        @y=y
+      end
+  end
 
 
-&nbsp;&nbsp;def move
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return unless @accepting
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delta=MOVE[@f]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = @x + delta[0]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = @y + delta[1]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if is_valid?(x,y)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@x=x
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@y=y
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end
-&nbsp;&nbsp;end
-
-
-&nbsp;&nbsp;def report
-&nbsp;&nbsp;&nbsp;&nbsp;return nil unless @accepting
-&nbsp;&nbsp;&nbsp;&nbsp;"#{@x.to_s},#{@y.to_s},#{@f}"
-&nbsp;&nbsp;end
+  def report
+    return nil unless @accepting
+    "#{@x.to_s},#{@y.to_s},#{@f}"
+  end
 
 
 protected
-&nbsp;&nbsp;def is_valid?(x,y,f=@f)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALID_X.include?(x) &amp;&amp; VALID_Y.include?(y) &amp;&amp; VALID_F.include?(f)
-&nbsp;&nbsp;end
+  def is_valid?(x,y,f=@f)
+      VALID_X.include?(x) && VALID_Y.include?(y) && VALID_F.include?(f)
+  end
 end
- </code>
+```

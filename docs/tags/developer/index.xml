@@ -24,7 +24,7 @@
       
       <guid>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</guid>
       <description>NAT Gateway A quick intro in AWS networking In AWS, it is very common to create your own isolated network, in what is called a VPC (from virtual private cloud). The official (more like general perception) way of doing it, involves having multiple public and private subnets.
- Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
+Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ But while I was working with it, I was making use of kops edit and that opened a
       <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
 Well, here I am, to help you before Apple does.
 Open a terminal.
- How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
+How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier.</description>
     </item>
     
     <item>
@@ -142,7 +142,7 @@ But when you pass the cowboy stage, things get more complicated. You need to ana
       
       <guid>http://gonzalo.f-v.es/blog/2016-09-14-aws-elb-in-apache-logs/</guid>
       <description>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:
- Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
+Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</description>
     </item>
     
     <item>
@@ -228,7 +228,9 @@ It also moves towards CSS into Javascript. You may think &amp;ldquo;What a crap 
       
       <guid>http://gonzalo.f-v.es/blog/2015-01-31-developers-neverending-story/</guid>
       <description>A year ago I vaguely new something about Scala. Today I&amp;rsquo;m not an expert, but I&amp;rsquo;m reasonably proficient in Scala, with some experience in Lift, Slick, and some incursions in akka. I knew almost nothing about devops, and now I use almost everyday AWS, ansible and docker.
- I&#39;m far from an expert in any of those technologies. But I work with all of them.&amp;nbsp; Not bad for a year.&amp;nbsp; However, as a developer the amount of effort you need to keep reasonably up-to-date is huge.</description>
+I&amp;rsquo;m far from an expert in any of those technologies. But I work with all of them.
+Not bad for a year.
+However, as a developer the amount of effort you need to keep reasonably up-to-date is huge.</description>
     </item>
     
     <item>
@@ -287,7 +289,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.While trying to index using Sphinx, I was getting the following error[PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
     </item>
     
     <item>
@@ -298,7 +300,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <guid>http://gonzalo.f-v.es/blog/2014-03-13-optimizing/</guid>
       <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
 After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
-Measure  You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
+Measure You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
     </item>
     
     <item>
@@ -337,7 +339,7 @@ At one point we agreed on creating a new constructor so that we could pass a ser
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-12-its-great-when-your-idea-is-good-one/</guid>
       <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
- I did a quick search and I couldn&#39;t find anything.  Then my wife and daughters finally came here.</description>
+I did a quick search and I couldn&#39;t find anything. Then my wife and daughters finally came here.</description>
     </item>
     
     <item>
@@ -378,7 +380,7 @@ Sony Xperia U (ST25i) has a stock Android 2.3, which a year ago was already a bi
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
       <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [...]&amp;nbsp;Caused by: java.io.OptionalDataException&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)&amp;nbsp; &amp;nbsp; &amp;nbsp; at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException.</description>
+javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException). In a similar way, trying to send an int, he got a NotSerializableException. And trying to send some class and then changing the serialVersionUID, he got an error at receiving, but a different error (java.</description>
     </item>
     
     <item>
@@ -440,7 +442,7 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</guid>
       <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications.
- One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
+One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet). The deployment of the component and the debugging of different OS/browser/Java version configurations tends to be time consuming.</description>
     </item>
     
     <item>
@@ -491,8 +493,8 @@ And how do you mock standard input/output in Ruby?. Well. It turns out it is qui
       <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
- PLACE X,Y,F -&amp;gt;Places the robot in the x,y position facing F MOVE -&amp;gt;Move the robot 1 cell in the facing direction LEFT -&amp;gt;Changes the facing&amp;nbsp;counter-clockwise RIGHT -&amp;gt;Changes the facing clockwise REPORT -&amp;gt;Shows the current position and facing and the main requirement was that the robot didn&#39;t fall outside the board.</description>
+      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+PLACE X,Y,F -&amp;gt; Places the robot in the x,y position facing F MOVE -&amp;gt; Move the robot 1 cell in the facing direction LEFT -&amp;gt; Changes the facing counter-clockwise RIGHT -&amp;gt; Changes the facing clockwise REPORT -&amp;gt; Shows the current position and facing and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
     </item>
     
     <item>
@@ -502,7 +504,7 @@ And how do you mock standard input/output in Ruby?. Well. It turns out it is qui
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
       <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.
-IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style.
+IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code (it seems many of us can&amp;rsquo;t), and what&amp;rsquo;s his/her style.
 Another similar tool would be online testing web applications such as codility.</description>
     </item>
     
@@ -522,8 +524,8 @@ I was developing a small interface between two applications via a SOAP web servi
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
- In my previous post I explained how to make Java choose a class for a parser.</description>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+In my previous post I explained how to make Java choose a class for a parser.</description>
     </item>
     
     <item>

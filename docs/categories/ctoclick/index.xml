@@ -15,7 +15,7 @@
       
       <guid>http://gonzalo.f-v.es/blog/2022-05-14-nat-gateway-alternatives/</guid>
       <description>NAT Gateway A quick intro in AWS networking In AWS, it is very common to create your own isolated network, in what is called a VPC (from virtual private cloud). The official (more like general perception) way of doing it, involves having multiple public and private subnets.
- Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
+Public subnets are subnets that have a route to and from the Internet (using what is called Internet Gateway). Private subnets don&amp;rsquo;t have access from the Internet, but they can have access to the Internet.</description>
     </item>
     
     <item>
