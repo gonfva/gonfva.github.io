@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Copyright protection"
-date: 2010-11-22-16T22:09:51
+date: 2010-11-22-T22:09:51
 previous: https://gonfva.blogspot.com/2010/11/copyright-protection.html
 categories: Personal
 tags:
