@@ -12,7 +12,7 @@ tags:
 In [last post](https://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html) I wrote why. In this post I want to explain how I wrote my first chrome extension.
 
 
-First. The Chrome Extensions&nbsp;[developer's documentation](http://developer.chrome.com/extensions/getstarted.html) is quite good.
+First. The Chrome Extensions [developer's documentation](http://developer.chrome.com/extensions/getstarted.html) is quite good.
 
 
 Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called [manifest.json](https://github.com/gonfva/fromGoogle/blob/master/manifest.json). It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.
@@ -25,16 +25,14 @@ In my case, I attach an event listener to the click of the extension button (bro
 
 
 <code>chrome.browserAction.onClicked.addListener(function(tab) {
-&nbsp;&nbsp;var currentTab=tab.url;
-&nbsp;&nbsp;var processedURL=processURL(currentTab);
-&nbsp;&nbsp;var encodedURL=encodeURIComponent(processedURL);
-&nbsp;&nbsp;var newUrl="http://www.google.es/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;sqi=2&amp;url="+encodedURL;
-&nbsp;&nbsp;chrome.tabs.update(tab.id, {url:newUrl});
+  var currentTab=tab.url;
+  var processedURL=processURL(currentTab);
+  var encodedURL=encodeURIComponent(processedURL);
+  var newUrl="http://www.google.es/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;sqi=2&amp;url="+encodedURL;
+  chrome.tabs.update(tab.id, {url:newUrl});
 
 
 }); </code>
 
 
 The processing of the URL do a bit of tweaking for some specific servers. Pretty uninteresting.
-
-

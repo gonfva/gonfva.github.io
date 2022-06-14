@@ -19,50 +19,54 @@ At one point we agreed on creating a new constructor so that we could pass a ser
 So I had something like (fictitious code)
 
 
+```
+ class GreatObject {
+    public void calculateAndAddAmount(int length,
+          boolean cheapService) {
+      int cost;
+      if (cheapService) {
+        cost=length*3;
+      } else {
+        cost=length*8;
+      }
 
-<blockquote class="tr_bq">&nbsp; class GreatObject {
-&nbsp; &nbsp; public void calculateAndAddAmount(int length,
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {
-&nbsp; &nbsp; &nbsp; int cost;
-&nbsp; &nbsp; &nbsp; if (cheapService) {
-&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;
-&nbsp; &nbsp; &nbsp; } else {
-&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;
-&nbsp; &nbsp; &nbsp; }
-&nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp; Service supaService= MegaFactory.getService();
-&nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp; supaService.addCost(cost);
-&nbsp; &nbsp; }
-&nbsp; }</blockquote>
+      Service supaService= MegaFactory.getService();
+
+      supaService.addCost(cost);
+    }
+  }
+```
+
 and we had agreed on doing something like
 
+```
+  class GreatObject {
+    private Service supaService;
+    public GreatObject () {
+      this.supaService= MegaFactory.getService();
+    }
+    public GreatObject (Service supaService) {
+      this.supaService=supaService;
+    }
 
-<blockquote class="tr_bq">&nbsp; class GreatObject {
-&nbsp; &nbsp; private Service supaService;
-&nbsp; &nbsp; public GreatObject () {
-&nbsp; &nbsp; &nbsp; this.supaService= MegaFactory.getService();
-&nbsp; &nbsp; }
-&nbsp; &nbsp; public GreatObject (Service supaService) {
-&nbsp; &nbsp; &nbsp; this.supaService=supaService;
-&nbsp; &nbsp; }
-&nbsp; &nbsp;
-&nbsp; &nbsp; public void calculateAndAddAmount(int length,
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; boolean cheapService) {
-&nbsp; &nbsp; &nbsp; int cost;
-&nbsp; &nbsp; &nbsp; if (cheapService) {
-&nbsp; &nbsp; &nbsp; &nbsp; cost=length*3;
-&nbsp; &nbsp; &nbsp; } else {
-&nbsp; &nbsp; &nbsp; &nbsp; cost=length*8;
-&nbsp; &nbsp; &nbsp; }
-&nbsp; &nbsp;
-&nbsp;&nbsp;&nbsp; &nbsp; supaService.addCost(cost);
-&nbsp; &nbsp; }
-&nbsp; }</blockquote>
+    public void calculateAndAddAmount(int length,
+          boolean cheapService) {
+      int cost;
+      if (cheapService) {
+        cost=length*3;
+      } else {
+        cost=length*8;
+      }
+
+      supaService.addCost(cost);
+    }
+  }
+```
+
 When I was going to do it, something in the back of my mind started to blink. It was a bit subtle and it took me a while to be able to express it. So as an exercise for the future, I'm going to try and express it in writing.
 
 
 The problem with the change is that we have transformed a local variable into an instance variable. Local variables are local to the thread. Instance variables are shared between threads. So until now we had a thread safe class, but now the class is not thread safe. As an example: What if each instance of the service can only be invoked once and we have [two threads](https://twitter.com/nedbat/status/194452404794691584) running?
 
 
-I was asked to tell what to do to be protected. I replied I didn't know. The typical answer involves the reserved word <b>synchronized</b>. But as [I've told in the past](http://gonfva.blogspot.co.uk/2012/03/synchronized-silver-bullet.html), that is not usually a good answer and almost never the best answer.
+I was asked to tell what to do to be protected. I replied I didn't know. The typical answer involves the reserved word **synchronized**. But as [I've told in the past](http://gonfva.blogspot.co.uk/2012/03/synchronized-silver-bullet.html), that is not usually a good answer and almost never the best answer.

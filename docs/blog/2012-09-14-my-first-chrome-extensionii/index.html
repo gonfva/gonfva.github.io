@@ -123,7 +123,7 @@
   
    target="_blank" rel="noreferrer noopener" 
 >last post</a> I wrote why. In this post I want to explain how I wrote my first chrome extension.</p>
-<p>First. The Chrome Extensions <a href="http://developer.chrome.com/extensions/getstarted.html" 
+<p>First. The Chrome Extensions <a href="http://developer.chrome.com/extensions/getstarted.html" 
   
    target="_blank" rel="noreferrer noopener" 
 >developer&rsquo;s documentation</a> is quite good.</p>
@@ -137,14 +137,14 @@
 >background.js</a>. You should read the documentation to know more about background pages and so on.</p>
 <p>In my case, I attach an event listener to the click of the extension button (browserAction.onclick). The listener gets the url of the current tab, process that url, encode it, get a Google url redirection from it, and ask for it.</p>
 <p><code>chrome.browserAction.onClicked.addListener(function(tab) {
-  var currentTab=tab.url;
-  var processedURL=processURL(currentTab);
-  var encodedURL=encodeURIComponent(processedURL);
-  var newUrl=&ldquo;<a href="http://www.google.es/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;sqi=2&amp;amp;url=%22&#43;encodedURL;" 
+var currentTab=tab.url;
+var processedURL=processURL(currentTab);
+var encodedURL=encodeURIComponent(processedURL);
+var newUrl=&ldquo;<a href="http://www.google.es/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;sqi=2&amp;amp;url=%22&#43;encodedURL;" 
   
    target="_blank" rel="noreferrer noopener" 
 >http://www.google.es/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;sqi=2&amp;url="+encodedURL;</a>
-  chrome.tabs.update(tab.id, {url:newUrl});</p>
+chrome.tabs.update(tab.id, {url:newUrl});</p>
 <p>}); </code></p>
 <p>The processing of the URL do a bit of tweaking for some specific servers. Pretty uninteresting.</p>
 

@@ -68,7 +68,7 @@
       "datePublished": "2012-03-23 18:38:19 \u002b0000 UTC",
       "dateModified" : "2012-03-23 18:38:19 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-03-23-synchronized-silver-bullet\/",
-      "wordCount" : "399",
+      "wordCount" : "401",
       "keywords" : ["Blog"]
     }
   
@@ -119,11 +119,11 @@
           </header>
           <article class="post__content">
               
-<p>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &ldquo;Let&rsquo;s put <b><i>synchronized</i></b> to the method&rdquo;. I explained why I thought it was a bad decision. But after some of these episodes, I used to think &ldquo;how is it that people smart and competent in many aspects of Java, people from whom I learn lots day in day out, just don&rsquo;t get it&rdquo;.</p>
+<p>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &ldquo;Let&rsquo;s put  <strong><i>synchronized</i></strong> to the method&rdquo;. I explained why I thought it was a bad decision. But after some of these episodes, I used to think &ldquo;how is it that people smart and competent in many aspects of Java, people from whom I learn lots day in day out, just don&rsquo;t get it&rdquo;.</p>
 <p>Today I was reading a book. And I&rsquo;ve found <a href="http://books.google.es/books?id=Gu8-_b9AN8gC&amp;amp;printsec=frontcover&amp;amp;hl=es#v=onepage&amp;amp;q=syncrhonized&amp;amp;f=false" 
   
    target="_blank" rel="noreferrer noopener" 
->this</a> :</p>
+>this</a> :</p>
 <p><span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span></p>
 <blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;
 public class SequenceGenerator {
@@ -155,11 +155,14 @@ return buffer.toString();
 }
 }</span></blockquote>
 <p>(mine is a newer version, but you get the point).</p>
-<p>Let me put it clear: Synchronized IS NOT A SILVER BULLET. Synchronized makes sure that code is executed only by one thread. But it doesn&rsquo;t make sure that fields(member-variables) used in that code are not modified in between.</p>
+<p>Let me put it clear: Synchronized IS NOT A SILVER BULLET. Synchronized makes sure that code is executed only by one thread. But it doesn&rsquo;t make sure that fields(member-variables) used in that code are not modified in between.</p>
 <p>In particular, in this case, you could get a prefix, then other thread modifies the initial, a different thread modifies the suffix, and you get a real mess in your synchronized method.</p>
 <p>Many people could tell me &ldquo;You&rsquo;re right, but the setters are not supposed to be invoked after the creation of the object&rdquo;. Then I have to tell two things:</p>
-<ol><li>Delete the setters and the default constructor (Spring allows it).</li><li>Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol>
-And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class&nbsp;behavior.
+<ul>
+<li>Delete the setters and the default constructor (Spring allows it).</li>
+<li>Don&rsquo;t synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol>
+And how would I do it?. Uhm. That&rsquo;s a whole post itselt, and it would depend on the class behavior.</li>
+</ul>
 <p>By the way. A great book in the topic: <a href="http://www.jcip.net/" 
   
    target="_blank" rel="noreferrer noopener" 

@@ -715,7 +715,7 @@ But it is not. I really think blogging is a good way to improve your written exp
       <pubDate>Mon, 22 Dec 2014 13:51:21 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-12-22-im-geek/</guid>
-      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it).
+      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it).
 It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell (or so does my back says) and noisy as a diesel generator.
 When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it didn&amp;rsquo;t have input/output devices like a keyboard or a monitor.</description>
     </item>
@@ -726,7 +726,7 @@ When I came home, my daughters said that couldn&amp;rsquo;t be a computer as it 
       <pubDate>Sat, 04 Oct 2014 14:12:09 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
-      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority.
+      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority.
 Anyway, a few days ago I found this tweet:
 MVP explained via [@smarty](https://twitter.com/smarty) [pic.twitter.com/hZkCzqytAP](http://t.co/hZkCzqytAP) — About Programming (@abt_programming) [September 28, 2014](https://twitter.com/abt_programming/status/516018172072587264) I showed the picture to my wife, and I tried to explain it to her.</description>
     </item>
@@ -757,7 +757,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       
       <guid>http://gonzalo.f-v.es/blog/2014-06-08-android-443-sony-xperia-u/</guid>
       <description>A few months ago, I upgraded the firmware for my Sony Xperia U. It turns out that the place I used to download the firmware updates from, wasn&amp;rsquo;t providing new updates, so sometime ago, I migrated to a new source of firmware updates.
-I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&#39;t know is that today&#39;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&#39;s update yet.</description>
+I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn&amp;rsquo;t know is that today&amp;rsquo;s update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google&amp;rsquo;s update yet.</description>
     </item>
     
     <item>
@@ -789,7 +789,7 @@ During process, I had to work with lots of recruiters. Both from inside and outs
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL. Unfortunately the PHP web application and MySQL were working together and that made the issue more difficult to track.</description>
     </item>
     
     <item>
@@ -799,7 +799,7 @@ During process, I had to work with lots of recruiters. Both from inside and outs
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</guid>
       <description>Today I wanted to talk about two acquisitions.
-On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. [Craziness](https://medium.com/enrique-dans/d5938c078376). [Logic](http://om.co/2014/03/03/whatsapp-vs-facebook/). IMO the money paid is crazy, but the deal has a lot of logic for Facebook. Because for many people around me (including teens), Whatsapp is THE social network. They(we?) share things like images and videos, status. We use it almost everyday. Food for thought: when was the last time you got to know anything reading it on Facebook?</description>
+On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. Craziness. Logic. IMO the money paid is crazy, but the deal has a lot of logic for Facebook. Because for many people around me (including teens), Whatsapp is THE social network. They(we?) share things like images and videos, status. We use it almost everyday. Food for thought: when was the last time you got to know anything reading it on Facebook?</description>
     </item>
     
     <item>
@@ -810,7 +810,7 @@ On one side, Facebook and Whatsapp. $19 billion. There are many different opinio
       <guid>http://gonzalo.f-v.es/blog/2014-03-13-optimizing/</guid>
       <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
 After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
-Measure You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
+**Measure ** You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
     </item>
     
     <item>
@@ -819,7 +819,9 @@ Measure You cannot optimize if you don&#39;t know what do you need to optimize. 
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp; I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp; I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+      <description>I&amp;rsquo;m happy.
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&amp;rsquo;t took me too long to start debugging the actual gem&amp;rsquo;s code.</description>
     </item>
     
     <item>
@@ -829,7 +831,7 @@ Measure You cannot optimize if you don&#39;t know what do you need to optimize. 
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
       <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
     </item>
     
     <item>
@@ -838,7 +840,7 @@ In the last week or so, I&amp;rsquo;ve been hitting against a wall because of tw
       <pubDate>Fri, 31 Jan 2014 19:28:39 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-31-community-managers-day-after/</guid>
-      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.
+      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.
 He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful). IMO, the customer was not insulting and she was not threatening. Just complaining.
 Initially I thought about yet another tactic to be viral.</description>
     </item>
@@ -860,7 +862,8 @@ At one point we agreed on creating a new constructor so that we could pass a ser
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-12-its-great-when-your-idea-is-good-one/</guid>
       <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
-I did a quick search and I couldn&#39;t find anything. Then my wife and daughters finally came here.</description>
+I did a quick search and I couldn&amp;rsquo;t find anything.
+Then my wife and daughters finally came here.</description>
     </item>
     
     <item>
@@ -934,8 +937,11 @@ A good experience: IKEA. I recently bought some furniture from IKEA, using their
       <pubDate>Mon, 25 Mar 2013 22:22:45 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2013-03-25-escrache/</guid>
-      <description>Imagine you´re a Member of Parliament. And you have decided you are not going to give your support to something. And then you get a group of people protesting against you.
-You would say. &#34;Well, nothing new&#34; &amp;hellip; calling you cockroach and threatening to kill you. You would say something like &#34;Well, you know. People sometimes say things they don&#39;t really think.&#34; ... at the street in front of your home.</description>
+      <description>Imagine you´re a Member of Parliament. And you have decided you are not going to give your support to something. And then you get a group of people protesting against you.
+You would say. &amp;ldquo;Well, nothing new&amp;rdquo;
+&amp;hellip; calling you cockroach and threatening to kill you.
+You would say something like &amp;ldquo;Well, you know. People sometimes say things they don&amp;rsquo;t really think.&amp;rdquo;
+&amp;hellip; at the street in front of your home.</description>
     </item>
     
     <item>
@@ -965,7 +971,7 @@ Well. I want to say, that, regarding central government, I do think they are goi
       <pubDate>Mon, 17 Dec 2012 20:28:04 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-12-17-the-most-popular-video-in-spain-this/</guid>
-      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this Christmas It depicts Fofito (a clown very well known in Spain) with other well known&amp;nbsp;comedians,&amp;nbsp;actors and even journalists, sending parcels to &#34;important people&#34;: from Angela Merkel and IMF to Moody&#39;s and Standard&amp;amp;Poor&#39;s. In those parcels, Fofito sends, bundled with&amp;nbsp;&#34;cold meat&#34; (that&#39;s what makes the company that prepared the ad),&amp;nbsp;some sort of Curriculum Vitae of Spain, telling those &#34;</description>
+      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this Christmas It depicts Fofito (a clown very well known in Spain) with other well known comedians, actors and even journalists, sending parcels to &#34;important people&#34;: from Angela Merkel and IMF to Moody&#39;s and Standard&amp;amp;Poor&#39;s. In those parcels, Fofito sends, bundled with &#34;cold meat&#34; (that&#39;s what makes the company that prepared the ad), some sort of Curriculum Vitae of Spain, telling those &#34;</description>
     </item>
     
     <item>
@@ -974,7 +980,9 @@ Well. I want to say, that, regarding central government, I do think they are goi
       <pubDate>Sat, 15 Dec 2012 19:47:50 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</guid>
-      <description>Today I [rented a car for a few hours](http://www.zipcar.com/). I used to drive in Spain, but I hadn&#39;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture. There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).&amp;nbsp; First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.</description>
+      <description>Today I rented a car for a few hours. I used to drive in Spain, but I hadn&amp;rsquo;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture.
+There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).
+First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.</description>
     </item>
     
     <item>
@@ -1022,7 +1030,7 @@ javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</guid>
       <description>From time to time I write about politics in Spain in general and in particular Spanish deficit. Sometimes I try to do some simple estimations and comments.
-More recently there has been some comments in Spain regarding the [publication of regions&#39; budget deficit up to second quarter](http://www.minhap.es/Documentacion/Publico/GabineteMinistro/Notas%20Prensa/2012/SE%20PRESUPUESTOS%20Y%20GASTOS/13-09-12_PPT%20Ejecuci%C3%B3n%20Presupuestaria%20CCAA%20IITrim.pdf). But I&amp;nbsp;don&#39;t really understand why people insist to pay attention to [quarterly data without reference to a twelve month period](https://gonfva.blogspot.com.es/2012/03/estimating-spanish-budget-deficit.html). Let&#39;s do the math.</description>
+More recently there has been some comments in Spain regarding the publication of regions&amp;rsquo; budget deficit up to second quarter. But I don&amp;rsquo;t really understand why people insist to pay attention to quarterly data without reference to a twelve month period. Let&amp;rsquo;s do the math.</description>
     </item>
     
     <item>
@@ -1032,7 +1040,7 @@ More recently there has been some comments in Spain regarding the [publication o
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
       <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down. The problem appeared in different pages, but only for some combination of values. The issue appeared after installing IE9 from IE7 in a Windows Vista. The user could reproduce the issue (for a certain combination of values).</description>
     </item>
     
     <item>
@@ -1051,7 +1059,7 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
       <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
-First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
+First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
 Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
     </item>
     
@@ -1083,7 +1091,7 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</guid>
       <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:
-1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
+1. One level of indentation per method2. Don’t use the ELSE keyword 3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so intriguing I have to test it.</description>
     </item>
     
     <item>
@@ -1115,7 +1123,7 @@ So one obvious improvement is using symbols instead of string.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-25-little-robot-iii-dependency-inversion/</guid>
       <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion.
-Sometimes a higher level class A has to invoke methods in a lower level class.</description>
+Sometimes a higher level class A has to invoke methods in a lower level class.</description>
     </item>
     
     <item>
@@ -1165,7 +1173,7 @@ Another similar tool would be online testing web applications such as codility.<
       <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
 I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
@@ -1195,7 +1203,8 @@ For me, the outcome is not the most important thing in such a process, but the f
       <pubDate>Sun, 12 Aug 2012 21:59:17 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-12-bad-experiences/</guid>
-      <description>For some time I&amp;rsquo;ve been applying to different positions. I have two daughters and I want for them (and for me) to live in a different culture and language. After a few experiences, I&amp;rsquo;m tempted to say something about bad experiences:Forget about recruiters. They have different alignments than yours. In my experience (it could be biased), 90% of them are just form fillers. They ask you things (CV, tests, questions), in order to fill a form in a random web site.</description>
+      <description>For some time I&amp;rsquo;ve been applying to different positions. I have two daughters and I want for them (and for me) to live in a different culture and language. After a few experiences, I&amp;rsquo;m tempted to say something about bad experiences:
+Forget about recruiters. They have different alignments than yours. In my experience (it could be biased), 90% of them are just form fillers. They ask you things (CV, tests, questions), in order to fill a form in a random web site.</description>
     </item>
     
     <item>
@@ -1255,7 +1264,7 @@ Many well respected analysts suggested or explicitly wrote that maybe new Govern
       <pubDate>Fri, 23 Mar 2012 18:38:19 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-03-23-synchronized-silver-bullet/</guid>
-      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &amp;ldquo;Let&amp;rsquo;s put synchronized to the method&amp;rdquo;.</description>
+      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &amp;ldquo;Let&amp;rsquo;s put synchronized to the method&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -1265,7 +1274,7 @@ Many well respected analysts suggested or explicitly wrote that maybe new Govern
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
       <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
-Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
+Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&amp;rsquo;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
     </item>
     
     <item>
@@ -1286,7 +1295,7 @@ Because, if you choose to change the provider using System.setProperty, you are 
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
       <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&amp;rsquo;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
@@ -1304,7 +1313,10 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
+      <description>Activate log4j. Without it you&amp;rsquo;re lost
+Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
+If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:
+&amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;quot;&amp;gt; &amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;quot;&amp;gt; &amp;lt;/beans:bean&amp;gt; &amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
     </item>
     
     <item>
@@ -1314,7 +1326,8 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-10-budget-deficit/</guid>
       <description>Disclaimer: I&amp;rsquo;m talking about public data. I don&amp;rsquo;t have any unpublished data.
-In Spain there is some buzz recently about tax increases&amp;nbsp;approved&amp;nbsp;on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP. The commitment was to finalize 2011 with a 6% GDP, from 9.2 previous year.&amp;nbsp; OK. Here is my take. We will end 2011 with more than 9% GDP.</description>
+In Spain there is some buzz recently about tax increases approved on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP. The commitment was to finalize 2011 with a 6% GDP, from 9.2 previous year.
+OK. Here is my take. We will end 2011 with more than 9% GDP.</description>
     </item>
     
     <item>
@@ -1333,7 +1346,8 @@ More recently I&amp;rsquo;ve started with mobile development. I have paid the An
       <pubDate>Sun, 04 Dec 2011 19:31:33 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2011-12-04-my-first-mobile-application/</guid>
-      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons. Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
+      <description>I&amp;rsquo;m learning some technologies. I&amp;rsquo;m tempted to write new, but they&amp;rsquo;re not new. I&amp;rsquo;m learning Ruby on Rails and mobile development. I still have to keep learning Java, and Grails, but I have a project in mind and I wanted to separate clearly from my day to day job, for lots of reasons.
+Some other day I&amp;rsquo;ll posts my thoughts about mobile development. But today I wanted to share that I have deployed my first application to my iTouch.</description>
     </item>
     
     <item>
@@ -1403,7 +1417,7 @@ But the experience has been worse. To pass through the security line is somethin
       
       <guid>http://gonzalo.f-v.es/blog/2010-11-25-civil-service-how-to-improve/</guid>
       <description>A few days ago I promised to explain some of my ideas to improve the civil service in Spain. Of course there is no silver bullet. Instead, as you can see the links, all the bricks are in place:
-Try to introduce economic incentives. [People who work should be rewarded](http://noticias.juridicas.com/base_datos/Admin/l7-2007.t3.html#a24). Of course that could be misused to give more money to friends instead of giving it to the people who work.</description>
+Try to introduce economic incentives. People who work should be rewarded. Of course that could be misused to give more money to friends instead of giving it to the people who work.</description>
     </item>
     
     <item>
@@ -1676,7 +1690,7 @@ The first difference is that I’m writing it in English. The reason I’m doing
       
       <guid>http://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</guid>
       <description>You know something is broken with copyright when:
-You buy a &#34;Barbie and three Musqueteers&#34; DVD and you can&#39;t play in your DVD player because it&#39;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.
+You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.
 You can&#39;t install the Windows Vista that came with your computer, on a VirtualBox over a Linux box, because it refuses to activate.</description>
     </item>
     

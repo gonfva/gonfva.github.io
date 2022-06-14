@@ -12,7 +12,8 @@ You know something is broken with copyright when:
 
 
 
-<ul><li>You buy a "Barbie and three Musqueteers" DVD and you can't play in your DVD player because it's piracy protected. <span style="font-weight: bold;">But..</span>.
+
++ You buy a "Barbie and three Musqueteers" DVD and you can't play in your DVD player because it's piracy protected. <span style="font-weight: bold;">But..</span>.
 
 
 You download the same film from a P2P network, save to a CD and you can play it everywhere.</li>

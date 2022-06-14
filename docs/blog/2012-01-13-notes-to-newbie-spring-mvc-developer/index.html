@@ -68,7 +68,7 @@
       "datePublished": "2012-01-13 11:45:46 \u002b0000 UTC",
       "dateModified" : "2012-01-13 11:45:46 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2012-01-13-notes-to-newbie-spring-mvc-developer\/",
-      "wordCount" : "69",
+      "wordCount" : "73",
       "keywords" : ["Blog"]
     }
   
@@ -119,10 +119,28 @@
           </header>
           <article class="post__content">
               
-<ol><li>Activate log4j. Without it you're lost</li><li>Look through the log to see if you're getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you've got Spring Security installed, for Goodness sake, don't forget these lines:</li><pre>&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"&gt;<br/>
-&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"&gt;<br/>
-&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div>
-</div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol>
+<ol>
+<li>
+<p>Activate log4j. Without it you&rsquo;re lost</p>
+</li>
+<li>
+<p>Look through the log to see if you&rsquo;re getting the RequestMapping through Spring.</p>
+</li>
+<li>
+<p>If you are not despite correct annotations, see <a href="http://www.vaannila.com/spring/spring-annotation-controller-1.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this post</a>. In particular if you&rsquo;ve got Spring Security installed, for Goodness sake, don&rsquo;t forget these lines:</p>
+</li>
+</ol>
+<pre><code>&lt;beans:bean class=&quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&quot;&gt;
+  &lt;beans:bean class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&gt;
+  &lt;/beans:bean&gt;
+&lt;/beans:bean&gt;
+</code></pre>
+<ol start="4">
+<li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li>
+</ol>
 
 
               

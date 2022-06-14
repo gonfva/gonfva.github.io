@@ -258,7 +258,7 @@ However, as a developer the amount of effort you need to keep reasonably up-to-d
       <pubDate>Sat, 04 Oct 2014 14:12:09 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-10-04-agile-is-about-managing-risk/</guid>
-      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority.
+      <description>It is not easy to explain what is agile or the need of agile practices in software development. Agile is not only about releasing early a valuable product even if it is the highest priority.
 Anyway, a few days ago I found this tweet:
 MVP explained via [@smarty](https://twitter.com/smarty) [pic.twitter.com/hZkCzqytAP](http://t.co/hZkCzqytAP) — About Programming (@abt_programming) [September 28, 2014](https://twitter.com/abt_programming/status/516018172072587264) I showed the picture to my wife, and I tried to explain it to her.</description>
     </item>
@@ -290,7 +290,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <guid>http://gonzalo.f-v.es/blog/2014-03-13-optimizing/</guid>
       <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
 After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:
-Measure You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
+**Measure ** You cannot optimize if you don&#39;t know what do you need to optimize. Is it a database problem?</description>
     </item>
     
     <item>
@@ -299,7 +299,9 @@ Measure You cannot optimize if you don&#39;t know what do you need to optimize. 
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp; I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp; I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+      <description>I&amp;rsquo;m happy.
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&amp;rsquo;t took me too long to start debugging the actual gem&amp;rsquo;s code.</description>
     </item>
     
     <item>
@@ -309,7 +311,7 @@ Measure You cannot optimize if you don&#39;t know what do you need to optimize. 
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
       <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
     </item>
     
     <item>
@@ -329,7 +331,8 @@ At one point we agreed on creating a new constructor so that we could pass a ser
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-12-its-great-when-your-idea-is-good-one/</guid>
       <description>Since I came to London, more than a year ago, I&amp;rsquo;ve been travelling a lot back to Spain. I used to schedule trips in advance, and once I discovered I had two different reserves for the same trip (fortunately I was able to change one of them). Soon I realized I needed some tool to manage the trips.
-I did a quick search and I couldn&#39;t find anything. Then my wife and daughters finally came here.</description>
+I did a quick search and I couldn&amp;rsquo;t find anything.
+Then my wife and daughters finally came here.</description>
     </item>
     
     <item>
@@ -358,7 +361,7 @@ javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
       <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down. The problem appeared in different pages, but only for some combination of values. The issue appeared after installing IE9 from IE7 in a Windows Vista. The user could reproduce the issue (for a certain combination of values).</description>
     </item>
     
     <item>
@@ -368,7 +371,7 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
       <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
-First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
+First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
 Second. A chrome extension is a zip of a folder with an crx extension instead. The folder has to have a particular file called manifest.json. It tells the extension name and the permissions asked. It also points to the main file. Pretty standard in my case.</description>
     </item>
     
@@ -400,7 +403,7 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</guid>
       <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:
-1. One level of indentation per method2. Don’t use the ELSE keyword&amp;nbsp;3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so&amp;nbsp;intriguing&amp;nbsp;I have to test it.</description>
+1. One level of indentation per method2. Don’t use the ELSE keyword 3. Wrap all primitives and Strings4. First class collections5. One dot per line6. Don’t abbreviate7. Keep all entities small8. No classes with more than two instance variables9. No getters/setters/propertiesSome of them are a must, with some others I have some doubts. But the point 2 is so intriguing I have to test it.</description>
     </item>
     
     <item>
@@ -422,7 +425,7 @@ So one obvious improvement is using symbols instead of string.</description>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-25-little-robot-iii-dependency-inversion/</guid>
       <description>As I wrote some posts ago, I received an assignment, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to fake the console interaction (both stdin and stdout). I didn&amp;rsquo;t consider dependy inversion.
-Sometimes a higher level class A has to invoke methods in a lower level class.</description>
+Sometimes a higher level class A has to invoke methods in a lower level class.</description>
     </item>
     
     <item>
@@ -472,7 +475,7 @@ Another similar tool would be online testing web applications such as codility.<
       <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
 I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
@@ -501,7 +504,7 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       <pubDate>Fri, 23 Mar 2012 18:38:19 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-03-23-synchronized-silver-bullet/</guid>
-      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &amp;ldquo;Let&amp;rsquo;s put synchronized to the method&amp;rdquo;.</description>
+      <description>I lead a team that is transitioning a 9-year-old internal framework from a somewhat Struts based to Spring IoC and Spring MVC based. However in the meantime we keep hunting old bugs, which needs to dive in the code. In those occasions, from time to time, I find non-thread-safe code. When talking with the team, one of the usual solutions (at least at the beginning), was something like &amp;ldquo;Let&amp;rsquo;s put synchronized to the method&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -511,7 +514,7 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
       <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
-Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
+Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&amp;rsquo;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
     </item>
     
     <item>
@@ -532,7 +535,7 @@ Because, if you choose to change the provider using System.setProperty, you are 
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
       <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&amp;rsquo;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
@@ -550,7 +553,10 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
+      <description>Activate log4j. Without it you&amp;rsquo;re lost
+Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
+If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:
+&amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;quot;&amp;gt; &amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;quot;&amp;gt; &amp;lt;/beans:bean&amp;gt; &amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
     </item>
     
     <item>

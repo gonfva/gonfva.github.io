@@ -22,7 +22,7 @@ Take [this document](http://www.igae.pap.minhap.gob.es/sitios/igae/es-ES/Informe
 13,991+31,176+20,169=65,336
 
 
-Now take&nbsp;[the data for the GDP](http://www.ine.es/en/daco/daco42/daco4214/tabcntr_en.xls)
+Now take [the data for the GDP](http://www.ine.es/en/daco/daco42/daco4214/tabcntr_en.xls)
 
 
 258,537+269,169+252,753=780,459
@@ -31,7 +31,7 @@ Now take&nbsp;[the data for the GDP](http://www.ine.es/en/daco/daco42/daco4214/t
 And now get the percentage.
 
 
-Budget deficit for 3Q2012 was<b><span style="color: red; font-size: large;"> 8.37%</span></b>. Down from 8.54% 2Q2012. And a commitment of 6.3% in Q42012
+Budget deficit for 3Q2012 was **<span style="color: red; font-size: large;"> 8.37%</span>**. Down from 8.54% 2Q2012. And a commitment of 6.3% in Q42012
 
 
 Austerity.

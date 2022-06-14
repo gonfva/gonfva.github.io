@@ -39,7 +39,7 @@ One thing I find mind blowing (for bad and for good) is implicits. Implicits all
 The editor would need a post on its own. There is an [Eclipse version for Scala](http://scala-ide.org/). But until last Monday, I wasn't able to do automatic indentation without risking to mangle my code. Refactoring is for brave. And I'm living in nightly updates for Scala-IDE. I've been told that IntelliJ is much better, but I'm trying to avoid it.
 
 
-Finally, learning a new language is not only the language itself, but a whole array of technologies around. OK. You learn Scala, and then you need to learn a web framework. Play would be the equivalent to the latest versions of Spring MVC or even Rails. But I'm in a love-hate relationship with [lift](http://liftweb.net/)&nbsp;(which I find absolutely different to anything else except for [Meteor](https://www.meteor.com/)). &nbsp;And you also need an ORM. The typical one would be hibernate in the Java world or ActiveRecord for ruby. [Slick](http://slick.typesafe.com/) is not the more used, but it is really promising.
+Finally, learning a new language is not only the language itself, but a whole array of technologies around. OK. You learn Scala, and then you need to learn a web framework. Play would be the equivalent to the latest versions of Spring MVC or even Rails. But I'm in a love-hate relationship with [lift](http://liftweb.net/) (which I find absolutely different to anything else except for [Meteor](https://www.meteor.com/)).  And you also need an ORM. The typical one would be hibernate in the Java world or ActiveRecord for ruby. [Slick](http://slick.typesafe.com/) is not the more used, but it is really promising.
 
 
 And that's it.

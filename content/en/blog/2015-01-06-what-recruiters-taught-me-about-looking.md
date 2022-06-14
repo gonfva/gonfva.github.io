@@ -40,7 +40,7 @@ So for me what are the really tempting contacts? The ones that try to establish 
 So what does teach me about looking for a job/applying?
 
 
-Now, when I really want a job, **I put myself on the recipient's role**</b>**. What if it receives dozens of emails? How is she going to know that I'm the perfect fit?
+Now, when I really want a job, **I put myself on the recipient's role**. What if it receives dozens of emails? How is she going to know that I'm the perfect fit?
 
 
 Some obvious tips:

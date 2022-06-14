@@ -13,7 +13,7 @@ tags:
 This post started as a way of comparing different ways of managing customer relationships. It ended up as rant, but I'm not going to delete it. But I will write another post in the future with some suggestions.
 
 
-<b>A good experience: IKEA.</b>
+ **A good experience: IKEA.**
 I recently bought some furniture from IKEA, using their online services in the UK. The furniture was delivered on Friday morning, and in the evening I discovered that there was package less than expected.
 
 
@@ -26,7 +26,7 @@ On Sunday evening (on Sunday!!!!) I received a reply apologizing for the problem
 I will recommend their services. Yes they fail, but on the customer relationship, they set reasonable expectations (3 days for an email is good), and they manage to fulfill them.
 
 
-<b>A bad experience: Royal Borough of Greenwich</b>
+ **A bad experience: Royal Borough of Greenwich**
 I recently moved into the Royal Borough of Greenwich. I filled in their online form for that. I received an automated reply informing that I should receive a letter in ten working days with the tax amount (in the UK the people living in a property pay the property tax).
 
 
@@ -37,7 +37,9 @@ One could think "why bother? No letter, no taxes". Well. Two reasons.
 
 
 
-<ol><li>I have two daughters and I need to apply to get a school for them. But I cannot apply without a "Correct proof of address" and "Correct proof is a current council tax bill/statement or council tax reference number".&nbsp;</li><li>If I'm going to have to pay amount x, I prefer to do it in as much months as possible. It is not the same to pay x/6 in 6 months than to pay the whole x in one month, and I prefer to do it in 6 months.</li></ol>
+
++ I have two daughters and I need to apply to get a school for them. But I cannot apply without a "Correct proof of address" and "Correct proof is a current council tax bill/statement or council tax reference number".
++ If I'm going to have to pay amount x, I prefer to do it in as much months as possible. It is not the same to pay x/6 in 6 months than to pay the whole x in one month, and I prefer to do it in 6 months.</li></ol>
 
 
 This time I received an automated reply with the following:
@@ -75,7 +77,7 @@ It turns out that if you want to make a compliment, you can send an email. But i
 Yes. My dear friends. [2013 and you still have to send a letter](http://www.royalgreenwich.gov.uk/info/200025/complaints/548/council_complaints).
 
 
-OK. What form should I use. Well. It turns out [it is a 6 page form with 1 page for the actual complain and 2 pages for my profile](http://www.royalgreenwich.gov.uk/download/downloads/id/1300/complaints_leaflet_and_form)&nbsp;(Do you really need to know my religion or sexual orientation "to help [you] to ensure that we are providing our services fairly to all members of our community"?). You don't want to get my feedback, neither ensure you are providing your services fairly. You just want to cover your *ss.
+OK. What form should I use. Well. It turns out [it is a 6 page form with 1 page for the actual complain and 2 pages for my profile](http://www.royalgreenwich.gov.uk/download/downloads/id/1300/complaints_leaflet_and_form) (Do you really need to know my religion or sexual orientation "to help [you] to ensure that we are providing our services fairly to all members of our community"?). You don't want to get my feedback, neither ensure you are providing your services fairly. You just want to cover your *ss.
 
 
 Note: As a contrast, I also notified the [Tower Hamlets Borough](http://www.towerhamlets.gov.uk/lgsl/51-100/57_council_tax.aspx) about the change of address. In less than a week I had a letter in the new address, with the difference between what I had paid and what I was expected to have paid, and how to get a refund. From what I've been told, and from my experience, THAT is the usual time it takes to process a council tax record.

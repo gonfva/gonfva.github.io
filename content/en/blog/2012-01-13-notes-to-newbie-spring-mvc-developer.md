@@ -10,7 +10,16 @@ tags:
 ---
 
 
-<ol><li>Activate log4j. Without it you're lost</li><li>Look through the log to see if you're getting the RequestMapping through Spring.</li><li>If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you've got Spring Security installed, for Goodness sake, don't forget these lines:</li><pre>&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"&gt;<br/>
-&lt;beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"&gt;<br/>
-&lt;/beans:bean&gt;<br/>&lt;/beans:bean&gt;</pre><div>
-</div><li>Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</li></ol>
+1. Activate log4j. Without it you're lost
+
+2. Look through the log to see if you're getting the RequestMapping through Spring.
+
+3. If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you've got Spring Security installed, for Goodness sake, don't forget these lines:
+```
+<beans:bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+  <beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+  </beans:bean>
+</beans:bean>
+```
+
+4. Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.

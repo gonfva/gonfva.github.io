@@ -32,11 +32,4 @@ And I've noticed that from a Full Charge Capacity of around 8500 mAh, it has bee
 It is too soon to know how it will last in the future, but it is a good sympton.
 
 
-You can check full charge capacity at "System Information". Go to "About this Mac", then click on "More info...", &nbsp;then on "System Report" and finally select "Power".
-
-
-
-
-
-
-
+You can check full charge capacity at "System Information". Go to "About this Mac", then click on "More info...",  then on "System Report" and finally select "Power".

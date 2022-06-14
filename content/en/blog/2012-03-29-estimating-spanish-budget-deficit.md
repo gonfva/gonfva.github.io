@@ -58,7 +58,7 @@ Yes I know. It's not a great estimate, but for budget data shows a trend and it 
 Using a twelve month period for 2Q2011, you can get a total of 97956 million euro (in European terms).
 
 
-So, with 2Q2011 data, estimation was 98 billion euro, with 3Q2011, estimation 94 billion euro. Is that a perfect estimate?. Of course not. But it shows a trend. And with that trend,<b> it was obvious we were decreasing our deficit, but it was obvious we weren't decreasing fast enough</b>.
+So, with 2Q2011 data, estimation was 98 billion euro, with 3Q2011, estimation 94 billion euro. Is that a perfect estimate?. Of course not. But it shows a trend. And with that trend, ** it was obvious we were decreasing our deficit, but it was obvious we weren't decreasing fast enough**.
 
 
 [February, 28th. Official figure: 91344](http://www.minhap.gob.es/es-ES/Prensa/En%20Portada/2012/Paginas/Deficit_2011.aspx)(*). And everybody said the government was forging the data upwards.
@@ -67,7 +67,7 @@ So, with 2Q2011 data, estimation was 98 billion euro, with 3Q2011, estimation 94
 Look the following data, and tell me somebody forged it (December 31st, 2011 data is official figure).
 
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-QCVKgLrHrFE/T3TDU9wkVRI/AAAAAAAAASQ/_zR-Qygxi2M/s1600/chart_3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="394" src="http://3.bp.blogspot.com/-QCVKgLrHrFE/T3TDU9wkVRI/AAAAAAAAASQ/_zR-Qygxi2M/s640/chart_3.png" width="640" /></a></div>
+<img height="394" src="http://3.bp.blogspot.com/-QCVKgLrHrFE/T3TDU9wkVRI/AAAAAAAAASQ/_zR-Qygxi2M/s640/chart_3.png" width="640" />
 
 
 (*)The official figure is an estimation, and is not homogeneous with the quarterly data. The fourth quarter is still to be closed in accounting terms.

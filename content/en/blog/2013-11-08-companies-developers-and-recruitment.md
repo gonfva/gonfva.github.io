@@ -23,7 +23,7 @@ I remember in particular one interview. It didn't start well when I replied "[SÃ
 But for me as an experience, the interview finished wonderfully when the Spanish guy asked "What are you looking for? What's your ideal job?"
 
 
-<b>I think it is very difficult to match companies and people.</b>
+ **I think it is very difficult to match companies and people.**
 
 
 Companies would really like people that could commit to the project and I certainly prefer a company where I feel my work makes a difference. However, companies tend to look for people that can hit the ground running at the lower cost. And developers tend to look for companies with better conditions and more buzzwords.
@@ -39,5 +39,3 @@ But, the fact is that suddenly, I realized how difficult matching companies with
 
 
 But even if I were an [incredibly valued employee](http://www.reuters.com/article/2013/10/13/net-us-siliconvalley-engineers-twitter-idUSBRE99C03R20131013), I wouldn't have a clue if the job I was being offered is the one was looking for or if that's my ideal job.
-
-

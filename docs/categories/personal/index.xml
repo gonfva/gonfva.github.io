@@ -142,7 +142,9 @@ During process, I had to work with lots of recruiters. Both from inside and outs
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp; I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp; I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+      <description>I&amp;rsquo;m happy.
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&amp;rsquo;t took me too long to start debugging the actual gem&amp;rsquo;s code.</description>
     </item>
     
     <item>
@@ -151,7 +153,7 @@ During process, I had to work with lots of recruiters. Both from inside and outs
       <pubDate>Fri, 31 Jan 2014 19:28:39 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-01-31-community-managers-day-after/</guid>
-      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.
+      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.
 He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful). IMO, the customer was not insulting and she was not threatening. Just complaining.
 Initially I thought about yet another tactic to be viral.</description>
     </item>
@@ -173,7 +175,9 @@ I remember in particular one interview. It didn&amp;rsquo;t start well when I re
       <pubDate>Sat, 15 Dec 2012 19:47:50 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</guid>
-      <description>Today I [rented a car for a few hours](http://www.zipcar.com/). I used to drive in Spain, but I hadn&#39;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture. There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).&amp;nbsp; First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.</description>
+      <description>Today I rented a car for a few hours. I used to drive in Spain, but I hadn&amp;rsquo;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me. Also I needed to buy some furniture.
+There are two problems for a Spanish driver in the UK (actually for most drivers from outside of the UK).
+First. Cars have the steering wheel on the right hand side of the car, while outside the UK(overseas as they say) the steering wheel is on the left.</description>
     </item>
     
     <item>
@@ -303,7 +307,7 @@ In fact I have some other blog I write from time to time. It&amp;rsquo;s just th
       
       <guid>http://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</guid>
       <description>You know something is broken with copyright when:
-You buy a &#34;Barbie and three Musqueteers&#34; DVD and you can&#39;t play in your DVD player because it&#39;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.
+You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.
 You can&#39;t install the Windows Vista that came with your computer, on a VirtualBox over a Linux box, because it refuses to activate.</description>
     </item>
     

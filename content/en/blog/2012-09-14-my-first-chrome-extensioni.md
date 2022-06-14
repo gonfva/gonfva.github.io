@@ -15,10 +15,10 @@ This afternoon I was preparing an interview I expect to have next week, and came
 And I got tired.
 
 
-And I remembered FT similar "become a registered" and WSJ "first-paragraph-only". Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page).&nbsp;Completely&nbsp;understandable, but not very pleasant.
+And I remembered FT similar "become a registered" and WSJ "first-paragraph-only". Lots of sites show you the page when you come from Google, but ask you to register if you start to surf (or just come from a different page). Completely understandable, but not very pleasant.
 
 
-So I asked myself if it would be too complicated to build an extension for Google Chrome, that when you are at a page and asks to register, you ask google to get redirected to that page. It seems it's not. I started poking at 19:00 (local development folder creation time was 19:07) and ended building it at 20:30 (icon included).&nbsp;It's pretty basic, but it makes a bit of tweaking with FT and WSJ URLs because just coming from Google was not enough. And now it works, with glassdoor, FT, and WSJ.
+So I asked myself if it would be too complicated to build an extension for Google Chrome, that when you are at a page and asks to register, you ask google to get redirected to that page. It seems it's not. I started poking at 19:00 (local development folder creation time was 19:07) and ended building it at 20:30 (icon included). It's pretty basic, but it makes a bit of tweaking with FT and WSJ URLs because just coming from Google was not enough. And now it works, with glassdoor, FT, and WSJ.
 
 
 Great. I learnt and I have something interesting to show.

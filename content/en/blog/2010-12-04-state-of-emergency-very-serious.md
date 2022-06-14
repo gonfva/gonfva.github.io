@@ -11,7 +11,8 @@ tags:
 
 It's in the news. [Spanish Government has declared "State of Emergency"](http://www.boe.es/boe/dias/2010/12/04-2/pdfs/BOE-A-2010-18683.pdf). This declaration gives special powers to the government [like the ability to limit the circulation of people, commandeer things or even enter in private properties (but not homes)](http://noticias.juridicas.com/base_datos/Admin/lo4-1981.html#a11).
 It's somewhat similar to State of Siege, but lower in intensity. Being Spain a democracy one could think that this kind of declaration should be reserved to extreme cases. That's true in the law. [It can be declared only due to four reasons](http://noticias.juridicas.com/base_datos/Admin/lo4-1981.html#a4):
-<ol><li>Catastrophic events (like floods, earthquakes...)</li>
+
++ Catastrophic events (like floods, earthquakes...)</li>
 <li>Sanitary crisis</li>
 <li>Stopping of Public Services but only in connection with one of the other points.</li>
 <li>Shortage of first necessity products</li></ol>

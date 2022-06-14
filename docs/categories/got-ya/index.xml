@@ -99,7 +99,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL. Unfortunately the PHP web application and MySQL were working together and that made the issue more difficult to track.</description>
     </item>
     
     <item>
@@ -108,7 +108,9 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&#39;m happy.&amp;nbsp; I was developing a feature that allows to export from my showcase project [Whendoigo](http://www.whendoigo.co.uk/) to [TripIt](https://www.tripit.com/).&amp;nbsp; I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&#39;t took me too long to start debugging the actual gem&#39;s code.</description>
+      <description>I&amp;rsquo;m happy.
+I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
+I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java). The gem simply encapsulated the API from TripIt. But it was failing and apparently everything on my project was correct. So this time it didn&amp;rsquo;t took me too long to start debugging the actual gem&amp;rsquo;s code.</description>
     </item>
     
     <item>
@@ -118,7 +120,7 @@ The first one was the typical example of &amp;ldquo;correlation does not equal c
       
       <guid>http://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
       <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
+In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools. As I haven&amp;rsquo;t found too much information, I&amp;rsquo;ve decided to put it in writing.</description>
     </item>
     
     <item>
@@ -160,7 +162,7 @@ javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException
       
       <guid>http://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
       <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application.&amp;nbsp;The issue reported by the user was a combo that didn&#39;t drop down.&amp;nbsp;The problem appeared in different pages, but only for some combination of values.The issue appeared after installing IE9 from IE7 in a Windows Vista.&amp;nbsp;The user could reproduce the issue (for a certain combination of values).We (both devs and ops) couldn&#39;t reproduce in a standard machine&amp;nbsp;even tough&amp;nbsp;at work final users deal with a very standard machine (machine setups are pretty standarized at work).</description>
+The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down. The problem appeared in different pages, but only for some combination of values. The issue appeared after installing IE9 from IE7 in a Windows Vista. The user could reproduce the issue (for a certain combination of values).</description>
     </item>
     
     <item>
@@ -169,7 +171,7 @@ The problem appeared in a legacy web application.&amp;nbsp;The issue reported by
       <pubDate>Wed, 15 Aug 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-08-15-savonrb-and-sequences/</guid>
-      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
+      <description>As I wrote in my last post, I&amp;rsquo;ve recently learned it is important to be able to show what you&amp;rsquo;ve been doing. So I&amp;rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.
 I was developing a small interface between two applications via a SOAP web service. Actually, we are using Redmine for development, and Remedy for the whole organization, and we didn&amp;rsquo;t want to fill the information twice.</description>
     </item>
     
@@ -190,7 +192,7 @@ In my previous post I explained how to make Java choose a class for a parser.</d
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/</guid>
       <description>OK. I have explained why Xerces and Xalan are a source of problems, and I have explained why you shouldn&amp;rsquo;t use System.setProperty to resolve them. In this post I wan&amp;rsquo;t to give a few recipes to resolve Xerces and Xalan problems.
-Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&#39;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.</description>
+Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you&amp;rsquo;ll need some specific parser (OC4J had a strange bug that needed a specific parser, and Weblogic seems to have special needs too).</description>
     </item>
     
     <item>
@@ -211,7 +213,7 @@ Because, if you choose to change the provider using System.setProperty, you are 
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
       <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&#39;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
+Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&amp;rsquo;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</description>
     </item>
     
     <item>
@@ -229,7 +231,10 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&#39;re lostLook through the log to see if you&#39;re getting the RequestMapping through Spring.If you are not despite correct annotations, see [this post](http://www.vaannila.com/spring/spring-annotation-controller-1.html). In particular if you&#39;ve got Spring Security installed, for Goodness sake, don&#39;t forget these lines:&amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&#34;&amp;gt; &amp;lt;beans:bean class=&#34;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&#34;&amp;gt; &amp;lt;/beans:bean&amp;gt;&amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild. </description>
+      <description>Activate log4j. Without it you&amp;rsquo;re lost
+Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
+If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:
+&amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&amp;quot;&amp;gt; &amp;lt;beans:bean class=&amp;quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&amp;quot;&amp;gt; &amp;lt;/beans:bean&amp;gt; &amp;lt;/beans:bean&amp;gt; Just in case you decided to change the mappings, and you continue to see the old ones in the logs, clean and rebuild.</description>
     </item>
     
     <item>
