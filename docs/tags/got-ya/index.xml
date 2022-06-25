@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>got ya on Gonzalo&#39;s thoughts</title>
+    <link>http://gonzalo.f-v.es/tags/got-ya/</link>
+    <description>Recent content in got ya on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
+    <lastBuildDate>Fri, 24 Jun 2022 20:30:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/tags/got-ya/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging windows nodes in EKS</title>
+      <link>http://gonzalo.f-v.es/blog/2022-06-24-debugging-windows-eks/</link>
+      <pubDate>Fri, 24 Jun 2022 20:30:00 +0000</pubDate>
+      
+      <guid>http://gonzalo.f-v.es/blog/2022-06-24-debugging-windows-eks/</guid>
+      <description>Debugging windows nodes in EKS After a couple of days dealing with /windows nodes in Kubernetes AWS EKS, I thought I would provide a quick write-up of what I&amp;rsquo;ve seen. For two reasons</description>
+    </item>
+    
+  </channel>
+</rss>
