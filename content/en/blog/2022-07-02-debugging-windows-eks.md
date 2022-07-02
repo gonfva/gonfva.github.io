@@ -1,5 +1,5 @@
 ---
-date: 2022-06-25T13:30:00
+date: 2022-07-02T13:30:00
 title: Debugging windows nodes in EKS
 subtitle: When the node doesn't see the service network
 tags:
