@@ -105,7 +105,7 @@ So I laser focussed on that event
 
 ```
 
-kube-proxy. Something about not being able to access a specific endpoint.
+Something about kube-proxy not being able to access a specific endpoint.
 `"system:node:ip-<ip>.ec2.internal" cannot list resource "endpointslices" in API group "discovery.k8s.io"`
 
 Hmm. Immediately I knew it was going to be related to aws-auth. Remember that aws-auth is the way EKS gives permissions to nodes (and actual people) to connect to the cluster.
@@ -115,7 +115,7 @@ There was some red-herring with a bug on CoreDNS. But I dismissed it quickly.
 It had to be aws-auth.
 
 
-I checked the configuration, and yes, aws-auth had indeed two groups of nodes. Linux nodes, have applied two clusterrolebindings (I thought it was roles, but not). And windows, have a third one.
+I checked the configuration, and yes, aws-auth had indeed two groups of nodes. Linux nodes, have applied two clusterrolebindings (I thought it was roles, but not). And windows, have a third clusterrolebinding.
 
 ```
 
@@ -185,10 +185,18 @@ rules:
 ```
 and lo and behold, `discovery.k8s.io` apigroups, `endpointslices` resources, and `list`.
 
-So the k8s cluster role should have permissions, the cluster role gets applied to nodes that have the AWS role I have passed for windows machines.
+Hmm. Everything looks correct.
 
-But our window machine doesn't have permissions? Does the window machine have the windows role?
+Rubber duck moment.
 
-Yes, in my case, the issue was so stupid. The node had an incorrect AWS role applied.
+The k8s cluster role should have permissions, the cluster role gets applied to nodes that have the AWS role I have passed for windows machines.
 
-But I hope that the whole debugging process was more interesting than actually the issue.
+But ... our window machine doesn't have permissions?
+
+Let's check the last piece. It cannot be so stupid...
+
+*Does the window machine have the windows role?*
+
+Yes, in my case, the issue was so stupid. *The node had an incorrect AWS role applied*.
+
+I hope that the whole debugging process was more interesting than actually the issue.
