@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Debugging windows nodes in EKS | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Debugging windows nodes in EKS" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.86997521e8d6e55ebc583793f82d15acca4d334351454add7f5e5e811b609cd0.css" integrity="sha256-hpl1IejW5V68WDeT&#43;C0VrMpNM0NRRUrdf15egRtgnNA="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Debugging windows nodes in EKS",
+      "headline" : "Debugging windows nodes in EKS",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-07-02 13:30:00 \u002b0000 UTC",
+      "dateModified" : "2022-07-02 13:30:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-07-02-debugging-windows-eks\/",
+      "wordCount" : "866",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Debugging windows nodes in EKS</h1>
+            
+            <h2>When the node doesn&#39;t see the service network</h2>
+            
+            <time datetime="2022-07-02 13:30:00 &#43;0000 UTC" class="post__date">2022-07-02</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="debugging-windows-nodes-in-eks">Debugging windows nodes in EKS<a class="anchor" href="#debugging-windows-nodes-in-eks">#</a></h2>
+<p>After a couple of days dealing with windows nodes in Kubernetes AWS EKS, I thought I would provide a quick write-up of what I&rsquo;ve seen. For two reasons</p>
+<ol>
+<li>In case in a week time I need to remember what I did, I know where to look at.</li>
+<li>In case somebody faces the same issues and Google offers them this page (BTW, I don&rsquo;t have any analytics on this page, so shout on Twitter or LinkedIn if you found this useful)</li>
+</ol>
+<p>Anyway, we have some nodegroups with windows machines. The machines would join the cluster correctly and <code>kubectl get nodes</code> would show the nodes in ready status. But it seemed that pods were having some connectivity problem. We were trying to schedule a jenkins slave pod using the Jenkins <a href="https://plugins.jenkins.io/kubernetes/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Kubernetes plugin</a> but the jnlp container was dying unable to connect to the jenkins service.</p>
+<p>So I RDP into the node, and do a curl to the Jenkins service by IP (the service network is a different &ldquo;ficticious network&rdquo;). Unable to connect. Obviously, trying to do nslookup using the DNS service for the cluster (CoreDNS) would have the same issue.</p>
+<p>Next, I tried to connect the pod directly, not the service. In AWS, pods have a routable IP. Connecting the pod directly would work.</p>
+<p>OK. At that point it was obvious the nodes were having some issue trying to connect to the service network. What could that be?</p>
+<p>First, I tried to see if the node had joined correctly the cluster. So time to see the logs for the bootstrap process.</p>
+<pre><code>more C:\ProgramData\Amazon\EC2-Windows\Launch\Log\UserdataExecution.log
+</code></pre>
+<p>didn&rsquo;t show anything strange. All seemed to have gone correctly.</p>
+<p>Part of the boot process generates a configuration file for CNI (networking). Time to see that</p>
+<pre><code>more C:\ProgramData\Amazon\EKS\cni\config\vpc-shared-eni.conf
+
+{
+    &quot;cniVersion&quot;: &quot;0.3.1&quot;,
+    &quot;name&quot;: &quot;vpc&quot;,
+    &quot;type&quot;: &quot;vpc-shared-eni&quot;,
+    &quot;eniMACAddress&quot;: &quot;&lt;macaddress&gt;&quot;,
+    &quot;eniIPAddresses&quot;: [&quot;&lt;CIDR self&gt;&quot;],
+    &quot;gatewayIPAddress&quot;: &quot;&lt;ip gateway&gt;&quot;,
+    &quot;vpcCIDRs&quot;: [
+        &quot;&lt;CIDR vpc&gt;&quot;
+    ],
+    &quot;serviceCIDR&quot;: &quot;&lt;CIDR service&gt;&quot;,
+     &quot;dns&quot;: {
+        &quot;nameservers&quot;: [&quot;&lt;ip dns&gt;&quot;],
+        &quot;search&quot;: [
+            &quot;{%namespace%}.svc.cluster.local&quot;,
+            &quot;svc.cluster.local&quot;,
+            &quot;cluster.local&quot;
+        ]
+    }
+}
+</code></pre>
+<p>Again. Everything correct.</p>
+<p>Service network. It should be the kube-proxy. How to to debug kube-proxy in Windows? How to see logs in Windows?</p>
+<p>It turns out there is no such thing as journalctl or so. You use <code>get-eventlog</code></p>
+<p>In particular, this is the command to get a list of the logs in tabular format</p>
+<pre><code>&gt; get-eventlog eks|more
+</code></pre>
+<p>In that list, something caught my eye inmediately, because it was of type error, not information nor warning.</p>
+<p>So I laser focussed on that event</p>
+<pre><code>&gt; get-eventlog EKS |where index -eq 8556|format-list *
+
+    EventID            : 0
+    MachineName        : &lt;name machine&gt;
+    Data               : {}
+    Index              : 8556
+    Category           : (0)
+    CategoryNumber     : 0
+    EntryType          : Error
+    Message            : E0624 12:04:06.002944    3084 reflector.go:138]
+                        k8s.io/client-go/informers/factory.go:134: Failed
+                        to watch *v1.EndpointSlice: failed to list *v1.EndpointSlice:
+                        endpointslices.discovery.k8s.io is forbidden: User
+                        &quot;system:node:ip-&lt;ip&gt;.ec2.internal&quot; cannot list resource
+                        &quot;endpointslices&quot; in API group &quot;discovery.k8s.io&quot; at the cluster scope
+    Source             : kube-proxy
+    ReplacementStrings : {E0624 12:04:06.002944    3084 reflector.go:138]
+                        k8s.io/client-go/informers/factory.go:134: Failed
+                        to watch *v1.EndpointSlice      : failed to list *v1.EndpointSlice:
+                        endpointslices.discovery.k8s.io is forbidden: User
+                        &quot;system:node:ip-&lt;ip&gt;.ec2.internal&quot; cannot list resource
+                        &quot;endpointslices&quot; in API group &quot;discovery.k8s.io&quot; at the cluster scope}
+    InstanceId         : 0
+    TimeGenerated      : 6/24/2022 12:04:06 PM
+    TimeWritten        : 6/24/2022 12:04:06 PM
+    UserName           :
+    Site               :
+    Container          :
+
+</code></pre>
+<p>Something about kube-proxy not being able to access a specific endpoint.
+<code>&quot;system:node:ip-&lt;ip&gt;.ec2.internal&quot; cannot list resource &quot;endpointslices&quot; in API group &quot;discovery.k8s.io&quot;</code></p>
+<p>Hmm. Immediately I knew it was going to be related to aws-auth. Remember that aws-auth is the way EKS gives permissions to nodes (and actual people) to connect to the cluster.</p>
+<p>There was some red-herring with a bug on CoreDNS. But I dismissed it quickly.</p>
+<p>It had to be aws-auth.</p>
+<p>I checked the configuration, and yes, aws-auth had indeed two groups of nodes. Linux nodes, have applied two clusterrolebindings (I thought it was roles, but not). And windows, have a third clusterrolebinding.</p>
+<pre><code>
+$ kubectl get cm aws-auth -n kube-system -o yaml
+apiVersion: v1
+data:
+  mapRoles: |
+    - rolearn: &lt;arn linux nodes&gt;
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+    - rolearn: &lt;arn windows nodes&gt;
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+        - eks:kube-proxy-windows
+</code></pre>
+<p>So far, so good. I checked that the cluster role binding was correct</p>
+<pre><code>$ kubectl get clusterrolebinding eks:kube-proxy-windows -o yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  [...]
+  labels:
+    eks.amazonaws.com/component: kube-proxy
+    k8s-app: kube-proxy
+  name: eks:kube-proxy-windows
+  [...]
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:node-proxier
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: eks:kube-proxy-windows
+
+</code></pre>
+<p>There we are, <code>system:node-proxier</code>. Everything looks correct. Next, check the Cluster role</p>
+<pre><code>$ kubectl get clusterrole system:node-proxier -o yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: &quot;true&quot;
+  labels:
+    kubernetes.io/bootstrapping: rbac-defaults
+  name: system:node-proxier
+  [...]
+rules:
+  [...]
+- apiGroups:
+  - discovery.k8s.io
+  resources:
+  - endpointslices
+  verbs:
+  - list
+  - watch
+</code></pre>
+<p>and lo and behold, <code>discovery.k8s.io</code> apigroups, <code>endpointslices</code> resources, and <code>list</code>.</p>
+<p>Hmm. Everything looks correct.</p>
+<p>Rubber duck moment.</p>
+<p>The k8s cluster role should have permissions, the cluster role gets applied to nodes that have the AWS role I have passed for windows machines.</p>
+<p>But &hellip; our window machine doesn&rsquo;t have permissions?</p>
+<p>Let&rsquo;s check the last piece. It cannot be so stupid&hellip;</p>
+<p><em>Does the window machine have the windows role?</em></p>
+<p>Yes, in my case, the issue was so stupid. <em>The node had an incorrect AWS role applied</em>.</p>
+<p>I hope that the whole debugging process was more interesting than actually the issue.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li>
+    </ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2022-05-24-single-instance-persistent-ebs/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Single instance with persistent EBS</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
