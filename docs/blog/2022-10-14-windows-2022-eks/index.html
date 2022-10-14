@@ -68,7 +68,7 @@
       "datePublished": "2022-10-14 21:30:00 \u002b0000 UTC",
       "dateModified" : "2022-10-14 21:30:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-10-14-windows-2022-eks\/",
-      "wordCount" : "2244",
+      "wordCount" : "2496",
       "keywords" : ["Blog"]
     }
   
@@ -138,9 +138,9 @@ ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-b
 </code></pre>
 <p>Unfortunately, I cannot open source my code because I&rsquo;m using three files that, as far I as know, are not open source themselves.</p>
 <p>But I will provide the steps, and some explanation. And I will tell you where to find those files I cannot include.</p>
-<p>Note of caution. My code is hacky. This was my first Windows AMI (or Windows packer for that matter), and was just trying to make it work, and put it on the same folders as in Windows 2019 without minimal changes. Hey, I don&rsquo;t even know Powershell beside gc (get-content).</p>
+<p>Note of caution. My code is hacky. These were my first Windows AMIs (or Windows packer for that matter), and was just trying to make it work, and put it on the same folders as in Windows 2019 without minimal changes. Hey, I don&rsquo;t even know Powershell apart from gc (get-content) and get-eventlog.</p>
 <h3 id="overview">Overview<a class="anchor" href="#overview">#</a></h3>
-<p>Every packer build has a <a href="#the-builder" 
+<p>Most of you will know, that every packer build has a <a href="#the-builder" 
   
   
 >builder</a>, which is sort of the main loop, a <a href="#communicator" 
@@ -149,7 +149,7 @@ ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-b
 >communicator</a> and one or multiple <a href="#provisioners" 
   
   
->provisioners</a>.</p>
+>provisioners</a>. So I have set up sections for each one of them.</p>
 <h3 id="the-builder">The builder<a class="anchor" href="#the-builder">#</a></h3>
 <p>The builder is pretty standard if you&rsquo;ve used packer with HCL syntax before.</p>
 <pre><code>source &quot;amazon-ebs&quot; &quot;windows-eks&quot; {
@@ -192,12 +192,13 @@ ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-b
 <p>Unfortunately, with Windows, that is not the case. Up until very recently there was no way of using SSH on windows with packer. It might now be possible, but I didn&rsquo;t care because I&rsquo;ve directly opted for the usual communicator for Windows: WinRm.</p>
 <p>My mental model for WinRM was ssh. But really is a way to manage remote systems. Which moved my mental model towards Ansible.</p>
 <p>The thing is that when building with packer we need to interact with the instance we&rsquo;re building. And that goes through the communicator.</p>
-<p>Which means that you need to include those four lines I indicated in the builder section. But ALSO, that we need to enable and configure WinRM. How do we enable and configure WinRM when we don&rsquo;t have a way to communicate with the machine?</p>
-<p>The answer is that line <code>user_data_file</code>. The file we indicate in that line will be loaded at boot time. That file only is valid when building with packer. When you launch an instance from the built AMI, you will use your own user data.</p>
-<p>And what should we include in the user data. Something really similar to what <a href="https://www.packer.io/docs/communicators/winrm" 
+<p>Which means that you need to include those four lines I indicated in the builder section. But ALSO, that we need to enable and configure WinRM.</p>
+<p><em>How do we enable and configure WinRM when we don&rsquo;t have a way to communicate with the machine?</em></p>
+<p>The answer is that line starting with <code>user_data_file</code>. The file we indicate in that line will be loaded at boot time. That file only is valid when building with packer. When you launch an instance from the built AMI, you will use a different user data.</p>
+<p>And what should we include in the user data for packer. Something really similar to what <a href="https://www.packer.io/docs/communicators/winrm" 
   
    target="_blank" rel="noreferrer noopener" 
->appears in the packer pages</a>.</p>
+>appears in the packer pages</a>. Basically the only difference is not use a password.</p>
 <pre><code># A Packer config that works with this example would be:
 #
 #
@@ -245,9 +246,10 @@ cmd.exe /c net stop winrm
 cmd.exe /c sc config winrm start= auto
 cmd.exe /c net start winrm
 </code></pre>
+<p>Once the builder starts, it sends the user data, and that enables the communicator.</p>
 <h3 id="provisioners">Provisioners<a class="anchor" href="#provisioners">#</a></h3>
-<p>Once the builder starts, it sends the user data, and that enables the communicator. Now it is time to do things to the instance we are running.</p>
-<p>These are the things I&rsquo;m doing. Your mileage might vary</p>
+<p>Now it is time to do things to the instance we are running.</p>
+<p>These are the things I&rsquo;m doing. Your mileage might vary, but points 1, 3, part of 5, and 6 are essential</p>
 <ol>
 <li><a href="#upload-required-files" 
   
@@ -277,19 +279,27 @@ cmd.exe /c net start winrm
 <p>Let&rsquo;s see step by step</p>
 <h4 id="upload-required-files">Upload required files</h4>
 <p>There are three files I couldn&rsquo;t find elsewhere on the Internet. They are included in the Windows 2019 EKS optimized images, so I took them from there. They can be found in the following paths <em><strong>in a running Windows 2019 EKS optimized instance</strong></em>.</p>
-<p><code>c:\Program Files\Amazon\EKS\EKS-StartupTask.ps1</code> to help build a Scheduled Task that keeps everything in place
-<code>c:\Program Files\Amazon\EKS\Start-EKSBootstrap.ps1</code> which is the actual PS script you will invoke in your userdata
-<code>c:\Program Files\Amazon\EKS\EKS-WindowsServiceHost.exe</code> which is an executable to build services</p>
-<p><strong>Can you use those files?</strong></p>
+<ul>
+<li>
+<p><code>c:\Program Files\Amazon\EKS\EKS-StartupTask.ps1</code> to help build a Scheduled Task that keeps everything in place</p>
+</li>
+<li>
+<p><code>c:\Program Files\Amazon\EKS\Start-EKSBootstrap.ps1</code> which is the actual PS script you will invoke in your userdata</p>
+</li>
+<li>
+<p><code>c:\Program Files\Amazon\EKS\EKS-WindowsServiceHost.exe</code> which is an executable to build services</p>
+</li>
+</ul>
+<p><em>Can you use those files?</em></p>
 <p>My reading (I&rsquo;m not a lawyer) of the <a href="https://aws.amazon.com/asl/" 
   
    target="_blank" rel="noreferrer noopener" 
 >license in the two PS1 files</a> is that if you want to create customized images for your company, you&rsquo;re fine. Probably .</p>
 <p>There are more questions on the third but it can probably be replaced with a similar &ldquo;create a service from an executable&rdquo; file. I will iterate on it.</p>
-<p><strong>How do you get those files?</strong></p>
-<p>You can probably have a different mechanism, but since AWS CLI is installed in the Win2019 EKS optimized images, I gave permissions to the instance profile to access an S3 bucket and then aws s3 sync is all you need.</p>
+<p><em>How do you get those files?</em></p>
+<p>You can probably have a different mechanism, but since AWS CLI is installed in the Win2019 EKS optimized images, I gave permissions to the instance profile to access an S3 bucket and then <code>aws s3 sync</code> is all you need.</p>
 <p>Once you have those files locally, you can use a provisioner to send them to the instance you are using to build the image.</p>
-<p>Ant the provisioner part to send the files is easy</p>
+<p>And the provisioner part to send the files is easy</p>
 <pre><code>build {
   name    = &quot;windows-packer&quot;
   sources = [&quot;source.amazon-ebs.windows-eks&quot;]
@@ -303,9 +313,10 @@ cmd.exe /c net start winrm
 
 }
 </code></pre>
-<p>In my experience with packer and Linux, you cannot send the files anywhere, you need to send it to /tmp, so I did the same in Windows (even though I don&rsquo;t know if it is required).</p>
+<p>In my experience with packer and Linux, you cannot send the files to a place of your choosing. You need to send it to /tmp. So I did the same in Windows (even though I don&rsquo;t know if it is required).</p>
 <h4 id="install-updates-and-restart">Install updates and restart</h4>
 <p>When building an AMI, one of the things I always do is to update the OS with all the patches. In windows is more tricky. At some point I considered dealing with a powershell script to install the updates. But in the end I went for a plugin</p>
+<p>It is super easy with that plugin and the link came from Packer (something like community plugin or something)</p>
 <pre><code>packer {
   required_plugins {
     amazon = {
@@ -336,22 +347,19 @@ build {
 
 [...]
 </code></pre>
-<p>It is super easy with that plugin.</p>
 <h4 id="install-eks-tools">Install EKS tools</h4>
-<p>And finally we get to the main bit. Install the actual pieces with Kubernetes. We invoke a script</p>
+<p>And finally we get to the juicy provisioner. Install the actual pieces with Kubernetes. We invoke a script</p>
 <pre><code>  provisioner &quot;powershell&quot; {
     script = &quot;./prepare-k8s.ps1&quot;
   }
 </code></pre>
-<p>Let&rsquo;s see its content, bit by bit.</p>
+<p>Let&rsquo;s see its content, bit by bit. First we declare the Kubernetes version we will use. In my case 1.23.12.</p>
 <pre><code>$kubeletVersion=&quot;1.23.12&quot;
-
 </code></pre>
-<p>First we declare the Kubernetes version we will use. In my case 1.23.12.</p>
-<p>Then I will install a couple of programs. First EC2Launch that we will use to <a href="#sysprep" 
+<p>Then I installed a couple of programs. First EC2Launch that we will use to <a href="#sysprep" 
   
   
->generalize the image</a>, and also AWSCLI</p>
+>generalize the image</a>. And second AWSCLI</p>
 <pre><code>write-output &quot;Install EC2Launch&quot;
 $params = @{
     &quot;FilePath&quot; = &quot;$Env:SystemRoot\system32\msiexec.exe&quot;
@@ -386,7 +394,7 @@ $params = @{
 $uninstaller = start-process @params
 $uninstaller.WaitForExit()
 </code></pre>
-<p>Easy peasy lemon squeeze. Next I created a bunch of folders. I was trying to reproduce what we had in Windows 2019</p>
+<p>Easy peasy lemon squeeze. Next I created a bunch of folders. I was trying to reproduce the folders we have in Windows 2019 EKS optimized images.</p>
 <pre><code># Download and extract desired containerd Windows binaries
 write-output &quot;Create required folders&quot;
 new-item -type directory -path &quot;$env:ProgramFiles\kubernetes\&quot; -Force
@@ -402,7 +410,7 @@ new-item -type directory -path &quot;$env:ProgramFiles\Microsoft\Hns\&quot; -For
 >usual executable</a>, but at some point I was facing other issues, and I <a href="https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=containerd#windows-server-1" 
   
    target="_blank" rel="noreferrer noopener" 
->found the following code</a>.</p>
+>found the following code</a>. So that&rsquo;s what I&rsquo;m using</p>
 <pre><code>
 write-output &quot;Install containerd&quot;
 Invoke-WebRequest -UseBasicParsing &quot;https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-ContainerdRuntime/install-containerd-runtime.ps1&quot; -o install-containerd-runtime.ps1
@@ -413,11 +421,10 @@ Invoke-WebRequest -UseBasicParsing &quot;https://raw.githubusercontent.com/micro
   
   
 >three files we mentioned before</a> to the same folder from where we took them initially</p>
-<pre><code>
-write-output &quot;Copy required files&quot;
+<pre><code>write-output &quot;Copy required files&quot;
 Copy-Item -Path &quot;c:\windows\temp\files\*&quot; -Destination &quot;$Env:ProgramFiles\Amazon\EKS\&quot; -Recurse -Force
 </code></pre>
-<p>Then, Kubelet, kube-proxy and aws-iam-authenticator</p>
+<p>Next, the usual suspects: Kubelet, kube-proxy and aws-iam-authenticator.</p>
 <pre><code>write-output &quot;Install eks executables $kubeletVersion&quot;
 curl.exe -L -o &quot;$env:ProgramFiles\kubernetes\kubelet.exe&quot; https://dl.k8s.io/v$kubeletVersion/bin/windows/amd64/kubelet.exe
 
@@ -425,10 +432,16 @@ curl.exe -L -o &quot;$env:ProgramFiles\kubernetes\kube-proxy.exe&quot; https://d
 
 curl.exe -o &quot;$env:ProgramFiles\Amazon\EKS\aws-iam-authenticator.exe&quot; https://s3.us-west-2.amazonaws.com/amazon-eks/1.21.2/2021-07-05/bin/windows/amd64/aws-iam-authenticator.exe
 </code></pre>
-<p>And a tool to register a bunch of Powershell commands that will help creating some networking that we need. This commands will be invoked by <code>Start-EKSBootstrap.ps1</code></p>
+<p>Then we install a tool to register a bunch of Powershell commands that will help creating some networking that we need. This commands will be invoked by <code>Start-EKSBootstrap.ps1</code></p>
 <pre><code>curl.exe -L -o &quot;$env:ProgramFiles\Microsoft\Hns\hns.psm1&quot; 'https://raw.githubusercontent.com/microsoft/SDN/master/Kubernetes/windows/hns.psm1'
 </code></pre>
-<p>And finally the skeleton of a task scheduler, using the other Powershell script <code>EKS-StartupTask.ps1</code>.</p>
+<p>Don&rsquo;t ask me <a href="https://learn.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture#container-network-management-with-host-network-service" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>what it is HNS</a>. It is not the UK national health service, but I decided to mess with the search engines, so that when you look for it, you get the <code>did you mean?</code> prompt. I am fine, ain&rsquo;t I.</p>
+<p>OK, mental model for HNS, a way to build software define networks in Windows.</p>
+<p>This module, gets installed in the folder that we created before.</p>
+<p>The last step in this provisioner is the skeleton of a task for the bootstrap to register in the task scheduler. We use the other Powershell script <code>EKS-StartupTask.ps1</code>.</p>
 <pre><code>write-output &quot;Registering task&quot;
 
 $Action=New-ScheduledTaskAction -execute 'powershell.exe' -Argument '-f &quot;C:\Program Files\Amazon\EKS\EKS-StartupTask.ps1&quot;'
@@ -443,8 +456,8 @@ write-output &quot;Completed&quot;
     script = &quot;./configure.ps1&quot;
   }
 </code></pre>
-<p>But I needed to modify the configuration for two reasons. The first one is EKS related. Containerd will look for the configuration related to CNI (networking) in a specific folder. But I wanted to keep it on a different folder.</p>
-<p>This step took me a while to debug, because at some point I had the node joining the cluster, kubelet and kube-proxy running, but the node appearing as <code>Not Ready</code> and kubelet complaining about <code>CNI plugin not initialized</code> or something (I&rsquo;m quoting from memory). This <a href="https://github.com/microsoft/windows-container-networking/issues/70" 
+<p>I needed to modify the configuration for two reasons. The first one is EKS related. Containerd will look for the configuration related to CNI (networking) in a specific folder. But I wanted to keep it on a different folder.</p>
+<p>This step took me a while to debug, because at some point I had the node joining the cluster, kubelet and kube-proxy running, but the node appearing as <code>Not Ready</code> and kubelet complaining about <code>CNI plugin not initialized</code> or something (I&rsquo;m quoting from memory). HNS was a complete unknown, and CNI plugin not initilialized shows loads of results for Linux but almost anything for Windows. This <a href="https://github.com/microsoft/windows-container-networking/issues/70" 
   
    target="_blank" rel="noreferrer noopener" 
 >github issue</a> was the only result vaguely relevant (and it wasn&rsquo;t EKS).</p>
@@ -455,13 +468,14 @@ $find = '      conf_dir = &quot;C:\\Program Files\\containerd\\cni\\conf&quot;'
 $replace = '      conf_dir = &quot;C:\\ProgramData\\Amazon\\EKS\\cni\\config&quot;'
 (Get-Content $file).replace($find, $replace) | Set-Content $file
 </code></pre>
-<p>Second, we have a mirror, and I needed to configure the mirror (here I show only the generic docker mirror)</p>
+<p>I mentioned two reasons. One was EKS related. The second is only job related. We have a registry mirror, and I needed to configure the mirror (here I show only the generic docker mirror) already when building a customized Windows 2019.</p>
 <pre><code>$file = &quot;$env:ProgramFiles\containerd\config.toml&quot;
 $find = '      config_path = &quot;&quot;'
 $replace = '      config_path = &quot;C:\\Program Files\\containerd\\&quot;'
 
 (Get-Content $file).replace($find, $replace) | Set-Content $file
 
+#Behold this horrible hack. Shamefull
 $file = &quot;$env:ProgramFiles\containerd\config.toml&quot;
 $find = '      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry'
 $replace = &quot;#&quot;
@@ -484,7 +498,8 @@ server = &quot;https://docker.io&quot;
 
 Add-Content -Path  &quot;$env:ProgramFiles\containerd\certs.d\docker.io\hosts.toml&quot; $contentToAdd2
 </code></pre>
-<p>And finally restart</p>
+<p>Basically, I wanted to tell containerd: hey look for mirror configurations in <code>$env:ProgramFiles\containerd\certs.d\</code> and then process each folder there.</p>
+<p>OK. Once we have hacked containerd&rsquo;s configuration, we need to restart the service.</p>
 <pre><code>write-output &quot;Restart containerd&quot;
 Restart-Service containerd
 
@@ -496,8 +511,8 @@ write-output &quot;Completed&quot;
 <p>Windows container images are really big, and some layers need to be pulled from Microsoft. AWS recommends that for some defined workloads, <a href="https://aws.amazon.com/blogs/containers/speeding-up-windows-container-launch-times-with-ec2-image-builder-and-image-cache-strategy/" 
   
    target="_blank" rel="noreferrer noopener" 
->you may want to pull the image and bake into your AMI</a>.</p>
-<p>So for me, that&rsquo;s another provisioner.</p>
+>you may want to pull the image and bake it into your AMI</a>.</p>
+<p>We definitely need it. So for me, that&rsquo;s another provisioner.</p>
 <pre><code>  provisioner &quot;powershell&quot; {
     inline = [
       &quot;write-output \&quot;Pulling common build image\&quot;&quot;,
@@ -508,7 +523,9 @@ write-output &quot;Completed&quot;
 </code></pre>
 <h4 id="sysprep">Sysprep</h4>
 <p>Oh, boy. My first few windows images wouldn&rsquo;t even boot. No error building the image, but black screen when booting the image in the log console in AWS, and I couldn&rsquo;t even get the password because it would say that thing about wait for 4 minutes before trying to decode the password. How do you debug an instance you cannot even login to?</p>
-<p>It turns out I was doing it wrong. When preparing a Windows image you need a step to &ldquo;make it a template&rdquo;. Sort of generalize from the instance you&rsquo;ve used to create the image. And to generalize (sysprep), you use EC2Launch. Be aware that <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2-overview.html" 
+<p>The amount of pain was ridiculous (and also it involves some security constraints in my company).</p>
+<p>It turns out I was doing it wrong. When preparing a Windows image you need a step to &ldquo;make it a template&rdquo;. Sort of generalize from the instance you&rsquo;ve used to create the image. And to generalize (sysprep), you use EC2Launch.</p>
+<p>Be aware that <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2-overview.html" 
   
    target="_blank" rel="noreferrer noopener" 
 >EC2Launch v1 was valid for Windows up to 2019 (and it used scripts), but you need EC2Launch v2 for Windows 2022</a> (and use sort of a daemon with a badly written documentation for those of us who don&rsquo;t want to understand but just make it work)</p>
