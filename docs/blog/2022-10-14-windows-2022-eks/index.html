@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Windows 2022 in EKS with packer | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Windows 2022 in EKS with packer" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.86997521e8d6e55ebc583793f82d15acca4d334351454add7f5e5e811b609cd0.css" integrity="sha256-hpl1IejW5V68WDeT&#43;C0VrMpNM0NRRUrdf15egRtgnNA="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Windows 2022 in EKS with packer",
+      "headline" : "Windows 2022 in EKS with packer",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-10-14 21:30:00 \u002b0000 UTC",
+      "dateModified" : "2022-10-14 21:30:00 \u002b0000 UTC",
+      "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-10-14-windows-2022-eks\/",
+      "wordCount" : "2244",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Windows 2022 in EKS with packer</h1>
+            
+            <h2>When you cannot wait to AWS</h2>
+            
+            <time datetime="2022-10-14 21:30:00 &#43;0000 UTC" class="post__date">2022-10-14</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="windows-2022-in-eks">Windows 2022 in EKS<a class="anchor" href="#windows-2022-in-eks">#</a></h2>
+<p>If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI. Windows 2022</p>
+<p>You should probably still wait for the <a href="https://github.com/aws/containers-roadmap/issues/1710" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>official EKS optimized images</a>. AWS is working on them.</p>
+<p>It turns out I couldn&rsquo;t wait. I thought it would be simple enough to just bake my own Windows 2022 with packer. It turns out it wasn&rsquo;t as easy as I expected. But it is doable.</p>
+<p>Lo and behold a cluster with three linux nodes and a windows 2022</p>
+<pre><code>$ kubectl get nodes -o wide
+NAME                         STATUS   ROLES    AGE     VERSION               INTERNAL-IP  EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                 CONTAINER-RUNTIME
+ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   18h     v1.23.9-eks-ba74326   &lt;redacted&gt;   &lt;none&gt;        Amazon Linux 2                   5.4.209-116.367.amzn2.x86_64   containerd://1.6.6
+ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   35h     v1.23.9-eks-ba74326   &lt;redacted&gt;   &lt;none&gt;        Amazon Linux 2                   5.4.209-116.367.amzn2.x86_64   containerd://1.6.6
+ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   4m13s   v1.23.12              &lt;redacted&gt;   &lt;none&gt;        Windows Server 2022 Datacenter   10.0.20348.1129                containerd://1.6.6
+ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-ba74326   &lt;redacted&gt;   &lt;none&gt;        Amazon Linux 2                   5.4.209-116.367.amzn2.x86_64   containerd://1.6.6
+</code></pre>
+<p>Unfortunately, I cannot open source my code because I&rsquo;m using three files that, as far I as know, are not open source themselves.</p>
+<p>But I will provide the steps, and some explanation. And I will tell you where to find those files I cannot include.</p>
+<p>Note of caution. My code is hacky. This was my first Windows AMI (or Windows packer for that matter), and was just trying to make it work, and put it on the same folders as in Windows 2019 without minimal changes. Hey, I don&rsquo;t even know Powershell beside gc (get-content).</p>
+<h3 id="overview">Overview<a class="anchor" href="#overview">#</a></h3>
+<p>Every packer build has a <a href="#the-builder" 
+  
+  
+>builder</a>, which is sort of the main loop, a <a href="#communicator" 
+  
+  
+>communicator</a> and one or multiple <a href="#provisioners" 
+  
+  
+>provisioners</a>.</p>
+<h3 id="the-builder">The builder<a class="anchor" href="#the-builder">#</a></h3>
+<p>The builder is pretty standard if you&rsquo;ve used packer with HCL syntax before.</p>
+<pre><code>source &quot;amazon-ebs&quot; &quot;windows-eks&quot; {
+  ami_name             = local.image_name
+  instance_type        = &quot;${var.instance_type}&quot;
+  region               = &quot;${var.region}&quot;
+  vpc_id               = &quot;${var.vpc_id}&quot;
+  subnet_id            = &quot;${var.subnets}&quot;
+  access_key           = var.aws_access_key
+  secret_key           = var.aws_secret_key
+
+  source_ami_filter {
+    filters = {
+      name                = &quot;Windows_Server-${var.windows_version}-English-Core-ContainersLatest-*&quot;
+      root-device-type    = &quot;ebs&quot;
+      virtualization-type = &quot;hvm&quot;
+      architecture        = &quot;x86_64&quot;
+    }
+    most_recent = true
+    owners      = [&quot;amazon&quot;]
+  }
+  user_data_file = &quot;./prepare-winrm.ps1&quot;
+
+  [...]
+
+
+  communicator   = &quot;winrm&quot;
+  winrm_insecure = true
+  winrm_username = &quot;Administrator&quot;
+  winrm_use_ssl  = true
+}
+</code></pre>
+<p>There are a couple of tweaks here. The first one is the <code>source_ami_filter</code>. I don&rsquo;t like to hardcode a base AMI, so I usually use this kind of dynamic query to get the source AMI.</p>
+<p>The second quirk is the communicator stuff. I will explain more in the next section.</p>
+<h3 id="communicator">Communicator<a class="anchor" href="#communicator">#</a></h3>
+<p>If you have created Linux images before, you probably didn&rsquo;t care about the communicator. You type</p>
+<pre><code>communicator   = &quot;ssh&quot;
+</code></pre>
+<p>and that&rsquo;s it.</p>
+<p>Unfortunately, with Windows, that is not the case. Up until very recently there was no way of using SSH on windows with packer. It might now be possible, but I didn&rsquo;t care because I&rsquo;ve directly opted for the usual communicator for Windows: WinRm.</p>
+<p>My mental model for WinRM was ssh. But really is a way to manage remote systems. Which moved my mental model towards Ansible.</p>
+<p>The thing is that when building with packer we need to interact with the instance we&rsquo;re building. And that goes through the communicator.</p>
+<p>Which means that you need to include those four lines I indicated in the builder section. But ALSO, that we need to enable and configure WinRM. How do we enable and configure WinRM when we don&rsquo;t have a way to communicate with the machine?</p>
+<p>The answer is that line <code>user_data_file</code>. The file we indicate in that line will be loaded at boot time. That file only is valid when building with packer. When you launch an instance from the built AMI, you will use your own user data.</p>
+<p>And what should we include in the user data. Something really similar to what <a href="https://www.packer.io/docs/communicators/winrm" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>appears in the packer pages</a>.</p>
+<pre><code># A Packer config that works with this example would be:
+#
+#
+#    &quot;winrm_username&quot;: &quot;Administrator&quot;,
+#    &quot;winrm_insecure&quot;: true,
+#    &quot;winrm_use_ssl&quot;: true
+#
+#
+
+write-output &quot;Running User Data Script&quot;
+write-host &quot;(host) Running User Data Script&quot;
+
+Set-ExecutionPolicy Unrestricted -Scope LocalMachine -Force -ErrorAction Ignore
+
+# Don't set this before Set-ExecutionPolicy as it throws an error
+$ErrorActionPreference = &quot;stop&quot;
+
+# Remove HTTP listener
+Remove-Item -Path WSMan:\Localhost\listener\listener* -Recurse
+
+# Create a self-signed certificate to let ssl work
+$Cert = New-SelfSignedCertificate -CertstoreLocation Cert:\LocalMachine\My -DnsName &quot;packer&quot;
+New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $Cert.Thumbprint -Force
+
+# WinRM
+write-output &quot;Setting up WinRM&quot;
+write-host &quot;(host) setting up WinRM&quot;
+
+# Configure WinRM to allow unencrypted communication, and provide the
+# self-signed cert to the WinRM listener.
+cmd.exe /c winrm quickconfig -q
+cmd.exe /c winrm set &quot;winrm/config/service&quot; '@{AllowUnencrypted=&quot;true&quot;}'
+cmd.exe /c winrm set &quot;winrm/config/client&quot; '@{AllowUnencrypted=&quot;true&quot;}'
+cmd.exe /c winrm set &quot;winrm/config/service/auth&quot; '@{Basic=&quot;true&quot;}'
+cmd.exe /c winrm set &quot;winrm/config/client/auth&quot; '@{Basic=&quot;true&quot;}'
+cmd.exe /c winrm set &quot;winrm/config/service/auth&quot; '@{CredSSP=&quot;true&quot;}'
+cmd.exe /c winrm set &quot;winrm/config/listener?Address=*+Transport=HTTPS&quot; &quot;@{Port=`&quot;5986`&quot;;Hostname=`&quot;packer`&quot;;CertificateThumbprint=`&quot;$($Cert.Thumbprint)`&quot;}&quot;
+
+# Make sure appropriate firewall port openings exist
+cmd.exe /c netsh advfirewall firewall set rule group=&quot;remote administration&quot; new enable=yes
+cmd.exe /c netsh firewall add portopening TCP 5986 &quot;Port 5986&quot;
+
+# Restart WinRM, and set it so that it auto-launches on startup.
+cmd.exe /c net stop winrm
+cmd.exe /c sc config winrm start= auto
+cmd.exe /c net start winrm
+</code></pre>
+<h3 id="provisioners">Provisioners<a class="anchor" href="#provisioners">#</a></h3>
+<p>Once the builder starts, it sends the user data, and that enables the communicator. Now it is time to do things to the instance we are running.</p>
+<p>These are the things I&rsquo;m doing. Your mileage might vary</p>
+<ol>
+<li><a href="#upload-required-files" 
+  
+  
+>Upload required files</a></li>
+<li><a href="#install-updates-and-restart" 
+  
+  
+>Install updates and restart</a></li>
+<li><a href="#install-eks-tools" 
+  
+  
+>Install EKS tools</a></li>
+<li><a href="#configure-and-tweak" 
+  
+  
+>Configure and tweak</a></li>
+<li><a href="#pull-essential-images" 
+  
+  
+>Pull essential images</a></li>
+<li><a href="#sysprep" 
+  
+  
+>Sysprep</a></li>
+</ol>
+<p>Let&rsquo;s see step by step</p>
+<h4 id="upload-required-files">Upload required files</h4>
+<p>There are three files I couldn&rsquo;t find elsewhere on the Internet. They are included in the Windows 2019 EKS optimized images, so I took them from there. They can be found in the following paths <em><strong>in a running Windows 2019 EKS optimized instance</strong></em>.</p>
+<p><code>c:\Program Files\Amazon\EKS\EKS-StartupTask.ps1</code> to help build a Scheduled Task that keeps everything in place
+<code>c:\Program Files\Amazon\EKS\Start-EKSBootstrap.ps1</code> which is the actual PS script you will invoke in your userdata
+<code>c:\Program Files\Amazon\EKS\EKS-WindowsServiceHost.exe</code> which is an executable to build services</p>
+<p><strong>Can you use those files?</strong></p>
+<p>My reading (I&rsquo;m not a lawyer) of the <a href="https://aws.amazon.com/asl/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>license in the two PS1 files</a> is that if you want to create customized images for your company, you&rsquo;re fine. Probably .</p>
+<p>There are more questions on the third but it can probably be replaced with a similar &ldquo;create a service from an executable&rdquo; file. I will iterate on it.</p>
+<p><strong>How do you get those files?</strong></p>
+<p>You can probably have a different mechanism, but since AWS CLI is installed in the Win2019 EKS optimized images, I gave permissions to the instance profile to access an S3 bucket and then aws s3 sync is all you need.</p>
+<p>Once you have those files locally, you can use a provisioner to send them to the instance you are using to build the image.</p>
+<p>Ant the provisioner part to send the files is easy</p>
+<pre><code>build {
+  name    = &quot;windows-packer&quot;
+  sources = [&quot;source.amazon-ebs.windows-eks&quot;]
+
+  provisioner &quot;file&quot; {
+    source = &quot;&lt;local path relative&gt;&quot;
+    destination = &quot;c:\\windows\\temp&quot;
+  }
+
+[...]
+
+}
+</code></pre>
+<p>In my experience with packer and Linux, you cannot send the files anywhere, you need to send it to /tmp, so I did the same in Windows (even though I don&rsquo;t know if it is required).</p>
+<h4 id="install-updates-and-restart">Install updates and restart</h4>
+<p>When building an AMI, one of the things I always do is to update the OS with all the patches. In windows is more tricky. At some point I considered dealing with a powershell script to install the updates. But in the end I went for a plugin</p>
+<pre><code>packer {
+  required_plugins {
+    amazon = {
+      version = &quot;&gt;= 0.0.1&quot;
+      source  = &quot;github.com/hashicorp/amazon&quot;
+    }
+    windows-update = {
+      version = &quot;0.14.1&quot;
+      source = &quot;github.com/rgl/windows-update&quot;
+    }
+  }
+}
+source &quot;amazon-ebs&quot; &quot;windows-eks&quot; {
+[...]
+}
+
+build {
+
+[...]
+
+  provisioner &quot;windows-update&quot; {
+  }
+
+  provisioner &quot;windows-restart&quot; {
+    pause_before    = &quot;30s&quot;
+    restart_timeout = &quot;30m&quot;
+  }
+
+[...]
+</code></pre>
+<p>It is super easy with that plugin.</p>
+<h4 id="install-eks-tools">Install EKS tools</h4>
+<p>And finally we get to the main bit. Install the actual pieces with Kubernetes. We invoke a script</p>
+<pre><code>  provisioner &quot;powershell&quot; {
+    script = &quot;./prepare-k8s.ps1&quot;
+  }
+</code></pre>
+<p>Let&rsquo;s see its content, bit by bit.</p>
+<pre><code>$kubeletVersion=&quot;1.23.12&quot;
+
+</code></pre>
+<p>First we declare the Kubernetes version we will use. In my case 1.23.12.</p>
+<p>Then I will install a couple of programs. First EC2Launch that we will use to <a href="#sysprep" 
+  
+  
+>generalize the image</a>, and also AWSCLI</p>
+<pre><code>write-output &quot;Install EC2Launch&quot;
+$params = @{
+    &quot;FilePath&quot; = &quot;$Env:SystemRoot\system32\msiexec.exe&quot;
+    &quot;ArgumentList&quot; = @(
+    &quot;/i&quot;
+    &quot;https://s3.amazonaws.com/amazon-ec2launch-v2/windows/amd64/latest/AmazonEC2Launch.msi&quot;
+    &quot;/qn&quot;
+    &quot;ADDLOCAL=`&quot;Basic,Clean`&quot;&quot;
+    )
+    &quot;Verb&quot; = &quot;runas&quot;
+    &quot;PassThru&quot; = $true
+}
+
+$uninstaller = start-process @params
+$uninstaller.WaitForExit()
+
+&amp; 'C:\Program Files\Amazon\EC2Launch\EC2Launch.exe' version
+
+write-output &quot;`nInstall AWS CLI&quot;
+$params = @{
+    &quot;FilePath&quot; = &quot;$Env:SystemRoot\system32\msiexec.exe&quot;
+    &quot;ArgumentList&quot; = @(
+    &quot;/i&quot;
+    &quot;https://awscli.amazonaws.com/AWSCLIV2.msi&quot;
+    &quot;/passive&quot;
+    &quot;/qn&quot;
+    )
+    &quot;Verb&quot; = &quot;runas&quot;
+    &quot;PassThru&quot; = $true
+}
+
+$uninstaller = start-process @params
+$uninstaller.WaitForExit()
+</code></pre>
+<p>Easy peasy lemon squeeze. Next I created a bunch of folders. I was trying to reproduce what we had in Windows 2019</p>
+<pre><code># Download and extract desired containerd Windows binaries
+write-output &quot;Create required folders&quot;
+new-item -type directory -path &quot;$env:ProgramFiles\kubernetes\&quot; -Force
+new-item -type directory -path &quot;$env:ProgramData\kubernetes\&quot; -Force
+new-item -type directory -path &quot;$env:ProgramFiles\Amazon\EKS\&quot; -Force
+new-item -type directory -path &quot;$env:ProgramData\Amazon\EKS\cni\config\&quot; -Force
+new-item -type directory -path &quot;$env:ProgramFiles\Microsoft\Hns\&quot; -Force
+</code></pre>
+<p>This last folder, we will see later is a bit special.</p>
+<p>OK. Now to the actual installation. First containerd. You can probably go for the <a href="https://github.com/containerd/containerd/releases/download/v1.6.6/containerd-1.6.6-windows-amd64.tar.gz" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>usual executable</a>, but at some point I was facing other issues, and I <a href="https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=containerd#windows-server-1" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>found the following code</a>.</p>
+<pre><code>
+write-output &quot;Install containerd&quot;
+Invoke-WebRequest -UseBasicParsing &quot;https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-ContainerdRuntime/install-containerd-runtime.ps1&quot; -o install-containerd-runtime.ps1
+.\install-containerd-runtime.ps1
+
+</code></pre>
+<p>Then we copy those <a href="#upload-required-files" 
+  
+  
+>three files we mentioned before</a> to the same folder from where we took them initially</p>
+<pre><code>
+write-output &quot;Copy required files&quot;
+Copy-Item -Path &quot;c:\windows\temp\files\*&quot; -Destination &quot;$Env:ProgramFiles\Amazon\EKS\&quot; -Recurse -Force
+</code></pre>
+<p>Then, Kubelet, kube-proxy and aws-iam-authenticator</p>
+<pre><code>write-output &quot;Install eks executables $kubeletVersion&quot;
+curl.exe -L -o &quot;$env:ProgramFiles\kubernetes\kubelet.exe&quot; https://dl.k8s.io/v$kubeletVersion/bin/windows/amd64/kubelet.exe
+
+curl.exe -L -o &quot;$env:ProgramFiles\kubernetes\kube-proxy.exe&quot; https://dl.k8s.io/v$kubeletVersion/bin/windows/amd64/kube-proxy.exe
+
+curl.exe -o &quot;$env:ProgramFiles\Amazon\EKS\aws-iam-authenticator.exe&quot; https://s3.us-west-2.amazonaws.com/amazon-eks/1.21.2/2021-07-05/bin/windows/amd64/aws-iam-authenticator.exe
+</code></pre>
+<p>And a tool to register a bunch of Powershell commands that will help creating some networking that we need. This commands will be invoked by <code>Start-EKSBootstrap.ps1</code></p>
+<pre><code>curl.exe -L -o &quot;$env:ProgramFiles\Microsoft\Hns\hns.psm1&quot; 'https://raw.githubusercontent.com/microsoft/SDN/master/Kubernetes/windows/hns.psm1'
+</code></pre>
+<p>And finally the skeleton of a task scheduler, using the other Powershell script <code>EKS-StartupTask.ps1</code>.</p>
+<pre><code>write-output &quot;Registering task&quot;
+
+$Action=New-ScheduledTaskAction -execute 'powershell.exe' -Argument '-f &quot;C:\Program Files\Amazon\EKS\EKS-StartupTask.ps1&quot;'
+register-scheduledtask -TaskName &quot;EKS Windows startup task&quot; -User &quot;SYSTEM&quot; -Action $Action
+
+write-output &quot;Completed&quot;
+
+</code></pre>
+<h4 id="configure-and-tweak">Configure and tweak</h4>
+<p>In this step, I modified the configuration of containerd. You may not need to do it with a separate provisioner.</p>
+<pre><code>  provisioner &quot;powershell&quot; {
+    script = &quot;./configure.ps1&quot;
+  }
+</code></pre>
+<p>But I needed to modify the configuration for two reasons. The first one is EKS related. Containerd will look for the configuration related to CNI (networking) in a specific folder. But I wanted to keep it on a different folder.</p>
+<p>This step took me a while to debug, because at some point I had the node joining the cluster, kubelet and kube-proxy running, but the node appearing as <code>Not Ready</code> and kubelet complaining about <code>CNI plugin not initialized</code> or something (I&rsquo;m quoting from memory). This <a href="https://github.com/microsoft/windows-container-networking/issues/70" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>github issue</a> was the only result vaguely relevant (and it wasn&rsquo;t EKS).</p>
+<pre><code>write-output &quot;Change containerd configuration&quot;
+
+$file = &quot;$env:ProgramFiles\containerd\config.toml&quot;
+$find = '      conf_dir = &quot;C:\\Program Files\\containerd\\cni\\conf&quot;'
+$replace = '      conf_dir = &quot;C:\\ProgramData\\Amazon\\EKS\\cni\\config&quot;'
+(Get-Content $file).replace($find, $replace) | Set-Content $file
+</code></pre>
+<p>Second, we have a mirror, and I needed to configure the mirror (here I show only the generic docker mirror)</p>
+<pre><code>$file = &quot;$env:ProgramFiles\containerd\config.toml&quot;
+$find = '      config_path = &quot;&quot;'
+$replace = '      config_path = &quot;C:\\Program Files\\containerd\\&quot;'
+
+(Get-Content $file).replace($find, $replace) | Set-Content $file
+
+$file = &quot;$env:ProgramFiles\containerd\config.toml&quot;
+$find = '      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry'
+$replace = &quot;#&quot;
+
+(Get-Content $file).replace($find, $replace) | Set-Content $file
+
+Get-Content $file
+
+write-output &quot;Set registry mirror configuration&quot;
+
+new-item -type directory -path &quot;$env:ProgramFiles\containerd\certs.d\docker.io\&quot; -Force
+
+$contentToAdd2 = @&quot;
+
+server = &quot;https://docker.io&quot;
+
+[host.&quot;https://registry-1.docker.io&quot;]
+  capabilities = [&quot;pull&quot;, &quot;resolve&quot;]
+&quot;@
+
+Add-Content -Path  &quot;$env:ProgramFiles\containerd\certs.d\docker.io\hosts.toml&quot; $contentToAdd2
+</code></pre>
+<p>And finally restart</p>
+<pre><code>write-output &quot;Restart containerd&quot;
+Restart-Service containerd
+
+Get-Service &quot;containerd*&quot; | Sort-Object status
+
+write-output &quot;Completed&quot;
+</code></pre>
+<h4 id="pull-essential-images">Pull essential images</h4>
+<p>Windows container images are really big, and some layers need to be pulled from Microsoft. AWS recommends that for some defined workloads, <a href="https://aws.amazon.com/blogs/containers/speeding-up-windows-container-launch-times-with-ec2-image-builder-and-image-cache-strategy/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>you may want to pull the image and bake into your AMI</a>.</p>
+<p>So for me, that&rsquo;s another provisioner.</p>
+<pre><code>  provisioner &quot;powershell&quot; {
+    inline = [
+      &quot;write-output \&quot;Pulling common build image\&quot;&quot;,
+      &quot;&amp; 'C:\\Program Files\\containerd\\ctr.exe' -n k8s.io images pull --hosts-dir $env:ProgramFiles\\containerd\\certs.d &lt;image&gt; | out-null&quot;,
+    ]
+  }
+
+</code></pre>
+<h4 id="sysprep">Sysprep</h4>
+<p>Oh, boy. My first few windows images wouldn&rsquo;t even boot. No error building the image, but black screen when booting the image in the log console in AWS, and I couldn&rsquo;t even get the password because it would say that thing about wait for 4 minutes before trying to decode the password. How do you debug an instance you cannot even login to?</p>
+<p>It turns out I was doing it wrong. When preparing a Windows image you need a step to &ldquo;make it a template&rdquo;. Sort of generalize from the instance you&rsquo;ve used to create the image. And to generalize (sysprep), you use EC2Launch. Be aware that <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2-overview.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>EC2Launch v1 was valid for Windows up to 2019 (and it used scripts), but you need EC2Launch v2 for Windows 2022</a> (and use sort of a daemon with a badly written documentation for those of us who don&rsquo;t want to understand but just make it work)</p>
+<pre><code>  provisioner &quot;windows-restart&quot; {
+    pause_before    = &quot;30s&quot;
+    restart_timeout = &quot;30m&quot;
+  }
+
+   provisioner &quot;powershell&quot; {
+     inline = [
+       &quot;&amp; 'C:\\Program Files\\Amazon\\EC2Launch\\EC2Launch.exe' sysprep --shutdown&quot;
+     ]
+   }
+
+</code></pre>
+<h3 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h3>
+<p>Windows 2022 in EKS is possible. I cannot guarantee the image will have the stability and optimizations of a proper Windows 2022 EKS optimized version built by AWS. I might need to edit this to add tweaks.</p>
+<p>But in any case, the instance joins the cluster and the node appears as ready.</p>
+<p>And building the image was quite and adventure, and a great way to learn about Kubernetes, Windows and EKS.</p>
+<p>If you&rsquo;ve made this far, please let me know if it is useful.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="http://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li>
+    </ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="http://gonzalo.f-v.es/blog/2022-07-02-debugging-windows-eks/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Debugging windows nodes in EKS</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('http://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">Windows 2022 in EKS with packer</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#windows-2022-in-eks">Windows 2022 in EKS</a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#the-builder">The builder</a></li>
+        <li><a href="#communicator">Communicator</a></li>
+        <li><a href="#provisioners">Provisioners</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
