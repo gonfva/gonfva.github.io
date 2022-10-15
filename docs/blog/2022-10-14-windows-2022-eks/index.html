@@ -68,7 +68,7 @@
       "datePublished": "2022-10-14 21:30:00 \u002b0000 UTC",
       "dateModified" : "2022-10-14 21:30:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-10-14-windows-2022-eks\/",
-      "wordCount" : "2496",
+      "wordCount" : "2505",
       "keywords" : ["Blog"]
     }
   
@@ -122,7 +122,10 @@
           <article class="post__content">
               
 <h2 id="windows-2022-in-eks">Windows 2022 in EKS<a class="anchor" href="#windows-2022-in-eks">#</a></h2>
-<p>If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI. Windows 2022</p>
+<p>If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI. Windows 2022 promises to bring a lot of improvements on the container experience in Windows. And believe me, <a href="https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility?tabs=windows-server-2022%2Cwindows-11#matching-container-host-version-with-container-image-versions" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>they need it</a>.</p>
 <p>You should probably still wait for the <a href="https://github.com/aws/containers-roadmap/issues/1710" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -523,7 +526,7 @@ write-output &quot;Completed&quot;
 </code></pre>
 <h4 id="sysprep">Sysprep</h4>
 <p>Oh, boy. My first few windows images wouldn&rsquo;t even boot. No error building the image, but black screen when booting the image in the log console in AWS, and I couldn&rsquo;t even get the password because it would say that thing about wait for 4 minutes before trying to decode the password. How do you debug an instance you cannot even login to?</p>
-<p>The amount of pain was ridiculous (and also it involves some security constraints in my company).</p>
+<p>The amount of pain was ridiculous.</p>
 <p>It turns out I was doing it wrong. When preparing a Windows image you need a step to &ldquo;make it a template&rdquo;. Sort of generalize from the instance you&rsquo;ve used to create the image. And to generalize (sysprep), you use EC2Launch.</p>
 <p>Be aware that <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch-v2-overview.html" 
   

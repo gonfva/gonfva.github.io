@@ -14,8 +14,7 @@
       <pubDate>Fri, 14 Oct 2022 21:30:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</guid>
-      <description>Windows 2022 in EKS If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI. Windows 2022
-You should probably still wait for the official EKS optimized images.</description>
+      <description>Windows 2022 in EKS If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI. Windows 2022 promises to bring a lot of improvements on the container experience in Windows.</description>
     </item>
     
     <item>
