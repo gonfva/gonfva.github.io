@@ -68,7 +68,7 @@
       "datePublished": "2022-10-14 21:30:00 \u002b0000 UTC",
       "dateModified" : "2022-10-14 21:30:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2022-10-14-windows-2022-eks\/",
-      "wordCount" : "2505",
+      "wordCount" : "2521",
       "keywords" : ["Blog"]
     }
   
@@ -126,11 +126,12 @@
   
    target="_blank" rel="noreferrer noopener" 
 >they need it</a>.</p>
-<p>You should probably still wait for the <a href="https://github.com/aws/containers-roadmap/issues/1710" 
+<p>So Windows 2022 and AWS. You should probably still wait for the <a href="https://github.com/aws/containers-roadmap/issues/1710" 
   
    target="_blank" rel="noreferrer noopener" 
 >official EKS optimized images</a>. AWS is working on them.</p>
-<p>It turns out I couldn&rsquo;t wait. I thought it would be simple enough to just bake my own Windows 2022 with packer. It turns out it wasn&rsquo;t as easy as I expected. But it is doable.</p>
+<p>It turns out I couldn&rsquo;t wait. I thought it would be simple enough to just bake my own Windows 2022 with packer. It turns out it wasn&rsquo;t as easy as I expected.</p>
+<p>But it is doable.</p>
 <p>Lo and behold a cluster with three linux nodes and a windows 2022</p>
 <pre><code>$ kubectl get nodes -o wide
 NAME                         STATUS   ROLES    AGE     VERSION               INTERNAL-IP  EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                 CONTAINER-RUNTIME
@@ -141,9 +142,8 @@ ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-b
 </code></pre>
 <p>Unfortunately, I cannot open source my code because I&rsquo;m using three files that, as far I as know, are not open source themselves.</p>
 <p>But I will provide the steps, and some explanation. And I will tell you where to find those files I cannot include.</p>
-<p>Note of caution. My code is hacky. These were my first Windows AMIs (or Windows packer for that matter), and was just trying to make it work, and put it on the same folders as in Windows 2019 without minimal changes. Hey, I don&rsquo;t even know Powershell apart from gc (get-content) and get-eventlog.</p>
-<h3 id="overview">Overview<a class="anchor" href="#overview">#</a></h3>
-<p>Most of you will know, that every packer build has a <a href="#the-builder" 
+<p>Note of caution. My code is hacky. These were my first Windows AMIs (or Windows packer for that matter), and was just trying to make it work, and put it on the same folders as in Windows 2019 without minimal changes. Hey, I don&rsquo;t even know Powershell apart from <code>gc</code> (<code>get-content</code>) and <code>get-eventlog</code>.</p>
+<p>Most of the readers of the post will know that every packer build has a <a href="#the-builder" 
   
   
 >builder</a>, which is sort of the main loop, a <a href="#communicator" 
@@ -152,7 +152,8 @@ ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-b
 >communicator</a> and one or multiple <a href="#provisioners" 
   
   
->provisioners</a>. So I have set up sections for each one of them.</p>
+>provisioners</a>.</p>
+<p>So I have set up the following sections for each one of them.</p>
 <h3 id="the-builder">The builder<a class="anchor" href="#the-builder">#</a></h3>
 <p>The builder is pretty standard if you&rsquo;ve used packer with HCL syntax before.</p>
 <pre><code>source &quot;amazon-ebs&quot; &quot;windows-eks&quot; {
@@ -185,10 +186,12 @@ ip-&lt;redacted&gt;.ec2.internal   Ready    &lt;none&gt;   25h     v1.23.9-eks-b
   winrm_use_ssl  = true
 }
 </code></pre>
-<p>There are a couple of tweaks here. The first one is the <code>source_ami_filter</code>. I don&rsquo;t like to hardcode a base AMI, so I usually use this kind of dynamic query to get the source AMI.</p>
-<p>The second quirk is the communicator stuff. I will explain more in the next section.</p>
+<p>There are a couple of tweaks here.</p>
+<p>The first one is the <code>source_ami_filter</code>. I don&rsquo;t like to hardcode a base AMI, so I usually use this kind of dynamic query to get the source AMI.</p>
+<p>The second quirk is the communicator stuff. Perfect cue to the next section.</p>
 <h3 id="communicator">Communicator<a class="anchor" href="#communicator">#</a></h3>
-<p>If you have created Linux images before, you probably didn&rsquo;t care about the communicator. You type</p>
+<p>If you have created Linux images before, you probably didn&rsquo;t care about the communicator.</p>
+<p>You write something like</p>
 <pre><code>communicator   = &quot;ssh&quot;
 </code></pre>
 <p>and that&rsquo;s it.</p>
@@ -251,8 +254,8 @@ cmd.exe /c net start winrm
 </code></pre>
 <p>Once the builder starts, it sends the user data, and that enables the communicator.</p>
 <h3 id="provisioners">Provisioners<a class="anchor" href="#provisioners">#</a></h3>
-<p>Now it is time to do things to the instance we are running.</p>
-<p>These are the things I&rsquo;m doing. Your mileage might vary, but points 1, 3, part of 5, and 6 are essential</p>
+<p>Now it is time to do things to the instance we are using to build the image.</p>
+<p>These are the things I&rsquo;m doing. Your mileage might vary, but points 1, 3 and 6, and part of 5 are essential</p>
 <ol>
 <li><a href="#upload-required-files" 
   
@@ -279,7 +282,7 @@ cmd.exe /c net start winrm
   
 >Sysprep</a></li>
 </ol>
-<p>Let&rsquo;s see step by step</p>
+<p>Let&rsquo;s see them step by step</p>
 <h4 id="upload-required-files">Upload required files</h4>
 <p>There are three files I couldn&rsquo;t find elsewhere on the Internet. They are included in the Windows 2019 EKS optimized images, so I took them from there. They can be found in the following paths <em><strong>in a running Windows 2019 EKS optimized instance</strong></em>.</p>
 <ul>
@@ -634,7 +637,6 @@ write-output &quot;Completed&quot;
   <ul>
     <li><a href="#windows-2022-in-eks">Windows 2022 in EKS</a>
       <ul>
-        <li><a href="#overview">Overview</a></li>
         <li><a href="#the-builder">The builder</a></li>
         <li><a href="#communicator">Communicator</a></li>
         <li><a href="#provisioners">Provisioners</a></li>
