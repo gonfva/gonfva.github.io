@@ -5,6 +5,7 @@ copyright = "© Gonzalo Fernandez-Victorio {year}"
 defaultContentLanguage = "en"
 publishDir = "docs"
 summaryLength = 30
+enableRobotsTXT = true
 
 [taxonomies]
   category = "categories"
