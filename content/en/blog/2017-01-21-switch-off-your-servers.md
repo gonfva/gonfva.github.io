@@ -9,7 +9,9 @@ tags:
 categories: [Developer]
 ---
 
-![](/img/1*fvx5Pd2ymQhkin3kJRSdRQ.png)Werner’s keynote — <https://youtu.be/65unhiJNaok?t=2692>A few months ago, I went to [AWS Summit London 2016](http://medium.com/@gonfva/aws-summit-london-2016-a494dd7b0540#.k5sraje8v). One of the takeaways for me was that the cloud is not only the ability to scale up, but also **down**.
+![](/img/1*fvx5Pd2ymQhkin3kJRSdRQ.png)_Werner’s keynote — <https://youtu.be/65unhiJNaok?t=2692>_
+
+A few months ago, I went to [AWS Summit London 2016](http://medium.com/@gonfva/aws-summit-london-2016-a494dd7b0540#.k5sraje8v). One of the takeaways for me was that the cloud is not only the ability to scale up, but also **down**.
 
 And in particular, that you can **shut down** your servers. And you should if they are not used.
 
@@ -39,7 +41,7 @@ And if it is not a good practice, better to know quickly (so please comment)
 
 ### Advantages
 
-### Reduced cost
+#### Reduced cost
 
 In terms of advantages, the most obvious one is cost. If you start shutting down dev at night and during the weekends, you may reduce your costs a lot. 5 days a week, 12 hours are 60 hours a week, instead of the 168.
 
@@ -49,7 +51,7 @@ So in terms of costs, you may reduce your compute costs quite a bit. Not 75% as 
 
 But you implement the changes, and then your cloud expenses keeps going up because you use more resources. And in a few months time you are spending more.
 
-### Increase reliability
+#### Increased reliability
 
 The other big advantage is reliability**.** For me this is the less obvious but bigger gain.
 
@@ -59,7 +61,7 @@ Shutting down your servers makes your system more reliable. Because it forces yo
 - Not only that. Shutting down your servers every night implies you have to **plan for failure**. In particular persistent data, either in terms of snapshots or backups that work. Because if you kill your servers, there’s no time for orderly shutdowns. And you will be testing your restore processes **every single day**.
   In my company, we can afford to completely **destroy** the production environment and recreate it in less than hour. Yep, including automatic restores for the databases. And we test it periodically.
 
-### Cloud native
+#### Cloud native
 
 I perceive there is a third advantage, in a way related to both cost and reliability. It’s **conceptual**.
 

@@ -127,7 +127,8 @@ You create an alarm, to detect too many 5xx errors in your ELB.</description>
       <pubDate>Sat, 21 Jan 2017 18:00:00 +0000</pubDate>
       
       <guid>http://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</guid>
-      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</description>
+      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692
+A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</description>
     </item>
     
     <item>

@@ -68,7 +68,7 @@
       "datePublished": "2017-01-21 18:00:00 \u002b0000 UTC",
       "dateModified" : "2017-01-21 18:00:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2017-01-21-switch-off-your-servers\/",
-      "wordCount" : "1110",
+      "wordCount" : "1111",
       "keywords" : ["Blog"]
     }
   
@@ -121,10 +121,11 @@
           </header>
           <article class="post__content">
               
-<p><img src="/img/1*fvx5Pd2ymQhkin3kJRSdRQ.png" alt="">Werner’s keynote — <a href="https://youtu.be/65unhiJNaok?t=2692" 
+<p><img src="/img/1*fvx5Pd2ymQhkin3kJRSdRQ.png" alt=""><em>Werner’s keynote — <a href="https://youtu.be/65unhiJNaok?t=2692" 
   
    target="_blank" rel="noreferrer noopener" 
->https://youtu.be/65unhiJNaok?t=2692</a>A few months ago, I went to <a href="http://medium.com/@gonfva/aws-summit-london-2016-a494dd7b0540#.k5sraje8v" 
+>https://youtu.be/65unhiJNaok?t=2692</a></em></p>
+<p>A few months ago, I went to <a href="http://medium.com/@gonfva/aws-summit-london-2016-a494dd7b0540#.k5sraje8v" 
   
    target="_blank" rel="noreferrer noopener" 
 >AWS Summit London 2016</a>. One of the takeaways for me was that the cloud is not only the ability to scale up, but also <strong>down</strong>.</p>
@@ -142,12 +143,12 @@
 <p>So I have decided that if I want to stop being considered a <em>freak</em> or a <em>penny pincher</em>, it is time to start explaining the advantages. If I want this to be considered a good practice, it’s better to speak publicly about it.</p>
 <p>And if it is not a good practice, better to know quickly (so please comment)</p>
 <h3 id="advantages">Advantages<a class="anchor" href="#advantages">#</a></h3>
-<h3 id="reduced-cost">Reduced cost<a class="anchor" href="#reduced-cost">#</a></h3>
+<h4 id="reduced-cost">Reduced cost</h4>
 <p>In terms of advantages, the most obvious one is cost. If you start shutting down dev at night and during the weekends, you may reduce your costs a lot. 5 days a week, 12 hours are 60 hours a week, instead of the 168.</p>
 <p>60 vs 168.</p>
 <p>So in terms of costs, you may reduce your compute costs quite a bit. Not 75% as Werner mentions. In our case it was like 25%. Which is not a minor issue.</p>
 <p>But you implement the changes, and then your cloud expenses keeps going up because you use more resources. And in a few months time you are spending more.</p>
-<h3 id="increase-reliability">Increase reliability<a class="anchor" href="#increase-reliability">#</a></h3>
+<h4 id="increased-reliability">Increased reliability</h4>
 <p>The other big advantage is reliability**.** For me this is the less obvious but bigger gain.</p>
 <p>Shutting down your servers makes your system more reliable. Because it forces you to follow other good practices:</p>
 <ul>
@@ -155,7 +156,7 @@
 <li>Not only that. Shutting down your servers every night implies you have to <strong>plan for failure</strong>. In particular persistent data, either in terms of snapshots or backups that work. Because if you kill your servers, there’s no time for orderly shutdowns. And you will be testing your restore processes <strong>every single day</strong>.
 In my company, we can afford to completely <strong>destroy</strong> the production environment and recreate it in less than hour. Yep, including automatic restores for the databases. And we test it periodically.</li>
 </ul>
-<h3 id="cloud-native">Cloud native<a class="anchor" href="#cloud-native">#</a></h3>
+<h4 id="cloud-native">Cloud native</h4>
 <p>I perceive there is a third advantage, in a way related to both cost and reliability. It’s <strong>conceptual</strong>.</p>
 <p>Cloud has two main dimensions. One is scale. And the other is failure.</p>
 <p>In terms of scale, people think that means you can grow without limit. But we tend not to think about shrinking when we don’t need the resources.</p>

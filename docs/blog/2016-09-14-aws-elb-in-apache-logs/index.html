@@ -68,7 +68,7 @@
       "datePublished": "2016-09-14 18:00:00 \u002b0000 UTC",
       "dateModified" : "2016-09-14 18:00:00 \u002b0000 UTC",
       "url" : "http:\/\/gonzalo.f-v.es\/blog\/2016-09-14-aws-elb-in-apache-logs\/",
-      "wordCount" : "218",
+      "wordCount" : "219",
       "keywords" : ["Blog"]
     }
   
@@ -121,21 +121,31 @@
               
 <p>So you are using AWS Elastic Load Balancer in front of a set of Apache httpd servers and you’ve discovered that your Apache logs are full of garbage. Here comes a set of tips to improve your logging:</p>
 <ul>
-<li>Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.
-RewriteEngine On
-RewriteCond “%{REQUEST_URI}” “^/health/$” [NC]
-RewriteRule ^ — [R=200]
-SetEnvIf Request_URI “^/health/$” dontlog
-CustomLog [File] [Format] env=!dontlog* Prevent 408 errors. You may see lots of 408 errors in the logs, and these are caused by ELB. <a href="http://serverfault.com/a/485129" 
-  
-   target="_blank" rel="noreferrer noopener" 
->There are many solutions</a>, but if you are going to proxy all the requests, you may simply avoid returning 408.
-RequestReadTimeout header=0 body=0* Don’t use source IP, but forwarding IP. For me this is the big thing. ELB is going to proxy all your requests so you’ll see ELB’s IP addresses as the source of all request. Not very useful. But <a href="http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/x-forwarded-headers.html" 
-  
-   target="_blank" rel="noreferrer noopener" 
->ELB provides some headers</a> together with the request. Make use of them, specially of <strong>X-Forwarded-For</strong>.
-CustomLog [File] “%t %{X-Forwarded-For}i %l \”%r\” %&gt;s %b %D \”%{Referer}i\” \”%{User-agent}i\” “I hope these were useful. Feel free to share more similar tips.</li>
+<li>Put a specific endpoint for the health check and don’t log it. ELB needs to check if the endpoint is up and running, so it needs to periodically check an endpoint. By default, all those calls get logged, so better to filter them out.</li>
 </ul>
+<pre><code>  RewriteEngine On
+  RewriteCond “%{REQUEST_URI}” “^/health/$” [NC]
+  RewriteRule ^ — [R=200]
+  SetEnvIf Request\_URI “^/health/$” dontlog
+  CustomLog [File] [Format] env=!dontlog
+</code></pre>
+<ul>
+<li>Prevent 408 errors. You may see lots of 408 errors in the logs, and these are caused by ELB. <a href="http://serverfault.com/a/485129" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>There are many solutions</a>, but if you are going to proxy all the requests, you may simply avoid returning 408.</li>
+</ul>
+<pre><code>  RequestReadTimeout header=0 body=0
+</code></pre>
+<ul>
+<li>Don’t use source IP, but forwarding IP. For me this is the big thing. ELB is going to proxy all your requests so you’ll see ELB’s IP addresses as the source of all request. Not very useful. But <a href="http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/x-forwarded-headers.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>ELB provides some headers</a> together with the request. Make use of them, specially of <strong>X-Forwarded-For</strong>.</li>
+</ul>
+<pre><code>  CustomLog [File] “%t %{X-Forwarded-For}i %l \”%r\” %&gt;s %b %D \”%{Referer}i\” \”%{User-agent}i\” “
+</code></pre>
+<p>I hope these were useful. Feel free to share more similar tips.</p>
 
 
               
