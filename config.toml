@@ -1,4 +1,4 @@
-baseURL = "http://gonzalo.f-v.es/"
+baseURL = "https://gonzalo.f-v.es/"
 languageCode = "en-us"
 theme = "hugo-theme-codex"
 copyright = "© Gonzalo Fernandez-Victorio {year}"

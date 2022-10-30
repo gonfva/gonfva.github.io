@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Las cosas de Gonzalo</title>
-    <link>http://gonzalo.f-v.es/es/categories/</link>
+    <link>https://gonzalo.f-v.es/es/categories/</link>
     <description>Recent content in Categories on Las cosas de Gonzalo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Fri, 09 Apr 2021 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/es/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Apr 2021 18:03:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News</title>
-      <link>http://gonzalo.f-v.es/es/categories/news/</link>
+      <link>https://gonzalo.f-v.es/es/categories/news/</link>
       <pubDate>Fri, 09 Apr 2021 18:03:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/categories/news/</guid>
+      <guid>https://gonzalo.f-v.es/es/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>En Español</title>
-      <link>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</link>
+      <link>https://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</link>
       <pubDate>Mon, 14 May 2018 18:00:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</guid>
+      <guid>https://gonzalo.f-v.es/es/categories/en-espa%C3%B1ol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technology</title>
-      <link>http://gonzalo.f-v.es/es/categories/technology/</link>
+      <link>https://gonzalo.f-v.es/es/categories/technology/</link>
       <pubDate>Mon, 14 May 2018 18:00:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/categories/technology/</guid>
+      <guid>https://gonzalo.f-v.es/es/categories/technology/</guid>
       <description></description>
     </item>
     

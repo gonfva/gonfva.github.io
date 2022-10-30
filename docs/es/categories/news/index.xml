@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Las cosas de Gonzalo</title>
-    <link>http://gonzalo.f-v.es/es/categories/news/</link>
+    <link>https://gonzalo.f-v.es/es/categories/news/</link>
     <description>Recent content in News on Las cosas de Gonzalo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Fri, 09 Apr 2021 18:03:00 +0000</lastBuildDate><atom:link href="http://gonzalo.f-v.es/es/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Apr 2021 18:03:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/es/categories/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vacunas (IV): Riesgos</title>
-      <link>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</link>
+      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</link>
       <pubDate>Fri, 09 Apr 2021 18:03:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</guid>
+      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     
     <item>
       <title>Vacunas (III): Sputnik-V</title>
-      <link>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</link>
+      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</link>
       <pubDate>Fri, 09 Apr 2021 18:02:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</guid>
+      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     
     <item>
       <title>Vacunas (II): AstraZeneca</title>
-      <link>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</link>
+      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</link>
       <pubDate>Fri, 09 Apr 2021 18:01:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</guid>
+      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     
     <item>
       <title>Vacunas (I): Riesgos</title>
-      <link>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</link>
+      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</link>
       <pubDate>Fri, 09 Apr 2021 18:00:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</guid>
+      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     
     <item>
       <title>Lo del virus ese</title>
-      <link>http://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</link>
+      <link>https://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</guid>
+      <guid>https://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</guid>
       <description>Llevo unos días pensando si escribir esto.
 Escuchas a algunos, y parece que el mundo se acaba y viene el apocalipsis zombi. No quieres ser de esos. Si escuchas a otros, esto es la gripe de todos los años.</description>
     </item>
