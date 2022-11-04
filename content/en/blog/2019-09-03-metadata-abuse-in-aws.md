@@ -44,7 +44,11 @@ The [metadata endpoint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-
 
 From the metadata endpoint the instance can have access to some configuration values. For example, to get the IP address of the instance,
 
-aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.
+```
+aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226
+```
+
+Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.
 
 ### Metadata endpoints and credentials
 
@@ -63,7 +67,8 @@ aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$
 }
 ```
 
-> Why have the credentials on the metadata endpoint?Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But **we don’t want** to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)
+> Why have the credentials on the metadata endpoint?
+Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But **we don’t want** to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)
 
 To avoid that, when preparing the instance to launch, the user can create a definition of what the instance will be able to do (in AWS terminology, an IAM role). And when the instance starts, the cloud translates those permissions into a fictitious set of credentials and lets the instance access those credentials using the metadata endpoint.
 
@@ -77,7 +82,9 @@ Obviously, if you manage to get a shell in the machine, you’re effectively “
 
 More importantly, you don’t need to have a shell. If you manage to convince the instance to make a request to the **metadata endpoint**, you’re effectively “the instance”. This is called [Server Side Request Forgery](https://www.owasp.org/index.php/Server_Side_Request_Forgery):
 
-> In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or a[sic] modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.#### An SSRF example
+> In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or a[sic] modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.
+
+#### An SSRF example
 
 I mentioned at the beginning about how in the Capital One attack there was a module misconfiguration. I don’t know the specific misconfiguration. The module seems to be [modsecurity](https://en.wikipedia.org/wiki/ModSecurity), but a quick look into the configuration didn’t show anything obvious.
 
@@ -99,7 +106,7 @@ import (
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
   urlQueryParam := r.URL.Query().Get("url")
-  origin, \_ := url.Parse(urlQueryParam)
+  origin, _ := url.Parse(urlQueryParam)
   director := func(req *http.Request) {
     req.Host = origin.Host //See <https://git.io/fjNmS>
     req.URL = origin
@@ -128,8 +135,12 @@ followed by the typical steps for installing golang …
 
 ```bash
 aws $ sudo yum update
-aws $ sudo yum install -y golangand then I launched the forwarding proxy:
+aws $ sudo yum install -y golang
+```
 
+and then I launched the forwarding proxy:
+
+```
 aws $ go build ./forward.go
 aws $ sudo ./forward
 ```
@@ -172,7 +183,9 @@ local $ aws s3 ls|wc -l
 
 Let’s reiterate this again.
 
-Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.#### Mitigations
+Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.
+
+#### Mitigations
 
 Last year people in Netflix where already aware of this problem and wrote a couple of super interesting articles on [detection](https://medium.com/netflix-techblog/netflix-cloud-security-detecting-credential-compromise-in-aws-9493d6fd373a) and [prevention](https://medium.com/netflix-techblog/netflix-information-security-preventing-credential-compromise-in-aws-41b112c15179) for this type of attacks.
 

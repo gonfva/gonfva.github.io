@@ -68,7 +68,7 @@
       "datePublished": "2019-09-03 18:00:00 \u002b0000 UTC",
       "dateModified" : "2019-09-03 18:00:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2019-09-03-metadata-abuse-in-aws\/",
-      "wordCount" : "1906",
+      "wordCount" : "1909",
       "keywords" : ["Blog"]
     }
   
@@ -165,7 +165,9 @@ Those issues <strong>are not trivial</strong> to deal with, but they are not unc
    target="_blank" rel="noreferrer noopener" 
 >link-local</a> range) it can be accessed from its own instance running on AWS (similarly to other cloud providers), and it contains some values that are exclusive to that instance.</p>
 <p>From the metadata endpoint the instance can have access to some configuration values. For example, to get the IP address of the instance,</p>
-<p>aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.</p>
+<pre><code>aws $ curl http://169.254.169.254/latest/meta-data/local-ipv410.70.120.226
+</code></pre>
+<p>Having the configuration as something external to the instance, allows to bootstrap the instance using a single “template” (virtual machine image) together with some configuration.</p>
 <h3 id="metadata-endpoints-and-credentials">Metadata endpoints and credentials<a class="anchor" href="#metadata-endpoints-and-credentials">#</a></h3>
 <p>The metadata endpoint also may contain the credentials associated with the instance.</p>
 <pre><code class="language-bash">aws $ curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/)
@@ -180,7 +182,8 @@ Those issues <strong>are not trivial</strong> to deal with, but they are not unc
 }
 </code></pre>
 <blockquote>
-<p>Why have the credentials on the metadata endpoint?Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But <strong>we don’t want</strong> to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)</p>
+<p>Why have the credentials on the metadata endpoint?
+Imagine we want an instance to read from an S3 bucket. Reading from an S3 bucket would need some credentials to protect confidentiality. But <strong>we don’t want</strong> to store those credentials on disk in the instance. In fact we don’t even want to have static credentials. We want to be able to change the credentials frequently (what is called “credentials rotation”)</p>
 </blockquote>
 <p>To avoid that, when preparing the instance to launch, the user can create a definition of what the instance will be able to do (in AWS terminology, an IAM role). And when the instance starts, the cloud translates those permissions into a fictitious set of credentials and lets the instance access those credentials using the metadata endpoint.</p>
 <p>To access the metadata endpoint, the instance doesn’t need credentials. But in theory, the metadata endpoint can only be accessed from the actual instance. So it should be safe. 😈</p>
@@ -192,8 +195,9 @@ Those issues <strong>are not trivial</strong> to deal with, but they are not unc
    target="_blank" rel="noreferrer noopener" 
 >Server Side Request Forgery</a>:</p>
 <blockquote>
-<p>In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or a[sic] modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.#### An SSRF example</p>
+<p>In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or a[sic] modify a URL which the code running on the server will read or submit data to, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like http enabled databases or perform post requests towards internal services which are not intended to be exposed.</p>
 </blockquote>
+<h4 id="an-ssrf-example">An SSRF example</h4>
 <p>I mentioned at the beginning about how in the Capital One attack there was a module misconfiguration. I don’t know the specific misconfiguration. The module seems to be <a href="https://en.wikipedia.org/wiki/ModSecurity" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -212,7 +216,7 @@ import (
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
   urlQueryParam := r.URL.Query().Get(&quot;url&quot;)
-  origin, \_ := url.Parse(urlQueryParam)
+  origin, _ := url.Parse(urlQueryParam)
   director := func(req *http.Request) {
     req.Host = origin.Host //See &lt;https://git.io/fjNmS&gt;
     req.URL = origin
@@ -234,9 +238,10 @@ local $ ssh ec2-user@&lt;public ip of the instance&gt;…
 </code></pre>
 <p>followed by the typical steps for installing golang …</p>
 <pre><code class="language-bash">aws $ sudo yum update
-aws $ sudo yum install -y golangand then I launched the forwarding proxy:
-
-aws $ go build ./forward.go
+aws $ sudo yum install -y golang
+</code></pre>
+<p>and then I launched the forwarding proxy:</p>
+<pre><code>aws $ go build ./forward.go
 aws $ sudo ./forward
 </code></pre>
 <p>I had a crappy proxy listening on port 80, ready to forward any request that it receives in the <em>url</em> parameter.The proxy is purposely dumb (it’s a simple example of SSRF). But being so simple, it’s obvious that it also forwards any requests to the metadata endpoint.</p>
@@ -265,7 +270,8 @@ local $ aws s3 ls|wc -l
 8
 </code></pre>
 <p>Let’s reiterate this again.</p>
-<p>Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.#### Mitigations</p>
+<p>Once you’ve got the credentials, you can use them to access any AWS services that the instance is allowed to access.</p>
+<h4 id="mitigations">Mitigations</h4>
 <p>Last year people in Netflix where already aware of this problem and wrote a couple of super interesting articles on <a href="https://medium.com/netflix-techblog/netflix-cloud-security-detecting-credential-compromise-in-aws-9493d6fd373a" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -417,7 +423,11 @@ local $ aws s3 ls|wc -l
         <li><a href="#credentials-compromise-using-ssrf">Credentials compromise using SSRF</a></li>
       </ul>
     </li>
-    <li><a href="#using-compromised-credentials">Using compromised credentials</a></li>
+    <li><a href="#using-compromised-credentials">Using compromised credentials</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#rest-api-exploitation">REST API exploitation</a></li>
     <li><a href="#conclusions">Conclusions</a></li>
   </ul>
