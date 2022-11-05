@@ -15,4 +15,4 @@ Some other day I'll posts my thoughts about mobile development. But today I want
 
 And here goes an screenshoot (it's not a picture, but you get the point).
 
-<img border="0" height="320" src="http://1.bp.blogspot.com/-ircGfe6JyWw/TtvZMkny69I/AAAAAAAAAR4/qiY72Zbg6Oc/s320/Screenshot+2011.12.04+21.26.16.png" width="213" />
+![Screenshot mobile app](http://1.bp.blogspot.com/-ircGfe6JyWw/TtvZMkny69I/AAAAAAAAAR4/qiY72Zbg6Oc/s320/Screenshot+2011.12.04+21.26.16.png)

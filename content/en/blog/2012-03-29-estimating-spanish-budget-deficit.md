@@ -66,8 +66,6 @@ So, with 2Q2011 data, estimation was 98 billion euro, with 3Q2011, estimation 94
 
 Look the following data, and tell me somebody forged it (December 31st, 2011 data is official figure).
 
-
-<img height="394" src="http://3.bp.blogspot.com/-QCVKgLrHrFE/T3TDU9wkVRI/AAAAAAAAASQ/_zR-Qygxi2M/s640/chart_3.png" width="640" />
-
+![Budget Spanish deficit 2008-2011](http://3.bp.blogspot.com/-QCVKgLrHrFE/T3TDU9wkVRI/AAAAAAAAASQ/_zR-Qygxi2M/s640/chart_3.png)
 
 (*)The official figure is an estimation, and is not homogeneous with the quarterly data. The fourth quarter is still to be closed in accounting terms.

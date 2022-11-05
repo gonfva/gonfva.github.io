@@ -14,7 +14,7 @@ A few months ago,[ I upgraded the firmware for my Sony Xperia U](http://gonfva.b
 
 I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn't know is that today's update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google's update yet.
 
-<img src="http://2.bp.blogspot.com/-Ll0IJworjnY/U5TUQ72SqLI/AAAAAAAAAp0/k5_W0W2yrCM/s1600/Screenshot_2014-06-08-22-08-57.png" height="320" width="179" />
+![Proof CyanogenMod installed](http://2.bp.blogspot.com/-Ll0IJworjnY/U5TUQ72SqLI/AAAAAAAAAp0/k5_W0W2yrCM/s1600/Screenshot_2014-06-08-22-08-57.png)
 
 Over the air. No glitches.
 

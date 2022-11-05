@@ -713,7 +713,8 @@ So when I got my shiny brand new Mac, I decided I had to look after the battery.
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>https://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&amp;rsquo;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.
+While trying to index using Sphinx, I was getting the following error</description>
     </item>
     
     <item>
@@ -1261,7 +1262,8 @@ A couple of days ago, a pregnant woman was killed, and another woman was wounded
       
       <guid>https://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</guid>
       <description>I love this video:
-A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far.</description>
+{{ youtube uVmU3iANbgk }}
+A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain.</description>
     </item>
     
     <item>

@@ -91,7 +91,8 @@ You create an alarm, to detect too many 5xx errors in your ELB.</description>
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       
       <guid>https://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&#39;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future. While trying to index using Sphinx, I was getting the following error [PDOException] SQLSTATE[HY000] [2002] No such file or directory The issue was not related to Sphinx, but to a related connection between PHP/Symphony2 and MySQL.</description>
+      <description>Small and uninteresting post. But I&amp;rsquo;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.
+While trying to index using Sphinx, I was getting the following error</description>
     </item>
     
     <item>

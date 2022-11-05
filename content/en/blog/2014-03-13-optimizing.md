@@ -16,7 +16,7 @@ After the meeting had ended, I came to the conclusion that, implicit in all the 
 
 
 
-<div style="text-align: center;"> **<span style="font-size: large;">Measure </span>**</div>
+**Measure**
 You cannot optimize if you don't know what do you need to optimize. Is it a database problem? A web problem?
 
 

@@ -108,11 +108,15 @@ And then flahsing the kernel should be easy. Flashtool allows lots of things, bu
 
 #### Flashing the system and Gapps
 
-The last part is very easy. First download the system and Gapps. <strike>If you're going to pick the latest versions, do it from Maclaw. The download is a bit unintuitive (click Sony Xperia U, click CianogenMod in the right, and then download both files). </strike>Edited: If you want Android 4.4.3, see [this post](http://gonfva.blogspot.co.uk/2014/06/android-443-sony-xperia-u.html). [The better place is from XDA](http://wiki.cyanogenmod.org/w/Unofficial_Ports#Sony_Xperia_U). Once downloaded, copy them to the phone in normal mode.
+The last part is very easy. First download the system and Gapps. ~~If you're going to pick the latest versions, do it from Maclaw. The download is a bit unintuitive (click Sony Xperia U, click CianogenMod in the right, and then download both files). ~~
+
+Edited: If you want Android 4.4.3, see [this post](http://gonfva.blogspot.co.uk/2014/06/android-443-sony-xperia-u.html). [The better place is from XDA](http://wiki.cyanogenmod.org/w/Unofficial_Ports#Sony_Xperia_U). Once downloaded, copy them to the phone in normal mode.
 
 
 And reboot in Recovery mode. In Recovery mode you should do a backup. Just in case.
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s1600/26112013201.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s200/26112013201.jpg" height="200" width="150" /></a></div>
+
+![Recovery mode](http://3.bp.blogspot.com/-PH1vKJRPxU4/UpUG1kXe9XI/AAAAAAAAAjU/n6xOwR8A6aI/s200/26112013201.jpg)
+
 Then follow the process "Install zip->Choose zip from /storage/sdcard0 and select the folder where you copied the file" to load first the system file. And then do the same process with the Gapps file.
 
 
