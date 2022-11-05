@@ -39,4 +39,4 @@ The real process is very easy, but I had some issues getting to there. Because o
 So in my next post I'll try to explain the process in a sort of newbie post. HOWEVER. Word of caution. You'll probably void the warranty and you could brick your phone. So this is not something for the faint of heart.
 
 
-UPDATED: Link to the [detailed post](http://gonfva.blogspot.co.uk/2013/11/firmware-upgrade-for-xperia-u-in-linux.html).
+UPDATED: Link to the [detailed post]({{< ref "2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i">}}).

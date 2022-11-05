@@ -9,7 +9,7 @@ tags:
   - Technology
 ---
 
-A few months ago,[ I upgraded the firmware for my Sony Xperia U](http://gonfva.blogspot.co.uk/2013/11/firmware-upgrade-for-xperia-u-in-linux.html). It turns out that the place I used to download the firmware updates from, wasn't providing new updates, so sometime ago, I migrated to a new [source of firmware updates](http://gonfva.blogspot.co.uk/2013/11/firmware-upgrade-for-xperia-u-in-linux.html).
+A few months ago, [I upgraded the firmware for my Sony Xperia U]({{< ref "2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i">}}). It turns out that the place I used to download the firmware updates from, wasn't providing new updates, so sometime ago, I migrated to a new [source of firmware updates]({{< ref "2013-11-26-firmware-upgrade-for-xperia-u-in-linux">}}).
 
 
 I knew that Cyanogenmod was already providing Over The Air (OTA) updates. What I didn't know is that today's update would bring Android 4.4.3 when even people with a Nexus 7 has not receive Google's update yet.

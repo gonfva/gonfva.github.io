@@ -10,7 +10,7 @@ tags:
   - Jobs
 ---
 
-There are [good recruiters](http://gonfva.blogspot.co.uk/2014/05/good-examples.html). And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
+There are [good recruiters]({{< ref "2014-05-09-good-examples">}}). And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
 
 
 If you are looking for a job, be sure to do just the opposite of what the bad ones do.

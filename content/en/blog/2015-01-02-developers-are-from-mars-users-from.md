@@ -21,4 +21,4 @@ At that time I started to perceive the radically different world-views between d
 
 Nowadays, I think communication between users and developers is of great importance. The "I'll tell you want I want when I see it" is not something to be dismissed.
 
-The [agile approach](http://agilemanifesto.org/) is not a "quick and dirty hack" but a "let's understand what the user is looking for". Apart from helping [managing risk](http://gonfva.blogspot.co.uk/2014/10/agile-is-about-managing-risk.html).
+The [agile approach](http://agilemanifesto.org/) is not a "quick and dirty hack" but a "let's understand what the user is looking for". Apart from helping [managing risk]({{< ref "2014-10-04-agile-is-about-managing-risk">}}).

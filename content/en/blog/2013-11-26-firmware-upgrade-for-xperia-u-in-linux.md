@@ -46,13 +46,13 @@ OK. Now to the process. Again. You'll probably void the warranty and you could b
 I nearly bricked a BQ Maxwell tablet upgrading to the official firmware, so, please, don't think this is easy.
 
 
-**Fastboot** is a mode in the phone that allows to unlock and flash the bootloader. In the Xperia U you get that mode turning the phone off, then pressing the Volume up button and while pressing, connecting the USB cable to the computer. But you should already know if you <b>had read** the Sony document as I told you. The light in the phone should be blue.
+**Fastboot** is a mode in the phone that allows to unlock and flash the bootloader. In the Xperia U you get that mode turning the phone off, then pressing the Volume up button and while pressing, connecting the USB cable to the computer. But you should already know if you had read** the Sony document as I told you. The light in the phone should be blue.
 
 
 There is also another mode called  **Flash mode**. "Fastboot mode and Flash mode are different? Is there no other F-word?". To enter Flash mode, shutdown the mobile, disconnect the cable from the computer, press the Volume down, connect to the computer and release the volume down. The light in the phone should be green.
 
 
-  **Recovery mode**. It is a mode that allows to do some powerful things from the phone. To enter that mode, power off the phone, then power on and after you see the SONY logo, press repeatedly volume down button (-) until you see recovery. While in the previous two modes the screen is powered off, in this mode, you can navigate the menus. To navigate in the recovery mode, you use volume up and volume down, and select with the Power button.
+**Recovery mode**. It is a mode that allows to do some powerful things from the phone. To enter that mode, power off the phone, then power on and after you see the SONY logo, press repeatedly volume down button (-) until you see recovery. While in the previous two modes the screen is powered off, in this mode, you can navigate the menus. To navigate in the recovery mode, you use volume up and volume down, and select with the Power button.
 
 
 You will sometimes read about  **Normal mode**. Normal mode is the phone on as usual, sometimes with the the debug options activated.
@@ -107,7 +107,7 @@ And then flahsing the kernel should be easy. Flashtool allows lots of things, bu
 
 The last part is very easy. First download the system and Gapps. ~~If you're going to pick the latest versions, do it from Maclaw. The download is a bit unintuitive (click Sony Xperia U, click CianogenMod in the right, and then download both files). ~~
 
-Edited: If you want Android 4.4.3, see [this post](http://gonfva.blogspot.co.uk/2014/06/android-443-sony-xperia-u.html). [The better place is from XDA](http://wiki.cyanogenmod.org/w/Unofficial_Ports#Sony_Xperia_U). Once downloaded, copy them to the phone in normal mode.
+Edited: If you want Android 4.4.3, see [this post]({{< ref "2014-06-08-android-443-sony-xperia-u">}}). [The better place is from XDA](http://wiki.cyanogenmod.org/w/Unofficial_Ports#Sony_Xperia_U). Once downloaded, copy them to the phone in normal mode.
 
 
 And reboot in Recovery mode. In Recovery mode you should do a backup. Just in case.

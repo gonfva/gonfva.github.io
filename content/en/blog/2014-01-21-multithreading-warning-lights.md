@@ -69,4 +69,4 @@ When I was going to do it, something in the back of my mind started to blink. It
 The problem with the change is that we have transformed a local variable into an instance variable. Local variables are local to the thread. Instance variables are shared between threads. So until now we had a thread safe class, but now the class is not thread safe. As an example: What if each instance of the service can only be invoked once and we have [two threads](https://twitter.com/nedbat/status/194452404794691584) running?
 
 
-I was asked to tell what to do to be protected. I replied I didn't know. The typical answer involves the reserved word **synchronized**. But as [I've told in the past](http://gonfva.blogspot.co.uk/2012/03/synchronized-silver-bullet.html), that is not usually a good answer and almost never the best answer.
+I was asked to tell what to do to be protected. I replied I didn't know. The typical answer involves the reserved word **synchronized**. But as [I've told in the past]({{< ref "2012-03-23-synchronized-silver-bullet">}}), that is not usually a good answer and almost never the best answer.

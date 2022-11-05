@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Copyright protection"
-date: 2010-11-22-T22:09:51
+date: 2010-11-22T22:09:51
 previous: https://gonfva.blogspot.com/2010/11/copyright-protection.html
 categories: Personal
 tags:
@@ -9,9 +9,6 @@ tags:
 ---
 
 You know something is broken with copyright when:
-
-
-
 
 + You buy a "Barbie and three Musqueteers" DVD and you can't play in your DVD player because it's piracy protected. **But...** You download the same film from a P2P network, save to a CD and you can play it everywhere.
 

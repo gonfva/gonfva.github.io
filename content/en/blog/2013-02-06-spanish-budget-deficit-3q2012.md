@@ -37,4 +37,4 @@ Budget deficit for 3Q2012 was **8.37%**. Down from 8.54% 2Q2012. And a commitmen
 Austerity.
 
 
-Yes, I know [I wrote central government budget deficit was going great](http://gonfva.blogspot.co.uk/2012/12/spanish-budget-deficit-what-if.html). I don´t what have happened. Maybe financial institutions help. Probably regional deficit. Who knows.
+Yes, I know [I wrote central government budget deficit was going great]({{< ref "2012-12-20-spanish-budget-deficit-what-if">}}). I don´t what have happened. Maybe financial institutions help. Probably regional deficit. Who knows.
