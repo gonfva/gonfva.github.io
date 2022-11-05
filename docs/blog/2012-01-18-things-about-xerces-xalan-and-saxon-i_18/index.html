@@ -119,18 +119,20 @@
           </header>
           <article class="post__content">
               
-<p>I said in the previous post that <a href="https://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i.html" 
+<p>I said in the previous post that <a href="https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/" 
   
-   target="_blank" rel="noreferrer noopener" 
+  
 >Xalan and Xerces sometimes look like magic</a>. So what are they and why are so complicated?.</p>
 <ul>
 <li>
 <p>Xerces is a Java library that helps parsing, validating and managing XML documents. You can parse XML documents in different ways. You can transform into a memory structure, building a big object, or you can even parse only the elements you need. There&rsquo;s a whole array of ways to manage XML documents and schemas, and Xerces helps with them.</p>
 </li>
 <li>
-<p>Xalan is a Java library that helps transforming (XSLT 1.0) and querying (XPATH 1.0) XML documents. </li></ul>
-If you&rsquo;ve reached this point you&rsquo;ll be asking why the buzz about Xerces and Xalan. There are four things that make Xerces and Xalan special:</p>
+<p>Xalan is a Java library that helps transforming (XSLT 1.0) and querying (XPATH 1.0) XML documents.</p>
 </li>
+</ul>
+<p>If you&rsquo;ve reached this point you&rsquo;ll be asking why the buzz about Xerces and Xalan. There are four things that make Xerces and Xalan special:</p>
+<ul>
 <li>
 <p>Java application servers usually manage their configuration with XML and they need some version of a parser.</p>
 </li>
@@ -138,13 +140,13 @@ If you&rsquo;ve reached this point you&rsquo;ll be asking why the buzz about Xer
 <p>Because of that, Xerces is probably one of more forked projects in the history. Every little server that worth its bucks have its own version of Xerces. Yes, you have one <a href="http://xerces.apache.org/#xerces2-j" 
   
    target="_blank" rel="noreferrer noopener" 
->official version of Xerces</a>. But your own server maybe has it own. And probably instead of <span style="font-family: monospace; white-space: pre-wrap;">org.apache.xerces.jaxp.DocumentBuilderFactoryImpl</span>, they will have called something like <span style="font-family: monospace; white-space: pre-wrap;">com.sun.apache.xerces.jaxp.DocumentBuilderFactoryImpl</span>.</p>
+>official version of Xerces</a>. But your own server maybe has it own. And probably instead of <code>org.apache.xerces.jaxp.DocumentBuilderFactoryImpl</code>, they will have called something like <code>com.sun.apache.xerces.jaxp.DocumentBuilderFactoryImpl</code>.</p>
 </li>
 <li>
-<p>Even if your server doesn&rsquo;t use its own version of Xerces, chances are high that it will be using classes of type <span style="font-family: monospace; white-space: pre-wrap;">javax.xml.parsers.DocumentBuilderFactory</span> or  <span style="font-family: monospace; white-space: pre-wrap;">javax.xml.parsers.SAXParserFactory</span> to parse xml documents. To get an instance of these classes you&rsquo;ll use a design pattern called factory that will give you a specific implementation of the class. And the specific implementation you&rsquo;ll get depends on&hellip; a system property.</p>
+<p>Even if your server doesn&rsquo;t use its own version of Xerces, chances are high that it will be using classes of type <code>javax.xml.parsers.DocumentBuilderFactory</code> or  <code>javax.xml.parsers.SAXParserFactory</code> to parse xml documents. To get an instance of these classes you&rsquo;ll use a design pattern called factory that will give you a specific implementation of the class. And the specific implementation you&rsquo;ll get depends on&hellip; a system property.</p>
 </li>
 <li>
-<p>If you need to parse an XML document, you&rsquo;ll have to use those classes too. And if for whatever reason you don&rsquo;t like the specific implementation your server (or even somebody in your own project) is using, then you&rsquo;re basically screwed. Because you&rsquo;ll use something that appears in 80% of the articles about the topic:  <strong>System.setProperty</strong>.</li></ul></p>
+<p>If you need to parse an XML document, you&rsquo;ll have to use those classes too. And if for whatever reason you don&rsquo;t like the specific implementation your server (or even somebody in your own project) is using, then you&rsquo;re basically screwed. Because you&rsquo;ll use something that appears in 80% of the articles about the topic:  <strong>System.setProperty</strong>.</p>
 </li>
 </ul>
 

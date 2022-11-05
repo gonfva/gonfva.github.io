@@ -186,14 +186,15 @@ So two contextConfigLocation. One for the listener, points in this case to sprin
 What else? From lines 19-30 we load a filter. A filter, as you well know, is an artifact that sits in between the web and servlet and does something. In this case it is going to do something about transactions, but we&rsquo;ll talk about it later.</p>
 <h2 id="the-web-scoped-context-spring-mvc-contextxml"><strong>The web-scoped context: spring-mvc-context.xml</strong><a class="anchor" href="#the-web-scoped-context-spring-mvc-contextxml">#</a></h2>
 <p>My web context in this case is quite short:</p>
-<script src="https://gist.github.com/3811852.js?file=spring-mvc-context.xml"></script> As you can see there are 3 main groups:
+<script src="https://gist.github.com/3811852.js?file=spring-mvc-context.xml"></script>
+<p>As you can see there are 3 main groups:</p>
 <ul>
 <li>context:component-scan looks at the specified package for annotations to fill.</li>
 <li>mvc:annotation-driven <a href="http://stackoverflow.com/questions/3977973/whats-the-difference-between-mvcannotation-driven-and-contextannotation#comment4256810_3978283" 
   
    target="_blank" rel="noreferrer noopener" 
 >fills some magic</a> relating validation, json and so on.</li>
-<li>InternalResourceViewResolver is a pretty standard way to point to where the JSP reside and the way they are named.</li></ol></li>
+<li>InternalResourceViewResolver is a pretty standard way to point to where the JSP reside and the way they are named.</li>
 </ul>
 <p>Nothing very fancy, you see.</p>
 <h2 id="the-root-context-spring-business-contextxml-part-i">The root context: spring-business-context.xml, part I<a class="anchor" href="#the-root-context-spring-business-contextxml-part-i">#</a></h2>

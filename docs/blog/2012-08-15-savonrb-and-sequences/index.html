@@ -119,9 +119,9 @@
           </header>
           <article class="post__content">
               
-<p>As I wrote in my last post, I&rsquo;ve recently learned <a href="https://gonfva.blogspot.com/2012/08/a-great-experience-applying-to-position_14.html" 
+<p>As I wrote in my last post, I&rsquo;ve recently learned <a href="https://gonzalo.f-v.es/blog/2012-08-13-a-great-experience-applying-to-position/" 
   
-   target="_blank" rel="noreferrer noopener" 
+  
 >it is important to be able to show what you&rsquo;ve been doing</a>. So I&rsquo;m trying to increase the posts on a number of small problems I find in my daily job, and in my hobby projects. This one appeared in my daily job.</p>
 <p>I was developing a small interface between two applications via a SOAP web service. Actually, we are using <a href="http://www.redmine.org/" 
   
@@ -134,37 +134,45 @@
   
    target="_blank" rel="noreferrer noopener" 
 >Savon.rb</a> for creating a client in Redmine that would invoke a SOAP web service in Remedy. The code was something like this:</p>
-<p><code>          response=client.request &ldquo;Resolver&rdquo; do
-soap.header={:AuthenticationInfo=&gt;{
-:userName=&gt;ws_user,
-:password=&gt;ws_pwd,
-}
-soap.body = {
-&ldquo;Status&rdquo;=&gt;&ldquo;Resolved&rdquo;,
-&ldquo;Resolution&rdquo;=&gt; message ,
-&ldquo;Status_Reason&rdquo;=&gt;&ldquo;Client Action Required&rdquo;,
-&ldquo;Incident_Number&rdquo;=&gt;code,
-&ldquo;Status_Reason2&rdquo;=&gt;&ldquo;Client Action Required&rdquo;,
-&ldquo;AssigneeLoginID&rdquo;=&gt;user,
-}
-end </code></p>
+<pre><code class="language-ruby">  response=client.request &quot;Resolver&quot; do
+    soap.header={:AuthenticationInfo=&gt;{
+          :userName=&gt;ws_user,
+          :password=&gt;ws_pwd,
+    }
+    soap.body = {
+        &quot;Status&quot;=&gt;&quot;Resolved&quot;,
+        &quot;Resolution&quot;=&gt; message ,
+        &quot;Status_Reason&quot;=&gt;&quot;Client Action Required&quot;,
+        &quot;Incident_Number&quot;=&gt;code,
+        &quot;Status_Reason2&quot;=&gt;&quot;Client Action Required&quot;,
+        &quot;AssigneeLoginID&quot;=&gt;user,
+    }
+  end
+</code></pre>
 <p>However, I was getting a SOAP error</p>
-<blockquote class="tr_bq">ARERR [8962] Unexpected element encountered in the input XML document</blockquote>
-The problem lies in [Ruby hashes not preserving the order and Savon sending XML sequences in incorrect order](https://github.com/rubiii/savon/issues/129). I just updated the call to something like this
-<p><code>          response=client.request &ldquo;Resolver&rdquo; do
-soap.header={:AuthenticationInfo=&gt;{
-:userName=&gt;ws_user,
-:password=&gt;ws_pwd,
-<strong><span style="color: red;">                 :order! =&gt; [:userName, :password]}</span></strong>            }
-soap.body = {
-&ldquo;Status&rdquo;=&gt;&ldquo;Resolved&rdquo;,
-&ldquo;Resolution&rdquo;=&gt;message,
-&ldquo;Status_Reason&rdquo;=&gt;&ldquo;Client Action Required&rdquo;,
-&ldquo;Incident_Number&rdquo;=&gt;code,
-&ldquo;Status_Reason2&rdquo;=&gt;&ldquo;Client Action Required&rdquo;,
-&ldquo;AssigneeLoginID&rdquo;=&gt;user,
-<strong><span style="color: red;">                :order! =&gt; [&ldquo;Status&rdquo;, &ldquo;Resolution&rdquo;, &ldquo;Status_Reason&rdquo;,&ldquo;Incident_Number&rdquo;, &ldquo;Status_Reason2&rdquo;, &ldquo;AssigneeLoginID&rdquo;]</span></strong>            }
-end </code></p>
+<pre><code>ARERR [8962] Unexpected element encountered in the input XML document
+</code></pre>
+<p>The problem lies in <a href="https://github.com/rubiii/savon/issues/129" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Ruby hashes not preserving the order and Savon sending XML sequences in incorrect order</a>. I just updated the call to something like this</p>
+<pre><code class="language-ruby">  response=client.request &quot;Resolver&quot; do
+    soap.header={:AuthenticationInfo=&gt;{
+          :userName=&gt;ws_user,
+          :password=&gt;ws_pwd,
+          :order! =&gt; [:userName, :password]
+    }
+    soap.body = {
+        &quot;Status&quot;=&gt;&quot;Resolved&quot;,
+        &quot;Resolution&quot;=&gt;message,
+        &quot;Status_Reason&quot;=&gt;&quot;Client Action Required&quot;,
+        &quot;Incident_Number&quot;=&gt;code,
+        &quot;Status_Reason2&quot;=&gt;&quot;Client Action Required&quot;,
+        &quot;AssigneeLoginID&quot;=&gt;user,
+        :order! =&gt; [&quot;Status&quot;, &quot;Resolution&quot;, &quot;Status_Reason&quot;,&quot;Incident_Number&quot;, &quot;Status_Reason2&quot;, &quot;AssigneeLoginID&quot;]
+    }
+  end
+</code></pre>
 <p>and it solved the issue. I expected Savon to take care of this, but anyway, I understand this is solved in Ruby 1.9x.</p>
 
 

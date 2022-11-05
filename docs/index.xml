@@ -986,7 +986,7 @@ Second. A chrome extension is a zip of a folder with an crx extension instead.</
       
       <guid>https://gonzalo.f-v.es/blog/2012-09-10-the-best-eclipse-tip-ever/</guid>
       <description>How to disable auto close for the XML comments.
-Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
+Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing. </description>
     </item>
     
     <item>
@@ -996,7 +996,7 @@ Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing.</description>
       
       <guid>https://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</guid>
       <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:
-1. One level of indentation per method2. Don’t use the ELSE keyword 3. Wrap all primitives and Strings4.</description>
+One level of indentation per method&amp;lt; Don’t use the ELSE keyword Wrap all primitives and Strings First class collections One dot per line Don’t abbreviate Keep all entities small No classes with more than two instance variables No getters/setters/properties Some of them are a must, with some others I have some doubts.</description>
     </item>
     
     <item>
@@ -1110,7 +1110,7 @@ Selection: Be very selective about what you apply for.</description>
       <pubDate>Sun, 01 Jul 2012 11:47:46 +0000</pubDate>
       
       <guid>https://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/</guid>
-      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed, those tips sometimes are not enough.</description>
+      <description>In a previous post I proposed some tips for trying to manage and control the hell of XML and XPATH parsers. However, as one reader pointed (EDIT: This was in my original blog), those tips sometimes are not enough.</description>
     </item>
     
     <item>
@@ -1194,7 +1194,8 @@ Xerces is a Java library that helps parsing, validating and managing XML documen
       <pubDate>Wed, 18 Jan 2012 11:45:46 +0000</pubDate>
       
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager. I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.
+I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
     </item>
     
     <item>
@@ -1320,6 +1321,16 @@ I was going to write about the challenge of a competitive examination, how chall
       <guid>https://gonzalo.f-v.es/blog/2010-11-23-spring-course/</guid>
       <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
 I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog.</description>
+    </item>
+    
+    <item>
+      <title>Copyright protection</title>
+      <link>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</link>
+      <pubDate>Mon, 22 Nov 2010 22:09:51 +0000</pubDate>
+      
+      <guid>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</guid>
+      <description>You know something is broken with copyright when:
+You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But&amp;hellip; You download the same film from a P2P network, save to a CD and you can play it everywhere.</description>
     </item>
     
     <item>
@@ -1540,16 +1551,6 @@ This time, it all started with a post of Enrique Dans.</description>
 I have started a couple of blogs.
 Both are abandoned.
 Not a good track.</description>
-    </item>
-    
-    <item>
-      <title>Copyright protection</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</guid>
-      <description>You know something is broken with copyright when:
-You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But... You download the same film from a P2P network, save to a CD and you can play it everywhere.</description>
     </item>
     
   </channel>

@@ -119,13 +119,13 @@
           </header>
           <article class="post__content">
               
-<p>As I wrote some posts ago, <a href="https://gonfva.blogspot.com/2012/08/little-robot-i.html" 
+<p>As I wrote some posts ago, <a href="https://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/" 
   
-   target="_blank" rel="noreferrer noopener" 
->I received an assignment</a>, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to <a href="https://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html" 
   
-   target="_blank" rel="noreferrer noopener" 
->fake the console interaction</a> (both stdin and stdout). I didn&rsquo;t consider dependy inversion.</p>
+>I received an assignment</a>, and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to <a href="https://gonzalo.f-v.es/blog/2012-08-20-faking-console-in-ruby/" 
+  
+  
+>fake the console interaction</a> (both stdin and stdout). I didn&rsquo;t consider dependency inversion.</p>
 <p>Sometimes a higher level class A has to invoke methods in a lower level class. Let&rsquo;s say this lower level class tends to be class B. Typical approach (non DI) is to make class A depend on class B. Dependency inversion is to make class B implement some contract associated with class A (the dependency is inverted).</p>
 <p>I think I&rsquo;m still in the process of converting from Java(where DI and interfaces is compulsory) to Ruby. With Ruby is much easier to fake classes B and don&rsquo;t even think about inversion while developing class A.  Maybe I should have done my class more testable. But I didn&rsquo;t realize it until in a different selection process I was asked when to use Dependency Inversion in Ruby.</p>
 

@@ -59,4 +59,4 @@ TransformerFactory tf=new TransformerFactoryImp();
 
 5. In the long run, it should be great to use mechanisms to prevent using System.setProperty like this link [http://stackoverflow.com/a/4208150/54256](http://stackoverflow.com/a/4208150/54256)
 
-**Update (2012-10-01)**: I see lots of visits to this page. Maybe you should visit [https://gonfva.blogspot.com.es/2012/07/xerces-xalan-and-saxon-more-recipes.html](https://gonfva.blogspot.com.es/2012/07/xerces-xalan-and-saxon-more-recipes.html) too.
+**Update (2012-10-01)**: I see lots of visits to this page. Maybe you should visit [https://gonfva.blogspot.com.es/2012/07/xerces-xalan-and-saxon-more-recipes.html]({{< ref "2012-07-01-xerces-xalan-and-saxon-more-recipes">}}) too.

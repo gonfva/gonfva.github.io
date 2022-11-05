@@ -124,8 +124,8 @@
   
    target="_blank" rel="noreferrer noopener" 
 >this</a> :</p>
-<p><span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span></p>
-<blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;
+<pre><code>You declare this method as synchronized to make it thread-safe.
+package com.apress.springenterpriserecipes.sequence;
 public class SequenceGenerator {
 private String prefix;
 private String suffix;
@@ -153,16 +153,17 @@ buffer.append(initial + counter++);
 buffer.append(suffix);
 return buffer.toString();
 }
-}</span></blockquote>
+}
+</code></pre>
 <p>(mine is a newer version, but you get the point).</p>
 <p>Let me put it clear: Synchronized IS NOT A SILVER BULLET. Synchronized makes sure that code is executed only by one thread. But it doesn&rsquo;t make sure that fields(member-variables) used in that code are not modified in between.</p>
 <p>In particular, in this case, you could get a prefix, then other thread modifies the initial, a different thread modifies the suffix, and you get a real mess in your synchronized method.</p>
 <p>Many people could tell me &ldquo;You&rsquo;re right, but the setters are not supposed to be invoked after the creation of the object&rdquo;. Then I have to tell two things:</p>
 <ul>
 <li>Delete the setters and the default constructor (Spring allows it).</li>
-<li>Don&rsquo;t synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol>
-And how would I do it?. Uhm. That&rsquo;s a whole post itselt, and it would depend on the class behavior.</li>
+<li>Don&rsquo;t synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li>
 </ul>
+<p>And how would I do it?. Uhm. That&rsquo;s a whole post itselt, and it would depend on the class behavior.</p>
 <p>By the way. A great book in the topic: <a href="http://www.jcip.net/" 
   
    target="_blank" rel="noreferrer noopener" 
