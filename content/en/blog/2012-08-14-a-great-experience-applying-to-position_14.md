@@ -25,6 +25,6 @@ In my previous post I explained [a great experience applying for a position]({{<
 
 6. Research: For the interview do a great research. Be prepared. Who would be your mates? Nasty comments about the company? Source code of the pages?. And if the interview seems in a loop, (not the case this time), be open but drive it to a point.
 
-7. Build a presence online. Most asked request: show us your code. Yes, I have a github account ([actually](https://github.com/gonfva/) [two](https://github.com/crypteasy)). And I also have a blog ([this one](https://gonfva.blogspot.com/) ;D) But at work I don't have the time to build the presence. And doing it at home is quite difficult. But it's essential
+7. Build a presence online. Most asked request: show us your code. Yes, I have a github account ([actually](https://github.com/gonfva/) [two](https://github.com/crypteasy)). And I also have a blog ([this one](https://gonzalo.f-v.es/) ;D) But at work I don't have the time to build the presence. And doing it at home is quite difficult. But it's essential
 
 I think fifth and sixth really made a difference, but I'm really starting to learn how to apply to a position.And I'm trying to complete the seventh point. This blog posts are part of that effort.

@@ -9,7 +9,7 @@ tags:
   - Jobs
 ---
 
-I wrote in my last post about [lessons I've got from bad experiences looking for a job](https://gonfva.blogspot.com.es/2012/08/bad-experiences.html). In this post I'm going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it. Make no mistakes: I didn't get offered the position in the end.
+I wrote in my last post about [lessons I've got from bad experiences looking for a job]({{< ref "2012-08-12-bad-experiences">}}). In this post I'm going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it. Make no mistakes: I didn't get offered the position in the end.
 
 
 For me, the outcome is not the most important thing in such a process, but the feeling you're not losing your time, and the lessons learned. In this post I'll try to point why I felt I wasn't losing my time, and in the following I'll post the lessons learned. Experiences

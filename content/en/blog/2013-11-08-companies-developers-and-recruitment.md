@@ -11,7 +11,7 @@ tags:
   - Jobs
 ---
 
-A few months ago I reported [my business unit was offered for sale](http://gonfva.blogspot.co.uk/2013/08/changes.html). Not much to report about it (I know very little and I can write even less)
+A few months ago I reported [my business unit was offered for sale]({{< ref "2013-08-30-changes">}}). Not much to report about it (I know very little and I can write even less)
 
 
 Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.

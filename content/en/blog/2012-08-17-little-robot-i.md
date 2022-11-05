@@ -9,7 +9,7 @@ tags:
     - Developer
 ---
 
-While [applying to a position](https://gonfva.blogspot.com.es/2012/08/a-great-experience-applying-to-position.html) a few days ago, I received an assignment trying to test my coding style.
+While [applying to a position]({{< ref "2012-08-13-a-great-experience-applying-to-position">}}) a few days ago, I received an assignment trying to test my coding style.
 
 
 IMO, assignments are quite a good way to get a peek on the coding style of someone. They are easy programming tasks that show if somebody is able to code ([it seems many of us can't](http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html)), and what's his/her style.

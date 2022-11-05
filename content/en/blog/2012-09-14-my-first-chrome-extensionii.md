@@ -9,7 +9,7 @@ tags:
     - Developer
 ---
 
-In [last post](https://gonfva.blogspot.com.es/2012/09/my-first-chrome-extensioni.html) I wrote why. In this post I want to explain how I wrote my first chrome extension.
+In [last post]({{< ref "2012-09-14-my-first-chrome-extensioni">}}) I wrote why. In this post I want to explain how I wrote my first chrome extension.
 
 
 First. The Chrome Extensions [developer's documentation](http://developer.chrome.com/extensions/getstarted.html) is quite good.

@@ -34,7 +34,7 @@ In my opinion, the only real option in a social networked environment is to rebu
 
 + You need to act quickly. Rebuilding trust takes time. But you must start as soon as possible. I imagine the management did know yesterday about the major screw up. But today there is no answer. Which means they don't know how to act. And they're obviously considering the options. But if you don't act quickly, you'll be forced to act later on, but losing the benefits.
 + Apologize. Clearly. Not only for the specific series of comments but also for not understanding the whole social-network issue. Explain you have learnt -where "you" means the CEO- that social networks are a different thing you didn't understand. And that you personally are going to learn.
-+ Start listening. There is a customer that has not get a good experience. Change it. Solve her problem. I remember having a [bad experience with IKEA that was completely reversed](http://gonfva.blogspot.co.uk/2013/07/ikea-vs-greenwich.html) to a great experience thanks to their Customer Relationship department.
++ Start listening. There is a customer that has not get a good experience. Change it. Solve her problem. I remember having a [bad experience with IKEA that was completely reversed]({{< ref "2013-07-16-ikea-vs-greenwich">}}) to a great experience thanks to their Customer Relationship department.
 
 Social networks are about interacting with your customers and getting feedback. It's about listening.
 
