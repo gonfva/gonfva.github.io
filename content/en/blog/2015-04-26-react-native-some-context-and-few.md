@@ -20,6 +20,7 @@ It also moves towards CSS into Javascript. You may think "What a crap idea movin
 
 
 <script async="" class="speakerdeck-embed" data-id="2e15908049bb013230960224c1b4b8bd" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 Besides, one of my colleagues have recently developed a wonderful [SPA](http://en.wikipedia.org/wiki/Single-page_application) using React, so  I wanted to give a test to get the idea.
 
 

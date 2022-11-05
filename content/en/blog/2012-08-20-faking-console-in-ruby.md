@@ -9,7 +9,7 @@ tags:
     - Developer
 ---
 
-A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. [While doing in Java, I decided to test the engine](https://gonfva.blogspot.com/2012/08/little-robot-ii-java-version.html). But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console.
+A few days ago, I was preparing an assignment for a job process both in Java and in Ruby. [While doing in Java, I decided to test the engine]({{< ref "2012-08-19-little-robot-ii-java-version">}}). But in Ruby I wanted to test the whole application, including the communication via standard input/output on the console.
 
 
 And how do you mock standard input/output in Ruby?. Well. It turns out it is quite [easy to do it with Rspec](http://stackoverflow.com/questions/6335282/testing-with-stdin-and-stdout-in-rspec). But I wanted to do it without any additional requirement. How do you mock STDIN and STDOUT in plain Ruby.

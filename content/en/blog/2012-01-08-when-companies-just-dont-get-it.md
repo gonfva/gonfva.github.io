@@ -11,7 +11,7 @@ tags:
 
 I have a two years old Symbian cell phone and a second generation iTouch. I guess that's enough to explain that until very recently I didn't pay any attention at all to mobiles apps ads. Companies regularly announced new  apps for the Apple Store (or the Android one), and I didn't even read the announce.
 
-More recently I've [started with mobile development](https://gonfva.blogspot.com/2011/12/my-first-mobile-application.html). I have paid the Android and Apple fee, I have developed my own apps with [PhoneGap](http://phonegap.com/) and [Appcelerator Titanium](http://www.appcelerator.com/products/titanium-mobile-application-development/) (games for my daughters, but nothing too serious). And at work we're starting to thing about possible Apps.
+More recently I've [started with mobile development]({{< ref "2012-01-08-when-companies-just-dont-get-it">}}). I have paid the Android and Apple fee, I have developed my own apps with [PhoneGap](http://phonegap.com/) and [Appcelerator Titanium](http://www.appcelerator.com/products/titanium-mobile-application-development/) (games for my daughters, but nothing too serious). And at work we're starting to thing about possible Apps.
 
 And I'm starting to pay attention to the Apps announced.
 

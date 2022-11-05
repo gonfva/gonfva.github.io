@@ -8,7 +8,7 @@ tags:
 categories: Personal
 ---
 
-A few days ago [I promised to explain](https://gonfva.blogspot.com/2010/11/civil-service-how-to-improve.html) why I chose to become a civil servant, and why I keep being one.
+A few days ago [I promised to explain]({{< ref "2010-11-25-civil-service-how-to-improve">}}) why I chose to become a civil servant, and why I keep being one.
 
 
 I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough.

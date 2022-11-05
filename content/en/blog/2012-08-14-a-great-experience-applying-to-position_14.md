@@ -9,7 +9,7 @@ tags:
   - Jobs
 ---
 
-In my previous post I explained [a great experience applying for a position](https://gonzalo.f-v.es/blog/2012-08-13-a-great-experience-applying-to-position/). In this post I wanted to share what lessons I've learnt from that experience.</span>
+In my previous post I explained [a great experience applying for a position]({{< ref "2012-08-13-a-great-experience-applying-to-position">}}). In this post I wanted to share what lessons I've learnt from that experience.
 
 
 

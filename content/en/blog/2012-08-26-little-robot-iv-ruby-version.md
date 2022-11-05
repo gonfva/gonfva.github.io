@@ -9,7 +9,7 @@ tags:
     - Developer
 ---
 
-Besides the [console faking](https://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html) and the [dependency inversion issue](https://gonfva.blogspot.com/2012/08/little-robot-iii-dependency-inversion.html), my code in Ruby was pretty rough. You can see here [the version I sent](https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb).
+Besides the [console faking]({{< ref "2012-08-20-faking-console-in-ruby">}}) and the [dependency inversion issue]({{< ref "2012-08-25-little-robot-iii-dependency-inversion">}}), my code in Ruby was pretty rough. You can see here [the version I sent](https://github.com/gonfva/assignments/blob/cc8d3664474c934a6e864ad285e5fb3855e49c2a/gfv_robot_ruby/robot.rb).
 
 
 One obvious problem is the use of string instead of symbols. It was a bad bad mistake. So big if I had been the person testing, I would have thought very bad of myself.
@@ -20,7 +20,7 @@ Anyway it was clear that Java version was considerably more verbose.
 
 So one obvious improvement is using symbols instead of string. But during the interview, I asked what other improvements people have done on the assignment. One tip I received is the use of [Array.rotate](http://www.ruby-doc.org/core-1.9.3/Array.html#method-i-rotate). I don't like that improvement, because it makes the code less understandable. But I didn't like the verbosity of the case, and I tested a different approach. This is the code I left in the end:
 
-```
+```java
 class Robot
   VALID_X = 0..4
   VALID_Y = 0..4

@@ -58,7 +58,7 @@ about it.
   selected ondemand battery disappeared. For the record Chrome with plugins is
   still unstable in Linux.
 
-- I also installed <span style="font-weight: bold">Windows XP</span> in my
+- I also installed **Windows XP** in my
   brother-in-law's netbook, the same brand and model. It could run WXP, but
   again it seemed slow.
 
@@ -68,14 +68,12 @@ using Linpus, while waiting to [Google Chrome OS](http://googleblog.blogspot.com
 
 What do I want? An operating system that ...<
 
-- ... can boot and launch a browser very quick.</li>
+- ... can boot and launch a browser very quick.
 
-- ...tries to save battery. Bonus point if I can remove an USB stick while
-  suspended without crashing.
+- ...tries to save battery. Bonus point if I can remove an USB stick while suspended without crashing.
 
-- ... runs fast</li>
+- ... runs fast
 
-- ... apart from a browser, has already installed (or one-click away) Flash
-  Plugin PDF viewer, and a media player. Bonus point for an Office suite.
+- ... apart from a browser, has already installed (or one-click away) Flash Plugin PDF viewer, and a media player. Bonus point for an Office suite.
 
 Nothing too strange for a Netbook, I bet.

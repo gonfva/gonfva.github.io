@@ -15,7 +15,7 @@ tags:
 Edited (08th-Jun-2014): Updated the firmware download site.
 
 
-In my [previous post](https://gonfva.blogspot.com/2013/11/firmware-upgrade-for-xperia-u-in-linux-i.html) I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don't manage to understand the underlying logic.
+In my [previous post]({{< ref "2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i">}}) I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process. There are lots of pages explaining recipes to install, but I find it difficult to follow recipes if I don't manage to understand the underlying logic.
 
 
 The following is my visualization of the whole process (this is less than a week of knowledge, so I cannot say I'm an expert: take it with a grain of salt). You can get a [more accurate picture of the Android architecture in other pages](http://www.android-app-market.com/android-architecture.html). And you can [get the process in detail from XDA](http://forum.xda-developers.com/showthread.php?t=2107775).
@@ -27,11 +27,11 @@ The following is my visualization of the whole process (this is less than a week
 As far as I understand there are three components in an Android system
 
 
-
-
 + The bootloader. This is a piece of software that usually loads the system, enables Android recovery image and image upgrades. Sometimes it is called the kernel, so I understand it is the underlying component of the Android
+
 + The second one is called the system. It would include shared libraries and components. When people says Android is Java, I understand that it is probably related to this set.
-+ And the third one is called Gapps. Gapps it is not a component in its own. It's a package with Google applications. For licence reasons, you cannot distribute them attached to other components, so you almost always will find a package with Gapps.</li></ol>
+
++ And the third one is called Gapps. Gapps it is not a component in its own. It's a package with Google applications. For licence reasons, you cannot distribute them attached to other components, so you almost always will find a package with Gapps.
 
 
 OK. Now to the process. Again. You'll probably void the warranty and you could brick your phone. If you're not comfortable installing your own operating system at your computer, DON'T EVEN BOTHER reading further. If you are reading this, you have Linux at home and that's means that you are more than average Joe, but do it at tour own risk.
@@ -76,16 +76,13 @@ I must confess I'm pleasantly surprised with Sony about the unlocking process. I
 
 When going for Linux, you're going to follow the same steps. BUT. Instead of the steps related to the USB drivers (i.e step 9), you need UDEV rules. UDEV is the way Linux uses to recognize new components, in particular USB devices. You will need the USB ID for your phone version, both in usual mode, in Fastboot mode and in Flash mode.
 
-
-
-
-
 Back to the UDEV rules, these are the ones I got for Xperia U ST25i.
 
-
-
-<script src="https://gist.github.com/gonfva/7633925.js"></script>
-
+```
+SUBSYSTEMS==”usb”, ATTRS{idVendor}==”0fce″, ATTRS{idProduct}==”0171″, MODE=”0666″
+SUBSYSTEMS==”usb”, ATTRS{idVendor}==”0fce″, ATTRS{idProduct}==”0dde″, MODE=”0666″
+SUBSYSTEMS==”usb”, ATTRS{idVendor}==”0fce″, ATTRS{idProduct}==”adde″, MODE=”0666″
+```
 
 
 But you should get yours using the tool lsusb.

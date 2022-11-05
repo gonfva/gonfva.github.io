@@ -87,11 +87,13 @@ What else? From lines 19-30 we load a filter. A filter, as you well know, is an 
 My web context in this case is quite short:
 
 
-<script src="https://gist.github.com/3811852.js?file=spring-mvc-context.xml"></script> As you can see there are 3 main groups:
+<script src="https://gist.github.com/3811852.js?file=spring-mvc-context.xml"></script>
+
+As you can see there are 3 main groups:
 
 + context:component-scan looks at the specified package for annotations to fill.
 + mvc:annotation-driven [fills some magic](http://stackoverflow.com/questions/3977973/whats-the-difference-between-mvcannotation-driven-and-contextannotation#comment4256810_3978283) relating validation, json and so on.
-+ InternalResourceViewResolver is a pretty standard way to point to where the JSP reside and the way they are named.</li></ol>
++ InternalResourceViewResolver is a pretty standard way to point to where the JSP reside and the way they are named.
 
 Nothing very fancy, you see.
 

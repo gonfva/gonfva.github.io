@@ -9,7 +9,7 @@ tags:
     - Developer
 ---
 
-As I wrote in a [previous post](https://gonfva.blogspot.com/2012/08/little-robot-i.html), I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
+As I wrote in a [previous post]({{< ref "2012-08-17-little-robot-i">}}), I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
 
     PLACE X,Y,F -> Places the robot in the x,y position facing F
     MOVE -> Move the robot 1 cell in the facing direction

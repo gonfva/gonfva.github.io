@@ -15,7 +15,7 @@ I wouldn't have brought it to this blog if it weren't for the last paragraph of 
 
 
 
-<blockquote>Two of the sources said Assange has also made the documents available to at least two other European publications -- the newspapers El Pais of Spain and Le Monde of France.</blockquote>
+    Two of the sources said Assange has also made the documents available to at least two other European publications -- the newspapers El Pais of Spain and Le Monde of France.
 
 
 That would suggest that government leaders implicated could be Spaniards or Frenchmen. Don't know if it's true.

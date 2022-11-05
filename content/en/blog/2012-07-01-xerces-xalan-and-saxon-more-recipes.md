@@ -9,7 +9,7 @@ tags:
   - Developer
 ---
 
-In a previous post I proposed [some tips for trying to manage and control the hell of XML and XPATH parsers](https://gonfva.blogspot.com/2012/01/xerces-and-xalan-recipes-for-win.html). However, as [one reader pointed](https://gonfva.blogspot.com/2012/01/xerces-and-xalan-recipes-for-win.html?showComment=1340120517700#c9002637107572975490), those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
+In a previous post I proposed [some tips for trying to manage and control the hell of XML and XPATH parsers]({{< ref "2012-01-31-xerces-and-xalan-recipes-for-win">}}). However, as one reader pointed (EDIT: This was in [my original blog](https://gonfva.blogspot.com/2012/01/xerces-and-xalan-recipes-for-win.html?showComment=1340120517700#c9002637107572975490)), those tips sometimes are not enough. What Simon explained may not seem obvious, but sadly for us (I came across a different problem with the same underlying cause), it is.
 
 In my previous post I explained how to make Java choose a class for a parser. But, unfortunately that's not enough when different libraries provide that class. And that happens to be the case with some classes that are both in Xalan an Saxon (Simon's case) and some Xerces classes (both in server and WEB-INF/lib in my case).
 
@@ -24,7 +24,6 @@ What can we do in that case? It's not easy to answer, and sometimes there's not 
 + Use $DOMAIN/lib folder instead of JRE/lib/ext (ops people get more comfortable, and it reduces the applications affected
 
 + Classloader-structure in [weblogic-application.xml](http://weblogic-application.xml/).
-
 
 + Play with classloaders. [This page from OWLS](http://docs.oracle.com/cd/E15051_01/wls/docs103/programming/classloading.html) is not very server specific and should give some hints.
 

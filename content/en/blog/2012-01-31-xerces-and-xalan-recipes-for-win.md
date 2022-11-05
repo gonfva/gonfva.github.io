@@ -9,9 +9,7 @@ tags:
   - Developer
 ---
 
-OK. I have explained [why Xerces and Xalan are a source of problems](https://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_18.html), and I have explained why [you shouldn't use System.setProperty to resolve](https://gonfva.blogspot.com/2012/01/things-about-xerces-xalan-and-saxon-i_29.html) them. In this post I wan't to give a few recipes to resolve Xerces and Xalan problems.
-
-
+OK. I have explained [why Xerces and Xalan are a source of problems]({{< ref "2012-01-18-things-about-xerces-xalan-and-saxon-i_18">}}), and I have explained why [you shouldn't use System.setProperty to resolve]({{< ref "2012-01-18-things-about-xerces-xalan-and-saxon-i">}}) them. In this post I wan't to give a few recipes to resolve Xerces and Xalan problems.
 
 1. Under no circumstances use System.setProperty anywhere in your application. I know I have already dedicated a post, but I wanted to stress it once more. Sometimes you'll need some specific parser (OC4J had a strange bug that needed a specific parser, and [Weblogic seems to have special needs](http://static.springsource.org/spring-ws/site/faq.html#saaj-weblogic10) too). If you need a specific parser, do it at container level (2nd  point), at application level (3rd point) or at the specific code (4th point).
 + If you have to define any property do it at the start of the container or the server. For example, in Weblogic 10.3.3 in Windows, we had to edit the file startWeblogic.cmd at the domain path, inserting the following line

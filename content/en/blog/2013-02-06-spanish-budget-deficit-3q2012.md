@@ -31,7 +31,7 @@ Now take [the data for the GDP](http://www.ine.es/en/daco/daco42/daco4214/tabcnt
 And now get the percentage.
 
 
-Budget deficit for 3Q2012 was **<span style="color: red; font-size: large;"> 8.37%</span>**. Down from 8.54% 2Q2012. And a commitment of 6.3% in Q42012
+Budget deficit for 3Q2012 was **8.37%**. Down from 8.54% 2Q2012. And a commitment of 6.3% in Q42012
 
 
 Austerity.

@@ -14,10 +14,9 @@ I lead a team that is transitioning a 9-year-old internal framework from a somew
 
 Today I was reading a book. And I've found [this](http://books.google.es/books?id=Gu8-_b9AN8gC&amp;printsec=frontcover&amp;hl=es#v=onepage&amp;q=syncrhonized&amp;f=false) :
 
-
-
-<span style="font-family: 'Courier New', Courier, monospace;">You declare this method as synchronized to make it thread-safe.</span>
-<blockquote class="tr_bq"><span style="font-family: 'Courier New', Courier, monospace;">package com.apress.springenterpriserecipes.sequence;
+```
+You declare this method as synchronized to make it thread-safe.
+package com.apress.springenterpriserecipes.sequence;
 public class SequenceGenerator {
 private String prefix;
 private String suffix;
@@ -45,7 +44,8 @@ buffer.append(initial + counter++);
 buffer.append(suffix);
 return buffer.toString();
 }
-}</span></blockquote>
+}
+```
 
 
 (mine is a newer version, but you get the point).
@@ -63,7 +63,8 @@ Many people could tell me "You're right, but the setters are not supposed to be 
 
 
 + Delete the setters and the default constructor (Spring allows it).
-+ Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.</li></ol>
++ Don't synchronize a whole method if you only need to be thread-safe the counter++. There is plenty of methods for doing it.
+
 And how would I do it?. Uhm. That's a whole post itselt, and it would depend on the class behavior.
 
 

@@ -14,8 +14,8 @@ In March 2014 I was made redundant (business unit closing).
 
 I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from "technical tests" in a matter of days
 
-+ Process A. Thanks for taking the time to complete our online testing. Unfortunately, your score did not meet the requirements of this role.</li></ul>
-+ Process B. Thanks for taking the time to take the test. I'm delighted to say that your solutions were all excellent</li></ul>
++ Process A. Thanks for taking the time to complete our online testing. Unfortunately, your score did not meet the requirements of this role.
++ Process B. Thanks for taking the time to take the test. I'm delighted to say that your solutions were all excellent
 
 They were ver similar positions in two different companies. And the kind of tests were very different indeed.
 

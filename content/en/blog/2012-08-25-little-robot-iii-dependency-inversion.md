@@ -9,7 +9,7 @@ tags:
     - Developer
 ---
 
-As I wrote some posts ago, [I received an assignment](https://gonfva.blogspot.com/2012/08/little-robot-i.html), and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to [fake the console interaction](https://gonfva.blogspot.com/2012/08/faking-console-in-ruby.html) (both stdin and stdout). I didn't consider dependy inversion.
+As I wrote some posts ago, [I received an assignment]({{< ref "2012-08-17-little-robot-i">}}), and I decided to do both in Java and in Ruby. When doing in Ruby I wanted to make sure I was able to test the UI, and not only the engine. For doing that, I chose to [fake the console interaction]({{< ref "2012-08-20-faking-console-in-ruby">}}) (both stdin and stdout). I didn't consider dependency inversion.
 
 
 Sometimes a higher level class A has to invoke methods in a lower level class. Let's say this lower level class tends to be class B. Typical approach (non DI) is to make class A depend on class B. Dependency inversion is to make class B implement some contract associated with class A (the dependency is inverted).

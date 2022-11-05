@@ -33,7 +33,7 @@ The real process is very easy, but I had some issues getting to there. Because o
 
 
 + I didn't even know the most basic terminology about the process (not that I am an expert know, you know) and I couldn't manage to get a mental picture of it.
-+ Most of the pages are Microsoft Windows based. I have Linux at home. Linux Mint 64bits, to get things more complicated (as we'll see). </li></ol>
++ Most of the pages are Microsoft Windows based. I have Linux at home. Linux Mint 64bits, to get things more complicated (as we'll see).
 
 
 So in my next post I'll try to explain the process in a sort of newbie post. HOWEVER. Word of caution. You'll probably void the warranty and you could brick your phone. So this is not something for the faint of heart.

@@ -9,7 +9,7 @@ tags:
   - Technology
 ---
 
-I wrote on the previous post that [for a particular combination of search terms, Yahoo seemed to offer better results than Google](https://gonfva.blogspot.com/2008/11/yahoo-declining-stari.html). I read long time ago that in fact [search was turning to be a commodity](http://jeremy.zawodny.com/blog/archives/006270.html). I didn’t believe then, and I’m not convinced yet, despite the simple test I described on my post.
+I wrote on the previous post that [for a particular combination of search terms, Yahoo seemed to offer better results than Google]({{< ref "2008-11-19-yahoo-declining-stari">}}). I read long time ago that in fact [search was turning to be a commodity](http://jeremy.zawodny.com/blog/archives/006270.html). I didn’t believe then, and I’m not convinced yet, despite the simple test I described on my post.
 
 Anyway Yahoo has services that are (in my opinion) far better than Google’s. My favourite is a nearly unknown project called [myweb](http://myweb.yahoo.com/), which could be said to be related to [Google Bookmarks](http://www.google.com/bookmarks/) or [Google Notebook](http://www.google.com/notebook). I also like [Yahoo Pipes](https://pipes.yahoo.com) although I think it needs something easier to extract information from pages (not structured sources), something like [Dapper](http://www.dapper.net/). Of course, you also have one of the best news sites with [Yahoo news](http://news.yahoo.com/), and the killer-app of online photography (this one an acquisition): [Flickr](http://www.flickr.com/).
 

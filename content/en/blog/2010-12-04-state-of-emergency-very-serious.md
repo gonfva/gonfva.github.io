@@ -12,10 +12,14 @@ tags:
 It's in the news. [Spanish Government has declared "State of Emergency"](http://www.boe.es/boe/dias/2010/12/04-2/pdfs/BOE-A-2010-18683.pdf). This declaration gives special powers to the government [like the ability to limit the circulation of people, commandeer things or even enter in private properties (but not homes)](http://noticias.juridicas.com/base_datos/Admin/lo4-1981.html#a11).
 It's somewhat similar to State of Siege, but lower in intensity. Being Spain a democracy one could think that this kind of declaration should be reserved to extreme cases. That's true in the law. [It can be declared only due to four reasons](http://noticias.juridicas.com/base_datos/Admin/lo4-1981.html#a4):
 
-+ Catastrophic events (like floods, earthquakes...)</li>
-<li>Sanitary crisis</li>
-<li>Stopping of Public Services but only in connection with one of the other points.</li>
-<li>Shortage of first necessity products</li></ol>
++ Catastrophic events (like floods, earthquakes...)
+
++ Sanitary crisis
+
++ Stopping of Public Services but only in connection with one of the other points.
+
++ Shortage of first necessity products
+
 The declaration of today seems motivated by what seems to be a salvage strike of air traffic controller. It's being restricted to airports. And the declaration invokes Public services (point 3) with references to point 1 and point 4.
 
 

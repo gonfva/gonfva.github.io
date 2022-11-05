@@ -39,14 +39,15 @@ One could think "why bother? No letter, no taxes". Well. Two reasons.
 
 
 + I have two daughters and I need to apply to get a school for them. But I cannot apply without a "Correct proof of address" and "Correct proof is a current council tax bill/statement or council tax reference number".
-+ If I'm going to have to pay amount x, I prefer to do it in as much months as possible. It is not the same to pay x/6 in 6 months than to pay the whole x in one month, and I prefer to do it in 6 months.</li></ol>
++ If I'm going to have to pay amount x, I prefer to do it in as much months as possible. It is not the same to pay x/6 in 6 months than to pay the whole x in one month, and I prefer to do it in 6 months.
 
 
 This time I received an automated reply with the following:
 
 
 
-<blockquote class="tr_bq">"Emails are treated with the same level of importance as other communications, i.e. post, telephone and fax. We will do our very best to respond to your email within 20 days."</blockquote>
+  "Emails are treated with the same level of importance as other communications, i.e. post, telephone and fax. We will do our very best to respond to your email within 20 days."
+
 20 days for replying an email?.
 
 
