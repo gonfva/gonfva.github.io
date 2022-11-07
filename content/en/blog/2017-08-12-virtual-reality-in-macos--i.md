@@ -35,13 +35,17 @@ Consider if you could [see the furniture in your own house](https://www.macrumor
 
 IKEA is working on it but there are others ready too!Or maybe the next iteration navigational maps
 
-{{< tweet user="AndrewProjDent" id="888380207962443777" >}}_Super cool demo of navigation on top of your camera. Watch it._
+{{< tweet user="AndrewProjDent" id="888380207962443777" >}}
+
+Super cool demo of navigation on top of your camera. Watch it.
 
 Or even more simple things…
 
 Do you need tape measures?My prediction is that AR is coming to “the masses” in the very short term (6/12 months), with a second phase based on “glasses” two years down the road.
 
-> {{< tweet user="BenedictEvans" id="872573445208408065" >}}### If AR is the now, why bet on VR?
+{{< tweet user="BenedictEvans" id="872573445208408065" >}}
+
+### If AR is the now, why bet on VR?
 
 AR is now. VR is maybe 3 years away. But I think this is **the best time** to learn and work on my own ideas with that prediction.
 

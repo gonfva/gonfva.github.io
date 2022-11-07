@@ -69,11 +69,13 @@ Sí, sí. Ya sé que no todo puede solucionarse con tecnología. Pero soy ingeni
 
 Recuerdo lo primero que pensé cuando vi los primero signos de la polémica (denegación de servicio).
 
-> Puedo solucionarlo. Voy a crear un IVR (un sistema de esos de pulse 1 si desea…) utilizando Twilio para decir en voz alta el horario de apertura y ofrecer otras opciones.Hasta que me dí cuenta que esos sistemas ya existen. Y que si un negocio pequeño no los compra, tampoco compraría mi solución..
+Puedo solucionarlo. Voy a crear un IVR (un sistema de esos de pulse 1 si desea…) utilizando Twilio para decir en voz alta el horario de apertura y ofrecer otras opciones.Hasta que me dí cuenta que esos sistemas ya existen. Y que si un negocio pequeño no los compra, tampoco compraría mi solución..
 
 Pero mi idea “dentro de unos pocos años va a haber charlas que parecen entr humanos pero en la que solo hay máquinas”, no es para nada original. En el campo del humor, me encanta el siguiente tweet (en inglés):
 
-{{< tweet user="Javi" id="994624094715891713" >}}_En el futuro nuestro asistente llamará al asistente del restaurante :D_
+{{< tweet user="Javi" id="994624094715891713" >}}
+
+En el futuro nuestro asistente llamará al asistente del restaurante :D
 
 Máquinas habando con máquinas no es la única solución técnica. Para el problema de denegación de servicio con cancelaciones y mal quedas, aquí va mi discursito para conseguir financiación:
 
@@ -89,7 +91,9 @@ También existe la tentación de que la Inteligencia Artificial Generalista pued
 
 **PD**: Decidí escribir el artículo original cuando llegué a este Tweet.
 
-{{< tweet user="WillOremus" id="995057583445557248" >}}_Alguien que se enfada porque alguien conocido hace Fav_
+{{< tweet user="WillOremus" id="995057583445557248" >}}
+
+Alguien que se enfada porque alguien conocido hace Fav.
 
 [Marc Andreessen](https://medium.com/u/fa65e64cf273) es brillante. Puede que tenga opiniones controvertidas. No siempre estoy de acuerdo con todas sus opiniones. [Benedict Evans](https://medium.com/u/78c5166b8328) es un caso similar. Pero siempre trato de entenderles porque **siempre** ponen algo sobre lo que no había pensado.
 

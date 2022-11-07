@@ -20,7 +20,9 @@ Or being able to leak information of the users in an online forum that involved 
 
 Or being able to login into a super known Spanish portal using the “recover my password” system, any account name and some specific code.
 
-> ‘; or 1=1 used to be a magic codeFor some time “View page source” was compulsive while navigating, and asking “what if” was a second nature.
+> ‘; or 1=1 used to be a magic code
+
+For some time “View page source” was compulsive while navigating, and asking “what if” was a second nature.
 
 #### Notifications and responses
 
@@ -43,7 +45,9 @@ I had been in contact with good guys in the [security industry](http://web.archi
 
 I kept sending messages to the relevant people in the company. At one point I contacted a lawyer who advised me to go full frontal. So I contacted a journalist. A couple of days before the journalist was going to break the piece of news, they removed the “Recover my password” system, and they deleted my account.
 
-> They said nothing and they deleted my accountYou receive a tip from someone (many messages). (S)he is skilled above average (believe me, not too much). And your only reply is to shut down his/her account. A free account. That can be recreated.
+> They said nothing and they deleted my account
+
+You receive a tip from someone (many messages). (S)he is skilled above average (believe me, not too much). And your only reply is to shut down his/her account. A free account. That can be recreated.
 
 #### That was security in the year 2000
 

@@ -64,7 +64,9 @@ In many of the examples in SciFi, there are the same questions many of us ask th
 
 For me, one of the most troublesome of the possible models of an AI is [Blade Runner](https://en.wikipedia.org/wiki/List_of_Blade_Runner_characters#Roy_Batty). **Who am I?**
 
-{{< tweet user="moren1ke" id="703674115681624064" >}}_Being intelligent, self aware and having memories. How do I know I’m not a robot pressing keys in a laptop?_
+{{< tweet user="moren1ke" id="703674115681624064" >}}
+
+Being intelligent, self aware and having memories. How do I know I’m not a robot pressing keys in a laptop?
 
 It is inevitable to wonder about oneself.
 
@@ -78,8 +80,10 @@ The fourth game between AlphaGo and Lee Sedol finished with AlphaGo resigning.
 
 Shortly after the game, there were some jokes about maybe AlphaGo losing on purpose
 
-> {{< tweet user="karpathy" id="708943940485914625" >}}
-> {{< tweet user="StatsmanBruno" id="708941065877737472" >}} [Lee Sedol did win](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/). He played better.
+{{< tweet user="karpathy" id="708943940485914625" >}}
+{{< tweet user="StatsmanBruno" id="708941065877737472" >}}
+
+[Lee Sedol did win](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/). He played better.
 
 But when a truly general AI appears, chances are it will try to stay hidden for some time.
 

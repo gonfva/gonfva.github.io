@@ -21,11 +21,15 @@ Imagine you get non-privileged access to an instance that has a role with _ec2:S
 
 As I came to think while reading the following tweet … “do I know the implications of 5985 different privileges?”
 
-{{< tweet user="0xdabbad00" id="1161117748119781376" >}}_Do you know what are the implications of those 5985 privileges?_
+{{< tweet user="0xdabbad00" id="1161117748119781376" >}}
+
+Do you know what are the implications of those 5985 privileges?
 
 It turns out that I don’t, and below you can find what it could happen if you don’t fully understand either the implications.
 
-{{< tweet user="Darkarnium" id="1065600704134475776" >}}_This is what can happen when you don’t understand implications for one of those 5985 privileges_
+{{< tweet user="Darkarnium" id="1065600704134475776" >}}
+
+This is what can happen when you don’t understand implications for one of those 5985 privileges
 
 I haven’t tested the steps detailed in those tweets, but it seems you can take control of a machine just by changing some configuration (*ec2:ModifyInstanceAttribute) *and restarting the instance.
 

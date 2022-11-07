@@ -16,7 +16,9 @@ It’s also a trend that reinforces itself. You need to be in the know if you wa
 
 When I read the title of this post in a [tweet](https://twitter.com/joewalnes/status/639593769852125184), I thought “Ha. Joe Walnes strikes again”
 
-{{< tweet user="joewalnes" id="639593769852125184" >}}_He sometimes [uses irony](https://twitter.com/joewalnes/status/631950152006279168). So I was [not the only one considering it a new joke](https://twitter.com/joelash/status/639616612748906496)._
+{{< tweet user="joewalnes" id="639593769852125184" >}}
+
+He sometimes [uses irony](https://twitter.com/joewalnes/status/631950152006279168). So I was [not the only one considering it a new joke](https://twitter.com/joelash/status/639616612748906496).
 
 But then I started thinking about it. What if it wasn’t a joke?
 

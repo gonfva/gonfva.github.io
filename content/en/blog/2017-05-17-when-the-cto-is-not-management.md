@@ -8,7 +8,9 @@ tags:
 categories: [Technology]
 ---
 
-Tech startup founded by non-tech founders. Founders know little about technology, so they hire a CTO like they would hire an accountant. CTO is not part of management. Technology gets isolated. #### Choose your CTO… and then trust her
+Tech startup founded by non-tech founders. Founders know little about technology, so they hire a CTO like they would hire an accountant. CTO is not part of management. Technology gets isolated.
+
+#### Choose your CTO… and then trust her
 
 A friend of mine got hired as a CTO three years ago. What started as an exciting position setting up the whole team, [technology](https://hackernoon.com/tagged/technology) and processes for the company, ended up sidelined, micromanaged, with no responsibility over the team, and no decision over the technology.
 

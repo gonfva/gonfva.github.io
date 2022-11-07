@@ -68,7 +68,9 @@ I remember the first thing I thought when I saw the first steps of the controver
 
 But my idea “in a few years there will be human-like conversations with only androids involved”, is not original at all. In the LOL camp:
 
-{{< tweet user="Javi" id="994624094715891713" >}}_Machines talking to machines is not the only technical solution. _
+{{< tweet user="Javi" id="994624094715891713" >}}
+
+Machines talking to machines is not the only technical solution.
 
 For the denial of service with cancellations and no-show, here is my pitch:
 
