@@ -10,7 +10,9 @@ categories: [Jobs]
 
 This is a story for my friend C. He didn’t know what was behind this old tweet
 
-> [](https://twitter.com/gonfva/status/862006492324544512)So I did a quick summary but I didn’t do the honours.
+{{< tweet user="gonfva" id="862006492324544512" >}}
+
+So I did a quick summary but I didn’t do the honours.
 
 Here goes the detail. I won’t name the company (it’s bigco, a big company here in the UK).
 

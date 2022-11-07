@@ -34,7 +34,8 @@ However, Twitter is assuming
 2. that no matter what Twitter does, active users will keep coming to the site.
 3. that they can convince people that want _packaged-content_ to use the content Twitter prepares for them.
 4. that all of those who try twitter and leave it, drop out because they are _packaged-content_ users.
-   I would bet that those assumptions are also wrong. The most dangerous one is the third assumption. Because, I do think there is no possible evolution of Twitter for people who don’t like Twitter.
+
+I would bet that those assumptions are also wrong. The most dangerous one is the third assumption. Because, I do think there is no possible evolution of Twitter for people who don’t like Twitter.
 
 #### What can Twitter do?
 
@@ -50,7 +51,9 @@ But there are plenty of others possibilities. Compete in algorithms with people 
 
 Meanwhile, for the people who would like Twitter, fix what people is really asking: onboarding and bullying.
 
-> [](https://twitter.com/BenedictEvans/status/696040383315255296)Onboarding is, in my opinion, the low hanging fruit in terms of fixing and bringing people into the funnel. I just tested it. It’s horrible. First the categories are difficult to figure out. There are things that looks very similar to me: Entretainment, Television, Music, Actor and actresses, comedians… Then even if you select only one category, you gets other things. I just selected Charities and NGO and got offered [Ant&Dec](https://twitter.com/antanddec) (UK comediants). And [Jack Whitehall](https://twitter.com/jackwhitehall) (another comedian) is in any option. IT anywhere? Economy? Politics? Alerts? I selected Literature and got offered and account run by Dan Brown’s team but I couldn’t find [J.K.Rowling](https://twitter.com/jk_rowling) (which happens to be both a celebrity, write interesting books and tweets and has an honest non-BS dialogue in Twitter)
+{{< tweet user="BenedictEvans" id="696040383315255296" >}}
+
+Onboarding is, in my opinion, the low hanging fruit in terms of fixing and bringing people into the funnel. I just tested it. It’s horrible. First the categories are difficult to figure out. There are things that looks very similar to me: Entretainment, Television, Music, Actor and actresses, comedians… Then even if you select only one category, you gets other things. I just selected Charities and NGO and got offered [Ant&Dec](https://twitter.com/antanddec) (UK comediants). And [Jack Whitehall](https://twitter.com/jackwhitehall) (another comedian) is in any option. IT anywhere? Economy? Politics? Alerts? I selected Literature and got offered and account run by Dan Brown’s team but I couldn’t find [J.K.Rowling](https://twitter.com/jk_rowling) (which happens to be both a celebrity, write interesting books and tweets and has an honest non-BS dialogue in Twitter)
 
 #### Conclusion
 

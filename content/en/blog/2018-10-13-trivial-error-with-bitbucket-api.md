@@ -37,6 +37,7 @@ The documentation for the Bitbucket API is [reasonably detailed](https://develop
 
 To the point I was doing something like this
 
+```
 curl -X POST https://<usr>:<pwd>[@api](http://twitter.com/api "Twitter profile for @api").bitbucket.org/2.0/repositories/<namespace>/<project>/pullrequests -d '{
 "title": "test",
 "state": "OPEN",
@@ -59,9 +60,17 @@ curl -X POST https://<usr>:<pwd>[@api](http://twitter.com/api "Twitter profile f
 "name": "<branch_name>"
 }
 }
-}'and I was getting the following error
+}'
+```
 
-{“type”: “error”, “error”: {“fields”: {“source”: [“This field is required.”], “title”: [“This field is required.”]}, “message”: “Bad request”}}How was it possible? I was sending the source field and the title field, but it was as if it wasn’t being received.
+and I was getting the following error
+
+```
+{“type”: “error”, “error”: {“fields”: {“source”: [“This field is required.”], “title”: [“This field is required.”]}, “message”: “Bad request”}}
+```
+
+
+How was it possible? I was sending the source field and the title field, but it was as if it wasn’t being received.
 
 It is very very difficult to debug an API only by invocations. I dedicated a few hours of trying to debug the issue, with different combinations of parameters.
 
@@ -69,6 +78,10 @@ In the end, the issue was much more simpler.
 
 You need to send a header to indicate it is a json request.
 
-curl <...> -H "Content-Type: application/json"Probably others will need less time debugging the issue. IMO Bitbucket should say “you need to send json content-type”.
+```
+curl <...> -H "Content-Type: application/json"
+```
+
+Probably others will need less time debugging the issue. IMO Bitbucket should say “you need to send json content-type”.
 
 But in any case, if you arrive from Google, now you know it.

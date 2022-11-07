@@ -23,7 +23,9 @@ But there are no good solutions. And among the available alternatives, UK's gove
 
 At the end of the article I will give my opinion (again, I'm not an specialist nor a politician, just a citizen). But before that, I want to explain what I perceive they are trying. It's based on multiple sources, but in particular this press conference from Boris Johnson
 
-> [](https://twitter.com/10DowningStreet/status/1238146728164909059)Boris Johnson's press conferenceAlong the same line, this interview with the Chief Scientific Advisor
+{{< tweet user="10DowningStreet" id="1238146728164909059" >}}_Boris Johnson's press conference_
+
+Along the same line, this interview with the Chief Scientific Advisor
 
 [**Coronavirus: Chief Scientific Adviser's response to claims government are not doing enough**
 *The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/ )
@@ -36,7 +38,9 @@ The target of those policies is trying to minimise the contagion, waiting for th
 
 But the vaccine, in the best case scenario will take 12–18 months. Absolute control requires an important effort. Society cannot keep that tension for months or even years. A society can stop for a few weeks. But when time passes, societies start relaxing.
 
-> [](https://twitter.com/StephenMcDonell/status/1238755438738280448)A glorious day in Beijing. After a few terrible weeks, people start relaxing. I hope we don't get a blip in two weeks.When the society relaxes, the epidemic starts again.
+{{< tweet user="StephenMcDonell" id="1238755438738280448" >}}_A glorious day in Beijing._
+
+After a few terrible weeks, people start relaxing. I hope we don't get a blip in two weeks.When the society relaxes, the epidemic starts again.
 
 The problem is the rebound effect.
 
@@ -54,7 +58,9 @@ This is a political response based on science.
 
 You may have heard that a group of scientist has signed a letter against the policy. Apparently among those scientists there are no epidemiologists.
 
-> [](https://twitter.com/paulwaugh/status/1238971152002883587)However, there are people relevant in the field that are also concerned. See this letter from the British Society for Immunology that sounds informedly worried:
+{{< tweet user="paulwaugh" id="1238971152002883587" >}}
+
+However, there are people relevant in the field that are also concerned. See this letter from the British Society for Immunology that sounds informedly worried:
 
 [**BSI open letter to Government on SARS-CoV-2 outbreak response**
 *14 March 2020 British Society for Immunology members are acutely aware of the implications that the emergence of the…*www.immunology.org](https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response "https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response") [](https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response)#### End of contention
@@ -67,7 +73,7 @@ A secondary effect of this plan is that they may end up with group immunity (als
 
 However, it seems that the plan IS NOT to get herd immunity. But assume that contention is not possible and just try to handle timing of measures (I don't think the message is working properly, because many of us perceive the goal is herd immunity)
 
-> [](https://twitter.com/AdamJKucharski/status/1238821517821186048)The virus cannot be controlled in the long term
+{{< tweet user="AdamJKucharski" id="1238821517821186048" >}}_The virus cannot be controlled in the long term_
 
 ### Risks
 
@@ -80,7 +86,9 @@ The risks are really obvious:
 
 There is also another report where there seems to be some immunity, at least for some time. And other reports where the use of blood plasma from people that have been infected and cured help infected sick people to recover.
 
-> [](https://twitter.com/florian_krammer/status/1239036927535448069)ImmunityIn any case, it doesn't really matter a lot if there is going to be immunity in the short term, in the long germ, or for some cases none at all. If the diseases is not controllable and an important part of the society is going to pass the disease, it is better to just try and handle it.
+{{< tweet user="florian_krammer" id="1239036927535448069" >}}_Immunity_
+
+In any case, it doesn't really matter a lot if there is going to be immunity in the short term, in the long germ, or for some cases none at all. If the diseases is not controllable and an important part of the society is going to pass the disease, it is better to just try and handle it.
 
 Regarding the sick and elderly, their behaviour is probably already different from the rest of the society, and I suspect that the government has already planned some measures to isolate them once the peak is approaching. For example, they gave a lot of emphasis on the closing of schools meaning sending children to grandparents in the worst moment, and why that is not desirable. There are also some [rumors of isolation for up to four months](https://www.itv.com/news/2020-03-14/elderly-to-be-quarantined-for-four-months-in-wartime-style-mobilisation-to-combat-coronavirus/), although later those rumors have been dismissed (BBC radio 4 this morning on an interview to Scotland's CSA, no link). I understand the government has put a lot of thought in tools to reduce risks.
 
@@ -113,7 +121,9 @@ They have other tools like these. Including, for example increase seven-fold the
 
 A possible tool (the idea is not mine) is about schools and kids.
 
-> [](https://twitter.com/iandonald_psych/status/1238518383693496320)Schools are possibly going to be a transmission vector and emergency brakeChildren don't **_usually_** get very ill. So it is possible that schools may end up being a tool to handle the infection rate. The moment that the infection rate is very high, they will close schools along other measures. However, that period cannot be very long, because it's very difficult to have children without contact with other children. They get bored. They can be isolated 2–3 days, 1–2 weeks. Then to the playground to play with other children. And even worse accompanied with their grandparents.
+{{< tweet user="iandonald_psych" id="1238518383693496320" >}}_Schools are possibly going to be a transmission vector and emergency brake_
+
+Children don't **_usually_** get very ill. So it is possible that schools may end up being a tool to handle the infection rate. The moment that the infection rate is very high, they will close schools along other measures. However, that period cannot be very long, because it's very difficult to have children without contact with other children. They get bored. They can be isolated 2–3 days, 1–2 weeks. Then to the playground to play with other children. And even worse accompanied with their grandparents.
 
 Yes, it looks to me a huge risk. I've got kids and I live in the UK.
 

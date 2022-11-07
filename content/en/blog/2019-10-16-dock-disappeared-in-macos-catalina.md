@@ -15,17 +15,23 @@ Well, here I am, to help you before Apple does.
 
 Open a terminal.
 
-> How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier. How the hell spotlight decides those things? I don’t know.
+> How? — you may ask — my dock doesn’t exist. I don’t know how to open anything
+
+Cmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier. How the hell spotlight decides those things? I don’t know.
 
 Once you have a terminal, type the following
 
+```
 defaults delete com.**apple**.**dock**; killall **Dock**
+```
 
 You will now see your dock. However after restarting you will face the same issue.
 
 So before restarting, I opened Finder, and then I launched the Go dialog into the following folder
 
+```
 ~/Library/Application Support
+```
 
 ![](/img/1*wG8F3yAXZIV_A6zNekEzvQ.png)
 

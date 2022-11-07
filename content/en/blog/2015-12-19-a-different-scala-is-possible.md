@@ -48,7 +48,7 @@ Jessica is a prolific and very experienced developer. She also comes from Enterp
 
 Another relevant example is [Li Haoyi](https://twitter.com/li_haoyi). He’s a core contributor to at least two very interesting Scala projects: [Scala.js](http://www.scala-js.org/) (a port of Scala that generates Javascript) and [Ammonite](https://github.com/lihaoyi/Ammonite) (a shell script with a Scala syntax) He also develops in Python which gives him a unique perspective. And he’s getting increasingly vocal about _smartness_ in the Scala world. See some of his latest tweets.
 
-> [](https://twitter.com/li_haoyi/status/677192563455954944) > [](https://twitter.com/li_haoyi/status/677193847928020992) > [](https://twitter.com/li_haoyi/status/677966448224919554) > [](https://twitter.com/li_haoyi/status/677967362658734080)I perceive there are many more people. People that don’t care if their Scala code is pure functional or not. People that make [useful tools](https://skillsmatter.com/skillscasts/6503-keynote-spark-hadoop-and-how-it-relates-to-scala).
+> {{< tweet user="li_haoyi" id="677192563455954944" >}} > {{< tweet user="li_haoyi" id="677193847928020992" >}} > {{< tweet user="li_haoyi" id="677966448224919554" >}} > {{< tweet user="li_haoyi" id="677967362658734080" >}}I perceive there are many more people. People that don’t care if their Scala code is pure functional or not. People that make [useful tools](https://skillsmatter.com/skillscasts/6503-keynote-spark-hadoop-and-how-it-relates-to-scala).
 
 #### Final thoughts
 

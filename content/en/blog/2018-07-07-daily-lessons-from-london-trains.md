@@ -63,7 +63,9 @@ I totally understand franchises need to maximise profit. And that sometimes, the
 
 It seems there is one station in my line that don’t accept trains with twelve coaches. It would be fine as I’ve seen in other places, some doors can be left closed in that station. But in the last couple of years I haven’t boarded a 10 coaches train. Despite feeling cattle transport day-in, day-out, trains have more than 8 coaches in my line. And in some occasions I’ve had 6-car trains (that I decided not to board)
 
-> [](https://twitter.com/mtpennycook/status/785894110779572224)Yes. This is a Member of Parliament complaining on Twitter**Parallels**: Ryanair [introducing a new policy and then complaining](https://www.independent.co.uk/travel/news-and-advice/ryanair-luggage-rules-baggage-check-in-bags-carry-on-gate-flights-a8365546.html).
+{{< tweet user="mtpennycook" id="785894110779572224" >}}_Yes. This is a Member of Parliament complaining on Twitter_
+
+**Parallels**: Ryanair [introducing a new policy and then complaining](https://www.independent.co.uk/travel/news-and-advice/ryanair-luggage-rules-baggage-check-in-bags-carry-on-gate-flights-a8365546.html).
 
 **Lesson**: Some things are beyond your control. But there are others that are under your control even if it’s more expensive.
 

@@ -21,7 +21,9 @@ Pero no hay solución buena. Y entre las soluciones disponibles, el gobierno de 
 
 Al final de todo daré mi opinión. Pero antes, trato de explicar mi percepción sobre lo que están intentando. Está basado en muchas fuentes, pero recomiendo la rueda de prensa de Boris Johnson.
 
-> [](https://twitter.com/10DowningStreet/status/1238146728164909059)Vídeo con la rueda de prensa de Boris JohnsonEn la misma línea, una entrevista al Chief Scientific Advisor, el equivalente a Pedro Simón.
+{{< tweet user="10DowningStreet" id="1238146728164909059" >}}_Vídeo con la rueda de prensa de Boris Johnson_
+
+En la misma línea, una entrevista al Chief Scientific Advisor, el equivalente a Pedro Simón.
 
 [**Coronavirus: Chief Scientific Adviser's response to claims government are not doing enough**
 *The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/)
@@ -34,7 +36,9 @@ El objetivo de esas políticas es minimizar el contagio, a la espera de la vacun
 
 Pero la vacuna, en el mejor de los casos, tardará 12–18 meses. El control absoluto, requiere un esfuerzo muy importante. Las sociedades no podemos mantener esa tensión durante meses o años. La sociedad puede parar unas semanas. Pero cuando pasa el tiempo, las sociedades se relajan.
 
-> [](https://twitter.com/StephenMcDonell/status/1238755438738280448)Un día estupendo en Beijing. Después de unas semanas terribles, la gente se relaja. ¿Habrá blip en dos semanas?Y cuando la sociedad se relaja, la epidemia vuelve aparecer. **El problema es el rebote**. Mira la curva azul
+{{< tweet user="StephenMcDonell" id="1238755438738280448" >}}_Un día estupendo en Beijing._
+
+Después de unas semanas terribles, la gente se relaja. ¿Habrá blip en dos semanas?Y cuando la sociedad se relaja, la epidemia vuelve aparecer. **El problema es el rebote**. Mira la curva azul
 
 ![](/img/0*nwI-CA9KbftQHcuH)_El rebote. En azul_
 
@@ -46,7 +50,9 @@ El modelo de UK, es distinto. Han estado pensando en este tema durante más de 1
 
 Esto es una respuesta política basada en ciencia. Es posible que hayas leído que un grupo de científicos ha firmado una carta en contra. Resulta que entre esos científicos no hay epidemiólogos.
 
-> [](https://twitter.com/paulwaugh/status/1238971152002883587)Científicos opinando de cosas en las que no son expertosHace unos días, decidieron que la fase de contención se había acabado. A partir de ahora solo iban a testear a los que ingresen en el hospital. Porque el plan cambia.
+{{< tweet user="paulwaugh" id="1238971152002883587" >}}_Científicos opinando de cosas en las que no son expertos_
+
+Hace unos días, decidieron que la fase de contención se había acabado. A partir de ahora solo iban a testear a los que ingresen en el hospital. Porque el plan cambia.
 
 Partiendo de la premisa de que la contención ya no funciona, pero que parar la sociedad durante largo tiempo tampoco, el plan ahora es intentar regular el paso de la enfermedad a través de la sociedad, intentando conseguir que la población más frágil (enfermos y personas mayores) NO se infecten y que los hospitales NO colapsen.
 
@@ -54,7 +60,7 @@ Un efecto secundario del plan es que podría crear inmunidad de grupo (“herd i
 
 Pero parece que el plan NO es conseguir inmunidad de grupo, sino asumir que la contención ya no es posible y gestionar los tiempos (creo que ahí no están transmitiendo muy bien, porque inicialmente yo sí pensaba que el plan era inmunidad de grupo)
 
-> [](https://twitter.com/AdamJKucharski/status/1238821517821186048)El virus no es controlable en el largo plazo.
+{{< tweet user="AdamJKucharski" id="1238821517821186048" >}}_El virus no es controlable en el largo plazo._
 
 #### Riesgos
 
@@ -92,7 +98,9 @@ Y tienen muchas herramientas de este tipo. Incluyendo por ejemplo multiplicar po
 
 De particular interés, por ejemplo, (la idea no es mía) los colegios y los niños.
 
-> [](https://twitter.com/iandonald_psych/status/1238518383693496320)Los colegios van a ser vector de contacto y freno de manoLos niños parece que **_generalmente_** pasan la enfermedad bastante bien. Así que es posible que sea una herramienta sobre la que manejar la tasa de infección. En el momento en que la infección sea muy rápida, junto con otras medidas, cerrarán los colegios. Pero ese periodo no puede ser muy largo, porque no puedes tener a niños en casa sin contacto con otros niños. Se aburren. Duran 2/3 días, una o dos semanas. Y luego al parque con los abuelos a seguir pasándose bichos junto a personas de salud frágil.
+{{< tweet user="iandonald_psych" id="1238518383693496320" >}}_Los colegios van a ser vector de contacto y freno de mano_
+
+Los niños parece que **_generalmente_** pasan la enfermedad bastante bien. Así que es posible que sea una herramienta sobre la que manejar la tasa de infección. En el momento en que la infección sea muy rápida, junto con otras medidas, cerrarán los colegios. Pero ese periodo no puede ser muy largo, porque no puedes tener a niños en casa sin contacto con otros niños. Se aburren. Duran 2/3 días, una o dos semanas. Y luego al parque con los abuelos a seguir pasándose bichos junto a personas de salud frágil.
 
 Sí, también a mí me parece un riesgo brutal. Vivo en el Reino Unido, con hijas en edad escolar. ¿Qué pasa con los chavales con asma?
 

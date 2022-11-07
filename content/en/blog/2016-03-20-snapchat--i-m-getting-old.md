@@ -16,7 +16,9 @@ Around a month ago, I installed the app, started registering, think twice…
 
 Now, I’ve discovered that Snapchat is really a thing outside teenagers.
 
-> [](https://twitter.com/pt/status/711581734588944386)And you know what?
+{{< tweet user="pt" id="711581734588944386" >}}
+
+And you know what?
 
 I don’t care.
 

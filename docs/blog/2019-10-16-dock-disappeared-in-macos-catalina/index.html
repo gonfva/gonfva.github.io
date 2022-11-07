@@ -68,7 +68,7 @@
       "datePublished": "2019-10-16 18:03:00 \u002b0000 UTC",
       "dateModified" : "2019-10-16 18:03:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2019-10-16-dock-disappeared-in-macos-catalina\/",
-      "wordCount" : "171",
+      "wordCount" : "172",
       "keywords" : ["Blog"]
     }
   
@@ -125,13 +125,16 @@
 <p>Well, here I am, to help you before Apple does.</p>
 <p>Open a terminal.</p>
 <blockquote>
-<p>How? — you may ask — my dock doesn’t exist. I don’t know how to open anythingCmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier. How the hell spotlight decides those things? I don’t know.</p>
+<p>How? — you may ask — my dock doesn’t exist. I don’t know how to open anything</p>
 </blockquote>
+<p>Cmd+Space to open spotlight, type terminal, but don’t press enter, yet, because the default for terminal sometimes is… terminal-notifier. How the hell spotlight decides those things? I don’t know.</p>
 <p>Once you have a terminal, type the following</p>
-<p>defaults delete com.<strong>apple</strong>.<strong>dock</strong>; killall <strong>Dock</strong></p>
+<pre><code>defaults delete com.**apple**.**dock**; killall **Dock**
+</code></pre>
 <p>You will now see your dock. However after restarting you will face the same issue.</p>
 <p>So before restarting, I opened Finder, and then I launched the Go dialog into the following folder</p>
-<p>~/Library/Application Support</p>
+<pre><code>~/Library/Application Support
+</code></pre>
 <p><img src="/img/1*wG8F3yAXZIV_A6zNekEzvQ.png" alt=""></p>
 <p>To open the Go dialog (“Go to the folder”) press CMD+SHIFT+G</p>
 <p>Once in the folder ~/Library/Application Support, you have to delete the folder Dock.</p>

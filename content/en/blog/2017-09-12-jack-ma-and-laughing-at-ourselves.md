@@ -14,7 +14,9 @@ I must confess he’s always amazing me. He’s a guy that it’s used to being 
 
 His latest video really gave me goose-bumps.
 
-> [](https://twitter.com/yicaichina/status/907095344902684672)The talk afterwards in this [other video](https://twitter.com/supchinanews/status/907693869428592640) worths a readWatch it. Really. A guy that’s super-important and super-rich.
+> {{< tweet user="yicaichina" id="907095344902684672" >}}_The talk afterwards in this [other video](https://twitter.com/supchinanews/status/907693869428592640) worths a read_
+
+Watch it. Really. A guy that’s super-important and super-rich.
 
 And he puts himself in the line.
 

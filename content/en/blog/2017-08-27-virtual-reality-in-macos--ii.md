@@ -49,7 +49,9 @@ I considered going for the i7, but thought it didn’t worth it, but definitely 
 
 Does it work with other models? I don’t know. This guy seems to have used [Apple’s offer](https://developer.apple.com/development-kit/external-graphics/) to set an external GPU on a Macbook Pro
 
-> [](https://twitter.com/AnalyticMike/status/884774470262685698)About the delivery from Apple, I’ve got mix-feelings. Delivery took about a week. But it was when I was told it would be at checkout. And everything went fine.
+{{< tweet user="AnalyticMike" id="884774470262685698" >}}_About the delivery from Apple, I’ve got mix-feelings._
+
+Delivery took about a week. But it was when I was told it would be at checkout. And everything went fine.
 
 ### Installing the devices
 

@@ -20,7 +20,9 @@ So when I read this post about how [young people prefer printed books to ebooks]
 
 Benedict Evans, summarized, some time ago, this feeling in a Tweet.
 
-> [](https://twitter.com/BenedictEvans/status/640215664125341696)So I thought everything was said. But nonetheless, even if nobody reads it, lets write it.
+{{< tweet user="BenedictEvans" id="640215664125341696" >}}
+
+So I thought everything was said. But nonetheless, even if nobody reads it, lets write it.
 
 ### Pricing
 
@@ -91,7 +93,9 @@ There are good things and bad things about the experience of reading ebooks.
 
 Probably the first good one is the sheer number/space needed. Matt Cutts sums up pretty well
 
-> [](https://twitter.com/mattcutts/status/669917008792698880)Past are days when you would go on holidays and you have to decide which two/three books you should pick. Or what book you would buy in the airport because you had to kill a couple of hours but you wouldn’t have anything.
+{{< tweet user="mattcutts" id="669917008792698880" >}}
+
+Past are days when you would go on holidays and you have to decide which two/three books you should pick. Or what book you would buy in the airport because you had to kill a couple of hours but you wouldn’t have anything.
 
 #### Functionalities
 

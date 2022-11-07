@@ -62,4 +62,4 @@ Parting thoughts:
 - Feedback for a rejection a year ago: “you are an intelligent guy and you could fit in perfectly in our culture and with the team. Unfortunately, we just felt your level of experience on system design and algorithms was not as strong as we had hoped for. […] There’s a great book called “Cracking the coding interview” by Gayle Laakmann which they guys felt might be of interest to you.” Yes, I was directly told not to study architecture or algorithms but to cram.
 - This Tweet from Patrick McKenzie:
 
-> [](https://twitter.com/patio11/status/968959448080302080)
+> {{< tweet user="patio11" id="968959448080302080" >}}

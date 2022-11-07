@@ -68,7 +68,7 @@
       "datePublished": "2019-09-02 18:00:00 \u002b0000 UTC",
       "dateModified" : "2019-09-02 18:00:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2019-09-02-configuration-in-aws-is-difficult\/",
-      "wordCount" : "306",
+      "wordCount" : "404",
       "keywords" : ["Blog"]
     }
   
@@ -122,22 +122,19 @@
           <article class="post__content">
               
 <p>I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.</p>
-<p><img src="/img/1*zYkG2Iq7RzTH5CyjYWrPZA.jpeg" alt="It shows two children on a cobbled road that disappears into the sea. It shows how a road can be difficult to follow.">When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.</p>
+<p><img src="/img/1*zYkG2Iq7RzTH5CyjYWrPZA.jpeg" alt="It shows two children on a cobbled road that disappears into the sea. It shows how a road can be difficult to follow."><em>When the path is difficult to follow</em></p>
+<p>However, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.</p>
 <p>What follows is just one example I found on the Internet (i.e. not original research)</p>
 <p>Imagine you get non-privileged access to an instance that has a role with <em>ec2:StopInstances</em>, <em>ec2:StarInstances</em> and <em>ec2:ModifyInstanceAttribute</em> (or much commonly, ec2:*). With that premise, apparently it is not difficult to make your non-privileged user can escalate into a full “own”.</p>
 <p>As I came to think while reading the following tweet … “do I know the implications of 5985 different privileges?”</p>
-<blockquote>
-<p><a href="https://twitter.com/0xdabbad00/status/1161117748119781376" 
-  
-   target="_blank" rel="noreferrer noopener" 
-></a>Do you know what are the implications of those 5985 privileges?It turns out that I don’t, and below you can find what it could happen if you don’t fully understand either the implications.</p>
-</blockquote>
-<blockquote>
-<p><a href="https://twitter.com/Darkarnium/status/1065600704134475776" 
-  
-   target="_blank" rel="noreferrer noopener" 
-></a>This is what can happen when you don’t understand implications for one of those 5985 privilegesI haven’t tested the steps detailed in those tweets, but it seems you can take control of a machine just by changing some configuration (*ec2:ModifyInstanceAttribute) *and restarting the instance.</p>
-</blockquote>
+<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">There are 5985 AWS privileges. 2505 (42%) have no condition restrictions possible (other than the global conditions) and can only use a resource of *. <br><br>ec2 is the &quot;worst&quot; service with 259/338 (76%) privileges that cannot be restricted beyond * access. :(</p>&mdash; Scott Piper (@0xdabbad00) <a href="https://twitter.com/0xdabbad00/status/1161117748119781376?ref_src=twsrc%5Etfw">August 13, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+_Do you know what are the implications of those 5985 privileges?_</p>
+<p>It turns out that I don’t, and below you can find what it could happen if you don’t fully understand either the implications.</p>
+<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">A brief reminder why you should disable Cloud-Init after bootstrapping your AWS EC2 instances. If not, an attacker with EC2 &#39;ModifyInstanceAttribute&#39; permissions - which doesn&#39;t appear to be resource limitable - could trivially backdoor / shell EXISTING instances. (1/N) <a href="https://t.co/oeydB0AcqG">pic.twitter.com/oeydB0AcqG</a></p>&mdash; Darkarnium (@Darkarnium) <a href="https://twitter.com/Darkarnium/status/1065600704134475776?ref_src=twsrc%5Etfw">November 22, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+_This is what can happen when you don’t understand implications for one of those 5985 privileges_</p>
+<p>I haven’t tested the steps detailed in those tweets, but it seems you can take control of a machine just by changing some configuration (*ec2:ModifyInstanceAttribute) *and restarting the instance.</p>
 <p>You may need <em>ec2:ModifyInstanceAttribute</em> for a different reason and not be aware of the risk*.*</p>
 <h3 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h3>
 <p>Beyond the specific compromise the important part is the tension between “<strong>least privilege principle</strong>” and the <strong>complexity explosion</strong> of understanding and assigning proper permissions.</p>

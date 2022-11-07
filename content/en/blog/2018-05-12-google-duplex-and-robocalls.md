@@ -68,7 +68,9 @@ I remember the first thing I thought when I saw the first steps of the controver
 
 But my idea “in a few years there will be human-like conversations with only androids involved”, is not original at all. In the LOL camp:
 
-> [](https://twitter.com/Javi/status/994624094715891713)Machines talking to machines is not the only technical solution. For the denial of service with cancellations and no-show, here is my pitch:
+{{< tweet user="Javi" id="994624094715891713" >}}_Machines talking to machines is not the only technical solution. _
+
+For the denial of service with cancellations and no-show, here is my pitch:
 
 > Cryptocurrency based appointment system. Token exchangeable for mobile credit and returned if client shows as promised.I’m launching an ICO. Do you want some coins? :D
 
@@ -82,7 +84,7 @@ There is also the perception that Artificial General Intelligence may be possibl
 
 **PS**: I decided to write this article when I got to this
 
-> [](https://twitter.com/WillOremus/status/995057583445557248) [Marc Andreessen](https://medium.com/u/fa65e64cf273) is brilliant. He may have controversial opinions. I don’t always agree with some of those opinions. [Benedict Evans](https://medium.com/u/78c5166b8328) is a similar case. But I always try to understand because they **always** provide something I hadn’t thought about.
+> {{< tweet user="WillOremus" id="995057583445557248" >}} [Marc Andreessen](https://medium.com/u/fa65e64cf273) is brilliant. He may have controversial opinions. I don’t always agree with some of those opinions. [Benedict Evans](https://medium.com/u/78c5166b8328) is a similar case. But I always try to understand because they **always** provide something I hadn’t thought about.
 
 Marc stopped tweeting after one of those controversies and the rage and fury (as opposed to discussion) that followed.
 

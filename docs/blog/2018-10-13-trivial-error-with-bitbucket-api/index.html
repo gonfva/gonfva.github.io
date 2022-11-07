@@ -68,7 +68,7 @@
       "datePublished": "2018-10-13 18:00:00 \u002b0000 UTC",
       "dateModified" : "2018-10-13 18:00:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2018-10-13-trivial-error-with-bitbucket-api\/",
-      "wordCount" : "489",
+      "wordCount" : "496",
       "keywords" : ["Blog"]
     }
   
@@ -153,37 +153,40 @@
    target="_blank" rel="noreferrer noopener" 
 >reasonably detailed</a>. However, it seems generated with some kind of tool in a format that I couldn’t understand what was required, what was optional, examples…</p>
 <p>To the point I was doing something like this</p>
-<p>curl -X POST https://<usr>:<pwd><a href="http://twitter.com/api"  title="Twitter profile for @api" 
-  
-   target="_blank" rel="noreferrer noopener" 
->@api</a>.bitbucket.org/2.0/repositories/<namespace>/<project>/pullrequests -d &lsquo;{
-&ldquo;title&rdquo;: &ldquo;test&rdquo;,
-&ldquo;state&rdquo;: &ldquo;OPEN&rdquo;,
-&ldquo;source&rdquo;: {
-&ldquo;type&rdquo;: &ldquo;repository&rdquo;,
-&ldquo;name&rdquo;: &ldquo;<project>&rdquo;,
-&ldquo;full_name&rdquo;: &ldquo;<namespace>/<project>&rdquo;,
-&ldquo;scm&rdquo;: &ldquo;git&rdquo;,
-&ldquo;branch&rdquo;: {
-&ldquo;name&rdquo;: &ldquo;&lt;branch_name&gt;&rdquo;
+<pre><code>curl -X POST https://&lt;usr&gt;:&lt;pwd&gt;[@api](http://twitter.com/api &quot;Twitter profile for @api&quot;).bitbucket.org/2.0/repositories/&lt;namespace&gt;/&lt;project&gt;/pullrequests -d '{
+&quot;title&quot;: &quot;test&quot;,
+&quot;state&quot;: &quot;OPEN&quot;,
+&quot;source&quot;: {
+&quot;type&quot;: &quot;repository&quot;,
+&quot;name&quot;: &quot;&lt;project&gt;&quot;,
+&quot;full_name&quot;: &quot;&lt;namespace&gt;/&lt;project&gt;&quot;,
+&quot;scm&quot;: &quot;git&quot;,
+&quot;branch&quot;: {
+&quot;name&quot;: &quot;&lt;branch_name&gt;&quot;
 }
 },
-&ldquo;is_private&rdquo;: true,
-&ldquo;destination&rdquo;: {
-&ldquo;type&rdquo;: &ldquo;repository&rdquo;,
-&ldquo;name&rdquo;: &ldquo;3pageapp&rdquo;,
-&ldquo;full_name&rdquo;: &ldquo;<namespace>/<project>&rdquo;,
-&ldquo;scm&rdquo;: &ldquo;git&rdquo;,
-&ldquo;branch&rdquo;: {
-&ldquo;name&rdquo;: &ldquo;&lt;branch_name&gt;&rdquo;
+&quot;is_private&quot;: true,
+&quot;destination&quot;: {
+&quot;type&quot;: &quot;repository&quot;,
+&quot;name&quot;: &quot;3pageapp&quot;,
+&quot;full_name&quot;: &quot;&lt;namespace&gt;/&lt;project&gt;&quot;,
+&quot;scm&quot;: &quot;git&quot;,
+&quot;branch&quot;: {
+&quot;name&quot;: &quot;&lt;branch_name&gt;&quot;
 }
 }
-}&lsquo;and I was getting the following error</p>
-<p>{“type”: “error”, “error”: {“fields”: {“source”: [“This field is required.”], “title”: [“This field is required.”]}, “message”: “Bad request”}}How was it possible? I was sending the source field and the title field, but it was as if it wasn’t being received.</p>
+}'
+</code></pre>
+<p>and I was getting the following error</p>
+<pre><code>{“type”: “error”, “error”: {“fields”: {“source”: [“This field is required.”], “title”: [“This field is required.”]}, “message”: “Bad request”}}
+</code></pre>
+<p>How was it possible? I was sending the source field and the title field, but it was as if it wasn’t being received.</p>
 <p>It is very very difficult to debug an API only by invocations. I dedicated a few hours of trying to debug the issue, with different combinations of parameters.</p>
 <p>In the end, the issue was much more simpler.</p>
 <p>You need to send a header to indicate it is a json request.</p>
-<p>curl &lt;&hellip;&gt; -H &ldquo;Content-Type: application/json&quot;Probably others will need less time debugging the issue. IMO Bitbucket should say “you need to send json content-type”.</p>
+<pre><code>curl &lt;...&gt; -H &quot;Content-Type: application/json&quot;
+</code></pre>
+<p>Probably others will need less time debugging the issue. IMO Bitbucket should say “you need to send json content-type”.</p>
 <p>But in any case, if you arrive from Google, now you know it.</p>
 
 

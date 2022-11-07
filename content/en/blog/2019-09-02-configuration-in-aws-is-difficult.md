@@ -11,7 +11,9 @@ categories: [Developer, got ya]
 
 I’ve been doing some research on credentials compromise and abuse in AWS. In the process, it was obvious that the main mitigation would be (is) to minimise the permissions assigned to the EC2 instance profile, applying the “least privilege principle”.
 
-![It shows two children on a cobbled road that disappears into the sea. It shows how a road can be difficult to follow.](/img/1*zYkG2Iq7RzTH5CyjYWrPZA.jpeg)When the path is difficult to followHowever, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.
+![It shows two children on a cobbled road that disappears into the sea. It shows how a road can be difficult to follow.](/img/1*zYkG2Iq7RzTH5CyjYWrPZA.jpeg)_When the path is difficult to follow_
+
+However, sometimes assigning permissions is tricky and it is not easy to understand what a specific permission means.
 
 What follows is just one example I found on the Internet (i.e. not original research)
 
@@ -19,9 +21,13 @@ Imagine you get non-privileged access to an instance that has a role with _ec2:S
 
 As I came to think while reading the following tweet … “do I know the implications of 5985 different privileges?”
 
-> [](https://twitter.com/0xdabbad00/status/1161117748119781376)Do you know what are the implications of those 5985 privileges?It turns out that I don’t, and below you can find what it could happen if you don’t fully understand either the implications.
+{{< tweet user="0xdabbad00" id="1161117748119781376" >}}_Do you know what are the implications of those 5985 privileges?_
 
-> [](https://twitter.com/Darkarnium/status/1065600704134475776)This is what can happen when you don’t understand implications for one of those 5985 privilegesI haven’t tested the steps detailed in those tweets, but it seems you can take control of a machine just by changing some configuration (*ec2:ModifyInstanceAttribute) *and restarting the instance.
+It turns out that I don’t, and below you can find what it could happen if you don’t fully understand either the implications.
+
+{{< tweet user="Darkarnium" id="1065600704134475776" >}}_This is what can happen when you don’t understand implications for one of those 5985 privileges_
+
+I haven’t tested the steps detailed in those tweets, but it seems you can take control of a machine just by changing some configuration (*ec2:ModifyInstanceAttribute) *and restarting the instance.
 
 You may need _ec2:ModifyInstanceAttribute_ for a different reason and not be aware of the risk*.*
 

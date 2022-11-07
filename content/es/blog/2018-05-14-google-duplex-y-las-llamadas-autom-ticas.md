@@ -73,7 +73,9 @@ Recuerdo lo primero que pensé cuando vi los primero signos de la polémica (den
 
 Pero mi idea “dentro de unos pocos años va a haber charlas que parecen entr humanos pero en la que solo hay máquinas”, no es para nada original. En el campo del humor, me encanta el siguiente tweet (en inglés):
 
-> [](https://twitter.com/Javi/status/994624094715891713)En el futuro nuestro asistente llamará al asistente del restaurante :DMáquinas habando con máquinas no es la única solución técnica. Para el problema de denegación de servicio con cancelaciones y mal quedas, aquí va mi discursito para conseguir financiación:
+{{< tweet user="Javi" id="994624094715891713" >}}_En el futuro nuestro asistente llamará al asistente del restaurante :D_
+
+Máquinas habando con máquinas no es la única solución técnica. Para el problema de denegación de servicio con cancelaciones y mal quedas, aquí va mi discursito para conseguir financiación:
 
 > Sistema de reservas basado en criptomoneda. Token intercambiable por saldo de móvil y devuelto si el cliente aparece.Voy a sacar una ICO. ¿Quieres unas cuantas monedas? :D
 
@@ -87,7 +89,9 @@ También existe la tentación de que la Inteligencia Artificial Generalista pued
 
 **PD**: Decidí escribir el artículo original cuando llegué a este Tweet.
 
-> [](https://twitter.com/WillOremus/status/995057583445557248)Alguien que se enfada porque alguien conocido hace Fav[Marc Andreessen](https://medium.com/u/fa65e64cf273) es brillante. Puede que tenga opiniones controvertidas. No siempre estoy de acuerdo con todas sus opiniones. [Benedict Evans](https://medium.com/u/78c5166b8328) es un caso similar. Pero siempre trato de entenderles porque **siempre** ponen algo sobre lo que no había pensado.
+{{< tweet user="WillOremus" id="995057583445557248" >}}_Alguien que se enfada porque alguien conocido hace Fav_
+
+[Marc Andreessen](https://medium.com/u/fa65e64cf273) es brillante. Puede que tenga opiniones controvertidas. No siempre estoy de acuerdo con todas sus opiniones. [Benedict Evans](https://medium.com/u/78c5166b8328) es un caso similar. Pero siempre trato de entenderles porque **siempre** ponen algo sobre lo que no había pensado.
 
 Marc dejó de twitear después del odio (como opuesto a la discusión) sufrido tras una polémica.
 
