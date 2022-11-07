@@ -24,7 +24,7 @@ Al final de todo daré mi opinión. Pero antes, trato de explicar mi percepción
 > [](https://twitter.com/10DowningStreet/status/1238146728164909059)Vídeo con la rueda de prensa de Boris JohnsonEn la misma línea, una entrevista al Chief Scientific Advisor, el equivalente a Pedro Simón.
 
 [**Coronavirus: Chief Scientific Adviser's response to claims government are not doing enough**
-*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/) 
+*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/)
 
 ### Qué tienen de malo otras políticas
 
@@ -36,7 +36,9 @@ Pero la vacuna, en el mejor de los casos, tardará 12–18 meses. El control abs
 
 > [](https://twitter.com/StephenMcDonell/status/1238755438738280448)Un día estupendo en Beijing. Después de unas semanas terribles, la gente se relaja. ¿Habrá blip en dos semanas?Y cuando la sociedad se relaja, la epidemia vuelve aparecer. **El problema es el rebote**. Mira la curva azul
 
-![](/img/0*nwI-CA9KbftQHcuH)El rebote. En azulSi ese segundo (o tercer, o cuarto) pico no lo paras a tiempo, tienes un problema serio. Es una batalla muy muy larga, en la que no hay garantía de éxito.
+![](/img/0*nwI-CA9KbftQHcuH)_El rebote. En azul_
+
+Si ese segundo (o tercer, o cuarto) pico no lo paras a tiempo, tienes un problema serio. Es una batalla muy muy larga, en la que no hay garantía de éxito.
 
 ### El modelo de UK
 
@@ -52,7 +54,9 @@ Un efecto secundario del plan es que podría crear inmunidad de grupo (“herd i
 
 Pero parece que el plan NO es conseguir inmunidad de grupo, sino asumir que la contención ya no es posible y gestionar los tiempos (creo que ahí no están transmitiendo muy bien, porque inicialmente yo sí pensaba que el plan era inmunidad de grupo)
 
-> [](https://twitter.com/AdamJKucharski/status/1238821517821186048)El virus no es controlable en el largo plazo.#### Riesgos
+> [](https://twitter.com/AdamJKucharski/status/1238821517821186048)El virus no es controlable en el largo plazo.
+
+#### Riesgos
 
 Los riesgos están claros en el plan:
 

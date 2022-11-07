@@ -21,7 +21,9 @@ But the report doesn’t say that domain name sellers are not doing proper valid
 
 But here comes the twist. The blog post appears in a site called [hashedout](https://www.thesslstore.com/blog).
 
-![](/img/1*QVMyAAojo9aW3qqaGLAVuw.png)Under hashedout’s icon you can see in small letters “by The SSL store”. It turns out that the blog is from a company that [sells certificates](https://www.thesslstore.com/).
+![](/img/1*QVMyAAojo9aW3qqaGLAVuw.png)
+
+Under hashedout’s icon you can see in small letters “by The SSL store”. It turns out that the blog is from a company that [sells certificates](https://www.thesslstore.com/).
 
 > A company that sells certificates creates a report criticising a foundation that gives certificates away for free.Yes. I know that they are different kind of certificates.
 
@@ -29,7 +31,9 @@ In fact the argument is that the certificates they sell are given only after a p
 
 Anyway, what kind of certificates do they sell?
 
-![](/img/1*cT5Txj1U0hU8tNcNdqP_QQ.png)Cheap!!!Yeah, a lot of Symantec, Thawte and GeoTrust.
+![](/img/1*cT5Txj1U0hU8tNcNdqP_QQ.png)_Cheap!!!_
+
+Yeah, a lot of Symantec, Thawte and GeoTrust.
 
 The same Symantec, Thawte and GeoTrust that have been [incorrectly emitting certificates](https://security.googleblog.com/2015/10/sustaining-digital-certificate-security.html) (including extended validation certificates, those that have a name in green too) without proper validation.
 
@@ -38,4 +42,3 @@ The same Symantec, Thawte and GeoTrust that [are going to be distrusted](https:/
 There is a serious problem with PKI.
 
 But guys, **you have a nerve**.
-

@@ -43,7 +43,9 @@ With Apple, I went for the iMac 5k 27 inches, Core i5 with Radeon Pro 580 with 8
 
 Why that model? There are other iMac with a dedicated card, so I considered going for something less expensive. But then I read this [footnote-6](https://www.apple.com/uk/imac/#ac-gf-label):
 
-![](/img/1*EU04jWnuw0o3XE6HpcM16Q.png)Requires macOS High Sierra 10.13 27-inch with Radeon Pro 580 recommended for 3D VR content creation and 360 video editing. Final Cut Pro X will add support for 360 video editing later this year.I considered going for the i7, but thought it didn’t worth it, but definitely upgraded RAM from default 8GB.
+![](/img/1*EU04jWnuw0o3XE6HpcM16Q.png)_Requires macOS High Sierra 10.13 27-inch with Radeon Pro 580 recommended for 3D VR content creation and 360 video editing. Final Cut Pro X will add support for 360 video editing later this year._
+
+I considered going for the i7, but thought it didn’t worth it, but definitely upgraded RAM from default 8GB.
 
 Does it work with other models? I don’t know. This guy seems to have used [Apple’s offer](https://developer.apple.com/development-kit/external-graphics/) to set an external GPU on a Macbook Pro
 
@@ -53,9 +55,13 @@ Does it work with other models? I don’t know. This guy seems to have used [App
 
 There are no unboxing pictures. When preparing these notes I took a picture of the goggles (they are called [HMD](https://en.wikipedia.org/wiki/Head-mounted_display)), the controllers and the box that connects everything.
 
-![](/img/1*PPuXdQ5bUjOlkNlMQhxktg.jpeg)Goggles, controllers and boxAnd here is another picture of a base station (the system is called Lighthouse).
+![](/img/1*PPuXdQ5bUjOlkNlMQhxktg.jpeg)_Goggles, controllers and box_
 
-![](/img/1*tHjKZwHtiX8aGMubWOfD9Q.jpeg)Base station on a tripod. The tripod is not part of the bundle.There are some instructions to set everything up, you should follow them. It is worth pointing some notes though.
+And here is another picture of a base station (the system is called Lighthouse).
+
+![](/img/1*tHjKZwHtiX8aGMubWOfD9Q.jpeg)_Base station on a tripod._
+
+The tripod is not part of the bundle. There are some instructions to set everything up, you should follow them. It is worth pointing some notes though.
 
 - The system has two parts. On one side you have the base stations that allow to track your movements. On the other, the goggles and the box.
 - The goggles have a cable that connect it to the box. HTC is supposedly preparing a new device with [no cable, no mobile and no PC](https://www.vive.com/uk/product/standalone/) for later this year.
@@ -72,7 +78,9 @@ High Sierra is currently in Beta. But it is public Beta, so you can [join the pr
 
 A small issue is that you’re told to run macOSPublicBetaAccessUtility. Not sure if still relevant (I reported it in Beta 3 and we are in Beta 7), but if you try to install macOS High Sierra Beta without previously running the program, you will get a not very helpful message “Installation of macOS could not continue. Installation requires downloading important content”
 
-![](/img/1*Kb5XpW0opxqTTOazOncnXw.png)Not very helpfulAlso the new operating system comes with a new Filesystem format. Apparently adapting programs to that format is not a trivial effort and initially there were many crashes (I couldn’t launch Garage Band until beta4 came in)
+![](/img/1*Kb5XpW0opxqTTOazOncnXw.png)_Not very helpful_
+
+Also the new operating system comes with a new Filesystem format. Apparently adapting programs to that format is not a trivial effort and initially there were many crashes (I couldn’t launch Garage Band until beta4 came in)
 
 In general the OS works, but you have to be very tolerant. The other day a new version auto installed (beta 6) and the boot process afterwards wouldn’t complete (the usual macOS loading thingy was all night). I had to do a hard shut-down.
 
@@ -90,15 +98,21 @@ The part on Firefox needs another post. Basically **unusable**.
 
 Word of caution: SteamVR is a beta. It works, _most of the time_. But options such us “Update firmware” or “Camera” (to name just a couple) won’t work. Sometimes you change something that needs to restart the headset. It will crash, and you will need to quit the app in macOS and restart it again. Sometimes your desktop won’t shutdown because SteamVR is running (I think it was something in the early betas, because I no longer feel the same). Sometimes SteamVR is not running and you see your goggles start showing strange red squares or just get hot. Unplug your HMD if not using it for now. And be patient my friend.
 
-![](/img/1*kOazb1QtOz_31QVL9MRkBw.png)Rebooting VIVE### Calibrating the room
+![](/img/1*kOazb1QtOz_31QVL9MRkBw.png)_Rebooting VIVE_
+
+### Calibrating the room
 
 Once your base stations are setup and SteamVR installed, you need to configure the [layout of the room, available area and position of base station](https://uploadvr.com/vive-vs-oculus-rift-touch-roomscale/).
 
 I cannot remember if it launched automatically the first time. If not, once you have SteamVR installed, you can select it from the menu.
 
-![](/img/1*2M51qHsJODvoTD31YaJ1Fg.png)Menu in SteamVR for Room SetupThat launches a wizard, very easy to follow
+![](/img/1*2M51qHsJODvoTD31YaJ1Fg.png)_Menu in SteamVR for Room Setup_
 
-![](/img/1*Z_b4pRv064PvYPyNHSQCvw.png)Room setup### Anticlimax
+That launches a wizard, very easy to follow
+
+![](/img/1*Z_b4pRv064PvYPyNHSQCvw.png)_Room setup_
+
+### Anticlimax
 
 So you’ve connected everything, and you’ve installed everything. You’ve calibrated the room. You launch Steam, you launch SteamVR. You put your goggles on and you get something that it was tricky to describe. It was like an empty white room, or seeing an igloo from inside. Yes, it was fully immersive. You really feel inside.
 
@@ -108,7 +122,7 @@ At one point I read the word holodeck from Start Trek and that was the best way 
 
 I googled a lot, but I couldn’t get it described. In fact I stumbled the below picture while preparing this article but not searching for it. But I was about to just describe it (because there is no obvious way to take a picture of it)
 
-![](/img/1*AnJbdvuxIYHs_WNVYRstVQ.png)Picture taken from <http://www.tomshardware.co.uk/steamvr-interface-customization-options,news-52539.html>In my device the image appears more whiteish than grey, but you get the idea.
+![](/img/1*AnJbdvuxIYHs_WNVYRstVQ.png)_Picture taken from <http://www.tomshardware.co.uk/steamvr-interface-customization-options,news-52539.html>In my device the image appears more whiteish than grey, but you get the idea_
 
 Also, in my experience, there are some additional blue lines. That is what’s called the chaperone, and basically gives you a reference of where you can move in your room (see calibrating room)
 
@@ -118,7 +132,9 @@ To the point that when I saw the white room I thought I had misconfigured someth
 
 And I wrote Steam support. And they replied!!!
 
-![](/img/1*gajVpAGrjFAbzCFl6ZwQFw.png)At one point I even contacted HTC support…And they said “What you describe is the extent of SteamVR on Mac at the moment. […] the SteamVR Dashboard and SteamVR Home have not yet been added to the Mac version of SteamVR […]”
+![](/img/1*gajVpAGrjFAbzCFl6ZwQFw.png)
+
+At one point I even contacted HTC support…And they said “What you describe is the extent of SteamVR on Mac at the moment. […] the SteamVR Dashboard and SteamVR Home have not yet been added to the Mac version of SteamVR […]”
 
 By the way, two things to note.
 
@@ -135,23 +151,33 @@ I think the easiest way to have something worth of a VR experience in macOS is t
 
 Once you have Unity beta installed, create a new project. It doesn’t matter the name
 
-![](/img/1*5TuNKXTDG3RW9GrAKo0iug.png)And then go to [this page](https://www.assetstore.unity3d.com/en/#!/content/51519), open with Unity and import the assets into your empty project, selecting everything by default.
+![](/img/1*5TuNKXTDG3RW9GrAKo0iug.png)
+
+And then go to [this page](https://www.assetstore.unity3d.com/en/#!/content/51519), open with Unity and import the assets into your empty project, selecting everything by default.
 
 Click on File-> Build Settings and you will get a new window
 
-![](/img/1*oO4R22rXIotv5A6WOhmcGw.png)Build settingsClick on “Player Settings …” and in the right hand side you will get multiple options.
+![](/img/1*oO4R22rXIotv5A6WOhmcGw.png)_Build settings_
+
+Click on “Player Settings …” and in the right hand side you will get multiple options.
 
 In the Other Settings select “Metal editor support experimental”
 
-![](/img/1*HtTHXlO4xSelmcty_825RA.png)Metal editor supportAnd in XR, make sure VR is enabled and OpenVR SDK is loaded
+![](/img/1*HtTHXlO4xSelmcty_825RA.png)_Metal editor support_
 
-![](/img/1*QTEB7JtQd1M68ak5-4kC3A.png)XR SettingsAnd click on Build and Run. Everything by default, and you will get to VR Samples.
+And in XR, make sure VR is enabled and OpenVR SDK is loaded
+
+![](/img/1*QTEB7JtQd1M68ak5-4kC3A.png)_XR Settings_
+
+And click on Build and Run. Everything by default, and you will get to VR Samples.
 
 Things to note: Fire button for these games is [button 1 in this graphic](https://docs.unity3d.com/Manual/OpenVRControllers.html). And button back is the ESC key in your keyboard.
 
 If you want to stop the game, CMD+Q is your friend.
 
-![](/img/1*xLWUai8Sou53LyqZo59JGg.png)Finally something worth of the VR label.### Conclusion
+![](/img/1*xLWUai8Sou53LyqZo59JGg.png)_Finally something worth of the VR label._
+
+### Conclusion
 
 I hope this post helps people in the same situation I was a month ago. Please, ping me if you land in this page and there is something confusing or unclear. I’ll do my best to help.
 

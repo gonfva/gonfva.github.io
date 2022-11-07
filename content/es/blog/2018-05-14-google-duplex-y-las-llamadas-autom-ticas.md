@@ -10,7 +10,9 @@ tags:
 categories: [Technology, En Español]
 ---
 
-![](/img/1*4F01n8Lk_ZVIm5zVHq5pEg.jpeg)Probablemente ya has visto el vídeo de presentación de Google Duplex, el nuevo asistente creado por Google que puede hacer llamadas por teléfono que suenan como si un humano estuviera al otro lado de la línea.
+![](/img/1*4F01n8Lk_ZVIm5zVHq5pEg.jpeg)
+
+Probablemente ya has visto el vídeo de presentación de Google Duplex, el nuevo asistente creado por Google que puede hacer llamadas por teléfono que suenan como si un humano estuviera al otro lado de la línea.
 
 Si no lo has visto, por favor, echa un vistazo a la versión de 4 minutos.
 
@@ -92,4 +94,3 @@ Marc dejó de twitear después del odio (como opuesto a la discusión) sufrido t
 Ahora parece que no puede ni siquiera hacer Fav.
 
 > Deberíamos ser capaces de intercambiar opiniones.Este artículo es una tradución del [original que escribí en inglés](https://medium.com/@gonfva/google-duplex-and-robocalls-1ed9cfca3e8a).
-

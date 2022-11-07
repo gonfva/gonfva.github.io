@@ -15,7 +15,9 @@ I love technology. And I’ve got a reasonable salary. But I’ve got a family a
 
 However my latest acquisition suggests I’ve gone bonkers. Because I decided to buy a [top of the line iMac](https://www.apple.com/uk/shop/buy-mac/imac/27-inch) and a [HTC Vive](https://www.vive.com/uk/product/) and start with VR. On macOS.
 
-![](/img/1*loFaePosBUshd0hUZNbxxA.jpeg)Hey. That’s me!!Not only that. PS4 plus [PSVR](https://www.playstation.com/en-gb/explore/playstation-vr/) cost more or less what I spent on the HTC Vive device only. Or outside the console world world, the VR games and experiences are for Windows. If I had built my own beefy Windows machine (including a [gorgeous 1080 TI,](https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080-ti/) and a decent processor) and bought an [Oculus Rift](https://www.oculus.com/) I would have saved 40%.
+![](/img/1*loFaePosBUshd0hUZNbxxA.jpeg)_Hey. That’s me!!_
+
+Not only that. PS4 plus [PSVR](https://www.playstation.com/en-gb/explore/playstation-vr/) cost more or less what I spent on the HTC Vive device only. Or outside the console world world, the VR games and experiences are for Windows. If I had built my own beefy Windows machine (including a [gorgeous 1080 TI,](https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080-ti/) and a decent processor) and bought an [Oculus Rift](https://www.oculus.com/) I would have saved 40%.
 
 I didn’t go for Playstation nor for Windows. I chose the more complicated route: MacOS. VR compatibility for macOS [has only just been announced](https://www.apple.com/uk/newsroom/2017/06/macos-high-sierra-delivers-advanced-technologies-for-storage-video-and-graphics/). To be honest, I didn’t even know for sure if I was going to be able to connect the headset to the computer and make it work. I couldn’t find any page detailing the steps ([see part 2 if you’re in the same situation](https://medium.com/@gonfva/virtual-reality-in-macos-ii-39f54e0a9542))
 
@@ -67,7 +69,9 @@ What better way to get them into programming than developing games?
 
 And what a better way for a couple of Star Wars fans than to start developing games than a lightsaber demo?
 
-![](/img/1*BT3JfF_5Bfur0M1C6VEshw.png)Lightsaber in VR. Not very pretty but functional. And simple. Dark side!!I don’t know if it will manage to attract them. But I knew it wouldn’t if they had plenty of games available to play.
+![](/img/1*BT3JfF_5Bfur0M1C6VEshw.png)
+
+Lightsaber in VR. Not very pretty but functional. And simple. Dark side!!I don’t know if it will manage to attract them. But I knew it wouldn’t if they had plenty of games available to play.
 
 If only I could have two [HMD](https://en.wikipedia.org/wiki/Head-mounted_display)s…
 

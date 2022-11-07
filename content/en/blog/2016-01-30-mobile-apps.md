@@ -8,7 +8,9 @@ tags:
 categories: [Developer]
 ---
 
-![](/img/1*nAkbUpNgOup_DZWNHiw4eA.png)Platform stats for the UKWe’re recruiting a Product Manager for our team, and this week we’ve been doing some interviews. One of the recurrent topics in those interviews has been mobile apps.
+![](/img/1*nAkbUpNgOup_DZWNHiw4eA.png)
+
+Platform stats for the UKWe’re recruiting a Product Manager for our team, and this week we’ve been doing some interviews. One of the recurrent topics in those interviews has been mobile apps.
 
 The usual response from the candidate was: _Why would you need a mobile app? What do you need from the device that pure web couldn’t provide_? The usual candidate response was shared with many (most) of my colleagues in the team.
 

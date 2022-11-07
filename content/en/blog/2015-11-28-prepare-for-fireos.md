@@ -8,7 +8,9 @@ categories: Technology
 previous: https://gonfva.medium.com/amazon-fire-prepare-for-fireos-edc2c94c961c
 ---
 
-![](/img/1*7A0P9xUMD3AYrVupbkvJHw.png)I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.
+![](/img/1*7A0P9xUMD3AYrVupbkvJHw.png)
+
+I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.
 
 Granted, the price is amazingly good. 50 quid was already good, so 35 is almost incredible. But, what the heck, this is the beginning of the season. And they’ve already run out of units?
 

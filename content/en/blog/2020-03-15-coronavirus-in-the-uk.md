@@ -26,7 +26,7 @@ At the end of the article I will give my opinion (again, I'm not an specialist n
 > [](https://twitter.com/10DowningStreet/status/1238146728164909059)Boris Johnson's press conferenceAlong the same line, this interview with the Chief Scientific Advisor
 
 [**Coronavirus: Chief Scientific Adviser's response to claims government are not doing enough**
-*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/ ) 
+*The Government's chief scientific adviser is defending the measures taken to delay the peak of the coronavirus outbreak…*www.lbc.co.uk](https://www.lbc.co.uk/radio/presenters/nick-ferrari/coronavirus-chief-scientific-advisor-coronavirus/ )
 
 ### What's wrong with other policies
 
@@ -42,7 +42,7 @@ The problem is the rebound effect.
 
 Take a look at the blue curve.
 
-![](/img/0*4XY45xLidf0flYzw)If that second (or third, or fourth) peak are not stopped at the right time, you have a serious problem.
+![](/img/0*4XY45xLidf0flYzw)_If that second (or third, or fourth) peak are not stopped at the right time, you have a serious problem._
 
 It's a long battle with no guarantee of success.
 
@@ -67,7 +67,9 @@ A secondary effect of this plan is that they may end up with group immunity (als
 
 However, it seems that the plan IS NOT to get herd immunity. But assume that contention is not possible and just try to handle timing of measures (I don't think the message is working properly, because many of us perceive the goal is herd immunity)
 
-> [](https://twitter.com/AdamJKucharski/status/1238821517821186048)The virus cannot be controlled in the long term### Risks
+> [](https://twitter.com/AdamJKucharski/status/1238821517821186048)The virus cannot be controlled in the long term
+
+### Risks
 
 The risks are really obvious:
 

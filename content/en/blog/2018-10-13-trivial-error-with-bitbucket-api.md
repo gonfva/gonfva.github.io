@@ -21,7 +21,9 @@ Anyway, in our company we have an old version of Bitbucket hosted on premises. A
 
 However the migration for Bitbucket from on premises to the cloud is not a trivial matter. As far as I know, [there is no tool from Atlassian](https://confluence.atlassian.com/confeval/other-atlassian-evaluator-resources/migrating-from-server-to-cloud).
 
-![](/img/1*YTtErALn00hesc_ISWnBHg.jpeg)Old screenshotThe recommendation for that process is to just import the code. And if you want to do something fancier than moving the code you’re told to [build a product that uses Bitbucket APIs](https://community.atlassian.com/t5/Bitbucket-questions/Migrating-from-Stash-to-Bitbucket/qaq-p/57405).
+![](/img/1*YTtErALn00hesc_ISWnBHg.jpeg)_Old screenshot_
+
+The recommendation for that process is to just import the code. And if you want to do something fancier than moving the code you’re told to [build a product that uses Bitbucket APIs](https://community.atlassian.com/t5/Bitbucket-questions/Migrating-from-Stash-to-Bitbucket/qaq-p/57405).
 
 I’m really surprised about Atlassian not having a tool. And with a considerable number of repositories, even moving the code was not a trivial matter.
 

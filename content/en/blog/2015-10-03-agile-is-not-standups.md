@@ -8,7 +8,9 @@ tags:
 categories: Developer
 ---
 
-![](/img/1*7VcyrVH58tjkUF-zuK7geA.jpeg)Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
+![](/img/1*7VcyrVH58tjkUF-zuK7geA.jpeg)
+
+Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
 
 However, as in many of these events, the better part was meeting people. And the good part about being too self-conscious and shy for proper speaking is that you listen a lot.
 

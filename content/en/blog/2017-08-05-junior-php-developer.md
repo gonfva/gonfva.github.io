@@ -8,7 +8,9 @@ tags:
 categories: [Jobs]
 ---
 
-![](/img/1*pi12eWmXb5TOZprbCsovaQ.png)For the last month or so I’ve been running a small experiment in my Linkedin profile.
+![](/img/1*pi12eWmXb5TOZprbCsovaQ.png)
+
+For the last month or so I’ve been running a small experiment in my Linkedin profile.
 I had been receiving contacts from recruiters offering roles, and from recruiters offering developers.
 I’m not quite interested in any of those services. Frankly, the job market for technology is a crazy house. Companies recruiting on readers of “Cracking the coding interview” instead of [culture](https://twitter.com/stevesi/status/891352583511482368). Recruiters literally spamming or even sometimes harassing. And “candidates” either jumping for salary or just “getting a job”.
 

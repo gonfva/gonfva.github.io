@@ -126,28 +126,41 @@
   
    target="_blank" rel="noreferrer noopener" 
 >including Slack and GitHub</a>.</p>
-<p><img src="/img/1*R8FYcp_Jsj5erP9Ws67K_w.png" alt="">So here are some comments about it:</p>
+<p><img src="/img/1*R8FYcp_Jsj5erP9Ws67K_w.png" alt=""></p>
+<p>So here are some comments about it:</p>
 <ul>
-<li>AFAICT the s3 outage was in us-east-1 region. Other regions didn’t have S3 affected.
-<img src="/img/1*2oBaD-BXdtJjRvVuw-dwHw.png" alt="">S3 in Europe* This is <a href="https://twitter.com/chris_stevenson/status/251752053771223040" 
+<li>
+<p>AFAICT the s3 outage was in us-east-1 region. Other regions didn’t have S3 affected.</p>
+<p><img src="/img/1*2oBaD-BXdtJjRvVuw-dwHw.png" alt=""><em>S3 in Europe* This is <a href="https://twitter.com/chris_stevenson/status/251752053771223040" 
   
    target="_blank" rel="noreferrer noopener" 
->not the first s3 outage</a>. You may have read about what this affects the 11 nines promise. Most likely, it doesn’t . The promise is for <a href="https://aws.amazon.com/s3/faqs/#data-protection" 
+>not the first s3 outage</a>.</em>
+You may have read about what this affects the 11 nines promise. Most likely, it doesn’t . The promise is for <a href="https://aws.amazon.com/s3/faqs/#data-protection" 
   
    target="_blank" rel="noreferrer noopener" 
 >durability</a> (if you write, no errors reading), not availability. For availability. The SLA is much lower.
-<img src="/img/1*j0tX0qPxNZQNDtxmBZsr7g.png" alt="">SLA is 4 nines.<a href="https://aws.amazon.com/s3/faqs" 
+<img src="/img/1*j0tX0qPxNZQNDtxmBZsr7g.png" alt=""><em>SLA is 4 nines.<a href="https://aws.amazon.com/s3/faqs" 
   
    target="_blank" rel="noreferrer noopener" 
->https://aws.amazon.com/s3/faqs</a>* For quite some time, the <a href="https://www.theregister.co.uk/2017/03/01/aws_s3_outage/" 
+>https://aws.amazon.com/s3/faqs</a></em></p>
+</li>
+<li>
+<p>For quite some time, the <a href="https://www.theregister.co.uk/2017/03/01/aws_s3_outage/" 
   
    target="_blank" rel="noreferrer noopener" 
->status page in Amazon wasn’t working</a>, affected by their own outage. At some point you could see all green page and only a text at the beginning indicating the outage. Similarly dashboards in many regions wouldn’t work. This is <strong>more serious</strong> than the outage itself.</li>
-<li>If your application is mission critical and cannot afford 3 hours of outage, prepare for it. Go multi region or even multi provider. There are cloud architects designing “high available applications” using three availability zones in a single region. BTW, anything beyond two AZ is flushing money down the toilet.</li>
-<li>If your contingency plan doesn’t allow to deploy without Github, coordinate without Slack, you need to replan.</li>
-<li>Many people are suggesting this goes against cloud or <em>serverless</em>. I think this is the very reason you should consider cloud and <em>serverless</em>. Managing systems at scale is quite difficult. Leave it to people who know about it (Amazon or other providers)
-Final note. I’m super excited about what we will learn from their postmortem.</li>
+>status page in Amazon wasn’t working</a>, affected by their own outage. At some point you could see all green page and only a text at the beginning indicating the outage. Similarly dashboards in many regions wouldn’t work. This is <strong>more serious</strong> than the outage itself.</p>
+</li>
+<li>
+<p>If your application is mission critical and cannot afford 3 hours of outage, prepare for it. Go multi region or even multi provider. There are cloud architects designing “high available applications” using three availability zones in a single region. BTW, anything beyond two AZ is flushing money down the toilet.</p>
+</li>
+<li>
+<p>If your contingency plan doesn’t allow to deploy without Github, coordinate without Slack, you need to replan.</p>
+</li>
+<li>
+<p>Many people are suggesting this goes against cloud or <em>serverless</em>. I think this is the very reason you should consider cloud and <em>serverless</em>. Managing systems at scale is quite difficult. Leave it to people who know about it (Amazon or other providers)</p>
+</li>
 </ul>
+<p>Final note. I’m super excited about what we will learn from their postmortem.</p>
 <p><strong>Edit</strong>: The postmortem <a href="https://aws.amazon.com/message/41926/" 
   
    target="_blank" rel="noreferrer noopener" 

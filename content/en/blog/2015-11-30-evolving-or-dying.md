@@ -42,7 +42,9 @@ I don’t like its main product (it’s almost a pain for me to use it).
 
 But I love the company. As an example, take a look to this mention in their “[Red book](http://benbarry.com/project/facebooks-little-red-book)” (new employee’s induction documentation) “If we don’t create the thing that kills Facebook, someone else will”.
 
-![](/img/1*TvQxdyFdX4bH4uCDvtxZKA.jpeg)Facebook vs Facebook (Source: <http://benbarry.com/project/facebooks-little-red-book>)Facebook is building according to a [long term plan](http://www.fastcompany.com/3052885/mark-zuckerberg-facebook). But they are not [afraid](http://techcrunch.com/2009/08/10/facebook-acquires-friendfeed/) to buy [whatever](http://newsroom.fb.com/news/2012/04/facebook-to-acquire-instagram/) is [needed](http://newsroom.fb.com/news/2014/02/facebook-to-acquire-whatsapp/) in the [way](https://www.facebook.com/zuck/posts/10101319050523971).
+![](/img/1*TvQxdyFdX4bH4uCDvtxZKA.jpeg)_Facebook vs Facebook (Source: <http://benbarry.com/project/facebooks-little-red-book>)_
+
+Facebook is building according to a [long term plan](http://www.fastcompany.com/3052885/mark-zuckerberg-facebook). But they are not [afraid](http://techcrunch.com/2009/08/10/facebook-acquires-friendfeed/) to buy [whatever](http://newsroom.fb.com/news/2012/04/facebook-to-acquire-instagram/) is [needed](http://newsroom.fb.com/news/2014/02/facebook-to-acquire-whatsapp/) in the [way](https://www.facebook.com/zuck/posts/10101319050523971).
 
 **Google **has a different approach. Yes, it also buys companies. In fact, not many will remember, [they bought a microblogging service](http://readwrite.com/2007/10/09/google_acquires_jaiku) when Twitter was not THE platform yet. Google approach is more chaotic. They bring to life lots of different initiatives, and are not afraid to kill those that doesn’t pan out. The best example for me is the whole [Inbox](https://inbox.google.com/) vs [Gmail](https://mail.google.com/) competition. Who would create a new service competing with its own service?
 

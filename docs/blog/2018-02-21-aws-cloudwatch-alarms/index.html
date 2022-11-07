@@ -68,7 +68,7 @@
       "datePublished": "2018-02-21 18:00:00 \u002b0000 UTC",
       "dateModified" : "2018-02-21 18:00:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2018-02-21-aws-cloudwatch-alarms\/",
-      "wordCount" : "348",
+      "wordCount" : "349",
       "keywords" : ["Blog"]
     }
   
@@ -147,33 +147,36 @@
 </code></pre>
 <p>You need to tell Cloudwatch that no errors is OK. Which is a bit counter-intuitive.</p>
 <p>So you start getting a bit nervous when you see in the web console that there are alarms with state INSUFFICIENT.</p>
-<p><img src="/img/1*iaXpA1Y7m_BsifhsuIc_LA.png" alt="">And you start wondering why your AWS managed ElasticSearch cluster inside your own VPC has the alarms with insufficient data.</p>
+<p><img src="/img/1*iaXpA1Y7m_BsifhsuIc_LA.png" alt=""></p>
+<p>And you start wondering why your AWS managed ElasticSearch cluster inside your own VPC has the alarms with insufficient data.</p>
 <p>If you face something like that, consider if your dimensions are correctly defined.</p>
-<p>&ldquo;ESAlarmClusterRedHealth&rdquo;: {
-&ldquo;Type&rdquo;: &ldquo;AWS::CloudWatch::Alarm&rdquo;,
-&ldquo;Properties&rdquo;: {
-&ldquo;Namespace&rdquo;: &ldquo;AWS/ES&rdquo;,
-&ldquo;AlarmName&rdquo;: { &ldquo;Fn::Join&rdquo; : [&quot;&quot;, [ { &ldquo;Ref&rdquo; : &ldquo;AWS::StackName&rdquo;}, &ldquo;-hth-r&rdquo;]]},
-&ldquo;AlarmDescription&rdquo;: { &ldquo;Fn::Join&rdquo; : [&quot; &ldquo;, [ &ldquo;Cluster red in&rdquo;, { &ldquo;Ref&rdquo; : &ldquo;AWS::StackName&rdquo;}]]},
-&ldquo;ComparisonOperator&rdquo;: &ldquo;GreaterThanThreshold&rdquo;,
-&ldquo;Threshold&rdquo;: &ldquo;0&rdquo;,
-&ldquo;EvaluationPeriods&rdquo;: &ldquo;3&rdquo;,
-&ldquo;Period&rdquo;: &ldquo;60&rdquo;,
-&ldquo;MetricName&rdquo;: &ldquo;ClusterStatus.red&rdquo;,
-&ldquo;Statistic&rdquo;: &ldquo;Minimum&rdquo;,
-&ldquo;TreatMissingData&rdquo;: &ldquo;notBreaching&rdquo;,
-&ldquo;OKActions&rdquo;: [],
-&ldquo;AlarmActions&rdquo;: [ { &ldquo;Ref&rdquo;: &ldquo;NotificationARN&rdquo; } ],
-&ldquo;Dimensions&rdquo;: [ {
-&ldquo;Name&rdquo;: &ldquo;DomainName&rdquo;,
-&ldquo;Value&rdquo;: {&ldquo;Ref&rdquo;: &ldquo;ElasticsearchDomain&rdquo;}
+<pre><code>&quot;ESAlarmClusterRedHealth&quot;: {
+&quot;Type&quot;: &quot;AWS::CloudWatch::Alarm&quot;,
+&quot;Properties&quot;: {
+&quot;Namespace&quot;: &quot;AWS/ES&quot;,
+&quot;AlarmName&quot;: { &quot;Fn::Join&quot; : [&quot;&quot;, [ { &quot;Ref&quot; : &quot;AWS::StackName&quot;}, &quot;-hth-r&quot;]]},
+&quot;AlarmDescription&quot;: { &quot;Fn::Join&quot; : [&quot; &quot;, [ &quot;Cluster red in&quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot;}]]},
+&quot;ComparisonOperator&quot;: &quot;GreaterThanThreshold&quot;,
+&quot;Threshold&quot;: &quot;0&quot;,
+&quot;EvaluationPeriods&quot;: &quot;3&quot;,
+&quot;Period&quot;: &quot;60&quot;,
+&quot;MetricName&quot;: &quot;ClusterStatus.red&quot;,
+&quot;Statistic&quot;: &quot;Minimum&quot;,
+&quot;TreatMissingData&quot;: &quot;notBreaching&quot;,
+&quot;OKActions&quot;: [],
+&quot;AlarmActions&quot;: [ { &quot;Ref&quot;: &quot;NotificationARN&quot; } ],
+&quot;Dimensions&quot;: [ {
+&quot;Name&quot;: &quot;DomainName&quot;,
+&quot;Value&quot;: {&quot;Ref&quot;: &quot;ElasticsearchDomain&quot;}
 },
-<strong>{
-&ldquo;Name&rdquo;: &ldquo;ClientId&rdquo;,
-&ldquo;Value&rdquo;: {&ldquo;Ref&rdquo;: &ldquo;AWS::AccountId&rdquo;}
-}</strong>]
+**{
+&quot;Name&quot;: &quot;ClientId&quot;,
+&quot;Value&quot;: {&quot;Ref&quot;: &quot;AWS::AccountId&quot;}
+}**]
 }
-}It turns out that the DomainName is not enough, and you need to pass the ClientId too.</p>
+}
+</code></pre>
+<p>It turns out that the DomainName is not enough, and you need to pass the ClientId too.</p>
 <p>You got the memo. Cloudwatch alarms in insufficient state are probably wrong.</p>
 
 

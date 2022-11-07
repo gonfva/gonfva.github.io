@@ -11,7 +11,9 @@ categories: [Personal]
 
 I enjoy buying books.
 
-![](/img/1*LZ8QCNB7SgthNe8PjD8GVA.jpeg)I read physical books too.I enjoy starting them.
+![](/img/1*LZ8QCNB7SgthNe8PjD8GVA.jpeg)_I read physical books too._
+
+I enjoy starting them.
 
 Honestly, finishing books is more difficult for me. But I’ve been trying to improve on that.
 

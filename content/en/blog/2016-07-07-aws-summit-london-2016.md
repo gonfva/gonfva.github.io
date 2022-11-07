@@ -10,7 +10,9 @@ categories: [Technology]
 
 Today I went to [AWSSummit London](https://awssummit.london/). It’s a free event dedicated to Amazon Web Services. The event took place at [Excel London](http://excel.london/), excellent venue except for the occasional noise due to planes taking off from the nearby London City Airport.
 
-![](/img/1*rpqnIPjIYSOEGlY_9oIMQg.jpeg)KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also the[ general commitment from AWS with UK startup ecosystem](http://www.theregister.co.uk/2016/07/07/amazon_on_brexit/).
+![](/img/1*rpqnIPjIYSOEGlY_9oIMQg.jpeg)
+
+KeynoteThe day started with an intro from Gavin Jackson, expressing that there was a promise from Amazon for a new UK region for late 2016 or early 2017. And that promise continues after Brexit vote, and also the[ general commitment from AWS with UK startup ecosystem](http://www.theregister.co.uk/2016/07/07/amazon_on_brexit/).
 
 #### Keynote
 
@@ -18,7 +20,9 @@ After the brief introduction, a keynote from [Werner Vogels](https://twitter.com
 
 Werner’s talk didn’t have anything newsworthy but it was full of little gems. You perceive he is a guy with the concepts well established, so I ended up making some mental notes or even taking pictures, like the below:
 
-![](/img/1*9tK2MnQK0NL_eI4aA8gLaA.jpeg)Some signs you are not at Microservice level yetOne interesting idea: don’t treat VMs as servers. It’s a the very well known paradigm: pets vs cattle. With pets you have a name and you take care of them. Cattle are not pets.
+![](/img/1*9tK2MnQK0NL_eI4aA8gLaA.jpeg)_Some signs you are not at Microservice level yet_
+
+One interesting idea: don’t treat VMs as servers. It’s a the very well known paradigm: pets vs cattle. With pets you have a name and you take care of them. Cattle are not pets.
 
 Servers used to be like pets. You used to put names from Star Wars or animals and you would take care, patch, clean and so on. If a server had a disk space full, you would clean temps. But in the cloud, VMsis about embracing failure. A VM fails, you kill it, you don’t try to fix it.
 
@@ -60,11 +64,15 @@ The next two talks were about containers and ECS. The [first one](https://awssum
 
 The last talk of the day for me was about [securing serverless architecture](https://awssummit.london/session/2016/c0d57c29-1990-4be8-9a87-2086d596d14a). I would have titled it as hardening serverless architecture, because I was expecting more a mid level talk about execution roles, but ended being a talk about advanced techniques for securing AWS Lambda. There were some interesting takeaways for me, including how to deploy secrets to instances using “serverless”:
 
-![](/img/1*qtral1Pk0R0tgBeStwa03Q.jpeg)Serverless to provision secrets#### Stands and sponsors
+![](/img/1*qtral1Pk0R0tgBeStwa03Q.jpeg)_Serverless to provision secrets_
+
+#### Stands and sponsors
 
 There were plenty of stands with different sponsors and even some AWS architects to help you for free.
 
-![](/img/1*AAS6KqsF8xXpum3Ba2_usQ.jpeg)Overview of the networking areaThere was also the usual kind of branded t-shirts and stickers, although more in the morning (before and after the keynote) I got a Google cardboard, but discovered that my phone has no gyroscope so it won’t work.
+![](/img/1*AAS6KqsF8xXpum3Ba2_usQ.jpeg)_Overview of the networking area_
+
+There was also the usual kind of branded t-shirts and stickers, although more in the morning (before and after the keynote) I got a Google cardboard, but discovered that my phone has no gyroscope so it won’t work.
 
 I would like to point two sponsors.
 

@@ -8,7 +8,9 @@ tags:
 categories: [Technology]
 ---
 
-![](/img/1*PkZMt3V50bwmKwztcefDyg.jpeg)Broken Kindle anyone?A couple of months ago, we were flying back to London after the summer. My 12 year old twin daughters, usually eager video watchers or passionate console players, were avid readers at that moment. To the point they were sharing one of their two physical Kindle reading devices.
+![](/img/1*PkZMt3V50bwmKwztcefDyg.jpeg)
+
+Broken Kindle anyone?A couple of months ago, we were flying back to London after the summer. My 12 year old twin daughters, usually eager video watchers or passionate console players, were avid readers at that moment. To the point they were sharing one of their two physical Kindle reading devices.
 
 A woman walking along the aisle, stopped next to my wife, started a conversation with her about my daughters’ reading habits, and asked my wife what model of e-book reader we thought is better (so that she could give it to their own children).
 
@@ -113,7 +115,9 @@ When you go into interaction, I feel many times the app doesn’t do what I expe
 
 Another space where ebooks are clearly inferior are regarding full page books.
 
-![](/img/1*HuFt4Sf4940fqvvxJL8-3g.png)xkcd’s “All things explained” book. Example of one page-book. (source [http://xkcd.com](http://xkcd.com/)/)So usually books can be read one page at a time. Even one paragraph at time. So changing the font doesn’t affect.
+![](/img/1*HuFt4Sf4940fqvvxJL8-3g.png)_xkcd’s “All things explained” book. Example of one page-book. (source [http://xkcd.com](http://xkcd.com/)/)_
+
+So usually books can be read one page at a time. Even one paragraph at time. So changing the font doesn’t affect.
 
 It’s adequately solved when you’ve got pictures or tables.
 

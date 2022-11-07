@@ -44,7 +44,9 @@ OK. I was going to deploy a new app in Go. But where should I deploy it?
 
 The power of Wercker is using external registries and deploying using an orchestrating tool such as [Kubernetes](http://kubernetes.io/) or [ECS](https://aws.amazon.com/ecs/getting-started/).
 
-![](/img/1*D-8W3k06zwRyMBKglKf4YQ.png)Creating a repo in DockerHubFor an external registry, I went for [DockerHub](https://hub.docker.com/). DockerHub is free for public repositories. I have no experience with [Quay](https://quay.io/), although, from what I’ve heard it’s also widely used as a private registry.
+![](/img/1*D-8W3k06zwRyMBKglKf4YQ.png)_Creating a repo in DockerHub_
+
+For an external registry, I went for [DockerHub](https://hub.docker.com/). DockerHub is free for public repositories. I have no experience with [Quay](https://quay.io/), although, from what I’ve heard it’s also widely used as a private registry.
 
 On the orchestration thing, not too much thinking either. As I’ve mentioned before, my company was in the process of [moving from CoreOS+fleet to Kubernetes](https://medium.com/@gonfva/deploying-docker-29c459cfa6ab#.p9e8cf3bm) so I have more experience with Kubernetes.
 
@@ -56,7 +58,9 @@ I wanted to be able to recreate the cluster many times. Therefore, in the end, I
 
 Once I had the Golang app running locally, and a Kubernetes cluster in AWS, it was time to start using Wercker.
 
-![](/img/1*KaA4LBBpYZ5tKBUG8k3uvg.png)Login page in WerckerCreating an account is a doddle. You only need to choose username, email and password. Next you receive an email to activate your new account. You confirm the email by clicking on a link and that’s it.
+![](/img/1*KaA4LBBpYZ5tKBUG8k3uvg.png)_Login page in Wercker_
+
+Creating an account is a doddle. You only need to choose username, email and password. Next you receive an email to activate your new account. You confirm the email by clicking on a link and that’s it.
 
 Or at least, that’s how it looks.
 
@@ -69,7 +73,7 @@ In that wizard there are three steps:
 - Choose a repository: You need to tell where your code resides. Currently there are two options: Github and Bitbucket. So you click on connect and you are redirected to the typical OAuth process. After authentication, you get a list of repos where you can choose.
 - Choosing your access: This is a bit confusing. But for public repositories, the recommended “Wercker will checkout the code without using SSH key” is the good one. “Public repo, move along” would be a better name.
 - And you’re all done. No really third step.
-  ![](/img/1*JLth8fMdbGRCIjE-4-ZoBw.png)Choose a language to create a new templateAt this point, your app is created in Wercker’s terms.
+  ![](/img/1*JLth8fMdbGRCIjE-4-ZoBw.png)_Choose a language to create a new templateAt this point, your app is created in Wercker’s terms_
 
 But you really are only connected to the code. You will need to really configure the application.
 

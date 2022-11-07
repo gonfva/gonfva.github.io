@@ -8,7 +8,9 @@ tags:
 categories: Developer
 ---
 
-![](/img/1*lM5xY8ZDROmYBYZmSYI3bg.jpeg)Cup cake or fairy cake. It doesn’t matter as long as we know what we meanTechnology moves so quickly that people who work in it are always at risk of being obsolete. You learn something new, thinking it’s going to be the next big thing and five years later it’s old and no longer used.
+![](/img/1*lM5xY8ZDROmYBYZmSYI3bg.jpeg)
+
+Cup cake or fairy cake. It doesn’t matter as long as we know what we meanTechnology moves so quickly that people who work in it are always at risk of being obsolete. You learn something new, thinking it’s going to be the next big thing and five years later it’s old and no longer used.
 
 It’s also a trend that reinforces itself. You need to be in the know if you want to stay somehow relevant. So there is some kind of continuous looking of the coolest newest trend.
 

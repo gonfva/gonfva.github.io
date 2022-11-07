@@ -68,7 +68,7 @@
       "datePublished": "2016-10-16 18:00:00 \u002b0000 UTC",
       "dateModified" : "2016-10-16 18:00:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2016-10-16-a-flow-for-containers\/",
-      "wordCount" : "2010",
+      "wordCount" : "2012",
       "keywords" : ["Blog"]
     }
   
@@ -165,7 +165,8 @@
   
    target="_blank" rel="noreferrer noopener" 
 >ECS</a>.</p>
-<p><img src="/img/1*D-8W3k06zwRyMBKglKf4YQ.png" alt="">Creating a repo in DockerHubFor an external registry, I went for <a href="https://hub.docker.com/" 
+<p><img src="/img/1*D-8W3k06zwRyMBKglKf4YQ.png" alt=""><em>Creating a repo in DockerHub</em></p>
+<p>For an external registry, I went for <a href="https://hub.docker.com/" 
   
    target="_blank" rel="noreferrer noopener" 
 >DockerHub</a>. DockerHub is free for public repositories. I have no experience with <a href="https://quay.io/" 
@@ -195,7 +196,8 @@
 >kubeadm page</a>, for my very specific case.</p>
 <h3 id="how">How<a class="anchor" href="#how">#</a></h3>
 <p>Once I had the Golang app running locally, and a Kubernetes cluster in AWS, it was time to start using Wercker.</p>
-<p><img src="/img/1*KaA4LBBpYZ5tKBUG8k3uvg.png" alt="">Login page in WerckerCreating an account is a doddle. You only need to choose username, email and password. Next you receive an email to activate your new account. You confirm the email by clicking on a link and that’s it.</p>
+<p><img src="/img/1*KaA4LBBpYZ5tKBUG8k3uvg.png" alt=""><em>Login page in Wercker</em></p>
+<p>Creating an account is a doddle. You only need to choose username, email and password. Next you receive an email to activate your new account. You confirm the email by clicking on a link and that’s it.</p>
 <p>Or at least, that’s how it looks.</p>
 <p>After the first login, in the first page I chose “Create your first application”. The name is a bit confusing, because the subsequent page is a wizard to <em>connect to your code</em> repository.</p>
 <p>So you are not creating your first application, you’re setting up things.</p>
@@ -204,7 +206,7 @@
 <li>Choose a repository: You need to tell where your code resides. Currently there are two options: Github and Bitbucket. So you click on connect and you are redirected to the typical OAuth process. After authentication, you get a list of repos where you can choose.</li>
 <li>Choosing your access: This is a bit confusing. But for public repositories, the recommended “Wercker will checkout the code without using SSH key” is the good one. “Public repo, move along” would be a better name.</li>
 <li>And you’re all done. No really third step.
-<img src="/img/1*JLth8fMdbGRCIjE-4-ZoBw.png" alt="">Choose a language to create a new templateAt this point, your app is created in Wercker’s terms.</li>
+<img src="/img/1*JLth8fMdbGRCIjE-4-ZoBw.png" alt=""><em>Choose a language to create a new templateAt this point, your app is created in Wercker’s terms</em></li>
 </ul>
 <p>But you really are only connected to the code. You will need to really configure the application.</p>
 <p>Wercker is configured by putting a file with a specific name (<em>wercker.yml</em>) at the top folder of your source code.</p>

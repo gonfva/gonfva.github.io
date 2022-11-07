@@ -9,7 +9,9 @@ tags:
 categories: Technology
 ---
 
-![](/img/1*VR7QZ_ks_U3L7T0aKxowPA.jpeg)A couple of weeks ago, I had an interesting discussion in Twitter about how a Spanish Government body (AEAT, the equivalent of HRMC in the UK or IRS in the US) was offering different “services” in two different websites.
+![](/img/1*VR7QZ_ks_U3L7T0aKxowPA.jpeg)
+
+A couple of weeks ago, I had an interesting discussion in Twitter about how a Spanish Government body (AEAT, the equivalent of HRMC in the UK or IRS in the US) was offering different “services” in two different websites.
 
 For those [not fluent in Spanish](https://twitter.com/raquelponcela/status/590257368224661504), think of going to **one site to read email** and going to a **different site to write it**.
 

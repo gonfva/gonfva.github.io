@@ -27,7 +27,9 @@ So before restarting, I opened Finder, and then I launched the Go dialog into th
 
 ~/Library/Application Support
 
-![](/img/1*wG8F3yAXZIV_A6zNekEzvQ.png)To open the Go dialog (“Go to the folder”) press CMD+SHIFT+G
+![](/img/1*wG8F3yAXZIV_A6zNekEzvQ.png)
+
+To open the Go dialog (“Go to the folder”) press CMD+SHIFT+G
 
 Once in the folder ~/Library/Application Support, you have to delete the folder Dock.
 

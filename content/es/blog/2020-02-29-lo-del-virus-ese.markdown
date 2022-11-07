@@ -49,7 +49,9 @@ _Muchos se curan, pero no todos. [Informe misión conjunta China-OMS](https://ww
 
 Lo mismo en el hospital que en la UCI, el principal tratamiento es ayudar al enfermo a que resista. No hay medicinas
 
-![](/img/1*Y6NkSrK1vpl4_jaU7EhTcA.png)No hay tratamiento fiable. [Informe misión conjunta China-OMS](https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf). Pag 32La segunda diferencia importante es que es muy contagioso, dura más que una gripe, no hay inmunidad de grupo (nadie ha pasado el coronavirus) ni vacuna.
+![](/img/1*Y6NkSrK1vpl4_jaU7EhTcA.png)_No hay tratamiento fiable. [Informe misión conjunta China-OMS](https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf). Pag 32_
+
+La segunda diferencia importante es que es muy contagioso, dura más que una gripe, no hay inmunidad de grupo (nadie ha pasado el coronavirus) ni vacuna.
 
 Así que, aunque la mortalidad fuera similar a la gripe[^2], la epidemia podría progresar MUY rápido con mucha gente afectada al mismo tiempo.
 
@@ -61,7 +63,9 @@ Y aquí es donde los chinos, con todo lo que han hecho mal, han podido hacer alg
 
 Para cazar nuevos casos han utilizado big data e inteligencia artificial, cámaras, registros telefónicos.
 
-![](/img/1*HY1yCtblnQaD4ArFAp_aQw.png)Uso de Big data e IA. [Informe misión conjunta China-OMS](https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf). Pag 15Y así han conseguido frenar la transmisión.
+![](/img/1*HY1yCtblnQaD4ArFAp_aQw.png)_Uso de Big data e IA. [Informe misión conjunta China-OMS](https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf). Pag 15_
+
+Y así han conseguido frenar la transmisión.
 
 ¿Va a seguir habiendo casos en China? Sí, pero han conseguido frenar el pico. Y han ganado tiempo. Pero el precio a pagar ha sido muy alto. Paralizar un país de más de 1000 millones de personas.
 

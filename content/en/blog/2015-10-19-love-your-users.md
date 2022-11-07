@@ -8,7 +8,9 @@ tags:
 categories: Developer
 ---
 
-![](/img/1*hf3LARwK7-Y6UJ3rDQJQoQ.jpeg)A few years ago, I was leading a small team in charge of developers’ tools and framework. We discovered a bug, and the easiest way to solve it was to make a change in a different piece of functionality that wasn’t technically right, but was being heavily used. The functionality had security issues, specially if improperly used, and it provided a shortcut to the proper way to do things.
+![](/img/1*hf3LARwK7-Y6UJ3rDQJQoQ.jpeg)
+
+A few years ago, I was leading a small team in charge of developers’ tools and framework. We discovered a bug, and the easiest way to solve it was to make a change in a different piece of functionality that wasn’t technically right, but was being heavily used. The functionality had security issues, specially if improperly used, and it provided a shortcut to the proper way to do things.
 
 So we had some discussion among team members, but it seemed a no-brainier. We removed the functionality, solved the issue, “encouraged” people (remember, developers) to do the things the proper way.
 

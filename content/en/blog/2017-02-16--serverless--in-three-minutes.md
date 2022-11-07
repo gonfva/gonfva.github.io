@@ -14,7 +14,9 @@ Everybody knows that **_cloud_** in _cloud computing_ is just a name.
 
 However, it’s surprising how many people have a similar idea. You chat with someone in IT about “_serverless_” and she says something like “_Serverless_ doesn’t make any sense. Code has to run on a server”.
 
-![](/img/1*OGTIKrYbATwH2rQaxxGhhw.png)Quite common opinionI understand [technology](https://hackernoon.com/tagged/technology) changes a lot. Sometimes names are not very transparent. And we cannot chase the latest buzzword. Many companies/organisations were still dealing with virtualisation when the cloud came. Then without pause, containers seemed to be the hottest thing.
+![](/img/1*OGTIKrYbATwH2rQaxxGhhw.png)_Quite common opinion_
+
+I understand [technology](https://hackernoon.com/tagged/technology) changes a lot. Sometimes names are not very transparent. And we cannot chase the latest buzzword. Many companies/organisations were still dealing with virtualisation when the cloud came. Then without pause, containers seemed to be the hottest thing.
 
 > “I don’t have time for ‘serverless’, whatever that mean”.So here it comes a three minutes read on the topic.
 
@@ -41,7 +43,9 @@ We’ve been deploying packaged applications for 15 years or more. And now that 
 
 Why develop in terms of functions? Why the buzz?
 
-![](/img/1*0Agw2zSjrfvyq-VBezij9w.png)Pancakes…For three reasons:
+![](/img/1*0Agw2zSjrfvyq-VBezij9w.png)_Pancakes…_
+
+For three reasons:
 
 1. With serverless you have “virtually” unlimited scalability. You no longer have to decide how many servers you are going to dedicate to something. Your provider creates as many “function instances” as you need, and destroy them when they are not needed.
 2. With serverless, you pay per use. Real use. Not the server up and idle. You pay per code being executed.

@@ -8,7 +8,9 @@ tags:
 categories: Jobs
 ---
 
-![](/img/1*ktZKKkCiThojgeTSl0fnSg.jpeg)Dear recruiter. Don’t take it personal, but I’m not interested in the role you’re trying to recruit.
+![](/img/1*ktZKKkCiThojgeTSl0fnSg.jpeg)
+
+Dear recruiter. Don’t take it personal, but I’m not interested in the role you’re trying to recruit.
 
 I receive lots of messages from recruiters. I get offered to participate in events so that companies can offer me new jobs.
 

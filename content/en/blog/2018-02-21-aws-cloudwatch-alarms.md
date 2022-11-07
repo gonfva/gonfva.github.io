@@ -42,10 +42,13 @@ You need to tell Cloudwatch that no errors is OK. Which is a bit counter-intuiti
 
 So you start getting a bit nervous when you see in the web console that there are alarms with state INSUFFICIENT.
 
-![](/img/1*iaXpA1Y7m_BsifhsuIc_LA.png)And you start wondering why your AWS managed ElasticSearch cluster inside your own VPC has the alarms with insufficient data.
+![](/img/1*iaXpA1Y7m_BsifhsuIc_LA.png)
+
+And you start wondering why your AWS managed ElasticSearch cluster inside your own VPC has the alarms with insufficient data.
 
 If you face something like that, consider if your dimensions are correctly defined.
 
+```
 "ESAlarmClusterRedHealth": {
 "Type": "AWS::CloudWatch::Alarm",
 "Properties": {
@@ -70,6 +73,9 @@ If you face something like that, consider if your dimensions are correctly defin
 "Value": {"Ref": "AWS::AccountId"}
 }**]
 }
-}It turns out that the DomainName is not enough, and you need to pass the ClientId too.
+}
+```
+
+It turns out that the DomainName is not enough, and you need to pass the ClientId too.
 
 You got the memo. Cloudwatch alarms in insufficient state are probably wrong.

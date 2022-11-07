@@ -13,7 +13,9 @@ categories: [Personal, Technology]
 
 For many people not living in the UK, it will come as a surprise that the railway system in London is quite expensive and provides a really bad service.
 
-![](/img/1*1ejopJRU6tyb99iYCyI14w.jpeg)Train service is not a theme park. It affects people’s livesSome of my Spanish readers will think “surely that cannot be true”. After all, railway was born in the UK. And punctuality is probably one of the words when a Spaniard thinks of British people.
+![](/img/1*1ejopJRU6tyb99iYCyI14w.jpeg)_Train service is not a theme park. It affects people’s lives_
+
+Some of my Spanish readers will think “surely that cannot be true”. After all, railway was born in the UK. And punctuality is probably one of the words when a Spaniard thinks of British people.
 
 It turns out train delays and cancellations, packed and dirty coaches, and little information are surprisingly common. And tickets are really expensive.
 
@@ -39,7 +41,9 @@ I totally understand it is not the driver fault. It may not even be the franchis
 
 UK railway system is quite complicated. Simplifying a lot, trains, drivers and sales are privatised to private franchises, [railway is managed by a government-owned company](https://www.networkrail.co.uk/), [timetables managed by a different government-owned company](http://www.nationalrail.co.uk/) and I haven’t even started.
 
-![](/img/1*JHRUu8mPBrsq0fO6fldY4Q.png)Franchise shifting the blameBeing such a mess, it is tempting to look for blame.
+![](/img/1*JHRUu8mPBrsq0fO6fldY4Q.png)_Franchise shifting the blame_
+
+Being such a mess, it is tempting to look for blame.
 
 People tends to blame the private franchises. I myself has fantasied with launching a [mobile app](#Its%20title%20%27Yet%20another%20Southeastern%20excuse%27).
 
@@ -67,7 +71,9 @@ It seems there is one station in my line that don’t accept trains with twelve 
 
 Cancellations and delays come in different flavours. It doesn’t matter if it is a train fault. Or a crew member that couldn’t attend. Or a line blocked by an engineering problem. Not to mention specific timetables in London because snow, rain, hot weather or leaves in Autumn (I swear I’m not lying, those have been excuses in different occasions. not for a specific problem one evening but to change the timetable for week)
 
-![](/img/1*Im1NuH_8hrl-ABMPMKdG6Q.jpeg)Delayed because late departure due to missing crew memberFailures happen. You can let it to affect you. Or you can be resilient to those problems, and anticipate.
+![](/img/1*Im1NuH_8hrl-ABMPMKdG6Q.jpeg)_Delayed because late departure due to missing crew member_
+
+Failures happen. You can let it to affect you. Or you can be resilient to those problems, and anticipate.
 
 You can have spare crew in some key stations in your network, ready to deploy to wherever they are needed.
 
@@ -89,7 +95,9 @@ Imagine your train is scheduled for 8:37. You arrive at the station at 8:35. You
 
 Your experience tells you that it will be a bigger delay.
 
-![](/img/1*K0wffkNTba1fFXEdvbrW6Q.png)Not yet departed. Schrodinger’s trainIt seems the announced delayed is calculated in terms of the current delay for that train. But when a train is delayed in the rush hour, more people will be at the platform waiting for the usually packed train, which will make more difficult for those people to get into the train (already crowded). Which will increase the delay on the following station. And so on and so forth.
+![](/img/1*K0wffkNTba1fFXEdvbrW6Q.png)_Not yet departed. Schrodinger’s train_
+
+It seems the announced delayed is calculated in terms of the current delay for that train. But when a train is delayed in the rush hour, more people will be at the platform waiting for the usually packed train, which will make more difficult for those people to get into the train (already crowded). Which will increase the delay on the following station. And so on and so forth.
 
 I know this.
 
@@ -105,7 +113,9 @@ In summary, my perception is that in addition to stingy franchises, and old phys
 
 **Parallels**: A few weeks ago I was trying to reserve a flight. I couldn’t fill the details because the page required to fill all the details and there was a bug on one of the details required.
 
-![](/img/0*miUaOt_S3buSrlJb)I bought the ticket with a different company**Lesson**: If you only know that your system has crashed because your customer complains, you have a problem with your system.
+![](/img/0*miUaOt_S3buSrlJb)_I bought the ticket with a different company_
+
+**Lesson**: If you only know that your system has crashed because your customer complains, you have a problem with your system.
 
 ### Final words
 
