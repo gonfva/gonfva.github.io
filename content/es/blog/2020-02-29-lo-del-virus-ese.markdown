@@ -75,7 +75,9 @@ Ahora nos toca al resto del mundo.
 
 Aquí va a ser imposible justificar cuarentenas de provincias concretas. Va a ser difícil justificar espionaje de toda la población.
 
-{{< tweet user="BBCMonitoring" id="1232589946285907969" >}}_La gestión de Irán es injustificable, pero este razonamiento concreto no será raro._
+{{< tweet user="BBCMonitoring" id="1232589946285907969" >}}
+
+La gestión de Irán es injustificable, pero este razonamiento concreto no será raro.
 
 **Pero sí podemos hacer cosas para frenarlo**. Y tendremos que estar preparados para cuando nuestros gobiernos quieran imponer medidas graves para frenar la epidemia (“social distance”).
 
