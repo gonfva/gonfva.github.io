@@ -14,7 +14,8 @@ There is some outrage in Twitter because it has started to implement some change
 - Moments is something that appeared in the header of Twitter, but I haven’t clicked more than 3 times (the last one while preparing this post)
 - Now it seems they’re going to put a “While you were away” on steroids. Sometimes I discover something I had actually missed. But usually I’ll go full chronological because I’ll discover something interesting more times in chronological than in “While you were away”.
 - Still in the go is changing the maximum length of a tweet beyond the 140 characters.
-  I’m not very passionate about the changes. Many times I feel I spent too much time in Twitter, so the moment the changes start upsetting me, I’ll leave Twitter. And I will be glad of an excuse.
+
+I’m not very passionate about the changes. Many times I feel I spent too much time in Twitter, so the moment the changes start upsetting me, I’ll leave Twitter. And I will be glad of an excuse.
 
 #### Twitter and users are both wrong
 
@@ -24,7 +25,7 @@ Outraged users think the changes are done with the active users in mind, and the
 
 They are wrong. The changes are to get more users.
 
-> Yes, there are many people that want to consume content in a packaged way. They don’t want to actively look for sources, prune, read, select. And they never will.Those are the target of the changes. Twitter wants to get those people.
+Yes, there are many people that want to consume content in a packaged way. They don’t want to actively look for sources, prune, read, select. And they never will.T hose are the target of the changes. Twitter wants to get those people.
 
 It’s a bold movement, but it has its merits.
 
@@ -53,7 +54,7 @@ Meanwhile, for the people who would like Twitter, fix what people is really aski
 
 {{< tweet user="BenedictEvans" id="696040383315255296" >}}
 
-Onboarding is, in my opinion, the low hanging fruit in terms of fixing and bringing people into the funnel. I just tested it. It’s horrible. First the categories are difficult to figure out. There are things that looks very similar to me: Entretainment, Television, Music, Actor and actresses, comedians… Then even if you select only one category, you gets other things. I just selected Charities and NGO and got offered [Ant&Dec](https://twitter.com/antanddec) (UK comediants). And [Jack Whitehall](https://twitter.com/jackwhitehall) (another comedian) is in any option. IT anywhere? Economy? Politics? Alerts? I selected Literature and got offered and account run by Dan Brown’s team but I couldn’t find [J.K.Rowling](https://twitter.com/jk_rowling) (which happens to be both a celebrity, write interesting books and tweets and has an honest non-BS dialogue in Twitter)
+Onboarding is, in my opinion, the low hanging fruit in terms of fixing and bringing people into the funnel. I just tested it. It’s horrible. First the categories are difficult to figure out. There are things that looks very similar to me: Entertainment, Television, Music, Actor and actresses, comedians… Then even if you select only one category, you get other things. I just selected Charities and NGO and got offered [Ant&Dec](https://twitter.com/antanddec) (UK comediants). And [Jack Whitehall](https://twitter.com/jackwhitehall) (another comedian) is in any option. IT anywhere? Economy? Politics? Alerts? I selected Literature and got offered and account run by Dan Brown’s team but I couldn’t find [J.K.Rowling](https://twitter.com/jk_rowling) (which happens to be both a celebrity, write interesting books and tweets and has an honest non-BS dialogue in Twitter)
 
 #### Conclusion
 
