@@ -68,7 +68,7 @@
       "datePublished": "2012-09-24 19:33:00 \u002b0000 UTC",
       "dateModified" : "2012-09-24 19:33:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2012-09-24-optionaldataexception-while-reading-jms\/",
-      "wordCount" : "184",
+      "wordCount" : "201",
       "keywords" : ["Blog"]
     }
   
@@ -127,15 +127,19 @@ Caused by: java.io.OptionalDataException
       at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348)
       at java.util.HashMap.readObject(HashMap.java:1066)
 </code></pre>
-<p>In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message <code>(Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException)</code>. In a similar way, trying to send an int, he got a <em>NotSerializableException</em>. And trying to send some class and then changing the <em>serialVersionUID</em>, he got an error at receiving, but a different error (<em>java.io.InvalidClassException</em>).</p>
+<p>In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message <code>(Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException)</code>.</p>
+<p>In a similar way, trying to send an int, they got a <em>NotSerializableException</em>.</p>
+<p>And finally trying to send some class and then changing the <em>serialVersionUID</em>, they got an error at receiving, but a different error (<em>java.io.InvalidClassException</em>).</p>
 <p>Everything in Internet pointed to a thread-unsafe error, so we looked at the code and found this</p>
-<pre><code>mensaje = receptorMensaje.receive(timeOut*1000);
+<pre><code>message = receiver.receive(timeOut*1000);
 [...]
-mensaje.acknowledge();
+message.acknowledge();
 </code></pre>
-<p>with several lines of code between the receive and the acknowledge, and without synchronization</p>
-<p>Under very heavy load, it was easy to have a thread execute the receive, a different thread execute the receive and then the first thread acknowledge. But by then both threads have the same object and if the first thread changed its copy, the Exception would be triggered.</p>
-<p>We extract a method this code and synchronized.</p>
+<p>with several lines of code between the receive and the acknowledge, and without any synchronization.</p>
+<p>So the explanation for our case became clear.</p>
+<p>Under very heavy load, it was easy to have a thread execute the receive, a different thread execute the receive and then the first thread acknowledge. But by then both threads have the same object.</p>
+<p>And if the first thread changed its copy, the Exception would be triggered.</p>
+<p>As a solution, we extracted a method for this code and synchronized the method.</p>
 
 
               

@@ -501,7 +501,7 @@ Sony Xperia U (ST25i) has a stock Android 2.</div>
             <a href="/blog/2012-09-24-optionaldataexception-while-reading-jms/">OptionalDataException while reading JMS message</a>
           </h2>
           <div class="summary">We&rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message (Caused by: javax.</div>
+javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</div>
         </div>
       </li>
       

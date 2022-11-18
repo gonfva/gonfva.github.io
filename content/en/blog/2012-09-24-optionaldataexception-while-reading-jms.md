@@ -11,8 +11,6 @@ tags:
 
 We've been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
 
-
-
 ```
 javax.jms.JMSException: getObject
           [...]
@@ -22,21 +20,29 @@ Caused by: java.io.OptionalDataException
       at java.util.HashMap.readObject(HashMap.java:1066)
 ```
 
-In trying to reproduce people in the team introduced a non-serializable object, but he got an exception at sending the message `(Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException)`. In a similar way, trying to send an int, he got a _NotSerializableException_. And trying to send some class and then changing the _serialVersionUID_, he got an error at receiving, but a different error (_java.io.InvalidClassException_).
+In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message `(Caused by: javax.jms.JMSException: setObject [...] java.io.NotSerializableException)`.
+
+In a similar way, trying to send an int, they got a _NotSerializableException_.
+
+And finally trying to send some class and then changing the _serialVersionUID_, they got an error at receiving, but a different error (_java.io.InvalidClassException_).
 
 
 Everything in Internet pointed to a thread-unsafe error, so we looked at the code and found this
 
 
 ```
-mensaje = receptorMensaje.receive(timeOut*1000);
+message = receiver.receive(timeOut*1000);
 [...]
-mensaje.acknowledge();
+message.acknowledge();
 ```
 
-with several lines of code between the receive and the acknowledge, and without synchronization
+with several lines of code between the receive and the acknowledge, and without any synchronization.
 
-Under very heavy load, it was easy to have a thread execute the receive, a different thread execute the receive and then the first thread acknowledge. But by then both threads have the same object and if the first thread changed its copy, the Exception would be triggered.
+So the explanation for our case became clear.
+
+Under very heavy load, it was easy to have a thread execute the receive, a different thread execute the receive and then the first thread acknowledge. But by then both threads have the same object.
+
+And if the first thread changed its copy, the Exception would be triggered.
 
 
-We extract a method this code and synchronized.
+As a solution, we extracted a method for this code and synchronized the method.
