@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Improving Windows build times in EKS | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Improving Windows build times in EKS" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Improving Windows build times in EKS",
+      "headline" : "Improving Windows build times in EKS",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2023",
+      "datePublished": "2023-08-19 09:30:00 \u002b0000 UTC",
+      "dateModified" : "2023-08-19 09:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2023-08-19-faster-windows-eks\/",
+      "wordCount" : "902",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Improving Windows build times in EKS</h1>
+            
+            <h2>Some recipes for faster windows builds in AWS</h2>
+            
+            <time datetime="2023-08-19 09:30:00 &#43;0000 UTC" class="post__date">2023-08-19</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="improving-windows-build-times-in-eks">Improving Windows build times in EKS<a class="anchor" href="#improving-windows-build-times-in-eks">#</a></h2>
+<p>I cannot believe a year has passed since my last annotation (<a href="/blog/2022-10-14-windows-2022-eks" 
+  
+  
+>which was also EKS and Windows related</a>).</p>
+<p>One of our most recent projects has been moving most of our build infrastructure to the cloud. The move has been great, with people waiting less for builds, decomissioning crazy big machines, while keeping an eye on cloud costs, and doing it using IaC.</p>
+<p>However, nailing down the Windows pipelines have been more complicated and I wanted to share a few recipes.</p>
+<h3 id="cache-images">Cache images<a class="anchor" href="#cache-images">#</a></h3>
+<p>Windows container images tend to be humongous. If you&rsquo;re building your own AMIs, <a href="https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/#pull-essential-images" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>you may want to pull the container images you tend to use</a>. In that way pods will start faster.</p>
+<p>Everybody knows about it and <a href="https://aws.amazon.com/blogs/containers/speeding-up-windows-container-launch-times-with-ec2-image-builder-and-image-cache-strategy/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>AWS recommends the approach</a>. But in case you missed the memo.</p>
+<h3 id="slow-cloning-times">Slow cloning times<a class="anchor" href="#slow-cloning-times">#</a></h3>
+<p>We were seeing slow cloning times. Network performance was fine, disk performance was fine. No clear culprit or wrong metric.</p>
+<p>But <code>git checkout</code> performance was slow.</p>
+<p>Some recipes.</p>
+<h4 id="antivirus">Antivirus</h4>
+<p>I&rsquo;m not sure what triggered the mental process. Some weird metric. But I remember thinking <code>What if the issue is antivirus running while the code is being downloaded?</code></p>
+<p>So we tried to tell Windows defender to skip checking. In the AMI</p>
+<pre><code class="language-powershell">powershell -inputformat none -outputformat none add-mppreference -ExclusionPath 'c:/'
+</code></pre>
+<p>and boy, we did noticed such an improvement!!!</p>
+<p>Of course you can change it to skip a different path (<code>c:/var/lib/kubelet/</code> instead of <code>c:\</code> is a good idea)</p>
+<h4 id="proper-resources-for-agents">Proper resources for agents</h4>
+<p>This is not specific for Windows builds (in fact we noticed it a Linux based Jenkins build).</p>
+<p>We had defined resources for the agent (the sidecar that runs with the main container as part of the build pod). And we were noticing again low checkout speeds.</p>
+<p>In this case, the agent container was being throttled.</p>
+<p>Expanding the resources was enough to improve the performance.</p>
+<h3 id="ebs-initialization">EBS initialization<a class="anchor" href="#ebs-initialization">#</a></h3>
+<p>We were still seeing some performance penalty. Mostly related to cloning times, but not only.</p>
+<p>There is a penalty the first time you access an EBS volume that comes from a snapshot. And EBS volumes that come from AMIs will have that penalty.</p>
+<p>We tried the <a href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ebs-initialize.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>proposed solution (using FIO)</a> on the user-data, but the nodes wouldn&rsquo;t join the cluster (unclear why).</p>
+<p>So we decided to use ephemeral instance storage.</p>
+<h4 id="windows-instance-storage">Windows instance storage</h4>
+<p>If you want to use ephemeral storage, you first need to start by using instance types that have ephemeral storage. In our case we went for <code>m6id.4xlarge</code> and similar.</p>
+<p>Then the launch template has to use two block device mappings: one for the AMI that uses EBS and a second (or more) for mounting the ephemeral disk. Not using EBS for the AMI is a PITA (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-instance-store.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>I&rsquo;m not even sure it is possible</a>).</p>
+<p>And finally, you need to use the ephemeral storage. Basically you format the disk, you assign to one new letter/drive, and you tell Kubelet to use that one letter (using <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/#:~:text=root%2ddir" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>root-dir</a>)</p>
+<pre><code class="language-powershell">
+$contentToAdd = @&quot;
+select disk 1
+convert dynamic
+create volume simple disk 1
+select volume 1
+assign letter=D
+format quick
+&quot;@
+
+#Format the disk and add a new drive
+Add-Content &quot;C:\Users\Administrator\diskpart.cmd&quot; $contentToAdd
+diskpart /s C:\Users\Administrator\diskpart.cmd
+
+#Join the cluster
+[string]$EKSBinDir = &quot;$env:ProgramFiles\Amazon\EKS&quot;
+[string]$EKSBootstrapScriptName = &quot;Start-EKSBootstrap.ps1&quot;
+#This is the key part. Tell kubelet to use the new disk
+[string]$KLExtraArgs = '--root-dir=d:/'
+[string]$EKSBootstrapScriptFile = &quot;$EKSBinDir\$EKSBootstrapScriptName&quot;
+&amp; $EKSBootstrapScriptFile -EKSClusterName &lt;clustername&gt; -ContainerRuntime containerd -KubeletExtraArgs $KLExtraArgs 3&gt;&amp;1 4&gt;&amp;1 5&gt;&amp;1 6&gt;&amp;1
+</code></pre>
+<h4 id="windows-empty-ebs">Windows empty EBS</h4>
+<p>Using ephemeral storage worked. And it worked well.</p>
+<p>But instance types with ephemeral storage are more expensive. It is questionable if that the case if you include EBS costs at well, but your EBS disk might be smaller. But if you use spot instances, you have a bunch more of instance types to choose from.</p>
+<p>Also, passing <code>--root-dir</code> to kubelet seems to be a <a href="https://github.com/aws/karpenter/issues/4411" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>no-go for Karpenter any time soon</a>.</p>
+<p>So I decided to explore using EBS but with an empty EBS volume.</p>
+<p>As I mentioned, the initialization penalty only happens when the volume comes from a snapshot. If it is an empty volume, you&rsquo;re fine!!!</p>
+<p>So same as before, I would format the new disk and mounted it.</p>
+<p>But then I thought <code>what would happen if I mounted the disk in the original place so that I don't need to change kubelet default path?</code>.</p>
+<p>Yes, you can mount a disk under a specific folder in Windows (and obviously in Linux).</p>
+<p>So yes, that can be done.</p>
+<pre><code class="language-powershell">
+$contentToAdd = @&quot;
+select disk 1
+convert dynamic
+create volume simple disk 1
+select volume 1
+assign mount=&quot;C:\var\lib\kubelet&quot;
+format quick
+&quot;@
+
+#Format the disk and add a new drive
+Add-Content &quot;C:\Users\Administrator\diskpart.cmd&quot; $contentToAdd
+diskpart /s C:\Users\Administrator\diskpart.cmd
+
+#Join the cluster
+[string]$EKSBinDir = &quot;$env:ProgramFiles\Amazon\EKS&quot;
+[string]$EKSBootstrapScriptName = &quot;Start-EKSBootstrap.ps1&quot;
+[string]$EKSBootstrapScriptFile = &quot;$EKSBinDir\$EKSBootstrapScriptName&quot;
+&amp; $EKSBootstrapScriptFile -EKSClusterName &lt;clustername&gt; -ContainerRuntime containerd 3&gt;&amp;1 4&gt;&amp;1 5&gt;&amp;1 6&gt;&amp;1
+</code></pre>
+<p>This solution to not passing root-dir, works for both EBS and ephemeral storage.</p>
+<h3 id="totally-unrelated-one-last-thing">Totally unrelated: one last thing<a class="anchor" href="#totally-unrelated-one-last-thing">#</a></h3>
+<p>I cannot say goodbye without posting something else.</p>
+<p>If you use the EBS add-on, you might see that the EBS daemonset fails to work on Windows. It turns out it expects a folder to exist so that it can mount it. Other folders are <code>DirectoryOrCreate</code> but not this one.</p>
+<p>My solution was to use the following</p>
+<pre><code class="language-powershell">
+new-item -type directory -path &quot;C:\var\lib\kubelet\plugins_registry&quot; -force
+</code></pre>
+<p>YMMV</p>
+<h3 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h3>
+<p>And that&rsquo;s it. Just a few tips in case they are helpful for somebody else</p>
+<p>If you arrive to this page, please let me know if it helped.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li>
+    </ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Windows 2022 in EKS with packer</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2023</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">Improving Windows build times in EKS</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#improving-windows-build-times-in-eks">Improving Windows build times in EKS</a>
+      <ul>
+        <li><a href="#cache-images">Cache images</a></li>
+        <li><a href="#slow-cloning-times">Slow cloning times</a></li>
+        <li><a href="#ebs-initialization">EBS initialization</a></li>
+        <li><a href="#totally-unrelated-one-last-thing">Totally unrelated: one last thing</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

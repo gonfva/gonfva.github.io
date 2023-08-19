@@ -156,4 +156,4 @@ No es ni siquiera una cuestión de economía (aunque paralizar un país también
 
 Sí, la política del Reino Unido tiene un riesgo a corto plazo brutal. Pero no es una locura.
 
-_[You can find an _[_English translation here_](/posts/2020-03-15-coronavirus-in-the-uk/)_]_
+_[You can find an _[_English translation here_](/blog/2020-03-15-coronavirus-in-the-uk/)_]_

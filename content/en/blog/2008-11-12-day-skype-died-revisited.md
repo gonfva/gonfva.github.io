@@ -9,7 +9,7 @@ tags:
 ---
 
 Sometimes you realize you've written a weak post too late. It was my case with
-[yesterday's annotation](/posts/2008-11-11-day-skype-died).
+[yesterday's annotation](/blog/2008-11-11-day-skype-died).
 
 I thought nobody would even read it. But it seems that, because of a trackback
 at Gmail Blog, I was wrong.

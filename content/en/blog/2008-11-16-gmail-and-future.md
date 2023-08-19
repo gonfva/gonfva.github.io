@@ -8,7 +8,7 @@ tags:
   - Technology
 ---
 
-As I said on my last post, I think that [integration of Video and voice chat **could** be part of a greater strategy](/posts/2008-11-12-day-skype-died-revisited/). What would be that strategy?
+As I said on my last post, I think that [integration of Video and voice chat **could** be part of a greater strategy](/blog/2008-11-12-day-skype-died-revisited/). What would be that strategy?
 
 In my opinion it should have two parts.
 
