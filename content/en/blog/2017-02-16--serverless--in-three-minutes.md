@@ -78,7 +78,10 @@ Serverless is still evolving. You may want to wait.
 
 It is going to be huge. You may want to do some side project. [Play](https://serverless.com/framework/docs/).
 
-_If you liked this entry, you may also like _[_Switch off your servers_](https://medium.com/@gonfva/shut-down-your-servers-15a7b3f6fe20#.xkftkpisf)_._
+_If you liked this entry, you may also like _[_Switch off your servers_](/blog/2017-01-21-switch-off-your-servers/)_._
+
+
+
 
 
 [^1]: In this post, Function as a Service (FaaS) and Serverless are synonyms. I know there is some disccussion. Not in this post

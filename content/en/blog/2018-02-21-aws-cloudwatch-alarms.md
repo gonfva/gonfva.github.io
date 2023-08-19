@@ -15,7 +15,7 @@ You create an alarm, to detect too many 5xx errors in your ELB. But you don’t 
 
 And the problem is the below “TreatMissingData”.
 
-```
+<pre>
 "ELBMany500Alarm": {
   "Type": "AWS::CloudWatch::Alarm",
   "Properties": {
@@ -27,7 +27,7 @@ And the problem is the below “TreatMissingData”.
   "EvaluationPeriods": "5",
   "Period": "60",
   "MetricName": "HTTPCode\_Target\_5XX\_Count",
-  **"TreatMissingData": "notBreaching",**
+  <b>"TreatMissingData": "notBreaching",</b>
   "Statistic": "Sum",
   "OKActions": [],
   "AlarmActions": [ { "Ref": "NotificationARN" } ],
@@ -36,7 +36,7 @@ And the problem is the below “TreatMissingData”.
   "Value": { "Fn::GetAtt" : [ "LoadBalancer" ,"LoadBalancerFullName"] }
   }]
 }
-```
+</pre>
 
 You need to tell Cloudwatch that no errors is OK. Which is a bit counter-intuitive.
 
@@ -48,33 +48,34 @@ And you start wondering why your AWS managed ElasticSearch cluster inside your o
 
 If you face something like that, consider if your dimensions are correctly defined.
 
-```
+<pre>
 "ESAlarmClusterRedHealth": {
-"Type": "AWS::CloudWatch::Alarm",
-"Properties": {
-"Namespace": "AWS/ES",
-"AlarmName": { "Fn::Join" : ["", [ { "Ref" : "AWS::StackName"}, "-hth-r"]]},
-"AlarmDescription": { "Fn::Join" : [" ", [ "Cluster red in", { "Ref" : "AWS::StackName"}]]},
-"ComparisonOperator": "GreaterThanThreshold",
-"Threshold": "0",
-"EvaluationPeriods": "3",
-"Period": "60",
-"MetricName": "ClusterStatus.red",
-"Statistic": "Minimum",
-"TreatMissingData": "notBreaching",
-"OKActions": [],
-"AlarmActions": [ { "Ref": "NotificationARN" } ],
-"Dimensions": [ {
-"Name": "DomainName",
-"Value": {"Ref": "ElasticsearchDomain"}
-},
-**{
-"Name": "ClientId",
-"Value": {"Ref": "AWS::AccountId"}
-}**]
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+          "Namespace": "AWS/ES",
+          "AlarmName": { "Fn::Join" : ["", [ { "Ref" : "AWS::StackName"}, "-hth-r"]]},
+          "AlarmDescription":  { "Fn::Join" : [" ", [ "Cluster red in", { "Ref" : "AWS::StackName"}]]},
+          "ComparisonOperator": "GreaterThanThreshold",
+          "Threshold": "0",
+          "EvaluationPeriods": "3",
+          "Period": "60",
+          "MetricName": "ClusterStatus.red",
+          "Statistic": "Minimum",
+          "TreatMissingData": "notBreaching",
+          "OKActions": [],
+          "AlarmActions": [ { "Ref": "NotificationARN" } ],
+          "Dimensions": [ {
+              "Name": "DomainName",
+              "Value": {"Ref": "ElasticsearchDomain"}
+            },
+            <b>{
+              "Name": "ClientId",
+              "Value": {"Ref": "AWS::AccountId"}
+            }<b>
+          ]
+      }
 }
-}
-```
+</pre>
 
 It turns out that the DomainName is not enough, and you need to pass the ClientId too.
 

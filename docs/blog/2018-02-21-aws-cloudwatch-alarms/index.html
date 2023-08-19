@@ -68,7 +68,7 @@
       "datePublished": "2018-02-21 18:00:00 \u002b0000 UTC",
       "dateModified" : "2018-02-21 18:00:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2018-02-21-aws-cloudwatch-alarms\/",
-      "wordCount" : "349",
+      "wordCount" : "350",
       "keywords" : ["Blog"]
     }
   
@@ -124,58 +124,61 @@
 <p>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.</p>
 <p>You create an alarm, to detect too many 5xx errors in your ELB. But you don’t want it to be triggered too much, so you ask for at least one error per minute during 5 minutes. And you discover that the error gets triggered whenever during the last 5 minutes there was either zero, 2 or more. The alarm would be insufficient_data if zero in the last 5 minutes, or OK if 1 in the last 5 minutes.</p>
 <p>And the problem is the below “TreatMissingData”.</p>
-<pre><code>&quot;ELBMany500Alarm&quot;: {
-  &quot;Type&quot;: &quot;AWS::CloudWatch::Alarm&quot;,
-  &quot;Properties&quot;: {
-  &quot;Namespace&quot;: &quot;AWS/ApplicationELB&quot;,
-  &quot;AlarmName&quot;: { &quot;Fn::Join&quot; : [&quot;&quot;, [ { &quot;Ref&quot; : &quot;AWS::StackName&quot;}, &quot;-high5xx&quot;]]},
-  &quot;AlarmDescription&quot;: { &quot;Fn::Join&quot; : [&quot; &quot;, [ &quot;Too many 5xx errors in&quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot;}]]},
-  &quot;ComparisonOperator&quot;: &quot;GreaterThanThreshold&quot;,
-  &quot;Threshold&quot;: &quot;1&quot;,
-  &quot;EvaluationPeriods&quot;: &quot;5&quot;,
-  &quot;Period&quot;: &quot;60&quot;,
-  &quot;MetricName&quot;: &quot;HTTPCode\_Target\_5XX\_Count&quot;,
-  **&quot;TreatMissingData&quot;: &quot;notBreaching&quot;,**
-  &quot;Statistic&quot;: &quot;Sum&quot;,
-  &quot;OKActions&quot;: [],
-  &quot;AlarmActions&quot;: [ { &quot;Ref&quot;: &quot;NotificationARN&quot; } ],
-  &quot;Dimensions&quot;: [ {
-  &quot;Name&quot;: &quot;LoadBalancer&quot;,
-  &quot;Value&quot;: { &quot;Fn::GetAtt&quot; : [ &quot;LoadBalancer&quot; ,&quot;LoadBalancerFullName&quot;] }
+<pre>
+"ELBMany500Alarm": {
+  "Type": "AWS::CloudWatch::Alarm",
+  "Properties": {
+  "Namespace": "AWS/ApplicationELB",
+  "AlarmName": { "Fn::Join" : ["", [ { "Ref" : "AWS::StackName"}, "-high5xx"]]},
+  "AlarmDescription": { "Fn::Join" : [" ", [ "Too many 5xx errors in", { "Ref" : "AWS::StackName"}]]},
+  "ComparisonOperator": "GreaterThanThreshold",
+  "Threshold": "1",
+  "EvaluationPeriods": "5",
+  "Period": "60",
+  "MetricName": "HTTPCode\_Target\_5XX\_Count",
+  <b>"TreatMissingData": "notBreaching",</b>
+  "Statistic": "Sum",
+  "OKActions": [],
+  "AlarmActions": [ { "Ref": "NotificationARN" } ],
+  "Dimensions": [ {
+  "Name": "LoadBalancer",
+  "Value": { "Fn::GetAtt" : [ "LoadBalancer" ,"LoadBalancerFullName"] }
   }]
 }
-</code></pre>
+</pre>
 <p>You need to tell Cloudwatch that no errors is OK. Which is a bit counter-intuitive.</p>
 <p>So you start getting a bit nervous when you see in the web console that there are alarms with state INSUFFICIENT.</p>
 <p><img src="/img/1*iaXpA1Y7m_BsifhsuIc_LA.png" alt=""></p>
 <p>And you start wondering why your AWS managed ElasticSearch cluster inside your own VPC has the alarms with insufficient data.</p>
 <p>If you face something like that, consider if your dimensions are correctly defined.</p>
-<pre><code>&quot;ESAlarmClusterRedHealth&quot;: {
-&quot;Type&quot;: &quot;AWS::CloudWatch::Alarm&quot;,
-&quot;Properties&quot;: {
-&quot;Namespace&quot;: &quot;AWS/ES&quot;,
-&quot;AlarmName&quot;: { &quot;Fn::Join&quot; : [&quot;&quot;, [ { &quot;Ref&quot; : &quot;AWS::StackName&quot;}, &quot;-hth-r&quot;]]},
-&quot;AlarmDescription&quot;: { &quot;Fn::Join&quot; : [&quot; &quot;, [ &quot;Cluster red in&quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot;}]]},
-&quot;ComparisonOperator&quot;: &quot;GreaterThanThreshold&quot;,
-&quot;Threshold&quot;: &quot;0&quot;,
-&quot;EvaluationPeriods&quot;: &quot;3&quot;,
-&quot;Period&quot;: &quot;60&quot;,
-&quot;MetricName&quot;: &quot;ClusterStatus.red&quot;,
-&quot;Statistic&quot;: &quot;Minimum&quot;,
-&quot;TreatMissingData&quot;: &quot;notBreaching&quot;,
-&quot;OKActions&quot;: [],
-&quot;AlarmActions&quot;: [ { &quot;Ref&quot;: &quot;NotificationARN&quot; } ],
-&quot;Dimensions&quot;: [ {
-&quot;Name&quot;: &quot;DomainName&quot;,
-&quot;Value&quot;: {&quot;Ref&quot;: &quot;ElasticsearchDomain&quot;}
-},
-**{
-&quot;Name&quot;: &quot;ClientId&quot;,
-&quot;Value&quot;: {&quot;Ref&quot;: &quot;AWS::AccountId&quot;}
-}**]
+<pre>
+"ESAlarmClusterRedHealth": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+          "Namespace": "AWS/ES",
+          "AlarmName": { "Fn::Join" : ["", [ { "Ref" : "AWS::StackName"}, "-hth-r"]]},
+          "AlarmDescription":  { "Fn::Join" : [" ", [ "Cluster red in", { "Ref" : "AWS::StackName"}]]},
+          "ComparisonOperator": "GreaterThanThreshold",
+          "Threshold": "0",
+          "EvaluationPeriods": "3",
+          "Period": "60",
+          "MetricName": "ClusterStatus.red",
+          "Statistic": "Minimum",
+          "TreatMissingData": "notBreaching",
+          "OKActions": [],
+          "AlarmActions": [ { "Ref": "NotificationARN" } ],
+          "Dimensions": [ {
+              "Name": "DomainName",
+              "Value": {"Ref": "ElasticsearchDomain"}
+            },
+            <b>{
+              "Name": "ClientId",
+              "Value": {"Ref": "AWS::AccountId"}
+            }<b>
+          ]
+      }
 }
-}
-</code></pre>
+</pre>
 <p>It turns out that the DomainName is not enough, and you need to pass the ClientId too.</p>
 <p>You got the memo. Cloudwatch alarms in insufficient state are probably wrong.</p>
 
@@ -188,7 +191,7 @@
             <span></span>
             <span></span>
           </div>
-          <p class="three-dots">First published <a href="https://gonfva.medium.com/aws-cloudwatch-alarms-bf71d5bcb5a8">here</a></p>
+          <p class="three-dots">First published <a rel="nofollow" href="https://gonfva.medium.com/aws-cloudwatch-alarms-bf71d5bcb5a8">here</a></p>
           
 
           
