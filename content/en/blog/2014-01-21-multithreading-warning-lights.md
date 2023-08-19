@@ -19,7 +19,7 @@ At one point we agreed on creating a new constructor so that we could pass a ser
 So I had something like (fictitious code)
 
 
-```
+```java
  class GreatObject {
     public void calculateAndAddAmount(int length,
           boolean cheapService) {
@@ -39,7 +39,7 @@ So I had something like (fictitious code)
 
 and we had agreed on doing something like
 
-```
+```java
   class GreatObject {
     private Service supaService;
     public GreatObject () {

@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2012-01-31-xerces-and-xalan-recipes-for-win/" itemprop="url" />
   
   
   <meta name="twitter:card" content="summary" />
@@ -30,9 +30,9 @@
  
   
   
+
   
-  
-  
+
   
     
     <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
@@ -40,8 +40,8 @@
     
     <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
   
+
   
-   
    
     
 
@@ -68,7 +68,7 @@
       "datePublished": "2012-01-31 14:38:05 \u002b0000 UTC",
       "dateModified" : "2012-01-31 14:38:05 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2012-01-31-xerces-and-xalan-recipes-for-win\/",
-      "wordCount" : "323",
+      "wordCount" : "324",
       "keywords" : ["Blog"]
     }
   
@@ -83,7 +83,7 @@
     <div class="burger__meat burger__meat--3"></div>
   </div>
 </div>
- 
+
 
   <nav class="nav" id="navigation">
   <ul class="nav__list">
@@ -135,7 +135,7 @@
 <ul>
 <li>If you have to define any property do it at the start of the container or the server. For example, in Weblogic 10.3.3 in Windows, we had to edit the file startWeblogic.cmd at the domain path, inserting the following line</li>
 </ul>
-<pre><code>set JAVA_OPTIONS=-Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
+<pre><code class="language-bash">set JAVA_OPTIONS=-Djavax.xml.soap.MessageFactory=weblogic.xml.saaj.MessageFactoryImpl
 </code></pre>
 <ol start="2">
 <li>
@@ -148,7 +148,7 @@
 <p>Sometimes you can define the parser at the application level. For example, in Weblogic you can define a specific weblogic-application.xml with the following text:</p>
 </li>
 </ol>
-<pre><code>&lt;?xml version = '1.0' encoding = 'UTF-8'?&gt;
+<pre><code class="language-xml">&lt;?xml version = '1.0' encoding = 'UTF-8'?&gt;
 &lt;weblogic-application xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
 xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/javaee_5.xsd
@@ -167,7 +167,7 @@ xmlns=&quot;http://xmlns.oracle.com/weblogic/weblogic-application&quot;&gt;
 <ol start="4">
 <li>When somebody needs a specific property for a factory and is not possible to modify the container or the application, the solution is not to do a System.setProperty (see 1st bullet), but to instantiate the specific factory. For example, instead of doing</li>
 </ol>
-<pre><code>import net.sf.saxon.TransformerFactoryImpl;
+<pre><code class="language-java">import net.sf.saxon.TransformerFactoryImpl;
 System.setProperty(&quot;javax.xml.transform.TransformerFactory&quot;,
       &quot;net.sf.saxon.TransformerFactoryImpl&quot;)
 TransformerFactory tf= TransformerFactory.newInstance();
@@ -184,7 +184,7 @@ TransformerFactory tf= TransformerFactory.newInstance();
 <p><strong>Update (2012-10-01)</strong>: I see lots of visits to this page. Maybe you should visit <a href="https://gonzalo.f-v.es/blog/2012-07-01-xerces-xalan-and-saxon-more-recipes/" 
   
   
->https://gonfva.blogspot.com.es/2012/07/xerces-xalan-and-saxon-more-recipes.html</a> too.</p>
+>this page</a> too.</p>
 
 
               

@@ -16,7 +16,7 @@ But I wasn’t conscious of how much I was a Google fan until I was preparing th
 
 One of the obvious paths for post-Jerry’s Yahoo is being acquired by Microsoft. Microsoft tried it hard before summer, and many Yahoo investors would certainly welcome a bit of money. Especially when they don’t know where will be Yahoo in (say) two years.
 
-But now the price would be less than before summer, and it seems that >Microsoft it’s only interested on the search](http://biz.yahoo.com/rb/081119/business_us_microsoft_yahoo.html).
+But now the price would be less than before summer, and it seems that [Microsoft it’s only interested on the search](http://biz.yahoo.com/rb/081119/business_us_microsoft_yahoo.html).
 
 I always thought that a Microsoft-Yahoo merge (which is different from a Yahoo’s acquisition by Microsoft) would be a great idea to put more competition on the table. Internet is the present and desktop have no-future. As consequence, Microsoft has plenty money but has no future. And Yahoo could give Microsoft the future it doesn’t have.
 

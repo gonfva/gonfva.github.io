@@ -17,6 +17,8 @@ Anyway, a few days ago I found this tweet:
 
 {{< tweet user="abt_programming" id="516018172072587264" >}}
 
+<img src="/img/BylDyxyIcAAg30b.jpeg">
+
 I showed the picture to my wife, and I tried to explain it to her. It was funny because she couldn't understand what's wrong with the first part of the picture and why the second one is the proper way to build software. She insisted that if you want to build a car, you should do the a wheel the proper way, then the other wheel, then the body and finally you deliver the car.
 
 

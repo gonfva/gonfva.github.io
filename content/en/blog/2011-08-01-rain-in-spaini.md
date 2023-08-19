@@ -11,7 +11,7 @@ tags:
 
 I love this video:
 
-{{ youtube uVmU3iANbgk }}
+{{< youtube uVmU3iANbgk >}}
 
 A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far. But I couldn't help thinking about a different climate. The political and economical climate.
 

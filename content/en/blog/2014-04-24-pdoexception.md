@@ -22,6 +22,6 @@ The issue was not related to Sphinx, but to a related connection between PHP/Sym
 
 Most of the replies around the Internet involve file sockets and the like.
 
-The real solution is not to connect to "localhost", but to 127.0.0.
+The real solution is not to connect to "localhost", but to 127.0.0.1.
 
 Yeah. I know localhost and 127.0.0.1 should be the same. Apparently it is a Mac weirdness. Beats me!!!

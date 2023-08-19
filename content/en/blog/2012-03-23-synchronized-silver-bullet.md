@@ -14,8 +14,8 @@ I lead a team that is transitioning a 9-year-old internal framework from a somew
 
 Today I was reading a book. And I've found [this](http://books.google.es/books?id=Gu8-_b9AN8gC&amp;printsec=frontcover&amp;hl=es#v=onepage&amp;q=syncrhonized&amp;f=false) :
 
-```
-You declare this method as synchronized to make it thread-safe.
+```java
+//You declare this method as synchronized to make it thread-safe.
 
 package com.apress.springenterpriserecipes.sequence;
 
