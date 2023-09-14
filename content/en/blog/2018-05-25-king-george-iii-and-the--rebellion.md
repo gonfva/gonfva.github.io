@@ -33,7 +33,9 @@ It’s true that the King was against the rebellion. And his thoughts apparently
 
 Failure to know this, (or make a minor reference) suggests an appalling lack of understanding of the sources.
 
-> What’s in it for me?Usual readers of my articles (there are a handful “loyalists”, pun intended), will think why I’ve suddenly abandoned technology, entrepreneurship and the like to comment on a book on History.
+> What’s in it for me? 
+
+Usual readers of my articles (there are a handful “loyalists”, pun intended), will think why I’ve suddenly abandoned technology, entrepreneurship and the like to comment on a book on History.
 
 Even if it doesn’t matter, I do think it’s relevant:
 

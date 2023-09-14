@@ -5,9 +5,20 @@
     <link>https://gonzalo.f-v.es/blog/</link>
     <description>Recent content in Blogs on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sat, 19 Aug 2023 09:30:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Sep 2023 21:30:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I left Monzo</title>
+      <link>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</link>
+      <pubDate>Wed, 13 Sep 2023 21:30:00 +0000</pubDate>
+      
+      <guid>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</guid>
+      <description>A happy user I joined Monzo in 2016.
+Ex-Monzo user 4956.
+I even interviewed with Tom Blomfield, former CEO of Monzo in 2014 when he was still with Anne Boden, former CEO of Starling.</description>
+    </item>
+    
     <item>
       <title>Improving Windows build times in EKS</title>
       <link>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</link>
