@@ -32,7 +32,7 @@ Over the summer there was a case with some [politician](https://news.sky.com/sto
 
 That case was not Monzo related, so I must confess didn't pay too much attention. KYC (the obligation of knowing your customer), AML (anti money laundering rules) and data protection are tricky. The processes are nuanced and banks are very limited in the kind of customers they can accept, and what the banks can and cannot say to the customer. This happen to many people and it is a major problem, but I assumed the bank was in the clear.
 
-Then, the bank's CEO __had to resign__ because it turned out that it was *true* that the politician's account closure had been (partially) because the politician's views were **"at odds with our position as an inclusive organisation"**. 
+Then, the bank's CEO __had to resign__ because it turned out that it was **true** that the politician's account closure had been (partially) because the politician's views were **"at odds with our position as an inclusive organisation"**. 
 
 So I started paying attention. 
 
