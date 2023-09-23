@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Wed, 13 Sep 2023 21:30:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 09:30:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>x^3 as a non-linear unit</title>
+      <link>https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/</link>
+      <pubDate>Sat, 23 Sep 2023 09:30:00 +0000</pubDate>
+      
+      <guid>https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/</guid>
+      <description>These days I&amp;rsquo;m trying to learn Machine Learning(once again).
+I&amp;rsquo;m more interested into understanding the fundamentals than running the race of prompt engineering and &amp;ldquo;ChatGPT&amp;rdquo; (and what is called LLM).</description>
+    </item>
+    
     <item>
       <title>I&#39;m no longer a Monzo client</title>
       <link>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</link>

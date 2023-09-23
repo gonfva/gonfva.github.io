@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>x^3 as a non-linear unit | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="x^3 as a non-linear unit" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "x^3 as a non-linear unit",
+      "headline" : "x^3 as a non-linear unit",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2023",
+      "datePublished": "2023-09-23 09:30:00 \u002b0000 UTC",
+      "dateModified" : "2023-09-23 09:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2023-09-23-x-3-as-non-linear\/",
+      "wordCount" : "1373",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">x^3 as a non-linear unit</h1>
+            
+            <h2>A wild and probably incorrect idea</h2>
+            
+            <time datetime="2023-09-23 09:30:00 &#43;0000 UTC" class="post__date">2023-09-23</time> 
+          </header>
+          <article class="post__content">
+              
+<p>These days I&rsquo;m trying to learn Machine Learning(<a href="https://coursera.org/share/9f1199acceaab2e77f1053891f1b9f21" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>once</a> <a href="https://coursera.org/share/9198bf9e5641668612752b5cd17be8a2" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>again</a>).</p>
+<p>I&rsquo;m more interested into understanding the fundamentals than running the race of prompt engineering and <a href="https://www.youtube.com/watch?v=bZQun8Y4L2A" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>&ldquo;ChatGPT&rdquo;</a> (and what is called LLM).</p>
+<p>The other day, while watching watching <a href="https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Karpathy&rsquo;s CS231n lectures</a>,  I came with a crazy idea.</p>
+<p>So I posted something in Twitter (no Tweet without a typo).</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Asking people into ML. Have anybody tested x^3 as a non-linearisation function in serious projects?<br>I gave a quick go to MNIST data and it seems to converge faster?<br>I assume we may end up with exploding gradients, but I would assume you can normalise.<br>What am I missing? <a href="https://t.co/cno7Jo6SWH">pic.twitter.com/cno7Jo6SWH</a></p>&mdash; Gonzalo Fernandez (@gonfva) <a href="https://twitter.com/gonfva/status/1705332982427382183?ref_src=twsrc%5Etfw">September 22, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I got no response. So I wanted to do a better write-up, and try to circulate it properly.</p>
+<p>If somebody points me to my error, I will gladly update this post.</p>
+<h2 id="quick-intro-to-machine-learning-and-a-bit-of-linear-algebra">Quick intro to Machine learning and a bit of Linear Algebra<a class="anchor" href="#quick-intro-to-machine-learning-and-a-bit-of-linear-algebra">#</a></h2>
+<p>At its very core, Machine Learning has a lot of Linear Algebra. A typical layer would be a linear transformation in the form of</p>
+<p><strong>y=W·x+b</strong></p>
+<p>where x is the input data (like a table) and y the output data. W and b are a group of parameters that are initially random and through &ldquo;learning&rdquo; (wink, wink, Machine Learning) they are modified a little bit every time until the output they produce is similar to the output we expect from them to produce. This modification happens</p>
+<p>With this process we&rsquo;re doing a linear transformation (change of dimensions, rotation, translation).</p>
+<p>Is all &ldquo;machine learning&rdquo; just a bunch of linear transformations?</p>
+<p><strong>No.</strong></p>
+<p>A set of linear transformations is also a linear transformation. So it wouldn&rsquo;t matter how many of those layers we pile up (the &ldquo;deep&rdquo; in deep learning). We couldn&rsquo;t represent what we want.</p>
+<p>The solution is that, after each one of these linear transformation, we introduce a process that is no linear. Something that &ldquo;messes things up&rdquo;. It introduces non-linearity, and the process is no longer linear.</p>
+<p>These non-linear functions are also called activation functions (coming from the original firing neurons in Biology)</p>
+<h2 id="non-linear-functions">Non-linear functions<a class="anchor" href="#non-linear-functions">#</a></h2>
+<p>Of those non-linear functions, <a href="https://youtu.be/gYpoJMlgyXA?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&amp;t=876" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>the sigmoid function</a> was used a lot in the beginning.</p>
+<p>Sigmoid is the name for <strong>y=1/(1+e^-x)</strong> so is a bit expensive to compute (it doesn&rsquo;t matter A LOT, but it matters). More importantly, sigmoid has a very reduced domain where sigmoid provides useful values. Outside that domain, it basically gives 0 or 1. That kills the learning process (more properly it kills the gradient back-propagation). In addition to that, it is not zero-centered (which means there is a bit of zig-zag on the learning).</p>
+<p>The next function to gain presence, was <strong>y=tanh(x)</strong>, thanks to a paper in 1991 by LeCun (for the youngsters, now in Facebook). The Hyperbolic tangent works better than sigmoid. It is zero centered, but it still squashes (reduced domain with interesting values, range reduced to -1 to 1). It was used a lot until the next function appeared.</p>
+<p>The next function and the most used these days is what is called <strong>ReLU or Rectified Linear Unit</strong>. ReLU can be defined as <strong>y=max(0,x)</strong>. So if the input value is negative, ReLU outputs 0, but if the input value is positive, it outputs the value.</p>
+<p><img src="/img/Screenshot_2023-09-23_11.19.22.png" alt=""><em>Sigmoid, tanh(x), ReLU from Wolfram Alpha.</em></p>
+<p>ReLU works surprisingly well for such a simple function. It gets computed fast, it doesn&rsquo;t saturate in the positive domain and it converges much, much faster.</p>
+<p>However, again it is non-zero centered, and it kills the learning process in part (negative gradients)</p>
+<h2 id="are-those-the-only-options">Are those the only options?<a class="anchor" href="#are-those-the-only-options">#</a></h2>
+<p>There are <a href="https://youtu.be/gYpoJMlgyXA?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&amp;t=865" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>other options for non-linearity</a>.</p>
+<p>But as I was watching the linked video, there was one obvious function that I was surprised not to be mentioned.</p>
+<p>It is <strong>y=x^3</strong>.</p>
+<p><img src="/img/Screenshot_2023-09-23_11.50.05.png" alt=""><em>y=x^3 from Wolfram Alpha.</em></p>
+<p>y=x^3 is a non-linear continuous function, derivable across the domain, zero-centered, and it doesn&rsquo;t saturate across the whole domain (not only in the positive region as with ReLU).</p>
+<p>I would assume it is relatively easy to compute. Obviously ReLU is simpler to compute (ReLU is a &ldquo;non-linear y=x&rdquo;). But to me y=x^3 is simpler than tanh.</p>
+<p>There is one obvious problem looking at the graph. It explodes the input (the learned gradient), but I wasn&rsquo;t particularly worried about that since you can do some normalization.</p>
+<p>Now that I&rsquo;m writing this, I&rsquo;m more worried about the central region of the domain. We&rsquo;re squashing the gradient for small values. But I perceive the learning could escape that region easily.</p>
+<p>But I didn&rsquo;t think about the central region at the time.</p>
+<p>I just &hellip; tested it.</p>
+<h2 id="time-to-fire-up-jupyter">Time to fire up Jupyter<a class="anchor" href="#time-to-fire-up-jupyter">#</a></h2>
+<p>So I went to Jupyter Notebook (sort of a Microsoft Word for Machine Learning :D) and opened my playground with my favorite machine learning problem.</p>
+<p>It is based on MNIST, which is a set of pictures of hand-written numbers, and a label for each picture (sort of &ldquo;the real truth&rdquo;).</p>
+<p>For example, we have a picture like the following and a label of 6</p>
+<p><img src="/img/Screenshot_2023-09-23_12.07.30.png" alt=""><em>Is it a 6? From MNIST.</em></p>
+<p>You train your model using the MNIST training data and then you test your model using testing data (a different portion of MNIST data)</p>
+<p>I built a simple model (basically a one hidden layer loosely based on a <a href="https://www.manning.com/books/deep-learning-with-python-second-edition" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>book I&rsquo;m reading that I recommend highly</a>).</p>
+<p>You can find it below so that people can copy and paste from here.</p>
+<pre><code class="language-python">
+# Lets load the data
+from tensorflow.keras.datasets import mnist
+
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+
+# Now let's prepare the data into single vectors of between 0 and 1
+train_images_input = train_images.reshape((60000, 28*28)).astype(&quot;float32&quot;)/255
+test_images_input = test_images.reshape((10000, 28*28)).astype(&quot;float32&quot;)/255
+
+# Now let's prepare the model
+from tensorflow import keras
+from tensorflow.keras import layers
+import tensorflow as tf
+
+#Set a specific seed so that things are reproducible
+keras.utils.set_random_seed(1972)
+
+#First the model with relu as an activation
+print(&quot;Relu as activation model\n\n&quot;)
+
+model_relu = keras.Sequential([
+    layers.Dense(100, activation = 'relu'),
+    layers.Dense(10, activation = 'softmax'),
+])
+
+model_relu.compile(optimizer = 'rmsprop',
+              loss = 'sparse_categorical_crossentropy',
+              metrics = ['accuracy'])
+
+history_relu=model_relu.fit(train_images_input, train_labels, epochs=10, batch_size=128)
+
+#Then the model with y=x^3 as activation
+print(&quot;\n\ny=x^3 as activation model\n\n&quot;)
+
+@tf.function
+def cubic(x):
+  return (tf.math.pow(x, 3))
+
+
+model_cubic = keras.Sequential([
+    layers.Dense(100, activation = cubic),
+    layers.Dense(10, activation = 'softmax'),
+])
+
+model_cubic.compile(optimizer = 'rmsprop',
+              loss = 'sparse_categorical_crossentropy',
+              metrics = ['accuracy'])
+
+history_cubic=model_cubic.fit(train_images_input, train_labels, epochs=10, batch_size=128)
+
+
+# We test both models
+test_relu = model_relu.evaluate(test_images_input, test_labels)
+test_cubic = model_cubic.evaluate(test_images_input, test_labels)
+
+
+print(&quot;Test relu&quot;, test_relu)
+print(&quot;Test cubic&quot;, test_cubic)
+
+loss_relu = history_relu.history[&quot;loss&quot;]
+loss_cubic = history_cubic.history[&quot;loss&quot;]
+epochs = range(1, len(loss_relu) +1)
+
+plt.plot(epochs, loss_relu, &quot;b&quot;, label=&quot;Training loss for ReLU&quot;)
+plt.plot(epochs, loss_cubic, &quot;r&quot;, label=&quot;Training loss for x^3&quot;)
+
+plt.title(&quot;Training and validation loss per epoch&quot;)
+plt.xlabel(&quot;Epochs&quot;)
+plt.ylabel(&quot;Loss&quot;)
+plt.legend()
+plt.show()
+
+</code></pre>
+<h2 id="local-results">Local results<a class="anchor" href="#local-results">#</a></h2>
+<p>Before showing my results, I need to stress that there is <strong>probably some issue on my local environment</strong> compared to colab.</p>
+<p>When I tested on my local environment (iMac 2027 with Radeon 580 and the <a href="https://developer.apple.com/metal/tensorflow-plugin/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>metal plugin</a> to use the GPU), I got were the following</p>
+<pre><code>Test relu [0.29031872749328613, 0.9222999811172485]
+Test cubic [0.1919427067041397, 0.9718999862670898]
+</code></pre>
+<p>92.2% test accuracy with ReLU vs 97.2% test accuracy with x^3.</p>
+<p><img src="/img/Screenshot_2023-09-23_12.55.10.png" alt=""><em>Loss per epoch, local environment.</em></p>
+<p>Seeing the loss per epoch was like &ldquo;this is surreal&rdquo;. Faster. Better.</p>
+<h2 id="colab">Colab<a class="anchor" href="#colab">#</a></h2>
+<p>Then I went to colab. Colab is a way to execute a Jupyter Notebook online. It is a service provided by Google</p>
+<p>I used the same code as in my local environment (<a href="https://colab.research.google.com/drive/1q00wPHH5LYHHu5hDZy-2Bv3GGFXSq-v3?usp=sharing" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>here you can find the notebook</a>)</p>
+<pre><code>Test relu [0.07596585899591446, 0.9776999950408936]
+Test cubic [0.21662236750125885, 0.9711999893188477]
+</code></pre>
+<p>97.8% test accuracy with ReLU vs 97.1% test accuracy with x^3.</p>
+<p>Sad.</p>
+<p>The plot for the Loss, is also unimpressive.</p>
+<p><img src="/img/Screenshot_2023-09-23_13.31.11.png" alt=""><em>Loss per epoch, <a href="https://colab.research.google.com/drive/1q00wPHH5LYHHu5hDZy-2Bv3GGFXSq-v3?usp=sharing" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>colab environment</a>.</em></p>
+<p>But in any case, even with the results in Colab, you can see y=x^3 doesn&rsquo;t behave bad. ReLU works better in this specific instance (and environment), but y=x^3 is close.</p>
+<p>Why nobody (to my knowledge) uses it? Is it just because ReLU is good enough?</p>
+<h2 id="local-vs-colab">Local vs colab<a class="anchor" href="#local-vs-colab">#</a></h2>
+<p>I still don&rsquo;t know why the discrepancy from my local environment</p>
+<p>Both have the same seed.</p>
+<pre><code>keras.utils.set_random_seed(1972)
+</code></pre>
+<p>Both use Tensorflow 2.13.0.</p>
+<p>The underlying hardware is different, but I would assume the results would be more deterministic.</p>
+<p>Is it because I&rsquo;m using metal on my Mac?</p>
+<h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
+<p>Is y=x^3 as a non-linearity such a crazy idea?</p>
+<p>Has anybody tested it for serious work?</p>
+<p>Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)?</p>
+<p>Is this worth exploring further?</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">I&#39;m no longer a Monzo client</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2023</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+           <div class="toc-post-title">x^3 as a non-linear unit</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#quick-intro-to-machine-learning-and-a-bit-of-linear-algebra">Quick intro to Machine learning and a bit of Linear Algebra</a></li>
+    <li><a href="#non-linear-functions">Non-linear functions</a></li>
+    <li><a href="#are-those-the-only-options">Are those the only options?</a></li>
+    <li><a href="#time-to-fire-up-jupyter">Time to fire up Jupyter</a></li>
+    <li><a href="#local-results">Local results</a></li>
+    <li><a href="#colab">Colab</a></li>
+    <li><a href="#local-vs-colab">Local vs colab</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
