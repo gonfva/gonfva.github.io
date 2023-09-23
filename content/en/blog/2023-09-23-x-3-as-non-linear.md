@@ -12,7 +12,7 @@ toc: true
 
 These days I'm trying to learn Machine Learning([once](https://coursera.org/share/9f1199acceaab2e77f1053891f1b9f21) [again](https://coursera.org/share/9198bf9e5641668612752b5cd17be8a2)). 
 
-I'm more interested into understanding the fundamentals than running the race of prompt engineering and ["ChatGPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) (and what is called LLM). 
+I'm more interested in understanding the fundamentals than running the race of prompt engineering and ["ChatGPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) (and what is called LLM). 
 
 The other day, while watching watching [Karpathy's CS231n lectures](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC),  I came with a crazy idea. 
 
@@ -214,9 +214,9 @@ Better.
 
 ## Colab
 
-Then I went to colab. [Colab](https://colab.research.google.com) is a way to execute a Jupyter Notebook online. No need for a GPU, nor installing packages. 
+Then I went to colab. [Colab](https://colab.research.google.com) is a way to execute a Jupyter Notebook online (for free!!). No need for a GPU, nor installing packages. 
 
-It is a service provided by Google.
+It is a service provided by Google. You only need a Google account.
 
 I used the same code as in my local environment ([here you can find the notebook](https://colab.research.google.com/drive/1q00wPHH5LYHHu5hDZy-2Bv3GGFXSq-v3?usp=sharing))
 
