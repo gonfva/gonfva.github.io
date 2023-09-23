@@ -259,13 +259,15 @@ On that page, at the end, there is a mention to **y=x^3**
 
 And an investigation with the title "A Fast and Accurate Dependency Parser using Neural Networks". 
 
-The (link on that page doesn't work)[https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf].
+The [link on that page doesn't work](https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf)
 
-But "A Fast and Accurate Dependency Parser using Neural Networks" provided results.
+But searching for "A Fast and Accurate Dependency Parser using Neural Networks" did provide results.
 
 Here, you can have a proper link
 
 https://aclanthology.org/D14-1082.pdf
+
+And a quote
 
 > We compare our cube activation function (x3)
 with two widely used non-linear functions: tanh
@@ -277,17 +279,12 @@ significantly and identity works the worst.
 Concretely, cube can achieve 0.8% ∼ 1.2% improvement in UAS over tanh and other 
 functions, thus verifying the effectiveness of the cube activation function empirically.
 
+I was not crazy!!!
 
 
 ## Conclusion
 
-~~Is y=x^3 as a non-linearity such a crazy idea?~~
-
-~~Has anybody tested it for serious work?~~ 
-
-~~Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)?~~
-
-~~Is this worth exploring further?~~
+~~Is y=x^3 as a non-linearity such a crazy idea? Has anybody tested it for serious work? Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)? Is this worth exploring further?~~
 
 So it turns out some people has tried to use y=x^3 before. 
 
