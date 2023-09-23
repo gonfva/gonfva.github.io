@@ -68,7 +68,7 @@
       "datePublished": "2023-09-23 09:30:00 \u002b0000 UTC",
       "dateModified" : "2023-09-23 09:30:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2023-09-23-x-3-as-non-linear\/",
-      "wordCount" : "1373",
+      "wordCount" : "1651",
       "keywords" : ["Blog"]
     }
   
@@ -121,6 +121,10 @@
           </header>
           <article class="post__content">
               
+<p><strong>UPDATE:</strong> It turns out it was <a href="https://aclanthology.org/D14-1082.pdf" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>not crazy at all</a>.</p>
 <p>These days I&rsquo;m trying to learn Machine Learning(<a href="https://coursera.org/share/9f1199acceaab2e77f1053891f1b9f21" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -300,11 +304,53 @@ Test cubic [0.21662236750125885, 0.9711999893188477]
 <p>Both use Tensorflow 2.13.0.</p>
 <p>The underlying hardware is different, but I would assume the results would be more deterministic.</p>
 <p>Is it because I&rsquo;m using metal on my Mac?</p>
+<h2 id="previous-work">Previous work<a class="anchor" href="#previous-work">#</a></h2>
+<p>I did a quick search on papers, and I couldn&rsquo;t find anything.</p>
+<p>I asked ChatGPT and it told me of course y=x^3 has been used as an activation function, but when pushed, showed nothing</p>
+<p><img src="/img/Screenshot_2023-09-23_14.08.04.png" alt=""><em>ChatGPT hand-waving.</em></p>
+<p>I also asked Bard with similar explanation.</p>
+<p><img src="/img/Screenshot_2023-09-23_14.10.34.png" alt=""><em>Bard hand-waving.</em></p>
+<p>When pushed, it gladly produced a (fictitious) paper.</p>
+<p><img src="/img/Screenshot_2023-09-23_14.10.47.png" alt=""><em>Too much LSD, Bard.</em></p>
+<pre><code>Title: Cubic Activation Functions for Deep Learning
+Authors: Manning, Christopher D., and Danqi Chen.
+Year: 2014
+</code></pre>
+<p>However, the link at the bottom did exist and pointed to this page</p>
+<p><a href="https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd</a></p>
+<p>On that page, at the end, there is a mention to <strong>y=x^3</strong></p>
+<p>And an investigation with the title &ldquo;A Fast and Accurate Dependency Parser using Neural Networks&rdquo;.</p>
+<p>The (link on that page doesn&rsquo;t work)[https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf].</p>
+<p>But &ldquo;A Fast and Accurate Dependency Parser using Neural Networks&rdquo; provided results.</p>
+<p>Here, you can have a proper link</p>
+<p><a href="https://aclanthology.org/D14-1082.pdf" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://aclanthology.org/D14-1082.pdf</a></p>
+<blockquote>
+<p>We compare our cube activation function (x3)
+with two widely used non-linear functions: tanh
+( ex −e−x ), sigmoid ( 1 ), and also the ex +e−x 1+e−x
+identity function (x), as shown in Figure 4 (left).</p>
+</blockquote>
+<blockquote>
+<p>In short, cube outperforms all other activation functions
+significantly and identity works the worst.
+Concretely, cube can achieve 0.8% ∼ 1.2% improvement in UAS over tanh and other
+functions, thus verifying the effectiveness of the cube activation function empirically.</p>
+</blockquote>
 <h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
-<p>Is y=x^3 as a non-linearity such a crazy idea?</p>
-<p>Has anybody tested it for serious work?</p>
-<p>Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)?</p>
-<p>Is this worth exploring further?</p>
+<p><del>Is y=x^3 as a non-linearity such a crazy idea?</del></p>
+<p><del>Has anybody tested it for serious work?</del></p>
+<p><del>Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)?</del></p>
+<p><del>Is this worth exploring further?</del></p>
+<p>So it turns out some people has tried to use y=x^3 before.</p>
+<p>It was an exhilarating moment to think you have discover something truly remarkable.</p>
+<p>It is good to know you are not crazy. Just you are not the first.</p>
+<p>Still intrigued why y=x^3 is not more widely used.</p>
 
 
               
@@ -394,6 +440,7 @@ Test cubic [0.21662236750125885, 0.9711999893188477]
     <li><a href="#local-results">Local results</a></li>
     <li><a href="#colab">Colab</a></li>
     <li><a href="#local-vs-colab">Local vs colab</a></li>
+    <li><a href="#previous-work">Previous work</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>

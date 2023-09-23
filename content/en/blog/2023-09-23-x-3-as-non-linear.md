@@ -8,6 +8,8 @@ categories: [Developer]
 toc: true
 ---
 
+**UPDATE:** It turns out it was [not crazy at all](https://aclanthology.org/D14-1082.pdf).
+
 These days I'm trying to learn Machine Learning([once](https://coursera.org/share/9f1199acceaab2e77f1053891f1b9f21) [again](https://coursera.org/share/9198bf9e5641668612752b5cd17be8a2)). 
 
 I'm more interested into understanding the fundamentals than running the race of prompt engineering and ["ChatGPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) (and what is called LLM). 
@@ -227,12 +229,70 @@ The underlying hardware is different, but I would assume the results would be mo
 
 Is it because I'm using metal on my Mac?
 
+## Previous work
+
+I did a quick search on papers, and I couldn't find anything. 
+
+I asked ChatGPT and it told me of course y=x^3 has been used as an activation function, but when pushed, showed nothing
+
+![](/img/Screenshot_2023-09-23_14.08.04.png)_ChatGPT hand-waving._
+
+I also asked Bard with similar explanation. 
+
+![](/img/Screenshot_2023-09-23_14.10.34.png)_Bard hand-waving._
+
+When pushed, it gladly produced a (fictitious) paper.
+
+![](/img/Screenshot_2023-09-23_14.10.47.png)_Too much LSD, Bard._
+
+```
+Title: Cubic Activation Functions for Deep Learning
+Authors: Manning, Christopher D., and Danqi Chen.
+Year: 2014
+```
+
+However, the link at the bottom did exist and pointed to this page
+
+https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd
+
+On that page, at the end, there is a mention to **y=x^3**
+
+And an investigation with the title "A Fast and Accurate Dependency Parser using Neural Networks". 
+
+The (link on that page doesn't work)[https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf].
+
+But "A Fast and Accurate Dependency Parser using Neural Networks" provided results.
+
+Here, you can have a proper link
+
+https://aclanthology.org/D14-1082.pdf
+
+> We compare our cube activation function (x3)
+with two widely used non-linear functions: tanh
+( ex −e−x ), sigmoid ( 1 ), and also the ex +e−x 1+e−x
+identity function (x), as shown in Figure 4 (left).
+
+> In short, cube outperforms all other activation functions 
+significantly and identity works the worst. 
+Concretely, cube can achieve 0.8% ∼ 1.2% improvement in UAS over tanh and other 
+functions, thus verifying the effectiveness of the cube activation function empirically.
+
+
+
 ## Conclusion
 
-Is y=x^3 as a non-linearity such a crazy idea? 
+~~Is y=x^3 as a non-linearity such a crazy idea?~~
 
-Has anybody tested it for serious work? 
+~~Has anybody tested it for serious work?~~ 
 
-Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)? 
+~~Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)?~~
 
-Is this worth exploring further?
+~~Is this worth exploring further?~~
+
+So it turns out some people has tried to use y=x^3 before. 
+
+It was an exhilarating moment to think you have discover something truly remarkable. 
+
+It is good to know you are not crazy. Just you are not the first.
+
+Still intrigued why y=x^3 is not more widely used.
