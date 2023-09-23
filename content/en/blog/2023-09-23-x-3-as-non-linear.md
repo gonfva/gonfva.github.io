@@ -22,7 +22,7 @@ So I posted something in Twitter (no Tweet without a typo).
 
 I got no response. So I wanted to do a better write-up, and try to circulate it properly. 
 
-If somebody points me to my error, I will gladly update this post.
+~~If somebody points me to my error, I will gladly update this post.~~
 
 ## Quick intro to Machine learning and a bit of Linear Algebra
 
@@ -263,7 +263,7 @@ The [link on that page doesn't work](https://cs.stanford.edu/~danqi/papers/emnlp
 
 But searching for "A Fast and Accurate Dependency Parser using Neural Networks" did provide results.
 
-Here, you can have a proper link
+Here, you have a proper link
 
 https://aclanthology.org/D14-1082.pdf
 
@@ -286,7 +286,7 @@ I was not crazy!!!
 
 ~~Is y=x^3 as a non-linearity such a crazy idea? Has anybody tested it for serious work? Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)? Is this worth exploring further?~~
 
-So it turns out some people has tried to use y=x^3 before. 
+So it turns out some people have tried to use y=x^3 before. 
 
 It was an exhilarating moment to think you have discover something truly remarkable. 
 
