@@ -30,7 +30,7 @@ At its very core, Machine Learning has a lot of Linear Algebra. A typical layer 
 
 **y=W·x+b** 
 
-where x is the input data (like a table) and y the output data. W and b are a group of parameters that are initially random and through "learning" (wink, wink, Machine Learning) they are modified a little bit every time until the output they produce is similar to the output we expect from them to produce. This modification happens 
+where x is the input data (like a table) and y the output data. W and b are a group of parameters that are initially random and through "learning" (wink, wink, Machine Learning) they are modified a little bit every time until the output they produce is similar to the output we expect from them to produce. 
 
 With this process we're doing a linear transformation (change of dimensions, rotation, translation). 
 
@@ -38,25 +38,39 @@ Is all "machine learning" just a bunch of linear transformations?
 
 **No.**
 
-A set of linear transformations is also a linear transformation. So it wouldn't matter how many of those layers we pile up (the "deep" in deep learning). We couldn't represent what we want.
+A set of linear transformations is also a linear transformation. So it wouldn't matter how many of those layers we pile up. We couldn't represent what we want.
 
-The solution is that, after each one of these linear transformation, we introduce a process that is no linear. Something that "messes things up". It introduces non-linearity, and the process is no longer linear.
+The solution is that, after each one of these linear transformation, we introduce a process that is no linear. Something that "messes things up". It introduces non-linearity, and the process is able to learn more complicated things.
 
-These non-linear functions are also called activation functions (coming from the original firing neurons in Biology)
+These non-linear functions are also called activation functions (similar to how a neuron in Biology activates)
 
 ## Non-linear functions
 
 Of those non-linear functions, [the sigmoid function](https://youtu.be/gYpoJMlgyXA?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&t=876) was used a lot in the beginning. 
 
-Sigmoid is the name for **y=1/(1+e^-x)** so is a bit expensive to compute (it doesn't matter A LOT, but it matters). More importantly, sigmoid has a very reduced domain where sigmoid provides useful values. Outside that domain, it basically gives 0 or 1. That kills the learning process (more properly it kills the gradient back-propagation). In addition to that, it is not zero-centered (which means there is a bit of zig-zag on the learning).
+Sigmoid is the name for 
 
-The next function to gain presence, was **y=tanh(x)**, thanks to a paper in 1991 by LeCun (for the youngsters, now in Facebook). The Hyperbolic tangent works better than sigmoid. It is zero centered, but it still squashes (reduced domain with interesting values, range reduced to -1 to 1). It was used a lot until the next function appeared.
+**y=1/(1+e^-x)** 
 
-The next function and the most used these days is what is called **ReLU or Rectified Linear Unit**. ReLU can be defined as **y=max(0,x)**. So if the input value is negative, ReLU outputs 0, but if the input value is positive, it outputs the value.
+It is a bit expensive to compute (it doesn't matter A LOT, but it matters). More importantly, sigmoid has a very reduced domain where sigmoid provides useful values. Outside that domain, it basically gives 0 or 1. That kills the learning process (more properly it kills the "gradient back-propagation"). In addition to that, it is not zero-centered (which means there is a bit of zig-zag on the learning).
+
+The next function to gain presence, was 
+
+**y=tanh(x)**
+
+thanks to a paper in 1991 by LeCun (for the youngsters, now the AI boss in Facebook but ultimately a legend). The hyperbolic tangent works better than sigmoid. It is zero centered, but it still squashes (reduced domain with interesting values, range reduced to -1 to 1). It was used a lot until the next function appeared.
+
+The next function and the most used these days is what is called **ReLU or Rectified Linear Unit**. ReLU can be defined as 
+
+**y=max(0,x)**
+
+So if the input value is negative, ReLU outputs 0, but if the input value is positive, it outputs the value.
+
+Here you can see the three functions.
 
 ![](/img/Screenshot_2023-09-23_11.19.22.png)_Sigmoid, tanh(x), ReLU from Wolfram Alpha._
 
-ReLU works surprisingly well for such a simple function. It gets computed fast, it doesn't saturate in the positive domain and it converges much, much faster. 
+ReLU works surprisingly well for such a simple function. It gets computed fast, it doesn't saturate in the positive domain and it converges much faster than the other two. 
 
 However, again it is non-zero centered, and it kills the learning process in part (negative gradients)
 
@@ -74,7 +88,9 @@ y=x^3 is a non-linear continuous function, derivable across the domain, zero-cen
 
 I would assume it is relatively easy to compute. Obviously ReLU is simpler to compute (ReLU is a "non-linear y=x"). But to me y=x^3 is simpler than tanh.
 
-There is one obvious problem looking at the graph. It explodes the input (the learned gradient), but I wasn't particularly worried about that since you can do some normalization. 
+There is one obvious problem looking at the graph. It explodes the input (the learned gradient).
+
+I wasn't particularly worried about that since you can do some normalization. 
 
 Now that I'm writing this, I'm more worried about the central region of the domain. We're squashing the gradient for small values. But I perceive the learning could escape that region easily.
 
@@ -94,9 +110,9 @@ For example, we have a picture like the following and a label of 6
 
 You train your model using the MNIST training data and then you test your model using testing data (a different portion of MNIST data)
 
-I built a simple model (basically a one hidden layer loosely based on a [book I'm reading that I recommend highly](https://www.manning.com/books/deep-learning-with-python-second-edition)). 
+I built a simple model (basically a one hidden layer loosely based on a [book I'm reading and I highly recommend](https://www.manning.com/books/deep-learning-with-python-second-edition)). 
 
-You can find it below so that people can copy and paste from here.
+You can find the code below so that people can copy and paste from here.
 
 ```python
 
@@ -176,7 +192,7 @@ plt.show()
 
 ## Local results
 
-Before showing my results, I need to stress that there is **probably some issue on my local environment** compared to colab.
+Before showing my results, I need to stress that there is **probably some issue on my local environment** (I will explain why later).
 
 When I tested on my local environment (iMac 2027 with Radeon 580 and the [metal plugin](https://developer.apple.com/metal/tensorflow-plugin/) to use the GPU), I got were the following
 
@@ -184,15 +200,23 @@ When I tested on my local environment (iMac 2027 with Radeon 580 and the [metal 
 Test relu [0.29031872749328613, 0.9222999811172485]
 Test cubic [0.1919427067041397, 0.9718999862670898]
 ```
-92.2% test accuracy with ReLU vs 97.2% test accuracy with x^3.
+**92.2%** test accuracy with ReLU compared to **97.2%** test accuracy with x^3.
 
 ![](/img/Screenshot_2023-09-23_12.55.10.png)_Loss per epoch, local environment._
 
-Seeing the loss per epoch was like "this is surreal". Faster. Better.
+Seeing the loss per epoch was like "this is surreal". 
+
+Faster. 
+
+Better.
+
+"What did I just do?"
 
 ## Colab
 
-Then I went to colab. Colab is a way to execute a Jupyter Notebook online. It is a service provided by Google
+Then I went to colab. [Colab](https://colab.research.google.com) is a way to execute a Jupyter Notebook online. No need for a GPU, nor installing packages. 
+
+It is a service provided by Google.
 
 I used the same code as in my local environment ([here you can find the notebook](https://colab.research.google.com/drive/1q00wPHH5LYHHu5hDZy-2Bv3GGFXSq-v3?usp=sharing))
 
@@ -201,9 +225,9 @@ Test relu [0.07596585899591446, 0.9776999950408936]
 Test cubic [0.21662236750125885, 0.9711999893188477]
 ```
 
-97.8% test accuracy with ReLU vs 97.1% test accuracy with x^3.
+**97.8%** test accuracy with ReLU vs **97.1%** test accuracy with x^3.
 
-Sad.
+Meh.
 
 The plot for the Loss, is also unimpressive.
 
@@ -211,7 +235,9 @@ The plot for the Loss, is also unimpressive.
 
 But in any case, even with the results in Colab, you can see y=x^3 doesn't behave bad. ReLU works better in this specific instance (and environment), but y=x^3 is close.
 
-Why nobody (to my knowledge) uses it? Is it just because ReLU is good enough?
+Why nobody (to my knowledge) uses it? 
+
+Is it just because ReLU is good enough?
 
 ## Local vs colab
 
@@ -227,7 +253,7 @@ Both use Tensorflow 2.13.0.
 
 The underlying hardware is different, but I would assume the results would be more deterministic. 
 
-Is it because I'm using metal on my Mac?
+Is it because I'm using the [metal plugin](https://developer.apple.com/metal/tensorflow-plugin/) on my Mac? I don't know.
 
 ## Previous work
 
@@ -255,9 +281,7 @@ However, the link at the bottom did exist and pointed to this page
 
 https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd
 
-On that page, at the end, there is a mention to **y=x^3**
-
-And an investigation with the title "A Fast and Accurate Dependency Parser using Neural Networks". 
+On that page, at the end, there is a mention to **y=x^3** and an investigation with the title "A Fast and Accurate Dependency Parser using Neural Networks". 
 
 The [link on that page doesn't work](https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf)
 
@@ -286,10 +310,10 @@ I was not crazy!!!
 
 ~~Is y=x^3 as a non-linearity such a crazy idea? Has anybody tested it for serious work? Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)? Is this worth exploring further?~~
 
-So it turns out some people have tried to use y=x^3 before. 
+So it turns out some people have tried to use **y=x^3** before. 
 
 It was an exhilarating moment to think you have discover something truly remarkable. 
 
-It is good to know you are not crazy. Just you are not the first.
+But it is good to know you are not crazy. Simply you are not the first.
 
-Still intrigued why y=x^3 is not more widely used.
+Still intrigued why **y=x^3** is not more widely used.
