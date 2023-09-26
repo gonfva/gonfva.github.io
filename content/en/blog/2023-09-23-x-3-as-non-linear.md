@@ -14,7 +14,7 @@ These days I'm trying to learn Machine Learning([once](https://coursera.org/shar
 
 I'm more interested in understanding the fundamentals than running the race of prompt engineering and ["ChatGPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) (and what is called LLM). 
 
-The other day, while watching watching [Karpathy's CS231n lectures](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC),  I came with a crazy idea. 
+The other day, while watching [Karpathy's CS231n lectures](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC),  I came with a crazy idea. 
 
 So I posted something in Twitter (no Tweet without a typo). 
 
