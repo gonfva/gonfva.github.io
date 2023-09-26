@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Higher loss with Tensorflow-metal, especially with ReLU | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2023-09-26-gpu-accuracy-with-tensor-metal/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Higher loss with Tensorflow-metal, especially with ReLU" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Higher loss with Tensorflow-metal, especially with ReLU",
+      "headline" : "Higher loss with Tensorflow-metal, especially with ReLU",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2023",
+      "datePublished": "2023-09-25 17:30:00 \u002b0000 UTC",
+      "dateModified" : "2023-09-25 17:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2023-09-26-gpu-accuracy-with-tensor-metal\/",
+      "wordCount" : "478",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Higher loss with Tensorflow-metal, especially with ReLU</h1>
+            
+            <h2>tensorflow-metal might have an issue</h2>
+            
+            <time datetime="2023-09-25 17:30:00 &#43;0000 UTC" class="post__date">2023-09-25</time> 
+          </header>
+          <article class="post__content">
+              
+<p>A few days ago, while working on my post about how <a href="https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/" 
+  
+  
+>y=x<sup>3</sup> might be a good activation function</a>, I discover an issue with <a href="https://pypi.org/project/tensorflow-metal/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>tensorflow-metal</a>, the python package to use your GPU in Tensorflow on a Mac.</p>
+<p>I&rsquo;ve tried to find the code for tensorflow-metal, but it seems the code is only a wrapper on a library.</p>
+<p>I also tried to create a post on Apple&rsquo;s developer forums, but it doesn&rsquo;t allow me</p>
+<p><img src="/img/Screenshot_2023-09-26_13.31.55.png" alt=""><em>&ldquo;You have included content in your post that is not permitted&rdquo;. Which content?</em></p>
+<p>I ended up writing a short message on a similar (but not exactly the same) <a href="https://developer.apple.com/forums/thread/734346" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>issue</a></p>
+<p>I noticed that a set of random values gets more decimal figures in GPU than in CPU.</p>
+<p>So with this code</p>
+<pre><code class="language-python">import tensorflow as tf   # TensorFlow registers PluggableDevices here.
+
+with tf.device(&quot;/GPU:0&quot;):
+    tf.random.set_seed(1972)
+    agpu = tf.random.normal(shape=[5], dtype=tf.float32)
+    print(&quot;GPU - Random&quot;,agpu)
+
+with tf.device(&quot;/CPU:0&quot;):
+    tf.random.set_seed(1972)
+    acpu = tf.random.normal(shape=[5], dtype=tf.float32)
+    print(&quot;CPU - Random&quot;,acpu)
+
+print(&quot;equal &quot;, tf.equal(agpu, acpu))
+
+</code></pre>
+<p>I get</p>
+<pre><code>GPU - Random tf.Tensor([-0.88528407  0.33968228 -2.0363083   1.1200726  -1.0055897 ], shape=(5,), dtype=float32)
+CPU - Random tf.Tensor([-0.8852841  0.3396823 -2.036308   1.1200724 -1.00559  ], shape=(5,), dtype=float32)
+equal  tf.Tensor([False False False False False], shape=(5,), dtype=bool)
+
+</code></pre>
+<p>But if I do the same in colab (Google) I get</p>
+<pre><code>GPU - Random tf.Tensor([-0.8852841  0.3396823 -2.036308   1.1200724 -1.00559  ], shape=(5,), dtype=float32)
+CPU - Random tf.Tensor([-0.8852841  0.3396823 -2.036308   1.1200724 -1.00559  ], shape=(5,), dtype=float32)
+equal  tf.Tensor([ True  True  True  True  True], shape=(5,), dtype=bool)
+</code></pre>
+<p>But the proper example appears checking with other loss functions</p>
+<pre><code class="language-python"># Lets load the data
+from tensorflow.keras.datasets import mnist
+
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+# Now let's prepare the data into single vectors of between 0 and 1
+train_images_input = train_images.reshape((60000, 28*28)).astype(&quot;float32&quot;)/255
+test_images_input = test_images.reshape((10000, 28*28)).astype(&quot;float32&quot;)/255
+
+# Now let's prepare the model
+from tensorflow import keras
+from tensorflow.keras import layers
+import tensorflow as tf
+
+#Set a specific seed so that things are reproducible
+keras.utils.set_random_seed(1972)
+
+@tf.function
+def cubic(x):
+  return (tf.math.pow(x, 3))
+
+devices = {'gpu': tf.device('gpu:0'),'cpu': tf.device('cpu:0')}
+activations = {'relu': 'relu', 'cubic': cubic}
+
+
+def get_model(activation_function):
+    model = keras.Sequential([
+        layers.Dense(100, activation = activation_function),
+        layers.Dense(10, activation = 'softmax'),
+    ])
+
+    model.compile(optimizer = 'rmsprop',
+                  loss = 'sparse_categorical_crossentropy',
+                  metrics = ['accuracy'])
+
+    return model
+
+results = []
+for name_activation, activation in activations.items():
+    for name_device, device in devices.items():
+        with device: 
+            model = get_model(activation)
+            model.fit(train_images_input, train_labels, epochs=5, batch_size=128)
+            test_error = model.evaluate(test_images_input, test_labels)
+            results.append((name_device, name_activation, test_error))
+
+results
+
+</code></pre>
+<p>which provide the following results</p>
+<pre><code>[('gpu', 'relu', [0.2844949960708618, 0.9228000044822693]),
+ ('cpu', 'relu', [0.09160187095403671, 0.9718999862670898]),
+ ('gpu', 'cubic', [0.13812969624996185, 0.9686999917030334]),
+ ('cpu', 'cubic', [0.14605630934238434, 0.9715999960899353])]
+</code></pre>
+<p>As you can see, the code trains a model with a combination of GPU and CPU on one side, and ReLU or cubic as an activation function, on the other side.</p>
+<p>Using ReLU, the loss is significantly higher (and the accuracy lower) when using GPU compared to using CPU.</p>
+<p>Using cubic, there are some differences on the results, but not so dramatic.</p>
+<p>It seems the issue might be with precision on metal-based GPUs, but it is surprising ReLU is more susceptible.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">x^3 as a non-linear unit</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2023</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

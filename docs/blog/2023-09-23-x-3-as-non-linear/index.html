@@ -68,7 +68,7 @@
       "datePublished": "2023-09-23 09:30:00 \u002b0000 UTC",
       "dateModified" : "2023-09-23 09:30:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2023-09-23-x-3-as-non-linear\/",
-      "wordCount" : "1702",
+      "wordCount" : "1716",
       "keywords" : ["Blog"]
     }
   
@@ -156,38 +156,38 @@
 <p>A set of linear transformations is also a linear transformation. So it wouldn&rsquo;t matter how many of those layers we pile up. We couldn&rsquo;t represent what we want.</p>
 <p>The solution is that, after each one of these linear transformation, we introduce a process that is no linear. Something that &ldquo;messes things up&rdquo;. It introduces non-linearity, and the process is able to learn more complicated things.</p>
 <p>These non-linear functions are also called activation functions (similar to how a neuron in Biology activates)</p>
-<h2 id="non-linear-functions">Non-linear functions<a class="anchor" href="#non-linear-functions">#</a></h2>
+<h2 id="non-linear-activation-functions">Non-linear activation functions<a class="anchor" href="#non-linear-activation-functions">#</a></h2>
 <p>Of those non-linear functions, <a href="https://youtu.be/gYpoJMlgyXA?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&amp;t=876" 
   
    target="_blank" rel="noreferrer noopener" 
 >the sigmoid function</a> was used a lot in the beginning.</p>
-<p>Sigmoid is the name for</p>
+<p><strong>Sigmoid</strong> is the name for</p>
 <p><strong>y=1/(1+e^-x)</strong></p>
 <p>It is a bit expensive to compute (it doesn&rsquo;t matter A LOT, but it matters). More importantly, sigmoid has a very reduced domain where sigmoid provides useful values. Outside that domain, it basically gives 0 or 1. That kills the learning process (more properly it kills the &ldquo;gradient back-propagation&rdquo;). In addition to that, it is not zero-centered (which means there is a bit of zig-zag on the learning).</p>
-<p>The next function to gain presence, was</p>
+<p>After sigmoid, the next function to gain presence, was</p>
 <p><strong>y=tanh(x)</strong></p>
 <p>thanks to a paper in 1991 by LeCun (for the youngsters, now the AI boss in Facebook but ultimately a legend). The hyperbolic tangent works better than sigmoid. It is zero centered, but it still squashes (reduced domain with interesting values, range reduced to -1 to 1). It was used a lot until the next function appeared.</p>
-<p>The next function and the most used these days is what is called <strong>ReLU or Rectified Linear Unit</strong>. ReLU can be defined as</p>
+<p>Tanh was used for a while until the function everybody uses these days came. It is called <strong>ReLU or Rectified Linear Unit</strong>. ReLU can be defined as</p>
 <p><strong>y=max(0,x)</strong></p>
 <p>So if the input value is negative, ReLU outputs 0, but if the input value is positive, it outputs the value.</p>
-<p>Here you can see the three functions.</p>
+<p>Here you can see a diagram with the three functions.</p>
 <p><img src="/img/Screenshot_2023-09-23_11.19.22.png" alt=""><em>Sigmoid, tanh(x), ReLU from Wolfram Alpha.</em></p>
 <p>ReLU works surprisingly well for such a simple function. It gets computed fast, it doesn&rsquo;t saturate in the positive domain and it converges much faster than the other two.</p>
-<p>However, again it is non-zero centered, and it kills the learning process in part (negative gradients)</p>
+<p>However, as with sigmoid, ReLU is non-zero centered, and it also kills part of the learning process (negative gradients)</p>
 <h2 id="are-those-the-only-options">Are those the only options?<a class="anchor" href="#are-those-the-only-options">#</a></h2>
 <p>There are <a href="https://youtu.be/gYpoJMlgyXA?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&amp;t=865" 
   
    target="_blank" rel="noreferrer noopener" 
 >other options for non-linearity</a>.</p>
-<p>But as I was watching the linked video, there was one obvious function that I was surprised not to be mentioned.</p>
-<p>It is <strong>y=x^3</strong>.</p>
-<p><img src="/img/Screenshot_2023-09-23_11.50.05.png" alt=""><em>y=x^3 from Wolfram Alpha.</em></p>
-<p>y=x^3 is a non-linear continuous function, derivable across the domain, zero-centered, and it doesn&rsquo;t saturate across the whole domain (not only in the positive region as with ReLU).</p>
-<p>I would assume it is relatively easy to compute. Obviously ReLU is simpler to compute (ReLU is a &ldquo;non-linear y=x&rdquo;). But to me y=x^3 is simpler than tanh.</p>
+<p>But as I was watching the linked video, there was one obvious function that I was surprised not to see mentioned.</p>
+<p>It is <strong>y=x<sup>3</sup></strong>.</p>
+<p><img src="/img/Screenshot_2023-09-23_11.50.05.png" alt=""><em>y=x<sup>3</sup> from Wolfram Alpha.</em></p>
+<p>y=x<sup>3</sup> (also y=x^3 or cubic) is a non-linear continuous function, derivable across the domain, zero-centered, and it doesn&rsquo;t saturate across the whole domain (not only in the positive region as with ReLU).</p>
+<p>I would assume it is relatively easy to compute. Obviously ReLU is simpler to compute (ReLU is a &ldquo;non-linear y=x&rdquo;). But to me y=x<sup>3</sup> is simpler than tanh.</p>
 <p>There is one obvious problem looking at the graph. It explodes the input (the learned gradient).</p>
 <p>I wasn&rsquo;t particularly worried about that since you can do some normalization.</p>
 <p>Now that I&rsquo;m writing this, I&rsquo;m more worried about the central region of the domain. We&rsquo;re squashing the gradient for small values. But I perceive the learning could escape that region easily.</p>
-<p>But I didn&rsquo;t think about the central region at the time.</p>
+<p>And I didn&rsquo;t think about the central region at the time.</p>
 <p>I just &hellip; tested it.</p>
 <h2 id="time-to-fire-up-jupyter">Time to fire up Jupyter<a class="anchor" href="#time-to-fire-up-jupyter">#</a></h2>
 <p>So I went to Jupyter Notebook (sort of a Microsoft Word for Machine Learning :D) and opened my playground with my favorite machine learning problem.</p>
@@ -275,7 +275,7 @@ plt.show()
 
 </code></pre>
 <h2 id="local-results">Local results<a class="anchor" href="#local-results">#</a></h2>
-<p>Before showing my results, I need to stress that there is <strong>probably some issue on my local environment</strong> (I will explain why later).</p>
+<p>Before showing my results, I need to stress that there is <strong>an issue on my local environment</strong> (I will explain why later).</p>
 <p>When I tested on my local environment (iMac 2027 with Radeon 580 and the <a href="https://developer.apple.com/metal/tensorflow-plugin/" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -309,42 +309,40 @@ Test cubic [0.21662236750125885, 0.9711999893188477]
   
    target="_blank" rel="noreferrer noopener" 
 >colab environment</a>.</em></p>
-<p>But in any case, even with the results in Colab, you can see y=x^3 doesn&rsquo;t behave bad. ReLU works better in this specific instance (and environment), but y=x^3 is close.</p>
+<p>But in any case, even with the results in Colab, you can see y=x<sup>3</sup> doesn&rsquo;t behave bad. ReLU works better in this specific instance (and environment), but y=x<sup>3</sup> is close.</p>
 <p>Why nobody (to my knowledge) uses it?</p>
 <p>Is it just because ReLU is good enough?</p>
 <h2 id="local-vs-colab">Local vs colab<a class="anchor" href="#local-vs-colab">#</a></h2>
-<p>I still don&rsquo;t know why the discrepancy from my local environment</p>
-<p>Both have the same seed.</p>
-<pre><code>keras.utils.set_random_seed(1972)
-</code></pre>
-<p>Both use Tensorflow 2.13.0.</p>
-<p>The underlying hardware is different, but I would assume the results would be more deterministic.</p>
-<p>Is it because I&rsquo;m using the <a href="https://developer.apple.com/metal/tensorflow-plugin/" 
+<p><del>I still don&rsquo;t know why the discrepancy from my local environment. Both have the same seed. Both use Tensorflow 2.13.0. The underlying hardware is different, but I would assume the results would be more deterministic. sIs it because I&rsquo;m using the <a href="https://developer.apple.com/metal/tensorflow-plugin/" 
   
    target="_blank" rel="noreferrer noopener" 
->metal plugin</a> on my Mac? I don&rsquo;t know.</p>
+>metal plugin</a> on my Mac? I don&rsquo;t know.</del></p>
+<p>It seems the issue is a bug in the <a href="https://gonzalo.f-v.es/blog/2023-09-26-gpu-accuracy-with-tensor-metal/" 
+  
+  
+>metal plugin</a></p>
 <h2 id="previous-work">Previous work<a class="anchor" href="#previous-work">#</a></h2>
 <p>I did a quick search on papers, and I couldn&rsquo;t find anything.</p>
-<p>I asked ChatGPT and it told me of course y=x^3 has been used as an activation function, but when pushed, showed nothing</p>
+<p>I asked ChatGPT and it told me of course y=x<sup>3</sup> has been used as an activation function, but when pushed, showed nothing</p>
 <p><img src="/img/Screenshot_2023-09-23_14.08.04.png" alt=""><em>ChatGPT hand-waving.</em></p>
 <p>I also asked Bard with similar explanation.</p>
 <p><img src="/img/Screenshot_2023-09-23_14.10.34.png" alt=""><em>Bard hand-waving.</em></p>
-<p>When pushed, it gladly produced a (fictitious) paper.</p>
+<p>When pushed, it gladly produced a (fictitious?) paper.</p>
 <p><img src="/img/Screenshot_2023-09-23_14.10.47.png" alt=""><em>Too much LSD, Bard.</em></p>
 <pre><code>Title: Cubic Activation Functions for Deep Learning
 Authors: Manning, Christopher D., and Danqi Chen.
 Year: 2014
 </code></pre>
-<p>However, the link at the bottom did exist and pointed to this page</p>
-<p><a href="https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd" 
+<p>I invite you to find a paper &ldquo;Cubic Activation Functions for Deep Learning&rdquo; by Manning and Chen in 2014. I couldn&rsquo;t.</p>
+<p>However, the <a href="https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd" 
   
    target="_blank" rel="noreferrer noopener" 
->https://towardsdatascience.com/activation-functions-in-neural-networks-83ff7f46a6bd</a></p>
-<p>On that page, at the end, there is a mention to <strong>y=x^3</strong> and an investigation with the title &ldquo;A Fast and Accurate Dependency Parser using Neural Networks&rdquo;.</p>
+>link at the bottom of Bard&rsquo;s response</a> does exist.</p>
+<p>If you visit that page, at the end, there is a mention to <strong>y=x<sup>3</sup></strong> and an investigation with the title &ldquo;A Fast and Accurate Dependency Parser using Neural Networks&rdquo;.</p>
 <p>The <a href="https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf" 
   
    target="_blank" rel="noreferrer noopener" 
->link on that page doesn&rsquo;t work</a></p>
+>link that appears on the &ldquo;Towards data science&rdquo; page</a> doesn&rsquo;t work.</p>
 <p>But searching for &ldquo;A Fast and Accurate Dependency Parser using Neural Networks&rdquo; did provide results.</p>
 <p>Here, you have a proper link</p>
 <p><a href="https://aclanthology.org/D14-1082.pdf" 
@@ -353,12 +351,6 @@ Year: 2014
 >https://aclanthology.org/D14-1082.pdf</a></p>
 <p>And a quote</p>
 <blockquote>
-<p>We compare our cube activation function (x3)
-with two widely used non-linear functions: tanh
-( ex −e−x ), sigmoid ( 1 ), and also the ex +e−x 1+e−x
-identity function (x), as shown in Figure 4 (left).</p>
-</blockquote>
-<blockquote>
 <p>In short, cube outperforms all other activation functions
 significantly and identity works the worst.
 Concretely, cube can achieve 0.8% ∼ 1.2% improvement in UAS over tanh and other
@@ -366,11 +358,11 @@ functions, thus verifying the effectiveness of the cube activation function empi
 </blockquote>
 <p>I was not crazy!!!</p>
 <h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
-<p><del>Is y=x^3 as a non-linearity such a crazy idea? Has anybody tested it for serious work? Has anybody tested other similar non-liberalities (y=x^3+x comes to mind)? Is this worth exploring further?</del></p>
-<p>So it turns out some people have tried to use <strong>y=x^3</strong> before.</p>
+<p><del>Is y=x<sup>3</sup> as a non-linearity such a crazy idea? Has anybody tested it for serious work? Has anybody tested other similar non-liberalities (y=x<sup>3</sup>+x comes to mind)? Is this worth exploring further?</del></p>
+<p>So it turns out some people have tried to use <strong>y=x<sup>3</sup></strong> before.</p>
 <p>It was an exhilarating moment to think you have discover something truly remarkable.</p>
 <p>But it is good to know you are not crazy. Simply you are not the first.</p>
-<p>Still intrigued why <strong>y=x^3</strong> is not more widely used.</p>
+<p>Still intrigued why <strong>y=x<sup>3</sup></strong> is not more widely used.</p>
 
 
               
@@ -393,6 +385,11 @@ functions, thus verifying the effectiveness of the cube activation function empi
     </a>
   
 
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2023-09-26-gpu-accuracy-with-tensor-metal/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Higher loss with Tensorflow-metal, especially with ReLU</span>
+    </a>
   
 </div>
 
@@ -454,7 +451,7 @@ functions, thus verifying the effectiveness of the cube activation function empi
         <nav id="TableOfContents">
   <ul>
     <li><a href="#quick-intro-to-machine-learning-and-a-bit-of-linear-algebra">Quick intro to Machine learning and a bit of Linear Algebra</a></li>
-    <li><a href="#non-linear-functions">Non-linear functions</a></li>
+    <li><a href="#non-linear-activation-functions">Non-linear activation functions</a></li>
     <li><a href="#are-those-the-only-options">Are those the only options?</a></li>
     <li><a href="#time-to-fire-up-jupyter">Time to fire up Jupyter</a></li>
     <li><a href="#local-results">Local results</a></li>
