@@ -7,43 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Fri, 08 Nov 2013 09:56:47 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/categories/london/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Nov 2013 09:56:47 +0000</lastBuildDate>
+    <atom:link href="https://gonzalo.f-v.es/categories/london/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Companies, developers and recruitment</title>
       <link>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</link>
       <pubDate>Fri, 08 Nov 2013 09:56:47 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</guid>
       <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less)
 Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.</description>
     </item>
-    
     <item>
       <title>IKEA vs Greenwich</title>
       <link>https://gonzalo.f-v.es/blog/2013-07-16-ikea-vs-greenwich/</link>
       <pubDate>Tue, 16 Jul 2013 12:16:35 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/blog/2013-07-16-ikea-vs-greenwich/</guid>
       <description>This post started as a way of comparing different ways of managing customer relationships. It ended up as rant, but I&amp;rsquo;m not going to delete it. But I will write another post in the future with some suggestions.</description>
     </item>
-    
     <item>
       <title>Driving in the UK</title>
       <link>https://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</link>
       <pubDate>Sat, 15 Dec 2012 19:47:50 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</guid>
       <description>Today I rented a car for a few hours. I used to drive in Spain, but I hadn&amp;rsquo;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me.</description>
     </item>
-    
     <item>
       <title>Relocating to London</title>
       <link>https://gonzalo.f-v.es/blog/2012-10-22-relocating-to-london/</link>
       <pubDate>Mon, 22 Oct 2012 19:45:08 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/blog/2012-10-22-relocating-to-london/</guid>
       <description>In two weeks I will be working in London. I know I was expecting to continue my last post about Spring persistence. I have lots of things to write about the incredible experience of finding a job abroad and relocating.</description>
     </item>
-    
   </channel>
 </rss>

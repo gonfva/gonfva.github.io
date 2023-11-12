@@ -7,15 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sun, 15 Mar 2020 18:03:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Mar 2020 18:03:00 +0000</lastBuildDate>
+    <atom:link href="https://gonzalo.f-v.es/tags/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coronavirus in the UK</title>
       <link>https://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</link>
       <pubDate>Sun, 15 Mar 2020 18:03:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/blog/2020-03-15-coronavirus-in-the-uk/</guid>
       <description>[This is mostly a translation of this other article in Spanish that I wrote for people in Spain. I&amp;rsquo;m not a politician, nor epidemiologist. If you live in the UK you may find better info elsewhere.</description>
     </item>
-    
   </channel>
 </rss>

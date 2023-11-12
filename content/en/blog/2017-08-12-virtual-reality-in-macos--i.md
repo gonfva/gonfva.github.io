@@ -43,7 +43,8 @@ Or even more simple things…
 
 Do you need tape measures?My prediction is that AR is coming to “the masses” in the very short term (6/12 months), with a second phase based on “glasses” two years down the road.
 
-{{< tweet user="BenedictEvans" id="872573445208408065" >}}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Apple’s Watch, AirPods and now ARKit API are so obviously building blocks for mixed reality glasses. Platform transition strategy in place</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/872573445208408065?ref_src=twsrc%5Etfw">June 7, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### If AR is the now, why bet on VR?
 

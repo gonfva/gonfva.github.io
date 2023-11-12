@@ -20,7 +20,9 @@ So when I read this post about how [young people prefer printed books to ebooks]
 
 Benedict Evans, summarized, some time ago, this feeling in a Tweet.
 
-{{< tweet user="BenedictEvans" id="640215664125341696" >}}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When you move to ebooks you open up pricing options, change (not necessarily improve) reading experience but leave discovery unchanged</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/640215664125341696?ref_src=twsrc%5Etfw">September 5, 2015</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 So I thought everything was said. But nonetheless, even if nobody reads it, lets write it.
 

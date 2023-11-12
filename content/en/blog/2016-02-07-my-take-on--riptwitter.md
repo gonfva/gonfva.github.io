@@ -52,7 +52,9 @@ But there are plenty of others possibilities. Compete in algorithms with people 
 
 Meanwhile, for the people who would like Twitter, fix what people is really asking: onboarding and bullying.
 
-{{< tweet user="BenedictEvans" id="696040383315255296" >}}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Joining Twitter, you have to spend weeks/months working out who to follow before it gets great. An automated feed is an obvious solution</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/696040383315255296?ref_src=twsrc%5Etfw">February 6, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 Onboarding is, in my opinion, the low hanging fruit in terms of fixing and bringing people into the funnel. I just tested it. It’s horrible. First the categories are difficult to figure out. There are things that looks very similar to me: Entertainment, Television, Music, Actor and actresses, comedians… Then even if you select only one category, you get other things. I just selected Charities and NGO and got offered [Ant&Dec](https://twitter.com/antanddec) (UK comediants). And [Jack Whitehall](https://twitter.com/jackwhitehall) (another comedian) is in any option. IT anywhere? Economy? Politics? Alerts? I selected Literature and got offered and account run by Dan Brown’s team but I couldn’t find [J.K.Rowling](https://twitter.com/jk_rowling) (which happens to be both a celebrity, write interesting books and tweets and has an honest non-BS dialogue in Twitter)
 

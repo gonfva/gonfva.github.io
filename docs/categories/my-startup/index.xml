@@ -7,16 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Wed, 23 May 2018 18:00:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/categories/my-startup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 May 2018 18:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gonzalo.f-v.es/categories/my-startup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Launching a business: why?</title>
       <link>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</link>
       <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</guid>
       <description>I’ll start sharing a secret.
 I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil.</description>
     </item>
-    
   </channel>
 </rss>

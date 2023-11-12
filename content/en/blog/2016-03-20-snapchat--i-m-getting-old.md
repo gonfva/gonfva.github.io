@@ -16,7 +16,8 @@ Around a month ago, I installed the app, started registering, think twice…
 
 Now, I’ve discovered that Snapchat is really a thing outside teenagers.
 
-{{< tweet user="pt" id="711581734588944386" >}}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Apparently the mass VC Snapchat onboarding is due to a rumor on Sand Hill that Stanford CS kids use it to &quot;share pictures of their decks.&quot;</p>&mdash; parker (@pt) <a href="https://twitter.com/pt/status/711581734588944386?ref_src=twsrc%5Etfw">March 20, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 And you know what?
 

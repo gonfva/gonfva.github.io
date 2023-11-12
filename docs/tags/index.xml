@@ -7,78 +7,63 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Mon, 25 Sep 2023 17:30:00 +0000</lastBuildDate><atom:link href="https://gonzalo.f-v.es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Nov 2023 17:30:00 +0000</lastBuildDate>
+    <atom:link href="https://gonzalo.f-v.es/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developer</title>
       <link>https://gonzalo.f-v.es/tags/developer/</link>
-      <pubDate>Mon, 25 Sep 2023 17:30:00 +0000</pubDate>
-      
+      <pubDate>Sun, 12 Nov 2023 17:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/tags/developer/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Personal</title>
       <link>https://gonzalo.f-v.es/tags/personal/</link>
       <pubDate>Wed, 13 Sep 2023 21:30:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/personal/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>got ya</title>
       <link>https://gonzalo.f-v.es/tags/got-ya/</link>
       <pubDate>Sat, 19 Aug 2023 09:30:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/got-ya/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Technology</title>
       <link>https://gonzalo.f-v.es/tags/technology/</link>
       <pubDate>Sun, 08 May 2022 22:00:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/technology/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>News</title>
       <link>https://gonzalo.f-v.es/tags/news/</link>
       <pubDate>Sun, 15 Mar 2020 18:03:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/news/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Politics</title>
       <link>https://gonzalo.f-v.es/tags/politics/</link>
       <pubDate>Sun, 18 Nov 2018 18:00:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/politics/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Jobs</title>
       <link>https://gonzalo.f-v.es/tags/jobs/</link>
       <pubDate>Fri, 18 May 2018 18:00:00 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/jobs/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>London</title>
       <link>https://gonzalo.f-v.es/tags/london/</link>
       <pubDate>Fri, 08 Nov 2013 09:56:47 +0000</pubDate>
-      
       <guid>https://gonzalo.f-v.es/tags/london/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
