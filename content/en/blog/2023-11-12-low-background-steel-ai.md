@@ -15,7 +15,7 @@ Today that random fact of trivia came to my mind why reading the following
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-The author asked GPT-3 in 2022, an evaluation question. GPT-3 gave an incorrect answer. So the question was added to a site where questions to evaluate LLM (AI models) are compiled. And other models started giving incorrect answers that same question.
+The author asked GPT-3 in 2022, an evaluation question. GPT-3 gave an incorrect answer. So the question was added to a site where questions to evaluate LLM (AI models) are compiled. And other models started giving incorrect answers to that same question.
 
 
 Those answers were posted to Gist(Github). Google crawled them.
