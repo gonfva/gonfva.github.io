@@ -7,7 +7,9 @@ tags:
 categories: [Developer]
 ---
 
-A few months ago I heard for the first time the term [low-background steel](https://en.wikipedia.org/wiki/Low-background_steel). It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere. Since then, radiation levels have fallen almost to natural levels, but still a fascinating fact.
+A few months ago I heard for the first time the term [low-background steel](https://en.wikipedia.org/wiki/Low-background_steel). 
+
+It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere. Since then, radiation levels have fallen almost to natural levels, but still it is a fascinating fact.
 
 Today that random fact of trivia came to my mind why reading the following
 
