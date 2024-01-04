@@ -7,8 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sun, 12 Nov 2023 17:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2024 10:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix timeout in ClusterInfoUpdateJob</title>
+      <link>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</link>
+      <pubDate>Thu, 04 Jan 2024 10:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</guid>
+      <description>A really small post to document a fix to an issue.
+We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</description>
+    </item>
     <item>
       <title>Low-background steel and AI</title>
       <link>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</link>
@@ -22,7 +30,7 @@ It seems steel produced before the Second World War is more valuable for certain
       <link>https://gonzalo.f-v.es/blog/2023-09-26-gpu-accuracy-with-tensor-metal/</link>
       <pubDate>Mon, 25 Sep 2023 17:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-09-26-gpu-accuracy-with-tensor-metal/</guid>
-      <description>A few days ago, while working on my post about how y=x3 might be a good activation function, I discover an issue with tensorflow-metal, the python package to use your GPU in Tensorflow on a Mac.</description>
+      <description>A few days ago, while working on my post about how y=x3 might be a good activation function, I discovered an issue with tensorflow-metal, the python package to use your GPU in Tensorflow on a Mac.</description>
     </item>
     <item>
       <title>x^3 as a non-linear unit</title>
@@ -46,7 +54,8 @@ One of our most recent projects has been moving most of our build infrastructure
       <link>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</link>
       <pubDate>Fri, 14 Oct 2022 21:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</guid>
-      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images Update 2: Thank you John for your kind message
+      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images
+Update 2: Thank you John for your kind message
 If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
     </item>
     <item>

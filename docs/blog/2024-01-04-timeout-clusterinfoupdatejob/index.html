@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>More Mantis problems | Gonzalo&#39;s thoughts</title>
+  <title>Fix timeout in ClusterInfoUpdateJob | Gonzalo&#39;s thoughts</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2010-03-29-more-mantis-problems/" itemprop="url" />
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/" itemprop="url" />
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="More Mantis problems" />
+  <meta name="twitter:title" content="Fix timeout in ClusterInfoUpdateJob" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="@gonfva" />
   <meta name="twitter:creator" content="https://twitter.com/gonfva" />
@@ -55,8 +55,8 @@
             "@id": "https:\/\/gonzalo.f-v.es\/"
       },
       "articleSection" : "blog",
-      "name" : "More Mantis problems",
-      "headline" : "More Mantis problems",
+      "name" : "Fix timeout in ClusterInfoUpdateJob",
+      "headline" : "Fix timeout in ClusterInfoUpdateJob",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -64,11 +64,11 @@
       "publisher": "",
       "accountablePerson" : "",
       "copyrightHolder" : "",
-      "copyrightYear" : "2010",
-      "datePublished": "2010-03-29 11:45:46 \u002b0000 UTC",
-      "dateModified" : "2010-03-29 11:45:46 \u002b0000 UTC",
-      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2010-03-29-more-mantis-problems\/",
-      "wordCount" : "100",
+      "copyrightYear" : "2024",
+      "datePublished": "2024-01-04 10:30:00 \u002b0000 UTC",
+      "dateModified" : "2024-01-04 10:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2024-01-04-timeout-clusterinfoupdatejob\/",
+      "wordCount" : "115",
       "keywords" : ["Blog"]
     }
   
@@ -113,35 +113,32 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">More Mantis problems</h1>
+            <h1 id="post__title">Fix timeout in ClusterInfoUpdateJob</h1>
             
-            <time datetime="2010-03-29 11:45:46 &#43;0000 UTC" class="post__date">2010-03-29</time> 
+            <h2>Debugging issues in Elasticsearch</h2>
+            
+            <time datetime="2024-01-04 10:30:00 &#43;0000 UTC" class="post__date">2024-01-04</time> 
           </header>
           <article class="post__content">
               
-<p>I have been fighting with PHP, Mantis and SOAP since <a href="2010-03-09-mantis-on-sql-server" 
-  
-  
->my last post</a>. Now I think I have discovered a
-<a href="http://www.mantisbt.org/bugs/view.php?id=11722" 
-  
-   target="_blank" rel="noreferrer noopener" 
->bug when uploading via Mantis SOAP a binary file</a>. It&rsquo;s great being able to debug a PHP application. I hope what I discovered is useful for more people. But I&rsquo;ve discovered something quite shocking:</p>
-<p>I wasn&rsquo;t able to find any good answers to something that must be frequent. I was
-uploading a binary file sending nulls: 00 00 00 or when base64-encoded: AAAA (in
-hex 41 41 41 41). And I was getting after downloading &ldquo;\0&rdquo; (slash-zero) values
-(5C 30)</p>
+<p>A really small post to document a fix to an issue.</p>
+<p>We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</p>
+<pre><code>Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+</code></pre>
+<p>The cluster seemed fine with all the indexes green when invoking</p>
+<pre><code class="language-bash">curl http://localhost:9200/_cat/indices
+</code></pre>
+<p>In the end the fix was manually close each index (and the closing process would fail with <code>publication cancelled before committing: timed out after 30s</code>), so I had to manually retry several times.</p>
+<pre><code class="language-bash">curl -X POST http://localhost:9200/index_name_1/_close
+</code></pre>
+<p>Once all indices were closed, I manually reopened them again one by one.</p>
+<pre><code class="language-bash">curl -X POST http://localhost:9200/index_name_1/_open
+</code></pre>
+<p>At least this solved my issue.</p>
 
 
               
           </article>
-          <br><br>
-          <div class="three-dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <p class="three-dots">First published <a rel="nofollow" href="https://gonfva.blogspot.com/2010/03/more-mantis-problems.html">here</a></p>
           
 
           
@@ -154,17 +151,12 @@ hex 41 41 41 41). And I was getting after downloading &ldquo;\0&rdquo; (slash-ze
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/">
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Mantis on SQL Server</span>
+        <span class="pagination__title">Low-background steel and AI</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2010-04-11-some-thoughts-about-tecnimap-2010/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Some thoughts about Tecnimap 2010</span>
-    </a>
   
 </div>
 

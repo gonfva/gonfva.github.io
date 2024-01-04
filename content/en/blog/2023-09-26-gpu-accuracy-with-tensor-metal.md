@@ -7,7 +7,7 @@ tags:
 categories: [Developer]
 ---
 
-A few days ago, while working on my post about how [y=x<sup>3</sup> might be a good activation function]({{< ref "2023-09-23-x-3-as-non-linear" >}}), I discover an issue with [tensorflow-metal](https://pypi.org/project/tensorflow-metal/), the python package to use your GPU in Tensorflow on a Mac. 
+A few days ago, while working on my post about how [y=x<sup>3</sup> might be a good activation function]({{< ref "2023-09-23-x-3-as-non-linear" >}}), I discovered an issue with [tensorflow-metal](https://pypi.org/project/tensorflow-metal/), the python package to use your GPU in Tensorflow on a Mac. 
 
 I've tried to find the code for tensorflow-metal, but it seems the code is only a wrapper on a library.
 
