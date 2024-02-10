@@ -34,3 +34,5 @@ curl -X POST http://localhost:9200/index_name_1/_open
 ```
 
 At least this solved my issue.
+
+EDIT: It happened again shortly after. In my case, the indices were too big for the memory allocated. So I configured Graylog to split the index and rotate more often.

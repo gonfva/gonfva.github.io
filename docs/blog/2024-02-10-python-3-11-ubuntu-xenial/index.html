@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Fix timeout in ClusterInfoUpdateJob | Gonzalo&#39;s thoughts</title>
+  <title>Python 3.11 in Ubuntu Xenial 16.04 | Gonzalo&#39;s thoughts</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/" itemprop="url" />
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/" itemprop="url" />
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Fix timeout in ClusterInfoUpdateJob" />
+  <meta name="twitter:title" content="Python 3.11 in Ubuntu Xenial 16.04" />
   <meta name="twitter:description" content=""/>
   <meta name="twitter:site" content="@gonfva" />
   <meta name="twitter:creator" content="https://twitter.com/gonfva" />
@@ -55,8 +55,8 @@
             "@id": "https:\/\/gonzalo.f-v.es\/"
       },
       "articleSection" : "blog",
-      "name" : "Fix timeout in ClusterInfoUpdateJob",
-      "headline" : "Fix timeout in ClusterInfoUpdateJob",
+      "name" : "Python 3.11 in Ubuntu Xenial 16.04",
+      "headline" : "Python 3.11 in Ubuntu Xenial 16.04",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -67,8 +67,8 @@
       "copyrightYear" : "2024",
       "datePublished": "2024-01-04 10:30:00 \u002b0000 UTC",
       "dateModified" : "2024-01-04 10:30:00 \u002b0000 UTC",
-      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2024-01-04-timeout-clusterinfoupdatejob\/",
-      "wordCount" : "145",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2024-02-10-python-3-11-ubuntu-xenial\/",
+      "wordCount" : "408",
       "keywords" : ["Blog"]
     }
   
@@ -113,29 +113,85 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Fix timeout in ClusterInfoUpdateJob</h1>
+            <h1 id="post__title">Python 3.11 in Ubuntu Xenial 16.04</h1>
             
-            <h2>Debugging issues in Elasticsearch</h2>
+            <h2>Reviving an old AWS Deeplens</h2>
             
             <time datetime="2024-01-04 10:30:00 &#43;0000 UTC" class="post__date">2024-01-04</time> 
           </header>
           <article class="post__content">
               
-<p>A really small post to document a fix to an issue.</p>
-<p>We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</p>
-<pre><code>Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+<p>I&rsquo;ve got a Deeplens. It was a gift from when I left my previous company. I played with it for a while when I got it but I must confess never much.</p>
+<p>Last year, Amazon <a href="https://aws.amazon.com/deeplens/faqs/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>announced</a> that it was retiring everything Deeplens related</p>
+<blockquote>
+After January 31, 2024, all references to AWS DeepLens models, projects, and device information are deleted from the AWS DeepLens service. You can no longer discover or access the AWS DeepLens service from your AWS console and applications that call the AWS DeepLens API no longer work.
+</blockquote>
+<p>It&rsquo;s been inside a drawer for a while, but a few days ago I decided I could maybe give it an opportunity. It is not a very powerful device, but maybe it could act as an Internet server for a project I&rsquo;ve got in mind.</p>
+<p>First things first, it runs Ubuntu Xenial 16.04, with <a href="https://repost.aws/questions/QUj7PugVYbS3OraD9bhZuZdw/deeplens-ubuntu-20-04" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>no possibility to upgrade to a more recent distribution</a>.</p>
+<p>I thought that was it. Xenial was launched in April 2016, 8 years ago!!!</p>
+<p>It turns out there are still <a href="https://wiki.ubuntu.com/Releases" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>security updates, and end of life is April 2026</a>!!!! That&rsquo;s amazing!!!!</p>
+<p>OK. Let&rsquo;s update. That looks fine.</p>
+<p>I can live with whatever is there, as long as it is updated regularly. Can I?</p>
+<pre><code>$ python3
+Python 3.5.2 (default, Nov 12 2018, 13:43:14) 
+[GCC 5.4.0 20160609] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; quit()
 </code></pre>
-<p>The cluster seemed fine with all the indexes green when invoking</p>
-<pre><code class="language-bash">curl http://localhost:9200/_cat/indices
+<p>Damn it, python3.5 is ancient. I want to use Django. I need <a href="https://docs.djangoproject.com/en/5.0/faq/install/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>at least 3.8, preferably 3.10 for Django 5</a>. Yeah, I know I can probably leave with docker. But this machine is already restricted as it is, I would prefer to not use containers.</p>
+<p>Let&rsquo;s Google. This <code>dadsnakes/ppa</code> looks promising &hellip; <a href="https://gist.github.com/ptantiku/aca8d955296d5dee01bd9ed1c3027d8c" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>until you discover 16.04 is no longer supported</a>.</p>
+<p>Is this a dead end?</p>
+<p>Could I install it from source?</p>
+<p>Well, it turns out you can, but you need to install OpenSSL v1.1.1 first. So for those impatient that arrive through Google to this page&hellip;</p>
+<p>First a recipe for Openssl</p>
+<pre><code>cd /tmp
+wget https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1w/openssl-1.1.1w.tar.gz
+tar -xvf openssl-1.1.1w.tar.gz 
+cd openssl-1.1.1w/
+./config shared --prefix=/usr/local/
+make
+sudo make install
 </code></pre>
-<p>In the end the fix was manually close each index (and the closing process would fail with <code>publication cancelled before committing: timed out after 30s</code>), so I had to manually retry several times.</p>
-<pre><code class="language-bash">curl -X POST http://localhost:9200/index_name_1/_close
+<p>And then a recipe for python 3.11 !!!</p>
+<pre><code>wget https://www.python.org/ftp/python/3.11.8/Python-3.11.8.tgz
+tar -xvf Python-3.11.8.tgz
+cd Python-3.11.8/
+./configure --with-openssl=/tmp/openssl-1.1.1w --enable-optimizations
+make
+sudo make install
 </code></pre>
-<p>Once all indices were closed, I manually reopened them again one by one.</p>
-<pre><code class="language-bash">curl -X POST http://localhost:9200/index_name_1/_open
+<p>And yes</p>
+<pre><code>aws_cam@AWSDeepLens:~$ cat /etc/os-release 
+NAME=&quot;Ubuntu&quot;
+VERSION=&quot;16.04.4 LTS (Xenial Xerus)&quot;
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME=&quot;Ubuntu 16.04.4 LTS&quot;
+VERSION_ID=&quot;16.04&quot;
+HOME_URL=&quot;http://www.ubuntu.com/&quot;
+SUPPORT_URL=&quot;http://help.ubuntu.com/&quot;
+BUG_REPORT_URL=&quot;http://bugs.launchpad.net/ubuntu/&quot;
+VERSION_CODENAME=xenial
+UBUNTU_CODENAME=xenial
+aws_cam@AWSDeepLens:~$ python3 --version
+Python 3.11.8
 </code></pre>
-<p>At least this solved my issue.</p>
-<p>EDIT: It happened again shortly after. In my case, the indices were too big for the memory allocated. So I configured Graylog to split the index and rotate more often.</p>
+<p>I hope this helps. Please ping me if there is anything missing.</p>
 
 
               
@@ -152,12 +208,17 @@
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/">
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Python 3.11 in Ubuntu Xenial 16.04</span>
+        <span class="pagination__title">Low-background steel and AI</span>
     </a>
   
 
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Fix timeout in ClusterInfoUpdateJob</span>
+    </a>
   
 </div>
 
