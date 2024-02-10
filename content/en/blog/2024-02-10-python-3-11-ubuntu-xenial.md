@@ -15,7 +15,7 @@ Last year, Amazon [announced](https://aws.amazon.com/deeplens/faqs/) that it was
 
 > After January 31, 2024, all references to AWS DeepLens models, projects, and device information are deleted from the AWS DeepLens service. You can no longer discover or access the AWS DeepLens service from your AWS console and applications that call the AWS DeepLens API no longer work.
 
-It's been inside a drawer for a while, but a few days ago I decided I could maybe give it an opportunity. It is not a very powerful device, but maybe it could act as an Internet server for a project I've got in mind.
+It's been inside a drawer for a while, but a few days ago I decided I could maybe give it an opportunity. It is not a very powerful device, but maybe it could act as a tiny Internet server (low power consumption) for a project I've got in mind. I've got a USB ethernet adapter, so I don't need the wifi which is said to be unreliable.
 
 It runs Ubuntu Xenial 16.04, with [no possibility to upgrade to a more recent distribution](https://repost.aws/questions/QUj7PugVYbS3OraD9bhZuZdw/deeplens-ubuntu-20-04). 
 
