@@ -56,7 +56,7 @@ cd /tmp
 wget https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1w/openssl-1.1.1w.tar.gz
 tar -xvf openssl-1.1.1w.tar.gz 
 cd openssl-1.1.1w/
-./config shared --prefix=/usr/local/ --openssldir=/usr/local
+./config shared
 make
 sudo make install
 ```
