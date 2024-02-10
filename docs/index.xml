@@ -7,8 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Thu, 04 Jan 2024 10:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2024 10:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 3.11 in Ubuntu Xenial 16.04</title>
+      <link>https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/</link>
+      <pubDate>Sat, 10 Feb 2024 10:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/</guid>
+      <description>I&amp;rsquo;ve got a Deeplens. It was a gift that I received when I left my previous company. I played with it for a while when I got it.
+But I must confess never much.</description>
+    </item>
     <item>
       <title>Fix timeout in ClusterInfoUpdateJob</title>
       <link>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</link>
@@ -16,13 +24,6 @@
       <guid>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</guid>
       <description>A really small post to document a fix to an issue.
 We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</description>
-    </item>
-    <item>
-      <title>Python 3.11 in Ubuntu Xenial 16.04</title>
-      <link>https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/</link>
-      <pubDate>Thu, 04 Jan 2024 10:30:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/</guid>
-      <description>I&amp;rsquo;ve got a Deeplens. It was a gift from when I left my previous company. I played with it for a while when I got it but I must confess never much.</description>
     </item>
     <item>
       <title>Low-background steel and AI</title>
