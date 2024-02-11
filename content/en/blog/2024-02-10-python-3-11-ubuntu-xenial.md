@@ -67,7 +67,7 @@ cd /tmp
 wget https://www.python.org/ftp/python/3.11.8/Python-3.11.8.tgz
 tar -xvf Python-3.11.8.tgz
 cd Python-3.11.8/
-./configure --with-openssl=/tmp/openssl-1.1.1w --enable-optimizations
+./configure --with-openssl=/usr/local/ssl --enable-optimizations
 make
 sudo make install
 ```
@@ -75,22 +75,16 @@ sudo make install
 And yes
 
 ```
-aws_cam@AWSDeepLens:~$ cat /etc/os-release 
-NAME="Ubuntu"
-VERSION="16.04.4 LTS (Xenial Xerus)"
-ID=ubuntu
-ID_LIKE=debian
-PRETTY_NAME="Ubuntu 16.04.4 LTS"
-VERSION_ID="16.04"
-HOME_URL="http://www.ubuntu.com/"
-SUPPORT_URL="http://help.ubuntu.com/"
-BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
-VERSION_CODENAME=xenial
-UBUNTU_CODENAME=xenial
-aws_cam@AWSDeepLens:~$ python3 --version
+$ python3 --version
 Python 3.11.8
 ```
 
-So yes, python 3.11 on Ubuntu Xenial
+So yes, python 3.11 on Ubuntu Xenial. You might want to also install pip
+
+```
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py 
+
+```
 
 I hope this helps. Please ping me if there is anything missing.
