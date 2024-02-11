@@ -61,13 +61,23 @@ make
 sudo make install
 ```
 
+It seems for python we need the source
+
+```
+sudo mv /tmp/openssl-1.1.1w /usr/src/
+cd /usr/src/openssl-1.1.1w
+mkdir lib
+cp ./*.{so,so.*,a,pc} ./lib
+```
+
+
 And then a recipe for python 3.11 !!!
 ```
 cd /tmp
 wget https://www.python.org/ftp/python/3.11.8/Python-3.11.8.tgz
 tar -xvf Python-3.11.8.tgz
 cd Python-3.11.8/
-./configure --with-openssl=/usr/local/ssl --enable-optimizations
+./configure --with-openssl=/usr/src/openssl-1.1.1w --enable-optimizations
 make
 sudo make install
 ```
