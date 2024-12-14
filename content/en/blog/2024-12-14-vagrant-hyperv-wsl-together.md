@@ -1,6 +1,6 @@
 ---
 date: 2024-12-14T10:30:00
-title: My mental model for using Vagrant+Hyper-V and WSL
+title: Using WSL and Vagrant+Hyper-V together
 subtitle: Virtual networks in Windows
 tags:
   - Developer
