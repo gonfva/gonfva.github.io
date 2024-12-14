@@ -68,7 +68,7 @@
       "datePublished": "2024-12-14 10:30:00 \u002b0000 UTC",
       "dateModified" : "2024-12-14 10:30:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2024-12-14-mental-model-vagrant-hyperv-wsl\/",
-      "wordCount" : "1599",
+      "wordCount" : "1621",
       "keywords" : ["Blog"]
     }
   
@@ -121,41 +121,47 @@
           </header>
           <article class="post__content">
               
-<p>[Really dull post about virtualization in Windows follows]</p>
+<p>[<strong>Really dull</strong> post about virtualization in Windows follows]</p>
 <p>For the last couple of months, I&rsquo;ve been (on and off) working with others (hello there) in a company project to migrate development environments so that we developers can use both virtual machines with Vagrant+Hyper-V AND WSL.</p>
-<p>That&rsquo;s a lot of time <del>wasted</del> invested in <del>googling and reading StackOverflow and Microsoft Learn</del> research in a topic that is significantly away from my company&rsquo;s interests.</p>
+<p>That&rsquo;s a lot of time <del>wasted</del> invested in <del>googling and reading StackOverflow and Microsoft Learn</del> research in a topic that is significantly away from my <a href="https://www.flextrade.com" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>company</a>&rsquo;s interests.</p>
 <p>And as always, I&rsquo;m pretty sure I will not remember any of this in a couple of <del>days</del> months time. So I thought it was a good idea dumping some of the things learned along the way in case <del>I</del> someone else needs it.</p>
-<p>So here you can some crude notes on what my mind understands as of now. CAVEAT: I&rsquo;m writing this from my personal laptop and my already fragmented memory, so some of things might not be fully accurate.</p>
+<p>So here you can some crude notes on what my mind understands as of now.</p>
 <h2 id="wsl-networking-modes">WSL networking modes<a class="anchor" href="#wsl-networking-modes">#</a></h2>
 <p>First, I wanted to start with WSL.</p>
-<p>WSL allows to have a pretty standard Linux distribution running alongside Windows in Windows. WSL acts as a virtual machine inside your windows host. For people that prefer a *nix environment but for whatever reasons need to use a Windows machine, it is invaluable.</p>
-<p>It is awesome.</p>
+<p>WSL allows to have a pretty standard Linux distribution running alongside Windows. WSL acts as a virtual machine inside your Microsoft Windows host. For people that prefer a *nix environment but for whatever reasons need to use a Windows machine, it is awesome.</p>
 <p>You can even invoke Windows programs from Linux. You&rsquo;ll see it later that you can invoke a powershell script from Linux (and it will run in the windows host)</p>
 <p>Anyway, in the end WSL is a virtual machine. And it will need to connect to the network.</p>
 <p>There are two basic networking modes in WSL:</p>
 <ul>
-<li>Mirrored: For the network people that would be something like a bridge. Your WSL will generate a network interface that connects directly to the physical network (Wifi or Ethernet or whatever). By connecting to the Physical network, it will get a proper IP from your network (DHCP). More importantly, Microsoft has done some magic there and if you&rsquo;re connecting via VPN to some company network, WSL in mirror mode will work out of the box. That&rsquo;s brilliant. Unfortunately, this requires a new IP from the physical layer (and in some corporate environments that&rsquo;s not good). Additionally, it doesn&rsquo;t communicate with Hyper-V (more on that later)</li>
-<li>NAT (Network Address Translation): No explanation needed for the network people. For others, WSL generates an internal network with a specific range, but every time a packet of that internal network needs to go outside (either the Internet or VPN) or a packet from outside needs to go inside, Windows will take care of doing a translation. Externally, your Windows host IP is the only IP visible. That tends to work fine as well. However WSL generates a random range for itself, usually in the 172.16.0.0/12 range, and it might clash with other private networks. If it does, WSL NAT won&rsquo;t work at all (the VPN will tell Windows to use the VPN for the range that is also used by WSL so WSL gets isolated).</li>
+<li>
+<p><strong>Mirrored</strong>: For the network people that would be something like a bridge. Your WSL will generate a network interface that connects directly to the physical network (Wifi or Ethernet or whatever). By connecting to the physical network, it will get a proper IP from your network (DHCP). More importantly, Microsoft has done some magic there and if you&rsquo;re connecting via VPN to some company network, WSL in mirror mode will work out of the box. That&rsquo;s brilliant. Unfortunately, this mode requires access (including a new IP from) the physical layer. And in some corporate environments that&rsquo;s not good. Additionally, it doesn&rsquo;t communicate with Hyper-V (more on that later).</p>
+</li>
+<li>
+<p><strong>NAT (Network Address Translation)</strong>: No explanation needed for the network people. For others, WSL generates an internal network with a specific range, but every time a packet of that internal network needs to go outside (either the Internet or VPN) or a packet from outside world needs to go inside, Windows will take care of doing a translation of address. Externally, your Windows host IP is the only IP visible. This mode tends to work fine as well. However WSL generates a random range for itself, usually in the 172.16.0.0/12 range, and it might clash with other private networks. If it does, WSL NAT won&rsquo;t work at all. The VPN will tell Windows to use the VPN for the range that is also used by WSL so WSL gets isolated.</p>
+</li>
 </ul>
-<p>There are other network modes, but those are the two main ones. And both are good, but both have those &ldquo;small&rdquo; gotchas.</p>
+<p>There are other network modes, but those are the two main ones. And both are good, but both have those gotchas.</p>
 <h2 id="hyper-v-switches">Hyper-V switches<a class="anchor" href="#hyper-v-switches">#</a></h2>
-<p>Hyper-V is a virtualization mechanism available in Windows Pro/Windows server versions. It allows to create virtual machines where you can install (almost) any operating system. Hyper-V can also be used as a crude replacement for VMWare and ESXi and that kind of virtualization technologies.</p>
+<p>Hyper-V is a virtualization mechanism available in Windows Pro/Windows server versions. It allows to create virtual machines where you can install (almost) any operating system.</p>
+<p>Hyper-V can also be used as a crude replacement for VMWare and ESXi and that kind of virtualization technologies.</p>
 <p>We wanted to use <a href="https://www.vagrantup.com/" 
   
    target="_blank" rel="noreferrer noopener" 
 >Vagrant</a> as the provision mechanism. Vagrant with Hyper-V  is a bit limited, but we needed some scripting/IaC and pure Hyper-V was not an option.</p>
-<p>Hyper-V, as with WSL comes with two main modes of connecting to the network.</p>
+<p>Hyper-V, (similar to with WSL) comes with two main modes of connecting to the network.</p>
 <ul>
-<li>External mode (switch of type external) that again is a bridged mode (similar to the mirrored mode in WSL). The vm will connect to the switch which connects directly to the physical network (and it will get an IP from that network, because usually there will be DHCP there). It usually works BUT it doesn&rsquo;t tunnel via VPN. That&rsquo;s a major drawback.</li>
-<li>The internal mode is similar to the NAT mode in WSL. As the name mentions, it creates a network internally and it connects it to the outside world using NAT. Unfortunately the internal mode in Hyper-V doesn&rsquo;t have DHCP internal server (as it seems to be the case in WSL).</li>
+<li><strong>External</strong> mode (switch of type external). It is again a bridged mode (similar to the <strong>mirrored</strong> mode in WSL). The vm will connect to the switch which connects directly to the physical network (and it will get an IP from that network, because usually there will be DHCP there). It usually works BUT it doesn&rsquo;t tunnel via VPN. That was a major drawback for us.</li>
+<li>The <strong>internal</strong> mode is similar to the NAT mode in WSL. As the name mentions, it creates a network internally and it connects it to the outside world using NAT. Unfortunately the internal mode in Hyper-V doesn&rsquo;t have DHCP internal server (as it seems to be the case in WSL).</li>
 </ul>
 <p>There is a third mode call private, but we can ignore it here.</p>
-<p>When you create a VM (directly on Hyper-V or through Vagrant), you need to use a virtual switch. You can create a virtual switch.</p>
-<p>There is also a default switch, which is of type internal AND it has DHCP server BUT you can nnot specify the IP range.</p>
-<p>Funnily enough WSL creates real Hyper-V switches (suggesting that the underlying mechanism is always Hyper-V).</p>
+<p>For that access, when you create a VM (directly on Hyper-V or through Vagrant), you need to use a virtual switch. There is a <strong>default switch</strong>, which is of type internal AND it has DHCP server BUT you cannot specify the IP range. Alternatively you can create one (or multiple) virtual switch.</p>
+<p>Funnily enough Windows creates Hyper-V switches for WSL (suggesting that the underlying mechanism is always Hyper-V).</p>
 <h2 id="assigning-ips">Assigning IPs<a class="anchor" href="#assigning-ips">#</a></h2>
 <p>WSL would have worked in both modes. But Hyper-V could only work for us in internal mode, because we couldn&rsquo;t make it work inside the VPN and we needed VPN access.</p>
-<p>However, in both cases we had to do some preparation to make it work.</p>
+<p>However, in both cases we had to do some additional preparation to suit our needs.</p>
 <h3 id="wsl">WSL<a class="anchor" href="#wsl">#</a></h3>
 <p>In WSL we ended up using NAT mode, but we had first to fix the clash in IP addresses. And the way to do it using an <a href="https://github.com/microsoft/WSL/discussions/9580#discussioncomment-5510129" 
   
@@ -164,38 +170,46 @@
 <p>In the registry go to
 <code>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss</code>
 And create two values. One <code>NatNetwork</code> can be something like <code>10.0.250.0/24</code> and the other is <code>NatGatewayIpAddress</code> and can be something like <code>10.0.250.1</code>. Obviously choose a range that you know it is not used in your internal networks.</p>
-<p>For choosing NAT mode, you can either WSL settings (an app in Windows), or if you want to do it at laptop provision time, with no interaction, <a href="https://learn.microsoft.com/en-us/windows/wsl/wsl-config" 
+<p>For using NAT mode, you can either enter WSL settings (an app in Windows) or, if you want to do it at laptop provision time (with no interaction), <a href="https://learn.microsoft.com/en-us/windows/wsl/wsl-config" 
   
    target="_blank" rel="noreferrer noopener" 
 >use .wslconfig</a>.</p>
 <h3 id="hyper-v">Hyper-V<a class="anchor" href="#hyper-v">#</a></h3>
 <p>That&rsquo;s for WSL. For Hyper-V, things are really, really, really more tricky.</p>
-<p>Yes. We zero-ed on creating an internal switch and changing the NAT range as well. As an example (taken from the page linked below)</p>
-<pre><code>New-VMSwitch -SwitchName &quot;NATSwitch&quot; -SwitchType Internal
-New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceAlias &quot;vEthernet (NATSwitch)&quot;
-New-NetNat -Name &quot;NATNetwork&quot; -InternalIPInterfaceAddressPrefix 192.168.0.0/24
+<p>Yes. We zero-ed on creating an internal switch and changing the NAT range as well. As an example</p>
+<pre><code>New-VMSwitch -SwitchName &quot;Internal&quot; -SwitchType Internal
+New-NetIPAddress -IPAddress 10.0.251.1 -PrefixLength 24 -InterfaceAlias &quot;vEthernet (NATSwitch)&quot;
+New-NetNat -Name &quot;NATNetwork&quot; -InternalIPInterfaceAddressPrefix 10.0.251.0/24
 </code></pre>
-<p>However, that approach still has the problem that internal switches in Hyper-V don&rsquo;t have a <strong>DHCP server</strong>. You might try to set DHCP enable and lose the NetIPAddress. Or you might try to change the IP address of the default switch that DOES have DHCP and completely break the default switch.</p>
-<p>Believe me, I&rsquo;ve dedicated a non-trivial amount of time to have a DHCP server in that configuration. Gosh. I even fixed a <a href="https://github.com/insomniacslk/dhcp/pull/551" 
+<p>However, that approach still has the problem that internal switches in Hyper-V don&rsquo;t have a <strong>DHCP server</strong>. You might try to set a flag called DHCP enable. I tried, and I lost the NetIPAddress. Or you might try to change the IP address of the default switch that *<em>already</em> has DHCP. I did it and completely broke my default switch.</p>
+<p>Believe me, I&rsquo;ve dedicated a non-trivial amount of time to have a DHCP server in that configuration.</p>
+<p>Gosh. I even fixed a <a href="https://github.com/insomniacslk/dhcp/pull/551" 
   
    target="_blank" rel="noreferrer noopener" 
 >go library</a> while trying to build a <a href="https://github.com/gonfva/dhcp-server" 
   
    target="_blank" rel="noreferrer noopener" 
 >DHCP server</a> (I might continue working on it).</p>
-<p>I won&rsquo;t say it is not possible. But I can tell I don&rsquo;t know how to do it.</p>
-<p>The only solution we&rsquo;ve found is to set an IP inside the VM in the range of the Virtual Switch. If you manage to set the IP (by using Hyper-V to login into the machine), and you set the IP, it will work. This <a href="https://medium.com/@mdavis332/hyper-v-nat-w-linux-vm-1d245be6ded1" 
+<p><strong>I won&rsquo;t say</strong> it is not possible. But I can tell it is not trivial.</p>
+<p>The only solution we&rsquo;ve found is to go inside the VM, and manually set a static IP inside. The static IP needs to be in the range of the Virtual Switch. If you manage to set the IP (by using Hyper-V to login into the machine), and you set the IP, it will work. This <a href="https://medium.com/@mdavis332/hyper-v-nat-w-linux-vm-1d245be6ded1" 
   
    target="_blank" rel="noreferrer noopener" 
->page is a good example</a> of how to set the IP inside an Ubuntu machine.</p>
+>page is a good example</a> of how to set the IP inside an Ubuntu VM.</p>
 <h3 id="enter-vagrant">Enter Vagrant<a class="anchor" href="#enter-vagrant">#</a></h3>
-<p>However, how do you do it with Vagrant? If you spin it with Vagrant, and you select the default switch, you will get a clash in the IP. If you use an external switch you cannot tunnel through the VPN. If you use an internal switch (that is not the default switch), it won&rsquo;t have an IP v4 address, so Vagrant won&rsquo;t be able to connect.</p>
-<p>The solution we implemented comes with two switches and one internal.
-1.- Once you create the machine and are asked to select the Hyper-v switch, you select the external switch.
-2.- In the vagrantfile, the first thing that you do is a provisioning script in the VM that sets a specific IP.
-3.- The second thing that the vagrantfile does is to use a provisioning script IN THE HOST to switch the network to the internal switch.
-<code>get-vm &lt;name-vm&gt;|get-vmnetworkadapter|connect-vmnetworkadapter -switchname &lt;name-switch&gt;</code>
-4.- And the third thing to do is to (using the reload plugin) restart the VM. Once restarted, the VM already has a specific IP (no need to use DHCP) and the internal switch and it can keep using the internal switch all the way. Provisioning and beyond (even after restarting the host machine or stopping/starting the VM)</p>
+<p>However, we wanted to use Vagrant. We provision our VMs with Vagrant (to install a number of things automatically).</p>
+<p>How do you do it with Vagrant? If you spin it with Vagrant, and you select the <strong>default switch</strong>, you will get a clash in the IP. If you use an <strong>external switch</strong> you cannot tunnel through the VPN. If you use an <strong>internal switch</strong> (that is not the default switch), it won&rsquo;t have an IP v4 address, so Vagrant won&rsquo;t be able to connect.</p>
+<p>The solution we implemented comes with two switches: one external and one internal.</p>
+<ul>
+<li>Once you create the machine and are asked to select the Hyper-v switch, you select the external switch.</li>
+<li>In the vagrantfile, the first thing that you do is a provisioning script in the VM that sets a specific IP.</li>
+<li>The second thing that the vagrantfile does is to use a provisioning script IN THE HOST to switch the network to the internal switch.</li>
+</ul>
+<pre><code>get-vm &lt;name-vm&gt;|get-vmnetworkadapter|connect-vmnetworkadapter -switchname &lt;name-switch&gt;
+</code></pre>
+<ul>
+<li>And the third thing to do is to (using the reload plugin) restart the VM.</li>
+</ul>
+<p>Once restarted, the VM already has a specific IP (no need to use DHCP) AND the internal switch (NAT) and it can keep using the internal switch from then onwards. Including provisioning and beyond (even after restarting the host machine or stopping/starting the VM)</p>
 <h2 id="now-all-together">Now all together<a class="anchor" href="#now-all-together">#</a></h2>
 <p>OK. We now have WSL working both internally and externally. And Hyper-V, internally and externally.</p>
 <p>However, there is the <strong>final boss</strong>. You know want to communicate from WSL to Hyper-V VMs (and viceversa).</p>
@@ -210,11 +224,10 @@ New-NetNat -Name &quot;NATNetwork&quot; -InternalIPInterfaceAddressPrefix 192.16
 <p>for all the interfaces you want to connect. Unfortunately, this command seems to require admin privileges.</p>
 <p>Even better is</p>
 <pre><code>netsh interface ipv4 set interface $idx forwarding=Enabled
-
 </code></pre>
 <p>which can be used as a normal user.</p>
-<p>And that works.</p>
-<p>Until you reboot.</p>
+<p>And <strong>that works</strong>.</p>
+<p><strong>Until you reboot</strong>.</p>
 <p>Because WSL creates the WSL switch when you first connect to WSL after the reboot. The switch is new, and it doesn&rsquo;t have forwarding enabled.</p>
 <p>You&rsquo;re almost there. Now you need to run a powershell script when WSL starts.
 1.- You can create a link that launches the script and then WSL.
@@ -227,8 +240,10 @@ Description=Enables the forwarding of the network interace
 Type=oneshot
 ExecStart=/mnt/c/windows/system32/windowspowershell/v1.0//powershell.exe =File &lt;path script&gt;
 
+[Install]
+WantedBy=multi-user.target
 </code></pre>
-<p>There. What a trip</p>
+<p>There. <strong>What a trip</strong></p>
 <h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
 <p>This is much more than I wanted to know about virtualization in Windows.</p>
 <p>On the other hand, I know that I&rsquo;ve barely scratched the surface.</p>
@@ -311,6 +326,25 @@ ExecStart=/mnt/c/windows/system32/windowspowershell/v1.0//powershell.exe =File &
           </div>
       </div>
       
+      <div class="toc-container">
+           <div class="toc-post-title">My mental model of Vagrant&#43;Hyper-V and WSL</div> 
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#wsl-networking-modes">WSL networking modes</a></li>
+    <li><a href="#hyper-v-switches">Hyper-V switches</a></li>
+    <li><a href="#assigning-ips">Assigning IPs</a>
+      <ul>
+        <li><a href="#wsl">WSL</a></li>
+        <li><a href="#hyper-v">Hyper-V</a></li>
+        <li><a href="#enter-vagrant">Enter Vagrant</a></li>
+      </ul>
+    </li>
+    <li><a href="#now-all-together">Now all together</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+      </div>
+      
     </div>
 
 
@@ -328,6 +362,8 @@ ExecStart=/mnt/c/windows/system32/windowspowershell/v1.0//powershell.exe =File &
   <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
     data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
 
+  
+    <script src="/js/table-of-contents.js"></script>
   
 
 
