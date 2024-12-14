@@ -141,8 +141,9 @@
    target="_blank" rel="noreferrer noopener" 
 >Karpathy&rsquo;s CS231n lectures</a>,  I came with a crazy idea.</p>
 <p>So I posted something in Twitter (no Tweet without a typo).</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Asking people into ML. Have anybody tested x^3 as a non-linearisation function in serious projects?<br>I gave a quick go to MNIST data and it seems to converge faster?<br>I assume we may end up with exploding gradients, but I would assume you can normalise.<br>What am I missing? <a href="https://t.co/cno7Jo6SWH">pic.twitter.com/cno7Jo6SWH</a></p>&mdash; Gonzalo ✡️✝️ (@gonfva) <a href="https://twitter.com/gonfva/status/1705332982427382183?ref_src=twsrc%5Etfw">September 22, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Asking people into ML. Have anybody tested x^3 as a non-linearisation function in serious projects?<br>I gave a quick go to MNIST data and it seems to converge faster?<br>I assume we may end up with exploding gradients, but I would assume you can normalise.<br>What am I missing? <a href="https://t.co/cno7Jo6SWH">pic.twitter.com/cno7Jo6SWH</a></p>&mdash; Gonzalo Fernandez-Victorio (@gonfva) <a href="https://twitter.com/gonfva/status/1705332982427382183?ref_src=twsrc%5Etfw">September 22, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 <p>I got no response. So I wanted to do a better write-up, and try to circulate it properly.</p>
 <p><del>If somebody points me to my error, I will gladly update this post.</del></p>
@@ -171,7 +172,7 @@
 <p><strong>y=max(0,x)</strong></p>
 <p>So if the input value is negative, ReLU outputs 0, but if the input value is positive, it outputs the value.</p>
 <p>Here you can see a diagram with the three functions.</p>
-<p><img src="/img/Screenshot_2023-09-23_11.19.22.png" alt=""><em>Sigmoid, tanh(x), ReLU from Wolfram Alpha.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_11.19.22.png"><em>Sigmoid, tanh(x), ReLU from Wolfram Alpha.</em></p>
 <p>ReLU works surprisingly well for such a simple function. It gets computed fast, it doesn&rsquo;t saturate in the positive domain and it converges much faster than the other two.</p>
 <p>However, as with sigmoid, ReLU is non-zero centered, and it also kills part of the learning process (negative gradients)</p>
 <h2 id="are-those-the-only-options">Are those the only options?<a class="anchor" href="#are-those-the-only-options">#</a></h2>
@@ -181,7 +182,7 @@
 >other options for non-linearity</a>.</p>
 <p>But as I was watching the linked video, there was one obvious function that I was surprised not to see mentioned.</p>
 <p>It is <strong>y=x<sup>3</sup></strong>.</p>
-<p><img src="/img/Screenshot_2023-09-23_11.50.05.png" alt=""><em>y=x<sup>3</sup> from Wolfram Alpha.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_11.50.05.png"><em>y=x<sup>3</sup> from Wolfram Alpha.</em></p>
 <p>y=x<sup>3</sup> (also y=x^3 or cubic) is a non-linear continuous function, derivable across the domain, zero-centered, and it doesn&rsquo;t saturate across the whole domain (not only in the positive region as with ReLU).</p>
 <p>I would assume it is relatively easy to compute. Obviously ReLU is simpler to compute (ReLU is a &ldquo;non-linear y=x&rdquo;). But to me y=x<sup>3</sup> is simpler than tanh.</p>
 <p>There is one obvious problem looking at the graph. It explodes the input (the learned gradient).</p>
@@ -193,7 +194,7 @@
 <p>So I went to Jupyter Notebook (sort of a Microsoft Word for Machine Learning :D) and opened my playground with my favorite machine learning problem.</p>
 <p>It is based on MNIST, which is a set of pictures of hand-written numbers, and a label for each picture (sort of &ldquo;the real truth&rdquo;).</p>
 <p>For example, we have a picture like the following and a label of 6</p>
-<p><img src="/img/Screenshot_2023-09-23_12.07.30.png" alt=""><em>Is it a 6? From MNIST.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_12.07.30.png"><em>Is it a 6? From MNIST.</em></p>
 <p>You train your model using the MNIST training data and then you test your model using testing data (a different portion of MNIST data)</p>
 <p>I built a simple model (basically a one hidden layer loosely based on a <a href="https://www.manning.com/books/deep-learning-with-python-second-edition" 
   
@@ -284,7 +285,7 @@ plt.show()
 Test cubic [0.1919427067041397, 0.9718999862670898]
 </code></pre>
 <p><strong>92.2%</strong> test accuracy with ReLU compared to <strong>97.2%</strong> test accuracy with x^3.</p>
-<p><img src="/img/Screenshot_2023-09-23_12.55.10.png" alt=""><em>Loss per epoch, local environment.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_12.55.10.png"><em>Loss per epoch, local environment.</em></p>
 <p>Seeing the loss per epoch was like &ldquo;this is surreal&rdquo;.</p>
 <p>Faster.</p>
 <p>Better.</p>
@@ -305,7 +306,7 @@ Test cubic [0.21662236750125885, 0.9711999893188477]
 <p><strong>97.8%</strong> test accuracy with ReLU vs <strong>97.1%</strong> test accuracy with x^3.</p>
 <p>Meh.</p>
 <p>The plot for the Loss, is also unimpressive.</p>
-<p><img src="/img/Screenshot_2023-09-23_13.31.11.png" alt=""><em>Loss per epoch, <a href="https://colab.research.google.com/drive/1q00wPHH5LYHHu5hDZy-2Bv3GGFXSq-v3?usp=sharing" 
+<p><img src="/img/Screenshot_2023-09-23_13.31.11.png"><em>Loss per epoch, <a href="https://colab.research.google.com/drive/1q00wPHH5LYHHu5hDZy-2Bv3GGFXSq-v3?usp=sharing" 
   
    target="_blank" rel="noreferrer noopener" 
 >colab environment</a>.</em></p>
@@ -324,11 +325,11 @@ Test cubic [0.21662236750125885, 0.9711999893188477]
 <h2 id="previous-work">Previous work<a class="anchor" href="#previous-work">#</a></h2>
 <p>I did a quick search on papers, and I couldn&rsquo;t find anything.</p>
 <p>I asked ChatGPT and it told me of course y=x<sup>3</sup> has been used as an activation function, but when pushed, showed nothing</p>
-<p><img src="/img/Screenshot_2023-09-23_14.08.04.png" alt=""><em>ChatGPT hand-waving.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_14.08.04.png"><em>ChatGPT hand-waving.</em></p>
 <p>I also asked Bard with similar explanation.</p>
-<p><img src="/img/Screenshot_2023-09-23_14.10.34.png" alt=""><em>Bard hand-waving.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_14.10.34.png"><em>Bard hand-waving.</em></p>
 <p>When pushed, it gladly produced a (fictitious?) paper.</p>
-<p><img src="/img/Screenshot_2023-09-23_14.10.47.png" alt=""><em>Too much LSD, Bard.</em></p>
+<p><img src="/img/Screenshot_2023-09-23_14.10.47.png"><em>Too much LSD, Bard.</em></p>
 <pre><code>Title: Cubic Activation Functions for Deep Learning
 Authors: Manning, Christopher D., and Danqi Chen.
 Year: 2014

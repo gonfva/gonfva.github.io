@@ -126,7 +126,7 @@
   
    target="_blank" rel="noreferrer noopener" 
 >compromise of personal information</a> on around 100M people.</p>
-<p><img src="/img/1*TbzHUQSGDSFAZe-olzUgBQ.png" alt="email from AWS warning against S3 buckets with public access">AWS is putting great effort in avoiding S3 buckets configured for public access. When I read the initial reports, I thought the root cause was the usual “<a href="https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68" 
+<p><img alt="email from AWS warning against S3 buckets with public access" src="/img/1*TbzHUQSGDSFAZe-olzUgBQ.png">AWS is putting great effort in avoiding S3 buckets configured for public access. When I read the initial reports, I thought the root cause was the usual “<a href="https://medium.com/@bhaveshthakur2015/how-i-was-able-to-exploit-misconfigured-aws-s3-bucket-on-a-production-server-of-oneplus-a9470ee02c68" 
   
    target="_blank" rel="noreferrer noopener" 
 >S3 bucket with public permissions</a>” (S3 is a distributed object storage in AWS). It’s not uncommon that companies that are not very fluent with AWS permissions, end up making public a whole S3 bucket.</p>
@@ -286,7 +286,7 @@ local $ aws s3 ls|wc -l
 </ul>
 <h2 id="rest-api-exploitation">REST API exploitation<a class="anchor" href="#rest-api-exploitation">#</a></h2>
 <p>Netflix’s <strong>detection</strong> technique assumes that once the credentials are compromised, the attacker no longer uses the EC2 instance to access AWS services. And with that assumption, detects the compromise in a change of IP address.</p>
-<p><img src="/img/1*VQB6XiMQRlENB2a59jeZ2g.jpeg" alt="Wolf in sheep’s clothing"><em>Wolf in sheep’s clothing (by <a href="https://www.flickr.com/photos/drewtarvin/24107843813" 
+<p><img alt="Wolf in sheep’s clothing" src="/img/1*VQB6XiMQRlENB2a59jeZ2g.jpeg"><em>Wolf in sheep’s clothing (by <a href="https://www.flickr.com/photos/drewtarvin/24107843813" 
   
    target="_blank" rel="noreferrer noopener" 
 >Drew Travin</a>)</em></p>
@@ -311,7 +311,7 @@ local $ aws s3 ls|wc -l
   &lt;ListAllMyBucketsResult xmlns=&quot;http://s3.amazonaws.com/doc/2006-03-01/&quot;&gt;&lt;Owner&gt;&lt;ID&gt;[REDACTED]&lt;/ID&gt;&lt;DisplayName&gt;[REDACTED]&lt;/DisplayName&gt;&lt;/Owner&gt;&lt;Buckets&gt;&lt;Bucket&gt;&lt;Name&gt;[REDACTED]&lt;/Name&gt;&lt;CreationDate&gt;2019-07-09T19:01:03.000Z&lt;/CreationDate&gt;&lt;/Bucket&gt;[...]&lt;/Buckets&gt;&lt;/ListAllMyBucketsResult&gt;
 </code></pre>
 <p>I want to stress that since we’re using SSRF, the request comes from the instance.</p>
-<p><img src="/img/1*U8CWJ354T_MiGu0eCZKPEg.png" alt="AWS Cloudtrail record of the API access where the source IP is the instance IP"><em>CloudTrail entry for the “attack”. Source IP is the actual instance IPSo, limiting the source IP has no impact.</em></p>
+<p><img alt="AWS Cloudtrail record of the API access where the source IP is the instance IP" src="/img/1*U8CWJ354T_MiGu0eCZKPEg.png"><em>CloudTrail entry for the “attack”. Source IP is the actual instance IPSo, limiting the source IP has no impact.</em></p>
 <p>Netflix proposal for a detection system may not work.</p>
 <h2 id="conclusions">Conclusions<a class="anchor" href="#conclusions">#</a></h2>
 <p>Netflix’s technique to detect credentials abuse is not always valid. When coupling SSRF with metadata endpoint abuse, it can be avoided by using REST API exploitation.</p>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My mental model of Vagrant&#43;Hyper-V and WSL | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="My mental model of Vagrant&#43;Hyper-V and WSL" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "My mental model of Vagrant\u002bHyper-V and WSL",
+      "headline" : "My mental model of Vagrant\u002bHyper-V and WSL",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2024",
+      "datePublished": "2024-12-14 10:30:00 \u002b0000 UTC",
+      "dateModified" : "2024-12-14 10:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2024-12-14-mental-model-vagrant-hyperv-wsl\/",
+      "wordCount" : "1599",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">My mental model of Vagrant&#43;Hyper-V and WSL</h1>
+            
+            <h2>Virtual networks in Windows</h2>
+            
+            <time datetime="2024-12-14 10:30:00 &#43;0000 UTC" class="post__date">2024-12-14</time> 
+          </header>
+          <article class="post__content">
+              
+<p>[Really dull post about virtualization in Windows follows]</p>
+<p>For the last couple of months, I&rsquo;ve been (on and off) working with others (hello there) in a company project to migrate development environments so that we developers can use both virtual machines with Vagrant+Hyper-V AND WSL.</p>
+<p>That&rsquo;s a lot of time <del>wasted</del> invested in <del>googling and reading StackOverflow and Microsoft Learn</del> research in a topic that is significantly away from my company&rsquo;s interests.</p>
+<p>And as always, I&rsquo;m pretty sure I will not remember any of this in a couple of <del>days</del> months time. So I thought it was a good idea dumping some of the things learned along the way in case <del>I</del> someone else needs it.</p>
+<p>So here you can some crude notes on what my mind understands as of now. CAVEAT: I&rsquo;m writing this from my personal laptop and my already fragmented memory, so some of things might not be fully accurate.</p>
+<h2 id="wsl-networking-modes">WSL networking modes<a class="anchor" href="#wsl-networking-modes">#</a></h2>
+<p>First, I wanted to start with WSL.</p>
+<p>WSL allows to have a pretty standard Linux distribution running alongside Windows in Windows. WSL acts as a virtual machine inside your windows host. For people that prefer a *nix environment but for whatever reasons need to use a Windows machine, it is invaluable.</p>
+<p>It is awesome.</p>
+<p>You can even invoke Windows programs from Linux. You&rsquo;ll see it later that you can invoke a powershell script from Linux (and it will run in the windows host)</p>
+<p>Anyway, in the end WSL is a virtual machine. And it will need to connect to the network.</p>
+<p>There are two basic networking modes in WSL:</p>
+<ul>
+<li>Mirrored: For the network people that would be something like a bridge. Your WSL will generate a network interface that connects directly to the physical network (Wifi or Ethernet or whatever). By connecting to the Physical network, it will get a proper IP from your network (DHCP). More importantly, Microsoft has done some magic there and if you&rsquo;re connecting via VPN to some company network, WSL in mirror mode will work out of the box. That&rsquo;s brilliant. Unfortunately, this requires a new IP from the physical layer (and in some corporate environments that&rsquo;s not good). Additionally, it doesn&rsquo;t communicate with Hyper-V (more on that later)</li>
+<li>NAT (Network Address Translation): No explanation needed for the network people. For others, WSL generates an internal network with a specific range, but every time a packet of that internal network needs to go outside (either the Internet or VPN) or a packet from outside needs to go inside, Windows will take care of doing a translation. Externally, your Windows host IP is the only IP visible. That tends to work fine as well. However WSL generates a random range for itself, usually in the 172.16.0.0/12 range, and it might clash with other private networks. If it does, WSL NAT won&rsquo;t work at all (the VPN will tell Windows to use the VPN for the range that is also used by WSL so WSL gets isolated).</li>
+</ul>
+<p>There are other network modes, but those are the two main ones. And both are good, but both have those &ldquo;small&rdquo; gotchas.</p>
+<h2 id="hyper-v-switches">Hyper-V switches<a class="anchor" href="#hyper-v-switches">#</a></h2>
+<p>Hyper-V is a virtualization mechanism available in Windows Pro/Windows server versions. It allows to create virtual machines where you can install (almost) any operating system. Hyper-V can also be used as a crude replacement for VMWare and ESXi and that kind of virtualization technologies.</p>
+<p>We wanted to use <a href="https://www.vagrantup.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Vagrant</a> as the provision mechanism. Vagrant with Hyper-V  is a bit limited, but we needed some scripting/IaC and pure Hyper-V was not an option.</p>
+<p>Hyper-V, as with WSL comes with two main modes of connecting to the network.</p>
+<ul>
+<li>External mode (switch of type external) that again is a bridged mode (similar to the mirrored mode in WSL). The vm will connect to the switch which connects directly to the physical network (and it will get an IP from that network, because usually there will be DHCP there). It usually works BUT it doesn&rsquo;t tunnel via VPN. That&rsquo;s a major drawback.</li>
+<li>The internal mode is similar to the NAT mode in WSL. As the name mentions, it creates a network internally and it connects it to the outside world using NAT. Unfortunately the internal mode in Hyper-V doesn&rsquo;t have DHCP internal server (as it seems to be the case in WSL).</li>
+</ul>
+<p>There is a third mode call private, but we can ignore it here.</p>
+<p>When you create a VM (directly on Hyper-V or through Vagrant), you need to use a virtual switch. You can create a virtual switch.</p>
+<p>There is also a default switch, which is of type internal AND it has DHCP server BUT you can nnot specify the IP range.</p>
+<p>Funnily enough WSL creates real Hyper-V switches (suggesting that the underlying mechanism is always Hyper-V).</p>
+<h2 id="assigning-ips">Assigning IPs<a class="anchor" href="#assigning-ips">#</a></h2>
+<p>WSL would have worked in both modes. But Hyper-V could only work for us in internal mode, because we couldn&rsquo;t make it work inside the VPN and we needed VPN access.</p>
+<p>However, in both cases we had to do some preparation to make it work.</p>
+<h3 id="wsl">WSL<a class="anchor" href="#wsl">#</a></h3>
+<p>In WSL we ended up using NAT mode, but we had first to fix the clash in IP addresses. And the way to do it using an <a href="https://github.com/microsoft/WSL/discussions/9580#discussioncomment-5510129" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>undocumented registry key</a> that tells WSL which CIDR range it should use when using its NAT mode.</p>
+<p>In the registry go to
+<code>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss</code>
+And create two values. One <code>NatNetwork</code> can be something like <code>10.0.250.0/24</code> and the other is <code>NatGatewayIpAddress</code> and can be something like <code>10.0.250.1</code>. Obviously choose a range that you know it is not used in your internal networks.</p>
+<p>For choosing NAT mode, you can either WSL settings (an app in Windows), or if you want to do it at laptop provision time, with no interaction, <a href="https://learn.microsoft.com/en-us/windows/wsl/wsl-config" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>use .wslconfig</a>.</p>
+<h3 id="hyper-v">Hyper-V<a class="anchor" href="#hyper-v">#</a></h3>
+<p>That&rsquo;s for WSL. For Hyper-V, things are really, really, really more tricky.</p>
+<p>Yes. We zero-ed on creating an internal switch and changing the NAT range as well. As an example (taken from the page linked below)</p>
+<pre><code>New-VMSwitch -SwitchName &quot;NATSwitch&quot; -SwitchType Internal
+New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceAlias &quot;vEthernet (NATSwitch)&quot;
+New-NetNat -Name &quot;NATNetwork&quot; -InternalIPInterfaceAddressPrefix 192.168.0.0/24
+</code></pre>
+<p>However, that approach still has the problem that internal switches in Hyper-V don&rsquo;t have a <strong>DHCP server</strong>. You might try to set DHCP enable and lose the NetIPAddress. Or you might try to change the IP address of the default switch that DOES have DHCP and completely break the default switch.</p>
+<p>Believe me, I&rsquo;ve dedicated a non-trivial amount of time to have a DHCP server in that configuration. Gosh. I even fixed a <a href="https://github.com/insomniacslk/dhcp/pull/551" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>go library</a> while trying to build a <a href="https://github.com/gonfva/dhcp-server" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>DHCP server</a> (I might continue working on it).</p>
+<p>I won&rsquo;t say it is not possible. But I can tell I don&rsquo;t know how to do it.</p>
+<p>The only solution we&rsquo;ve found is to set an IP inside the VM in the range of the Virtual Switch. If you manage to set the IP (by using Hyper-V to login into the machine), and you set the IP, it will work. This <a href="https://medium.com/@mdavis332/hyper-v-nat-w-linux-vm-1d245be6ded1" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>page is a good example</a> of how to set the IP inside an Ubuntu machine.</p>
+<h3 id="enter-vagrant">Enter Vagrant<a class="anchor" href="#enter-vagrant">#</a></h3>
+<p>However, how do you do it with Vagrant? If you spin it with Vagrant, and you select the default switch, you will get a clash in the IP. If you use an external switch you cannot tunnel through the VPN. If you use an internal switch (that is not the default switch), it won&rsquo;t have an IP v4 address, so Vagrant won&rsquo;t be able to connect.</p>
+<p>The solution we implemented comes with two switches and one internal.
+1.- Once you create the machine and are asked to select the Hyper-v switch, you select the external switch.
+2.- In the vagrantfile, the first thing that you do is a provisioning script in the VM that sets a specific IP.
+3.- The second thing that the vagrantfile does is to use a provisioning script IN THE HOST to switch the network to the internal switch.
+<code>get-vm &lt;name-vm&gt;|get-vmnetworkadapter|connect-vmnetworkadapter -switchname &lt;name-switch&gt;</code>
+4.- And the third thing to do is to (using the reload plugin) restart the VM. Once restarted, the VM already has a specific IP (no need to use DHCP) and the internal switch and it can keep using the internal switch all the way. Provisioning and beyond (even after restarting the host machine or stopping/starting the VM)</p>
+<h2 id="now-all-together">Now all together<a class="anchor" href="#now-all-together">#</a></h2>
+<p>OK. We now have WSL working both internally and externally. And Hyper-V, internally and externally.</p>
+<p>However, there is the <strong>final boss</strong>. You know want to communicate from WSL to Hyper-V VMs (and viceversa).</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/iRgtzZ-mOQo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>The solution is to use</p>
+<pre><code>set-netipinterface -forwarding enabled
+</code></pre>
+<p>for all the interfaces you want to connect. Unfortunately, this command seems to require admin privileges.</p>
+<p>Even better is</p>
+<pre><code>netsh interface ipv4 set interface $idx forwarding=Enabled
+
+</code></pre>
+<p>which can be used as a normal user.</p>
+<p>And that works.</p>
+<p>Until you reboot.</p>
+<p>Because WSL creates the WSL switch when you first connect to WSL after the reboot. The switch is new, and it doesn&rsquo;t have forwarding enabled.</p>
+<p>You&rsquo;re almost there. Now you need to run a powershell script when WSL starts.
+1.- You can create a link that launches the script and then WSL.
+2.- Or you can use crontab to run on reboot
+3.- Or you can use a systemd service inside WSL that triggers the powershell script</p>
+<pre><code>[Unit]
+Description=Enables the forwarding of the network interace
+
+[Service]
+Type=oneshot
+ExecStart=/mnt/c/windows/system32/windowspowershell/v1.0//powershell.exe =File &lt;path script&gt;
+
+</code></pre>
+<p>There. What a trip</p>
+<h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
+<p>This is much more than I wanted to know about virtualization in Windows.</p>
+<p>On the other hand, I know that I&rsquo;ve barely scratched the surface.</p>
+<p>I really hope it is useful for someone else.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Python 3.11 in Ubuntu Xenial 16.04</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2024</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

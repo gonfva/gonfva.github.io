@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>got ya on Gonzalo&#39;s thoughts</title>
+    <title>Got Ya on Gonzalo&#39;s thoughts</title>
     <link>https://gonzalo.f-v.es/tags/got-ya/</link>
-    <description>Recent content in got ya on Gonzalo&#39;s thoughts</description>
+    <description>Recent content in Got Ya on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
@@ -14,17 +14,14 @@
       <link>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</link>
       <pubDate>Sat, 19 Aug 2023 09:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</guid>
-      <description>Improving Windows build times in EKS I cannot believe a year has passed since my last annotation (which was also EKS and Windows related).
-One of our most recent projects has been moving most of our build infrastructure to the cloud.</description>
+      <description>Improving Windows build times in EKS I cannot believe a year has passed since my last annotation (which was also EKS and Windows related).&#xA;One of our most recent projects has been moving most of our build infrastructure to the cloud.</description>
     </item>
     <item>
       <title>Windows 2022 in EKS with packer</title>
       <link>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</link>
       <pubDate>Fri, 14 Oct 2022 21:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</guid>
-      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images
-Update 2: Thank you John for your kind message
-If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
+      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images&#xA;Update 2: Thank you John for your kind message&#xA;If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
     </item>
     <item>
       <title>Debugging windows nodes in EKS</title>

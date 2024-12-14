@@ -143,7 +143,7 @@
 >NAT gateway</a>.</p>
 <p>NAT gateway is a service, managed by AWS that allows egress-only connectivity to private subnets, doing NAT or Network Address Translation for instances in the private subnets and being a gateway for them.</p>
 <p>If you have a server on the Internet and receive a request coming through the NAT gateway, you will see the IP of the NAT gateway, not the IP of the machine that connected through the NAT gateway.</p>
-<p><img src="/img/Screenshot_20220515-113548.png" alt="An example of the usual architecture" title="Only two availability zones!!!"></p>
+<p><img alt="An example of the usual architecture" src="/img/Screenshot_20220515-113548.png" title="Only two availability zones!!!"></p>
 <p>It sits within the public subnets (or at least that&rsquo;s my mental model)</p>
 <p>NAT gateway is a relatively simple concept. A Linux machine doing ip forwarding, launched in the public subnet and a default route in the private subnet to that machine, would be all you need. Things start being tricky, when you think you need to do hardening, updates, you need to start considering replication and their IP changing.</p>
 <p>Hmm. Yeah. Maybe it is not such a simple service.</p>

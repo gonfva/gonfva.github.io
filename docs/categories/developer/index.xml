@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sat, 10 Feb 2024 10:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 10:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My mental model of Vagrant&#43;Hyper-V and WSL</title>
+      <link>https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/</link>
+      <pubDate>Sat, 14 Dec 2024 10:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/</guid>
+      <description>[Really dull post about virtualization in Windows follows]&#xA;For the last couple of months, I&amp;rsquo;ve been (on and off) working with others (hello there) in a company project to migrate development environments so that we developers can use both virtual machines with Vagrant+Hyper-V AND WSL.</description>
+    </item>
     <item>
       <title>Python 3.11 in Ubuntu Xenial 16.04</title>
       <link>https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/</link>
@@ -21,16 +28,14 @@
       <link>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</link>
       <pubDate>Thu, 04 Jan 2024 10:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</guid>
-      <description>A really small post to document a fix to an issue.
-We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</description>
+      <description>A really small post to document a fix to an issue.&#xA;We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</description>
     </item>
     <item>
       <title>Low-background steel and AI</title>
       <link>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</link>
       <pubDate>Sun, 12 Nov 2023 17:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</guid>
-      <description>A few months ago I heard for the first time the term low-background steel.
-It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere.</description>
+      <description>A few months ago I heard for the first time the term low-background steel.&#xA;It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere.</description>
     </item>
     <item>
       <title>Higher loss with Tensorflow-metal, especially with ReLU</title>
@@ -44,26 +49,21 @@ It seems steel produced before the Second World War is more valuable for certain
       <link>https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/</link>
       <pubDate>Sat, 23 Sep 2023 09:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/</guid>
-      <description>UPDATE: It turns out it was not crazy at all.
-These days I&amp;rsquo;m trying to learn Machine Learning(once again).
-I&amp;rsquo;m more interested in understanding the fundamentals than running the race of prompt engineering and &amp;ldquo;ChatGPT&amp;rdquo; (and what is called LLM).</description>
+      <description>UPDATE: It turns out it was not crazy at all.&#xA;These days I&amp;rsquo;m trying to learn Machine Learning(once again).&#xA;I&amp;rsquo;m more interested in understanding the fundamentals than running the race of prompt engineering and &amp;ldquo;ChatGPT&amp;rdquo; (and what is called LLM).</description>
     </item>
     <item>
       <title>Improving Windows build times in EKS</title>
       <link>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</link>
       <pubDate>Sat, 19 Aug 2023 09:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</guid>
-      <description>Improving Windows build times in EKS I cannot believe a year has passed since my last annotation (which was also EKS and Windows related).
-One of our most recent projects has been moving most of our build infrastructure to the cloud.</description>
+      <description>Improving Windows build times in EKS I cannot believe a year has passed since my last annotation (which was also EKS and Windows related).&#xA;One of our most recent projects has been moving most of our build infrastructure to the cloud.</description>
     </item>
     <item>
       <title>Windows 2022 in EKS with packer</title>
       <link>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</link>
       <pubDate>Fri, 14 Oct 2022 21:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</guid>
-      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images
-Update 2: Thank you John for your kind message
-If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
+      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images&#xA;Update 2: Thank you John for your kind message&#xA;If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
     </item>
     <item>
       <title>Debugging windows nodes in EKS</title>
@@ -98,24 +98,21 @@ If you are using Windows in EKS, you are probably eagerly awaiting for an Window
       <link>https://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</link>
       <pubDate>Wed, 27 Apr 2022 22:48:54 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</guid>
-      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.
-This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
+      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.&#xA;This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
     </item>
     <item>
       <title>Dock disappeared in MacOS Catalina</title>
       <link>https://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>
       <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
-      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
-Well, here I am, to help you before Apple does.</description>
+      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.&#xA;Well, here I am, to help you before Apple does.</description>
     </item>
     <item>
       <title>Metadata abuse in AWS</title>
       <link>https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</link>
       <pubDate>Tue, 03 Sep 2019 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
-      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
-AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
+      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.&#xA;AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
     </item>
     <item>
       <title>Configuration in AWS is difficult</title>
@@ -129,16 +126,14 @@ AWS is putting great effort in avoiding S3 buckets configured for public access.
       <link>https://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</link>
       <pubDate>Sat, 13 Oct 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
-      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
-Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
+      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.&#xA;Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
     </item>
     <item>
       <title>AWS CloudWatch alarms</title>
       <link>https://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</link>
       <pubDate>Wed, 21 Feb 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</guid>
-      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
-You create an alarm, to detect too many 5xx errors in your ELB.</description>
+      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.&#xA;You create an alarm, to detect too many 5xx errors in your ELB.</description>
     </item>
     <item>
       <title>“Serverless” in three minutes</title>
@@ -152,16 +147,14 @@ You create an alarm, to detect too many 5xx errors in your ELB.</description>
       <link>https://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</link>
       <pubDate>Sat, 21 Jan 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</guid>
-      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692
-A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</description>
+      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692&#xA;A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</description>
     </item>
     <item>
       <title>A flow for containers</title>
       <link>https://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</link>
       <pubDate>Sun, 16 Oct 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</guid>
-      <description>Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.
-Initially you can think it’s only two steps: build an deploy.</description>
+      <description>Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.&#xA;Initially you can think it’s only two steps: build an deploy.</description>
     </item>
     <item>
       <title>AWS ELB in Apache logs</title>
@@ -175,9 +168,7 @@ Initially you can think it’s only two steps: build an deploy.</description>
       <link>https://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</link>
       <pubDate>Fri, 19 Feb 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</guid>
-      <description>7 am in the morning. Some notifications in the mailbox and on Slack.
-Big demo today and part of the system had gone down.
-And had gone back up too. With no human intervention.</description>
+      <description>7 am in the morning. Some notifications in the mailbox and on Slack.&#xA;Big demo today and part of the system had gone down.&#xA;And had gone back up too. With no human intervention.</description>
     </item>
     <item>
       <title>Deploying docker</title>
@@ -212,8 +203,7 @@ And had gone back up too. With no human intervention.</description>
       <link>https://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</link>
       <pubDate>Sat, 03 Oct 2015 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</guid>
-      <description>Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
-However, as in many of these events, the better part was meeting people.</description>
+      <description>Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.&#xA;However, as in many of these events, the better part was meeting people.</description>
     </item>
     <item>
       <title>DevOps is so 2010. NoOps is the future</title>
@@ -269,25 +259,21 @@ However, as in many of these events, the better part was meeting people.</descri
       <link>https://gonzalo.f-v.es/blog/2014-03-13-optimizing/</link>
       <pubDate>Thu, 13 Mar 2014 20:33:40 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-03-13-optimizing/</guid>
-      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
-After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:</description>
+      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.&#xA;After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:</description>
     </item>
     <item>
       <title>Tipping point</title>
       <link>https://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&amp;rsquo;m happy.
-I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
+      <description>I&amp;rsquo;m happy.&#xA;I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&#xA;I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
     </item>
     <item>
       <title>I was sure it was my fault...</title>
       <link>https://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
       <pubDate>Thu, 27 Feb 2014 19:27:04 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t.&#xA;In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
     </item>
     <item>
       <title>Multithreading: Warning lights</title>
@@ -315,25 +301,21 @@ In the last week or so, I&amp;rsquo;ve been hitting against a wall because of tw
       <link>https://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
       <pubDate>Mon, 24 Sep 2012 19:33:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</description>
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:&#xA;javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</description>
     </item>
     <item>
       <title>Weird IE9 bug</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</link>
       <pubDate>Sat, 22 Sep 2012 11:09:01 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
+      <description>This last two weeks I have dealt with a weird bug in IE9.&#xA;The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
     </item>
     <item>
       <title>My first Chrome extension(II)</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
       <pubDate>Fri, 14 Sep 2012 21:02:31 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
-      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
-First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
-Second. A chrome extension is a zip of a folder with an crx extension instead.</description>
+      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.&#xA;First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.&#xA;Second. A chrome extension is a zip of a folder with an crx extension instead.</description>
     </item>
     <item>
       <title>My first Chrome extension(I)</title>
@@ -347,24 +329,21 @@ Second. A chrome extension is a zip of a folder with an crx extension instead.</
       <link>https://gonzalo.f-v.es/blog/2012-09-10-the-best-eclipse-tip-ever/</link>
       <pubDate>Mon, 10 Sep 2012 21:01:31 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-10-the-best-eclipse-tip-ever/</guid>
-      <description>How to disable auto close for the XML comments.
-Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing. </description>
+      <description>How to disable auto close for the XML comments.&#xA;Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing. </description>
     </item>
     <item>
       <title>Calisthenics</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</link>
       <pubDate>Tue, 04 Sep 2012 22:19:58 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</guid>
-      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:
-One level of indentation per method&amp;lt; Don’t use the ELSE keyword Wrap all primitives and Strings First class collections One dot per line Don’t abbreviate Keep all entities small No classes with more than two instance variables No getters/setters/properties Some of them are a must, with some others I have some doubts.</description>
+      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:&#xA;One level of indentation per method&amp;lt; Don’t use the ELSE keyword Wrap all primitives and Strings First class collections One dot per line Don’t abbreviate Keep all entities small No classes with more than two instance variables No getters/setters/properties Some of them are a must, with some others I have some doubts.</description>
     </item>
     <item>
       <title>Little robot (IV): Ruby version</title>
       <link>https://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</link>
       <pubDate>Sun, 26 Aug 2012 20:00:02 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</guid>
-      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent.
-One obvious problem is the use of string instead of symbols.</description>
+      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent.&#xA;One obvious problem is the use of string instead of symbols.</description>
     </item>
     <item>
       <title>Little robot (III): Dependency inversion</title>
@@ -378,8 +357,7 @@ One obvious problem is the use of string instead of symbols.</description>
       <link>https://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</link>
       <pubDate>Thu, 23 Aug 2012 12:31:19 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</guid>
-      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice.
-There is some controversy about editor to use for ruby.</description>
+      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice.&#xA;There is some controversy about editor to use for ruby.</description>
     </item>
     <item>
       <title>Faking the console in Ruby </title>
@@ -393,16 +371,14 @@ There is some controversy about editor to use for ruby.</description>
       <link>https://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</link>
       <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
-PLACE X,Y,F -&amp;gt; Places the robot in the x,y position facing F MOVE -&amp;gt; Move the robot 1 cell in the facing direction LEFT -&amp;gt; Changes the facing counter-clockwise RIGHT -&amp;gt; Changes the facing clockwise REPORT -&amp;gt; Shows the current position and facing and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
+      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were&#xA;PLACE X,Y,F -&amp;gt; Places the robot in the x,y position facing F MOVE -&amp;gt; Move the robot 1 cell in the facing direction LEFT -&amp;gt; Changes the facing counter-clockwise RIGHT -&amp;gt; Changes the facing clockwise REPORT -&amp;gt; Shows the current position and facing and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
     </item>
     <item>
       <title>Little robot (I)</title>
       <link>https://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</link>
       <pubDate>Fri, 17 Aug 2012 12:17:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
-      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.
-IMO, assignments are quite a good way to get a peek on the coding style of someone.</description>
+      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.&#xA;IMO, assignments are quite a good way to get a peek on the coding style of someone.</description>
     </item>
     <item>
       <title>Savon.rb and sequences</title>
@@ -451,33 +427,28 @@ IMO, assignments are quite a good way to get a peek on the coding style of someo
       <link>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</link>
       <pubDate>Wed, 18 Jan 2012 11:46:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.&#xA;Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
     </item>
     <item>
       <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</link>
       <pubDate>Wed, 18 Jan 2012 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.
-I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.&#xA;I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
     </item>
     <item>
       <title>Notes to a newbie spring-mvc developer</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</link>
       <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lost
-Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
-If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
+      <description>Activate log4j. Without it you&amp;rsquo;re lost&#xA;Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.&#xA;If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
     </item>
     <item>
       <title>Spring course</title>
       <link>https://gonzalo.f-v.es/blog/2010-11-23-spring-course/</link>
       <pubDate>Tue, 23 Nov 2010 15:18:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-11-23-spring-course/</guid>
-      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
-I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog.</description>
+      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.&#xA;I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog.</description>
     </item>
     <item>
       <title>More Mantis problems</title>
@@ -491,8 +462,7 @@ I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp
       <link>https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</link>
       <pubDate>Tue, 09 Mar 2010 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
-      <description>[Technical post]
-I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
+      <description>[Technical post]&#xA;I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
     </item>
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>This blog on Gonzalo&#39;s thoughts</title>
+    <title>This Blog on Gonzalo&#39;s thoughts</title>
     <link>https://gonzalo.f-v.es/categories/this-blog/</link>
-    <description>Recent content in This blog on Gonzalo&#39;s thoughts</description>
+    <description>Recent content in This Blog on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
@@ -14,8 +14,7 @@
       <link>https://gonzalo.f-v.es/blog/2014-12-31-future/</link>
       <pubDate>Wed, 31 Dec 2014 08:00:09 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-12-31-future/</guid>
-      <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it.
-Four years later I came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.</description>
+      <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it.&#xA;Four years later I came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.</description>
     </item>
     <item>
       <title>The future of this blog</title>
@@ -36,10 +35,7 @@ Four years later I came to London and sort of abandoned it, thinking that workin
       <link>https://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</link>
       <pubDate>Tue, 04 Nov 2008 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</guid>
-      <description>Starting a blog it’s a difficult task. It’s not nearly as difficult as keeping updating it, of course.
-I have started a couple of blogs.
-Both are abandoned.
-Not a good track.</description>
+      <description>Starting a blog it’s a difficult task. It’s not nearly as difficult as keeping updating it, of course.&#xA;I have started a couple of blogs.&#xA;Both are abandoned.&#xA;Not a good track.</description>
     </item>
   </channel>
 </rss>

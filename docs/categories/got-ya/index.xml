@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>got ya on Gonzalo&#39;s thoughts</title>
+    <title>Got Ya on Gonzalo&#39;s thoughts</title>
     <link>https://gonzalo.f-v.es/categories/got-ya/</link>
-    <description>Recent content in got ya on Gonzalo&#39;s thoughts</description>
+    <description>Recent content in Got Ya on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
@@ -14,24 +14,21 @@
       <link>https://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</link>
       <pubDate>Wed, 27 Apr 2022 22:48:54 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</guid>
-      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.
-This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
+      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.&#xA;This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
     </item>
     <item>
       <title>Dock disappeared in MacOS Catalina</title>
       <link>https://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>
       <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
-      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
-Well, here I am, to help you before Apple does.</description>
+      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.&#xA;Well, here I am, to help you before Apple does.</description>
     </item>
     <item>
       <title>Metadata abuse in AWS</title>
       <link>https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</link>
       <pubDate>Tue, 03 Sep 2019 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
-      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
-AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
+      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.&#xA;AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
     </item>
     <item>
       <title>Configuration in AWS is difficult</title>
@@ -45,16 +42,14 @@ AWS is putting great effort in avoiding S3 buckets configured for public access.
       <link>https://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</link>
       <pubDate>Sat, 13 Oct 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
-      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
-Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
+      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.&#xA;Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
     </item>
     <item>
       <title>AWS CloudWatch alarms</title>
       <link>https://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</link>
       <pubDate>Wed, 21 Feb 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</guid>
-      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
-You create an alarm, to detect too many 5xx errors in your ELB.</description>
+      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.&#xA;You create an alarm, to detect too many 5xx errors in your ELB.</description>
     </item>
     <item>
       <title>AWS ELB in Apache logs</title>
@@ -75,58 +70,49 @@ You create an alarm, to detect too many 5xx errors in your ELB.</description>
       <link>https://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&amp;rsquo;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.
-While trying to index using Sphinx, I was getting the following error</description>
+      <description>Small and uninteresting post. But I&amp;rsquo;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.&#xA;While trying to index using Sphinx, I was getting the following error</description>
     </item>
     <item>
       <title>Tipping point</title>
       <link>https://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&amp;rsquo;m happy.
-I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
+      <description>I&amp;rsquo;m happy.&#xA;I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&#xA;I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
     </item>
     <item>
       <title>I was sure it was my fault...</title>
       <link>https://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
       <pubDate>Thu, 27 Feb 2014 19:27:04 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t.&#xA;In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
     </item>
     <item>
       <title>Firmware upgrade for Xperia U in Linux (II)</title>
       <link>https://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</link>
       <pubDate>Tue, 26 Nov 2013 21:27:19 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</guid>
-      <description>[Long post]
-Edited (08th-Jun-2014): Updated the firmware download site.
-In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process.</description>
+      <description>[Long post]&#xA;Edited (08th-Jun-2014): Updated the firmware download site.&#xA;In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process.</description>
     </item>
     <item>
       <title>Firmware upgrade for Xperia U in Linux (I)</title>
       <link>https://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</link>
       <pubDate>Sun, 24 Nov 2013 20:42:53 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
-      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.
-Sony Xperia U (ST25i) has a stock Android 2.</description>
+      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.&#xA;Sony Xperia U (ST25i) has a stock Android 2.</description>
     </item>
     <item>
       <title>OptionalDataException while reading JMS message</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
       <pubDate>Mon, 24 Sep 2012 19:33:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</description>
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:&#xA;javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</description>
     </item>
     <item>
       <title>Weird IE9 bug</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</link>
       <pubDate>Sat, 22 Sep 2012 11:09:01 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
+      <description>This last two weeks I have dealt with a weird bug in IE9.&#xA;The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
     </item>
     <item>
       <title>Savon.rb and sequences</title>
@@ -161,25 +147,21 @@ The problem appeared in a legacy web application. The issue reported by the user
       <link>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</link>
       <pubDate>Wed, 18 Jan 2012 11:46:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.&#xA;Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
     </item>
     <item>
       <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</link>
       <pubDate>Wed, 18 Jan 2012 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.
-I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.&#xA;I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
     </item>
     <item>
       <title>Notes to a newbie spring-mvc developer</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</link>
       <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lost
-Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
-If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
+      <description>Activate log4j. Without it you&amp;rsquo;re lost&#xA;Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.&#xA;If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
     </item>
     <item>
       <title>More Mantis problems</title>
@@ -193,8 +175,7 @@ If you are not despite correct annotations, see this post. In particular if you&
       <link>https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</link>
       <pubDate>Tue, 09 Mar 2010 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
-      <description>[Technical post]
-I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
+      <description>[Technical post]&#xA;I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
     </item>
   </channel>
 </rss>

@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sat, 10 Feb 2024 10:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 10:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developer</title>
       <link>https://gonzalo.f-v.es/categories/developer/</link>
-      <pubDate>Sat, 10 Feb 2024 10:30:00 +0000</pubDate>
+      <pubDate>Sat, 14 Dec 2024 10:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/categories/developer/</guid>
       <description></description>
     </item>
@@ -24,7 +24,7 @@
       <description></description>
     </item>
     <item>
-      <title>ctoclick</title>
+      <title>Ctoclick</title>
       <link>https://gonzalo.f-v.es/categories/ctoclick/</link>
       <pubDate>Sat, 14 May 2022 14:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/categories/ctoclick/</guid>
@@ -38,7 +38,7 @@
       <description></description>
     </item>
     <item>
-      <title>got ya</title>
+      <title>Got Ya</title>
       <link>https://gonzalo.f-v.es/categories/got-ya/</link>
       <pubDate>Wed, 27 Apr 2022 22:48:54 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/categories/got-ya/</guid>
@@ -59,7 +59,7 @@
       <description></description>
     </item>
     <item>
-      <title>My startup</title>
+      <title>My Startup</title>
       <link>https://gonzalo.f-v.es/categories/my-startup/</link>
       <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/categories/my-startup/</guid>
@@ -73,14 +73,14 @@
       <description></description>
     </item>
     <item>
-      <title>Civil service</title>
+      <title>Civil Service</title>
       <link>https://gonzalo.f-v.es/categories/civil-service/</link>
       <pubDate>Sun, 11 Jan 2015 22:36:23 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/categories/civil-service/</guid>
       <description></description>
     </item>
     <item>
-      <title>This blog</title>
+      <title>This Blog</title>
       <link>https://gonzalo.f-v.es/categories/this-blog/</link>
       <pubDate>Wed, 31 Dec 2014 08:00:09 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/categories/this-blog/</guid>

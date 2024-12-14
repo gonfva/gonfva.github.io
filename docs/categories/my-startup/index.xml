@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My startup on Gonzalo&#39;s thoughts</title>
+    <title>My Startup on Gonzalo&#39;s thoughts</title>
     <link>https://gonzalo.f-v.es/categories/my-startup/</link>
-    <description>Recent content in My startup on Gonzalo&#39;s thoughts</description>
+    <description>Recent content in My Startup on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
@@ -14,8 +14,7 @@
       <link>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</link>
       <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</guid>
-      <description>I’ll start sharing a secret.
-I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil.</description>
+      <description>I’ll start sharing a secret.&#xA;I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil.</description>
     </item>
   </channel>
 </rss>

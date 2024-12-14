@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sat, 10 Feb 2024 10:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 10:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My mental model of Vagrant&#43;Hyper-V and WSL</title>
+      <link>https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/</link>
+      <pubDate>Sat, 14 Dec 2024 10:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/</guid>
+      <description>[Really dull post about virtualization in Windows follows]&#xA;For the last couple of months, I&amp;rsquo;ve been (on and off) working with others (hello there) in a company project to migrate development environments so that we developers can use both virtual machines with Vagrant+Hyper-V AND WSL.</description>
+    </item>
     <item>
       <title>Python 3.11 in Ubuntu Xenial 16.04</title>
       <link>https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/</link>
@@ -21,16 +28,14 @@
       <link>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</link>
       <pubDate>Thu, 04 Jan 2024 10:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/</guid>
-      <description>A really small post to document a fix to an issue.
-We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</description>
+      <description>A really small post to document a fix to an issue.&#xA;We were getting the following error in the logs of a docker container running elasticsearch that was being used by Graylog.</description>
     </item>
     <item>
       <title>Low-background steel and AI</title>
       <link>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</link>
       <pubDate>Sun, 12 Nov 2023 17:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</guid>
-      <description>A few months ago I heard for the first time the term low-background steel.
-It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere.</description>
+      <description>A few months ago I heard for the first time the term low-background steel.&#xA;It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere.</description>
     </item>
     <item>
       <title>Higher loss with Tensorflow-metal, especially with ReLU</title>
@@ -44,35 +49,28 @@ It seems steel produced before the Second World War is more valuable for certain
       <link>https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/</link>
       <pubDate>Sat, 23 Sep 2023 09:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/</guid>
-      <description>UPDATE: It turns out it was not crazy at all.
-These days I&amp;rsquo;m trying to learn Machine Learning(once again).
-I&amp;rsquo;m more interested in understanding the fundamentals than running the race of prompt engineering and &amp;ldquo;ChatGPT&amp;rdquo; (and what is called LLM).</description>
+      <description>UPDATE: It turns out it was not crazy at all.&#xA;These days I&amp;rsquo;m trying to learn Machine Learning(once again).&#xA;I&amp;rsquo;m more interested in understanding the fundamentals than running the race of prompt engineering and &amp;ldquo;ChatGPT&amp;rdquo; (and what is called LLM).</description>
     </item>
     <item>
       <title>I&#39;m no longer a Monzo client</title>
       <link>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</link>
       <pubDate>Wed, 13 Sep 2023 21:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</guid>
-      <description>A happy user I joined Monzo in 2016.
-Ex-Monzo user 4956.
-I even interviewed with Tom Blomfield, former CEO of Monzo in 2014 when he was still with Anne Boden, former CEO of Starling.</description>
+      <description>A happy user I joined Monzo in 2016.&#xA;Ex-Monzo user 4956.&#xA;I even interviewed with Tom Blomfield, former CEO of Monzo in 2014 when he was still with Anne Boden, former CEO of Starling.</description>
     </item>
     <item>
       <title>Improving Windows build times in EKS</title>
       <link>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</link>
       <pubDate>Sat, 19 Aug 2023 09:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2023-08-19-faster-windows-eks/</guid>
-      <description>Improving Windows build times in EKS I cannot believe a year has passed since my last annotation (which was also EKS and Windows related).
-One of our most recent projects has been moving most of our build infrastructure to the cloud.</description>
+      <description>Improving Windows build times in EKS I cannot believe a year has passed since my last annotation (which was also EKS and Windows related).&#xA;One of our most recent projects has been moving most of our build infrastructure to the cloud.</description>
     </item>
     <item>
       <title>Windows 2022 in EKS with packer</title>
       <link>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</link>
       <pubDate>Fri, 14 Oct 2022 21:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/</guid>
-      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images
-Update 2: Thank you John for your kind message
-If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
+      <description>Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images&#xA;Update 2: Thank you John for your kind message&#xA;If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.</description>
     </item>
     <item>
       <title>Debugging windows nodes in EKS</title>
@@ -100,8 +98,7 @@ If you are using Windows in EKS, you are probably eagerly awaiting for an Window
       <link>https://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/</link>
       <pubDate>Sun, 08 May 2022 22:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/</guid>
-      <description>New trend My daughters call me a senior and boomer. I&amp;rsquo;m more a GenX&amp;rsquo;er, but I pick my battles.
-They are finishing their first year at uni, so they are in the perfect spot to all the new trends.</description>
+      <description>New trend My daughters call me a senior and boomer. I&amp;rsquo;m more a GenX&amp;rsquo;er, but I pick my battles.&#xA;They are finishing their first year at uni, so they are in the perfect spot to all the new trends.</description>
     </item>
     <item>
       <title>Create an AWS account from the command line</title>
@@ -115,8 +112,7 @@ They are finishing their first year at uni, so they are in the perfect spot to a
       <link>https://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</link>
       <pubDate>Wed, 27 Apr 2022 22:48:54 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2022-04-28-editor-variable-script/</guid>
-      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.
-This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
+      <description>I&amp;rsquo;ve decided I&amp;rsquo;m going to start writing again, even small things.&#xA;This week I was trying to create a Kubernetes cluster using Kops. In the end it didn&amp;rsquo;t work (mainly because it uses a Classic LoadBalancer and we don&amp;rsquo;t have public IPs in that VPC)</description>
     </item>
     <item>
       <title>Coronavirus in the UK</title>
@@ -130,16 +126,14 @@ This week I was trying to create a Kubernetes cluster using Kops. In the end it 
       <link>https://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</link>
       <pubDate>Wed, 16 Oct 2019 18:03:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2019-10-16-dock-disappeared-in-macos-catalina/</guid>
-      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.
-Well, here I am, to help you before Apple does.</description>
+      <description>Yes. I feel your pain. That little bar at the bottom of your screen is no longer visible after you upgraded to macOS Catalina.&#xA;Well, here I am, to help you before Apple does.</description>
     </item>
     <item>
       <title>Metadata abuse in AWS</title>
       <link>https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</link>
       <pubDate>Tue, 03 Sep 2019 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/</guid>
-      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
-AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
+      <description>Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.&#xA;AWS is putting great effort in avoiding S3 buckets configured for public access.</description>
     </item>
     <item>
       <title>Configuration in AWS is difficult</title>
@@ -153,55 +147,42 @@ AWS is putting great effort in avoiding S3 buckets configured for public access.
       <link>https://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</link>
       <pubDate>Sun, 18 Nov 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-11-18-demophilus-wrote-this/</guid>
-      <description>These days I’m reading a fascinating book on Roman History called SPQR. And I’ve discovered Roman History is full of lessons for today’s world.
-As a small token, a line from Plautus, a Roman writer, that appeared in some of his books.</description>
+      <description>These days I’m reading a fascinating book on Roman History called SPQR. And I’ve discovered Roman History is full of lessons for today’s world.&#xA;As a small token, a line from Plautus, a Roman writer, that appeared in some of his books.</description>
     </item>
     <item>
       <title>Trivial error with Bitbucket API</title>
       <link>https://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</link>
       <pubDate>Sat, 13 Oct 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-10-13-trivial-error-with-bitbucket-api/</guid>
-      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.
-Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
+      <description>UPDATE: A few days after publication, the documentation now includes some examples. Well done, Atlassian.&#xA;Most people in the software industry know Jira. For better or for worse, it’s the most used product for managing tickets, requests, bugs…</description>
     </item>
     <item>
       <title>Daily lessons from London trains</title>
       <link>https://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</link>
       <pubDate>Sat, 07 Jul 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</guid>
-      <description>For many people not living in the UK, it will come as a surprise that the railway system in London is quite expensive and provides a really bad service.
-Train service is not a theme park.</description>
+      <description>For many people not living in the UK, it will come as a surprise that the railway system in London is quite expensive and provides a really bad service.&#xA;Train service is not a theme park.</description>
     </item>
     <item>
       <title>King George III and the “rebellion”</title>
       <link>https://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the--rebellion/</link>
       <pubDate>Fri, 25 May 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the--rebellion/</guid>
-      <description>I enjoy buying books.
-I read physical books too.
-I enjoy starting them.
-Honestly, finishing books is more difficult for me. But I’ve been trying to improve on that.
-I was very excited when I bought ‘1776&amp;rsquo; by David McCullough.</description>
+      <description>I enjoy buying books.&#xA;I read physical books too.&#xA;I enjoy starting them.&#xA;Honestly, finishing books is more difficult for me. But I’ve been trying to improve on that.&#xA;I was very excited when I bought ‘1776&amp;rsquo; by David McCullough.</description>
     </item>
     <item>
       <title>Launching a business: why?</title>
       <link>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</link>
       <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</guid>
-      <description>I’ll start sharing a secret.
-I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil.</description>
+      <description>I’ll start sharing a secret.&#xA;I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil.</description>
     </item>
     <item>
       <title>Why I’m not considering your role</title>
       <link>https://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</link>
       <pubDate>Fri, 18 May 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</guid>
-      <description>Dear recruiter,
-Thank you for contacting. At the moment I’m not looking for a job.
-Kind regards,
-Gonzalo
-This is a bit impersonal.
-I know. I’m sorry. The alternative is the above email for everyone.</description>
+      <description>Dear recruiter,&#xA;Thank you for contacting. At the moment I’m not looking for a job.&#xA;Kind regards,&#xA;Gonzalo&#xA;This is a bit impersonal.&#xA;I know. I’m sorry. The alternative is the above email for everyone.</description>
     </item>
     <item>
       <title>Google Duplex and robocalls</title>
@@ -215,16 +196,14 @@ I know. I’m sorry. The alternative is the above email for everyone.</descripti
       <link>https://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</link>
       <pubDate>Wed, 21 Feb 2018 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2018-02-21-aws-cloudwatch-alarms/</guid>
-      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.
-You create an alarm, to detect too many 5xx errors in your ELB.</description>
+      <description>One of the things less obvious for anyone trying to setup Cloudwatch alarms is the treatment of missing points.&#xA;You create an alarm, to detect too many 5xx errors in your ELB.</description>
     </item>
     <item>
       <title>Bad recruitment example 323234</title>
       <link>https://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</link>
       <pubDate>Mon, 30 Oct 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</guid>
-      <description>This is a story for my friend C. He didn’t know what was behind this old tweet
-TFW when after two months of silence the guy contacts you, promises to send an email immediately and fails to deliver.</description>
+      <description>This is a story for my friend C. He didn’t know what was behind this old tweet&#xA;TFW when after two months of silence the guy contacts you, promises to send an email immediately and fails to deliver.</description>
     </item>
     <item>
       <title>Jack Ma and laughing at ourselves</title>
@@ -238,8 +217,7 @@ TFW when after two months of silence the guy contacts you, promises to send an e
       <link>https://gonzalo.f-v.es/blog/2017-08-27-virtual-reality-in-macos--ii/</link>
       <pubDate>Sun, 27 Aug 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-08-27-virtual-reality-in-macos--ii/</guid>
-      <description>TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.
-It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote.</description>
+      <description>TLDR; VR on macOS means beta, crashes, unusable WebVR, and no games. But you get to learn a lot. This post explains my experience.&#xA;It seems this time I’m one of the few non-professionals that has bought an HTC Vive and a Mac after June’s keynote.</description>
     </item>
     <item>
       <title>Virtual Reality in macOS (I)</title>
@@ -274,8 +252,7 @@ It seems this time I’m one of the few non-professionals that has bought an HTC
       <link>https://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</link>
       <pubDate>Wed, 14 Jun 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-06-14-netflix-against-the-user/</guid>
-      <description>I like Netflix. I really do. But there are a few things in their user interface that drive me crazy.
-You cannot remove a movie from continue watching. You’ve already watched a movie, don’t want to see the credits, but Netflix thinks you haven’t reached the end.</description>
+      <description>I like Netflix. I really do. But there are a few things in their user interface that drive me crazy.&#xA;You cannot remove a movie from continue watching. You’ve already watched a movie, don’t want to see the credits, but Netflix thinks you haven’t reached the end.</description>
     </item>
     <item>
       <title>When the CTO is not management</title>
@@ -289,16 +266,14 @@ You cannot remove a movie from continue watching. You’ve already watched a mov
       <link>https://gonzalo.f-v.es/blog/2017-03-30-letsencrypt--paypal-and-selling-fear/</link>
       <pubDate>Thu, 30 Mar 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-03-30-letsencrypt--paypal-and-selling-fear/</guid>
-      <description>There is a new report that associates Let’s Encrypt with phishing. So lots of people in Twitter started screaming because they read phishing and Paypal in the same sentence.
-Let’s Encrypt is a foundation that gives certificates away for free.</description>
+      <description>There is a new report that associates Let’s Encrypt with phishing. So lots of people in Twitter started screaming because they read phishing and Paypal in the same sentence.&#xA;Let’s Encrypt is a foundation that gives certificates away for free.</description>
     </item>
     <item>
       <title>Thoughts on the S3 outage</title>
       <link>https://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</link>
       <pubDate>Wed, 01 Mar 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-03-01-thoughts-on-the-s3-outage/</guid>
-      <description>It’s in the news. Amazon S3, the popular object store crashed yesterday in one of their regions and affected multiple other sites, including Slack and GitHub.
-So here are some comments about it:</description>
+      <description>It’s in the news. Amazon S3, the popular object store crashed yesterday in one of their regions and affected multiple other sites, including Slack and GitHub.&#xA;So here are some comments about it:</description>
     </item>
     <item>
       <title>“Serverless” in three minutes</title>
@@ -312,24 +287,21 @@ So here are some comments about it:</description>
       <link>https://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</link>
       <pubDate>Sat, 21 Jan 2017 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2017-01-21-switch-off-your-servers/</guid>
-      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692
-A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</description>
+      <description>Werner’s keynote — https://youtu.be/65unhiJNaok?t=2692&#xA;A few months ago, I went to AWS Summit London 2016. One of the takeaways for me was that the cloud is not only the ability to scale up, but also down.</description>
     </item>
     <item>
       <title>A flow for containers</title>
       <link>https://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</link>
       <pubDate>Sun, 16 Oct 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-10-16-a-flow-for-containers/</guid>
-      <description>Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.
-Initially you can think it’s only two steps: build an deploy.</description>
+      <description>Why One of the issues in a container-based architecture is how painful it is going from code to deployed containers.&#xA;Initially you can think it’s only two steps: build an deploy.</description>
     </item>
     <item>
       <title>Fintech: Dinosaurs are doomed</title>
       <link>https://gonzalo.f-v.es/blog/2016-10-04-fintech--dinosaurs-are-doomed/</link>
       <pubDate>Tue, 04 Oct 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-10-04-fintech--dinosaurs-are-doomed/</guid>
-      <description>I’m sick and tired of reading articles describing how the banks are going to buy the new players in Fintech.
-Yes. It is going to happen. It has already happened. BBVA has already bought Simple and Atom.</description>
+      <description>I’m sick and tired of reading articles describing how the banks are going to buy the new players in Fintech.&#xA;Yes. It is going to happen. It has already happened. BBVA has already bought Simple and Atom.</description>
     </item>
     <item>
       <title>AWS ELB in Apache logs</title>
@@ -343,8 +315,7 @@ Yes. It is going to happen. It has already happened. BBVA has already bought Sim
       <link>https://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</link>
       <pubDate>Sun, 17 Jul 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-07-17-consumers-need-to-understand/</guid>
-      <description>Today I was reading this article about excuses from banks for crap services. Then I got to this sentence:
-Consumers need to understand that the balance you see is not necessarily your actual available balance because there are so many moving partsNo.</description>
+      <description>Today I was reading this article about excuses from banks for crap services. Then I got to this sentence:&#xA;Consumers need to understand that the balance you see is not necessarily your actual available balance because there are so many moving partsNo.</description>
     </item>
     <item>
       <title>I hate my bank</title>
@@ -379,33 +350,28 @@ Consumers need to understand that the balance you see is not necessarily your ac
       <link>https://gonzalo.f-v.es/blog/2016-03-20-snapchat--i-m-getting-old/</link>
       <pubDate>Sun, 20 Mar 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-03-20-snapchat--i-m-getting-old/</guid>
-      <description>In the last couple of months I’ve been able to see a growing trend with Snapchat. More and more people I follow in Twitter are testing Snapchat waters.
-Around a month ago, I installed the app, started registering, think twice…</description>
+      <description>In the last couple of months I’ve been able to see a growing trend with Snapchat. More and more people I follow in Twitter are testing Snapchat waters.&#xA;Around a month ago, I installed the app, started registering, think twice…</description>
     </item>
     <item>
       <title>AlphaGo, AI, and Philosophy</title>
       <link>https://gonzalo.f-v.es/blog/2016-03-13-alphago--ai--and-philosophy/</link>
       <pubDate>Sun, 13 Mar 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-03-13-alphago--ai--and-philosophy/</guid>
-      <description>I’m fascinated by AlphaGo. I truly am.
-A week ago I knew nothing about go. Now, I’ve read the rules but I haven’t played a single game. So I’m left to commentators.</description>
+      <description>I’m fascinated by AlphaGo. I truly am.&#xA;A week ago I knew nothing about go. Now, I’ve read the rules but I haven’t played a single game. So I’m left to commentators.</description>
     </item>
     <item>
       <title>Self-healing software</title>
       <link>https://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</link>
       <pubDate>Fri, 19 Feb 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-02-19-self-healing-software/</guid>
-      <description>7 am in the morning. Some notifications in the mailbox and on Slack.
-Big demo today and part of the system had gone down.
-And had gone back up too. With no human intervention.</description>
+      <description>7 am in the morning. Some notifications in the mailbox and on Slack.&#xA;Big demo today and part of the system had gone down.&#xA;And had gone back up too. With no human intervention.</description>
     </item>
     <item>
       <title>My take on #RIPTwitter</title>
       <link>https://gonzalo.f-v.es/blog/2016-02-07-my-take-on--riptwitter/</link>
       <pubDate>Sun, 07 Feb 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-02-07-my-take-on--riptwitter/</guid>
-      <description>There is some outrage in Twitter because it has started to implement some changes to its product.
-There was a change from stars to likes. I think I prefer stars because it conveys a different meaning: when I read something sad, I cannot click in Like, but I would click in star.</description>
+      <description>There is some outrage in Twitter because it has started to implement some changes to its product.&#xA;There was a change from stars to likes. I think I prefer stars because it conveys a different meaning: when I read something sad, I cannot click in Like, but I would click in star.</description>
     </item>
     <item>
       <title>Deploying docker</title>
@@ -419,8 +385,7 @@ There was a change from stars to likes. I think I prefer stars because it convey
       <link>https://gonzalo.f-v.es/blog/2016-02-04-storytelling/</link>
       <pubDate>Thu, 04 Feb 2016 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2016-02-04-storytelling/</guid>
-      <description>A few days ago I was listening a podcast about the importance of being able to tell a story, not a lists of jobs when asked about you.
-In a spirit of practising, I’m going to share two stories of my early life that affects who I am.</description>
+      <description>A few days ago I was listening a podcast about the importance of being able to tell a story, not a lists of jobs when asked about you.&#xA;In a spirit of practising, I’m going to share two stories of my early life that affects who I am.</description>
     </item>
     <item>
       <title>Mobile apps</title>
@@ -448,16 +413,14 @@ In a spirit of practising, I’m going to share two stories of my early life tha
       <link>https://gonzalo.f-v.es/blog/2015-11-30-evolving-or-dying/</link>
       <pubDate>Mon, 30 Nov 2015 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-11-30-evolving-or-dying/</guid>
-      <description>A friend of mine sent to me a job offer. It caught both her and my attention because it shows a problem very common in Internet companies.
-The company in question is quite successful in its niche.</description>
+      <description>A friend of mine sent to me a job offer. It caught both her and my attention because it shows a problem very common in Internet companies.&#xA;The company in question is quite successful in its niche.</description>
     </item>
     <item>
       <title>Prepare for FireOS</title>
       <link>https://gonzalo.f-v.es/blog/2015-11-28-prepare-for-fireos/</link>
       <pubDate>Sat, 28 Nov 2015 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-11-28-prepare-for-fireos/</guid>
-      <description>I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.
-Granted, the price is amazingly good. 50 quid was already good, so 35 is almost incredible.</description>
+      <description>I was considering about buying one or two Amazon Fire, when I discovered they’re unlikely to come before Christmas.&#xA;Granted, the price is amazingly good. 50 quid was already good, so 35 is almost incredible.</description>
     </item>
     <item>
       <title>Gifts</title>
@@ -478,8 +441,7 @@ Granted, the price is amazingly good. 50 quid was already good, so 35 is almost 
       <link>https://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</link>
       <pubDate>Sat, 03 Oct 2015 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-10-03-agile-is-not-standups/</guid>
-      <description>Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.
-However, as in many of these events, the better part was meeting people.</description>
+      <description>Last Thursday I went to a Microservices’ users group meeting. Wonderful venue and reception. And very interesting talks.&#xA;However, as in many of these events, the better part was meeting people.</description>
     </item>
     <item>
       <title>DevOps is so 2010. NoOps is the future</title>
@@ -493,8 +455,7 @@ However, as in many of these events, the better part was meeting people.</descri
       <link>https://gonzalo.f-v.es/blog/2015-08-15-dear-recruiter/</link>
       <pubDate>Sat, 15 Aug 2015 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-08-15-dear-recruiter/</guid>
-      <description>Dear recruiter. Don’t take it personal, but I’m not interested in the role you’re trying to recruit.
-I receive lots of messages from recruiters. I get offered to participate in events so that companies can offer me new jobs.</description>
+      <description>Dear recruiter. Don’t take it personal, but I’m not interested in the role you’re trying to recruit.&#xA;I receive lots of messages from recruiters. I get offered to participate in events so that companies can offer me new jobs.</description>
     </item>
     <item>
       <title>Banks and users</title>
@@ -529,8 +490,7 @@ I receive lots of messages from recruiters. I get offered to participate in even
       <link>https://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</link>
       <pubDate>Mon, 19 Jan 2015 19:39:19 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</guid>
-      <description>In March 2014 I was made redundant (business unit closing).
-I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from &amp;ldquo;technical tests&amp;rdquo; in a matter of days</description>
+      <description>In March 2014 I was made redundant (business unit closing).&#xA;I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from &amp;ldquo;technical tests&amp;rdquo; in a matter of days</description>
     </item>
     <item>
       <title>New Spanish  eGovernment law</title>
@@ -544,8 +504,7 @@ I needed to get a job and I participated in loads of selection processes. Someti
       <link>https://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
       <pubDate>Tue, 06 Jan 2015 16:31:37 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
-      <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.
-If you are looking for a job, be sure to do just the opposite of what the bad ones do.</description>
+      <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.&#xA;If you are looking for a job, be sure to do just the opposite of what the bad ones do.</description>
     </item>
     <item>
       <title>Developers are from Mars, users from Venus</title>
@@ -559,8 +518,7 @@ If you are looking for a job, be sure to do just the opposite of what the bad on
       <link>https://gonzalo.f-v.es/blog/2014-12-31-future/</link>
       <pubDate>Wed, 31 Dec 2014 08:00:09 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-12-31-future/</guid>
-      <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it.
-Four years later I came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.</description>
+      <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it.&#xA;Four years later I came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.</description>
     </item>
     <item>
       <title>Happy Christmas</title>
@@ -574,8 +532,7 @@ Four years later I came to London and sort of abandoned it, thinking that workin
       <link>https://gonzalo.f-v.es/blog/2014-12-22-im-geek/</link>
       <pubDate>Mon, 22 Dec 2014 13:51:21 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-12-22-im-geek/</guid>
-      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it).
-It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell (or so does my back says) and noisy as a diesel generator.</description>
+      <description>A few weeks ago, I bid and won a PowerEdge 2650 server for three quids (plus another 6 of renting a car and collecting it).&#xA;It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell (or so does my back says) and noisy as a diesel generator.</description>
     </item>
     <item>
       <title>Agile is about managing risk</title>
@@ -610,8 +567,7 @@ It´s an old piece of hardware (32 bits double Xeon, 4gb of RAM), bulky as hell 
       <link>https://gonzalo.f-v.es/blog/2014-05-29-maximizing-macbook-pros-battery/</link>
       <pubDate>Thu, 29 May 2014 23:13:29 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-05-29-maximizing-macbook-pros-battery/</guid>
-      <description>I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery.
-So when I got my shiny brand new Mac, I decided I had to look after the battery.</description>
+      <description>I have an old Dell Vostro 1720 and an Acer Aspire One AO110. Both are usable (and used), but have no battery.&#xA;So when I got my shiny brand new Mac, I decided I had to look after the battery.</description>
     </item>
     <item>
       <title>Good examples</title>
@@ -625,49 +581,42 @@ So when I got my shiny brand new Mac, I decided I had to look after the battery.
       <link>https://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</link>
       <pubDate>Thu, 24 Apr 2014 15:49:30 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-04-24-pdoexception/</guid>
-      <description>Small and uninteresting post. But I&amp;rsquo;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.
-While trying to index using Sphinx, I was getting the following error</description>
+      <description>Small and uninteresting post. But I&amp;rsquo;ve been dealing with an issue for hours and maybe somebody can benefit from this in the future.&#xA;While trying to index using Sphinx, I was getting the following error</description>
     </item>
     <item>
       <title>Acquisitions</title>
       <link>https://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</link>
       <pubDate>Sat, 15 Mar 2014 19:31:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-03-15-acquisitions/</guid>
-      <description>Today I wanted to talk about two acquisitions.
-On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. Craziness. Logic. IMO the money paid is crazy, but the deal has a lot of logic for Facebook.</description>
+      <description>Today I wanted to talk about two acquisitions.&#xA;On one side, Facebook and Whatsapp. $19 billion. There are many different opinions. Craziness. Logic. IMO the money paid is crazy, but the deal has a lot of logic for Facebook.</description>
     </item>
     <item>
       <title>Optimizing</title>
       <link>https://gonzalo.f-v.es/blog/2014-03-13-optimizing/</link>
       <pubDate>Thu, 13 Mar 2014 20:33:40 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-03-13-optimizing/</guid>
-      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.
-After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:</description>
+      <description>A few days ago I went to a meeting and we were discussing (among lots of different topics) various optimizing mechanisms for a web application.&#xA;After the meeting had ended, I came to the conclusion that, implicit in all the conversation, I was not fully aware of the most obvious step previous to any optimization:</description>
     </item>
     <item>
       <title>Tipping point</title>
       <link>https://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</link>
       <pubDate>Wed, 12 Mar 2014 18:54:24 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-03-12-tipping-point/</guid>
-      <description>I&amp;rsquo;m happy.
-I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.
-I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
+      <description>I&amp;rsquo;m happy.&#xA;I was developing a feature that allows to export from my showcase project Whendoigo to TripIt.&#xA;I was using a gem from TripIt. A gem is kind of a library for Ruby (sort of jar for Java).</description>
     </item>
     <item>
       <title>I was sure it was my fault...</title>
       <link>https://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</link>
       <pubDate>Thu, 27 Feb 2014 19:27:04 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-02-27-i-was-sure-it-was-my-fault/</guid>
-      <description>&amp;hellip; but it wasn&amp;rsquo;t.
-In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
+      <description>&amp;hellip; but it wasn&amp;rsquo;t.&#xA;In the last week or so, I&amp;rsquo;ve been hitting against a wall because of two different bugs. I was sure that both bugs were my fault. It took me ages (of a scarce spare time) trying different things, searching for similar problems, until in both cases I finally came to an issue in different tools.</description>
     </item>
     <item>
       <title>Community managers: The day after</title>
       <link>https://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</link>
       <pubDate>Fri, 31 Jan 2014 19:28:39 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</guid>
-      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.
-He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful).</description>
+      <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.&#xA;He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful).</description>
     </item>
     <item>
       <title>Multithreading: Warning lights</title>
@@ -688,41 +637,35 @@ He/she threatened to sue a customer that was expressing a complaint on Twitter, 
       <link>https://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</link>
       <pubDate>Tue, 26 Nov 2013 21:27:19 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-11-26-firmware-upgrade-for-xperia-u-in-linux/</guid>
-      <description>[Long post]
-Edited (08th-Jun-2014): Updated the firmware download site.
-In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process.</description>
+      <description>[Long post]&#xA;Edited (08th-Jun-2014): Updated the firmware download site.&#xA;In my previous post I explained that one of the things that made the installing process more difficult was the lack of a general picture of the process.</description>
     </item>
     <item>
       <title>Firmware upgrade for Xperia U in Linux (I)</title>
       <link>https://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</link>
       <pubDate>Sun, 24 Nov 2013 20:42:53 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-11-24-firmware-upgrade-for-xperia-u-in-linux-i/</guid>
-      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.
-Sony Xperia U (ST25i) has a stock Android 2.</description>
+      <description>About a year ago I received some wonderful presents from a group of friends :D. One of them was an Xperia U.&#xA;Sony Xperia U (ST25i) has a stock Android 2.</description>
     </item>
     <item>
       <title>Companies, developers and recruitment</title>
       <link>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</link>
       <pubDate>Fri, 08 Nov 2013 09:56:47 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</guid>
-      <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less)
-Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.</description>
+      <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less)&#xA;Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.</description>
     </item>
     <item>
       <title>One year</title>
       <link>https://gonzalo.f-v.es/blog/2013-11-01-one-year/</link>
       <pubDate>Fri, 01 Nov 2013 16:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-11-01-one-year/</guid>
-      <description>A year ago I was in a plane flying into London. I was in whirl, nearly panicking. My life about to change.
-I&amp;rsquo;m somebody who loves being in his comfort zone.</description>
+      <description>A year ago I was in a plane flying into London. I was in whirl, nearly panicking. My life about to change.&#xA;I&amp;rsquo;m somebody who loves being in his comfort zone.</description>
     </item>
     <item>
       <title>Changes</title>
       <link>https://gonzalo.f-v.es/blog/2013-08-30-changes/</link>
       <pubDate>Fri, 30 Aug 2013 18:23:54 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2013-08-30-changes/</guid>
-      <description>A few days ago my company sent out this press release. It seems to be rather unimportant, but for me it means changes.
-I work for that specific business unit. I cannot write too much.</description>
+      <description>A few days ago my company sent out this press release. It seems to be rather unimportant, but for me it means changes.&#xA;I work for that specific business unit. I cannot write too much.</description>
     </item>
     <item>
       <title>IKEA vs Greenwich</title>
@@ -750,16 +693,14 @@ I work for that specific business unit. I cannot write too much.</description>
       <link>https://gonzalo.f-v.es/blog/2012-12-20-spanish-budget-deficit-what-if/</link>
       <pubDate>Thu, 20 Dec 2012 18:26:27 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-12-20-spanish-budget-deficit-what-if/</guid>
-      <description>EDIT: I&amp;rsquo;ve done again the calculations and are more unbelievable even. I won&amp;rsquo;t update this post but IMO it is quite reasonable to hit the target.
-From time I tend to write about the Spanish budget deficit.</description>
+      <description>EDIT: I&amp;rsquo;ve done again the calculations and are more unbelievable even. I won&amp;rsquo;t update this post but IMO it is quite reasonable to hit the target.&#xA;From time I tend to write about the Spanish budget deficit.</description>
     </item>
     <item>
       <title>The most popular video in Spain this Christmas</title>
       <link>https://gonzalo.f-v.es/blog/2012-12-17-the-most-popular-video-in-spain-this/</link>
       <pubDate>Mon, 17 Dec 2012 20:28:04 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-12-17-the-most-popular-video-in-spain-this/</guid>
-      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this Christmas
-It depicts Fofito (a clown very well known in Spain) with other well known comedians, actors and even journalists, sending parcels to &amp;ldquo;important people&amp;rdquo;: from Angela Merkel and IMF to Moody&amp;rsquo;s and Standard&amp;amp;Poor&amp;rsquo;s.</description>
+      <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this Christmas&#xA;It depicts Fofito (a clown very well known in Spain) with other well known comedians, actors and even journalists, sending parcels to &amp;ldquo;important people&amp;rdquo;: from Angela Merkel and IMF to Moody&amp;rsquo;s and Standard&amp;amp;Poor&amp;rsquo;s.</description>
     </item>
     <item>
       <title>Driving in the UK</title>
@@ -794,24 +735,21 @@ It depicts Fofito (a clown very well known in Spain) with other well known comed
       <link>https://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</link>
       <pubDate>Mon, 24 Sep 2012 19:33:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-24-optionaldataexception-while-reading-jms/</guid>
-      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:
-javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</description>
+      <description>We&amp;rsquo;ve been dealing with another bug in JMS code. The symptom was blocked queues and the following exception:&#xA;javax.jms.JMSException: getObject [...] Caused by: java.io.OptionalDataException at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1325) at java.io.ObjectInputStream.readObject(ObjectInputStream.java:348) at java.util.HashMap.readObject(HashMap.java:1066) In trying to reproduce the issue people in the team introduced a non-serializable object, but they got an exception sending the message (Caused by: javax.</description>
     </item>
     <item>
       <title>June deficit was 8.54%</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</link>
       <pubDate>Sun, 23 Sep 2012 18:40:13 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-23-june-deficit-was-854/</guid>
-      <description>From time to time I write about politics in Spain in general and in particular Spanish deficit. Sometimes I try to do some simple estimations and comments.
-More recently there has been some comments in Spain regarding the publication of regions&amp;rsquo; budget deficit up to second quarter.</description>
+      <description>From time to time I write about politics in Spain in general and in particular Spanish deficit. Sometimes I try to do some simple estimations and comments.&#xA;More recently there has been some comments in Spain regarding the publication of regions&amp;rsquo; budget deficit up to second quarter.</description>
     </item>
     <item>
       <title>Weird IE9 bug</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</link>
       <pubDate>Sat, 22 Sep 2012 11:09:01 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-22-weird-ie9-bug/</guid>
-      <description>This last two weeks I have dealt with a weird bug in IE9.
-The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
+      <description>This last two weeks I have dealt with a weird bug in IE9.&#xA;The problem appeared in a legacy web application. The issue reported by the user was a combo that didn&amp;rsquo;t drop down.</description>
     </item>
     <item>
       <title>Techzing wives</title>
@@ -825,9 +763,7 @@ The problem appeared in a legacy web application. The issue reported by the user
       <link>https://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</link>
       <pubDate>Fri, 14 Sep 2012 21:02:31 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-14-my-first-chrome-extensionii/</guid>
-      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.
-First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.
-Second. A chrome extension is a zip of a folder with an crx extension instead.</description>
+      <description>In last post I wrote why. In this post I want to explain how I wrote my first chrome extension.&#xA;First. The Chrome Extensions developer&amp;rsquo;s documentation is quite good.&#xA;Second. A chrome extension is a zip of a folder with an crx extension instead.</description>
     </item>
     <item>
       <title>My first Chrome extension(I)</title>
@@ -841,32 +777,28 @@ Second. A chrome extension is a zip of a folder with an crx extension instead.</
       <link>https://gonzalo.f-v.es/blog/2012-09-10-the-best-eclipse-tip-ever/</link>
       <pubDate>Mon, 10 Sep 2012 21:01:31 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-10-the-best-eclipse-tip-ever/</guid>
-      <description>How to disable auto close for the XML comments.
-Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing. </description>
+      <description>How to disable auto close for the XML comments.&#xA;Preferences-&amp;gt;XML Files-&amp;gt;Editor-&amp;gt;Typing. </description>
     </item>
     <item>
       <title>Calisthenics</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</link>
       <pubDate>Tue, 04 Sep 2012 22:19:58 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-04-calisthenics/</guid>
-      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:
-One level of indentation per method&amp;lt; Don’t use the ELSE keyword Wrap all primitives and Strings First class collections One dot per line Don’t abbreviate Keep all entities small No classes with more than two instance variables No getters/setters/properties Some of them are a must, with some others I have some doubts.</description>
+      <description>I didn&amp;rsquo;t know about object calisthenics. They are a set of rules to help develop better:&#xA;One level of indentation per method&amp;lt; Don’t use the ELSE keyword Wrap all primitives and Strings First class collections One dot per line Don’t abbreviate Keep all entities small No classes with more than two instance variables No getters/setters/properties Some of them are a must, with some others I have some doubts.</description>
     </item>
     <item>
       <title>No more applets</title>
       <link>https://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</link>
       <pubDate>Sun, 02 Sep 2012 22:06:06 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-09-02-no-more-applets/</guid>
-      <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications.
-One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet).</description>
+      <description>For more than three years I&amp;rsquo;ve been managing certificate-based digital signature applications.&#xA;One of the main source of pain always was and is generating the signature on the user browser. As it needs access to the user&amp;rsquo;s keystore, the browser alone didn&amp;rsquo;t have access to it, and was needed some kind of component (either ActiveX, usually a Java applet).</description>
     </item>
     <item>
       <title>Little robot (IV): Ruby version</title>
       <link>https://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</link>
       <pubDate>Sun, 26 Aug 2012 20:00:02 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-26-little-robot-iv-ruby-version/</guid>
-      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent.
-One obvious problem is the use of string instead of symbols.</description>
+      <description>Besides the console faking and the dependency inversion issue, my code in Ruby was pretty rough. You can see here the version I sent.&#xA;One obvious problem is the use of string instead of symbols.</description>
     </item>
     <item>
       <title>Little robot (III): Dependency inversion</title>
@@ -880,8 +812,7 @@ One obvious problem is the use of string instead of symbols.</description>
       <link>https://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</link>
       <pubDate>Thu, 23 Aug 2012 12:31:19 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-23-rails-in-ubuntu/</guid>
-      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice.
-There is some controversy about editor to use for ruby.</description>
+      <description>I&amp;rsquo;m planning to make a newbie post about rvm, bundler and the rest. But just in case you&amp;rsquo;re starting with ubuntu, here comes a piece of advice.&#xA;There is some controversy about editor to use for ruby.</description>
     </item>
     <item>
       <title>Faking the console in Ruby </title>
@@ -895,16 +826,14 @@ There is some controversy about editor to use for ruby.</description>
       <link>https://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</link>
       <pubDate>Sun, 19 Aug 2012 17:00:02 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-19-little-robot-ii-java-version/</guid>
-      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were
-PLACE X,Y,F -&amp;gt; Places the robot in the x,y position facing F MOVE -&amp;gt; Move the robot 1 cell in the facing direction LEFT -&amp;gt; Changes the facing counter-clockwise RIGHT -&amp;gt; Changes the facing clockwise REPORT -&amp;gt; Shows the current position and facing and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
+      <description>As I wrote in a previous post, I was asked to design a software managing a robot inside a board of 5x5 cells. The typical commands were&#xA;PLACE X,Y,F -&amp;gt; Places the robot in the x,y position facing F MOVE -&amp;gt; Move the robot 1 cell in the facing direction LEFT -&amp;gt; Changes the facing counter-clockwise RIGHT -&amp;gt; Changes the facing clockwise REPORT -&amp;gt; Shows the current position and facing and the main requirement was that the robot didn&amp;rsquo;t fall outside the board.</description>
     </item>
     <item>
       <title>Little robot (I)</title>
       <link>https://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</link>
       <pubDate>Fri, 17 Aug 2012 12:17:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-17-little-robot-i/</guid>
-      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.
-IMO, assignments are quite a good way to get a peek on the coding style of someone.</description>
+      <description>While applying to a position a few days ago, I received an assignment trying to test my coding style.&#xA;IMO, assignments are quite a good way to get a peek on the coding style of someone.</description>
     </item>
     <item>
       <title>Savon.rb and sequences</title>
@@ -918,8 +847,7 @@ IMO, assignments are quite a good way to get a peek on the coding style of someo
       <link>https://gonzalo.f-v.es/blog/2012-08-14-a-great-experience-applying-to-position_14/</link>
       <pubDate>Tue, 14 Aug 2012 22:59:17 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-08-14-a-great-experience-applying-to-position_14/</guid>
-      <description>In my previous post I explained a great experience applying for a position. In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience.
-Selection: Be very selective about what you apply for.</description>
+      <description>In my previous post I explained a great experience applying for a position. In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience.&#xA;Selection: Be very selective about what you apply for.</description>
     </item>
     <item>
       <title>A great experience applying to a position (I)</title>
@@ -968,9 +896,7 @@ Selection: Be very selective about what you apply for.</description>
       <link>https://gonzalo.f-v.es/blog/2012-03-29-estimating-spanish-budget-deficit/</link>
       <pubDate>Thu, 29 Mar 2012 13:22:37 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-03-29-estimating-spanish-budget-deficit/</guid>
-      <description>This is one of my political/economical post (nothing related with computers) I write from time to time.
-Past February, Spain published its estimation of whole year budget deficit.
-Many well respected analysts suggested or explicitly wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller.</description>
+      <description>This is one of my political/economical post (nothing related with computers) I write from time to time.&#xA;Past February, Spain published its estimation of whole year budget deficit.&#xA;Many well respected analysts suggested or explicitly wrote that maybe new Government was increasing 2011 deficit so that it could blame previous Government, and also in order to make it bigger so that it was easier to make it smaller.</description>
     </item>
     <item>
       <title>The synchronized silver bullet</title>
@@ -998,33 +924,28 @@ Many well respected analysts suggested or explicitly wrote that maybe new Govern
       <link>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</link>
       <pubDate>Wed, 18 Jan 2012 11:46:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i_18/</guid>
-      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.
-Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
+      <description>I said in the previous post that Xalan and Xerces sometimes look like magic. So what are they and why are so complicated?.&#xA;Xerces is a Java library that helps parsing, validating and managing XML documents.</description>
     </item>
     <item>
       <title>Things about Xerces, Xalan and Saxon I didn&#39;t know (I)</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</link>
       <pubDate>Wed, 18 Jan 2012 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-18-things-about-xerces-xalan-and-saxon-i/</guid>
-      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.
-I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
+      <description>These days I&amp;rsquo;m getting very proud of myself. I&amp;rsquo;m acting less as a project manager and more as a true Scrum Manager.&#xA;I go to the scrum, listen, and a great deal of my work that day is trying to solve problems for the team.</description>
     </item>
     <item>
       <title>Notes to a newbie spring-mvc developer</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</link>
       <pubDate>Fri, 13 Jan 2012 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-13-notes-to-newbie-spring-mvc-developer/</guid>
-      <description>Activate log4j. Without it you&amp;rsquo;re lost
-Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.
-If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
+      <description>Activate log4j. Without it you&amp;rsquo;re lost&#xA;Look through the log to see if you&amp;rsquo;re getting the RequestMapping through Spring.&#xA;If you are not despite correct annotations, see this post. In particular if you&amp;rsquo;ve got Spring Security installed, for Goodness sake, don&amp;rsquo;t forget these lines:</description>
     </item>
     <item>
       <title>Budget deficit</title>
       <link>https://gonzalo.f-v.es/blog/2012-01-10-budget-deficit/</link>
       <pubDate>Tue, 10 Jan 2012 13:22:37 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2012-01-10-budget-deficit/</guid>
-      <description>Disclaimer: I&amp;rsquo;m talking about public data. I don&amp;rsquo;t have any unpublished data.
-In Spain there is some buzz recently about tax increases approved on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP.</description>
+      <description>Disclaimer: I&amp;rsquo;m talking about public data. I don&amp;rsquo;t have any unpublished data.&#xA;In Spain there is some buzz recently about tax increases approved on December 30th. The government had changed and the new one said it was necessary to raise taxes because data said budget deficit where 8% GDP.</description>
     </item>
     <item>
       <title>When companies just don&#39;t get it</title>
@@ -1045,8 +966,7 @@ In Spain there is some buzz recently about tax increases approved on December 30
       <link>https://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</link>
       <pubDate>Sat, 01 Oct 2011 20:58:36 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</guid>
-      <description>Sometimes you start to write because you need to write but you don&amp;rsquo;t know what you want to express. This is one of those times.
-A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed suicide.</description>
+      <description>Sometimes you start to write because you need to write but you don&amp;rsquo;t know what you want to express. This is one of those times.&#xA;A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed suicide.</description>
     </item>
     <item>
       <title>The rain in Spain(II): Government</title>
@@ -1060,8 +980,7 @@ A couple of days ago, a pregnant woman was killed, and another woman was wounded
       <link>https://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</link>
       <pubDate>Mon, 01 Aug 2011 20:16:50 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2011-08-01-rain-in-spaini/</guid>
-      <description>I love this video:
-A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far.</description>
+      <description>I love this video:&#xA;A few days ago I received a message from one of my tweeps about the weather in Europe and in particular in Spain. This summer, the weather has been a bit strange so far.</description>
     </item>
     <item>
       <title>State of Emergency: very serious</title>
@@ -1075,8 +994,7 @@ A few days ago I received a message from one of my tweeps about the weather in E
       <link>https://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</link>
       <pubDate>Wed, 01 Dec 2010 17:33:45 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</guid>
-      <description>A few days ago I promised to explain why I chose to become a civil servant, and why I keep being one.
-I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough.</description>
+      <description>A few days ago I promised to explain why I chose to become a civil servant, and why I keep being one.&#xA;I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough.</description>
     </item>
     <item>
       <title>Flying, flying, flying</title>
@@ -1104,16 +1022,14 @@ I was going to write about the challenge of a competitive examination, how chall
       <link>https://gonzalo.f-v.es/blog/2010-11-23-spring-course/</link>
       <pubDate>Tue, 23 Nov 2010 15:18:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-11-23-spring-course/</guid>
-      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.
-I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog.</description>
+      <description>I&amp;rsquo;m attending this week to a Spring Framework course. It&amp;rsquo;s a very small class: the teacher, my boss and me.&#xA;I don&amp;rsquo;t consider myself slow, and neither is my boss. No, he doesn&amp;rsquo;t read this blog.</description>
     </item>
     <item>
       <title>Copyright protection</title>
       <link>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</link>
       <pubDate>Mon, 22 Nov 2010 22:09:51 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</guid>
-      <description>You know something is broken with copyright when:
-You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But&amp;hellip; You download the same film from a P2P network, save to a CD and you can play it everywhere.</description>
+      <description>You know something is broken with copyright when:&#xA;You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But&amp;hellip; You download the same film from a P2P network, save to a CD and you can play it everywhere.</description>
     </item>
     <item>
       <title>Lots of old friends</title>
@@ -1176,33 +1092,28 @@ You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp
       <link>https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</link>
       <pubDate>Tue, 09 Mar 2010 11:45:46 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2010-03-09-mantis-on-sql-server/</guid>
-      <description>[Technical post]
-I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
+      <description>[Technical post]&#xA;I&amp;rsquo;ve been busy last couple of days trying to make Mantis work with a Microsoft SQL Server database on a Windows Server 2003. Many people would ask why to use MSSQL instead of Mysql, a much better DBMS, not mention the OS election.</description>
     </item>
     <item>
       <title>God help us</title>
       <link>https://gonzalo.f-v.es/blog/2009-09-03-god-help-us/</link>
       <pubDate>Thu, 03 Sep 2009 18:23:51 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2009-09-03-god-help-us/</guid>
-      <description>It turns out that I was wrong when I wrote last week&amp;rsquo;s post. Well, maybe I came to a rather good end result but for the wrong reasons:
-Income data from May 2009 (and probably June) was tricky because taxes returns were accelerated so that people could vote with their money back in the pocket.</description>
+      <description>It turns out that I was wrong when I wrote last week&amp;rsquo;s post. Well, maybe I came to a rather good end result but for the wrong reasons:&#xA;Income data from May 2009 (and probably June) was tricky because taxes returns were accelerated so that people could vote with their money back in the pocket.</description>
     </item>
     <item>
       <title>Lies, damn lies and statistics</title>
       <link>https://gonzalo.f-v.es/blog/2009-08-27-lies-damn-lies-and-statistics/</link>
       <pubDate>Thu, 27 Aug 2009 22:02:34 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2009-08-27-lies-damn-lies-and-statistics/</guid>
-      <description>Disclaimer. I&amp;rsquo;m not an economist or a statician, and I don&amp;rsquo;t have any governmental internal information. I&amp;rsquo;m only a spaniard.
-I&amp;rsquo;ve just read a piece of news about Moody&amp;rsquo;s considering Spanish outlook stable.</description>
+      <description>Disclaimer. I&amp;rsquo;m not an economist or a statician, and I don&amp;rsquo;t have any governmental internal information. I&amp;rsquo;m only a spaniard.&#xA;I&amp;rsquo;ve just read a piece of news about Moody&amp;rsquo;s considering Spanish outlook stable.</description>
     </item>
     <item>
       <title>New Year&#39;s resolutions ... in August</title>
       <link>https://gonzalo.f-v.es/blog/2009-08-20-new-years-resolutions-in-august/</link>
       <pubDate>Thu, 20 Aug 2009 22:20:15 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2009-08-20-new-years-resolutions-in-august/</guid>
-      <description>I&amp;rsquo;ve been on holidays, and I&amp;rsquo;ve had some spare time to stop and think.
-Last couple of months have been special. Some events have affected profoundly.
-One of those events has been the death of a collegue.</description>
+      <description>I&amp;rsquo;ve been on holidays, and I&amp;rsquo;ve had some spare time to stop and think.&#xA;Last couple of months have been special. Some events have affected profoundly.&#xA;One of those events has been the death of a collegue.</description>
     </item>
     <item>
       <title>Netbook Operating Systems</title>
@@ -1216,8 +1127,7 @@ One of those events has been the death of a collegue.</description>
       <link>https://gonzalo.f-v.es/blog/2009-05-26-what-can-i-do-for-my-country/</link>
       <pubDate>Tue, 26 May 2009 22:03:13 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2009-05-26-what-can-i-do-for-my-country/</guid>
-      <description>And so, my fellow Americans: ask not what your country can do for you— ask what you can do for your country.
-A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy in Spain.</description>
+      <description>And so, my fellow Americans: ask not what your country can do for you— ask what you can do for your country.&#xA;A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy in Spain.</description>
     </item>
     <item>
       <title>Three months later</title>
@@ -1245,24 +1155,21 @@ A couple of weeks ago Jose Manuel Campa was nominated new Secretary of Economy i
       <link>https://gonzalo.f-v.es/blog/2008-11-16-gmail-and-future/</link>
       <pubDate>Sun, 16 Nov 2008 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2008-11-16-gmail-and-future/</guid>
-      <description>As I said on my last post, I think that integration of Video and voice chat could be part of a greater strategy. What would be that strategy?
-In my opinion it should have two parts.</description>
+      <description>As I said on my last post, I think that integration of Video and voice chat could be part of a greater strategy. What would be that strategy?&#xA;In my opinion it should have two parts.</description>
     </item>
     <item>
       <title>&#39;The day Skype died&#39; revisited</title>
       <link>https://gonzalo.f-v.es/blog/2008-11-12-day-skype-died-revisited/</link>
       <pubDate>Wed, 12 Nov 2008 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2008-11-12-day-skype-died-revisited/</guid>
-      <description>Sometimes you realize you&amp;rsquo;ve written a weak post too late. It was my case with yesterday&amp;rsquo;s annotation.
-I thought nobody would even read it. But it seems that, because of a trackback at Gmail Blog, I was wrong.</description>
+      <description>Sometimes you realize you&amp;rsquo;ve written a weak post too late. It was my case with yesterday&amp;rsquo;s annotation.&#xA;I thought nobody would even read it. But it seems that, because of a trackback at Gmail Blog, I was wrong.</description>
     </item>
     <item>
       <title>The day Skype died</title>
       <link>https://gonzalo.f-v.es/blog/2008-11-11-day-skype-died/</link>
       <pubDate>Tue, 11 Nov 2008 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2008-11-11-day-skype-died/</guid>
-      <description>I read it first on Google Operating System, but I haven&amp;rsquo;t seen too much buzz on the blogs I follow.
-For me today is the day Skype has definitively died.</description>
+      <description>I read it first on Google Operating System, but I haven&amp;rsquo;t seen too much buzz on the blogs I follow.&#xA;For me today is the day Skype has definitively died.</description>
     </item>
     <item>
       <title>MobuzzTV</title>
@@ -1276,18 +1183,14 @@ For me today is the day Skype has definitively died.</description>
       <link>https://gonzalo.f-v.es/blog/2008-11-07-jobs/</link>
       <pubDate>Fri, 07 Nov 2008 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2008-11-07-jobs/</guid>
-      <description>Sometimes I read a couple of posts not directly related, and I start to think about a topic I didn&amp;rsquo;t expected.
-This time, it all started with a post of Enrique Dans.</description>
+      <description>Sometimes I read a couple of posts not directly related, and I start to think about a topic I didn&amp;rsquo;t expected.&#xA;This time, it all started with a post of Enrique Dans.</description>
     </item>
     <item>
       <title>What is this?</title>
       <link>https://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</link>
       <pubDate>Tue, 04 Nov 2008 18:00:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</guid>
-      <description>Starting a blog it’s a difficult task. It’s not nearly as difficult as keeping updating it, of course.
-I have started a couple of blogs.
-Both are abandoned.
-Not a good track.</description>
+      <description>Starting a blog it’s a difficult task. It’s not nearly as difficult as keeping updating it, of course.&#xA;I have started a couple of blogs.&#xA;Both are abandoned.&#xA;Not a good track.</description>
     </item>
   </channel>
 </rss>
