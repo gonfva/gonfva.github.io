@@ -14,7 +14,7 @@
       <link>https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/</link>
       <pubDate>Sat, 14 Dec 2024 10:30:00 +0000</pubDate>
       <guid>https://gonzalo.f-v.es/blog/2024-12-14-mental-model-vagrant-hyperv-wsl/</guid>
-      <description>[Really dull post about virtualization in Windows follows]&#xA;For the last couple of months, I&amp;rsquo;ve been (on and off) working with others (hello there) in a company project to migrate development environments so that we developers can use both virtual machines with Vagrant+Hyper-V AND WSL.</description>
+      <description>[Really dull post about virtualization in Windows]&#xA;For the last couple of months, I&amp;rsquo;ve been (on and off) working with others in a project to migrate development environments so that we developers can use both virtual machines with Vagrant+Hyper-V AND WSL.</description>
     </item>
     <item>
       <title>Python 3.11 in Ubuntu Xenial 16.04</title>
