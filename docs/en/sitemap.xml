@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
+    <lastmod>2025-03-24T21:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -15,8 +15,21 @@
                 href="https://gonzalo.f-v.es/blog/"
                 />
   </url><url>
+    <loc>https://gonzalo.f-v.es/</loc>
+    <lastmod>2025-03-24T21:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://gonzalo.f-v.es/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gonzalo.f-v.es/"
+                />
+  </url><url>
     <loc>https://gonzalo.f-v.es/categories/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
+    <lastmod>2024-12-14T10:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -29,26 +42,13 @@
                 />
   </url><url>
     <loc>https://gonzalo.f-v.es/tags/developer/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
+    <lastmod>2024-12-14T10:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/categories/developer/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gonzalo.f-v.es/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://gonzalo.f-v.es/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gonzalo.f-v.es/"
-                />
+    <lastmod>2024-12-14T10:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/tags/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
+    <lastmod>2024-12-14T10:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -59,9 +59,6 @@
                 hreflang="en"
                 href="https://gonzalo.f-v.es/tags/"
                 />
-  </url><url>
-    <loc>https://gonzalo.f-v.es/blog/2025-03-23-xowit/</loc>
-    <lastmod>2025-03-23T10:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2024-12-14-vagrant-hyperv-wsl-together/</loc>
     <lastmod>2024-12-14T10:30:00+00:00</lastmod>
