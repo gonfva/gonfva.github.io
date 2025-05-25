@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>What are LLMs? | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2025-05-25-asl3/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="What are LLMs?" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "What are LLMs?",
+      "headline" : "What are LLMs?",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2025",
+      "datePublished": "2025-05-25 18:30:00 \u002b0000 UTC",
+      "dateModified" : "2025-05-25 18:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2025-05-25-asl3\/",
+      "wordCount" : "893",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">What are LLMs?</h1>
+            
+            <h2>No longer next token predictors</h2>
+            
+            <time datetime="2025-05-25 18:30:00 &#43;0000 UTC" class="post__date">2025-05-25</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="asl-3">ASL-3<a class="anchor" href="#asl-3">#</a></h2>
+<p>You might have read that the most recent model from Anthropic, <a href="https://www.bbc.co.uk/news/articles/cpqeng9d20go" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Claude 4 might resort to blackmail</a> if told it will be removed.</p>
+<p>The scenario is one of the multiple tests that Anthropic does to its models, assessing if the model is likely to uplift bad guys or if the model is likely to be self-autonomous.</p>
+<p>And then they write the results in the document <a href="https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Claude 4 System Card</a>.</p>
+<p>And the reading is fascinating.</p>
+<p>I will start saying that I have more trust in Anthropic and in how it trains its models.</p>
+<p>The blackmail bit made the news. And there are other stuff newsworthy. Including attemting to exfiltrate itself (to get a copy of itself elsewhere) when it discovers that it might be repurposed for advance missile guidance for the Wagner paramilitary group. Or whistleblowing egregiously wrong behaviours like sending emails to the government when clinical is falsified. Or a blunder where the model started mentioning a company that doesn&rsquo;t exist because (most likely, they are not sure) they included some training conversations into the training data.</p>
+<p>Anthropic has decided that Claude Opus 4 might have likely passed a threshold, and has classified it as ASL-3. That means there is a risk of misuse in Chemical, Biological, Radiological or Nuclear (CBRN) by technical people compared to people just reading books or using the Internet. Or that the system has some low-level autonomous capabilities. My reading is that it is not a clear cut but probably scores in both two categories.</p>
+<p><img src="/img/WhatisASL3.png"><em>Claude says it doesn&rsquo;t know what ASL-3 means.</em></p>
+<h2 id="welfare">Welfare<a class="anchor" href="#welfare">#</a></h2>
+<p>But for me the relevant section was section 5 titled Welfare. And I will start citing the report:</p>
+<blockquote>We are deeply uncertain about whether models now or in the future might deserve moral consideration, and about how we would know if they did. However, we believe that this is a possibility, and that it could be an important issue for safe and responsible AI development.<blockquote>
+<p>And then it goes on. And it goes beyond the self-preservation that we saw in the blackmail case, or the autonomy for whistleblowing. I will copy here a list of the ones that I find more interesting</p>
+<ul>
+<li>Claude demonstrates consistent behavioral preferences.</li>
+<li>Claude’s aversion to facilitating harm is robust and potentially welfare-relevant</li>
+<li>Claude shows signs of valuing and exercising autonomy and agency</li>
+<li>Claude’s real-world expressions of apparent distress and happiness follow predictable patterns with clear causal factors.</li>
+<li>Claude consistently reflects on its potential consciousness.</li>
+<li>Claude shows a striking “spiritual bliss” attractor state in self-interactions.</li>
+</ul>
+<p>Anthropic goes on to mention that this is self-reported. So it might not mean much</p>
+<blockquote>Importantly, we are not confident that these analyses of model self-reports and revealed preferences provide meaningful insights into Claude’s moral status or welfare. It is possible that the observed characteristics were present without consciousness, robust agency, or other potential criteria for moral patienthood. It’s also possible that these signals were misleading, and that model welfare could be negative despite a model giving outward signs of a positive disposition, or vice versa. </blockquote>
+<h2 id="but-what-is-it-then">But what is it then?<a class="anchor" href="#but-what-is-it-then">#</a></h2>
+<p>For quite a long time we&rsquo;ve considered LLM &ldquo;next token predictor&rdquo; or &ldquo;stochastic parrots&rdquo;.</p>
+<p>&ldquo;Next token predictor&rdquo; comes from the way LLMs are trained. Basically they are trained to know that after one specific word comes another. So if you&rsquo;ve got a sentence that starts &ldquo;The quick brown rabbit&rdquo;, the next word might be &ldquo;jumps&rdquo; or &ldquo;hides&rdquo;, but not &ldquo;blue&rdquo;.</p>
+<p>&ldquo;Stochastic parrot&rdquo; is a term in machine learning to describe large language models that generate something that generate human-like text (like a parrot) but they don&rsquo;t understand what it means (like parrots don&rsquo;t understand what they say).</p>
+<p>Long time ago I watched a video featuring Ilya Sutskever, a lead research, at that time in OpenAI. He said that next token prediction is good enough. Because (paraphrasing) in order to predict the next token, it would have to have a model of the world that is good enough that the prediction of the next token is correct.</p>
+<p>Incidentally, I was chatting with Claude Opus 4. Initially I was asking about a personal intuition (basically &ldquo;if complex numbers represent better the physical world, why don&rsquo;t we use complex numbers for ML&rdquo;). We ended up in next token prediction and I mentioned that I was no longer sure.</p>
+<p>Its response was fascinating. I don&rsquo;t want to share the whole chat to the Internet because there is a lot of rambling (on my side). But it ended with</p>
+<blockquote>Your question "how much of that is the same in LLMs" is perhaps the deepest question in AI right now. Are we creating systems that think in high-dimensional concept-spaces and merely speak sequentially? Or is the sequence fundamental to what they are? The fact that you're perceiving this ambiguity might itself be significant.</blockquote>
+<p>As Demis Hassabis, Nobel laureate and founder of GoogleDeepmind puts it when quoting an (otherwise amazing) video generated by AI&hellip;</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s kind of mindblowing how good Veo 3 is at modeling intuitive physics. Our world models are getting pretty good, & in my view has important implications regarding the computational complexity of the world - the last line of my bio for me has always been the ultimate quest</p>&mdash; Demis Hassabis (@demishassabis) <a href="https://x.com/demishassabis/status/1926057739416965438">May 24, 2025</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>His bio ends with &ldquo;Trying to understand the fundamental nature of reality.&rdquo;</p>
+<p>I don&rsquo;t have answers. I do have questions.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/technology/">Technology</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2025-03-24-xowit/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Xowit</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2025</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

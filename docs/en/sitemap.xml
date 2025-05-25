@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://gonzalo.f-v.es/categories/</loc>
-    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -28,14 +28,8 @@
                 href="https://gonzalo.f-v.es/categories/"
                 />
   </url><url>
-    <loc>https://gonzalo.f-v.es/tags/developer/</loc>
-    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gonzalo.f-v.es/categories/developer/</loc>
-    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
-  </url><url>
     <loc>https://gonzalo.f-v.es/</loc>
-    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -48,7 +42,7 @@
                 />
   </url><url>
     <loc>https://gonzalo.f-v.es/tags/</loc>
-    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -59,6 +53,31 @@
                 hreflang="en"
                 href="https://gonzalo.f-v.es/tags/"
                 />
+  </url><url>
+    <loc>https://gonzalo.f-v.es/tags/technology/</loc>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gonzalo.f-v.es/categories/technology/</loc>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://gonzalo.f-v.es/es/categories/technology/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gonzalo.f-v.es/categories/technology/"
+                />
+  </url><url>
+    <loc>https://gonzalo.f-v.es/blog/2025-05-25-asl3/</loc>
+    <lastmod>2025-05-25T18:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gonzalo.f-v.es/tags/developer/</loc>
+    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gonzalo.f-v.es/categories/developer/</loc>
+    <lastmod>2025-03-25T18:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2025-03-24-xowit/</loc>
     <lastmod>2025-03-25T18:30:00+00:00</lastmod>
@@ -113,22 +132,6 @@
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2022-05-08-product-technology-magic/</loc>
     <lastmod>2022-05-08T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gonzalo.f-v.es/tags/technology/</loc>
-    <lastmod>2022-05-08T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gonzalo.f-v.es/categories/technology/</loc>
-    <lastmod>2022-05-08T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://gonzalo.f-v.es/es/categories/technology/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gonzalo.f-v.es/categories/technology/"
-                />
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2022-04-29-create-aws-account-cli/</loc>
     <lastmod>2022-04-29T20:48:54+00:00</lastmod>
