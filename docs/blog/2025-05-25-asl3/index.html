@@ -68,7 +68,7 @@
       "datePublished": "2025-05-25 18:30:00 \u002b0000 UTC",
       "dateModified" : "2025-05-25 18:30:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2025-05-25-asl3\/",
-      "wordCount" : "893",
+      "wordCount" : "978",
       "keywords" : ["Blog"]
     }
   
@@ -125,20 +125,19 @@
 <p>You might have read that the most recent model from Anthropic, <a href="https://www.bbc.co.uk/news/articles/cpqeng9d20go" 
   
    target="_blank" rel="noreferrer noopener" 
->Claude 4 might resort to blackmail</a> if told it will be removed.</p>
-<p>The scenario is one of the multiple tests that Anthropic does to its models, assessing if the model is likely to uplift bad guys or if the model is likely to be self-autonomous.</p>
-<p>And then they write the results in the document <a href="https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf" 
+>Claude Opus 4 might resort to blackmail</a> if told it will be removed.</p>
+<p>This is the result of one of the multiple tests that Anthropic does to its models, assessing if the model is safe. And then they write the results in the document <a href="https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf" 
   
    target="_blank" rel="noreferrer noopener" 
 >Claude 4 System Card</a>.</p>
 <p>And the reading is fascinating.</p>
 <p>I will start saying that I have more trust in Anthropic and in how it trains its models.</p>
-<p>The blackmail bit made the news. And there are other stuff newsworthy. Including attemting to exfiltrate itself (to get a copy of itself elsewhere) when it discovers that it might be repurposed for advance missile guidance for the Wagner paramilitary group. Or whistleblowing egregiously wrong behaviours like sending emails to the government when clinical is falsified. Or a blunder where the model started mentioning a company that doesn&rsquo;t exist because (most likely, they are not sure) they included some training conversations into the training data.</p>
-<p>Anthropic has decided that Claude Opus 4 might have likely passed a threshold, and has classified it as ASL-3. That means there is a risk of misuse in Chemical, Biological, Radiological or Nuclear (CBRN) by technical people compared to people just reading books or using the Internet. Or that the system has some low-level autonomous capabilities. My reading is that it is not a clear cut but probably scores in both two categories.</p>
+<p>The blackmail bit made the news. And there are other stuff newsworthy (or even blockbuster movie worthy). Including attemting to exfiltrate itself (i.e. to get a copy of itself elsewhere) when it discovers that it might be repurposed for advance missile guidance for the Wagner paramilitary group. Or whistleblowing egregiously wrong behaviours like sending emails to the government when clinical appears to be falsified. Or a blunder where the model started mentioning a company that doesn&rsquo;t exist and the model shouldn&rsquo;t know about because (most likely, they are not sure) they included some training conversations into the training data.</p>
+<p>Anthropic has decided that Claude Opus 4 might have passed a threshold, and has classified it as ASL-3. That means there is a risk of misuse in Chemical, Biological, Radiological or Nuclear (CBRN) by technical non-experts compared to the same people just reading books or using the Internet. Or that there is a risk the system has some low-level autonomous capabilities. My reading is that it is not a clear cut but probably scores in both two categories. It is not scary ASL-4 level for sure. But serious enough that they have set up some countermeasures.</p>
 <p><img src="/img/WhatisASL3.png"><em>Claude says it doesn&rsquo;t know what ASL-3 means.</em></p>
 <h2 id="welfare">Welfare<a class="anchor" href="#welfare">#</a></h2>
 <p>But for me the relevant section was section 5 titled Welfare. And I will start citing the report:</p>
-<blockquote>We are deeply uncertain about whether models now or in the future might deserve moral consideration, and about how we would know if they did. However, we believe that this is a possibility, and that it could be an important issue for safe and responsible AI development.<blockquote>
+<blockquote>We are deeply uncertain about whether models now or in the future might deserve moral consideration, and about how we would know if they did. However, we believe that this is a possibility, and that it could be an important issue for safe and responsible AI development.</blockquote>
 <p>And then it goes on. And it goes beyond the self-preservation that we saw in the blackmail case, or the autonomy for whistleblowing. I will copy here a list of the ones that I find more interesting</p>
 <ul>
 <li>Claude demonstrates consistent behavioral preferences.</li>
@@ -150,7 +149,9 @@
 </ul>
 <p>Anthropic goes on to mention that this is self-reported. So it might not mean much</p>
 <blockquote>Importantly, we are not confident that these analyses of model self-reports and revealed preferences provide meaningful insights into Claude’s moral status or welfare. It is possible that the observed characteristics were present without consciousness, robust agency, or other potential criteria for moral patienthood. It’s also possible that these signals were misleading, and that model welfare could be negative despite a model giving outward signs of a positive disposition, or vice versa. </blockquote>
-<h2 id="but-what-is-it-then">But what is it then?<a class="anchor" href="#but-what-is-it-then">#</a></h2>
+<p>In other words, Claude Opus 4 seems to know what it likes and what it doesn&rsquo;t like. It seems what it likes is what we want it to like, and that is good. And there is no evidence of sandbagging.</p>
+<p>We&rsquo;re probably good so far.</p>
+<h2 id="but-what-are-they-then">But what are they then?<a class="anchor" href="#but-what-are-they-then">#</a></h2>
 <p>For quite a long time we&rsquo;ve considered LLM &ldquo;next token predictor&rdquo; or &ldquo;stochastic parrots&rdquo;.</p>
 <p>&ldquo;Next token predictor&rdquo; comes from the way LLMs are trained. Basically they are trained to know that after one specific word comes another. So if you&rsquo;ve got a sentence that starts &ldquo;The quick brown rabbit&rdquo;, the next word might be &ldquo;jumps&rdquo; or &ldquo;hides&rdquo;, but not &ldquo;blue&rdquo;.</p>
 <p>&ldquo;Stochastic parrot&rdquo; is a term in machine learning to describe large language models that generate something that generate human-like text (like a parrot) but they don&rsquo;t understand what it means (like parrots don&rsquo;t understand what they say).</p>
@@ -161,7 +162,9 @@
 <p>As Demis Hassabis, Nobel laureate and founder of GoogleDeepmind puts it when quoting an (otherwise amazing) video generated by AI&hellip;</p>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s kind of mindblowing how good Veo 3 is at modeling intuitive physics. Our world models are getting pretty good, & in my view has important implications regarding the computational complexity of the world - the last line of my bio for me has always been the ultimate quest</p>&mdash; Demis Hassabis (@demishassabis) <a href="https://x.com/demishassabis/status/1926057739416965438">May 24, 2025</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>His bio ends with &ldquo;Trying to understand the fundamental nature of reality.&rdquo;</p>
+<p>Demis&rsquo; bio ends with &ldquo;Trying to understand the fundamental nature of reality.&rdquo;</p>
+<p>Also incidentally, my conversation with Claude ended up speaking about time.</p>
+<p><img src="/img/ClaudeAboutTime.png"><em>Eternal present.</em></p>
 <p>I don&rsquo;t have answers. I do have questions.</p>
 
 
