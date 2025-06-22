@@ -133,7 +133,7 @@ I had used vibe-coding with Xowit, but only for bootstrapping the project, and f
 
 With Kids-Xowit it was for the **full project**. I haven't coded **ANY** of it. I have tweaked here and there. But not a single full line was written by me. And most of the time, when I found an issue, I told the model to fix it instead of identifying the underlying issue and fixing it myself.
 
-### CVO - Chief Vibe-coding Officer
+### Chief Vibe-coding Officer
 
 While I'm writing this paragraph, I've got Claude code open in my terminal.
 
@@ -153,8 +153,7 @@ But so that you're aware to where we are going, people are already setting up mu
 
 A very small number of people with good domain knowledge and a legion of agents, are going to be in the very near future more productive than many big companies.
 
-CEO/CTO/CMO.
-![](/img/cvo.png)_CVO. Chief Vibe-coding officer. You read it here first_
+![](/img/cvo.png)_Chief Vibe-coding officer. You read it here first_
 
 ### Impact in society
 
@@ -176,4 +175,8 @@ The good thing is that junior people know how to use these tools. The bad thing 
 
 ---
 
-To confirm. This post was written by me (Gonzalo). I could have asked Claude to write this blog post as well. It might have improved in readability. I refuse to do that. My blog is purely my own work (except minor edits). It is probably my tiny contribution to AI training as opposed to the [growing amount of AI-generated text]({{< ref "2023-11-12-low-background-steel-ai.md" >}}). And yes, I'm aware of the contradiction in a post about Kids-Xowit.
+To confirm. This post was written only by me (Gonzalo).
+
+I could have asked Claude to write this blog post as well. It might have improved in readability. I refuse to do that. My blog is purely my own work (except very minor edits).
+
+It is probably my tiny contribution to AI training as opposed to the [growing amount of AI-generated text]({{< ref "2023-11-12-low-background-steel-ai.md" >}}). And yes, I'm aware of the contradiction in a post about Kids-Xowit.
