@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technologia on Las cosas de Gonzalo</title>
-    <link>https://gonzalo.f-v.es/es/tags/technologia/</link>
+    <link>http://localhost:1313/es/tags/technologia/</link>
     <description>Recent content in Technologia on Las cosas de Gonzalo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
     <lastBuildDate>Mon, 14 May 2018 18:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gonzalo.f-v.es/es/tags/technologia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/es/tags/technologia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Duplex y las llamadas automáticas</title>
-      <link>https://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</link>
+      <link>http://localhost:1313/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</link>
       <pubDate>Mon, 14 May 2018 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</guid>
+      <guid>http://localhost:1313/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</guid>
       <description>Probablemente ya has visto el vídeo de presentación de Google Duplex, el nuevo asistente creado por Google que puede hacer llamadas por teléfono que suenan como si un humano estuviera al otro lado de la línea.</description>
     </item>
   </channel>

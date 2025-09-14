@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jobs London Personal on Gonzalo&#39;s thoughts</title>
-    <link>https://gonzalo.f-v.es/categories/jobs-london-personal/</link>
+    <link>http://localhost:1313/categories/jobs-london-personal/</link>
     <description>Recent content in Jobs London Personal on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
     <lastBuildDate>Fri, 30 Aug 2013 18:23:54 +0000</lastBuildDate>
-    <atom:link href="https://gonzalo.f-v.es/categories/jobs-london-personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/jobs-london-personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Changes</title>
-      <link>https://gonzalo.f-v.es/blog/2013-08-30-changes/</link>
+      <link>http://localhost:1313/blog/2013-08-30-changes/</link>
       <pubDate>Fri, 30 Aug 2013 18:23:54 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2013-08-30-changes/</guid>
+      <guid>http://localhost:1313/blog/2013-08-30-changes/</guid>
       <description>A few days ago my company sent out this press release. It seems to be rather unimportant, but for me it means changes.&#xA;I work for that specific business unit. I cannot write too much.</description>
     </item>
   </channel>

@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Español on Las cosas de Gonzalo</title>
-    <link>https://gonzalo.f-v.es/es/tags/espa%C3%B1ol/</link>
+    <link>http://localhost:1313/es/tags/espa%C3%B1ol/</link>
     <description>Recent content in Español on Las cosas de Gonzalo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
     <lastBuildDate>Fri, 09 Apr 2021 18:03:00 +0000</lastBuildDate>
-    <atom:link href="https://gonzalo.f-v.es/es/tags/espa%C3%B1ol/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/es/tags/espa%C3%B1ol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vacunas (IV): Riesgos</title>
-      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</link>
+      <link>http://localhost:1313/es/blog/2021-04-09-vacunas-iv-conclusion/</link>
       <pubDate>Fri, 09 Apr 2021 18:03:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/</guid>
+      <guid>http://localhost:1313/es/blog/2021-04-09-vacunas-iv-conclusion/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     <item>
       <title>Vacunas (III): Sputnik-V</title>
-      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</link>
+      <link>http://localhost:1313/es/blog/2021-04-09-vacunas-iii-sputnik/</link>
       <pubDate>Fri, 09 Apr 2021 18:02:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/</guid>
+      <guid>http://localhost:1313/es/blog/2021-04-09-vacunas-iii-sputnik/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     <item>
       <title>Vacunas (II): AstraZeneca</title>
-      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</link>
+      <link>http://localhost:1313/es/blog/2021-04-09-vacunas-ii-astrazeneca/</link>
       <pubDate>Fri, 09 Apr 2021 18:01:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/</guid>
+      <guid>http://localhost:1313/es/blog/2021-04-09-vacunas-ii-astrazeneca/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     <item>
       <title>Vacunas (I): Riesgos</title>
-      <link>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</link>
+      <link>http://localhost:1313/es/blog/2021-04-09-vacunas-i-riesgos/</link>
       <pubDate>Fri, 09 Apr 2021 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/</guid>
+      <guid>http://localhost:1313/es/blog/2021-04-09-vacunas-i-riesgos/</guid>
       <description>Como otras veces, no voy a difundir esto en redes sociales, así que, los que llegáis aquí, sabéis quién soy. No soy médico, ni trabajo en el sector de la salud.</description>
     </item>
     <item>
       <title>Coronavirus en UK</title>
-      <link>https://gonzalo.f-v.es/es/blog/2020-03-14-coronavirus-en-uk/</link>
+      <link>http://localhost:1313/es/blog/2020-03-14-coronavirus-en-uk/</link>
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2020-03-14-coronavirus-en-uk/</guid>
+      <guid>http://localhost:1313/es/blog/2020-03-14-coronavirus-en-uk/</guid>
       <description>Lo habrás leído por ahí. Boris se quiere cargar a los viejos. Quiere que el país se haga inmune, para que lo economía no se pare. No le importan nada los los viejos.</description>
     </item>
     <item>
       <title>Lo del virus ese</title>
-      <link>https://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</link>
+      <link>http://localhost:1313/es/blog/2020-02-29-lo-del-virus-ese/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/</guid>
+      <guid>http://localhost:1313/es/blog/2020-02-29-lo-del-virus-ese/</guid>
       <description>Llevo unos días pensando si escribir esto.&#xA;Escuchas a algunos, y parece que el mundo se acaba y viene el apocalipsis zombi. No quieres ser de esos. Si escuchas a otros, esto es la gripe de todos los años.</description>
     </item>
     <item>
       <title>Google Duplex y las llamadas automáticas</title>
-      <link>https://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</link>
+      <link>http://localhost:1313/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</link>
       <pubDate>Mon, 14 May 2018 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</guid>
+      <guid>http://localhost:1313/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/</guid>
       <description>Probablemente ya has visto el vídeo de presentación de Google Duplex, el nuevo asistente creado por Google que puede hacer llamadas por teléfono que suenan como si un humano estuviera al otro lado de la línea.</description>
     </item>
   </channel>

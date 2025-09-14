@@ -2,263 +2,263 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on Gonzalo&#39;s thoughts</title>
-    <link>https://gonzalo.f-v.es/tags/personal/</link>
+    <link>http://localhost:1313/tags/personal/</link>
     <description>Recent content in Personal on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
     <lastBuildDate>Wed, 13 Sep 2023 21:30:00 +0000</lastBuildDate>
-    <atom:link href="https://gonzalo.f-v.es/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I&#39;m no longer a Monzo client</title>
-      <link>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</link>
+      <link>http://localhost:1313/blog/2023-09-13-why-i-left-monzo/</link>
       <pubDate>Wed, 13 Sep 2023 21:30:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2023-09-13-why-i-left-monzo/</guid>
+      <guid>http://localhost:1313/blog/2023-09-13-why-i-left-monzo/</guid>
       <description>A happy user I joined Monzo in 2016.&#xA;Ex-Monzo user 4956.&#xA;I even interviewed with Tom Blomfield, former CEO of Monzo in 2014 when he was still with Anne Boden, former CEO of Starling.</description>
     </item>
     <item>
       <title>Daily lessons from London trains</title>
-      <link>https://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</link>
+      <link>http://localhost:1313/blog/2018-07-07-daily-lessons-from-london-trains/</link>
       <pubDate>Sat, 07 Jul 2018 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2018-07-07-daily-lessons-from-london-trains/</guid>
+      <guid>http://localhost:1313/blog/2018-07-07-daily-lessons-from-london-trains/</guid>
       <description>For many people not living in the UK, it will come as a surprise that the railway system in London is quite expensive and provides a really bad service.&#xA;Train service is not a theme park.</description>
     </item>
     <item>
       <title>King George III and the “rebellion”</title>
-      <link>https://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the--rebellion/</link>
+      <link>http://localhost:1313/blog/2018-05-25-king-george-iii-and-the--rebellion/</link>
       <pubDate>Fri, 25 May 2018 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2018-05-25-king-george-iii-and-the--rebellion/</guid>
+      <guid>http://localhost:1313/blog/2018-05-25-king-george-iii-and-the--rebellion/</guid>
       <description>I enjoy buying books.&#xA;I read physical books too.&#xA;I enjoy starting them.&#xA;Honestly, finishing books is more difficult for me. But I’ve been trying to improve on that.&#xA;I was very excited when I bought ‘1776&amp;rsquo; by David McCullough.</description>
     </item>
     <item>
       <title>Launching a business: why?</title>
-      <link>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</link>
+      <link>http://localhost:1313/blog/2018-05-23-launching-a-business--why/</link>
       <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2018-05-23-launching-a-business--why/</guid>
+      <guid>http://localhost:1313/blog/2018-05-23-launching-a-business--why/</guid>
       <description>I’ll start sharing a secret.&#xA;I want to launch a business.Yes, I know many people in the tech industry are in the same situation. They’ve got some burning idea to launch or some dream to fulfil.</description>
     </item>
     <item>
       <title>Jack Ma and laughing at ourselves</title>
-      <link>https://gonzalo.f-v.es/blog/2017-09-12-jack-ma-and-laughing-at-ourselves/</link>
+      <link>http://localhost:1313/blog/2017-09-12-jack-ma-and-laughing-at-ourselves/</link>
       <pubDate>Tue, 12 Sep 2017 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2017-09-12-jack-ma-and-laughing-at-ourselves/</guid>
+      <guid>http://localhost:1313/blog/2017-09-12-jack-ma-and-laughing-at-ourselves/</guid>
       <description>If you don’t know who is Jack Ma, he’s the founder and CEO of Alibaba, the marketplace and reportedly the richest person in Asia. I must confess he’s always amazing me.</description>
     </item>
     <item>
       <title>Chess, trading and Bregret</title>
-      <link>https://gonzalo.f-v.es/blog/2016-06-26-chess--trading-and-bregret/</link>
+      <link>http://localhost:1313/blog/2016-06-26-chess--trading-and-bregret/</link>
       <pubDate>Sun, 26 Jun 2016 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2016-06-26-chess--trading-and-bregret/</guid>
+      <guid>http://localhost:1313/blog/2016-06-26-chess--trading-and-bregret/</guid>
       <description>When I was child, I used to play chess. From time to time you would find somebody that just had learned a special kind of opening and had decided to practice no matter what.</description>
     </item>
     <item>
       <title>Storytelling</title>
-      <link>https://gonzalo.f-v.es/blog/2016-02-04-storytelling/</link>
+      <link>http://localhost:1313/blog/2016-02-04-storytelling/</link>
       <pubDate>Thu, 04 Feb 2016 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2016-02-04-storytelling/</guid>
+      <guid>http://localhost:1313/blog/2016-02-04-storytelling/</guid>
       <description>A few days ago I was listening a podcast about the importance of being able to tell a story, not a lists of jobs when asked about you.&#xA;In a spirit of practising, I’m going to share two stories of my early life that affects who I am.</description>
     </item>
     <item>
       <title>Gifts</title>
-      <link>https://gonzalo.f-v.es/blog/2015-11-22-gifts/</link>
+      <link>http://localhost:1313/blog/2015-11-22-gifts/</link>
       <pubDate>Sun, 22 Nov 2015 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2015-11-22-gifts/</guid>
+      <guid>http://localhost:1313/blog/2015-11-22-gifts/</guid>
       <description>Black Friday is next Friday, so that means Christmas is coming. All around will push us to buy things: food, clothing, gifts. A couple of weeks ago we started receiving some catalogs from several different NGOs.</description>
     </item>
     <item>
       <title>Think big</title>
-      <link>https://gonzalo.f-v.es/blog/2015-02-09-think-big/</link>
+      <link>http://localhost:1313/blog/2015-02-09-think-big/</link>
       <pubDate>Mon, 09 Feb 2015 20:13:42 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2015-02-09-think-big/</guid>
+      <guid>http://localhost:1313/blog/2015-02-09-think-big/</guid>
       <description>A few weeks ago, I&amp;rsquo;m not sure why, one of my daughters proposed to create a system to find cars inside garages at the shopping center. The car would locate itself using a GPS and then it would emit via radio.</description>
     </item>
     <item>
       <title>What recruiters taught me about looking for a job</title>
-      <link>https://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
+      <link>http://localhost:1313/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
       <pubDate>Tue, 06 Jan 2015 16:31:37 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
+      <guid>http://localhost:1313/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
       <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.&#xA;If you are looking for a job, be sure to do just the opposite of what the bad ones do.</description>
     </item>
     <item>
       <title>Future</title>
-      <link>https://gonzalo.f-v.es/blog/2014-12-31-future/</link>
+      <link>http://localhost:1313/blog/2014-12-31-future/</link>
       <pubDate>Wed, 31 Dec 2014 08:00:09 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2014-12-31-future/</guid>
+      <guid>http://localhost:1313/blog/2014-12-31-future/</guid>
       <description>More than six years ago I started this blog. I wanted to practice my English so that I would improve it.&#xA;Four years later I came to London and sort of abandoned it, thinking that working in an English speaking environment would be enough to practice.</description>
     </item>
     <item>
       <title>Happy Christmas</title>
-      <link>https://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</link>
+      <link>http://localhost:1313/blog/2014-12-25-happy-christmas/</link>
       <pubDate>Thu, 25 Dec 2014 08:00:15 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2014-12-25-happy-christmas/</guid>
+      <guid>http://localhost:1313/blog/2014-12-25-happy-christmas/</guid>
       <description>Happy Christmas and a wonderful 2015 to all of my readers.</description>
     </item>
     <item>
       <title>Good examples</title>
-      <link>https://gonzalo.f-v.es/blog/2014-05-09-good-examples/</link>
+      <link>http://localhost:1313/blog/2014-05-09-good-examples/</link>
       <pubDate>Fri, 09 May 2014 19:30:05 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2014-05-09-good-examples/</guid>
+      <guid>http://localhost:1313/blog/2014-05-09-good-examples/</guid>
       <description>I was made redundant at the end of March. It was a very stressful process but it ended up very well, as I&amp;rsquo;ve been in my new job for almost a month and I&amp;rsquo;m very happy.</description>
     </item>
     <item>
       <title>Community managers: The day after</title>
-      <link>https://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</link>
+      <link>http://localhost:1313/blog/2014-02-03-community-managers-day-after/</link>
       <pubDate>Fri, 31 Jan 2014 19:28:39 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2014-02-03-community-managers-day-after/</guid>
+      <guid>http://localhost:1313/blog/2014-02-03-community-managers-day-after/</guid>
       <description>Yesterday I followed on Twitter a case where the community manager for a -well known and with very good reputation- Spanish moving company literally screwed up their reputation.&#xA;He/she threatened to sue a customer that was expressing a complaint on Twitter, because the client had used the hash tag &amp;ldquo;vergonzoso&amp;rdquo; (shameful).</description>
     </item>
     <item>
       <title>Companies, developers and recruitment</title>
-      <link>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</link>
+      <link>http://localhost:1313/blog/2013-11-08-companies-developers-and-recruitment/</link>
       <pubDate>Fri, 08 Nov 2013 09:56:47 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</guid>
+      <guid>http://localhost:1313/blog/2013-11-08-companies-developers-and-recruitment/</guid>
       <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less)&#xA;Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.</description>
     </item>
     <item>
       <title>One year</title>
-      <link>https://gonzalo.f-v.es/blog/2013-11-01-one-year/</link>
+      <link>http://localhost:1313/blog/2013-11-01-one-year/</link>
       <pubDate>Fri, 01 Nov 2013 16:30:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2013-11-01-one-year/</guid>
+      <guid>http://localhost:1313/blog/2013-11-01-one-year/</guid>
       <description>A year ago I was in a plane flying into London. I was in whirl, nearly panicking. My life about to change.&#xA;I&amp;rsquo;m somebody who loves being in his comfort zone.</description>
     </item>
     <item>
       <title>Changes</title>
-      <link>https://gonzalo.f-v.es/blog/2013-08-30-changes/</link>
+      <link>http://localhost:1313/blog/2013-08-30-changes/</link>
       <pubDate>Fri, 30 Aug 2013 18:23:54 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2013-08-30-changes/</guid>
+      <guid>http://localhost:1313/blog/2013-08-30-changes/</guid>
       <description>A few days ago my company sent out this press release. It seems to be rather unimportant, but for me it means changes.&#xA;I work for that specific business unit. I cannot write too much.</description>
     </item>
     <item>
       <title>IKEA vs Greenwich</title>
-      <link>https://gonzalo.f-v.es/blog/2013-07-16-ikea-vs-greenwich/</link>
+      <link>http://localhost:1313/blog/2013-07-16-ikea-vs-greenwich/</link>
       <pubDate>Tue, 16 Jul 2013 12:16:35 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2013-07-16-ikea-vs-greenwich/</guid>
+      <guid>http://localhost:1313/blog/2013-07-16-ikea-vs-greenwich/</guid>
       <description>This post started as a way of comparing different ways of managing customer relationships. It ended up as rant, but I&amp;rsquo;m not going to delete it. But I will write another post in the future with some suggestions.</description>
     </item>
     <item>
       <title>The most popular video in Spain this Christmas</title>
-      <link>https://gonzalo.f-v.es/blog/2012-12-17-the-most-popular-video-in-spain-this/</link>
+      <link>http://localhost:1313/blog/2012-12-17-the-most-popular-video-in-spain-this/</link>
       <pubDate>Mon, 17 Dec 2012 20:28:04 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2012-12-17-the-most-popular-video-in-spain-this/</guid>
+      <guid>http://localhost:1313/blog/2012-12-17-the-most-popular-video-in-spain-this/</guid>
       <description>Below you can see the ad that in my opinion will end up being be the most popular video in Spain this Christmas&#xA;It depicts Fofito (a clown very well known in Spain) with other well known comedians, actors and even journalists, sending parcels to &amp;ldquo;important people&amp;rdquo;: from Angela Merkel and IMF to Moody&amp;rsquo;s and Standard&amp;amp;Poor&amp;rsquo;s.</description>
     </item>
     <item>
       <title>Driving in the UK</title>
-      <link>https://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</link>
+      <link>http://localhost:1313/blog/2012-12-15-driving-in-uk/</link>
       <pubDate>Sat, 15 Dec 2012 19:47:50 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2012-12-15-driving-in-uk/</guid>
+      <guid>http://localhost:1313/blog/2012-12-15-driving-in-uk/</guid>
       <description>Today I rented a car for a few hours. I used to drive in Spain, but I hadn&amp;rsquo;t driven since I came to London. I wanted to practice in not too stressful conditions before my family comes to visit me.</description>
     </item>
     <item>
       <title>The future of this blog</title>
-      <link>https://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</link>
+      <link>http://localhost:1313/blog/2012-12-13-the-future-of-this-blog/</link>
       <pubDate>Thu, 13 Dec 2012 19:22:42 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2012-12-13-the-future-of-this-blog/</guid>
+      <guid>http://localhost:1313/blog/2012-12-13-the-future-of-this-blog/</guid>
       <description>When I started this blog, I had a goal. I needed to practice my English, because I wanted to go abroad. Months (or even years) later, more reasons appeared. First, I discovered that writing about solutions to job related problems could give people a way to solve their own problems more easily.</description>
     </item>
     <item>
       <title>Relocating to London</title>
-      <link>https://gonzalo.f-v.es/blog/2012-10-22-relocating-to-london/</link>
+      <link>http://localhost:1313/blog/2012-10-22-relocating-to-london/</link>
       <pubDate>Mon, 22 Oct 2012 19:45:08 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2012-10-22-relocating-to-london/</guid>
+      <guid>http://localhost:1313/blog/2012-10-22-relocating-to-london/</guid>
       <description>In two weeks I will be working in London. I know I was expecting to continue my last post about Spring persistence. I have lots of things to write about the incredible experience of finding a job abroad and relocating.</description>
     </item>
     <item>
       <title>Techzing wives</title>
-      <link>https://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</link>
+      <link>http://localhost:1313/blog/2012-09-20-techzing-wives/</link>
       <pubDate>Thu, 20 Sep 2012 20:36:19 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2012-09-20-techzing-wives/</guid>
+      <guid>http://localhost:1313/blog/2012-09-20-techzing-wives/</guid>
       <description>I tend to listen Techzing podcast. It&amp;rsquo;s a podcast about very different topics, recorded by two geeks, (or developers, and entrepeneurs). I don&amp;rsquo;t remember when I started listening them. I do remember I started because I wanted to practice English and it was great (Justin is an Englishman and Jason is American).</description>
     </item>
     <item>
       <title>Thoughts about a death</title>
-      <link>https://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</link>
+      <link>http://localhost:1313/blog/2011-10-01-thoughts-about-death/</link>
       <pubDate>Sat, 01 Oct 2011 20:58:36 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2011-10-01-thoughts-about-death/</guid>
+      <guid>http://localhost:1313/blog/2011-10-01-thoughts-about-death/</guid>
       <description>Sometimes you start to write because you need to write but you don&amp;rsquo;t know what you want to express. This is one of those times.&#xA;A couple of days ago, a pregnant woman was killed, and another woman was wounded by a man in a church in Madrid and afterwards the man committed suicide.</description>
     </item>
     <item>
       <title>Civil service: Why me?</title>
-      <link>https://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</link>
+      <link>http://localhost:1313/blog/2010-12-01-civil-service-why-me/</link>
       <pubDate>Wed, 01 Dec 2010 17:33:45 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-12-01-civil-service-why-me/</guid>
+      <guid>http://localhost:1313/blog/2010-12-01-civil-service-why-me/</guid>
       <description>A few days ago I promised to explain why I chose to become a civil servant, and why I keep being one.&#xA;I was going to write about the challenge of a competitive examination, how challenges motivates me, and how my job keeps being interesting even though sometimes is a bit tough.</description>
     </item>
     <item>
       <title>Flying, flying, flying</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</link>
+      <link>http://localhost:1313/blog/2010-11-29-flying-flying-flying/</link>
       <pubDate>Mon, 29 Nov 2010 21:02:51 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-29-flying-flying-flying/</guid>
+      <guid>http://localhost:1313/blog/2010-11-29-flying-flying-flying/</guid>
       <description>I&amp;rsquo;ve been to Rome this weekend. I used to fly a little more before my children&amp;rsquo;s bbirth, but since then I haven&amp;rsquo;t flyed for quite a few years. Train and car a lot.</description>
     </item>
     <item>
       <title>Copyright protection</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</link>
+      <link>http://localhost:1313/blog/2010-11-22-copyright-protection/</link>
       <pubDate>Mon, 22 Nov 2010 22:09:51 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-22-copyright-protection/</guid>
+      <guid>http://localhost:1313/blog/2010-11-22-copyright-protection/</guid>
       <description>You know something is broken with copyright when:&#xA;You buy a &amp;ldquo;Barbie and three Musqueteers&amp;rdquo; DVD and you can&amp;rsquo;t play in your DVD player because it&amp;rsquo;s piracy protected. But&amp;hellip; You download the same film from a P2P network, save to a CD and you can play it everywhere.</description>
     </item>
     <item>
       <title>Lots of old friends</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</link>
+      <link>http://localhost:1313/blog/2010-11-18-lots-of-old-friends/</link>
       <pubDate>Thu, 18 Nov 2010 21:30:39 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-18-lots-of-old-friends/</guid>
+      <guid>http://localhost:1313/blog/2010-11-18-lots-of-old-friends/</guid>
       <description>Yes. I know I was supposed to write about Civil service in Spain. But I&amp;rsquo;ve promised myself to write a blog post Monday through Thursday. Nobody reads this, my head is full of memories, and I&amp;rsquo;m not able to write about the planned topic.</description>
     </item>
     <item>
       <title>Civil service in Spain: Productivity</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</link>
+      <link>http://localhost:1313/blog/2010-11-17-civil-service-in-spain-productivity/</link>
       <pubDate>Wed, 17 Nov 2010 21:10:31 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-17-civil-service-in-spain-productivity/</guid>
+      <guid>http://localhost:1313/blog/2010-11-17-civil-service-in-spain-productivity/</guid>
       <description>I wrote yesterday about why job security is a good mechanism to protect civil service from corruption. But I also explained that it&amp;rsquo;s a mechanism that makes difficult to punish slackers.</description>
     </item>
     <item>
       <title>Civil service in Spain: Job security</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</link>
+      <link>http://localhost:1313/blog/2010-11-16-civil-service-in-spain-job-security/</link>
       <pubDate>Tue, 16 Nov 2010 21:48:41 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-16-civil-service-in-spain-job-security/</guid>
+      <guid>http://localhost:1313/blog/2010-11-16-civil-service-in-spain-job-security/</guid>
       <description>I&amp;rsquo;m a civil servant. Civil servants in Spain can&amp;rsquo;t be fired. Well, in fact they can be fired, but only because of extremely serious infringements, and after a complicated procedure.</description>
     </item>
     <item>
       <title>Scrum for myself</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-15-scrum-for-myself/</link>
+      <link>http://localhost:1313/blog/2010-11-15-scrum-for-myself/</link>
       <pubDate>Mon, 15 Nov 2010 22:08:50 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-15-scrum-for-myself/</guid>
+      <guid>http://localhost:1313/blog/2010-11-15-scrum-for-myself/</guid>
       <description>Yesterday I explained I have attended recently a couple of courses. One of them was about Scrum. The course was very interesting, although, as I explained in the evaluation, there were times when I wished there were only one teacher instead of three.</description>
     </item>
     <item>
       <title>The passionate programmer</title>
-      <link>https://gonzalo.f-v.es/blog/2010-11-14-passionate-programmer/</link>
+      <link>http://localhost:1313/blog/2010-11-14-passionate-programmer/</link>
       <pubDate>Sun, 14 Nov 2010 17:01:56 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-11-14-passionate-programmer/</guid>
+      <guid>http://localhost:1313/blog/2010-11-14-passionate-programmer/</guid>
       <description>The last few weeks have been really intense with respect to my career. I&amp;rsquo;ve attended two courses, given some presentations, launched a few projects at work, and read some books. Sometimes I&amp;rsquo;ve been under a lot of self-imposed pressure, but overall I&amp;rsquo;ve learned a lot of things.</description>
     </item>
     <item>
       <title>Starting over</title>
-      <link>https://gonzalo.f-v.es/blog/2010-10-13-starting-over/</link>
+      <link>http://localhost:1313/blog/2010-10-13-starting-over/</link>
       <pubDate>Wed, 13 Oct 2010 18:14:45 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2010-10-13-starting-over/</guid>
+      <guid>http://localhost:1313/blog/2010-10-13-starting-over/</guid>
       <description>6 months since last post. These have been amazing ones. Lots of work to do. Lots of challenges. We left Mantis, now working with Redmine. Learning Ruby on Rails. And learning Grails for fun and for the job.</description>
     </item>
     <item>
       <title>New Year&#39;s resolutions ... in August</title>
-      <link>https://gonzalo.f-v.es/blog/2009-08-20-new-years-resolutions-in-august/</link>
+      <link>http://localhost:1313/blog/2009-08-20-new-years-resolutions-in-august/</link>
       <pubDate>Thu, 20 Aug 2009 22:20:15 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2009-08-20-new-years-resolutions-in-august/</guid>
+      <guid>http://localhost:1313/blog/2009-08-20-new-years-resolutions-in-august/</guid>
       <description>I&amp;rsquo;ve been on holidays, and I&amp;rsquo;ve had some spare time to stop and think.&#xA;Last couple of months have been special. Some events have affected profoundly.&#xA;One of those events has been the death of a collegue.</description>
     </item>
     <item>
       <title>Three months later</title>
-      <link>https://gonzalo.f-v.es/blog/2009-02-14-three-months-later/</link>
+      <link>http://localhost:1313/blog/2009-02-14-three-months-later/</link>
       <pubDate>Sat, 14 Feb 2009 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2009-02-14-three-months-later/</guid>
+      <guid>http://localhost:1313/blog/2009-02-14-three-months-later/</guid>
       <description>Yes. It&amp;rsquo;s been three months since I wrote my previous post. When I started to write this blog I knew it could end like other blogs I have started. But I didn&amp;rsquo;t think I was going to stop writing so fast.</description>
     </item>
     <item>
       <title>What is this?</title>
-      <link>https://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</link>
+      <link>http://localhost:1313/blog/2008-11-04-what-is-this/</link>
       <pubDate>Tue, 04 Nov 2008 18:00:00 +0000</pubDate>
-      <guid>https://gonzalo.f-v.es/blog/2008-11-04-what-is-this/</guid>
+      <guid>http://localhost:1313/blog/2008-11-04-what-is-this/</guid>
       <description>Starting a blog it’s a difficult task. It’s not nearly as difficult as keeping updating it, of course.&#xA;I have started a couple of blogs.&#xA;Both are abandoned.&#xA;Not a good track.</description>
     </item>
   </channel>
