@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jobs on Gonzalo&#39;s thoughts</title>
-    <link>http://localhost:1313/categories/jobs/</link>
+    <link>https://gonzalo.f-v.es/categories/jobs/</link>
     <description>Recent content in Jobs on Gonzalo&#39;s thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
     <lastBuildDate>Fri, 18 May 2018 18:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gonzalo.f-v.es/categories/jobs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why I’m not considering your role</title>
-      <link>http://localhost:1313/blog/2018-05-18-why-i-m-not-considering-your-role/</link>
+      <link>https://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</link>
       <pubDate>Fri, 18 May 2018 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-05-18-why-i-m-not-considering-your-role/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2018-05-18-why-i-m-not-considering-your-role/</guid>
       <description>Dear recruiter,&#xA;Thank you for contacting. At the moment I’m not looking for a job.&#xA;Kind regards,&#xA;Gonzalo&#xA;This is a bit impersonal.&#xA;I know. I’m sorry. The alternative is the above email for everyone.</description>
     </item>
     <item>
       <title>Bad recruitment example 323234</title>
-      <link>http://localhost:1313/blog/2017-10-30-bad-recruitment-example-323234/</link>
+      <link>https://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</link>
       <pubDate>Mon, 30 Oct 2017 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2017-10-30-bad-recruitment-example-323234/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2017-10-30-bad-recruitment-example-323234/</guid>
       <description>This is a story for my friend C. He didn’t know what was behind this old tweet&#xA;TFW when after two months of silence the guy contacts you, promises to send an email immediately and fails to deliver.</description>
     </item>
     <item>
       <title>Junior PHP developer</title>
-      <link>http://localhost:1313/blog/2017-08-05-junior-php-developer/</link>
+      <link>https://gonzalo.f-v.es/blog/2017-08-05-junior-php-developer/</link>
       <pubDate>Sat, 05 Aug 2017 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2017-08-05-junior-php-developer/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2017-08-05-junior-php-developer/</guid>
       <description>For the last month or so I’ve been running a small experiment in my Linkedin profile. I had been receiving contacts from recruiters offering roles, and from recruiters offering developers.</description>
     </item>
     <item>
       <title>Dear recruiter</title>
-      <link>http://localhost:1313/blog/2015-08-15-dear-recruiter/</link>
+      <link>https://gonzalo.f-v.es/blog/2015-08-15-dear-recruiter/</link>
       <pubDate>Sat, 15 Aug 2015 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2015-08-15-dear-recruiter/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2015-08-15-dear-recruiter/</guid>
       <description>Dear recruiter. Don’t take it personal, but I’m not interested in the role you’re trying to recruit.&#xA;I receive lots of messages from recruiters. I get offered to participate in events so that companies can offer me new jobs.</description>
     </item>
     <item>
       <title>Technical tests</title>
-      <link>http://localhost:1313/blog/2015-01-19-technical-tests/</link>
+      <link>https://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</link>
       <pubDate>Mon, 19 Jan 2015 19:39:19 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2015-01-19-technical-tests/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2015-01-19-technical-tests/</guid>
       <description>In March 2014 I was made redundant (business unit closing).&#xA;I needed to get a job and I participated in loads of selection processes. Sometimes I received feedback, sometimes not. But I remember two specific processes because I received completely different feedback from &amp;ldquo;technical tests&amp;rdquo; in a matter of days</description>
     </item>
     <item>
       <title>What recruiters taught me about looking for a job</title>
-      <link>http://localhost:1313/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
+      <link>https://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</link>
       <pubDate>Tue, 06 Jan 2015 16:31:37 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2015-01-06-what-recruiters-taught-me-about-looking/</guid>
       <description>There are good recruiters. And there are bad recruiters. The good ones help you to find a job. The bad ones teach you how to look for a job.&#xA;If you are looking for a job, be sure to do just the opposite of what the bad ones do.</description>
     </item>
     <item>
       <title>Multithreading: Warning lights</title>
-      <link>http://localhost:1313/blog/2014-01-21-multithreading-warning-lights/</link>
+      <link>https://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</link>
       <pubDate>Tue, 21 Jan 2014 12:17:35 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2014-01-21-multithreading-warning-lights/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2014-01-21-multithreading-warning-lights/</guid>
       <description>A few days ago I went to an interview which included a pair programming session. The session was a great experience, but the result wasn&amp;rsquo;t quite as good as it should have been, because of some difficulties understanding on what was being asked.</description>
     </item>
     <item>
       <title>Companies, developers and recruitment</title>
-      <link>http://localhost:1313/blog/2013-11-08-companies-developers-and-recruitment/</link>
+      <link>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</link>
       <pubDate>Fri, 08 Nov 2013 09:56:47 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2013-11-08-companies-developers-and-recruitment/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2013-11-08-companies-developers-and-recruitment/</guid>
       <description>A few months ago I reported my business unit was offered for sale. Not much to report about it (I know very little and I can write even less)&#xA;Obviously, most of us in the business unit, decided to brush up our Linkedin pages and get into the job market, just in case.</description>
     </item>
     <item>
       <title>A great experience applying to a position (II)</title>
-      <link>http://localhost:1313/blog/2012-08-14-a-great-experience-applying-to-position_14/</link>
+      <link>https://gonzalo.f-v.es/blog/2012-08-14-a-great-experience-applying-to-position_14/</link>
       <pubDate>Tue, 14 Aug 2012 22:59:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2012-08-14-a-great-experience-applying-to-position_14/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2012-08-14-a-great-experience-applying-to-position_14/</guid>
       <description>In my previous post I explained a great experience applying for a position. In this post I wanted to share what lessons I&amp;rsquo;ve learnt from that experience.&#xA;Selection: Be very selective about what you apply for.</description>
     </item>
     <item>
       <title>A great experience applying to a position (I)</title>
-      <link>http://localhost:1313/blog/2012-08-13-a-great-experience-applying-to-position/</link>
+      <link>https://gonzalo.f-v.es/blog/2012-08-13-a-great-experience-applying-to-position/</link>
       <pubDate>Mon, 13 Aug 2012 21:59:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2012-08-13-a-great-experience-applying-to-position/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2012-08-13-a-great-experience-applying-to-position/</guid>
       <description>I wrote in my last post about lessons I&amp;rsquo;ve got from bad experiences looking for a job. In this post I&amp;rsquo;m going to tell you about a good experience I had last week, how much I learnt from it, and the lessons I got from it.</description>
     </item>
     <item>
       <title>Bad experiences</title>
-      <link>http://localhost:1313/blog/2012-08-12-bad-experiences/</link>
+      <link>https://gonzalo.f-v.es/blog/2012-08-12-bad-experiences/</link>
       <pubDate>Sun, 12 Aug 2012 21:59:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2012-08-12-bad-experiences/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2012-08-12-bad-experiences/</guid>
       <description>For some time I&amp;rsquo;ve been applying to different positions. I have two daughters and I want for them (and for me) to live in a different culture and language. After a few experiences, I&amp;rsquo;m tempted to say something about bad experiences:</description>
     </item>
     <item>
       <title>Jobs</title>
-      <link>http://localhost:1313/blog/2008-11-07-jobs/</link>
+      <link>https://gonzalo.f-v.es/blog/2008-11-07-jobs/</link>
       <pubDate>Fri, 07 Nov 2008 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2008-11-07-jobs/</guid>
+      <guid>https://gonzalo.f-v.es/blog/2008-11-07-jobs/</guid>
       <description>Sometimes I read a couple of posts not directly related, and I start to think about a topic I didn&amp;rsquo;t expected.&#xA;This time, it all started with a post of Enrique Dans.</description>
     </item>
   </channel>
