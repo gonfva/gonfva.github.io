@@ -16,17 +16,20 @@ It's called [Email Whispery](https://email.whispery.site/).
 
 You give temporary access to your email account (yes, I know it is a big ask). The app fetches up to 20 emails from the last 24 hours, and it prepares an audio summary of those messages.
 
-I'm really surprised that **the audio is so good**.
+![](/img/result-email-whispery.png)
+
+I'm really surprised that **the audio is so good**. You can [hear a test here](https://gonfva.f-v.es/summary-email.mp3).
+
 
 I'm not even using the state-of-the-art models. I'm using Chirp 3, which is failry recent, but there are other better models. You pass a text to it, and it puts breaks, entonation... It even understands that whispery.site is pronounced whispery dot site and the dot is not the end of a sentence.
 
-![](/img/result-email-whispery.png)
 
-Audio is quite good. You can [hear a test here](/summary-email.mp3).
 
 ### Embarrassment
 
-When I launched Xowit I quoted the famous sentence ["If you're not embarrassed by the first version of your product, you've launched too late"]({{< ref "2025-03-24-xowit.md" >}}).
+When I launched Xowit I quoted the famous sentence
+
+ ["If you're not embarrassed by the first version of your product, you've launched too late"]({{< ref "2025-03-24-xowit.md" >}}).
 
 Well, I'm embarrassed with Email Whispery.
 
@@ -36,29 +39,33 @@ The app needs to request OAuth access to Google and permission to read Gmail. Si
 
 Instead, people will get a very scary screen telling them "go away" and they need to click through an "Advanced" link
 
-![](/img/Screenshot 2025-09-14 104329.png)
+![](/img/Screenshot_2025-09-14_104329.png)
 
 Oh, boy. That's bad. Yes, real bad.
 
 I will create a video, and at least that can show the process.
 
-At the same time I doubt that anybody will test the system. I would probably use one of those secondary Gmail accounts that some of us have.
+At the same time I doubt that anybody will test the system. Yes, permissions are read-only and immediately revoked. The only thing that persist is the audio and only for one day.
+
+But control of personal email is scary. In my case, I might have risked testing with one of those secondary Gmail accounts that some of us have. And only with someone I trust.
 
 But I didn't want to wait.
 
 ### Why
 
-"If you're not planning to do it perfect, why doing it?"
+"If you're not planning to do it perfect, why doing it at all?"
 
-Several reasons, including a big one with its own section.
+Several reasons, including a big one with its own section later on.
 
 Yes, [I want to keep experimenting]({{< ref "2025-03-24-xowit.md" >}}).
 
-Yes, [I want to play more with audio]({{< ref "2025-06-21-kids-xowit.md" >}}). This is not an original idea (it came after watching Andrew Ng chat), but the chat modality is everywhere, and audio has still some room to grow.
+Yes, [I want to play more with audio]({{< ref "2025-06-21-kids-xowit.md" >}}).
 
-Yes, email is like COBOL. Suposedly extinct but in reality still alive and healthy. I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't cost much.
+Yes, **email is like COBOL**. Suposedly extinct but in reality still alive and healthy.
 
-Besides, "Her" is an interesting movie.
+I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't be too expensive.
+
+Besides, ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film) is an interesting movie.
 
 But the real reason is a controversial thought.
 
@@ -77,7 +84,7 @@ But for many people, the programming language will be English.
 
 Yes. I feel your pain. I've been there.
 
-I've felt the anger at Claude code. The "WTF are you effing doing" thought. The "Don't 'you're absolutely right' bullshit me and listen to what I'm telling you" thought. My polite "That didn't work either. Please think harder and plan before doing any changes" when you wanted to type "you effing moron don't have an effing clue. Don't effing change an effing letter of the code until you're sure of what you're effing doing".
+I've felt the anger at Claude code. The "WTF are you effing doing" thought. The "Don't 'you're absolutely right' bullshit me and listen to what I'm telling you" thought. My polite "That didn't work either. Please think harder and plan before doing any changes" when you wanted to shout "you effing moron don't have an effing clue. Don't effing change an effing letter of the code until you're effing sure of what you're effing doing".
 
 Yes, the "you've reached your 5h limit".
 
