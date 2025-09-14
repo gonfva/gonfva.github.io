@@ -18,21 +18,21 @@ You give temporary access to your email account (yes, I know it is a big ask), i
 
 I'm really surprised that **the audio is so good**.
 
-I'm not even using the SOTA (state of the art) models. I'm using Chirp 3, which is pretty recent, but there are other better model. You pass a text to it, and it puts breaks, entonation... It can even understand that whispery.site is pronounced whispery dot site and the dot is not the end of a sentence.
+I'm not even using the state-of-the-art models. I'm using Chirp 3, which is pretty recent, but there are other better model. You pass a text to it, and it puts breaks, entonation... It even understands that whispery.site is pronounced whispery dot site and the dot is not the end of a sentence.
 
 ![](/img/result-email-whispery.png)
 
 Audio is quite good. You can [hear a test here](/summary-email.mp3).
 
-### Embarrasement
+### Embarrassment
 
 When I launched Xowit I quoted the famous sentence ["If you're not embarrassed by the first version of your product, you've launched too late"]({{< ref "2025-03-24-xowit.md" >}}).
 
-Well, I'm embarrased with Email Whispery.
+Well, I'm embarrassed with Email Whispery.
 
-Deeply embarrased.
+Deeply embarrassed.
 
-The app needs to ask for OAUTH access to Google and also permissions to read Gmail. Since reading email is a protected activity, I need to go through a verification process including recording a video with an unknown outcome. I could wait for it to finish, but I haven't even recorded the video. I could stay on testing, but I would need to add one by one the emails of people testing
+The app needs to ask for OAuth access to Google and also permissions to read Gmail. Since reading email is a protected activity, I need to go through a verification process including recording a video with an unknown outcome. I could wait for it to finish, but I haven't even recorded the video. I could stay on testing, but I would need to add one by one the emails of people testing
 
 Instead, people will get a very scary screen telling them "go away" and they need to go to advanced
 
@@ -56,7 +56,7 @@ Yes, [I want to keep experimenting]({{< ref "2025-03-24-xowit.md" >}}).
 
 Yes, [I want to play more with audio]({{< ref "2025-06-21-kids-xowit.md" >}}). This is not an original idea (it came after watching Andrew Ng chat), but I think the chat modality is everywhere, and audio has still some room to grow.
 
-Yes, email is like Cobol. Suposedly extinct but in reality still alive and healthy. I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't cost much.
+Yes, email is like COBOL. Suposedly extinct but in reality still alive and healthy. I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't cost much.
 
 Besides, "Her" is an interesting movie.
 
@@ -101,4 +101,4 @@ I'm learning.
 
 This app is probably the last one with a "vibe" approach. The next one will probably more agentic. More purposeful. With more automated test. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
 
-And BTW. I used a third level domain (email.whispery.site) because I've got other plans for the second level (whispery.site)
+And By the way. I used a third level domain (email.whispery.site) because I've got other plans for the second level (whispery.site)
