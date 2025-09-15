@@ -1,6 +1,6 @@
 ---
 date: 2025-09-14T18:30:00
-title: Audio and emails
+title: Email brief summaries
 subtitle: Agent coding. This is the way
 tags:
   - Technology
