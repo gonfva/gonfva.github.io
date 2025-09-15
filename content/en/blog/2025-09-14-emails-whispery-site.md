@@ -1,7 +1,7 @@
 ---
 date: 2025-09-14T18:30:00
 title: Audio, emails, and agent coding
-subtitle: This is the way. And I better learn how to do it
+subtitle: This is the way. And I'd better learn how to do it
 tags:
   - Technology
 categories: [Technology]
@@ -97,7 +97,7 @@ The rage was too much to put into words. But I've felt it.
 
 **I've felt all of that**.
 
-At the same time, I feel this is the way we will program. And I better learn how to do it.
+At the same time, I feel this is the way we will program. And I'd better learn how to do it.
 
 ![](/img/this-is-the-way.png)
 
