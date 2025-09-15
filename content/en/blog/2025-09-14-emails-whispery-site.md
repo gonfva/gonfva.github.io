@@ -21,9 +21,9 @@ You give temporary access to your email account (yes, I know it is a big ask). T
 I'm really surprised that **the audio is so good**. You can [listen to an example here](https://media-gonzalo.f-v.es/summary-example-email-whisery.mp3).
 
 
-I'm not even using the state-of-the-art models. I'm using Chirp 3, which is failry recent, but there are other better models. You pass a text to it, and it puts breaks, entonation... It even understands that whispery.site is pronounced whispery dot site and the dot is not the end of a sentence.
+You pass a text to it, and it puts breaks, intonation...
 
-
+I'm not even using the state-of-the-art models. I'm using Chirp 3, which is failry recent. There are even better models.
 
 ### Embarrassment
 
