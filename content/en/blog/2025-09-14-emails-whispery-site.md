@@ -1,7 +1,7 @@
 ---
 date: 2025-09-14T18:30:00
 title: Audio, emails, and agent coding
-subtitle: This is the way
+subtitle: This is the way. And I better learn how to do it
 tags:
   - Technology
 categories: [Technology]
@@ -81,7 +81,8 @@ Yes. Some people will still work directly with Javascript, or Python, or Rust, o
 
 But for many people, the programming language will be English.
 
-"No way, Gonzalo. Algorithms are better than relying on the random whim of an LLM"
+"No way, Gonzalo. Algorithms are better than relying on the random whim of an LLM".
+
 "Haven't you read all those stories of people vibe coding, launching and being hacked? Or asking for a failing test and LLM deleting the whole suite? Haven't you heard about ["context rot"](https://x.com/simonw/status/1935478180443472340)"
 
 Yes. I feel your pain. I've been there.
