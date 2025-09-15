@@ -16,7 +16,7 @@ It's called [Email Whispery](https://email.whispery.site/).
 
 It produces brief email summaries in an audio format.
 
-You give temporary access to your email account (yes, I know it is a big ask, and I wouldn't use it). The app fetches up to 20 emails from the last 24 hours, and it prepares an audio summary of those messages.
+You give temporary access to your email account (yes, I know it is a big ask, and I wouldn't use such an app). The app fetches up to 20 emails from the last 24 hours, and it prepares an audio summary of those messages.
 
 ![](/img/result-email-whispery.png)
 
@@ -37,7 +37,7 @@ Well, I'm embarrassed with Email Whispery.
 
 Deeply embarrassed.
 
-The app needs to request OAuth access to Google and permission to read Gmail. Since reading email is a protected activity, I need to go through Google's verification process, which includes recording a video. The outcome is uncertain. I could wait for the verification to finish (I haven't even recorded the video), and remain in testing. But I would need to add one by one the emails of people testing
+The app needs to request OAuth access to Google and permission to read Gmail. Since reading email is a protected activity, I need to go through Google's verification process, which includes recording a video. The outcome is uncertain. I could wait for the verification to finish (I haven't even recorded the video), and remain in testing. But I would need to add the emails of testing users one by one.
 
 Instead, I moved to production, so people will get a very scary screen telling them "go away" and they need to click through an "Advanced" link
 
@@ -55,7 +55,7 @@ So I didn't want to wait just in the hope of people using it.
 
 ### Why
 
-"If you're not planning to do it perfect, why doing it at all?"
+"If you're not planning to do it perfect, why do it at all?"
 
 Several reasons, including a big one with its own section later on.
 
