@@ -87,13 +87,11 @@ But for many people, the programming language will be English.
 
 Yes. I feel your pain. I've been there.
 
-I've felt the anger at Claude code. The "WTF are you effing doing" thought. The "Don't 'you're absolutely right' bullshit me and listen to what I'm telling you" thought. My polite "That didn't work either. Please think harder and plan before doing any changes" when you wanted to shout "you effing moron don't have an effing clue. Don't effing change an effing letter of the code until you're effing sure of what you're effing doing".
+I've felt the anger at Claude code. The "WTF are you effing doing" thought. The "Don't 'you're absolutely right' BS me and listen to what I'm telling you" thought. My polite "That didn't work either. Please think harder and plan before doing any changes" when you wanted to shout "you effing moron don't have an effing clue. Don't effing change an effing letter of the code until you're effing sure of what you're effing doing".
 
 Yes, the "you've reached your 5h limit".
 
 Yes. I discovered that GOOGLE_CLIENT_ID was being leaked to client code (and likely other sensitive variables).
-
-The rage was too much to put into words. But I've felt it.
 
 **I've felt all of that**.
 
@@ -103,12 +101,10 @@ At the same time, I feel this is the way we will program. And I'd better learn h
 
 And I'm learning.
 
-And again, for me the best model is to talking to a technically-great-but-very-junior engineer. You have to be very detailed. You have to give it a detailed plan. You have to verify what it gives back. And of course, don't take it personal.
+And as I mentioned on a different post, for me the best mental model is talking to a technically-great-but-very-junior engineer. You have to be very detailed. You have to agree on very specific plan. You have to verify what it gives back. And of course, don't take it personal.
 
 I've launched three (toy) apps this year in a few weekends. I'm creating a (toy) app at work to help with FinOps.
 
 I'm learning.
 
 This app is probably the last one with a "vibe" approach. The next one will be more agentic. More purposeful. With more automated tests. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
-
-And by the way, I used a third-level domain (email.whispery.site) because I have other plans for the second level domain (whispery.site)
