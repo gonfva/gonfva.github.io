@@ -25,7 +25,7 @@ I'm really surprised that **the audio is so good**. You can [listen to an exampl
 
 You pass a text to it, and it puts breaks, intonation...
 
-I'm not even using the state-of-the-art models. I'm using Chirp 3, which is fairly recent. There are even better models.
+I'm not even using the state-of-the-art models. I'm using Chirp 3, which is fairly recent. But there are even better models.
 
 ### Embarrassment
 
@@ -37,21 +37,21 @@ Well, I'm embarrassed with Email Whispery.
 
 Deeply embarrassed.
 
-The app needs to request OAuth access to Google and permission to read Gmail. Since reading email is a protected activity, I need to go through Google's verification process, which includes recording a video. The outcome is uncertain. I could wait for the verification to finish (I haven't even recorded the video), but I would need to add one by one the emails of people testing
+The app needs to request OAuth access to Google and permission to read Gmail. Since reading email is a protected activity, I need to go through Google's verification process, which includes recording a video. The outcome is uncertain. I could wait for the verification to finish (I haven't even recorded the video), and remain in testing. But I would need to add one by one the emails of people testing
 
-Instead, people will get a very scary screen telling them "go away" and they need to click through an "Advanced" link
+Instead, I moved to production, so people will get a very scary screen telling them "go away" and they need to click through an "Advanced" link
 
 ![](/img/Screenshot_2025-09-14_104329.png)
 
 Oh, boy. That's bad. Yes, real bad.
 
-I will create a video, and at least that can show the process.
+I will create a video for Google verification. And I can reuse the video, to show what the app is for.
 
-At the same time I doubt that anybody will test the system. Yes, permissions are read-only and immediately revoked. The only thing that persist is the audio and only for one day.
+However, I doubt that anybody will test the system. Yes, permissions are read-only and immediately revoked. The only thing that persist is the audio and only for one day.
 
-But control of personal email is scary. In my case, I might have risked testing with one of those secondary Gmail accounts that some of us have. And only with someone I trust.
+But **control of personal email is scary**. In my case, I might have risked testing with one of those secondary Gmail accounts that some of us have. And only with someone I trust.
 
-But I didn't want to wait.
+So I didn't want to wait just in the hope of people using it.
 
 ### Why
 
