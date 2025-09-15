@@ -18,7 +18,7 @@ You give temporary access to your email account (yes, I know it is a big ask). T
 
 ![](/img/result-email-whispery.png)
 
-I'm really surprised that **the audio is so good**. You can [hear a test here](https://media-gonzalo.f-v.es/summary-example-email-whisery.mp3).
+I'm really surprised that **the audio is so good**. You can [listen to an example here](https://media-gonzalo.f-v.es/summary-example-email-whisery.mp3).
 
 
 I'm not even using the state-of-the-art models. I'm using Chirp 3, which is failry recent, but there are other better models. You pass a text to it, and it puts breaks, entonation... It even understands that whispery.site is pronounced whispery dot site and the dot is not the end of a sentence.
@@ -65,7 +65,7 @@ Yes, **email is like COBOL**. Suposedly extinct but in reality still alive and h
 
 I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't be too expensive.
 
-Besides, ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film) is an interesting movie.
+Besides, ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie.
 
 But the real reason is a controversial thought.
 
@@ -106,6 +106,6 @@ I've launched three (toy) apps this year in a few weekends. I'm creating a (toy)
 
 I'm learning.
 
-This app is probably the last one with a "vibe" approach. The next one will more agentic. More purposeful. With more automated test. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
+This app is probably the last one with a "vibe" approach. The next one will be more agentic. More purposeful. With more automated test. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
 
 And by the way, I used a third-level domain (email.whispery.site) because I have other plans for the second level (whispery.site)
