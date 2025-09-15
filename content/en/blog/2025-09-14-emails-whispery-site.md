@@ -1,7 +1,7 @@
 ---
 date: 2025-09-14T18:30:00
-title: Email brief summaries
-subtitle: Agent coding. This is the way
+title: Audio, emails. And agent coding
+subtitle: This is the way
 tags:
   - Technology
 categories: [Technology]
@@ -14,7 +14,9 @@ After [Xowit](https://xowit.com) and [Kids Xowit](https://kids.xowit.com), the t
 
 It's called [Email Whispery](https://email.whispery.site/).
 
-You give temporary access to your email account (yes, I know it is a big ask). The app fetches up to 20 emails from the last 24 hours, and it prepares an audio summary of those messages.
+It produces brief email summaries in an audio format.
+
+You give temporary access to your email account (yes, I know it is a big ask, and I wouldn't use it). The app fetches up to 20 emails from the last 24 hours, and it prepares an audio summary of those messages.
 
 ![](/img/result-email-whispery.png)
 
@@ -23,7 +25,7 @@ I'm really surprised that **the audio is so good**. You can [listen to an exampl
 
 You pass a text to it, and it puts breaks, intonation...
 
-I'm not even using the state-of-the-art models. I'm using Chirp 3, which is failry recent. There are even better models.
+I'm not even using the state-of-the-art models. I'm using Chirp 3, which is fairly recent. There are even better models.
 
 ### Embarrassment
 
@@ -61,9 +63,9 @@ Yes, [I want to keep experimenting]({{< ref "2025-03-24-xowit.md" >}}).
 
 Yes, [I want to play more with audio]({{< ref "2025-06-21-kids-xowit.md" >}}).
 
-Yes, **email is like COBOL**. Suposedly extinct but in reality still alive and healthy.
+Yes, **email is like COBOL**. Supposedly extinct but in reality still alive and healthy.
 
-I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't be too expensive.
+I've got plenty of ideas around email. And although they are not valid for a side project with a zero funding, this idea had been in my mind for a while and it shouldn't be too expensive.
 
 Besides, ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie.
 
@@ -80,7 +82,7 @@ Yes. Some people will still work directly with Javascript, or Python, or Rust, o
 But for many people, the programming language will be English.
 
 "No way, Gonzalo. Algorithms are better than relying on the random whim of an LLM"
-"Haven't you read all those stories of people vibe coding, launching and being hacked? Or asking for a failing test and LLM deleting the whole suit? Haven't you heard about ["context rot"](https://x.com/simonw/status/1935478180443472340)"
+"Haven't you read all those stories of people vibe coding, launching and being hacked? Or asking for a failing test and LLM deleting the whole suite? Haven't you heard about ["context rot"](https://x.com/simonw/status/1935478180443472340)"
 
 Yes. I feel your pain. I've been there.
 
@@ -106,6 +108,6 @@ I've launched three (toy) apps this year in a few weekends. I'm creating a (toy)
 
 I'm learning.
 
-This app is probably the last one with a "vibe" approach. The next one will be more agentic. More purposeful. With more automated test. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
+This app is probably the last one with a "vibe" approach. The next one will be more agentic. More purposeful. With more automated tests. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
 
-And by the way, I used a third-level domain (email.whispery.site) because I have other plans for the second level (whispery.site)
+And by the way, I used a third-level domain (email.whispery.site) because I have other plans for the second level domain (whispery.site)
