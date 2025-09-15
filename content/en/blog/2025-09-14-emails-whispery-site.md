@@ -70,6 +70,8 @@ But the real reason is controversial.
 
 Vibe coding, or agent coding, or whatever you want to call it **is the future**.
 
+![](/img/main-standing-on-the-court.png)
+
 You will program in English.
 
 Yes. Some people will still work directly with Javascript, or Python, or Rust, or Java, or C++, or Ruby. Like some people still do work with assembly.
