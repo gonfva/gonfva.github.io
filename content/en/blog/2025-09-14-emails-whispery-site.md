@@ -102,10 +102,14 @@ At the same time, I feel this is the way we will program. And I'd better learn h
 
 Slowly learning.
 
-And as I mentioned on a different post, for me the best mental model is **talking to a technically-great-but-very-junior engineer**. You have to be very detailed. You have to agree on very specific plan. You have to verify what it gives back. And of course, don't take it personal.
+And as I mentioned on a different post, for me the best mental model is **talking to a technically-great-but-very-junior engineer**. You have to be very detailed. You have to agree on a very specific plan. You have to verify what it gives back. And of course, don't take it personal.
 
 I've launched three (toy) apps this year in a few weekends. I'm creating a (toy) app at work to help with FinOps.
 
 I'm learning.
 
-This app is probably the last one with a "vibe" approach. The next one will be more agentic. More purposeful. With more automated tests. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
+This app is probably the last one with a "vibe" approach.
+
+The next one will be more agentic. More purposeful. With more automated tests. Deployments from day one. With task definitions as Github issues. Tools defined. Workflows defined.
+
+We'll see how it goes.
