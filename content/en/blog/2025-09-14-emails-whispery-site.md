@@ -61,7 +61,7 @@ Several reasons, including a big one with its own section later on.
 
 + [I want to keep experimenting]({{< ref "2025-03-24-xowit.md" >}}).
 + [I also want to play more with audio]({{< ref "2025-06-21-kids-xowit.md" >}}).
-+ **email is like COBOL**. Supposedly extinct but in reality still alive and healthy. I've got plenty of ideas around email. And although they are not valid for a side project with a zero funding, this idea had been in my mind for a while and it shouldn't be too expensive.
++ **email is like COBOL**. Supposedly extinct but in reality still alive and healthy. I've got plenty of ideas around email. And although they are not valid for a side project with zero funding, this idea had been in my mind for a while and it shouldn't be too expensive.
 + ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie.
 
 But the real reason is controversial.
