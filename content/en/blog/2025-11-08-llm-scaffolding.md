@@ -69,7 +69,7 @@ At the WebSocket endpoint we have a Claude agent with some tools defined (the to
 
 When a tool is used, it changes internal state on the webserver. The WebSocket loop then sends the new state to the frontend, which updates the UI accordingly.
 
-Copying a diagram that Claude produced:
+Copying a diagram that Claude Code produced:
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -155,9 +155,9 @@ but doesn't participate in the runtime execution loop.
 
 ### So slow, man
 
-If you happened to download my code and tried to run it, you will see that it is slow — slow to load the calculator and slow to react to key presses.
+If you happened to download my code and tried to run it, you will see that it is slow. Slow to load the calculator and slow to react to key presses.
 
-Who in their right mind would use something like this—something so slow for a simple calculator!
+Who in their right mind would use something like this? Something so slow for a simple calculator!
 
 The code is slow because I really wanted to show how the paradigm works. "Can you optimize it?" Yes. When I was discussing with Claude how to approach this LLM-scaffolding idea, it suggested that the best approach would be hybrid: some interactions in the browser, others on the LLM. Check the conversation on the link above.
 
@@ -185,7 +185,7 @@ __What if the app you use all day could anticipate your desires?__
 __What if the UI could surface relevant information **to you**?__
 __What if the UI could present that information in a way that matters **to you**?__
 
-No matter what kind of app—be it JIRA, email, or trading software.
+No matter what kind of app. Be it JIRA, email, or trading software.
 
 Chat won't be the future UI. ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie, but I don't think the future will be audio-only either.
 

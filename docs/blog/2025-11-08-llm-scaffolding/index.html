@@ -68,7 +68,7 @@
       "datePublished": "2025-10-08 18:30:00 \u002b0000 UTC",
       "dateModified" : "2025-10-08 18:30:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2025-11-08-llm-scaffolding\/",
-      "wordCount" : "1241",
+      "wordCount" : "1243",
       "keywords" : ["Blog"]
     }
   
@@ -170,7 +170,7 @@
 <p>It&rsquo;s a FastAPI app (Python) that serves a WebSocket endpoint and a couple of static files.</p>
 <p>At the WebSocket endpoint we have a Claude agent with some tools defined (the tools are the key; I&rsquo;ll explain them below). Every interaction is sent to the Claude API. The Claude API might respond by invoking a tool.</p>
 <p>When a tool is used, it changes internal state on the webserver. The WebSocket loop then sends the new state to the frontend, which updates the UI accordingly.</p>
-<p>Copying a diagram that Claude produced:</p>
+<p>Copying a diagram that Claude Code produced:</p>
 <pre><code>┌─────────────────────────────────────────────────┐
 │ LLM (Architect)                                 │
 │ - Understands user intent                       │
@@ -246,8 +246,8 @@ These capture the essence: the LLM sets up the structure declaratively (via tool
 but doesn't participate in the runtime execution loop.
 </code></pre>
 <h3 id="so-slow-man">So slow, man<a class="anchor" href="#so-slow-man">#</a></h3>
-<p>If you happened to download my code and tried to run it, you will see that it is slow — slow to load the calculator and slow to react to key presses.</p>
-<p>Who in their right mind would use something like this—something so slow for a simple calculator!</p>
+<p>If you happened to download my code and tried to run it, you will see that it is slow. Slow to load the calculator and slow to react to key presses.</p>
+<p>Who in their right mind would use something like this? Something so slow for a simple calculator!</p>
 <p>The code is slow because I really wanted to show how the paradigm works. &ldquo;Can you optimize it?&rdquo; Yes. When I was discussing with Claude how to approach this LLM-scaffolding idea, it suggested that the best approach would be hybrid: some interactions in the browser, others on the LLM. Check the conversation on the link above.</p>
 <p>So yes, I could speed it up a lot by adding some callbacks.</p>
 <p>The backend could use async execution combined with real queues—maybe even a different programming language.</p>
@@ -262,7 +262,7 @@ but doesn't participate in the runtime execution loop.
 <strong>What if the app you use all day could anticipate your desires?</strong>
 <strong>What if the UI could surface relevant information <strong>to you</strong>?</strong>
 <strong>What if the UI could present that information in a way that matters <strong>to you</strong>?</strong></p>
-<p>No matter what kind of app—be it JIRA, email, or trading software.</p>
+<p>No matter what kind of app. Be it JIRA, email, or trading software.</p>
 <p>Chat won&rsquo;t be the future UI. <a href="https://en.wikipedia.org/wiki/Her_%282013_film%29" 
   
    target="_blank" rel="noreferrer noopener" 
