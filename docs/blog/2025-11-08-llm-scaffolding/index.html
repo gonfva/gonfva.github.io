@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>LLM-scaffolding | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="LLM-scaffolding" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "LLM-scaffolding",
+      "headline" : "LLM-scaffolding",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2025",
+      "datePublished": "2025-10-08 18:30:00 \u002b0000 UTC",
+      "dateModified" : "2025-10-08 18:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2025-11-08-llm-scaffolding\/",
+      "wordCount" : "1253",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">LLM-scaffolding</h1>
+            
+            <h2>AI interfaces beyond the chat</h2>
+            
+            <time datetime="2025-10-08 18:30:00 &#43;0000 UTC" class="post__date">2025-10-08</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="llm-scaffolding">LLM-scaffolding<a class="anchor" href="#llm-scaffolding">#</a></h2>
+<p>A couple of weeks ago I went to an event about AI and trading. The usual &ldquo;oh yes, AI is great, it is going to change everything&rdquo;. But almost every speaker said something along the lines &ldquo;but it won&rsquo;t be a chat app&rdquo;.</p>
+<p>Yeah, chats are great. Everybody uses them.</p>
+<p>But I very much doubt that 5 years from now, the way we interact with AI will be a chatbox.</p>
+<p>But if not chat, what?</p>
+<p>In this post I&rsquo;m going to try to present a possible answer. A way of developing rich UIs that are AI centric.</p>
+<p>I tried to give a shorter version of this answer to someone who is technology savyy (hi Paul) and failed. I also tried to give an even shorter version of the answer to my wife, who is less savyy but has a lot of common sense. I failed as well.</p>
+<p>So let&rsquo;s try with a bit of a longer answer. This is a slightly meta post.</p>
+<h3 id="on-the-shoulders-of-giants">On the shoulders of giants<a class="anchor" href="#on-the-shoulders-of-giants">#</a></h3>
+<p>First I want to express this idea not something I came up myself with. I haven&rsquo;t seen the code for any demo of what I&rsquo;m presenting here today, but I can point to a few things that certainly contain the core.</p>
+<p>In my mind, I blame @javilop from Twitter/X for [opening my mind]. But the previous link is in Spanish, so I asked Grok to create <a href="https://x.com/i/grok/share/sDTJc64bZrjxVDWSqbL5hsUXV" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>a translation</a>. Pay attention to the section &ldquo;All software will run on the LLM layer&rdquo;. The other sections are very interesting as well, but that section is relevant for today.</p>
+<p>That is the stage. &ldquo;All software will run on the LLM layer&rdquo;</p>
+<p>The next reference I want to point at is <a href="https://gamengen.github.io/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>this other study from Google where they were able to run a model that generates images from Doom</a>, and that the images change in response to the user actions. So yes, people playing Doom but the game Doom is &ldquo;not coded&rdquo; anywhere. It is not that the model generates the code for the game Doom. The code is nowhere. The model generates images!!!</p>
+<p>The final reference is &ldquo;Imagine with Claude&rdquo;</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/dGiqrsv530Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I cannot emphasize how important this less-than-two-minutes clip is. If you haven&rsquo;t yet watched it, do it. Do it now. I won&rsquo;t be offended if you never return to this post (I will never know)</p>
+<h3 id="meet-llm-scaffolding-calculator">Meet llm-scaffolding-calculator<a class="anchor" href="#meet-llm-scaffolding-calculator">#</a></h3>
+<p>When I saw that video from Claude, I started thinking about it.</p>
+<p>In the end I <a href="https://claude.ai/share/415efcec-857a-4c99-a3d4-42c9565f8fa6" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>resorted to Claude</a>. Which provided <strong>a possible way</strong>. Is it the same way that &ldquo;Imagine with Claude&rdquo; was built? Maybe, maybe not. But I had to test it.</p>
+<p>And the test can be found as an open source project.</p>
+<p><a href="https://github.com/gonfva/LLM-Scaffolding-Calculator/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://github.com/gonfva/LLM-Scaffolding-Calculator/</a></p>
+<p>You can check it out and play with it. It will require an ANTHROPIC API key, and in my tests it consumed a non-trivial amount of tokens (1$ spend in a couple of days with very simple tests). Plugging in an API key in a random project might not be the best idea.</p>
+<p>But you can inspect the code and try to understand it. There is no real need to execute it.</p>
+<h3 id="how-does-it-work">How does it work?<a class="anchor" href="#how-does-it-work">#</a></h3>
+<p>It is a FastAPI python app, serving a websocket endpoint and a couple of static files</p>
+<p>On the websocket endpoint we have a Claude Agent with some tools defined (the tools are the key, so I will explain them better). Every interaction will be sent to the Claude API. The Claude API might invoke as part of its response &ldquo;use this tool&rdquo;.</p>
+<p>When a tool is used, it will change an internal state (that resides on the webserver). Then the loop on the websocket endpoint will send the new state to the frontend, that will change the AI accordingly.</p>
+<p>Copying a diagram that Claude code produced &hellip;</p>
+<pre><code>┌─────────────────────────────────────────────────┐
+│ LLM (Architect)                                 │
+│ - Understands user intent                       │
+│ - Designs UI structure                          │
+│ - Defines interaction rules                     │
+└────────────┬────────────────────────────────────┘
+             │
+             │ Tool Calls (JSON)
+             ▼
+┌─────────────────────────────────────────────────┐
+│ Backend (Mediator)                              │
+│ - Validates tool calls                          │
+│ - Manages session state                         │
+│ - Routes significant events back to LLM         │
+└────────────┬────────────────────────────────────┘
+             │
+             │ Rendering Instructions
+             ▼
+┌────────────────────────────────────────────────────────────────────────────────────┐
+│ Client (Executor)                                                                  │
+│ - Renders UI from tool calls                                                       │
+│ - Maybe executes behaviors locally (fast loop, not initially, optimization later)  │
+│ - Notifies backend only for significant events                                     │
+└────────────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3 id="the-primitives">The primitives<a class="anchor" href="#the-primitives">#</a></h3>
+<p>The key is to correctly define those tools that will be used by the Claude API. In Claude&rsquo;s words</p>
+<h4 id="defining-primitives-is-the-main-difficulty">Defining Primitives is the Main Difficulty</h4>
+<p>This is the hardest part of the whole system. You need to find the right abstraction level:</p>
+<ul>
+<li>Too low-level:</li>
+</ul>
+<pre><code>- create_div(id, class)
+- set_style(element_id, property, value)
+- add_event_listener(element_id, event, handler_id)
+</code></pre>
+<ul>
+<li>Too high-level:</li>
+</ul>
+<pre><code>- create_complete_calculator()
+- create_complete_text_editor()
+</code></pre>
+<ul>
+<li>Just right (probably):</li>
+</ul>
+<pre><code>- create_window(title, width, height) → window_id
+- add_text(window_id, content, style?)
+- add_input(window_id, type, placeholder) → input_id
+- add_button(window_id, label) → button_id
+- on_button_click(button_id) → trigger_event
+- get_input_value(input_id) → value
+- update_text(element_id, new_content)
+</code></pre>
+<p>The difficulty is:</p>
+<ul>
+<li><strong>Granularity</strong>: Finding the right level of abstraction</li>
+<li><strong>Event handling</strong>: Deciding which interactions loop back to Claude vs. handled client-side</li>
+<li><strong>State management</strong>: What state lives where (browser vs. backend vs. Claude&rsquo;s context)</li>
+</ul>
+<h3 id="why-the-name-llm-scaffolding">Why the name LLM-scaffolding?<a class="anchor" href="#why-the-name-llm-scaffolding">#</a></h3>
+<p>Because Claude decided it</p>
+<pre><code>My Personal Favorite:
+&quot;LLM-Scaffolded Interaction&quot; or &quot;Declarative Agent UI&quot;
+These capture the essence: the LLM sets up the structure declaratively (via tools),
+but doesn't participate in the runtime execution loop.
+</code></pre>
+<h3 id="so-slow-man">So slow, man<a class="anchor" href="#so-slow-man">#</a></h3>
+<p>If you happened to download my code and tried to run it you will see that it is slowly. Slow to load the calculator. Slow to react to the key press.</p>
+<p>Who in his/her right mind would use something like this? Something so slow for a simple calculator!!!</p>
+<p>The code is slow because I really wanted to show how the paradigm works. &ldquo;Can you optimize it?&rdquo; Yes. When I was discussing with Claude how to approach this LLM-scaffolding thing, it pointed that the best approach would be to have something hybrid (some interactions on the browser, some others on the LLM). Check the conversation on the link above.</p>
+<p>So, yes I could speed up a lot just adding some callbacks.</p>
+<p>And the backend server execution could make use of some async combined with real queues. Maybe even a different programming language.</p>
+<p>Do I need to send the whole state to the browser? Or only the deltas?</p>
+<p>Can I have create_calculator primitive?</p>
+<p>The number of optimizations are significant.</p>
+<p>But we would all miss the point.</p>
+<h3 id="but-why">But why?<a class="anchor" href="#but-why">#</a></h3>
+<p>&ldquo;OK. Let&rsquo;s assume speed doesn&rsquo;t matter. Why would you run a calculator with an LLM layer&rdquo;</p>
+<p>Ah, my friend. That&rsquo;s the key question.</p>
+<p>And the answer is
+<strong>what if the app you use all day could anticipate to your desires?</strong>
+<strong>What if the UI was able to surface relevant information <strong>to you</strong>.</strong>
+<strong>Present in a way that matters <strong>to you</strong>.</strong></p>
+<p>No matter what kind of app. Be it JIRA, email, or trading software.</p>
+<p>Chat won&rsquo;t be the future UI. And <a href="https://en.wikipedia.org/wiki/Her_%282013_film%29" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>&ldquo;Her&rdquo;</a> is an interesting movie, but I don&rsquo;t think it will be audio only either.</p>
+<h3 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h3>
+<p>I wanted to understand &ldquo;Imagine with Claude&rdquo;. I asked Claude. And I explored this LLM-scaffolding thing.</p>
+<p>I don&rsquo;t I don&rsquo;t even know if this was the way &ldquo;Imagine with Claude&rdquo; was coded. There might be a different way.</p>
+<p>But what I do see is that these interfaces might be coming.</p>
+<p>And I&rsquo;m not the only one</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Elon Musk tells Joe Rogan about what&#39;s to be expected with phones.<br><br> <a href="https://t.co/F8bCE2Tkac">pic.twitter.com/F8bCE2Tkac</a></p>&mdash; Joe Rogan Podcast News (@joeroganhq) <a href="https://twitter.com/joeroganhq/status/1984486335835414972?ref_src=twsrc%5Etfw">November 1, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/technology/">Technology</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Audio, emails, and agent coding</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2025</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sun, 14 Sep 2025 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 18:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM-scaffolding</title>
+      <link>https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/</link>
+      <pubDate>Wed, 08 Oct 2025 18:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/</guid>
+      <description>LLM-scaffolding A couple of weeks ago I went to an event about AI and trading. The usual &amp;ldquo;oh yes, AI is great, it is going to change everything&amp;rdquo;. But almost every speaker said something along the lines &amp;ldquo;but it won&amp;rsquo;t be a chat app&amp;rdquo;.</description>
+    </item>
     <item>
       <title>Audio, emails, and agent coding</title>
       <link>https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/</link>
