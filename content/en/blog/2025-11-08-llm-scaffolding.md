@@ -10,58 +10,57 @@ toc: false
 
 ## LLM-scaffolding
 
-A couple of weeks ago I went to an event about AI and trading. The usual "oh yes, AI is great, it is going to change everything". But almost every speaker said something along the lines "but it won't be a chat app".
+A couple of weeks ago, I went to an event about AI and trading. The usual "oh yes, AI is great, it is going to change everything." But almost every speaker said something along the lines, "but it won't be a chat app."
 
 Yeah, chats are great. Everybody uses them.
 
-But I very much doubt that 5 years from now, the way we interact with AI will be a chatbox.
+But I very much doubt that in five years the way we interact with AI will be a chatbox.
 
-But if not chat, what?
+But if not chat, then what?
 
-In this post I'm going to try to present a possible answer. A way of developing rich UIs that are AI centric.
+In this post I'm going to present a possible answer: a way of developing rich UIs that are AI-centric.
 
-I tried to give a shorter version of this answer to someone who is technology savyy (hi Paul) and failed. I also tried to give an even shorter version of the answer to my wife, who is less savyy but has a lot of common sense. I failed as well.
+I tried to give a shorter version of this answer to someone who is tech-savvy (hi Paul) and failed. I also tried to give an even shorter version to my wife, who is less savvy but has a lot of common sense. I failed as well.
 
 So let's try with a bit of a longer answer. This is a slightly meta post.
 
 ### On the shoulders of giants
 
-First I want to express this idea not something I came up myself with. I haven't seen the code for any demo of what I'm presenting here today, but I can point to a few things that certainly contain the core.
+First, I want to be clear that this idea is not something I came up with myself. I haven't seen the code for any demo of what I'm presenting here, but I can point to a few things that certainly contain the core.
 
 In my mind, I blame @javilop from Twitter/X for [opening my mind]. But the previous link is in Spanish, so I asked Grok to create [a translation](https://x.com/i/grok/share/sDTJc64bZrjxVDWSqbL5hsUXV). Pay attention to the section "All software will run on the LLM layer". The other sections are very interesting as well, but that section is relevant for today.
 
-That is the stage. "All software will run on the LLM layer"
+That is the stage: "All software will run on the LLM layer"
 
-The next reference I want to point at is [this other study from Google where they were able to run a model that generates images from Doom](https://gamengen.github.io/), and that the images change in response to the user actions. So yes, people playing Doom but the game Doom is "not coded" anywhere. It is not that the model generates the code for the game Doom. The code is nowhere. The model generates images!!!
+The next reference I want to point at is [this other study from Google where they were able to run a model that generates images from Doom](https://gamengen.github.io/), and the images change in response to user actions. So yes: people are playing Doom, but the game isn't "coded" anywhere. The model doesn't generate Doom's code; it generates images.
 
 The final reference is "Imagine with Claude"
 
 {{< youtube dGiqrsv530Y >}}
 
-I cannot emphasize how important this less-than-two-minutes clip is. If you haven't yet watched it, do it. Do it now. I won't be offended if you never return to this post (I will never know)
+I cannot emphasize how important this less-than-two-minute clip is. If you haven't watched it, do so now. I won't be offended if you never return to this post (I will never know).
 
 ### Meet llm-scaffolding-calculator
 
 When I saw that video from Claude, I started thinking about it.
 
-In the end I [resorted to Claude](https://claude.ai/share/415efcec-857a-4c99-a3d4-42c9565f8fa6). Which provided **a possible way**. Is it the same way that "Imagine with Claude" was built? Maybe, maybe not. But I had to test it.
+In the end I [resorted to Claude](https://claude.ai/share/415efcec-857a-4c99-a3d4-42c9565f8fa6), which provided **a possible way**. Is it the same way that "Imagine with Claude" was built? Maybe, maybe not. But I had to test it.
 
-And the test can be found as an open source project.
+The test is available as an open-source project.
 
 https://github.com/gonfva/LLM-Scaffolding-Calculator/
 
-You can check it out and play with it. It will require an ANTHROPIC API key, and in my tests it consumed a non-trivial amount of tokens (1$ spend in a couple of days with very simple tests). Plugging in an API key in a random project might not be the best idea.
+You can check it out and play with it. It requires an ANTHROPIC API key. In my tests it consumed a non-trivial number of tokens (about $1 spent in a couple of days with very simple tests). Plugging an API key into a random project might not be the best idea.
 
 But you can inspect the code and try to understand it. There is no real need to execute it.
 
-
 ### How does it work?
 
-It is a FastAPI python app, serving a websocket endpoint and a couple of static files
+It's a FastAPI Python app that serves a WebSocket endpoint and a couple of static files.
 
-On the websocket endpoint we have a Claude Agent with some tools defined (the tools are the key, so I will explain them better). Every interaction will be sent to the Claude API. The Claude API might invoke as part of its response "use this tool".
+At the WebSocket endpoint we have a Claude agent with some tools defined (the tools are the key; I'll explain them below). Every interaction is sent to the Claude API. The Claude API might respond by invoking a tool.
 
-When a tool is used, it will change an internal state (that resides on the webserver). Then the loop on the websocket endpoint will send the new state to the frontend, that will change the AI accordingly.
+When a tool is used, it changes internal state on the webserver. The WebSocket loop then sends the new state to the frontend, which updates the UI accordingly.
 
 Copying a diagram that Claude code produced ...
 
@@ -94,8 +93,16 @@ Copying a diagram that Claude code produced ...
 
 ### The primitives
 
-The key is to correctly define those tools that will be used by the Claude API. In Claude's words
+You can see the code but these were the tools defined:
 
++ display_text
++ create_button
++ create_container
++ update_element
+
+These are only a set of possible options. And the key is correctly defining the tools used by the Claude API.
+
+I'm going to paste here a copy from my conversation with Claude above.
 
 #### Defining Primitives is the Main Difficulty
 
@@ -141,45 +148,45 @@ but doesn't participate in the runtime execution loop.
 
 ### So slow, man
 
-If you happened to download my code and tried to run it you will see that it is slowly. Slow to load the calculator. Slow to react to the key press.
+If you happened to download my code and tried to run it, you will see that it is slow. Slow to load the calculator and slow to react to key presses.
 
-Who in his/her right mind would use something like this? Something so slow for a simple calculator!!!
+Who in their right mind would use something like this? Something so slow for a simple calculator!
 
-The code is slow because I really wanted to show how the paradigm works. "Can you optimize it?" Yes. When I was discussing with Claude how to approach this LLM-scaffolding thing, it pointed that the best approach would be to have something hybrid (some interactions on the browser, some others on the LLM). Check the conversation on the link above.
+The code is slow because I really wanted to show how the paradigm works. "Can you optimize it?" Yes. When I was discussing with Claude how to approach this LLM-scaffolding idea, it suggested that the best approach would be hybrid: some interactions in the browser, others on the LLM. Check the conversation on the link above.
 
-So, yes I could speed up a lot just adding some callbacks.
+So yes, I could speed it up a lot by adding some callbacks.
 
-And the backend server execution could make use of some async combined with real queues. Maybe even a different programming language.
+The backend could use async execution combined with real queues—maybe even a different programming language.
 
 Do I need to send the whole state to the browser? Or only the deltas?
 
-Can I have create_calculator primitive?
+Can I have a create_calculator primitive?
 
-The number of optimizations are significant.
+There are many possible optimizations.
 
 
 But we would all miss the point.
 
 ### But why?
 
-"OK. Let's assume speed doesn't matter. Why would you run a calculator with an LLM layer"
+"OK. Let's assume speed doesn't matter. Why would you run a calculator with an LLM layer?"
 
 Ah, my friend. That's the key question.
 
 And the answer is
-    __what if the app you use all day could anticipate to your desires?__
-    __What if the UI was able to surface relevant information **to you**.__
-    __Present in a way that matters **to you**.__
+__What if the app you use all day could anticipate your desires?__
+__What if the UI could surface relevant information **to you**?__
+__What if the UI could present the relevant information in a way that matters **to you**?.__
 
 No matter what kind of app. Be it JIRA, email, or trading software.
 
-Chat won't be the future UI. And ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie, but I don't think it will be audio only either.
+Chat won't be the future UI. ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie, but I don't think the future will be audio only either.
 
 ### Conclusion
 
-I wanted to understand "Imagine with Claude". I asked Claude. And I explored this LLM-scaffolding thing.
+I wanted to understand "Imagine with Claude", so I asked Claude and explored this LLM-scaffolding approach.
 
-I don't I don't even know if this was the way "Imagine with Claude" was coded. There might be a different way.
+I don't even know if this was how "Imagine with Claude" was built. There might be a different way.
 
 But what I do see is that these interfaces might be coming.
 
