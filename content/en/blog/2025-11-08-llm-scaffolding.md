@@ -37,7 +37,7 @@ https://github.com/gonfva/LLM-Scaffolding-Calculator/
 
 First, I want to be clear that this idea is not something I came up with myself. I haven't seen the code for any demo of what I'm presenting here, but I can point to a few things that certainly contain the core.
 
-In my mind, I blame @javilop from Twitter/X for [opening my mind]. But the previous link is in Spanish, so I asked Grok to create [a translation](https://x.com/i/grok/share/sDTJc64bZrjxVDWSqbL5hsUXV). Pay attention to the section "All software will run on the LLM layer". The other sections are very interesting as well, but that section is relevant for today.
+In my mind, I blame @javilop from Twitter/X for [opening my mind](https://x.com/javilop/status/1954578846885277924). But the previous link is in Spanish, so I asked Grok to create [a translation](https://x.com/i/grok/share/sDTJc64bZrjxVDWSqbL5hsUXV). Pay attention to the section "All software will run on the LLM layer". The other sections are very interesting as well, but that section is relevant for today.
 
 That is the stage: "All software will run on the LLM layer"
 
