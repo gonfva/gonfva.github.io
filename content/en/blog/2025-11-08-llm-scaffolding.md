@@ -22,7 +22,16 @@ In this post I'm going to present a possible answer: a way of developing rich UI
 
 I tried to give a shorter version of this answer to someone who is tech-savvy (hi Paul) and failed. I also tried to give an even shorter version to my wife, who is less savvy but has a lot of common sense. I failed as well.
 
-So let's try with a bit of a longer answer. This is a slightly meta post.
+So let's try with a bit of a longer answer.
+
+But if you've come for the calculator, this is how it looks:
+
+![](/img/llm-scaffolding-calculator.png)
+
+and this is where you can find it:
+
+https://github.com/gonfva/LLM-Scaffolding-Calculator/
+
 
 ### On the shoulders of giants
 
@@ -46,23 +55,21 @@ When I saw that video from Claude, I started thinking about it.
 
 In the end I [resorted to Claude](https://claude.ai/share/415efcec-857a-4c99-a3d4-42c9565f8fa6), which provided **a possible way**. Is it the same way that "Imagine with Claude" was built? Maybe, maybe not. But I had to test it.
 
-The test is available as an open-source project.
+The test is available as an [open-source project](https://github.com/gonfva/LLM-Scaffolding-Calculator/).
 
-https://github.com/gonfva/LLM-Scaffolding-Calculator/
-
-You can check it out and play with it. It requires an ANTHROPIC API key. In my tests it consumed a non-trivial number of tokens (about $1 spent in a couple of days with very simple tests). Plugging an API key into a random project might not be the best idea.
+You can check it out and play with it. It requires an ANTHROPIC API key. In my tests it consumed a non-trivial number of tokens (it cost about $1 over a couple of days with very simple tests). Plugging an API key into a random project might not be the best idea.
 
 But you can inspect the code and try to understand it. There is no real need to execute it.
 
 ### How does it work?
 
-It's a FastAPI Python app that serves a WebSocket endpoint and a couple of static files.
+It's a FastAPI app (Python) that serves a WebSocket endpoint and a couple of static files.
 
 At the WebSocket endpoint we have a Claude agent with some tools defined (the tools are the key; I'll explain them below). Every interaction is sent to the Claude API. The Claude API might respond by invoking a tool.
 
 When a tool is used, it changes internal state on the webserver. The WebSocket loop then sends the new state to the frontend, which updates the UI accordingly.
 
-Copying a diagram that Claude code produced ...
+Copying a diagram that Claude produced:
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -102,7 +109,7 @@ You can see the code but these were the tools defined:
 
 These are only a set of possible options. And the key is correctly defining the tools used by the Claude API.
 
-I'm going to paste here a copy from my conversation with Claude above.
+I'm going to paste a copy from my conversation with Claude below.
 
 #### Defining Primitives is the Main Difficulty
 
@@ -148,9 +155,9 @@ but doesn't participate in the runtime execution loop.
 
 ### So slow, man
 
-If you happened to download my code and tried to run it, you will see that it is slow. Slow to load the calculator and slow to react to key presses.
+If you happened to download my code and tried to run it, you will see that it is slow — slow to load the calculator and slow to react to key presses.
 
-Who in their right mind would use something like this? Something so slow for a simple calculator!
+Who in their right mind would use something like this—something so slow for a simple calculator!
 
 The code is slow because I really wanted to show how the paradigm works. "Can you optimize it?" Yes. When I was discussing with Claude how to approach this LLM-scaffolding idea, it suggested that the best approach would be hybrid: some interactions in the browser, others on the LLM. Check the conversation on the link above.
 
@@ -176,11 +183,11 @@ Ah, my friend. That's the key question.
 And the answer is
 __What if the app you use all day could anticipate your desires?__
 __What if the UI could surface relevant information **to you**?__
-__What if the UI could present the relevant information in a way that matters **to you**?.__
+__What if the UI could present that information in a way that matters **to you**?__
 
-No matter what kind of app. Be it JIRA, email, or trading software.
+No matter what kind of app—be it JIRA, email, or trading software.
 
-Chat won't be the future UI. ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie, but I don't think the future will be audio only either.
+Chat won't be the future UI. ["Her"](https://en.wikipedia.org/wiki/Her_(2013_film)) is an interesting movie, but I don't think the future will be audio-only either.
 
 ### Conclusion
 
