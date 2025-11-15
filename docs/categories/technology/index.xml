@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
-    <lastBuildDate>Sat, 08 Nov 2025 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 12:30:00 +0000</lastBuildDate>
     <atom:link href="https://gonzalo.f-v.es/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some musings on agents</title>
+      <link>https://gonzalo.f-v.es/blog/2025-11-15-adk-vs-casdk/</link>
+      <pubDate>Sat, 15 Nov 2025 12:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-11-15-adk-vs-casdk/</guid>
+      <description>Some musings on agents This week I followed an interesting course on AI agents.&#xA;Many of you might have heard about agents. AI agents are an evolution of the initial language models that performed only discrete tasks (translate, answer a question, etc.</description>
+    </item>
     <item>
       <title>LLM-scaffolding</title>
       <link>https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/</link>

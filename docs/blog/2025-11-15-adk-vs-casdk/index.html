@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Some musings on agents | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2025-11-15-adk-vs-casdk/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Some musings on agents" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Some musings on agents",
+      "headline" : "Some musings on agents",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2025",
+      "datePublished": "2025-11-15 12:30:00 \u002b0000 UTC",
+      "dateModified" : "2025-11-15 12:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2025-11-15-adk-vs-casdk\/",
+      "wordCount" : "613",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Some musings on agents</h1>
+            
+            <h2>Agent Development Kit vs Claude Agent SDK</h2>
+            
+            <time datetime="2025-11-15 12:30:00 &#43;0000 UTC" class="post__date">2025-11-15</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="some-musings-on-agents">Some musings on agents<a class="anchor" href="#some-musings-on-agents">#</a></h2>
+<p>This week I followed an interesting <a href="https://www.kaggle.com/learn-guide/5-day-agents" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>course on AI agents</a>.</p>
+<p>Many of you might have heard about agents. AI agents are an evolution of the initial language models that performed only discrete tasks (translate, answer a question, etc.).</p>
+<p>They have a (limited) ability to reason and act. As one whitepaper describes, they usually incorporate the language model (&ldquo;the brain&rdquo;), some tools (&ldquo;the hands&rdquo;), and the orchestration layer (&ldquo;the nervous system&rdquo;).</p>
+<p>I had heard about agents, but I hadn&rsquo;t looked into them, and this course has been eye-opening.</p>
+<p>To the point that I recognized some of the patterns (and gotchas) I had been following (and finding).</p>
+<p>For example, in <a href="https://kids.xowit.com" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Kids-Xowit</a> I <a href="https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/#safety" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>called</a> one LLM to verify a prompt, then another LLM to generate a story, then another LLM to verify the story, then TTS to generate audio. But these calls were explicit, in code. Not from an agent</p>
+<h3 id="the-hammer-and-the-nail-and-all-that">The hammer and the nail and all that&hellip;<a class="anchor" href="#the-hammer-and-the-nail-and-all-that">#</a></h3>
+<p>Once I discovered Google&rsquo;s Agent Development Kit (ADK), that workflow mapped naturally to a linear workflow agent with subagents. For Kids-Xowit, I could define a <a href="https://google.github.io/adk-docs/agents/workflow-agents/sequential-agents/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Sequential Agent</a> that invokes:</p>
+<ul>
+<li>Subagent 1 (<a href="https://google.github.io/adk-docs/agents/llm-agents/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>LlmAgent</a> with a verifier model): Takes user prompt, outputs if it is a valid prompt.</li>
+<li>Subagent 2 (another LlmAgent): Generates the story using the verified prompt.</li>
+<li>Subagent 3 (verifier again): Scores/refines the story for age-appropriateness.</li>
+<li>Subagent 4 (tool-integrated agent): Calls Google TTS for audio, treating it as a custom function tool.</li>
+</ul>
+<h3 id="claude-agent-sdk-casdk-vs-googles-agent-development-kit-adk">Claude Agent SDK (CASDK) vs Google&rsquo;s Agent Development Kit (ADK)<a class="anchor" href="#claude-agent-sdk-casdk-vs-googles-agent-development-kit-adk">#</a></h3>
+<p>This came as a bit of a surprise. I had thought CASDK was more advanced (certainly Claude Code, which is based on the SDK, seems very powerful). However, ADK felt significantly more powerful in its primitives.</p>
+<p>Whether or not the underlying models are better is a completely different topic. It seems you can use ADK with, for example, <a href="https://www.litellm.ai/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>LiteLLM</a>.</p>
+<p>In general, CASDK seemed more like &ldquo;trust it will work,&rdquo; while ADK is more explicit. That&rsquo;s assuming you don&rsquo;t need explicit filesystem tools (we&rsquo;re talking about web applications). The automatic context compaction in CASDK is relevant. But apart from that, CASDK seemed incredibly poor compared with the Lego approach of ADK.</p>
+<p>&ldquo;What am I missing?&rdquo;</p>
+<h3 id="level-4">Level 4<a class="anchor" href="#level-4">#</a></h3>
+<p>To give a bit of context, one of the whitepapers in the course classifies agents into 5 levels:</p>
+<ul>
+<li>Level 0 is the original core reasoning. Models could only reply based on what they &ldquo;know&rdquo; internally.</li>
+<li>Level 1 (connected problem solver) is more advanced. It can get information from outside.</li>
+<li>Level 2 (strategic problem solver) is even more advanced and can plan multiple steps.</li>
+<li>Level 3 (collaborative multi-agent) moves from a single super-agent to a team of specialists.</li>
+<li>Level 4 (self evolving system). When the agent detects something that it cannot do, it builds an agent, and then it invokes the agent.</li>
+</ul>
+<p>With that context, I was thinking about some project (hi Phil) and discussing it with Claude Code. I arrived at something worth sharing. I asked, &ldquo;I&rsquo;m going to share this. Could you generate a PDF on it&rdquo;</p>
+<p>I thought that maybe it was going to use a common tool or something.</p>
+<p>Instead, Claude Code (which is now an agent itself) detected it didn&rsquo;t have access to such a tool, so it proceeded to generate the Python code for a (narrow) tool that created the PDF, and then it invoked that tool.</p>
+<p>And it did an amazing job (apart from the links at the end).</p>
+<p>If you don&rsquo;t trust me, see the <a href="https://claude.ai/share/10f4e69b-8c78-40cf-a1aa-44563123416b" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>CC chat</a>.</p>
+<p>So Claude Code (and, I assume, Claude Agent SDK) can build its own agents!</p>
+<div class="tenor-gif-embed" data-postid="17552382" data-share-method="host" data-aspect-ratio="1.52381" data-width="100%"><a href="https://tenor.com/view/blow-mind-mind-blown-explode-gif-17552382">Blow Mind Mind Blown GIF</a>from <a href="https://tenor.com/search/blow+mind-gifs">Blow Mind GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<p>Maybe Claude Agent SDK is not so poor after all!</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/technology/">Technology</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/agents/">Agents</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">LLM-scaffolding</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2025</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
