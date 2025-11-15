@@ -68,7 +68,7 @@
       "datePublished": "2025-11-15 12:30:00 \u002b0000 UTC",
       "dateModified" : "2025-11-15 12:30:00 \u002b0000 UTC",
       "url" : "https:\/\/gonzalo.f-v.es\/blog\/2025-11-15-adk-vs-casdk\/",
-      "wordCount" : "613",
+      "wordCount" : "679",
       "keywords" : ["Blog"]
     }
   
@@ -121,15 +121,15 @@
           </header>
           <article class="post__content">
               
-<h2 id="some-musings-on-agents">Some musings on agents<a class="anchor" href="#some-musings-on-agents">#</a></h2>
+<h2 id="discovering-agents">Discovering agents<a class="anchor" href="#discovering-agents">#</a></h2>
 <p>This week I followed an interesting <a href="https://www.kaggle.com/learn-guide/5-day-agents" 
   
    target="_blank" rel="noreferrer noopener" 
 >course on AI agents</a>.</p>
-<p>Many of you might have heard about agents. AI agents are an evolution of the initial language models that performed only discrete tasks (translate, answer a question, etc.).</p>
-<p>They have a (limited) ability to reason and act. As one whitepaper describes, they usually incorporate the language model (&ldquo;the brain&rdquo;), some tools (&ldquo;the hands&rdquo;), and the orchestration layer (&ldquo;the nervous system&rdquo;).</p>
-<p>I had heard about agents, but I hadn&rsquo;t looked into them, and this course has been eye-opening.</p>
-<p>To the point that I recognized some of the patterns (and gotchas) I had been following (and finding).</p>
+<p>Many of you might have heard about agents. I had heard about agents, but I hadn&rsquo;t looked into them 😳, and this course has been eye-opening.</p>
+<p>But for those who (like me a week ago) don&rsquo;t have a clear picture, AI agents are an evolution of the initial language models that performed only discrete tasks (translate, answer a question, etc.).</p>
+<p>They have a (limited) ability to reason and act. As one of the whitepapers in the course describes it, they usually incorporate the language model (&ldquo;the brain&rdquo;), some tools (&ldquo;the hands&rdquo;), and the orchestration layer (&ldquo;the nervous system&rdquo;).</p>
+<p>After the course, I have started recognized some of the patterns (and gotchas) I had been following (and finding).</p>
 <p>For example, in <a href="https://kids.xowit.com" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -138,7 +138,7 @@
    target="_blank" rel="noreferrer noopener" 
 >called</a> one LLM to verify a prompt, then another LLM to generate a story, then another LLM to verify the story, then TTS to generate audio. But these calls were explicit, in code. Not from an agent</p>
 <h3 id="the-hammer-and-the-nail-and-all-that">The hammer and the nail and all that&hellip;<a class="anchor" href="#the-hammer-and-the-nail-and-all-that">#</a></h3>
-<p>Once I discovered Google&rsquo;s Agent Development Kit (ADK), that workflow mapped naturally to a linear workflow agent with subagents. For Kids-Xowit, I could define a <a href="https://google.github.io/adk-docs/agents/workflow-agents/sequential-agents/" 
+<p>Once I discovered Google&rsquo;s Agent Development Kit (ADK), that workflow mapped naturally to a linear workflow agent with subagents. So for Kids-Xowit, I could define a <a href="https://google.github.io/adk-docs/agents/workflow-agents/sequential-agents/" 
   
    target="_blank" rel="noreferrer noopener" 
 >Sequential Agent</a> that invokes:</p>
@@ -152,14 +152,15 @@
 <li>Subagent 4 (tool-integrated agent): Calls Google TTS for audio, treating it as a custom function tool.</li>
 </ul>
 <h3 id="claude-agent-sdk-casdk-vs-googles-agent-development-kit-adk">Claude Agent SDK (CASDK) vs Google&rsquo;s Agent Development Kit (ADK)<a class="anchor" href="#claude-agent-sdk-casdk-vs-googles-agent-development-kit-adk">#</a></h3>
-<p>This came as a bit of a surprise. I had thought CASDK was more advanced (certainly Claude Code, which is based on the SDK, seems very powerful). However, ADK felt significantly more powerful in its primitives.</p>
-<p>Whether or not the underlying models are better is a completely different topic. It seems you can use ADK with, for example, <a href="https://www.litellm.ai/" 
+<p>This came as a bit of a surprise. I had thought CASDK was more advanced (certainly Claude Code, which is based on the SDK, seems very powerful).</p>
+<p>However, ADK felt significantly more powerful in its primitives.</p>
+<p>In general, CASDK seemed more like &ldquo;trust it will work,&rdquo; while ADK is more explicit. That&rsquo;s assuming you don&rsquo;t need explicit filesystem tools (we&rsquo;re talking about web applications). The automatic context compaction in CASDK is relevant. But apart from that, CASDK seemed incredibly poor compared with the Lego approach of ADK.</p>
+<p>Whether or not the underlying models are better is a completely different topic. For example, it seems you can use ADK with <a href="https://www.litellm.ai/" 
   
    target="_blank" rel="noreferrer noopener" 
->LiteLLM</a>.</p>
-<p>In general, CASDK seemed more like &ldquo;trust it will work,&rdquo; while ADK is more explicit. That&rsquo;s assuming you don&rsquo;t need explicit filesystem tools (we&rsquo;re talking about web applications). The automatic context compaction in CASDK is relevant. But apart from that, CASDK seemed incredibly poor compared with the Lego approach of ADK.</p>
+>LiteLLM</a>. So it is not ADK leads you to Gemini only.</p>
 <p>&ldquo;What am I missing?&rdquo;</p>
-<h3 id="level-4">Level 4<a class="anchor" href="#level-4">#</a></h3>
+<h3 id="level-4">Level 4?<a class="anchor" href="#level-4">#</a></h3>
 <p>To give a bit of context, one of the whitepapers in the course classifies agents into 5 levels:</p>
 <ul>
 <li>Level 0 is the original core reasoning. Models could only reply based on what they &ldquo;know&rdquo; internally.</li>
@@ -170,15 +171,19 @@
 </ul>
 <p>With that context, I was thinking about some project (hi Phil) and discussing it with Claude Code. I arrived at something worth sharing. I asked, &ldquo;I&rsquo;m going to share this. Could you generate a PDF on it&rdquo;</p>
 <p>I thought that maybe it was going to use a common tool or something.</p>
-<p>Instead, Claude Code (which is now an agent itself) detected it didn&rsquo;t have access to such a tool, so it proceeded to generate the Python code for a (narrow) tool that created the PDF, and then it invoked that tool.</p>
+<p>Instead, Claude Code (which is now an agent itself) detected it didn&rsquo;t have access to a general tool. It seems to know there is a skill, but the skill is more like a framework. And following that framework it proceeded to generate the Python code for a (narrow) tool that created the PDF, and then it invoked that tool.</p>
 <p>And it did an amazing job (apart from the links at the end).</p>
 <p>If you don&rsquo;t trust me, see the <a href="https://claude.ai/share/10f4e69b-8c78-40cf-a1aa-44563123416b" 
   
    target="_blank" rel="noreferrer noopener" 
 >CC chat</a>.</p>
-<p>So Claude Code (and, I assume, Claude Agent SDK) can build its own agents!</p>
+<p>I&rsquo;m not saying that&rsquo;s level 4. But Claude Code (and, I assume, Claude Agent SDK) can build its own tools!!</p>
 <div class="tenor-gif-embed" data-postid="17552382" data-share-method="host" data-aspect-ratio="1.52381" data-width="100%"><a href="https://tenor.com/view/blow-mind-mind-blown-explode-gif-17552382">Blow Mind Mind Blown GIF</a>from <a href="https://tenor.com/search/blow+mind-gifs">Blow Mind GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 <p>Maybe Claude Agent SDK is not so poor after all!</p>
+<p>And maybe I need to rethink my <a href="https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/" 
+  
+  
+>LLM scaffolding project</a>.</p>
 
 
               
