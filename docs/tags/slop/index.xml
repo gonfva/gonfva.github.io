@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slop on Gonzalo&#39;s thoughts</title>
+    <link>https://gonzalo.f-v.es/tags/slop/</link>
+    <description>Recent content in Slop on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
+    <lastBuildDate>Sat, 21 Jun 2025 18:30:00 +0000</lastBuildDate>
+    <atom:link href="https://gonzalo.f-v.es/tags/slop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kids-Xowit and vibe coding</title>
+      <link>https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/</link>
+      <pubDate>Sat, 21 Jun 2025 18:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/</guid>
+      <description>Kids-Xowit A couple of months ago I mentioned that I wanted to keep experimenting.&#xA;At that point I had launched Xowit. Xowit is something I want to keep exploring and I have another two updates in the works with natural language discovery, and in-app reading.</description>
+    </item>
+    <item>
+      <title>Low-background steel and AI</title>
+      <link>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</link>
+      <pubDate>Sun, 12 Nov 2023 17:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/</guid>
+      <description>A few months ago I heard for the first time the term low-background steel.&#xA;It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere.</description>
+    </item>
+  </channel>
+</rss>

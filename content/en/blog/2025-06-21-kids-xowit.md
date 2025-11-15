@@ -4,6 +4,8 @@ title: Kids-Xowit and vibe coding
 subtitle: Chief Vibe-coding Officer (CVO)?
 tags:
   - Technology
+  - Agents
+  - Slop
 categories: [Technology]
 toc: false
 ---

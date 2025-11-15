@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agents on Gonzalo&#39;s thoughts</title>
+    <link>https://gonzalo.f-v.es/tags/agents/</link>
+    <description>Recent content in Agents on Gonzalo&#39;s thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Gonzalo Fernandez-Victorio {year}</copyright>
+    <lastBuildDate>Sat, 08 Nov 2025 18:30:00 +0000</lastBuildDate>
+    <atom:link href="https://gonzalo.f-v.es/tags/agents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM-scaffolding</title>
+      <link>https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/</link>
+      <pubDate>Sat, 08 Nov 2025 18:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/</guid>
+      <description>LLM-scaffolding A couple of weeks ago, I went to an event about AI and trading. The usual &amp;ldquo;oh yes, AI is great, it is going to change everything.&amp;rdquo; But almost every speaker said something along the lines, &amp;ldquo;but it won&amp;rsquo;t be a chat app.</description>
+    </item>
+    <item>
+      <title>Audio, emails, and agent coding</title>
+      <link>https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/</link>
+      <pubDate>Sun, 14 Sep 2025 18:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/</guid>
+      <description>Email Whispery After Xowit and Kids Xowit, the third experiment of the year is up.&#xA;It&amp;rsquo;s called Email Whispery.&#xA;It produces brief email summaries in an audio format.&#xA;You give temporary access to your email account (yes, I know it is a big ask, and I wouldn&amp;rsquo;t use such an app).</description>
+    </item>
+    <item>
+      <title>Kids-Xowit and vibe coding</title>
+      <link>https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/</link>
+      <pubDate>Sat, 21 Jun 2025 18:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/</guid>
+      <description>Kids-Xowit A couple of months ago I mentioned that I wanted to keep experimenting.&#xA;At that point I had launched Xowit. Xowit is something I want to keep exploring and I have another two updates in the works with natural language discovery, and in-app reading.</description>
+    </item>
+    <item>
+      <title>Xowit</title>
+      <link>https://gonzalo.f-v.es/blog/2025-03-24-xowit/</link>
+      <pubDate>Tue, 25 Mar 2025 18:30:00 +0000</pubDate>
+      <guid>https://gonzalo.f-v.es/blog/2025-03-24-xowit/</guid>
+      <description>I&amp;rsquo;m always full of ideas.&#xA;But they never go beyond ideas.&#xA;Sometimes I would buy a domain and promise myself that &amp;ldquo;this is the one&amp;rdquo;. And the list of domains grows.</description>
+    </item>
+  </channel>
+</rss>

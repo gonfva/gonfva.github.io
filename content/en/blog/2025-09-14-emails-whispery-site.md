@@ -4,6 +4,7 @@ title: Audio, emails, and agent coding
 subtitle: This is the way. And I'd better learn how to do it
 tags:
   - Technology
+  - Agents
 categories: [Technology]
 toc: false
 ---

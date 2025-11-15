@@ -1,9 +1,10 @@
 ---
-date: 2025-10-08T18:30:00
+date: 2025-11-08T18:30:00
 title: LLM-scaffolding
 subtitle: AI interfaces beyond the chat
 tags:
   - Technology
+  - Agents
 categories: [Technology]
 toc: false
 ---

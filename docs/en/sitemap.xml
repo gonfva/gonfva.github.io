@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
+    <lastmod>2025-11-15T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -15,21 +15,8 @@
                 href="https://gonzalo.f-v.es/blog/"
                 />
   </url><url>
-    <loc>https://gonzalo.f-v.es/categories/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://gonzalo.f-v.es/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gonzalo.f-v.es/categories/"
-                />
-  </url><url>
     <loc>https://gonzalo.f-v.es/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
+    <lastmod>2025-11-15T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -41,11 +28,27 @@
                 href="https://gonzalo.f-v.es/"
                 />
   </url><url>
+    <loc>https://gonzalo.f-v.es/tags/agents/</loc>
+    <lastmod>2025-11-08T18:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gonzalo.f-v.es/categories/</loc>
+    <lastmod>2025-11-08T18:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://gonzalo.f-v.es/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gonzalo.f-v.es/categories/"
+                />
+  </url><url>
     <loc>https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
+    <lastmod>2025-11-08T18:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/tags/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
+    <lastmod>2025-11-08T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -58,10 +61,10 @@
                 />
   </url><url>
     <loc>https://gonzalo.f-v.es/tags/technology/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
+    <lastmod>2025-11-08T18:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/categories/technology/</loc>
-    <lastmod>2025-10-08T18:30:00+00:00</lastmod>
+    <lastmod>2025-11-08T18:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -77,6 +80,9 @@
     <lastmod>2025-09-14T18:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/</loc>
+    <lastmod>2025-06-21T18:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gonzalo.f-v.es/tags/slop/</loc>
     <lastmod>2025-06-21T18:30:00+00:00</lastmod>
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2025-05-25-asl3/</loc>

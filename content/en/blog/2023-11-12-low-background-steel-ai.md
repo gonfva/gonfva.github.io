@@ -4,10 +4,11 @@ title: Low-background steel and AI
 subtitle: AI generated content is changing everything
 tags:
   - Developer
+  - Slop
 categories: [Developer]
 ---
 
-A few months ago I heard for the first time the term [low-background steel](https://en.wikipedia.org/wiki/Low-background_steel). 
+A few months ago I heard for the first time the term [low-background steel](https://en.wikipedia.org/wiki/Low-background_steel).
 
 It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere. Since then, radiation levels have fallen almost to natural levels, but still it is a fascinating fact.
 
@@ -24,11 +25,10 @@ Those answers were posted to Gist(Github). Google crawled them.
 
 Now, Google returns one of those incorrect answers.
 
-This example is probably not uncommon in Google results. In my experience I'm getting more and more generated content in my Google searches. 
+This example is probably not uncommon in Google results. In my experience I'm getting more and more generated content in my Google searches.
 
-AI generated content is on the rise. Our tools are not prepared for that. 
+AI generated content is on the rise. Our tools are not prepared for that.
 
-Content pre-AI will be treasured. 
+Content pre-AI will be treasured.
 
 Like low-background steel.
-
