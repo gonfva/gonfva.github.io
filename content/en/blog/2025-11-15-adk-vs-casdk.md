@@ -13,9 +13,9 @@ toc: false
 
 This week I followed an interesting [course on AI agents](https://www.kaggle.com/learn-guide/5-day-agents).
 
-Many of you might have heard about agents. I had heard about agents, but I hadn't looked into them 😳, and this course has been eye-opening.
+Many of you might have heard about agents. I had heard about agents, but I hadn't looked into them in serious detail 😳, and this course has been eye-opening.
 
-But for those who (like me a week ago) don't have a clear picture, AI agents are an evolution of the initial language models that performed only discrete tasks (translate, answer a question, etc.).
+But for those who don't have a clear picture, AI agents are an evolution of the initial language models that performed only discrete tasks (translate, answer a question, etc.).
 
 They have a (limited) ability to reason and act. As one of the whitepapers in the course describes it, they usually incorporate the language model ("the brain"), some tools ("the hands"), and the orchestration layer ("the nervous system").
 
