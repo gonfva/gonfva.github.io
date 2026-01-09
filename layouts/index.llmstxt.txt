@@ -1,0 +1,77 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+>
+> Blog by {{ .Site.Params.author }}, covering technology, programming, and various technical topics.
+> Available in English and Spanish.
+
+## About
+
+{{ .Site.Params.author }} is a software engineer sharing thoughts and experiences through this blog.
+The blog has been active since 2008, with {{ len (where .Site.RegularPages "Type" "blog") }} posts covering a wide range of topics.
+
+- Website: {{ .Site.BaseURL }}
+- Blog (English): {{ .Site.BaseURL }}blog
+- Blog (Spanish): {{ .Site.BaseURL }}es/blog
+{{- if .Site.Params.github }}
+- GitHub: {{ .Site.Params.github }}
+{{- end }}
+{{- if .Site.Params.linkedin }}
+- LinkedIn: {{ .Site.Params.linkedin }}
+{{- end }}
+
+## Featured Posts
+
+{{- $featured := where .Site.RegularPages "Params.featured" true }}
+{{- if $featured }}
+{{- range $featured }}
+
+### {{ .Title }}
+{{- if .Params.subtitle }} - {{ .Params.subtitle }}{{ end }}
+
+- Published: {{ .Date.Format "2006-01-02" }}
+- URL: {{ .Permalink }}
+- Markdown: {{ .Permalink }}index.md
+{{- if .Params.tags }}
+- Tags: {{ delimit .Params.tags ", " }}
+{{- end }}
+{{- if .Summary }}
+
+{{ .Summary }}
+{{- end }}
+{{- end }}
+{{- else }}
+
+No featured posts have been marked yet. Add `featured: true` to post front matter to highlight posts here.
+{{- end }}
+
+## Recent Posts
+
+{{- range first 10 (where .Site.RegularPages "Type" "blog") }}
+
+### {{ .Title }}
+{{- if .Params.subtitle }} - {{ .Params.subtitle }}{{ end }}
+
+- Published: {{ .Date.Format "2006-01-02" }}
+- URL: {{ .Permalink }}
+- Markdown: {{ .Permalink }}index.md
+{{- if .Params.tags }}
+- Tags: {{ delimit .Params.tags ", " }}
+{{- end }}
+{{- end }}
+
+## Content Organization
+
+The blog is organized by categories and tags.
+
+{{- if .Site.Taxonomies.categories }}
+
+### Categories
+{{- range .Site.Taxonomies.categories.Alphabetical }}
+- {{ .Page.Title }} ({{ .Count }} posts)
+{{- end }}
+{{- end }}
+
+- **Tags**: Available at {{ .Site.BaseURL }}tags/
+
+For a complete list of all posts, visit {{ .Site.BaseURL }}blog

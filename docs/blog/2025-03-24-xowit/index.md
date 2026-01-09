@@ -1,0 +1,92 @@
+---title: Xowit
+date: 2025-03-25T18:30:00Z
+subtitle: If you're not embarrassed, you're too late
+categories: [Developer]
+tags: [Developer Agents Experiments]
+toc: true
+---
+
+I'm always full of ideas.
+
+But they never go beyond ideas.
+
+Sometimes I would buy a domain and promise myself that "this is the one". And the list of domains grows.
+
+## Experiment
+
+But this year I've decided I'm simply going to [experiment](https://www.goodreads.com/review/show/7424432804). I've lowered the level of what I want to achieve.
+
+My first experiment is about reading. I read too little. But I no longer want to ship the [Netflix of books](https://gonzalo.f-v.es/blog/2015-12-12-the-netflix-of-books/). I just want to use the wonderful [Project Gutenberg](https://www.gutenberg.org/). And if it is helpful for others, great.
+
+## AI
+
+However. It is not only that I have lowered expectations. The level of what I can do has increased.
+
+[AI is a multiplier](https://www.goodreads.com/review/show/7424479812). This first experiment has made signicant use of [Grok](https://x.com/i/grok), [Claude](https://claude.ai/) and [Claude code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview). From refining my idea, to writing the "copy" (text), to styles and images, to code.
+
+I've passed all the usual steps using AI. From *"OMG, this is frigging incredible"*, to *"no, claude-code, you cannot fix something just by putting a delay"*, to *"how the heck can you have copies of the same file in two different places and call it refactoring!!"*, to *"set aside and let me fix this project. I want something that even I can understand"*. And finally, back again to the vibe coding of "just change the styling of the project to make it visually more appealing" and wait for a commit that touches 20 files and makes an incredible job (yes my styling was much worse).
+
+Not only that. There is a bit of prompt engineering to get book recommendations. A very cheap model. Just to experiment without breaking the bank.
+
+And more important. From idea to up and running in **3 weekends**.
+
+![](/img/InitRepoXowit.png)
+
+AIs are amazing. And if you're not playing with them (yes, you, both my non-technical AND my technical friend), you're missing a lot.
+
+## And this is it
+
+This is the result:
+
+[Xowit](https://xowit.com)
+
+Xowit helps you get book recommendations **from** your Kindle **into** your Kindle. It scans your Kindle, suggest things that are similar to the ones you've read, and let's you one-click copy those suggestions to your Kindle.
+
+Yes, it is **free**. And considering the costs, it is likely to remain free.
+
+![](/img/xowit.png)
+
+Please, play with it and ping me. What do you like? What you don't like?
+
+## A bit of embarrassment
+
+Xowit probably will have bugs. I was going to launch it last Sunday and had the good sense of having my wife and one of my daughters to test it. It was not good.
+
+Also, the aesthetics are inconsistent and not great.
+
+The recommendation engine is ~~poor~~ budget friendly.
+
+<blockquote><p lang="en" dir="ltr">Yes. We should read more. But why only on Kindle?</p><p lang="en" dir="ltr">I hate the name. What kind of name is Xowit?</p><p lang="en" dir="ltr">Not all the books in my Kindle are interesting books. <b>Let me select the ones I like</b>.</p><p lang="en" dir="ltr">A bit more and you would have used Comic Sans. Wouldn't have been better to have a consistent style across the app instead of this "collage" of an app?</p></blockquote>
+
+You know the drill about how you should be embarrassed by a first version.
+
+I am proud of what I have, and embarrased of what it could have been and it is not.
+
+I will paste the original author of the quote.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">You may have heard me say: If you're not embarrassed by the first version of your product, you've launched too late</p>&mdash; by Reid Hoffman (@reidhoffman) <a href="https://x.com/reidhoffman/status/847142924240379904?lang=en">Mar 29, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+So here. To an early launch.
+
+## Some details
+
+For those more into tech, I might detail a bit more in a future post. But just to name a few technologies:
+
++ Javascript. Svelte (not NextJS/React).
++ Cloudflare. No, not AWS. Seriously, not AWS. Yes, I still like AWS. Also D1 database. R2 (not S3).
++ OpenAI `gpt-4o-mini`.
+
+The idea was to be as nimble as possible. I don't want to pay much for a experiment. The only fixed cost is R2 storage to store all books (Project Gutenberg doesn't allow you to link directly to a file). If my calculations are correct, that should be around 2.5$/month. OpenAI costs could be more significant, but all my testing resulted in a grand total of ... 2 cents.
+
+The actual code running might not end up costing a penny.
+
+If people start using this, costs will increase. But I doubt it will be such a success that I need to optimize.
+
+## Just one more thing
+
+I mentioned it at the beginning. This is only a first experiment.
+
+Sure, I will keep working on Xowit.
+
+But I've got more ideas. April is about to start!!!

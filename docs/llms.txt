@@ -1,0 +1,118 @@
+# Gonzalo's thoughts
+
+> Some thoughts about things
+>
+> Blog by Gonzalo Fernandez-Victorio, covering technology, programming, and various technical topics.
+> Available in English and Spanish.
+
+## About
+
+Gonzalo Fernandez-Victorio is a software engineer sharing thoughts and experiences through this blog.
+The blog has been active since 2008, with 175 posts covering a wide range of topics.
+
+- Website: https://gonzalo.f-v.es/
+- Blog (English): https://gonzalo.f-v.es/blog
+- Blog (Spanish): https://gonzalo.f-v.es/es/blog
+- GitHub: https://github.com/gonfva
+- LinkedIn: https://www.linkedin.com/in/gonzalofernandezvictorio/
+
+## Featured Posts
+
+No featured posts have been marked yet. Add `featured: true` to post front matter to highlight posts here.
+
+## Recent Posts
+
+### Some musings on agents - Agent Development Kit vs Claude Agent SDK
+
+- Published: 2025-11-15
+- URL: https://gonzalo.f-v.es/blog/2025-11-15-adk-vs-casdk/
+- Markdown: https://gonzalo.f-v.es/blog/2025-11-15-adk-vs-casdk/index.md
+- Tags: Technology, Agents
+
+### LLM-scaffolding - AI interfaces beyond the chat
+
+- Published: 2025-11-08
+- URL: https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/
+- Markdown: https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/index.md
+- Tags: Technology, Agents, Experiments
+
+### Audio, emails, and agent coding - This is the way. And I'd better learn how to do it
+
+- Published: 2025-09-14
+- URL: https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/
+- Markdown: https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/index.md
+- Tags: Technology, Agents, Experiments
+
+### Kids-Xowit and vibe coding - Chief Vibe-coding Officer (CVO)?
+
+- Published: 2025-06-21
+- URL: https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/
+- Markdown: https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/index.md
+- Tags: Technology, Agents, Slop, Experiments
+
+### What are LLMs? - No longer next token predictors
+
+- Published: 2025-05-25
+- URL: https://gonzalo.f-v.es/blog/2025-05-25-asl3/
+- Markdown: https://gonzalo.f-v.es/blog/2025-05-25-asl3/index.md
+- Tags: Technology
+
+### Xowit - If you're not embarrassed, you're too late
+
+- Published: 2025-03-25
+- URL: https://gonzalo.f-v.es/blog/2025-03-24-xowit/
+- Markdown: https://gonzalo.f-v.es/blog/2025-03-24-xowit/index.md
+- Tags: Developer, Agents, Experiments
+
+### Using WSL and Vagrant+Hyper-V together - Virtual networks in Windows
+
+- Published: 2024-12-14
+- URL: https://gonzalo.f-v.es/blog/2024-12-14-vagrant-hyperv-wsl-together/
+- Markdown: https://gonzalo.f-v.es/blog/2024-12-14-vagrant-hyperv-wsl-together/index.md
+- Tags: Developer
+
+### Python 3.11 in Ubuntu Xenial 16.04 - Reviving an old AWS Deeplens
+
+- Published: 2024-02-10
+- URL: https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/
+- Markdown: https://gonzalo.f-v.es/blog/2024-02-10-python-3-11-ubuntu-xenial/index.md
+- Tags: Developer
+
+### Fix timeout in ClusterInfoUpdateJob - Debugging issues in Elasticsearch
+
+- Published: 2024-01-04
+- URL: https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/
+- Markdown: https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/index.md
+- Tags: Developer
+
+### Low-background steel and AI - AI generated content is changing everything
+
+- Published: 2023-11-12
+- URL: https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/
+- Markdown: https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/index.md
+- Tags: Developer, Slop
+
+## Content Organization
+
+The blog is organized by categories and tags.
+
+### Categories
+- Civil Service (7 posts)
+- Ctoclick (2 posts)
+- Developer (66 posts)
+- Got Ya (24 posts)
+- Jobs (12 posts)
+- Jobs London Personal (1 posts)
+- London (4 posts)
+- London Personal (1 posts)
+- My Startup (1 posts)
+- News (1 posts)
+- Personal (30 posts)
+- Politics (16 posts)
+- Spain (11 posts)
+- Technology (47 posts)
+- This Blog (4 posts)
+
+- **Tags**: Available at https://gonzalo.f-v.es/tags/
+
+For a complete list of all posts, visit https://gonzalo.f-v.es/blog

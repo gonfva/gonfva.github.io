@@ -1,0 +1,85 @@
+# Las cosas de Gonzalo
+
+> Some thoughts about things
+>
+> Blog by Gonzalo Fernandez-Victorio, covering technology, programming, and various technical topics.
+> Available in English and Spanish.
+
+## About
+
+Gonzalo Fernandez-Victorio is a software engineer sharing thoughts and experiences through this blog.
+The blog has been active since 2008, with 7 posts covering a wide range of topics.
+
+- Website: https://gonzalo.f-v.es/
+- Blog (English): https://gonzalo.f-v.es/blog
+- Blog (Spanish): https://gonzalo.f-v.es/es/blog
+- GitHub: https://github.com/gonfva
+- LinkedIn: https://www.linkedin.com/in/gonzalofernandezvictorio/
+
+## Featured Posts
+
+No featured posts have been marked yet. Add `featured: true` to post front matter to highlight posts here.
+
+## Recent Posts
+
+### Vacunas (IV): Riesgos
+
+- Published: 2021-04-09
+- URL: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/
+- Markdown: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iv-conclusion/index.md
+- Tags: Covid19, Español, Noticias
+
+### Vacunas (III): Sputnik-V - De Guatemala a Guatepeor
+
+- Published: 2021-04-09
+- URL: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/
+- Markdown: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-iii-sputnik/index.md
+- Tags: Covid19, Español, Noticias
+
+### Vacunas (II): AstraZeneca - Cuando todos lo hacen mal, pero unos peor que otros.
+
+- Published: 2021-04-09
+- URL: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/
+- Markdown: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-ii-astrazeneca/index.md
+- Tags: Covid19, Español, Noticias
+
+### Vacunas (I): Riesgos - La seguridad absoluta no existe
+
+- Published: 2021-04-09
+- URL: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/
+- Markdown: https://gonzalo.f-v.es/es/blog/2021-04-09-vacunas-i-riesgos/index.md
+- Tags: Covid19, Español, Noticias
+
+### Coronavirus en UK - No es darwinismo, sino política basada en ciencia
+
+- Published: 2020-03-14
+- URL: https://gonzalo.f-v.es/es/blog/2020-03-14-coronavirus-en-uk/
+- Markdown: https://gonzalo.f-v.es/es/blog/2020-03-14-coronavirus-en-uk/index.md
+- Tags: Covid19, Español, Noticias
+
+### Lo del virus ese - Contra el coronavirus, lávate las manos y piensa
+
+- Published: 2020-02-29
+- URL: https://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/
+- Markdown: https://gonzalo.f-v.es/es/blog/2020-02-29-lo-del-virus-ese/index.md
+- Tags: Covid19, Español, Noticias
+
+### Google Duplex y las llamadas automáticas - La polémica más reciente
+
+- Published: 2018-05-14
+- URL: https://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/
+- Markdown: https://gonzalo.f-v.es/es/blog/2018-05-14-google-duplex-y-las-llamadas-autom-ticas/index.md
+- Tags: Technologia, Español
+
+## Content Organization
+
+The blog is organized by categories and tags.
+
+### Categories
+- En Español (1 posts)
+- News (5 posts)
+- Technology (1 posts)
+
+- **Tags**: Available at https://gonzalo.f-v.es/tags/
+
+For a complete list of all posts, visit https://gonzalo.f-v.es/blog

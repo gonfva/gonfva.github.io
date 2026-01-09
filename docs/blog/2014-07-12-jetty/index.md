@@ -1,0 +1,19 @@
+---title: Jetty
+date: 2014-07-12T17:39:00Z
+categories: [Developer got ya]
+tags: [Developer]
+---
+
+Lately I've had three different issues with Jetty. Two of them were those kind of issues that are not directly related to the problem. The third proved to be a bit more tricky.
+
+
+The first one was the typical example of "correlation does not equal causation". I started getting a weird error trying to run a Scala based web application in Jetty. And I kept received the following error "Could not create symlink /tmp". I thought it could be related to some kind of permissions issue. In the end the problem was more basic: I'd exhausted all the free space and nothing could be written to disk (and jetty couldn't create a symlink).
+
+
+The second one was one of those Doh! moments. My web application didn't respond to any request. But it didn't show any error in the logs. I'm quite ashamed of putting this in writing but the issue was that the web application was paused in a breakpoint while debugging.
+
+
+The third one was a bit strange. The web application obviously has static files. Some of the Javascript files were served correctly, other Javascript files weren't. The files not served were always the same. I didn't detect any specific pattern. But the fact was that Chrome would receive net::ERR_EMPTY_RESPONSE, and the Jetty was logging an exception `NoSuchMethodError` in `javax.servlet.http.HttpServletRequest.isAsyncStarted`
+
+
+The [typical answer](http://stackoverflow.com/questions/21510177/embedded-jetty-9) relates the problem to having several versions of the servlet api. But I somehow didn't pay too much attention because [sarcasm on] <sarcasm on="">everybody knows servlet-api.2.5 and javax.servlet-api-3.1.0 are not different versions of the same API [sarcasm off] (indeed they ARE different versions of the servlet API)<sarcasm off=""></sarcasm></sarcasm>

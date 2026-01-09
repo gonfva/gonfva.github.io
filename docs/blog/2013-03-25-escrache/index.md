@@ -1,0 +1,39 @@
+---title: Escrache
+date: 2013-03-25T22:22:45Z
+categories: [Politics Spain]
+tags: [Politics]
+---
+
+Imagine you´re a Member of Parliament. And you have decided you are not going to give your support to something. And then you get a group of people protesting against you.
+
+You would say. "Well, nothing new"
+
+
+... calling you cockroach and threatening to kill you.
+
+
+You would say something like "Well, you know. People sometimes say things they don't really think."
+
+... at the street in front of your home.
+
+{{< youtube tZH11RhdrrI >}}
+
+... or even inside your building and[ hitting the door of your flat while your children are inside and you are not there](http://www.levante-emv.com/comunitat-valenciana/2013/03/20/gonzalez-pons-inaceptable-aporreen-casa-hay-ninos/983345.html).
+
+
+I'm very worried. For several reasons
+
+
++ They are Member of Parliament. They are representing thousands of people.
++ MP are being harassed to make them vote something different (at best). Not trying to convince with reasons, but with fear.
++ They are being harassed not only at the Parliament or giving a speech in some random place. But at their homes. Threatening their neighbors with "it's not safe to live near an MP". Threatening their families.
++ The rhetoric (crockoachs, we are going to kill, you don't deserve living) shows the "objectification of the enemy". The enemy is everybody who does not think the same.
++ I hadn't heard the word [escrache](http://es.wikipedia.org/wiki/Escrache) until a month ago. But it is another symptom of a trend. It is not something new. It is not something big. It's some [little thing here](http://www.madridiario.es/2012/Diciembre/madrid/225459/tienda-guillotina-madrid-unica-europa.html16). [That comic strip there](http://www.elmundo.es/blogs/elmundo/elblogdesantiagogonzalez/2012/12/18/afinen-la-punteria.html). A [little piece of news over there](http://www.abc.es/sociedad/20130208/rc-grupo-anarquista-asume-bomba-201302081229.html).
+
+And last but not least, because the unemployment rate in Spain is over 26% for the general population and over 55% for people under 25 y.o.
+
+
+Some people say "Yes it's violence  **but**...". Yes. Violence is justified against people who think something different. And even [other members of Parliament support this form of pressure](https://www.facebook.com/alberto.garzon.espinosa/posts/435341839891927).
+
+
+However, every cloud has a silver lining. There are other MP that [oppose to this trend](http://rosadiez.net/2013/03/25/no/).

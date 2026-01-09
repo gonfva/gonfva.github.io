@@ -1,0 +1,64 @@
+---title: Jobs
+date: 2008-11-07T18:00:00Z
+categories: [Jobs]
+tags: [Jobs]
+---
+
+Sometimes I read a couple of posts not directly related, and I start to think
+about a topic I didn't expected.
+
+This time, it all started with a post of Enrique Dans.
+
+[Enrique asked what happens when your company is looking for new employees](http://www.enriquedans.com/2008/11/redes-sociales-profesionales-%C2%BFsabe-tu-empresa-que-te-quieres-ir.html), enters a professional social network like Linkedin to find the right person
+for the job, and discover that you have a completely updated profile, showing
+that in a way you’re "in the market".
+
+Enrique's post is very interesting as whole, but I kept thinking about what
+Enrique calls "the switchers": people who change from one work to another, and
+then to another, always looking for a better salary. And then I remember another
+tactic used by some of my coworkers: coming to my boss, telling him that he/she
+had and offer from another company and they were leaving, and getting a better
+salary for not leaving.
+
+For me, jobs are more than salary, but I always thought it was a bad game for
+the companies, as they were rewarding the people less faithful.
+
+I think it would be better to pay your employees what you think you can AND
+should pay. Trying to "retain talent" before "talent" is even concious he/she
+can leave, or before he/she is wanting to leave.
+
+Those were my thoughts when turned up
+[Seth Godin](https://sethgodin.typepad.com/seths_blog/2008/11/the-9010-rule-o.html) writing a key thought
+
+If talent is so important that you are betting the company on it, why aren't
+you actually investing in finding and retaining that talent?
+
+May I ask you to read it again?
+
+Ten years ago, job offers came in many cases mouth to ear or from the newspaper.
+And a new employee was very similar to another new employee. Sort of meat at a
+butcher's. There were also headhunter but they were very expensive and for key
+positions.
+
+Today it **seems** to be the same. But now
+the game is different. Seth was telling it to the employers, but it could be
+aplied to the employees.
+
+And it's different because you create your own reputation, without being
+unfaithful to your current employer. Not only by building a network in Linkedin.
+But also for answering questions in a forum, or for writing posts in a blog like
+this.
+
+In fact, sometimes you're being paid (in a way) for building that reputation. I
+love this post:
+[How much will you pay for Matt Cuts?](http://google.dirson.com/post/3076-cuanto-pagarias-matt-cutts/)
+
+I know that many companies explore our online profiles. And I think that as
+employees we should be concious of our profiles, whether or not we're looking
+for a new job. But I don't think that is dishonest or unfaithful. Of course I do
+write this blog and I have a relatevely updated Linkedin profile.
+
+Maybe I've read too much about [personal branding](http://www.marcapropia.net/blog.html).
+But it
+seems to me that Internet is starting to balance the relationship between
+employees and companies.

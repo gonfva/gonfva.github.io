@@ -7,6 +7,28 @@ publishDir = "docs"
 summaryLength = 30
 enableRobotsTXT = true
 
+[outputFormats]
+  [outputFormats.markdown]
+    mediaType = "text/markdown"
+    baseName = "index"
+    isPlainText = true
+    permalinkable = true
+    path = ""
+    extension = "md"
+
+  [outputFormats.llmstxt]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "llmstxt"]
+  page = ["HTML", "markdown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
 [taxonomies]
   category = "categories"
   tag = "tags"

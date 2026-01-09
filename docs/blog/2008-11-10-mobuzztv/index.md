@@ -1,0 +1,35 @@
+---title: MobuzzTV
+date: 2008-11-10T18:00:00Z
+categories: [Technology]
+tags: [Technology]
+---
+
+I heard about MobuzzTV for the first time long time ago. I don't watch news on TV, (I prefer to read than watch), so much less watch on the Internet. I didn't pay much attention then.
+From time to time, I read about Mobuzz on [Enrique's blog](http://www.enriquedans.com/), but again I didn't pay much attention.
+
+Last week [MobuzzTV announced they would had to close unless they got 120,000 euros in donations](http://www.mobuzz.tv/SalvarMobuzz.php). I read it first in [Enrique's blog](http://www.enriquedans.com), then in [Borja's one](http://desencadenado.com/2008/11/sobre-los-donativos-a-mobuzz.html). I agreed much more with Borja than with Enrique, but again I didn't pay much attention.
+But today I read this [Borja's post](http://desencadenado.com/2008/11/la-estafa-viral-de-mobuzz.html), and I thought Borja had lost a bit of focus. Then I read [Enrique's post](http://www.enriquedans.com/2008/11/novedades-en-mobuzztv.html) which is previous, and then I didn't know who has lost focus, and according to the comments, balance.
+
+I also read [Varsavsky's blog](https://spanish.martinvarsavsky.net). Similar to Enrique, although I learnt Martin’s (and probably Enrique’s) shares on MobuzzTV were a gift.
+
+As Borja says, I think companies exist to make money. If you can't get money enough to keep your company going, you should think about how to make more money or how reduce your expenses.
+
+If you can figure out how to increase your income or how to reduce your expenses, or if even after doing it, it's not enough, maybe you should close.
+
+If you think it’s only a matter of budget (your idea is great, and it’s going to work, you just need enough time), then you should rethink(everybody thinks their ideas are great). If you continue thinking, you’ll have to put more money in, and/or to sell your idea to others. If you can’t throw in more money, maybe (again) you should close.
+
+Ignoring comments like these, saying that come from people that don’t know anything about entrepreneurship, or that they come from people’s envy or resentment, it’s like looking at the finger when someone points the moon. It seems that there have been people that made a donation of 0.60 euro, to later send a letter to the media telling that Mobuzz didn’t want to return the money back (which by the way is wicked), but it doesn’t mean all the critics did it. And even if all the critics have done it, it doesn’t mean what critics say is false.
+
+Of course, MobuzzTV can ask for donations (as it did). It’s a way to increase income. I don’t think it's a great idea (see above). But they can try.
+
+I’ve also read donations have legal implications (enterprises in Spain can’t receive donations). I don’t think they’ll have problems. It also has legal implications selling shares (it seems that in Spain you have to inform very carefully about investment oportunities). Both accepting donations and selling shares were legally risky.
+
+I usually prefer shares in exchange of money when you give money to a (nearly) bankrupt company. I prefer donations to NGO, and loans or capital with companiues. In fact, with the recent finantial crisis, we’ve seen a lot of those helps, some in exchange of shares and others for free, and I know I'm not alone.
+
+But in this case the money is of those who voluntarily donate. If people feel fraud, they can ask for the money back or go to the judge. If Public Administration feels fraud, it should investigate. It wouldn’t be the first time
+
+If I were from a capital-risk firm, I  **should** doubt about these people’s ability to manage budgets. These people say they had a crisis and they were not able to cut expenses, foresee, plan, or adapt. It resembles when people say they have financial problems and they go to the TV.
+
+The example Borja points seems an entrepreneur much more reliable than Mobuzz. And if your company can’t survive, probably you learnt. Next time (if there’s “next”) you’ll do better. That’s something companies can do, and people (in Spain) cannot.
+
+But in any case I wouldn’t call this episode "a lie" or "a fraud". I can’t believe it was planned as a marketing tactic. They (Martin, Enrique, or the rest of the MobuzzTV people) have burnt too much personal credit here.
