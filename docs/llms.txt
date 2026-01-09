@@ -18,7 +18,89 @@ The blog has been active since 2008, with 175 posts covering a wide range of top
 
 ## Featured Posts
 
-No featured posts have been marked yet. Add `featured: true` to post front matter to highlight posts here.
+### LLM-scaffolding - AI interfaces beyond the chat
+
+- Published: 2025-11-08
+- URL: https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/
+- Markdown: https://gonzalo.f-v.es/blog/2025-11-08-llm-scaffolding/index.md
+- Tags: Technology, Agents, Experiments
+
+LLM-scaffolding A couple of weeks ago, I went to an event about AI and trading. The usual &ldquo;oh yes, AI is great, it is going to change everything.&rdquo; But almost every speaker said something along the lines, &ldquo;but it won&rsquo;t be a chat app.
+
+### Audio, emails, and agent coding - This is the way. And I'd better learn how to do it
+
+- Published: 2025-09-14
+- URL: https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/
+- Markdown: https://gonzalo.f-v.es/blog/2025-09-14-emails-whispery-site/index.md
+- Tags: Technology, Agents, Experiments
+
+Email Whispery After Xowit and Kids Xowit, the third experiment of the year is up.
+It&rsquo;s called Email Whispery.
+It produces brief email summaries in an audio format.
+You give temporary access to your email account (yes, I know it is a big ask, and I wouldn&rsquo;t use such an app).
+
+### Kids-Xowit and vibe coding - Chief Vibe-coding Officer (CVO)?
+
+- Published: 2025-06-21
+- URL: https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/
+- Markdown: https://gonzalo.f-v.es/blog/2025-06-21-kids-xowit/index.md
+- Tags: Technology, Agents, Slop, Experiments
+
+Kids-Xowit A couple of months ago I mentioned that I wanted to keep experimenting.
+At that point I had launched Xowit. Xowit is something I want to keep exploring and I have another two updates in the works with natural language discovery, and in-app reading.
+
+### Xowit - If you're not embarrassed, you're too late
+
+- Published: 2025-03-25
+- URL: https://gonzalo.f-v.es/blog/2025-03-24-xowit/
+- Markdown: https://gonzalo.f-v.es/blog/2025-03-24-xowit/index.md
+- Tags: Developer, Agents, Experiments
+
+I&rsquo;m always full of ideas.
+But they never go beyond ideas.
+Sometimes I would buy a domain and promise myself that &ldquo;this is the one&rdquo;. And the list of domains grows.
+
+### Low-background steel and AI - AI generated content is changing everything
+
+- Published: 2023-11-12
+- URL: https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/
+- Markdown: https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/index.md
+- Tags: Developer, Slop
+
+A few months ago I heard for the first time the term low-background steel.
+It seems steel produced before the Second World War is more valuable for certain applications. The reason is steel produced after the first nuclear tests was contaminated with traces of nuclear material from those tests in the atmosphere.
+
+### x^3 as a non-linear unit - A wild and probably incorrect idea
+
+- Published: 2023-09-23
+- URL: https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/
+- Markdown: https://gonzalo.f-v.es/blog/2023-09-23-x-3-as-non-linear/index.md
+- Tags: Developer
+
+UPDATE: It turns out it was not crazy at all.
+These days I&rsquo;m trying to learn Machine Learning(once again).
+I&rsquo;m more interested in understanding the fundamentals than running the race of prompt engineering and &ldquo;ChatGPT&rdquo; (and what is called LLM).
+
+### Windows 2022 in EKS with packer - On Windows 2022, packer, sysprep and EKS
+
+- Published: 2022-10-14
+- URL: https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/
+- Markdown: https://gonzalo.f-v.es/blog/2022-10-14-windows-2022-eks/index.md
+- Tags: Developer, got ya
+
+Windows 2022 in EKS Update: This article is no longer relevant. AWS already has Windows 2022 optimized images
+Update 2: Thank you John for your kind message
+If you are using Windows in EKS, you are probably eagerly awaiting for an Windows 2022 AMI.
+
+### Metadata abuse in AWS - Avoiding detection of the use of compromised credentials
+
+- Published: 2019-09-03
+- URL: https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/
+- Markdown: https://gonzalo.f-v.es/blog/2019-09-03-metadata-abuse-in-aws/index.md
+- Tags: Developer
+
+Introduction A few weeks ago there was an attack on Capital One’s AWS infrastructure that lead to the compromise of personal information on around 100M people.
+AWS is putting great effort in avoiding S3 buckets configured for public access.
 
 ## Recent Posts
 

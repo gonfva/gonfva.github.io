@@ -8,6 +8,7 @@ tags:
   - Experiments
 categories: [Technology]
 toc: false
+featured: true
 ---
 
 ## LLM-scaffolding

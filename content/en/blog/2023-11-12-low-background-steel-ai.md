@@ -6,6 +6,7 @@ tags:
   - Developer
   - Slop
 categories: [Developer]
+featured: true
 ---
 
 A few months ago I heard for the first time the term [low-background steel](https://en.wikipedia.org/wiki/Low-background_steel).

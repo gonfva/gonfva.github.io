@@ -9,6 +9,7 @@ tags:
   - Experiments
 categories: [Technology]
 toc: false
+featured: true
 ---
 
 ## Kids-Xowit
