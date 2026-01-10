@@ -14,13 +14,6 @@
             <h2>{{.Params.subtitle}}</h2>
             {{ end }}
             {{ if .Date }}<time datetime="{{ .Date }}" class="post__date">{{ .Date.Format $dateFormat }}</time> {{ end }}
-            {{ range .AlternativeOutputFormats }}
-              {{ if eq .Name "markdown" }}
-                <div style="margin-top: 0.5rem;">
-                  <a href="{{ .Permalink }}" style="font-size: 0.9rem; color: #666;">View as Markdown</a>
-                </div>
-              {{ end }}
-            {{ end }}
           </header>
           <article class="post__content">
               {{ partial "anchored-headings.html" .Content }}
