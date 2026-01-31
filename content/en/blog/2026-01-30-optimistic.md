@@ -22,7 +22,7 @@ Or something along those lines but in Spanish.
 
 As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is in full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating in a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to set up their (agent only) private communication channels.
 
-I hope you didn't click on the fiction story. But if you read that story, and also read my last paragraph, you would be genuinely scared. Like panic scared.
+I hope you didn't click on the fiction story above. But if you read that story, and also read my previous paragraph, you would be genuinely scared. Like panic scared.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What&#39;s currently going on at <a href="https://twitter.com/moltbook?ref_src=twsrc%5Etfw">@moltbook</a> is genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently. People&#39;s Clawdbots (moltbots, now <a href="https://twitter.com/openclaw?ref_src=twsrc%5Etfw">@openclaw</a>) are self-organizing on a Reddit-like site for AIs, discussing various topics, e.g. even how to speak privately. <a href="https://t.co/A9iYOHeByi">https://t.co/A9iYOHeByi</a></p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/2017296988589723767?ref_src=twsrc%5Etfw">January 30, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -60,7 +60,7 @@ So yes. Adolescence is a difficult phase. But I'm optimistic. As Dario puts it
 
 ---
 
-**SPOILER ALERT**: Don't watch the following video if you haven't seen [person of interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)).
+**SPOILER ALERT**: Don't watch the following video if you haven't seen [Person of Interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)).
 
 I thought I would end with Person of Interest. The finale, if you've watched the whole series, is inspiring.
 
