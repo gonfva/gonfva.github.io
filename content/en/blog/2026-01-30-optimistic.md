@@ -38,13 +38,19 @@ But there is also some experience. And despite the lobster revolution, my experi
 
 I see Claude much closer to ["the machine"](https://personofinterest.fandom.com/wiki/The_Machine) or [Jane](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)) than to Terminator.
 
-Gemini seems to be a bit mutilated, but it seems Google is trying and it might have passed its [black nazi phase](https://www.bbc.co.uk/news/technology-68412620).
+Gemini seems to be a bit mutilated, but it seems Google is trying to do the right thing and it might have passed its [black nazi phase](https://www.bbc.co.uk/news/technology-68412620).
 
 And I love the motto for Grok "Truthful, curious and love humanity" even if I don't sympathize with some of its sexualized shortcuts.
 
-**SPOILER ALERT**: Don't watch the video if you haven't seen [person of interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)).
+So yes. I'm optimistic. As Dario puts it
 
-I thought I would end with Person of Interest. The finale, if you've watched the whole series, is great.
+> Despite the many obstacles, I believe humanity has the strength inside itself to pass this test.
+
+---
+
+**SPOILER ALERT**: Don't watch the following video if you haven't seen [person of interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)).
+
+I thought I would end with Person of Interest. The finale, if you've watched the whole series, is inspiring.
 
 {{< youtube hdAH6SlN7B4 >}}
 
