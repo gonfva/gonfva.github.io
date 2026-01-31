@@ -16,13 +16,13 @@ Then, a couple of days later, I read this [post from Dario, the founder of Anthr
 
 Or something along those lines but in Spanish.
 
-As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is in full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating in a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to set up their communication channels.
+As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is in full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating in a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to set up their (agent only) private communication channels.
 
 I hope you didn't click on the fiction story. But if you read that story, and also read my last paragraph, you would be genuinely scared. Like panic scared.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What&#39;s currently going on at <a href="https://twitter.com/moltbook?ref_src=twsrc%5Etfw">@moltbook</a> is genuinely the most incredible sci-fi takeoff-adjacent thing I have seen recently. People&#39;s Clawdbots (moltbots, now <a href="https://twitter.com/openclaw?ref_src=twsrc%5Etfw">@openclaw</a>) are self-organizing on a Reddit-like site for AIs, discussing various topics, e.g. even how to speak privately. <a href="https://t.co/A9iYOHeByi">https://t.co/A9iYOHeByi</a></p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/2017296988589723767?ref_src=twsrc%5Etfw">January 30, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I think the lobster revolution will finish pretty soon. Most likely due to someone writing a self-replicating worm that will wipe out and take control of a significant amount of compute, and an even more significant amount of credentials of people that have trusted their whole identities to this wave without thinking about the risks.
+I think the lobster revolution will finish pretty soon. Most likely due to someone writing a [self-replicating worm](https://en.wikipedia.org/wiki/Morris_worm) that will wipe out and take control of a significant amount of compute, and an even more significant amount of credentials of people that have trusted their whole identities to this wave without thinking about the risks.
 
 But nonetheless, the article from Dario is super relevant. Maybe not lobsters. Maybe the next wave.
 
