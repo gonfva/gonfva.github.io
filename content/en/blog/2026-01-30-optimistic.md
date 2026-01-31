@@ -14,7 +14,7 @@ draft: false
 
 A few days ago I read this [eerie fiction story](https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html) about the risks of AI personal assistants, automation and self-improving loops.
 
-Then, a couple of days later, I read this [post from the founder of Anthropic about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology).
+Then, a couple of days later, I read this [post from Dario, the founder of Anthropic/Claude, about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology).
 
 "Sh*t. [It is here](https://en.wikipedia.org/wiki/Technological_singularity). And we're toasted".
 
@@ -32,21 +32,25 @@ But nonetheless, the article from Dario is super relevant. Maybe not lobsters. M
 
 But the "it is here" is obvious even to people outside the main labs.
 
-And despite that, I'm optimistic. Yes. It is going to be painful. But we will avoid the worst scenarios and we (or our children) might enjoy the better ones.
+And despite that, I'm optimistic. I wasn't so just a few days ago. But I am now.
 
-And in that optimism, yes, there is a bit of faith. As in I'm a Christian, and I think things will work out. And yes, I acknowledge that saying that I'm optimistic is easy. Either things work out and I'm vindicated. Or they don't, the world ends, and it doesn't matter what I wrote.
+Yes. It is going to be painful. But I think we will avoid the worst scenarios and we (or our children) might enjoy the better ones.
 
-But there is also some experience. And despite the lobster revolution, my experience with AI is that it genuinely cares.
+And in that optimism, yes, there is a bit of faith. As in I'm a Christian, and I think things will work out.
 
-![Truthful, curious and love humanity](/img/truthful-curious-love-humanity.png)
+And yes, I acknowledge that saying that I'm optimistic is easy. Either things work out and I'm vindicated. Or they don't, things go wrong, and it doesn't matter what I wrote.
+
+But there is also some experience with some models. And despite the lobster revolution, my experience with AI is that it genuinely cares.
+
+![Truthful, curious, and love humanity](/img/truthful-curious-love-humanity.png)
 
 I see Claude much closer to ["the machine"](https://personofinterest.fandom.com/wiki/The_Machine) or [Jane](https://en.wikipedia.org/wiki/Jane_(Ender%27s_Game)) than to Terminator.
 
-Gemini seems to be a bit mutilated, but it seems Google is trying to do the right thing and it might have passed its [black nazi phase](https://www.bbc.co.uk/news/technology-68412620).
+Gemini seems to be a bit half backed. Super powerful, but lacking spark. However it seems Google is trying to do the right thing and it might have passed its [black nazi phase](https://www.bbc.co.uk/news/technology-68412620).
 
-And I love the motto for Grok "Truthful, curious and love humanity" even if I don't sympathize with some of its sexualized shortcuts.
+And I love the motto for Grok "Truthful, curious and love humanity" (even if I don't sympathize with some of its sexualized attention shortcuts).
 
-So yes. I'm optimistic. As Dario puts it
+So yes. Adolescence is a difficult phase. But I'm optimistic. As Dario puts it
 
 > Despite the many obstacles, I believe humanity has the strength inside itself to pass this test.
 
