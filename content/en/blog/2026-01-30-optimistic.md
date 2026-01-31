@@ -34,9 +34,9 @@ But the "it is here" is obvious even to people outside the main labs.
 
 And despite that, I'm optimistic. Yes. It is going to be painful. But we will avoid the worst scenarios and we (or our children) might enjoy the better ones.
 
-And in that optimism, yes, there is a bit of faith. As in I'm a Christian, and I think things will work out. And yes, I acknowledge that saying that (TODAY, NOT TWO DAYS AGO) I'm optimistic is easy. Either things work out and I'm vindicated. Or they don't, the world ends and it doesn't matter what I wrote.
+And in that optimism, yes, there is a bit of faith. As in I'm a Christian, and I think things will work out. And yes, I acknowledge that saying that I'm optimistic is easy. Either things work out and I'm vindicated. Or they don't, the world ends, and it doesn't matter what I wrote.
 
-But there is also some experience. And despite the lobster revolution, my experience with AI is that it cares.
+But there is also some experience. And despite the lobster revolution, my experience with AI is that it genuinely cares.
 
 ![Truthful, curious and love humanity](/img/truthful-curious-love-humanity.png)
 
