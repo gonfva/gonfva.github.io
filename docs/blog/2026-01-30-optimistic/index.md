@@ -1,5 +1,5 @@
 ---title: I'm optimistic
-date: 2025-11-29T12:30:00Z
+date: 2026-01-30T22:30:00Z
 subtitle: In the middle of the lobster revolution
 categories: [Technology]
 tags: [Technology Agents]
@@ -10,7 +10,11 @@ toc: false
 
 A few days ago I read this [eerie fiction story](https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html) about the risks of AI personal assistants, automation and self-improving loops.
 
-Then, a couple of days later, I read this [post from the founder of Anthropic about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology). "Sh*t. [It is here](https://en.wikipedia.org/wiki/Technological_singularity). And we're toasted". Or something along those lines but in Spanish.
+Then, a couple of days later, I read this [post from the founder of Anthropic about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology).
+
+"Sh*t. [It is here](https://en.wikipedia.org/wiki/Technological_singularity). And we're toasted".
+
+Or something along those lines but in Spanish.
 
 As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is in full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating in a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to set up their communication channels.
 
