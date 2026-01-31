@@ -8,7 +8,7 @@
 ## About
 
 Gonzalo Fernandez-Victorio is a software engineer sharing thoughts and experiences through this blog.
-The blog has been active since 2008, with 175 posts covering a wide range of topics.
+The blog has been active since 2008, with 176 posts covering a wide range of topics.
 
 - Website: https://gonzalo.f-v.es/
 - Blog (English): https://gonzalo.f-v.es/blog
@@ -104,6 +104,13 @@ AWS is putting great effort in avoiding S3 buckets configured for public access.
 
 ## Recent Posts
 
+### I'm optimistic - In the middle of the lobster revolution
+
+- Published: 2025-11-29
+- URL: https://gonzalo.f-v.es/blog/2026-01-30-optimistic/
+- Markdown: https://gonzalo.f-v.es/blog/2026-01-30-optimistic/index.md
+- Tags: Technology, Agents
+
 ### Some musings on agents - Agent Development Kit vs Claude Agent SDK
 
 - Published: 2025-11-15
@@ -167,13 +174,6 @@ AWS is putting great effort in avoiding S3 buckets configured for public access.
 - Markdown: https://gonzalo.f-v.es/blog/2024-01-04-timeout-clusterinfoupdatejob/index.md
 - Tags: Developer
 
-### Low-background steel and AI - AI generated content is changing everything
-
-- Published: 2023-11-12
-- URL: https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/
-- Markdown: https://gonzalo.f-v.es/blog/2023-11-12-low-background-steel-ai/index.md
-- Tags: Developer, Slop
-
 ## Content Organization
 
 The blog is organized by categories and tags.
@@ -192,7 +192,7 @@ The blog is organized by categories and tags.
 - Personal (30 posts)
 - Politics (16 posts)
 - Spain (11 posts)
-- Technology (47 posts)
+- Technology (48 posts)
 - This Blog (4 posts)
 
 - **Tags**: Available at https://gonzalo.f-v.es/tags/
