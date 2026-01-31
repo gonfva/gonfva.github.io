@@ -16,7 +16,7 @@ A few days ago I read this [eerie fiction story](https://babuschk.in/posts/2026-
 
 Then, a couple of days later, I read this [post from the founder of Anthropic about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology). I remember thinking "F*ck. [It is here](https://en.wikipedia.org/wiki/Technological_singularity). And we're toasted" (pardon my French).
 
-As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating on  a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to setup their communication channels.
+As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is in full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating in a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to set up their communication channels.
 
 I hope you didn't click on the fiction story. But if you read that story, and also read my last paragraph, you would be genuinely scared. Like panic scared.
 
@@ -40,7 +40,7 @@ I see Claude much closer to ["the machine"](https://personofinterest.fandom.com/
 
 Gemini seems to be a bit mutilated, but it seems Google is trying and it might have passed its black nazi phase.
 
-And I love the motto for Grok "Truthful, curious and love humanity" even if I don't simpatyze with some of its sexualized shortcuts.
+And I love the motto for Grok "Truthful, curious and love humanity" even if I don't sympathize with some of its sexualized shortcuts.
 
 **SPOILER ALERT**: Don't watch the video if you haven't seen [person of interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)).
 
