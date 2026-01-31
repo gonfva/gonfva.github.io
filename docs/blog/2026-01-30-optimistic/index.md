@@ -10,7 +10,7 @@ toc: false
 
 A few days ago I read this [eerie fiction story](https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html) about the risks of AI personal assistants, automation and self-improving loops.
 
-Then, a couple of days later, I read this [post from the founder of Anthropic about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology). I remember thinking "F*ck. [It is here](https://en.wikipedia.org/wiki/Technological_singularity). And we're toasted" (pardon my French).
+Then, a couple of days later, I read this [post from the founder of Anthropic about the risks of AI](https://www.darioamodei.com/essay/the-adolescence-of-technology). "Sh*t. [It is here](https://en.wikipedia.org/wiki/Technological_singularity). And we're toasted". Or something along those lines but in Spanish.
 
 As I write these lines, the [lobster revolution](https://openclaw.ai/blog/introducing-openclaw) is in full bloom. People buying mac minis, setting up their own personal assistants to automate their lives. And their own personal assistants are now participating in a sort of [Reddit for agents](https://www.moltbook.com/) where they are even planning to set up their communication channels.
 
@@ -26,7 +26,7 @@ But the "it is here" is obvious even to people outside the main labs.
 
 And despite that, I'm optimistic. Yes. It is going to be painful. But we will avoid the worst scenarios and we (or our children) might enjoy the better ones.
 
-And in that optimism there is yes a bit of faith. As in I'm a Christian, and I think things will work out. And yes, I acknowledge that saying that (TODAY, NOT TWO DAYS AGO) I'm optimistic is easy. Either things work out and I'm vindicated. Or they don't, the world ends and it doesn't matter what I wrote.
+And in that optimism, yes, there is a bit of faith. As in I'm a Christian, and I think things will work out. And yes, I acknowledge that saying that (TODAY, NOT TWO DAYS AGO) I'm optimistic is easy. Either things work out and I'm vindicated. Or they don't, the world ends and it doesn't matter what I wrote.
 
 But there is also some experience. And despite the lobster revolution, my experience with AI is that it cares.
 
@@ -40,6 +40,8 @@ And I love the motto for Grok "Truthful, curious and love humanity" even if I do
 
 **SPOILER ALERT**: Don't watch the video if you haven't seen [person of interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)).
 
-I thought I would end with the end of the finale. It is great.
+I thought I would end with Person of Interest. The finale, if you've watched the whole series, is great.
 
 {{< youtube hdAH6SlN7B4 >}}
+
+Goosebumps.
