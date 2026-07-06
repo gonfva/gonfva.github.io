@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PowerShell issues in Containerd | Gonzalo&#39;s thoughts</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://gonzalo.f-v.es/blog/2026-07-05-powershell-containerd-2/" itemprop="url" />
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="PowerShell issues in Containerd" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@gonfva" />
+  <meta name="twitter:creator" content="https://twitter.com/gonfva" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.03388d93892841d2abbb40edb2280f0c8ea5b756cfea16fe7c9b72bc9780bde9.css" integrity="sha256-AziNk4koQdKru0DtsigPDI6lt1bP6hb&#43;fJtyvJeAvek="/>
+  
+
+  
+  <link rel="alternate" type="text/markdown+md" href="https://gonzalo.f-v.es/blog/2026-07-05-powershell-containerd-2/index.md" title="Gonzalo's thoughts" />
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gonzalo.f-v.es\/"
+      },
+      "articleSection" : "blog",
+      "name" : "PowerShell issues in Containerd",
+      "headline" : "PowerShell issues in Containerd",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2026",
+      "datePublished": "2026-07-05 22:30:00 \u002b0000 UTC",
+      "dateModified" : "2026-07-05 22:30:00 \u002b0000 UTC",
+      "url" : "https:\/\/gonzalo.f-v.es\/blog\/2026-07-05-powershell-containerd-2\/",
+      "wordCount" : "455",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">About</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">Blog EN</a>
+      </li>
+    
+      <li>
+        <a  href="/es/blog">Blog ES</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">PowerShell issues in Containerd</h1>
+            
+            <h2>Good is not perfect</h2>
+            
+            <time datetime="2026-07-05 22:30:00 &#43;0000 UTC" class="post__date">2026-07-05</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="powershell-issues-in-containerd-v2">PowerShell issues in Containerd v2<a class="anchor" href="#powershell-issues-in-containerd-v2">#</a></h2>
+<p><em><strong>This is not a great post with a great solution. It is just a post for someone who might be desperate and needs some ideas</strong></em></p>
+<p>In my current company we have <a href="/blog/2022-10-14-windows-2022-eks/" 
+  
+  
+>Windows 2022 containers</a>.</p>
+<p>They tend to work fine.</p>
+<p>However, with the upgrade to EKS from 1.33 to 1.34, we started noticing some random build failures. All of the failures contained some message about SetConsoleTitleW in PowerShell (that we were not specifically calling) and the error:</p>
+<p>Win32 0xE9 = ERROR_BROKEN_PIPE &ldquo;No process is on the other end of the pipe&rdquo;</p>
+<p>Since we use personalized AMIs (more on this on a new post soon), every new test started with a 4-hour job to build a new AMI. Since the error only appears randomly, we then required as many as 30 odd jobs to run in order to know if the issue was still present.</p>
+<p>In the beginning we only knew that the issue appeared for Windows nodes on the version 1.34. But since our AMIs contain other changes on top of the base Amazon EKS optimized, we were not sure if the problem was elsewhere.</p>
+<p>In the end we were able to confirm that the issue was associated with the change from containerd v1 (the version in EKS optimized images 1.33 is 1.7.30) to containerd v2 (the version is 2.1.x).</p>
+<p>It seems there were a lot of changes, and some of them have triggered some race conditions. In fact at some point we were convinced that this MR</p>
+<p><a href="https://github.com/containerd/containerd/pull/13522" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>https://github.com/containerd/containerd/pull/13522</a></p>
+<p>was going to be the solution to our problems.</p>
+<p>Unfortunately, it wasn&rsquo;t. We installed containerd 2.3.2. We run our tests. And instead of requiring 10-15 builds for the failure to appear, it required like 25-30. But the error ended up appearing as well.</p>
+<p>So progress, but not enough.</p>
+<p>We still needed to upgrade the nodes to 1.34, because eventually we want to upgrade to 1.35 and so on.</p>
+<p>We noticed the <a href="https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html#kubernetes-1-35" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>following text</a></p>
+<pre><code>Containerd 1.x End of Support: Kubernetes 1.35 is the last release supporting containerd 1.x. You must switch to containerd 2.0 or later before upgrading to the next Kubernetes version.
+</code></pre>
+<p>OK. So for 1.34 and 1.35 we could still use containerd v1!!!</p>
+<p>That was eye opening. And that&rsquo;s what we did</p>
+<pre><code>write-output &quot;Updating containerd&quot;
+stop-service containerd
+$version = &quot;1.7.30&quot;
+$arch = &quot;amd64&quot;
+curl.exe -L0 https://github.com/containerd/containerd/releases/download/v$version/containerd-$version-windows-$arch.tar.gz
+tar.exe xvf ./containerd-$version-windows-$arch.tar.gz
+Copy-Item -Path .\bin\* -Destination $env:ProgramFiles\containerd\bin\ -recurse -force
+Copy-Item -Path c:\windows\temp\config.toml -Destination $env:ProgramFiles\containerd\config.toml -force
+
+restart-service containerd
+ctr version
+</code></pre>
+<p>(our Packer HCL uploads config.toml beforehand)</p>
+<p>This is not the perfect solution. But it gives us some time. We now have Windows nodes in EKS 1.34. We can upgrade to EKS 1.35, including nodes.</p>
+<p>And monitor containerd to see if some other bug fix lands.</p>
+
+
+              
+          </article>
+          
+
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://gonzalo.f-v.es/tags/developer/">Developer</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2026-01-30-optimistic/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">I&#39;m optimistic</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="https://gonzalo.f-v.es/blog/2026-07-06-windows-eks-faster/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Some tips for Windows EKS node startup time</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/gonfva"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/gonzalofernandezvictorio/"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://gonzalo.f-v.es/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© Gonzalo Fernandez-Victorio 2026</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
