@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gonzalo.f-v.es/blog/</loc>
-    <lastmod>2026-07-06T20:30:00+00:00</lastmod>
+    <lastmod>2026-09-27T20:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -13,6 +13,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://gonzalo.f-v.es/blog/"
+                />
+  </url><url>
+    <loc>https://gonzalo.f-v.es/</loc>
+    <lastmod>2026-09-27T20:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://gonzalo.f-v.es/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gonzalo.f-v.es/"
                 />
   </url><url>
     <loc>https://gonzalo.f-v.es/categories/</loc>
@@ -33,19 +46,6 @@
   </url><url>
     <loc>https://gonzalo.f-v.es/categories/developer/</loc>
     <lastmod>2026-07-06T20:30:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gonzalo.f-v.es/</loc>
-    <lastmod>2026-07-06T20:30:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://gonzalo.f-v.es/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://gonzalo.f-v.es/"
-                />
   </url><url>
     <loc>https://gonzalo.f-v.es/blog/2026-07-06-windows-eks-faster/</loc>
     <lastmod>2026-07-06T20:30:00+00:00</lastmod>
